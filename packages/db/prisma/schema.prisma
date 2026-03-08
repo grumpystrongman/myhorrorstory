@@ -1,0 +1,370 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  PLAYER
+  HOST
+  MODERATOR
+  CONTENT_EDITOR
+  SUPPORT_AGENT
+  MARKETING_MANAGER
+  ANALYST
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum PlanTier {
+  FREE
+  TRIAL
+  STANDARD
+  PREMIUM
+  LIFETIME
+}
+
+enum PartyMode {
+  SOLO
+  PARTY
+}
+
+enum SessionStatus {
+  LOBBY
+  ACTIVE
+  PAUSED
+  COMPLETE
+  ABANDONED
+}
+
+enum TicketStatus {
+  OPEN
+  IN_PROGRESS
+  CLOSED
+}
+
+enum AssetType {
+  CHARACTER_PORTRAIT
+  SCENE_ART
+  EVIDENCE_IMAGE
+  UI_BACKGROUND
+  SETTING_ART
+  PROMO_IMAGE
+  SOCIAL_CREATIVE
+  VOICE_CLIP
+}
+
+model User {
+  id                   String              @id @default(uuid())
+  email                String              @unique
+  passwordHash         String
+  displayName          String
+  tier                 PlanTier            @default(FREE)
+  marketingConsent     Boolean             @default(false)
+  acceptedTermsAt      DateTime?
+  acceptedPrivacyAt    DateTime?
+  ageGateConfirmedAt   DateTime?
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+  roles                UserRole[]
+  authSessions         AuthSession[]
+  partyMemberships     PartyMember[]
+  hostedParties        Party[]             @relation("PartyHost")
+  supportTickets       SupportTicket[]     @relation("TicketRequester")
+  assignedTickets      SupportTicket[]     @relation("TicketAssignee")
+  auditLogs            AuditLog[]
+  subscriptions        Subscription[]
+  purchases            Purchase[]
+  referralLinks        ReferralLink[]
+  referralConversions  ReferralConversion[] @relation("ReferralOwner")
+}
+
+model UserRole {
+  id        String   @id @default(uuid())
+  userId    String
+  role      Role
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, role])
+}
+
+model AuthSession {
+  id             String   @id @default(uuid())
+  userId         String
+  refreshTokenId String   @unique
+  userAgent      String?
+  ipAddress      String?
+  expiresAt      DateTime
+  revokedAt      DateTime?
+  createdAt      DateTime @default(now())
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Story {
+  id                   String         @id @default(uuid())
+  slug                 String         @unique
+  title                String
+  hook                 String
+  subgenre             String
+  tone                 String
+  targetSessionMinutes Int
+  soloSuitability      Int
+  partySuitability     Int
+  ageWarnings          String[]
+  location             String
+  published            Boolean        @default(false)
+  version              String
+  createdAt            DateTime       @default(now())
+  updatedAt            DateTime       @updatedAt
+  chapters             Chapter[]
+  clues                Clue[]
+  evidence             Evidence[]
+  parties              Party[]
+  mediaAssets          MediaAsset[]
+  voiceProfiles        VoiceProfile[]
+}
+
+model Chapter {
+  id        String   @id @default(uuid())
+  storyId   String
+  index     Int
+  title     String
+  synopsis  String
+  unlockAt  DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  story     Story    @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  beats     Beat[]
+
+  @@unique([storyId, index])
+}
+
+model Beat {
+  id                  String   @id @default(uuid())
+  chapterId           String
+  index               Int
+  title               String
+  narrative           String
+  unlockAfterSeconds  Int      @default(0)
+  requiredConditions  Json
+  choices             Json
+  revealsClueIds      String[]
+  chapter             Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+
+  @@unique([chapterId, index])
+}
+
+model Clue {
+  id          String   @id @default(uuid())
+  storyId     String
+  title       String
+  description String
+  rarity      String
+  createdAt   DateTime @default(now())
+  story       Story    @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  evidence    Evidence[]
+}
+
+model Evidence {
+  id          String   @id @default(uuid())
+  storyId     String
+  clueId      String?
+  title       String
+  type        String
+  assetUrl    String
+  metadata    Json
+  createdAt   DateTime @default(now())
+  story       Story    @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  clue        Clue?    @relation(fields: [clueId], references: [id], onDelete: SetNull)
+}
+
+model Party {
+  id           String        @id @default(uuid())
+  hostId       String
+  storyId      String
+  mode         PartyMode
+  hostless     Boolean       @default(false)
+  status       SessionStatus @default(LOBBY)
+  currentBeat  String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  host         User          @relation("PartyHost", fields: [hostId], references: [id], onDelete: Restrict)
+  story        Story         @relation(fields: [storyId], references: [id], onDelete: Restrict)
+  members      PartyMember[]
+  invites      Invite[]
+  journalNotes JournalNote[]
+  timeline     TimelineEntry[]
+}
+
+model PartyMember {
+  id        String   @id @default(uuid())
+  partyId   String
+  userId    String
+  joinedAt  DateTime @default(now())
+  isReady   Boolean  @default(false)
+  party     Party    @relation(fields: [partyId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([partyId, userId])
+}
+
+model Invite {
+  id         String   @id @default(uuid())
+  partyId    String
+  inviteCode String   @unique
+  maxUses    Int      @default(8)
+  usedCount  Int      @default(0)
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  party      Party    @relation(fields: [partyId], references: [id], onDelete: Cascade)
+}
+
+model JournalNote {
+  id        String   @id @default(uuid())
+  partyId   String
+  authorId  String
+  note      String
+  createdAt DateTime @default(now())
+  party     Party    @relation(fields: [partyId], references: [id], onDelete: Cascade)
+}
+
+model TimelineEntry {
+  id        String   @id @default(uuid())
+  partyId   String
+  label     String
+  detail    String
+  eventAt   DateTime
+  createdAt DateTime @default(now())
+  party     Party    @relation(fields: [partyId], references: [id], onDelete: Cascade)
+}
+
+model Subscription {
+  id                String    @id @default(uuid())
+  userId            String
+  provider          String
+  providerRef       String    @unique
+  tier              PlanTier
+  status            String
+  currentPeriodEnds DateTime?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Purchase {
+  id          String   @id @default(uuid())
+  userId      String
+  provider    String
+  providerRef String   @unique
+  amountCents Int
+  currency    String
+  itemType    String
+  itemRef     String
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model SupportTicket {
+  id            String       @id @default(uuid())
+  requesterId   String
+  assigneeId    String?
+  status        TicketStatus @default(OPEN)
+  subject       String
+  body          String
+  tags          String[]
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  requester     User         @relation("TicketRequester", fields: [requesterId], references: [id], onDelete: Restrict)
+  assignee      User?        @relation("TicketAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+}
+
+model Announcement {
+  id           String   @id @default(uuid())
+  title        String
+  body         String
+  startsAt     DateTime?
+  endsAt       DateTime?
+  createdBy    String
+  createdAt    DateTime @default(now())
+}
+
+model EmailCampaign {
+  id            String   @id @default(uuid())
+  name          String
+  segmentQuery  Json
+  templateId    String
+  status        String
+  scheduledFor  DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model FeatureFlag {
+  id          String   @id @default(uuid())
+  key         String   @unique
+  description String
+  enabled     Boolean  @default(false)
+  rules       Json
+  updatedAt   DateTime @updatedAt
+  updatedBy   String
+}
+
+model AuditLog {
+  id          String   @id @default(uuid())
+  actorUserId String?
+  action      String
+  entityType  String
+  entityId    String
+  metadata    Json
+  createdAt   DateTime @default(now())
+  actor       User?    @relation(fields: [actorUserId], references: [id], onDelete: SetNull)
+}
+
+model MediaAsset {
+  id          String    @id @default(uuid())
+  storyId     String?
+  type        AssetType
+  title       String
+  provider    String
+  prompt      String
+  promptHash  String
+  revision    Int       @default(1)
+  objectKey   String
+  metadata    Json
+  createdAt   DateTime  @default(now())
+  story       Story?    @relation(fields: [storyId], references: [id], onDelete: SetNull)
+}
+
+model VoiceProfile {
+  id             String   @id @default(uuid())
+  storyId         String?
+  characterName   String
+  persona         String
+  cadence         String
+  emotionalRange  String
+  lexicon         String[]
+  providerConfig  Json
+  createdAt       DateTime @default(now())
+  story           Story?    @relation(fields: [storyId], references: [id], onDelete: SetNull)
+}
+
+model ReferralLink {
+  id          String   @id @default(uuid())
+  ownerId     String
+  code        String   @unique
+  destination String
+  createdAt   DateTime @default(now())
+  owner       User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+}
+
+model ReferralConversion {
+  id              String   @id @default(uuid())
+  ownerId         String
+  referredUserId  String
+  convertedAt     DateTime @default(now())
+  owner           User     @relation("ReferralOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+}

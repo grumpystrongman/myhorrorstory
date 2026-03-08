@@ -1,0 +1,43 @@
+{
+  "name": "myhorrorstory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Commercial-grade cross-platform horror mystery platform monorepo.",
+  "packageManager": "pnpm@10.8.1",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "corepack pnpm -r --parallel dev",
+    "build": "corepack pnpm -r build",
+    "lint": "corepack pnpm -r lint",
+    "test": "corepack pnpm -r test",
+    "test:api:integration": "corepack pnpm --filter @myhorrorstory/api test:integration",
+    "test:e2e:install": "corepack pnpm exec playwright install chromium",
+    "test:e2e": "corepack pnpm exec playwright test --config tests/e2e/playwright.config.ts",
+    "test:commercial": "corepack pnpm lint && corepack pnpm typecheck && corepack pnpm test && corepack pnpm test:api:integration && corepack pnpm test:e2e",
+    "typecheck": "corepack pnpm -r typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:generate": "corepack pnpm --filter @myhorrorstory/db db:generate",
+    "db:migrate": "corepack pnpm --filter @myhorrorstory/db db:migrate",
+    "db:seed": "corepack pnpm --filter @myhorrorstory/db db:seed",
+    "validate": "corepack pnpm lint && corepack pnpm typecheck && corepack pnpm test && corepack pnpm build"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.6",
+    "@playwright/test": "^1.55.0",
+    "@axe-core/playwright": "^4.10.2",
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.9",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.1",
+    "prettier": "^3.5.2",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.25.0",
+    "vitest": "^3.0.7"
+  }
+}

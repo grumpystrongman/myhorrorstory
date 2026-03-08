@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "generatedAt": "2026-03-08T00:00:00.000Z",
+  "entries": [
+    {
+      "id": "portrait-lead-investigator-v1",
+      "type": "character_portrait",
+      "prompt": "Cinematic portrait of lead investigator, moody key light, film grain",
+      "promptHash": "cG9ydHJhaXQtbGVhZC1pbnZlc3RpZ2F0b3I=",
+      "revision": 1,
+      "provider": "openai",
+      "outputKey": "placeholders/portraits/lead-investigator.svg"
+    },
+    {
+      "id": "scene-station-v1",
+      "type": "scene_art",
+      "prompt": "Abandoned rail control room, practical lights, volumetric fog",
+      "promptHash": "c2NlbmUtc3RhdGlvbi12MQ==",
+      "revision": 1,
+      "provider": "stability",
+      "outputKey": "placeholders/scenes/station.svg"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+openapi: 3.1.0
+info:
+  title: MyHorrorStory API
+  version: 1.0.0
+servers:
+  - url: /api/v1
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+  /auth/signup:
+    post:
+      summary: Create account
+      responses:
+        '201':
+          description: Created
+  /auth/signin:
+    post:
+      summary: Sign in
+      responses:
+        '201':
+          description: Signed in
+  /stories:
+    get:
+      summary: List stories
+      responses:
+        '200':
+          description: Story package list
+  /parties:
+    post:
+      summary: Create party session
+      responses:
+        '201':
+          description: Party created
+    get:
+      summary: List parties
+      responses:
+        '200':
+          description: Party list
+  /support/tickets:
+    post:
+      summary: Create support ticket
+      responses:
+        '201':
+          description: Ticket created
+    get:
+      summary: List support tickets
+      responses:
+        '200':
+          description: Ticket list
+  /billing/checkout:
+    post:
+      summary: Start billing checkout
+      responses:
+        '201':
+          description: Checkout session
+  /growth/lead-capture:
+    post:
+      summary: Capture lead and sync CRM
+      responses:
+        '201':
+          description: Lead captured

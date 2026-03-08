@@ -1,0 +1,41 @@
+{
+  "name": "@myhorrorstory/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "node --watch --loader ts-node/esm src/main.ts",
+    "start": "node dist/main.js",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run",
+    "test:integration": "vitest run src/app.integration.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@myhorrorstory/analytics": "workspace:*",
+    "@myhorrorstory/auth": "workspace:*",
+    "@myhorrorstory/contracts": "workspace:*",
+    "@myhorrorstory/crm": "workspace:*",
+    "@myhorrorstory/payments": "workspace:*",
+    "@myhorrorstory/story-engine": "workspace:*",
+    "@nestjs/common": "^11.0.11",
+    "@nestjs/config": "^4.0.1",
+    "@nestjs/core": "^11.0.11",
+    "@nestjs/platform-express": "^11.0.11",
+    "@nestjs/platform-socket.io": "11.0.11",
+    "@nestjs/websockets": "^11.0.11",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^11.0.11",
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.1.4",
+    "ts-node": "^10.9.2"
+  }
+}

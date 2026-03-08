@@ -1,0 +1,27 @@
+{
+  "welcome": {
+    "subject": "Welcome to MyHorrorStory",
+    "preheader": "Your first case is waiting.",
+    "htmlTemplate": "welcome.html"
+  },
+  "abandoned_signup": {
+    "subject": "Finish your registration and start investigating",
+    "preheader": "Your case file is preserved.",
+    "htmlTemplate": "abandoned-signup.html"
+  },
+  "abandoned_case": {
+    "subject": "Your case has new evidence",
+    "preheader": "Return before the trail goes cold.",
+    "htmlTemplate": "abandoned-case.html"
+  },
+  "winback": {
+    "subject": "A new case was opened in your name",
+    "preheader": "Come back for your next investigation.",
+    "htmlTemplate": "winback.html"
+  },
+  "upsell": {
+    "subject": "Unlock premium case branches",
+    "preheader": "Access director-cut reveals and sequel hooks.",
+    "htmlTemplate": "upsell.html"
+  }
+}

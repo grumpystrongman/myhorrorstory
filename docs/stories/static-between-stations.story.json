@@ -1,0 +1,160 @@
+{
+    "id":  "static-between-stations",
+    "version":  "v1",
+    "title":  "Static Between Stations",
+    "hook":  "A dead rail line starts broadcasting private confessions in your own voice.",
+    "subgenre":  "psychological horror",
+    "tone":  "CINEMATIC",
+    "targetSessionMinutes":  90,
+    "soloSuitability":  5,
+    "partySuitability":  5,
+    "ageWarnings":  [
+                        "violence",
+                        "threat",
+                        "disturbing audio"
+                    ],
+    "characters":  [
+                       "Lead Investigator",
+                       "Handler",
+                       "Witness",
+                       "Antagonist"
+                   ],
+    "location":  "Abandoned commuter rail control annex",
+    "acts":  [
+                 {
+                     "id":  "act-1",
+                     "title":  "Contact",
+                     "beats":  [
+                                   {
+                                       "id":  "beat-1",
+                                       "title":  "First Disturbance",
+                                       "narrative":  "The party receives a media drop that should be impossible.",
+                                       "unlockAfterSeconds":  0,
+                                       "requiredConditions":  [
+
+                                                              ],
+                                       "choices":  [
+                                                       {
+                                                           "id":  "choice-trace",
+                                                           "label":  "Trace the source",
+                                                           "effects":  {
+                                                                           "choice_path":  "trace",
+                                                                           "scoreDelta":  1
+                                                                       },
+                                                           "nextBeatId":  "beat-2"
+                                                       },
+                                                       {
+                                                           "id":  "choice-interview",
+                                                           "label":  "Interview witnesses",
+                                                           "effects":  {
+                                                                           "choice_path":  "interview",
+                                                                           "scoreDelta":  1
+                                                                       },
+                                                           "nextBeatId":  "beat-2"
+                                                       }
+                                                   ],
+                                       "revealsClueIds":  [
+                                                              "clue-origin"
+                                                          ]
+                                   },
+                                   {
+                                       "id":  "beat-2",
+                                       "title":  "Escalation",
+                                       "narrative":  "Evidence contradicts itself while a timed event forces a decision.",
+                                       "unlockAfterSeconds":  120,
+                                       "requiredConditions":  [
+
+                                                              ],
+                                       "choices":  [
+
+                                                   ],
+                                       "revealsClueIds":  [
+                                                              "clue-contradiction"
+                                                          ]
+                                   }
+                               ]
+                 },
+                 {
+                     "id":  "act-2",
+                     "title":  "Reconstruction",
+                     "beats":  [
+                                   {
+                                       "id":  "beat-3",
+                                       "title":  "Timeline Fracture",
+                                       "narrative":  "Players align timeline events and uncover motive variants.",
+                                       "unlockAfterSeconds":  180,
+                                       "requiredConditions":  [
+                                                                  {
+                                                                      "type":  "HAS_CLUE",
+                                                                      "key":  "clue",
+                                                                      "value":  "clue-origin"
+                                                                  }
+                                                              ],
+                                       "choices":  [
+                                                       {
+                                                           "id":  "choice-accuse-a",
+                                                           "label":  "Accuse the inside accomplice",
+                                                           "effects":  {
+                                                                           "reveal_variant":  "inside"
+                                                                       },
+                                                           "nextBeatId":  "beat-4"
+                                                       },
+                                                       {
+                                                           "id":  "choice-accuse-b",
+                                                           "label":  "Accuse the external cult",
+                                                           "effects":  {
+                                                                           "reveal_variant":  "external"
+                                                                       },
+                                                           "nextBeatId":  "beat-4"
+                                                       }
+                                                   ],
+                                       "revealsClueIds":  [
+                                                              "clue-motive"
+                                                          ]
+                                   },
+                                   {
+                                       "id":  "beat-4",
+                                       "title":  "Final Debrief",
+                                       "narrative":  "Case closes with scored debrief and sequel hook transmission.",
+                                       "unlockAfterSeconds":  60,
+                                       "requiredConditions":  [
+
+                                                              ],
+                                       "choices":  [
+
+                                                   ],
+                                       "revealsClueIds":  [
+                                                              "clue-reveal"
+                                                          ]
+                                   }
+                               ]
+                 }
+             ],
+    "replayHooks":  [
+                        "Alternative culprit paths",
+                        "Variable clue timing in party mode",
+                        "Hostless AI narrator variance"
+                    ],
+    "sequelHooks":  [
+                        "Encrypted post-credit voicemail",
+                        "Cross-case antagonist breadcrumb"
+                    ],
+    "branchingMoments":  [
+                             "Trace vs interview opening",
+                             "Two reveal variants in act 2"
+                         ],
+    "clueEvidenceList":  [
+                             "Signal transcript",
+                             "Audio spectrogram",
+                             "Witness dossier",
+                             "Tampered photo"
+                         ],
+    "revealVariants":  [
+                           "Inside collaborator reveal",
+                           "External ritual network reveal"
+                       ],
+    "upsellHooks":  [
+                        "Premium epilogue file",
+                        "Linked sequel unlock for subscribers"
+                    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@myhorrorstory/admin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "next": "15.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ES2022"],
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@myhorrorstory/contracts": ["packages/contracts/src"],
+      "@myhorrorstory/story-engine": ["packages/story-engine/src"],
+      "@myhorrorstory/design-tokens": ["packages/design-tokens/src"],
+      "@myhorrorstory/auth": ["packages/auth/src"],
+      "@myhorrorstory/analytics": ["packages/analytics/src"],
+      "@myhorrorstory/crm": ["packages/crm/src"],
+      "@myhorrorstory/email": ["packages/email/src"],
+      "@myhorrorstory/payments": ["packages/payments/src"],
+      "@myhorrorstory/storage": ["packages/storage/src"],
+      "@myhorrorstory/voice": ["packages/voice/src"],
+      "@myhorrorstory/media-pipeline": ["packages/media-pipeline/src"],
+      "@myhorrorstory/api-client": ["packages/api-client/src"],
+      "@myhorrorstory/ui": ["packages/ui/src"]
+    }
+  }
+}

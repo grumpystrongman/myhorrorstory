@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans 3', sans-serif;
+  background: #101521;
+  color: #f4f0e6;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.nav {
+  border-right: 1px solid #2f374a;
+  padding: 20px;
+}
+
+.main {
+  padding: 24px;
+}
