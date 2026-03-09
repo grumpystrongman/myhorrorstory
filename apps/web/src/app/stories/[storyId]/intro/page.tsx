@@ -54,13 +54,21 @@ export default async function StoryIntroPage({ params }: StoryIntroPageProps): P
       </section>
 
       <section className="panel section-shell">
-        <span className="surface-tag">Evidence Preview</span>
+        <span className="surface-tag">Dossier Preview</span>
         <h2 className="section-title">Case Materials</h2>
-        <div className="evidence-thumb-grid">
-          <img src={story.portraitImagePath} alt={`${story.storyTitle} character portrait`} loading="lazy" />
-          <img src={story.evidenceImagePath} alt={`${story.storyTitle} evidence image`} loading="lazy" />
-          <img src={story.coverImagePath} alt={`${story.storyTitle} promo image`} loading="lazy" />
-          <img src={story.heroImagePath} alt={`${story.storyTitle} scene image`} loading="lazy" />
+        <div className="feature-column">
+          <article className="feature-card">
+            <h3>Character Voice Cast</h3>
+            <p>Distinct cadence per suspect with escalation-aware tone shifts during villain contact.</p>
+          </article>
+          <article className="feature-card">
+            <h3>Evidence Chain</h3>
+            <p>Cross-linked clues across messages, board reconstruction, and timed unlock events.</p>
+          </article>
+          <article className="feature-card">
+            <h3>Branching Endings</h3>
+            <p>Outcomes depend on trust, aggression, response timing, and clue integrity.</p>
+          </article>
         </div>
       </section>
     </main>

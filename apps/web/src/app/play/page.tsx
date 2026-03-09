@@ -118,10 +118,7 @@ export default function PlayPage(): JSX.Element {
   const storyMediaPaths = useMemo(
     () => ({
       hero: activeLaunchCase?.heroImagePath ?? `/visuals/stories/${storyId}.svg`,
-      cover: activeLaunchCase?.coverImagePath ?? `/visuals/stories/${storyId}.svg`,
-      evidence: [1, 2, 3, 4].map(
-        (index) => `/creative/stories/${storyId}/${storyId}-evidence_image-${index}.png`
-      )
+      cover: activeLaunchCase?.coverImagePath ?? `/visuals/stories/${storyId}.svg`
     }),
     [activeLaunchCase?.coverImagePath, activeLaunchCase?.heroImagePath, storyId]
   );
@@ -146,6 +143,27 @@ export default function PlayPage(): JSX.Element {
     }
     return dramaPack.endings.find((ending) => ending.id === sessionEndingId) ?? resolved;
   }, [dramaPack, sessionEndingId, sessionState]);
+  const evidenceNodes = useMemo(
+    () =>
+      (dramaPack?.investigationBoard.nodes ?? [])
+        .filter((node) => node.type.toLowerCase() === 'evidence')
+        .slice(0, 4),
+    [dramaPack]
+  );
+  const boardClusterItems = useMemo(() => {
+    if (evidenceNodes.length > 0) {
+      return evidenceNodes.map((node) => ({
+        id: node.id,
+        title: node.label,
+        detail: node.summary
+      }));
+    }
+    return (dramaPack?.investigationBoard.timeline ?? []).slice(0, 3).map((item) => ({
+      id: item.id,
+      title: item.timeLabel,
+      detail: item.summary
+    }));
+  }, [dramaPack, evidenceNodes]);
 
   function clearBeatTimers(): void {
     for (const timeout of messageTimeouts.current) {
@@ -491,9 +509,19 @@ export default function PlayPage(): JSX.Element {
           <div>
             <h3 style={{ marginTop: 0 }}>Evidence Pulls</h3>
             <div className="evidence-thumb-grid">
-              {storyMediaPaths.evidence.map((path) => (
-                <img key={path} src={path} alt="Evidence visual" loading="lazy" />
-              ))}
+              {evidenceNodes.length === 0 ? (
+                <article className="evidence-pull-card">
+                  <h4>No evidence unlocked yet</h4>
+                  <p>Progress the current beat to surface the first pull.</p>
+                </article>
+              ) : (
+                evidenceNodes.map((node) => (
+                  <article key={node.id} className="evidence-pull-card">
+                    <h4>{node.label}</h4>
+                    <p>{node.summary}</p>
+                  </article>
+                ))
+              )}
             </div>
           </div>
           <div>
@@ -577,8 +605,11 @@ export default function PlayPage(): JSX.Element {
                 transition: dragAnchor.current ? 'none' : 'transform 120ms linear'
               }}
             >
-              {storyMediaPaths.evidence.slice(0, 3).map((path) => (
-                <img key={path} src={path} alt="Board evidence tile" />
+              {boardClusterItems.map((item) => (
+                <article key={item.id} className="evidence-board-node">
+                  <strong>{item.title}</strong>
+                  <span>{item.detail}</span>
+                </article>
               ))}
             </div>
           </div>

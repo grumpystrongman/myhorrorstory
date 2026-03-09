@@ -13,14 +13,6 @@ export interface LaunchCase extends StoryScoreSummary {
   spotlight: string;
 }
 
-function buildStoryAssetPath(
-  storyId: string,
-  type: 'scene_art' | 'promo_image' | 'evidence_image' | 'character_portrait',
-  index: number
-): string {
-  return `/creative/stories/${storyId}/${storyId}-${type}-${index}.png`;
-}
-
 const metadataByStoryId: Record<
   string,
   {
@@ -113,17 +105,18 @@ const metadataByStoryId: Record<
 export function getLaunchCases(): LaunchCase[] {
   return listStoryScores().map((entry) => {
     const meta = metadataByStoryId[entry.storyId];
+    const visualPath = `/visuals/stories/${entry.storyId}.svg`;
     return {
       ...entry,
       subgenre: meta?.subgenre ?? 'Horror Mystery',
       toneLabel: meta?.toneLabel ?? 'Cinematic',
       hook: meta?.hook ?? `${getStoryTitle(entry.storyId)} is now available.`,
       warnings: meta?.warnings ?? ['Mature themes'],
-      visualPath: `/visuals/stories/${entry.storyId}.svg`,
-      coverImagePath: buildStoryAssetPath(entry.storyId, 'promo_image', 1),
-      heroImagePath: buildStoryAssetPath(entry.storyId, 'scene_art', 1),
-      evidenceImagePath: buildStoryAssetPath(entry.storyId, 'evidence_image', 1),
-      portraitImagePath: buildStoryAssetPath(entry.storyId, 'character_portrait', 1),
+      visualPath,
+      coverImagePath: visualPath,
+      heroImagePath: visualPath,
+      evidenceImagePath: visualPath,
+      portraitImagePath: visualPath,
       spotlight: meta?.spotlight ?? 'Branching clue outcomes and remote co-op pacing.'
     };
   });
