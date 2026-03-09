@@ -69,7 +69,7 @@ export function SoundtrackPlayer(): JSX.Element {
   const [dynamicTension, setDynamicTension] = useState<number | null>(null);
   const [directorTelemetry, setDirectorTelemetry] = useState<SoundDirectorTelemetry | null>(null);
   const activeSource = isPlayRoute && dynamicSrc ? dynamicSrc : track.src;
-  const displayTrackLabel = isPlayRoute && dynamicBandLabel ? `${track.title} · ${dynamicBandLabel}` : track.title;
+  const displayTrackLabel = isPlayRoute && dynamicBandLabel ? `${track.title} - ${dynamicBandLabel}` : track.title;
   const displayStatus =
     enabled && isPlayRoute && dynamicBandLabel
       ? `${isPlaying ? 'Playing' : 'Ready'} (${dynamicBandLabel})`
@@ -274,3 +274,4 @@ export function SoundtrackPlayer(): JSX.Element {
     </div>
   );
 }
+

@@ -85,6 +85,9 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `corepack pnpm messaging:setup -- --public-url https://your-api.example.com`
 - `corepack pnpm linear:bots:plan`
 - `corepack pnpm linear:bots:apply`
+- `corepack pnpm linear:bots:autorun`
+- `corepack pnpm linear:bots:autorun:once`
+- `corepack pnpm linear:bots:autorun:dry`
 - `corepack pnpm linear:bots:dispatch-package`
 - `corepack pnpm linear:oauth:connect`
 - `corepack pnpm linear:oauth:url`
@@ -147,6 +150,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - Remote testing runbook: `docs/operations/remote-testing-anywhere.md`
 - Messaging setup runbook: `docs/operations/messaging-setup.md`
 - Linear bot suite runbook: `docs/operations/linear-bot-suite.md`
+- Linear auto-run runbook: `docs/operations/linear-autorun.md`
 - Commercial benchmark research: `docs/design/commercial-benchmark-research.md`
 - Visual validation report: `docs/design/visual-validation-report.md`
 - Story branching compendium: `docs/stories/branching-compendium.md`

@@ -18,6 +18,7 @@ import {
   type DramaResponseOption,
   type SessionState
 } from '../lib/play-session';
+import { getLaunchCaseById } from '../lib/launch-catalog';
 import { useEffect, useMemo, useRef, useState, type PointerEvent, type WheelEvent } from 'react';
 
 const MIN_ZOOM = 50;
@@ -67,6 +68,7 @@ export default function PlayPage(): JSX.Element {
   const [storyId, setStoryId] = useState<string>('static-between-stations');
   const activeStoryTitle = getStoryTitle(storyId);
   const activeStoryTrack = getStoryTrack(storyId);
+  const activeLaunchCase = getLaunchCaseById(storyId);
   const [zoom, setZoom] = useState(100);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [playing, setPlaying] = useState(false);
@@ -113,13 +115,26 @@ export default function PlayPage(): JSX.Element {
     () => `translate(${pan.x}px, ${pan.y}px) scale(${zoom / 100})`,
     [pan.x, pan.y, zoom]
   );
-
+  const storyMediaPaths = useMemo(
+    () => ({
+      hero: activeLaunchCase?.heroImagePath ?? `/visuals/stories/${storyId}.svg`,
+      cover: activeLaunchCase?.coverImagePath ?? `/visuals/stories/${storyId}.svg`,
+      evidence: [1, 2, 3, 4].map(
+        (index) => `/creative/stories/${storyId}/${storyId}-evidence_image-${index}.png`
+      )
+    }),
+    [activeLaunchCase?.coverImagePath, activeLaunchCase?.heroImagePath, storyId]
+  );
   const currentBeat = useMemo(() => {
     if (!dramaPack || !sessionState) {
       return undefined;
     }
     return beatById(dramaPack, sessionState.currentBeatId);
   }, [dramaPack, sessionState]);
+  const beatBackgroundImage =
+    currentBeat?.backgroundVisual && !currentBeat.backgroundVisual.startsWith('/visuals/stories/')
+      ? currentBeat.backgroundVisual
+      : storyMediaPaths.hero;
 
   const resolvedEnding = useMemo(() => {
     if (!sessionState?.complete || !dramaPack) {
@@ -333,7 +348,7 @@ export default function PlayPage(): JSX.Element {
         <div
           className="play-session-hero-backdrop"
           style={{
-            backgroundImage: `url(${currentBeat?.backgroundVisual ?? `/visuals/stories/${storyId}.svg`})`
+            backgroundImage: `url(${beatBackgroundImage})`
           }}
         />
         <div className="play-session-hero-content">
@@ -451,6 +466,17 @@ export default function PlayPage(): JSX.Element {
           Suspects, locations, evidence links, and timeline reconstruction are surfaced below.
         </p>
         <div className="investigation-board-grid">
+          <div className="investigation-cover-card">
+            <img src={storyMediaPaths.cover} alt={`${dramaPack?.title ?? activeStoryTitle} cover`} />
+            <div>
+              <p className="kicker">Case File</p>
+              <h3 style={{ margin: '8px 0 4px' }}>{dramaPack?.title ?? activeStoryTitle}</h3>
+              <p className="muted" style={{ margin: 0 }}>
+                {dramaPack?.hook ??
+                  'Branching clues, suspect pressure, and villain escalation across channels.'}
+              </p>
+            </div>
+          </div>
           <div>
             <h3 style={{ marginTop: 0 }}>Nodes</h3>
             <ul className="plain-list">
@@ -461,6 +487,14 @@ export default function PlayPage(): JSX.Element {
                 </li>
               ))}
             </ul>
+          </div>
+          <div>
+            <h3 style={{ marginTop: 0 }}>Evidence Pulls</h3>
+            <div className="evidence-thumb-grid">
+              {storyMediaPaths.evidence.map((path) => (
+                <img key={path} src={path} alt="Evidence visual" loading="lazy" />
+              ))}
+            </div>
           </div>
           <div>
             <h3 style={{ marginTop: 0 }}>Timeline</h3>
@@ -536,20 +570,16 @@ export default function PlayPage(): JSX.Element {
           >
             <div
               data-testid="evidence-board-content"
+              className="evidence-board-live-cluster"
               style={{
-                width: 260,
-                height: 120,
-                borderRadius: 12,
-                border: '1px solid #bf8b30',
-                background: '#1f2937',
-                display: 'grid',
-                placeItems: 'center',
                 transform: boardTransform,
                 transformOrigin: 'center center',
                 transition: dragAnchor.current ? 'none' : 'transform 120ms linear'
               }}
             >
-              Evidence Cluster A
+              {storyMediaPaths.evidence.slice(0, 3).map((path) => (
+                <img key={path} src={path} alt="Board evidence tile" />
+              ))}
             </div>
           </div>
         </div>

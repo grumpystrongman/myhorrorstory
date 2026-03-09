@@ -21,7 +21,7 @@ export default async function StoryIntroPage({ params }: StoryIntroPageProps): P
   return (
     <main className="container page-stack">
       <section className="panel intro-hero">
-        <img src={story.visualPath} alt={`${story.storyTitle} story key art`} />
+        <img src={story.heroImagePath} alt={`${story.storyTitle} story key art`} />
         <div>
           <p className="kicker">Story Intro</p>
           <h1 className="section-title">{story.storyTitle}</h1>
@@ -50,6 +50,17 @@ export default async function StoryIntroPage({ params }: StoryIntroPageProps): P
           <p className="muted">Mood: {story.track.mood}</p>
           <p className="muted">BPM: {story.track.bpm}</p>
           <p className="muted">Global Theme: {globalTrack?.title ?? 'MHS Platform Overture'}</p>
+        </div>
+      </section>
+
+      <section className="panel section-shell">
+        <span className="surface-tag">Evidence Preview</span>
+        <h2 className="section-title">Case Materials</h2>
+        <div className="evidence-thumb-grid">
+          <img src={story.portraitImagePath} alt={`${story.storyTitle} character portrait`} loading="lazy" />
+          <img src={story.evidenceImagePath} alt={`${story.storyTitle} evidence image`} loading="lazy" />
+          <img src={story.coverImagePath} alt={`${story.storyTitle} promo image`} loading="lazy" />
+          <img src={story.heroImagePath} alt={`${story.storyTitle} scene image`} loading="lazy" />
         </div>
       </section>
     </main>

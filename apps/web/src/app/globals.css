@@ -698,6 +698,126 @@ label {
   gap: 12px;
 }
 
+.investigation-cover-card {
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgb(8 12 20 / 56%);
+}
+
+.investigation-cover-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.investigation-cover-card > div {
+  padding: 10px;
+}
+
+.evidence-thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.evidence-thumb-grid img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--line-soft);
+}
+
+.evidence-board-live-cluster {
+  width: min(430px, 90%);
+  min-height: 150px;
+  border-radius: 12px;
+  border: 1px solid #bf8b30;
+  background: linear-gradient(145deg, rgb(22 30 48 / 95%), rgb(14 18 28 / 95%));
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+}
+
+.evidence-board-live-cluster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgb(191 139 48 / 45%);
+}
+
+.library-preview-shell {
+  display: grid;
+  gap: 14px;
+}
+
+.library-preview-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.library-preview-controls {
+  min-width: min(320px, 100%);
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.library-preview-controls .cta-primary {
+  min-height: 38px;
+}
+
+.library-preview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 12px;
+}
+
+.library-preview-story,
+.library-preview-feed,
+.library-preview-alert,
+.library-preview-choices {
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: rgb(8 12 20 / 58%);
+  padding: 10px;
+}
+
+.library-preview-story img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.library-preview-story h3,
+.library-preview-feed h3,
+.library-preview-alert h3,
+.library-preview-choices h3 {
+  margin: 0 0 8px;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 1.05rem;
+}
+
+.library-preview-feed-list {
+  display: grid;
+  gap: 8px;
+  max-height: 330px;
+  overflow: auto;
+}
+
+.library-preview-bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+}
+
 .plain-list {
   list-style: none;
   margin: 0;
@@ -736,7 +856,9 @@ label {
   .library-grid,
   .pricing-grid,
   .play-grid,
-  .investigation-board-grid {
+  .investigation-board-grid,
+  .library-preview-grid,
+  .library-preview-bottom {
     grid-template-columns: 1fr;
   }
 

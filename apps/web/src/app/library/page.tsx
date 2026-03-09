@@ -1,4 +1,5 @@
-﻿import { LeadCaptureForm } from '../components/lead-capture-form';
+import { LeadCaptureForm } from '../components/lead-capture-form';
+import { LibraryLivePreview } from '../components/library-live-preview';
 import { getLaunchCases } from '../lib/launch-catalog';
 
 const stories = getLaunchCases();
@@ -18,7 +19,7 @@ export default function LibraryPage(): JSX.Element {
       <section className="library-grid">
         {stories.map((story) => (
           <article key={story.storyId} className="library-card">
-            <img src={story.visualPath} alt={`${story.storyTitle} card art`} loading="lazy" />
+            <img src={story.coverImagePath} alt={`${story.storyTitle} card art`} loading="lazy" />
             <div>
               <p className="story-subgenre">
                 {story.subgenre}
@@ -34,6 +35,7 @@ export default function LibraryPage(): JSX.Element {
               </p>
               <p className="muted">Score: {story.track.title}</p>
               <p className="warning-line">Warnings: {story.warnings.join(', ')}</p>
+              <p className="muted">{story.spotlight}</p>
               <div className="inline-links">
                 <a href={story.introPath}>Open Intro</a>
                 <a href={story.playPath}>Start Play Session</a>
@@ -42,6 +44,15 @@ export default function LibraryPage(): JSX.Element {
           </article>
         ))}
       </section>
+
+      <LibraryLivePreview
+        stories={stories.map((story) => ({
+          storyId: story.storyId,
+          storyTitle: story.storyTitle,
+          coverImagePath: story.coverImagePath,
+          playPath: story.playPath
+        }))}
+      />
 
       <section className="panel section-shell dual-grid">
         <div>
@@ -57,4 +68,3 @@ export default function LibraryPage(): JSX.Element {
     </main>
   );
 }
-

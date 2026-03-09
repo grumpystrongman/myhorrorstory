@@ -34,6 +34,8 @@ Last synced: 2026-03-09
 ## Automation Entrypoints
 - Dry-run planner: `corepack pnpm linear:bots:plan`
 - Apply planner: `corepack pnpm linear:bots:apply`
+- Auto-run daemon for `assignee = me`: `corepack pnpm linear:bots:autorun`
+- Auto-run one cycle: `corepack pnpm linear:bots:autorun:once`
 - Dispatch production package backlog: `corepack pnpm linear:bots:dispatch-package`
 - OAuth connect page: `corepack pnpm linear:oauth:connect`
 

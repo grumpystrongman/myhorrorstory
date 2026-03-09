@@ -6,7 +6,19 @@ export interface LaunchCase extends StoryScoreSummary {
   hook: string;
   warnings: string[];
   visualPath: string;
+  coverImagePath: string;
+  heroImagePath: string;
+  evidenceImagePath: string;
+  portraitImagePath: string;
   spotlight: string;
+}
+
+function buildStoryAssetPath(
+  storyId: string,
+  type: 'scene_art' | 'promo_image' | 'evidence_image' | 'character_portrait',
+  index: number
+): string {
+  return `/creative/stories/${storyId}/${storyId}-${type}-${index}.png`;
 }
 
 const metadataByStoryId: Record<
@@ -108,6 +120,10 @@ export function getLaunchCases(): LaunchCase[] {
       hook: meta?.hook ?? `${getStoryTitle(entry.storyId)} is now available.`,
       warnings: meta?.warnings ?? ['Mature themes'],
       visualPath: `/visuals/stories/${entry.storyId}.svg`,
+      coverImagePath: buildStoryAssetPath(entry.storyId, 'promo_image', 1),
+      heroImagePath: buildStoryAssetPath(entry.storyId, 'scene_art', 1),
+      evidenceImagePath: buildStoryAssetPath(entry.storyId, 'evidence_image', 1),
+      portraitImagePath: buildStoryAssetPath(entry.storyId, 'character_portrait', 1),
       spotlight: meta?.spotlight ?? 'Branching clue outcomes and remote co-op pacing.'
     };
   });

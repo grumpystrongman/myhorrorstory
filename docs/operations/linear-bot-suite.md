@@ -16,6 +16,13 @@ The suite handles:
 - Apply mode (create missing issues in Linear):
   - `corepack pnpm linear:bots:apply`
   - Also enforces bot-owner labels across all open team issues using planner routing.
+- Continuous auto-kickoff for assigned issues:
+  - `corepack pnpm linear:bots:autorun`
+  - Polls `assignee = me`, executes mapped bot pipelines, comments result, updates local state/report.
+- Single auto-kickoff cycle:
+  - `corepack pnpm linear:bots:autorun:once`
+- Auto-kickoff dry-run:
+  - `corepack pnpm linear:bots:autorun:dry`
 - Dispatch a concrete production package backlog across bots:
   - `corepack pnpm linear:bots:dispatch-package`
   - Uses `docs/operations/linear-production-package-backlog.json` as the source of truth.
@@ -72,10 +79,13 @@ Optional but recommended:
 ## Outputs
 - `docs/operations/linear-bot-suite-plan.json`
 - `docs/operations/linear-bot-suite-report.md`
+- `docs/operations/linear-autorun-state.json`
+- `docs/operations/linear-autorun-report.md`
 - `docs/operations/linear-production-package-backlog.json`
 - `docs/operations/linear-production-package-report.json`
 - `docs/operations/linear-production-package-report.md`
 - `assets/manifests/commercial-creative-plan.json`
+- `logs/linear-autorun/*.log`
 
 ## Quality Gates
 - Brand compliance

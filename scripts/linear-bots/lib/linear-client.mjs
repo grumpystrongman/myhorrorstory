@@ -84,7 +84,40 @@ export class LinearClient {
     return data.teams?.nodes?.[0] ?? null;
   }
 
-  async listIssues({ teamId, first = 200, includeCompleted = false }) {
+  async listIssues({
+    teamId,
+    first = 200,
+    includeCompleted = false,
+    includeCanceled = true,
+    assigneeId = null,
+    stateTypes = null
+  }) {
+    const filter = {
+      team: {
+        id: {
+          eq: teamId
+        }
+      },
+      ...(assigneeId
+        ? {
+            assignee: {
+              id: {
+                eq: assigneeId
+              }
+            }
+          }
+        : {}),
+      ...(includeCompleted
+        ? {}
+        : {
+            state: {
+              type: {
+                neq: 'completed'
+              }
+            }
+          })
+    };
+
     const data = await this.request(
       `
       query Issues($first: Int!, $filter: IssueFilter) {
@@ -95,6 +128,9 @@ export class LinearClient {
             title
             description
             url
+            priority
+            createdAt
+            updatedAt
             labels {
               nodes {
                 id
@@ -117,37 +153,37 @@ export class LinearClient {
       `,
       {
         first,
-        filter: {
-          team: {
-            id: {
-              eq: teamId
-            }
-          },
-          ...(includeCompleted
-            ? {}
-            : {
-                state: {
-                  type: {
-                    neq: 'completed'
-                  }
-                }
-              })
-        }
+        filter
       }
     );
 
-    return data.issues.nodes.map((issue) => ({
+    const issues = data.issues.nodes.map((issue) => ({
       id: issue.id,
       identifier: issue.identifier,
       title: issue.title,
       description: issue.description ?? '',
       url: issue.url,
+      priority: issue.priority ?? 0,
+      createdAt: issue.createdAt,
+      updatedAt: issue.updatedAt,
       labelIds: issue.labels.nodes.map((label) => label.id),
       labels: issue.labels.nodes.map((label) => label.name),
+      stateId: issue.state?.id ?? null,
       stateName: issue.state?.name ?? 'Unknown',
       stateType: issue.state?.type ?? 'unknown',
+      assigneeId: issue.assignee?.id ?? null,
       assigneeEmail: issue.assignee?.email ?? null
     }));
+
+    return issues.filter((issue) => {
+      if (!includeCanceled && issue.stateType === 'canceled') {
+        return false;
+      }
+      if (Array.isArray(stateTypes) && stateTypes.length > 0 && !stateTypes.includes(issue.stateType)) {
+        return false;
+      }
+      return true;
+    });
   }
 
   async updateIssueLabels(issueId, labelIds) {
@@ -232,5 +268,60 @@ export class LinearClient {
     );
 
     return data.commentCreate.success === true;
+  }
+
+  async listWorkflowStates(teamId) {
+    const data = await this.request(
+      `
+      query WorkflowStates($teamId: ID!) {
+        workflowStates(first: 250, filter: { team: { id: { eq: $teamId } } }) {
+          nodes {
+            id
+            name
+            type
+          }
+        }
+      }
+      `,
+      { teamId }
+    );
+
+    return data.workflowStates.nodes.map((state) => ({
+      id: state.id,
+      name: state.name,
+      type: state.type
+    }));
+  }
+
+  async updateIssue(issueId, input) {
+    const data = await this.request(
+      `
+      mutation IssueUpdate($id: String!, $input: IssueUpdateInput!) {
+        issueUpdate(id: $id, input: $input) {
+          success
+          issue {
+            id
+            identifier
+          }
+        }
+      }
+      `,
+      {
+        id: issueId,
+        input
+      }
+    );
+
+    if (!data.issueUpdate.success) {
+      throw new Error(`Failed to update issue: ${issueId}`);
+    }
+
+    return data.issueUpdate.issue;
+  }
+
+  async updateIssueState(issueId, stateId) {
+    return this.updateIssue(issueId, {
+      stateId
+    });
   }
 }

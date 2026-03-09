@@ -50,7 +50,7 @@ export default function HomePage(): JSX.Element {
         <div className="featured-grid">
           {featuredCases.map((story) => (
             <article key={story.storyId} className="featured-card">
-              <img src={story.visualPath} alt={`${story.storyTitle} key art`} loading="lazy" />
+              <img src={story.coverImagePath} alt={`${story.storyTitle} key art`} loading="lazy" />
               <div className="featured-copy">
                 <p className="story-subgenre">
                   {story.subgenre}
