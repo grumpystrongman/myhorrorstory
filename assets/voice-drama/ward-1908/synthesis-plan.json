@@ -1,0 +1,637 @@
+{
+  "storyId": "ward-1908",
+  "title": "Ward 1908",
+  "generatedAt": "2026-03-09T15:07:34.428Z",
+  "clips": [
+    {
+      "clipId": "voice.ward-1908.hospital-archivist-nella-ward.clip-1",
+      "profileId": "voice.ward-1908.hospital-archivist-nella-ward",
+      "beatId": "beat-1",
+      "beatTitle": "Night Update",
+      "channel": "SMS",
+      "text": "A patient record edited at 1:08 arrives by email with your profile in attending notes. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/ward-1908/hospital-archivist-nella-ward-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-hospital-archivist-nella-ward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-hospital-archivist-nella-ward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.hospital-archivist-nella-ward.clip-2",
+      "profileId": "voice.ward-1908.hospital-archivist-nella-ward",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Treatment wing floorplan.",
+      "targetPath": "assets/audio/voices/ward-1908/hospital-archivist-nella-ward-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-hospital-archivist-nella-ward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-hospital-archivist-nella-ward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.hospital-archivist-nella-ward.clip-3",
+      "profileId": "voice.ward-1908.hospital-archivist-nella-ward",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/ward-1908/hospital-archivist-nella-ward-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-hospital-archivist-nella-ward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-hospital-archivist-nella-ward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.former-nurse-evan-mire.clip-1",
+      "profileId": "voice.ward-1908.former-nurse-evan-mire",
+      "beatId": "beat-1",
+      "beatTitle": "Night Update",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Intake ledger photo.",
+      "targetPath": "assets/audio/voices/ward-1908/former-nurse-evan-mire-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-former-nurse-evan-mire",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-former-nurse-evan-mire",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.former-nurse-evan-mire.clip-2",
+      "profileId": "voice.ward-1908.former-nurse-evan-mire",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/ward-1908/former-nurse-evan-mire-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-former-nurse-evan-mire",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-former-nurse-evan-mire",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.former-nurse-evan-mire.clip-3",
+      "profileId": "voice.ward-1908.former-nurse-evan-mire",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Intake ledger photo.",
+      "targetPath": "assets/audio/voices/ward-1908/former-nurse-evan-mire-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-former-nurse-evan-mire",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-former-nurse-evan-mire",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.former-nurse-evan-mire.clip-4",
+      "profileId": "voice.ward-1908.former-nurse-evan-mire",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/ward-1908/former-nurse-evan-mire-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-former-nurse-evan-mire",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-former-nurse-evan-mire",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.the-record-keeper.clip-1",
+      "profileId": "voice.ward-1908.the-record-keeper",
+      "beatId": "beat-1",
+      "beatTitle": "Night Update",
+      "channel": "SMS",
+      "text": "You read their names and still asked for proof. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/ward-1908/the-record-keeper-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-record-keeper",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-record-keeper",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.the-record-keeper.clip-2",
+      "profileId": "voice.ward-1908.the-record-keeper",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "You read their names and still asked for proof. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/ward-1908/the-record-keeper-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-record-keeper",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-record-keeper",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.the-record-keeper.clip-3",
+      "profileId": "voice.ward-1908.the-record-keeper",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "The contractor lies because he signed the wall shut. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/ward-1908/the-record-keeper-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-record-keeper",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-record-keeper",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.the-record-keeper.clip-4",
+      "profileId": "voice.ward-1908.the-record-keeper",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "Erase one more file and your ally never leaves ward level. (Active Interference)",
+      "targetPath": "assets/audio/voices/ward-1908/the-record-keeper-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-record-keeper",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-record-keeper",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.the-record-keeper.clip-5",
+      "profileId": "voice.ward-1908.the-record-keeper",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/ward-1908/the-record-keeper-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-record-keeper",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-record-keeper",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.the-record-keeper.clip-6",
+      "profileId": "voice.ward-1908.the-record-keeper",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/ward-1908/the-record-keeper-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-record-keeper",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-record-keeper",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.renovation-contractor-jo-pike.clip-1",
+      "profileId": "voice.ward-1908.renovation-contractor-jo-pike",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Orderly shift recording.",
+      "targetPath": "assets/audio/voices/ward-1908/renovation-contractor-jo-pike-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-renovation-contractor-jo-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-renovation-contractor-jo-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.renovation-contractor-jo-pike.clip-2",
+      "profileId": "voice.ward-1908.renovation-contractor-jo-pike",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/ward-1908/renovation-contractor-jo-pike-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-renovation-contractor-jo-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-renovation-contractor-jo-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.renovation-contractor-jo-pike.clip-3",
+      "profileId": "voice.ward-1908.renovation-contractor-jo-pike",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Orderly shift recording.",
+      "targetPath": "assets/audio/voices/ward-1908/renovation-contractor-jo-pike-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-renovation-contractor-jo-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-renovation-contractor-jo-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.records-officer-hale-sorn.clip-1",
+      "profileId": "voice.ward-1908.records-officer-hale-sorn",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Basement access override.",
+      "targetPath": "assets/audio/voices/ward-1908/records-officer-hale-sorn-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-records-officer-hale-sorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-records-officer-hale-sorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.ward-1908.records-officer-hale-sorn.clip-2",
+      "profileId": "voice.ward-1908.records-officer-hale-sorn",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/ward-1908/records-officer-hale-sorn-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-records-officer-hale-sorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-records-officer-hale-sorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

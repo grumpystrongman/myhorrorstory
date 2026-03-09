@@ -1,0 +1,637 @@
+{
+  "storyId": "crown-of-salt",
+  "title": "Crown of Salt",
+  "generatedAt": "2026-03-09T15:07:34.372Z",
+  "clips": [
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-1",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "beat-1",
+      "beatTitle": "Manifest Drift",
+      "channel": "SMS",
+      "text": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-2",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Customs API anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-3",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-1",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "beat-1",
+      "beatTitle": "Manifest Drift",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Brine-sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-smuggler-rafe-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-smuggler-rafe-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-2",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-smuggler-rafe-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-smuggler-rafe-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-3",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Brine-sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-smuggler-rafe-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-smuggler-rafe-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-4",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-smuggler-rafe-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-smuggler-rafe-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-1",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "beat-1",
+      "beatTitle": "Manifest Drift",
+      "channel": "SMS",
+      "text": "You traced the crate, not the oath that moved it. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-2",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "You traced the crate, not the oath that moved it. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-3",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "He smiles because you made his bargain for him. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-4",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "Choose: the nun lives, or the port burns clean. (Active Interference)",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-5",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-6",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-1",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Dockside CCTV still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-2",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-3",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Dockside CCTV still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-1",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-2",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

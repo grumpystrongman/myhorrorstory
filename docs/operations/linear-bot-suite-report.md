@@ -1,17 +1,36 @@
 # Linear Bot Suite Report
 
-Generated: 2026-03-09T14:17:51.326Z
+Generated: 2026-03-09T15:10:07.219Z
 Mode: apply
 
 ## Coverage by Bot
 - AI-Media-Pipeline-Agent: 14 issue(s)
+- AI-Story-Engine-Agent: 12 issue(s)
 - AI-QA-Test-Agent: 2 issue(s)
+- AI-Voice-Audio-Agent: 1 issue(s)
+- AI-Backend-Agent: 1 issue(s)
+- AI-Web-App-Agent: 1 issue(s)
 - AI-Security-Compliance-Agent: 1 issue(s)
 - AI-Growth-CRM-Agent: 1 issue(s)
 - AI-UX-UI-Agent: 1 issue(s)
 - AI-Executive-Orchestrator: 1 issue(s)
 
 ## Planned Creative Work Queue
+- JEF-35: Final Drama Package: ward-1908 -> AI-Story-Engine-Agent
+- JEF-34: Final Drama Package: the-harvest-men -> AI-Story-Engine-Agent
+- JEF-33: Final Drama Package: the-fourth-tenant -> AI-Story-Engine-Agent
+- JEF-32: Final Drama Package: tape-17-pinewatch -> AI-Story-Engine-Agent
+- JEF-31: Final Drama Package: static-between-stations -> AI-Story-Engine-Agent
+- JEF-30: Final Drama Package: signal-from-kharon-9 -> AI-Story-Engine-Agent
+- JEF-29: Final Drama Package: red-creek-winter -> AI-Story-Engine-Agent
+- JEF-28: Final Drama Package: midnight-lockbox -> AI-Story-Engine-Agent
+- JEF-27: Final Drama Package: dead-channel-protocol -> AI-Story-Engine-Agent
+- JEF-26: Final Drama Package: crown-of-salt -> AI-Story-Engine-Agent
+- JEF-25: Final Drama Package: black-chapel-ledger -> AI-Story-Engine-Agent
+- JEF-24: Story Arc Finalization and Branch Packaging QA -> AI-Story-Engine-Agent
+- JEF-23: Voice Drama Performance and Casting Production -> AI-Voice-Audio-Agent
+- JEF-22: In-App Channel Simulation and Notification Abstraction -> AI-Backend-Agent
+- JEF-21: Immersive Gameplay UX Delivery Pack -> AI-Web-App-Agent
 - JEF-20: Story Asset Suite: ward-1908 -> AI-Media-Pipeline-Agent
 - JEF-19: Story Asset Suite: the-harvest-men -> AI-Media-Pipeline-Agent
 - JEF-18: Story Asset Suite: the-fourth-tenant -> AI-Media-Pipeline-Agent

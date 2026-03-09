@@ -1,0 +1,637 @@
+{
+  "storyId": "the-harvest-men",
+  "title": "The Harvest Men",
+  "generatedAt": "2026-03-09T15:07:34.422Z",
+  "clips": [
+    {
+      "clipId": "voice.the-harvest-men.visiting-agronomist-dina-crowe.clip-1",
+      "profileId": "voice.the-harvest-men.visiting-agronomist-dina-crowe",
+      "beatId": "beat-1",
+      "beatTitle": "Dusk Selection",
+      "channel": "SMS",
+      "text": "Players receive synchronized SMS photos of the same ritual mask in three different houses. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/the-harvest-men/visiting-agronomist-dina-crowe-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-visiting-agronomist-dina-crowe",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-visiting-agronomist-dina-crowe",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.visiting-agronomist-dina-crowe.clip-2",
+      "profileId": "voice.the-harvest-men.visiting-agronomist-dina-crowe",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Mask stitch microscopy.",
+      "targetPath": "assets/audio/voices/the-harvest-men/visiting-agronomist-dina-crowe-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-visiting-agronomist-dina-crowe",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-visiting-agronomist-dina-crowe",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.visiting-agronomist-dina-crowe.clip-3",
+      "profileId": "voice.the-harvest-men.visiting-agronomist-dina-crowe",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/the-harvest-men/visiting-agronomist-dina-crowe-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-visiting-agronomist-dina-crowe",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-visiting-agronomist-dina-crowe",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.village-elder-rowan-pike.clip-1",
+      "profileId": "voice.the-harvest-men.village-elder-rowan-pike",
+      "beatId": "beat-1",
+      "beatTitle": "Dusk Selection",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Blood-soil composition panel.",
+      "targetPath": "assets/audio/voices/the-harvest-men/village-elder-rowan-pike-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-village-elder-rowan-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-village-elder-rowan-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.village-elder-rowan-pike.clip-2",
+      "profileId": "voice.the-harvest-men.village-elder-rowan-pike",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/the-harvest-men/village-elder-rowan-pike-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-village-elder-rowan-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-village-elder-rowan-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.village-elder-rowan-pike.clip-3",
+      "profileId": "voice.the-harvest-men.village-elder-rowan-pike",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Blood-soil composition panel.",
+      "targetPath": "assets/audio/voices/the-harvest-men/village-elder-rowan-pike-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-village-elder-rowan-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-village-elder-rowan-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.village-elder-rowan-pike.clip-4",
+      "profileId": "voice.the-harvest-men.village-elder-rowan-pike",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/the-harvest-men/village-elder-rowan-pike-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-village-elder-rowan-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-village-elder-rowan-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.the-reaper-steward.clip-1",
+      "profileId": "voice.the-harvest-men.the-reaper-steward",
+      "beatId": "beat-1",
+      "beatTitle": "Dusk Selection",
+      "channel": "SMS",
+      "text": "The valley watched you before you arrived. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/the-harvest-men/the-reaper-steward-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-reaper-steward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-reaper-steward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.the-reaper-steward.clip-2",
+      "profileId": "voice.the-harvest-men.the-reaper-steward",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "The valley watched you before you arrived. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/the-harvest-men/the-reaper-steward-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-reaper-steward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-reaper-steward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.the-reaper-steward.clip-3",
+      "profileId": "voice.the-harvest-men.the-reaper-steward",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "You keep calling this rescue. They call it theft. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/the-harvest-men/the-reaper-steward-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-reaper-steward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-reaper-steward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.the-reaper-steward.clip-4",
+      "profileId": "voice.the-harvest-men.the-reaper-steward",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "Miss the dusk bell and the boy is chosen next. (Active Interference)",
+      "targetPath": "assets/audio/voices/the-harvest-men/the-reaper-steward-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-reaper-steward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-reaper-steward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.the-reaper-steward.clip-5",
+      "profileId": "voice.the-harvest-men.the-reaper-steward",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/the-harvest-men/the-reaper-steward-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-reaper-steward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-reaper-steward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.the-reaper-steward.clip-6",
+      "profileId": "voice.the-harvest-men.the-reaper-steward",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/the-harvest-men/the-reaper-steward-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-reaper-steward",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-reaper-steward",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.runaway-teen-lio-strand.clip-1",
+      "profileId": "voice.the-harvest-men.runaway-teen-lio-strand",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Festival lantern route map.",
+      "targetPath": "assets/audio/voices/the-harvest-men/runaway-teen-lio-strand-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-runaway-teen-lio-strand",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-runaway-teen-lio-strand",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.runaway-teen-lio-strand.clip-2",
+      "profileId": "voice.the-harvest-men.runaway-teen-lio-strand",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/the-harvest-men/runaway-teen-lio-strand-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-runaway-teen-lio-strand",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-runaway-teen-lio-strand",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.runaway-teen-lio-strand.clip-3",
+      "profileId": "voice.the-harvest-men.runaway-teen-lio-strand",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Festival lantern route map.",
+      "targetPath": "assets/audio/voices/the-harvest-men/runaway-teen-lio-strand-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-runaway-teen-lio-strand",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-runaway-teen-lio-strand",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.festival-marshal-jarek-holt.clip-1",
+      "profileId": "voice.the-harvest-men.festival-marshal-jarek-holt",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Runaway voice memo.",
+      "targetPath": "assets/audio/voices/the-harvest-men/festival-marshal-jarek-holt-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-festival-marshal-jarek-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-festival-marshal-jarek-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.the-harvest-men.festival-marshal-jarek-holt.clip-2",
+      "profileId": "voice.the-harvest-men.festival-marshal-jarek-holt",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/the-harvest-men/festival-marshal-jarek-holt-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-festival-marshal-jarek-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-festival-marshal-jarek-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

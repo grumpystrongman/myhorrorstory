@@ -1,6 +1,6 @@
 {
   "mode": "apply",
-  "generatedAt": "2026-03-09T14:17:51.324Z",
+  "generatedAt": "2026-03-09T15:10:07.216Z",
   "team": {
     "id": "5fd8f76d-d8b3-4935-b27d-ca694194f160",
     "key": "JEF",
@@ -62,10 +62,221 @@
       ]
     }
   ],
-  "createdIssues": [],
+  "createdIssues": [
+    {
+      "identifier": "JEF-21",
+      "title": "Immersive Gameplay UX Delivery Pack",
+      "botId": "AI-Web-App-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-22",
+      "title": "In-App Channel Simulation and Notification Abstraction",
+      "botId": "AI-Backend-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-23",
+      "title": "Voice Drama Performance and Casting Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-24",
+      "title": "Story Arc Finalization and Branch Packaging QA",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-25",
+      "title": "Final Drama Package: black-chapel-ledger",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-26",
+      "title": "Final Drama Package: crown-of-salt",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-27",
+      "title": "Final Drama Package: dead-channel-protocol",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-28",
+      "title": "Final Drama Package: midnight-lockbox",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-29",
+      "title": "Final Drama Package: red-creek-winter",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-30",
+      "title": "Final Drama Package: signal-from-kharon-9",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-31",
+      "title": "Final Drama Package: static-between-stations",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-32",
+      "title": "Final Drama Package: tape-17-pinewatch",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-33",
+      "title": "Final Drama Package: the-fourth-tenant",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-34",
+      "title": "Final Drama Package: the-harvest-men",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    },
+    {
+      "identifier": "JEF-35",
+      "title": "Final Drama Package: ward-1908",
+      "botId": "AI-Story-Engine-Agent",
+      "created": true
+    }
+  ],
   "reassignedIssues": 0,
-  "issueCount": 20,
+  "issueCount": 35,
   "plan": [
+    {
+      "issueIdentifier": "JEF-35",
+      "issueTitle": "Final Drama Package: ward-1908",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-34",
+      "issueTitle": "Final Drama Package: the-harvest-men",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-33",
+      "issueTitle": "Final Drama Package: the-fourth-tenant",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-32",
+      "issueTitle": "Final Drama Package: tape-17-pinewatch",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-31",
+      "issueTitle": "Final Drama Package: static-between-stations",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-30",
+      "issueTitle": "Final Drama Package: signal-from-kharon-9",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-29",
+      "issueTitle": "Final Drama Package: red-creek-winter",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-28",
+      "issueTitle": "Final Drama Package: midnight-lockbox",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-27",
+      "issueTitle": "Final Drama Package: dead-channel-protocol",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-26",
+      "issueTitle": "Final Drama Package: crown-of-salt",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-25",
+      "issueTitle": "Final Drama Package: black-chapel-ledger",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-24",
+      "issueTitle": "Story Arc Finalization and Branch Packaging QA",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-23",
+      "issueTitle": "Voice Drama Performance and Casting Production",
+      "proposedBotId": "AI-Voice-Audio-Agent",
+      "proposedLinearLabel": "AI-Voice-Audio-Agent",
+      "rationale": "Matched to AI-Voice-Audio-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Voice casting, score direction, and adaptive audio experience."
+    },
+    {
+      "issueIdentifier": "JEF-22",
+      "issueTitle": "In-App Channel Simulation and Notification Abstraction",
+      "proposedBotId": "AI-Backend-Agent",
+      "proposedLinearLabel": "AI-Backend-Agent",
+      "rationale": "Matched to AI-Backend-Agent through labels/keyword heuristics.",
+      "ownershipScope": "APIs, orchestration, data contracts, and backend reliability."
+    },
+    {
+      "issueIdentifier": "JEF-21",
+      "issueTitle": "Immersive Gameplay UX Delivery Pack",
+      "proposedBotId": "AI-Web-App-Agent",
+      "proposedLinearLabel": "AI-Web-App-Agent",
+      "rationale": "Matched to AI-Web-App-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Marketing and gameplay web implementation."
+    },
     {
       "issueIdentifier": "JEF-20",
       "issueTitle": "Story Asset Suite: ward-1908",
@@ -233,8 +444,24 @@
       "issueCount": 14
     },
     {
+      "botId": "AI-Story-Engine-Agent",
+      "issueCount": 12
+    },
+    {
       "botId": "AI-QA-Test-Agent",
       "issueCount": 2
+    },
+    {
+      "botId": "AI-Voice-Audio-Agent",
+      "issueCount": 1
+    },
+    {
+      "botId": "AI-Backend-Agent",
+      "issueCount": 1
+    },
+    {
+      "botId": "AI-Web-App-Agent",
+      "issueCount": 1
     },
     {
       "botId": "AI-Security-Compliance-Agent",

@@ -1,0 +1,637 @@
+{
+  "storyId": "tape-17-pinewatch",
+  "title": "Tape 17: Pinewatch",
+  "generatedAt": "2026-03-09T15:07:34.410Z",
+  "clips": [
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-1",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "beat-1",
+      "beatTitle": "Tape Reset",
+      "channel": "SMS",
+      "text": "The same footage frame arrives through Telegram with different timestamps for each player. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-2",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-3",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-1",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "beat-1",
+      "beatTitle": "Tape Reset",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-2",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-3",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-4",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-1",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "beat-1",
+      "beatTitle": "Tape Reset",
+      "channel": "SMS",
+      "text": "You watched the wrong frame twice. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-2",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "You watched the wrong frame twice. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-3",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "You keep chasing ghosts because people are harder to blame. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-4",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "If you scrub the footage again, he dies in real time. (Active Interference)",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-5",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-6",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-1",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-2",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-3",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-1",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-2",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

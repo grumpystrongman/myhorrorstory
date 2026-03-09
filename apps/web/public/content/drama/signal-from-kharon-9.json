@@ -1,0 +1,646 @@
+{
+  "id": "signal-from-kharon-9",
+  "title": "Signal From Kharon-9",
+  "version": "v2",
+  "hook": "Telemetry returns from a decommissioned orbital array and predicts player replies.",
+  "tone": "INTENSE",
+  "subgenre": "cosmic horror",
+  "location": "Mountain observatory and subterranean receiver array",
+  "warnings": [
+    "existential dread",
+    "disorientation",
+    "threat"
+  ],
+  "channels": [
+    "SMS",
+    "WHATSAPP",
+    "TELEGRAM",
+    "EMAIL",
+    "VOICE_MESSAGE",
+    "DOCUMENT_DROP",
+    "SIMULATED_SITE"
+  ],
+  "villain": {
+    "id": "signal-from-kharon-9-villain",
+    "displayName": "The Quiet Orbit",
+    "archetype": "CALM_GENIUS_MANIPULATOR",
+    "worldview": "Human choices are measurable noise in a larger equation.",
+    "motive": "Prove that free will collapses under predictive pressure."
+  },
+  "arcs": [
+    {
+      "id": "signal-from-kharon-9-arc-contact",
+      "title": "Contact and Contradiction",
+      "stage": "OPENING",
+      "summary": "The case opens with impossible evidence and uncertain allies.",
+      "primaryRuleIds": [
+        "signal-from-kharon-9-rule-first-contact",
+        "signal-from-kharon-9-rule-delay-punish"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-arc-disruption",
+      "title": "Interference and Doubt",
+      "stage": "MIDDLE",
+      "summary": "Villain contact escalates while ally trust becomes volatile.",
+      "primaryRuleIds": [
+        "signal-from-kharon-9-rule-incorrect-accusation",
+        "signal-from-kharon-9-rule-ally-cooperation"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-arc-endgame",
+      "title": "Confrontation and Reckoning",
+      "stage": "ENDGAME",
+      "summary": "The final branch depends on ethics, timing, and trust.",
+      "primaryRuleIds": [
+        "signal-from-kharon-9-rule-near-success",
+        "signal-from-kharon-9-rule-moral-fork"
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "beat-1",
+      "actId": "act-1",
+      "actTitle": "Contact",
+      "title": "Dormant Array Wake",
+      "narrative": "A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message.",
+      "stage": 1,
+      "unlockAfterSeconds": 0,
+      "revealClueIds": [
+        "signal-from-kharon-9-clue-origin"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-1.msg.handler",
+          "senderName": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 32
+        },
+        {
+          "id": "beat-1.msg.secondary",
+          "senderName": "Astrophysicist Dr. Helene Oru",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "Cross-reference this before dawn: Telemetry checksum drift.",
+          "delaySeconds": 3,
+          "intensity": 48
+        },
+        {
+          "id": "beat-1.msg.villain",
+          "senderName": "The Quiet Orbit",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "I know what you type next. Change it if you can. (Peripheral Presence)",
+          "delaySeconds": 6,
+          "intensity": 62
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-trace-source",
+          "label": "Sandbox the signal in a quarantined parser",
+          "intent": "CURIOSITY",
+          "summary": "Choice 1: Sandbox the signal in a quarantined parser",
+          "nextBeatId": "beat-2",
+          "progressDelta": 20,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "investigation_path": "trace_source"
+          }
+        },
+        {
+          "id": "choice-interview-ally",
+          "label": "Decode live before packet drift corrupts it",
+          "intent": "CURIOSITY",
+          "summary": "Choice 2: Decode live before packet drift corrupts it",
+          "nextBeatId": "beat-2",
+          "progressDelta": 20,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "investigation_path": "ally_interview"
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-2",
+      "backgroundVisual": "/visuals/stories/signal-from-kharon-9.svg"
+    },
+    {
+      "id": "beat-2",
+      "actId": "act-1",
+      "actTitle": "Contact",
+      "title": "Escalation Signal",
+      "narrative": "A contradictory channel drop appears within minutes and forces risk.",
+      "stage": 1,
+      "unlockAfterSeconds": 120,
+      "revealClueIds": [
+        "signal-from-kharon-9-clue-pressure"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-2.msg.handler",
+          "senderName": "Astrophysicist Dr. Helene Oru",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 32
+        },
+        {
+          "id": "beat-2.msg.secondary",
+          "senderName": "Array Operator Micah Trent",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "Cross-reference this before dawn: Starfield deviation map.",
+          "delaySeconds": 3,
+          "intensity": 48
+        },
+        {
+          "id": "beat-2.msg.villain",
+          "senderName": "The Quiet Orbit",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "I know what you type next. Change it if you can. (Peripheral Presence)",
+          "delaySeconds": 6,
+          "intensity": 62
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-preserve-evidence",
+          "label": "Preserve original evidence chain",
+          "intent": "CURIOSITY",
+          "summary": "Choice 1: Preserve original evidence chain",
+          "nextBeatId": "beat-3",
+          "progressDelta": 18,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 1
+          },
+          "flagUpdates": {
+            "evidence_preserved": true
+          }
+        },
+        {
+          "id": "choice-fast-pursuit",
+          "label": "Pursue suspect immediately",
+          "intent": "CURIOSITY",
+          "summary": "Choice 2: Pursue suspect immediately",
+          "nextBeatId": "beat-3",
+          "progressDelta": 18,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 1,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "evidence_preserved": false
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-3",
+      "backgroundVisual": "/visuals/stories/signal-from-kharon-9.svg"
+    },
+    {
+      "id": "beat-3",
+      "actId": "act-2",
+      "actTitle": "Interference",
+      "title": "Trust Fracture",
+      "narrative": "The villain mixes real secrets with fabricated claims to split allies.",
+      "stage": 2,
+      "unlockAfterSeconds": 240,
+      "revealClueIds": [
+        "signal-from-kharon-9-clue-contradiction"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-3.msg.handler",
+          "senderName": "Array Operator Micah Trent",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 44
+        },
+        {
+          "id": "beat-3.msg.secondary",
+          "senderName": "Telemetry Broker Vale-9",
+          "role": "investigator",
+          "channel": "EMAIL",
+          "text": "Cross-reference this before dawn: Array maintenance gap log.",
+          "delaySeconds": 3,
+          "intensity": 61
+        },
+        {
+          "id": "beat-3.msg.villain",
+          "senderName": "The Quiet Orbit",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You trusted the wrong constant, detective. (Psychological Contact)",
+          "delaySeconds": 6,
+          "intensity": 76
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-trust-handler",
+          "label": "Trust Systems Engineer Ari Vance and secure witness",
+          "intent": "COMPLIANCE",
+          "summary": "Choice 1: Trust Systems Engineer Ari Vance and secure witness",
+          "nextBeatId": "beat-4",
+          "progressDelta": 26,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "trusted_ally": "Systems Engineer Ari Vance"
+          }
+        },
+        {
+          "id": "choice-trust-witness",
+          "label": "Trust Astrophysicist Dr. Helene Oru and expose internal leak",
+          "intent": "COMPLIANCE",
+          "summary": "Choice 2: Trust Astrophysicist Dr. Helene Oru and expose internal leak",
+          "nextBeatId": "beat-4",
+          "progressDelta": 26,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "trusted_ally": "Astrophysicist Dr. Helene Oru"
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-4",
+      "backgroundVisual": "/visuals/stories/signal-from-kharon-9.svg"
+    },
+    {
+      "id": "beat-4",
+      "actId": "act-2",
+      "actTitle": "Interference",
+      "title": "Ultimatum Window",
+      "narrative": "A timed message threatens collateral harm unless the party diverts.",
+      "stage": 3,
+      "unlockAfterSeconds": 300,
+      "revealClueIds": [
+        "signal-from-kharon-9-clue-timed-warning"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-4.msg.handler",
+          "senderName": "Telemetry Broker Vale-9",
+          "role": "investigator",
+          "channel": "EMAIL",
+          "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 56
+        },
+        {
+          "id": "beat-4.msg.secondary",
+          "senderName": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Cross-reference this before dawn: Operator biometric mismatch.",
+          "delaySeconds": 3,
+          "intensity": 74
+        },
+        {
+          "id": "beat-4.msg.villain",
+          "senderName": "The Quiet Orbit",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "Shut down the array and your operator dies in the dark. (Active Interference)",
+          "delaySeconds": 6,
+          "intensity": 90
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-save-npc",
+          "label": "Divert to save threatened NPC",
+          "intent": "THREAT",
+          "summary": "Choice 1: Divert to save threatened NPC",
+          "nextBeatId": "beat-5",
+          "progressDelta": 30,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 2
+          },
+          "flagUpdates": {
+            "rescue_route": true
+          }
+        },
+        {
+          "id": "choice-continue-case",
+          "label": "Continue forensic pursuit under threat",
+          "intent": "THREAT",
+          "summary": "Choice 2: Continue forensic pursuit under threat",
+          "nextBeatId": "beat-5",
+          "progressDelta": 30,
+          "reputationDelta": {
+            "trustworthiness": -1,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "rescue_route": false
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-5",
+      "backgroundVisual": "/visuals/stories/signal-from-kharon-9.svg"
+    },
+    {
+      "id": "beat-5",
+      "actId": "act-3",
+      "actTitle": "Reckoning",
+      "title": "Confrontation Protocol",
+      "narrative": "Players reconstruct motive and false trails before collapse.",
+      "stage": 4,
+      "unlockAfterSeconds": 240,
+      "revealClueIds": [
+        "signal-from-kharon-9-clue-reveal"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-5.msg.handler",
+          "senderName": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 68
+        },
+        {
+          "id": "beat-5.msg.secondary",
+          "senderName": "Astrophysicist Dr. Helene Oru",
+          "role": "witness",
+          "channel": "DOCUMENT_DROP",
+          "text": "Cross-reference this before dawn: Telemetry checksum drift.",
+          "delaySeconds": 3,
+          "intensity": 87
+        },
+        {
+          "id": "beat-5.msg.villain",
+          "senderName": "The Quiet Orbit",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "Confess one lie and I return one life. (Personal Confrontation)",
+          "delaySeconds": 6,
+          "intensity": 100
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-charge-villain",
+          "label": "Commit to formal accusation and expose evidence chain",
+          "intent": "ACCUSATION",
+          "summary": "Choice 1: Commit to formal accusation and expose evidence chain",
+          "nextBeatId": "beat-6",
+          "progressDelta": 34,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "final_strategy": "formal_charge"
+          }
+        },
+        {
+          "id": "choice-private-deal",
+          "label": "Take private contact route for hidden confession",
+          "intent": "BARGAIN",
+          "summary": "Choice 2: Take private contact route for hidden confession",
+          "nextBeatId": "beat-6",
+          "progressDelta": 34,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 2,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "final_strategy": "private_contact"
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-6",
+      "backgroundVisual": "/visuals/stories/signal-from-kharon-9.svg"
+    },
+    {
+      "id": "beat-6",
+      "actId": "act-3",
+      "actTitle": "Reckoning",
+      "title": "Case Debrief",
+      "narrative": "Final scoring resolves ending branch and season continuity flags.",
+      "stage": 4,
+      "unlockAfterSeconds": 60,
+      "revealClueIds": [
+        "signal-from-kharon-9-clue-epilogue"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-6.msg.handler",
+          "senderName": "Astrophysicist Dr. Helene Oru",
+          "role": "witness",
+          "channel": "DOCUMENT_DROP",
+          "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 68
+        },
+        {
+          "id": "beat-6.msg.secondary",
+          "senderName": "Array Operator Micah Trent",
+          "role": "witness",
+          "channel": "SIMULATED_SITE",
+          "text": "Cross-reference this before dawn: Starfield deviation map.",
+          "delaySeconds": 3,
+          "intensity": 87
+        },
+        {
+          "id": "beat-6.msg.villain",
+          "senderName": "The Quiet Orbit",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "Confess one lie and I return one life. (Personal Confrontation)",
+          "delaySeconds": 6,
+          "intensity": 100
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "beat-6.choice.default-forward",
+          "label": "Proceed with controlled pressure",
+          "intent": "CURIOSITY",
+          "summary": "Advance investigation while preserving evidence discipline.",
+          "nextBeatId": null,
+          "progressDelta": 30,
+          "reputationDelta": {
+            "trustworthiness": 1,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 1
+          },
+          "flagUpdates": {
+            "beat-6.defaultPath": true
+          }
+        }
+      ],
+      "defaultNextBeatId": null,
+      "backgroundVisual": "/visuals/stories/signal-from-kharon-9.svg"
+    }
+  ],
+  "endings": [
+    {
+      "id": "signal-from-kharon-9-ending-justice",
+      "title": "Clean Resolution",
+      "type": "JUSTICE",
+      "summary": "You isolate the hostile signal and preserve proof without total blackout.",
+      "epilogue": "Truth lands publicly with evidence that survives scrutiny.",
+      "sequelHook": "A tagged evidence box points to the next case."
+    },
+    {
+      "id": "signal-from-kharon-9-ending-pyrrhic",
+      "title": "Compromised Truth",
+      "type": "PYRRHIC",
+      "summary": "You stop the broadcast but lose the array team in shutdown.",
+      "epilogue": "The culprit is exposed, but allies and witnesses are fractured.",
+      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+    },
+    {
+      "id": "signal-from-kharon-9-ending-corruption",
+      "title": "Corruption Pact",
+      "type": "CORRUPTION",
+      "summary": "You feed selected data to the signal for strategic advantage.",
+      "epilogue": "You keep control of the case, and the villain keeps control of you.",
+      "sequelHook": "Season continuity marks the player as compromised."
+    }
+  ],
+  "investigationBoard": {
+    "nodes": [
+      {
+        "id": "signal-from-kharon-9-suspect-villain",
+        "type": "SUSPECT",
+        "label": "The Quiet Orbit",
+        "summary": "Primary antagonist operating through layered identities."
+      },
+      {
+        "id": "signal-from-kharon-9-suspect-secondary",
+        "type": "SUSPECT",
+        "label": "Array Operator Micah Trent",
+        "summary": "Possible accomplice with motive and access."
+      },
+      {
+        "id": "signal-from-kharon-9-location-core",
+        "type": "LOCATION",
+        "label": "Mountain observatory and subterranean receiver array",
+        "summary": "Primary scene where contradictions cluster."
+      },
+      {
+        "id": "signal-from-kharon-9-evidence-core",
+        "type": "EVIDENCE",
+        "label": "Telemetry checksum drift",
+        "summary": "Anchor evidence with disputed provenance."
+      }
+    ],
+    "links": [
+      {
+        "fromId": "signal-from-kharon-9-suspect-villain",
+        "toId": "signal-from-kharon-9-location-core",
+        "relation": "operates-through",
+        "confidence": 0.78
+      },
+      {
+        "fromId": "signal-from-kharon-9-suspect-secondary",
+        "toId": "signal-from-kharon-9-evidence-core",
+        "relation": "tampered-access",
+        "confidence": 0.64
+      },
+      {
+        "fromId": "signal-from-kharon-9-location-core",
+        "toId": "signal-from-kharon-9-evidence-core",
+        "relation": "origin-point",
+        "confidence": 0.82
+      }
+    ],
+    "timeline": [
+      {
+        "id": "signal-from-kharon-9-timeline-1",
+        "timeLabel": "22:15",
+        "summary": "Initial anomaly reaches player channels.",
+        "relatedNodeIds": [
+          "signal-from-kharon-9-location-core",
+          "signal-from-kharon-9-evidence-core"
+        ]
+      },
+      {
+        "id": "signal-from-kharon-9-timeline-2",
+        "timeLabel": "23:50",
+        "summary": "Witness account conflicts with archive records.",
+        "relatedNodeIds": [
+          "signal-from-kharon-9-suspect-secondary",
+          "signal-from-kharon-9-evidence-core"
+        ]
+      },
+      {
+        "id": "signal-from-kharon-9-timeline-3",
+        "timeLabel": "00:25",
+        "summary": "Villain contact shifts to direct intimidation.",
+        "relatedNodeIds": [
+          "signal-from-kharon-9-suspect-villain"
+        ]
+      }
+    ]
+  },
+  "replayHooks": [
+    "Signal packet ordering mutates by prior endings.",
+    "Curiosity alters villain pacing.",
+    "Secret ending for perfect countdown run."
+  ],
+  "sequelHooks": [
+    "A second array station replies from beneath ocean coordinates."
+  ],
+  "branchingMoments": [
+    "Sandbox isolate vs immediate decode",
+    "Seal transmission vs weaponize prediction"
+  ]
+}

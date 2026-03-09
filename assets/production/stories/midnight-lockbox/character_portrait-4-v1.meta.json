@@ -1,0 +1,20 @@
+{
+  "id": "midnight-lockbox-character_portrait-4",
+  "type": "character_portrait",
+  "scope": "story",
+  "storyId": "midnight-lockbox",
+  "prompt": "Character portrait for midnight-lockbox, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+  "revision": 1,
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified"
+  ],
+  "generatedAt": "2026-03-09T15:07:59.718Z"
+}

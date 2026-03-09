@@ -1,0 +1,637 @@
+{
+  "storyId": "midnight-lockbox",
+  "title": "Midnight Lockbox",
+  "generatedAt": "2026-03-09T15:07:34.386Z",
+  "clips": [
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-1",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "beat-1",
+      "beatTitle": "Unit 331 pings alive",
+      "channel": "SMS",
+      "text": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-2",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "beat-4",
+      "beatTitle": "Noon Ultimatum",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-3",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "beat-5",
+      "beatTitle": "Drain Tunnel Run",
+      "channel": "VOICE_MESSAGE",
+      "text": "Twelve hours later, the tunnel route opens and you must choose recovery or confrontation. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-1",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "beat-1",
+      "beatTitle": "Unit 331 pings alive",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-night-manager-eli-mercer",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-night-manager-eli-mercer",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-2",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "beat-2",
+      "beatTitle": "Lock Cylinder Swap",
+      "channel": "WHATSAPP",
+      "text": "You find a fresh lock core with a key that should not exist in facility inventory. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-night-manager-eli-mercer",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-night-manager-eli-mercer",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-3",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "beat-5",
+      "beatTitle": "Drain Tunnel Run",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-night-manager-eli-mercer",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-night-manager-eli-mercer",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-4",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "beat-6",
+      "beatTitle": "Lockbox Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "A final memo reveals whether your team solved the case or joined the cover-up. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-night-manager-eli-mercer",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-night-manager-eli-mercer",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-1",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "beat-1",
+      "beatTitle": "Unit 331 pings alive",
+      "channel": "SMS",
+      "text": "Unit 331 has your fingerprints now, not mine. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-2",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "beat-2",
+      "beatTitle": "Lock Cylinder Swap",
+      "channel": "SMS",
+      "text": "Unit 331 has your fingerprints now, not mine. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-3",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "beat-3",
+      "beatTitle": "Morning Leak",
+      "channel": "WHATSAPP",
+      "text": "You keep protecting the wrong employee. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-4",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "beat-4",
+      "beatTitle": "Noon Ultimatum",
+      "channel": "SMS",
+      "text": "If you open the box before noon, your witness walks. If not, count the sirens. (Active Interference)",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-5",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "beat-5",
+      "beatTitle": "Drain Tunnel Run",
+      "channel": "EMAIL",
+      "text": "Hand me the access list and I return everyone alive. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-6",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "beat-6",
+      "beatTitle": "Lockbox Debrief",
+      "channel": "EMAIL",
+      "text": "Hand me the access list and I return everyone alive. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-1",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "beat-2",
+      "beatTitle": "Lock Cylinder Swap",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-2",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "beat-3",
+      "beatTitle": "Morning Leak",
+      "channel": "TELEGRAM",
+      "text": "By morning, cropped footage of your team appears online before your own upload completes. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-3",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "beat-6",
+      "beatTitle": "Lockbox Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-1",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "beat-3",
+      "beatTitle": "Morning Leak",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Freight elevator camera still.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-2",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "beat-4",
+      "beatTitle": "Noon Ultimatum",
+      "channel": "EMAIL",
+      "text": "The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

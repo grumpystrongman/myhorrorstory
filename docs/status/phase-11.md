@@ -10,6 +10,9 @@
 - Implemented legal-signature-ready onboarding requirements with terms/privacy/age-gate acceptance and timestamped legal metadata.
 - Expanded growth/email lifecycle stack and connected signup + join workflows to campaign automation endpoints.
 - Upgraded score and visual asset output pipelines and regenerated web-ready commercial media artifacts.
+- Shifted Linear bot control plane to include immersive gameplay UX, story finalization, voice drama production, and in-app channel simulation workstreams.
+- Added immersive gameplay runtime and packaged story drama flow to move from control-only UI to playable narrative surface.
+- Added visual certification report generation and asset completeness gates for commercial creative inventory.
 
 ## Remaining
 - Complete final go/no-go signoff round once provider credentials and staging environment are configured.
@@ -28,6 +31,10 @@
   - `corepack pnpm linear:bots:plan`
   - `corepack pnpm linear:bots:apply`
   - `corepack pnpm creative:build-plan`
+  - `corepack pnpm creative:materialize-assets`
+  - `corepack pnpm creative:validate-visuals`
+  - `corepack pnpm stories:build-drama`
+  - `corepack pnpm voice:build-drama`
 
 ## Risks
 - Provider integrations (payments, CRM, support, voice/media) remain adapter-based until live credentials and staging infra are connected.

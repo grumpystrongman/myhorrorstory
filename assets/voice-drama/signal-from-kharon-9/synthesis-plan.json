@@ -1,0 +1,637 @@
+{
+  "storyId": "signal-from-kharon-9",
+  "title": "Signal From Kharon-9",
+  "generatedAt": "2026-03-09T15:07:34.398Z",
+  "clips": [
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-1",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "beat-1",
+      "beatTitle": "Dormant Array Wake",
+      "channel": "SMS",
+      "text": "A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-2",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-3",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-1",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "beat-1",
+      "beatTitle": "Dormant Array Wake",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-2",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-3",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-4",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-1",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "beat-1",
+      "beatTitle": "Dormant Array Wake",
+      "channel": "SMS",
+      "text": "I know what you type next. Change it if you can. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-2",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "I know what you type next. Change it if you can. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-3",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "You trusted the wrong constant, detective. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-4",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "Shut down the array and your operator dies in the dark. (Active Interference)",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-5",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-6",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-1",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-2",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-3",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-1",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-2",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

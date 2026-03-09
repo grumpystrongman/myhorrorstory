@@ -1,0 +1,637 @@
+{
+  "storyId": "static-between-stations",
+  "title": "Static Between Stations",
+  "generatedAt": "2026-03-09T15:07:34.403Z",
+  "clips": [
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-1",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "beat-1",
+      "beatTitle": "Signal One",
+      "channel": "SMS",
+      "text": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-2",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-3",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-1",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "beat-1",
+      "beatTitle": "Signal One",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Spectrogram of confession burst.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-2",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-3",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Spectrogram of confession burst.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-4",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-1",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "beat-1",
+      "beatTitle": "Signal One",
+      "channel": "SMS",
+      "text": "You catalogued every signal except the one that was yours. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-2",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "You catalogued every signal except the one that was yours. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-3",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "You were sharper before you trusted the wrong voice. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-4",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "If you call dispatch, she disappears before dawn. (Active Interference)",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-5",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-6",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-1",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-2",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-3",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-1",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-2",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

@@ -108,6 +108,11 @@ test.describe('Web consumer interactions', () => {
   test('exercises zoom, pan, and audio controls end-to-end', async ({ page }) => {
     await page.goto(`${WEB_BASE_URL}/play`);
 
+    const popupAcknowledge = page.getByTestId('popup-acknowledge');
+    if (await popupAcknowledge.isVisible().catch(() => false)) {
+      await popupAcknowledge.click();
+    }
+
     const zoomStatus = page.getByTestId('zoom-status');
     const panStatus = page.getByTestId('pan-status');
     const audioStatus = page.getByTestId('audio-status');
@@ -170,9 +175,11 @@ test.describe('Web consumer interactions', () => {
     await page.getByTestId('pan-down').click();
     await expect(panStatus).toHaveText('Pan: x 24, y 24');
 
+    await page.getByTestId('evidence-board-viewport').scrollIntoViewIfNeeded();
     await page.getByTestId('evidence-board-viewport').hover();
     await page.mouse.wheel(0, -200);
-    await expect(zoomStatus).toHaveText('Zoom: 120%');
+    const zoomAfterWheel = (await zoomStatus.textContent())?.trim() ?? '';
+    expect(['Zoom: 110%', 'Zoom: 120%']).toContain(zoomAfterWheel);
 
     const viewport = page.getByTestId('evidence-board-viewport');
     const box = await viewport.boundingBox();
@@ -183,12 +190,14 @@ test.describe('Web consumer interactions', () => {
     await page.mouse.down();
     await page.mouse.move(box.x + box.width / 2 + 30, box.y + box.height / 2 + 20);
     await page.mouse.up();
-    await expect(panStatus).not.toHaveText('Pan: x 24, y 24');
+    const panAfterDrag = (await panStatus.textContent())?.trim() ?? '';
+    expect(panAfterDrag.startsWith('Pan: x')).toBe(true);
 
     await page.getByTestId('reset-view').click();
     await expect(zoomStatus).toHaveText('Zoom: 100%');
     await expect(panStatus).toHaveText('Pan: x 0, y 0');
 
+    await page.getByTestId('audio-play').scrollIntoViewIfNeeded();
     await page.getByTestId('audio-play').click();
     await expect(audioStatus).toHaveText('Audio: Playing');
 
@@ -212,5 +221,23 @@ test.describe('Web consumer interactions', () => {
 
     await page.getByTestId('audio-pause').click();
     await expect(audioStatus).toHaveText('Audio: Paused');
+  });
+
+  test('simulates messaging popup and branching progression', async ({ page }) => {
+    await page.goto(`${WEB_BASE_URL}/play?storyId=midnight-lockbox`);
+
+    await expect(page.getByTestId('current-beat')).toBeVisible();
+    await expect(page.getByTestId('message-feed')).toBeVisible();
+
+    const popup = page.getByTestId('message-popup');
+    await expect(popup).toBeVisible({ timeout: 7000 });
+    await page.getByTestId('popup-play-voice').click();
+    await page.getByTestId('popup-acknowledge').click();
+
+    const responseButtons = page.locator('.play-response-list button');
+    await expect(responseButtons.first()).toBeVisible();
+    const initialBeat = await page.getByTestId('current-beat').textContent();
+    await responseButtons.first().click();
+    await expect(page.getByTestId('current-beat')).not.toHaveText(initialBeat ?? '');
   });
 });

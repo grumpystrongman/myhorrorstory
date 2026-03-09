@@ -1,0 +1,2415 @@
+{
+  "version": "v2",
+  "generatedAt": "2026-03-09T15:07:34.361Z",
+  "stories": [
+    {
+      "storyId": "black-chapel-ledger",
+      "title": "Black Chapel Ledger",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\black-chapel-ledger",
+      "profiles": [
+        {
+          "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+          "storyId": "black-chapel-ledger",
+          "characterId": "Canon Archivist Elara Voss",
+          "role": "OPERATOR",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-canon-archivist-elara-voss",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-canon-archivist-elara-voss",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+          "storyId": "black-chapel-ledger",
+          "characterId": "Bell Keeper Tomas Grell",
+          "role": "WITNESS",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-bell-keeper-tomas-grell",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-bell-keeper-tomas-grell",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.black-chapel-ledger.the-creditor",
+          "storyId": "black-chapel-ledger",
+          "characterId": "The Creditor",
+          "role": "ANTAGONIST",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-creditor",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-creditor",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+          "storyId": "black-chapel-ledger",
+          "characterId": "Choir Witness Sera March",
+          "role": "WITNESS",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-choir-witness-sera-march",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-choir-witness-sera-march",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+          "storyId": "black-chapel-ledger",
+          "characterId": "Debt Broker Cal Dorn",
+          "role": "INVESTIGATOR",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-debt-broker-cal-dorn",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-debt-broker-cal-dorn",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "crown-of-salt",
+      "title": "Crown of Salt",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\crown-of-salt",
+      "profiles": [
+        {
+          "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+          "storyId": "crown-of-salt",
+          "characterId": "Port Auditor Lin Ortega",
+          "role": "OPERATOR",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-port-auditor-lin-ortega",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-port-auditor-lin-ortega",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+          "storyId": "crown-of-salt",
+          "characterId": "Smuggler Rafe Quinn",
+          "role": "WITNESS",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-smuggler-rafe-quinn",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-smuggler-rafe-quinn",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.crown-of-salt.the-salt-regent",
+          "storyId": "crown-of-salt",
+          "characterId": "The Salt Regent",
+          "role": "ANTAGONIST",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-salt-regent",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-salt-regent",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+          "storyId": "crown-of-salt",
+          "characterId": "Archivist Nun Sister Mirel",
+          "role": "WITNESS",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-archivist-nun-sister-mirel",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-archivist-nun-sister-mirel",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+          "storyId": "crown-of-salt",
+          "characterId": "Customs Broker Dax Ren",
+          "role": "INVESTIGATOR",
+          "locale": "en-GB",
+          "region": "uk_atlantic",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-customs-broker-dax-ren",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-customs-broker-dax-ren",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "dead-channel-protocol",
+      "title": "Dead Channel Protocol",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\dead-channel-protocol",
+      "profiles": [
+        {
+          "profileId": "voice.dead-channel-protocol.security-engineer-talia-ren",
+          "storyId": "dead-channel-protocol",
+          "characterId": "Security Engineer Talia Ren",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-security-engineer-talia-ren",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-security-engineer-talia-ren",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.dead-channel-protocol.streamer-bo-finch",
+          "storyId": "dead-channel-protocol",
+          "characterId": "Streamer Bo Finch",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-streamer-bo-finch",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-streamer-bo-finch",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.dead-channel-protocol.root-administrator",
+          "storyId": "dead-channel-protocol",
+          "characterId": "Root Administrator",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-root-administrator",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-root-administrator",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.dead-channel-protocol.grid-operator-niko-saye",
+          "storyId": "dead-channel-protocol",
+          "characterId": "Grid Operator Niko Saye",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-grid-operator-niko-saye",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-grid-operator-niko-saye",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.dead-channel-protocol.incident-bot-liaison-k-12",
+          "storyId": "dead-channel-protocol",
+          "characterId": "Incident Bot Liaison K-12",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-incident-bot-liaison-k-12",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-incident-bot-liaison-k-12",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "midnight-lockbox",
+      "title": "Midnight Lockbox",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\midnight-lockbox",
+      "profiles": [
+        {
+          "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+          "storyId": "midnight-lockbox",
+          "characterId": "Case Lead Veda Cross",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-case-lead-veda-cross",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-case-lead-veda-cross",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+          "storyId": "midnight-lockbox",
+          "characterId": "Night Manager Eli Mercer",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-night-manager-eli-mercer",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-night-manager-eli-mercer",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.midnight-lockbox.the-quartermaster",
+          "storyId": "midnight-lockbox",
+          "characterId": "The Quartermaster",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-quartermaster",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-quartermaster",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+          "storyId": "midnight-lockbox",
+          "characterId": "Courier Witness Sia Rowan",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-courier-witness-sia-rowan",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-courier-witness-sia-rowan",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+          "storyId": "midnight-lockbox",
+          "characterId": "Locksmith Omar Hale",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-locksmith-omar-hale",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-locksmith-omar-hale",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "red-creek-winter",
+      "title": "Red Creek Winter",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\red-creek-winter",
+      "profiles": [
+        {
+          "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+          "storyId": "red-creek-winter",
+          "characterId": "Sheriff Dana Holt",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-sheriff-dana-holt",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-sheriff-dana-holt",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.red-creek-winter.deputy-nico-vale",
+          "storyId": "red-creek-winter",
+          "characterId": "Deputy Nico Vale",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-deputy-nico-vale",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-deputy-nico-vale",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.red-creek-winter.the-white-knife",
+          "storyId": "red-creek-winter",
+          "characterId": "The White Knife",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-white-knife",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-white-knife",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.red-creek-winter.journalist-mara-finch",
+          "storyId": "red-creek-winter",
+          "characterId": "Journalist Mara Finch",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-journalist-mara-finch",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-journalist-mara-finch",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.red-creek-winter.survivor-owen-pike",
+          "storyId": "red-creek-winter",
+          "characterId": "Survivor Owen Pike",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-survivor-owen-pike",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-survivor-owen-pike",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "signal-from-kharon-9",
+      "title": "Signal From Kharon-9",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\signal-from-kharon-9",
+      "profiles": [
+        {
+          "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+          "storyId": "signal-from-kharon-9",
+          "characterId": "Systems Engineer Ari Vance",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-systems-engineer-ari-vance",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-systems-engineer-ari-vance",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+          "storyId": "signal-from-kharon-9",
+          "characterId": "Astrophysicist Dr. Helene Oru",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-astrophysicist-dr-helene-oru",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-astrophysicist-dr-helene-oru",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+          "storyId": "signal-from-kharon-9",
+          "characterId": "The Quiet Orbit",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-quiet-orbit",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-quiet-orbit",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+          "storyId": "signal-from-kharon-9",
+          "characterId": "Array Operator Micah Trent",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-array-operator-micah-trent",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-array-operator-micah-trent",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+          "storyId": "signal-from-kharon-9",
+          "characterId": "Telemetry Broker Vale-9",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-telemetry-broker-vale-9",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-telemetry-broker-vale-9",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "static-between-stations",
+      "title": "Static Between Stations",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\static-between-stations",
+      "profiles": [
+        {
+          "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+          "storyId": "static-between-stations",
+          "characterId": "Lead Investigator Mara Quinn",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-lead-investigator-mara-quinn",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-lead-investigator-mara-quinn",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+          "storyId": "static-between-stations",
+          "characterId": "Dispatch Handler Ilya Ross",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-dispatch-handler-ilya-ross",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-dispatch-handler-ilya-ross",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.static-between-stations.the-curator-of-static",
+          "storyId": "static-between-stations",
+          "characterId": "The Curator of Static",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-curator-of-static",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-curator-of-static",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+          "storyId": "static-between-stations",
+          "characterId": "Commuter Witness Nia Vale",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-commuter-witness-nia-vale",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-commuter-witness-nia-vale",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+          "storyId": "static-between-stations",
+          "characterId": "Transit Auditor Bram Keene",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-transit-auditor-bram-keene",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-transit-auditor-bram-keene",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "tape-17-pinewatch",
+      "title": "Tape 17: Pinewatch",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\tape-17-pinewatch",
+      "profiles": [
+        {
+          "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+          "storyId": "tape-17-pinewatch",
+          "characterId": "Ranger Juno Hale",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-ranger-juno-hale",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-ranger-juno-hale",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+          "storyId": "tape-17-pinewatch",
+          "characterId": "Media Forensics Analyst Priya Sen",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-media-forensics-analyst-priya-sen",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-media-forensics-analyst-priya-sen",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.tape-17-pinewatch.the-editor",
+          "storyId": "tape-17-pinewatch",
+          "characterId": "The Editor",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-editor",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-editor",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+          "storyId": "tape-17-pinewatch",
+          "characterId": "Survivor Cade Rowan",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-survivor-cade-rowan",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-survivor-cade-rowan",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+          "storyId": "tape-17-pinewatch",
+          "characterId": "Volunteer Search Lead Ellis Vann",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-volunteer-search-lead-ellis-vann",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-volunteer-search-lead-ellis-vann",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "the-fourth-tenant",
+      "title": "The Fourth Tenant",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\the-fourth-tenant",
+      "profiles": [
+        {
+          "profileId": "voice.the-fourth-tenant.building-superintendent-leda-price",
+          "storyId": "the-fourth-tenant",
+          "characterId": "Building Superintendent Leda Price",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-building-superintendent-leda-price",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-building-superintendent-leda-price",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-fourth-tenant.lease-broker-owen-pike",
+          "storyId": "the-fourth-tenant",
+          "characterId": "Lease Broker Owen Pike",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-lease-broker-owen-pike",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-lease-broker-owen-pike",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-fourth-tenant.the-landlord-of-rooms-that-move",
+          "storyId": "the-fourth-tenant",
+          "characterId": "The Landlord of Rooms That Move",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-landlord-of-rooms-that-move",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-landlord-of-rooms-that-move",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-fourth-tenant.night-tenant-maris-holt",
+          "storyId": "the-fourth-tenant",
+          "characterId": "Night Tenant Maris Holt",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-night-tenant-maris-holt",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-night-tenant-maris-holt",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-fourth-tenant.claims-adjuster-felix-noor",
+          "storyId": "the-fourth-tenant",
+          "characterId": "Claims Adjuster Felix Noor",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-claims-adjuster-felix-noor",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-claims-adjuster-felix-noor",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "the-harvest-men",
+      "title": "The Harvest Men",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\the-harvest-men",
+      "profiles": [
+        {
+          "profileId": "voice.the-harvest-men.visiting-agronomist-dina-crowe",
+          "storyId": "the-harvest-men",
+          "characterId": "Visiting Agronomist Dina Crowe",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-visiting-agronomist-dina-crowe",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-visiting-agronomist-dina-crowe",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-harvest-men.village-elder-rowan-pike",
+          "storyId": "the-harvest-men",
+          "characterId": "Village Elder Rowan Pike",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-village-elder-rowan-pike",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-village-elder-rowan-pike",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-harvest-men.the-reaper-steward",
+          "storyId": "the-harvest-men",
+          "characterId": "The Reaper Steward",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-reaper-steward",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-reaper-steward",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-harvest-men.runaway-teen-lio-strand",
+          "storyId": "the-harvest-men",
+          "characterId": "Runaway Teen Lio Strand",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-runaway-teen-lio-strand",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-runaway-teen-lio-strand",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.the-harvest-men.festival-marshal-jarek-holt",
+          "storyId": "the-harvest-men",
+          "characterId": "Festival Marshal Jarek Holt",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-festival-marshal-jarek-holt",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-festival-marshal-jarek-holt",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "ward-1908",
+      "title": "Ward 1908",
+      "characterCount": 5,
+      "clipCount": 18,
+      "outputDir": "C:\\Users\\grump\\MyHorrorStory\\assets\\voice-drama\\ward-1908",
+      "profiles": [
+        {
+          "profileId": "voice.ward-1908.hospital-archivist-nella-ward",
+          "storyId": "ward-1908",
+          "characterId": "Hospital Archivist Nella Ward",
+          "role": "OPERATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.01,
+            "pitch": 0,
+            "stability": 0.82,
+            "style": 0.44,
+            "gainDb": 0.3
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-hospital-archivist-nella-ward",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-hospital-archivist-nella-ward",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.ward-1908.former-nurse-evan-mire",
+          "storyId": "ward-1908",
+          "characterId": "Former Nurse Evan Mire",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-former-nurse-evan-mire",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-former-nurse-evan-mire",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.ward-1908.the-record-keeper",
+          "storyId": "ward-1908",
+          "characterId": "The Record Keeper",
+          "role": "ANTAGONIST",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.86,
+            "pitch": -1.4,
+            "stability": 0.92,
+            "style": 0.76,
+            "gainDb": -0.5
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-the-record-keeper",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-the-record-keeper",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.ward-1908.renovation-contractor-jo-pike",
+          "storyId": "ward-1908",
+          "characterId": "Renovation Contractor Jo Pike",
+          "role": "WITNESS",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 1.08,
+            "pitch": 0.8,
+            "stability": 0.56,
+            "style": 0.66,
+            "gainDb": 0.9
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-renovation-contractor-jo-pike",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-renovation-contractor-jo-pike",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        },
+        {
+          "profileId": "voice.ward-1908.records-officer-hale-sorn",
+          "storyId": "ward-1908",
+          "characterId": "Records Officer Hale Sorn",
+          "role": "INVESTIGATOR",
+          "locale": "en-US",
+          "region": "north_america",
+          "suggestedSex": "UNKNOWN",
+          "expression": {
+            "rate": 0.97,
+            "pitch": -0.2,
+            "stability": 0.86,
+            "style": 0.38,
+            "gainDb": 0
+          },
+          "providerChain": [
+            {
+              "provider": "PIPER",
+              "voiceId": "piper-records-officer-hale-sorn",
+              "model": "en_US-lessac-high",
+              "notes": "Primary local/offline synthesis path."
+            },
+            {
+              "provider": "ELEVENLABS",
+              "voiceId": "elv-records-officer-hale-sorn",
+              "model": "eleven_multilingual_v2",
+              "notes": "Premium high-fidelity fallback."
+            },
+            {
+              "provider": "OPENAI",
+              "voiceId": "alloy",
+              "model": "gpt-4o-mini-tts",
+              "notes": "Fast cloud fallback."
+            },
+            {
+              "provider": "POLLY",
+              "voiceId": "Matthew",
+              "model": "neural",
+              "notes": "Enterprise cloud fallback."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

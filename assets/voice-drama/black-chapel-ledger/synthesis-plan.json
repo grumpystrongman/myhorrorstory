@@ -1,0 +1,637 @@
+{
+  "storyId": "black-chapel-ledger",
+  "title": "Black Chapel Ledger",
+  "generatedAt": "2026-03-09T15:07:34.363Z",
+  "clips": [
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-1",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "beat-1",
+      "beatTitle": "Ledger Breach",
+      "channel": "SMS",
+      "text": "A scanned ledger page appears in WhatsApp showing one player's childhood home as collateral. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-2",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-3",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-1",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "beat-1",
+      "beatTitle": "Ledger Breach",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-bell-keeper-tomas-grell",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-bell-keeper-tomas-grell",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-2",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-bell-keeper-tomas-grell",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-bell-keeper-tomas-grell",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-3",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-bell-keeper-tomas-grell",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-bell-keeper-tomas-grell",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-4",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-bell-keeper-tomas-grell",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-bell-keeper-tomas-grell",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-1",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "beat-1",
+      "beatTitle": "Ledger Breach",
+      "channel": "SMS",
+      "text": "You opened the ledger; now it records you too. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-2",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "You opened the ledger; now it records you too. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-3",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "Don't trust the one who rings the bell after midnight. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-4",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "Confess publicly, or the choir girl pays your debt first. (Active Interference)",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-5",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-6",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-1",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Choir rehearsal wax recording.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-2",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-3",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Choir rehearsal wax recording.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-1",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-2",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

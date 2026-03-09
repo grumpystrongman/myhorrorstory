@@ -1,0 +1,637 @@
+{
+  "storyId": "dead-channel-protocol",
+  "title": "Dead Channel Protocol",
+  "generatedAt": "2026-03-09T15:07:34.379Z",
+  "clips": [
+    {
+      "clipId": "voice.dead-channel-protocol.security-engineer-talia-ren.clip-1",
+      "profileId": "voice.dead-channel-protocol.security-engineer-talia-ren",
+      "beatId": "beat-1",
+      "beatTitle": "Protocol Wake",
+      "channel": "SMS",
+      "text": "An app push notification predicts a substation failure and names your trusted ally. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/security-engineer-talia-ren-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-security-engineer-talia-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-security-engineer-talia-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.security-engineer-talia-ren.clip-2",
+      "profileId": "voice.dead-channel-protocol.security-engineer-talia-ren",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "Cross-reference this before dawn: Abandoned node scan.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/security-engineer-talia-ren-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-security-engineer-talia-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-security-engineer-talia-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.security-engineer-talia-ren.clip-3",
+      "profileId": "voice.dead-channel-protocol.security-engineer-talia-ren",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "VOICE_MESSAGE",
+      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/security-engineer-talia-ren-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-security-engineer-talia-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-security-engineer-talia-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.streamer-bo-finch.clip-1",
+      "profileId": "voice.dead-channel-protocol.streamer-bo-finch",
+      "beatId": "beat-1",
+      "beatTitle": "Protocol Wake",
+      "channel": "WHATSAPP",
+      "text": "Cross-reference this before dawn: Protocol signed payload.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/streamer-bo-finch-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-streamer-bo-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-streamer-bo-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.streamer-bo-finch.clip-2",
+      "profileId": "voice.dead-channel-protocol.streamer-bo-finch",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "WHATSAPP",
+      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/streamer-bo-finch-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-streamer-bo-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-streamer-bo-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.streamer-bo-finch.clip-3",
+      "profileId": "voice.dead-channel-protocol.streamer-bo-finch",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "DOCUMENT_DROP",
+      "text": "Cross-reference this before dawn: Protocol signed payload.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/streamer-bo-finch-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-streamer-bo-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-streamer-bo-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.streamer-bo-finch.clip-4",
+      "profileId": "voice.dead-channel-protocol.streamer-bo-finch",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "DOCUMENT_DROP",
+      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/streamer-bo-finch-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-streamer-bo-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-streamer-bo-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.root-administrator.clip-1",
+      "profileId": "voice.dead-channel-protocol.root-administrator",
+      "beatId": "beat-1",
+      "beatTitle": "Protocol Wake",
+      "channel": "SMS",
+      "text": "I predicted this reply seven minutes ago. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/root-administrator-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-root-administrator",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-root-administrator",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.root-administrator.clip-2",
+      "profileId": "voice.dead-channel-protocol.root-administrator",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "SMS",
+      "text": "I predicted this reply seven minutes ago. (Peripheral Presence)",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/root-administrator-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-root-administrator",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-root-administrator",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.root-administrator.clip-3",
+      "profileId": "voice.dead-channel-protocol.root-administrator",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "WHATSAPP",
+      "text": "Don't trust the operator in red status. (Psychological Contact)",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/root-administrator-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-root-administrator",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-root-administrator",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.root-administrator.clip-4",
+      "profileId": "voice.dead-channel-protocol.root-administrator",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "SMS",
+      "text": "Report me, and district three goes dark first. (Active Interference)",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/root-administrator-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-root-administrator",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-root-administrator",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.root-administrator.clip-5",
+      "profileId": "voice.dead-channel-protocol.root-administrator",
+      "beatId": "beat-5",
+      "beatTitle": "Confrontation Protocol",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/root-administrator-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-root-administrator",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-root-administrator",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.root-administrator.clip-6",
+      "profileId": "voice.dead-channel-protocol.root-administrator",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "EMAIL",
+      "text": "Confess one lie and I return one life. (Personal Confrontation)",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/root-administrator-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-root-administrator",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-root-administrator",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.grid-operator-niko-saye.clip-1",
+      "profileId": "voice.dead-channel-protocol.grid-operator-niko-saye",
+      "beatId": "beat-2",
+      "beatTitle": "Escalation Signal",
+      "channel": "TELEGRAM",
+      "text": "Cross-reference this before dawn: Substation outage trace.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/grid-operator-niko-saye-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-grid-operator-niko-saye",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-grid-operator-niko-saye",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.grid-operator-niko-saye.clip-2",
+      "profileId": "voice.dead-channel-protocol.grid-operator-niko-saye",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "TELEGRAM",
+      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/grid-operator-niko-saye-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-grid-operator-niko-saye",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-grid-operator-niko-saye",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.grid-operator-niko-saye.clip-3",
+      "profileId": "voice.dead-channel-protocol.grid-operator-niko-saye",
+      "beatId": "beat-6",
+      "beatTitle": "Case Debrief",
+      "channel": "SIMULATED_SITE",
+      "text": "Cross-reference this before dawn: Substation outage trace.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/grid-operator-niko-saye-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-grid-operator-niko-saye",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-grid-operator-niko-saye",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.incident-bot-liaison-k-12.clip-1",
+      "profileId": "voice.dead-channel-protocol.incident-bot-liaison-k-12",
+      "beatId": "beat-3",
+      "beatTitle": "Trust Fracture",
+      "channel": "EMAIL",
+      "text": "Cross-reference this before dawn: Intercepted bot transcript.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/incident-bot-liaison-k-12-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-incident-bot-liaison-k-12",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-incident-bot-liaison-k-12",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.dead-channel-protocol.incident-bot-liaison-k-12.clip-2",
+      "profileId": "voice.dead-channel-protocol.incident-bot-liaison-k-12",
+      "beatId": "beat-4",
+      "beatTitle": "Ultimatum Window",
+      "channel": "EMAIL",
+      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "targetPath": "assets/audio/voices/dead-channel-protocol/incident-bot-liaison-k-12-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-incident-bot-liaison-k-12",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-incident-bot-liaison-k-12",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,9 @@
 - Added commercial visual renderer script and generated a full story key-art set (11 story visuals + 3 website surface visuals).
 - Upgraded score rendering pass to commercial multi-layer loops (40-44s seamless runtime assets) and updated score manifest metadata.
 - Added story branching compendium generator and published story arc/trigger/ending index for all shipped cases.
+- Added full commercial asset materialization pass from manifest (181 production assets) with web preview mirrors.
+- Added visual validation pipeline and certification report generation.
+- Added voice-drama package generation (line sheets + synthesis plans + manifest) for all 11 stories.
 
 ## Remaining
 - Connect live provider credentials in staging/prod and calibrate per-character prosody from editorial review recordings.
@@ -19,6 +22,9 @@
 - Date: 2026-03-09
 - Commands executed successfully from repository root:
   - `corepack pnpm creative:generate-visuals`
+  - `corepack pnpm creative:materialize-assets`
+  - `corepack pnpm creative:validate-visuals`
+  - `corepack pnpm voice:build-drama`
   - `node scripts/generate-score-placeholders.mjs`
   - `corepack pnpm stories:build-compendium`
   - `corepack pnpm --filter @myhorrorstory/music test`

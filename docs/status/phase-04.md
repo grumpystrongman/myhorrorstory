@@ -7,6 +7,12 @@
 - Rebuilt landing, library, onboarding, support, billing, and legal pages with commercial-grade visual hierarchy, story key-art integration, and conversion-focused copy.
 - Added production onboarding forms for account signup (with terms/privacy/age-gate acceptance) and email join capture.
 - Added web-side marketing API bridge routes (`/api/marketing/lead`, `/api/marketing/signup`) with backend fallback handling.
+- Rebuilt `/play` into immersive runtime UX with:
+  - in-app popup simulation for SMS/WhatsApp/Telegram/email drops
+  - message feed and branching response flow
+  - session progression, reputation effects, and ending debrief
+  - investigation board and timeline visibility integrated into gameplay surface
+- Added `/artwork` gallery route for commercial creative preview review.
 
 ## Remaining
 - Connect all web screens to authenticated live API data and realtime party state.
@@ -18,6 +24,7 @@
   - `corepack pnpm --filter @myhorrorstory/web typecheck`
   - `corepack pnpm --filter @myhorrorstory/web test`
   - `corepack pnpm --filter @myhorrorstory/web build`
+  - `corepack pnpm stories:build-drama`
   - `corepack pnpm creative:generate-visuals`
   - `PLAYWRIGHT_WEB_PORT=3200 PLAYWRIGHT_ADMIN_PORT=3201 corepack pnpm exec playwright test tests/e2e/web-commercial.spec.ts --config tests/e2e/playwright.config.ts`
 

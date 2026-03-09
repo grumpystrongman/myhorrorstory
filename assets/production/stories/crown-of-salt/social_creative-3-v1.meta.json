@@ -1,0 +1,20 @@
+{
+  "id": "crown-of-salt-social_creative-3",
+  "type": "social_creative",
+  "scope": "story",
+  "storyId": "crown-of-salt",
+  "prompt": "Social teaser creative for crown-of-salt, vertical and square-safe composition, shareable hook line space.",
+  "revision": 1,
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified"
+  ],
+  "generatedAt": "2026-03-09T15:07:50.994Z"
+}

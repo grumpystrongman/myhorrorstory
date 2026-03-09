@@ -1,0 +1,20 @@
+{
+  "id": "static-between-stations-evidence_image-4",
+  "type": "evidence_image",
+  "scope": "story",
+  "storyId": "static-between-stations",
+  "prompt": "Evidence still for static-between-stations, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+  "revision": 1,
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified"
+  ],
+  "generatedAt": "2026-03-09T15:08:27.136Z"
+}

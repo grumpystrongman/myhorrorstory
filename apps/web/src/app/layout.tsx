@@ -23,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }): JSX.E
                 <a href="/onboarding">Onboarding Funnel</a>
                 <a href="/library">Case Library</a>
                 <a href="/play">Play Session UI</a>
+                <a href="/artwork">Artwork Gallery</a>
                 <a href="/dashboard">User Dashboard</a>
                 <a href="/codex">Codex Control Room</a>
               </nav>

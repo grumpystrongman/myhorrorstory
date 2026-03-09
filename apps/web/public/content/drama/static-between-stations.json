@@ -1,0 +1,646 @@
+{
+  "id": "static-between-stations",
+  "title": "Static Between Stations",
+  "version": "v2",
+  "hook": "A dead rail line broadcasts private confessions in the players' own voices.",
+  "tone": "CINEMATIC",
+  "subgenre": "psychological horror",
+  "location": "Abandoned commuter rail control annex",
+  "warnings": [
+    "disturbing audio",
+    "stalking",
+    "threat"
+  ],
+  "channels": [
+    "SMS",
+    "WHATSAPP",
+    "TELEGRAM",
+    "EMAIL",
+    "VOICE_MESSAGE",
+    "DOCUMENT_DROP",
+    "SIMULATED_SITE"
+  ],
+  "villain": {
+    "id": "static-between-stations-villain",
+    "displayName": "The Curator of Static",
+    "archetype": "CALM_GENIUS_MANIPULATOR",
+    "worldview": "Truth is only what survives the loudest channel.",
+    "motive": "Test whether investigators can be rewritten like signals."
+  },
+  "arcs": [
+    {
+      "id": "static-between-stations-arc-contact",
+      "title": "Contact and Contradiction",
+      "stage": "OPENING",
+      "summary": "The case opens with impossible evidence and uncertain allies.",
+      "primaryRuleIds": [
+        "static-between-stations-rule-first-contact",
+        "static-between-stations-rule-delay-punish"
+      ]
+    },
+    {
+      "id": "static-between-stations-arc-disruption",
+      "title": "Interference and Doubt",
+      "stage": "MIDDLE",
+      "summary": "Villain contact escalates while ally trust becomes volatile.",
+      "primaryRuleIds": [
+        "static-between-stations-rule-incorrect-accusation",
+        "static-between-stations-rule-ally-cooperation"
+      ]
+    },
+    {
+      "id": "static-between-stations-arc-endgame",
+      "title": "Confrontation and Reckoning",
+      "stage": "ENDGAME",
+      "summary": "The final branch depends on ethics, timing, and trust.",
+      "primaryRuleIds": [
+        "static-between-stations-rule-near-success",
+        "static-between-stations-rule-moral-fork"
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "beat-1",
+      "actId": "act-1",
+      "actTitle": "Contact",
+      "title": "Signal One",
+      "narrative": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+      "stage": 1,
+      "unlockAfterSeconds": 0,
+      "revealClueIds": [
+        "static-between-stations-clue-origin"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-1.msg.handler",
+          "senderName": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 32
+        },
+        {
+          "id": "beat-1.msg.secondary",
+          "senderName": "Dispatch Handler Ilya Ross",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "Cross-reference this before dawn: Spectrogram of confession burst.",
+          "delaySeconds": 3,
+          "intensity": 48
+        },
+        {
+          "id": "beat-1.msg.villain",
+          "senderName": "The Curator of Static",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You catalogued every signal except the one that was yours. (Peripheral Presence)",
+          "delaySeconds": 6,
+          "intensity": 62
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-trace-source",
+          "label": "Trace the source frequency through telecom logs",
+          "intent": "CURIOSITY",
+          "summary": "Choice 1: Trace the source frequency through telecom logs",
+          "nextBeatId": "beat-2",
+          "progressDelta": 20,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "investigation_path": "trace_source"
+          }
+        },
+        {
+          "id": "choice-interview-ally",
+          "label": "Interview the witness before the line goes dead again",
+          "intent": "QUESTION",
+          "summary": "Choice 2: Interview the witness before the line goes dead again",
+          "nextBeatId": "beat-2",
+          "progressDelta": 20,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "investigation_path": "ally_interview"
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-2",
+      "backgroundVisual": "/visuals/stories/static-between-stations.svg"
+    },
+    {
+      "id": "beat-2",
+      "actId": "act-1",
+      "actTitle": "Contact",
+      "title": "Escalation Signal",
+      "narrative": "A contradictory channel drop appears within minutes and forces risk.",
+      "stage": 1,
+      "unlockAfterSeconds": 120,
+      "revealClueIds": [
+        "static-between-stations-clue-pressure"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-2.msg.handler",
+          "senderName": "Dispatch Handler Ilya Ross",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 32
+        },
+        {
+          "id": "beat-2.msg.secondary",
+          "senderName": "Commuter Witness Nia Vale",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "Cross-reference this before dawn: Maintenance ledger anomaly.",
+          "delaySeconds": 3,
+          "intensity": 48
+        },
+        {
+          "id": "beat-2.msg.villain",
+          "senderName": "The Curator of Static",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You catalogued every signal except the one that was yours. (Peripheral Presence)",
+          "delaySeconds": 6,
+          "intensity": 62
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-preserve-evidence",
+          "label": "Preserve original evidence chain",
+          "intent": "CURIOSITY",
+          "summary": "Choice 1: Preserve original evidence chain",
+          "nextBeatId": "beat-3",
+          "progressDelta": 18,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 1
+          },
+          "flagUpdates": {
+            "evidence_preserved": true
+          }
+        },
+        {
+          "id": "choice-fast-pursuit",
+          "label": "Pursue suspect immediately",
+          "intent": "CURIOSITY",
+          "summary": "Choice 2: Pursue suspect immediately",
+          "nextBeatId": "beat-3",
+          "progressDelta": 18,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 1,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "evidence_preserved": false
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-3",
+      "backgroundVisual": "/visuals/stories/static-between-stations.svg"
+    },
+    {
+      "id": "beat-3",
+      "actId": "act-2",
+      "actTitle": "Interference",
+      "title": "Trust Fracture",
+      "narrative": "The villain mixes real secrets with fabricated claims to split allies.",
+      "stage": 2,
+      "unlockAfterSeconds": 240,
+      "revealClueIds": [
+        "static-between-stations-clue-contradiction"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-3.msg.handler",
+          "senderName": "Commuter Witness Nia Vale",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 44
+        },
+        {
+          "id": "beat-3.msg.secondary",
+          "senderName": "Transit Auditor Bram Keene",
+          "role": "investigator",
+          "channel": "EMAIL",
+          "text": "Cross-reference this before dawn: Turnstile camera still.",
+          "delaySeconds": 3,
+          "intensity": 61
+        },
+        {
+          "id": "beat-3.msg.villain",
+          "senderName": "The Curator of Static",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You were sharper before you trusted the wrong voice. (Psychological Contact)",
+          "delaySeconds": 6,
+          "intensity": 76
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-trust-handler",
+          "label": "Trust Lead Investigator Mara Quinn and secure witness",
+          "intent": "COMPLIANCE",
+          "summary": "Choice 1: Trust Lead Investigator Mara Quinn and secure witness",
+          "nextBeatId": "beat-4",
+          "progressDelta": 26,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "trusted_ally": "Lead Investigator Mara Quinn"
+          }
+        },
+        {
+          "id": "choice-trust-witness",
+          "label": "Trust Dispatch Handler Ilya Ross and expose internal leak",
+          "intent": "COMPLIANCE",
+          "summary": "Choice 2: Trust Dispatch Handler Ilya Ross and expose internal leak",
+          "nextBeatId": "beat-4",
+          "progressDelta": 26,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "trusted_ally": "Dispatch Handler Ilya Ross"
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-4",
+      "backgroundVisual": "/visuals/stories/static-between-stations.svg"
+    },
+    {
+      "id": "beat-4",
+      "actId": "act-2",
+      "actTitle": "Interference",
+      "title": "Ultimatum Window",
+      "narrative": "A timed message threatens collateral harm unless the party diverts.",
+      "stage": 3,
+      "unlockAfterSeconds": 300,
+      "revealClueIds": [
+        "static-between-stations-clue-timed-warning"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-4.msg.handler",
+          "senderName": "Transit Auditor Bram Keene",
+          "role": "investigator",
+          "channel": "EMAIL",
+          "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 56
+        },
+        {
+          "id": "beat-4.msg.secondary",
+          "senderName": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Cross-reference this before dawn: Relay room access hash.",
+          "delaySeconds": 3,
+          "intensity": 74
+        },
+        {
+          "id": "beat-4.msg.villain",
+          "senderName": "The Curator of Static",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "If you call dispatch, she disappears before dawn. (Active Interference)",
+          "delaySeconds": 6,
+          "intensity": 90
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-save-npc",
+          "label": "Divert to save threatened NPC",
+          "intent": "THREAT",
+          "summary": "Choice 1: Divert to save threatened NPC",
+          "nextBeatId": "beat-5",
+          "progressDelta": 30,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 2
+          },
+          "flagUpdates": {
+            "rescue_route": true
+          }
+        },
+        {
+          "id": "choice-continue-case",
+          "label": "Continue forensic pursuit under threat",
+          "intent": "THREAT",
+          "summary": "Choice 2: Continue forensic pursuit under threat",
+          "nextBeatId": "beat-5",
+          "progressDelta": 30,
+          "reputationDelta": {
+            "trustworthiness": -1,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "rescue_route": false
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-5",
+      "backgroundVisual": "/visuals/stories/static-between-stations.svg"
+    },
+    {
+      "id": "beat-5",
+      "actId": "act-3",
+      "actTitle": "Reckoning",
+      "title": "Confrontation Protocol",
+      "narrative": "Players reconstruct motive and false trails before collapse.",
+      "stage": 4,
+      "unlockAfterSeconds": 240,
+      "revealClueIds": [
+        "static-between-stations-clue-reveal"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-5.msg.handler",
+          "senderName": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 68
+        },
+        {
+          "id": "beat-5.msg.secondary",
+          "senderName": "Dispatch Handler Ilya Ross",
+          "role": "witness",
+          "channel": "DOCUMENT_DROP",
+          "text": "Cross-reference this before dawn: Spectrogram of confession burst.",
+          "delaySeconds": 3,
+          "intensity": 87
+        },
+        {
+          "id": "beat-5.msg.villain",
+          "senderName": "The Curator of Static",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "Confess one lie and I return one life. (Personal Confrontation)",
+          "delaySeconds": 6,
+          "intensity": 100
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "choice-charge-villain",
+          "label": "Commit to formal accusation and expose evidence chain",
+          "intent": "ACCUSATION",
+          "summary": "Choice 1: Commit to formal accusation and expose evidence chain",
+          "nextBeatId": "beat-6",
+          "progressDelta": 34,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "final_strategy": "formal_charge"
+          }
+        },
+        {
+          "id": "choice-private-deal",
+          "label": "Take private contact route for hidden confession",
+          "intent": "BARGAIN",
+          "summary": "Choice 2: Take private contact route for hidden confession",
+          "nextBeatId": "beat-6",
+          "progressDelta": 34,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 0,
+            "deception": 2,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "final_strategy": "private_contact"
+          }
+        }
+      ],
+      "defaultNextBeatId": "beat-6",
+      "backgroundVisual": "/visuals/stories/static-between-stations.svg"
+    },
+    {
+      "id": "beat-6",
+      "actId": "act-3",
+      "actTitle": "Reckoning",
+      "title": "Case Debrief",
+      "narrative": "Final scoring resolves ending branch and season continuity flags.",
+      "stage": 4,
+      "unlockAfterSeconds": 60,
+      "revealClueIds": [
+        "static-between-stations-clue-epilogue"
+      ],
+      "incomingMessages": [
+        {
+          "id": "beat-6.msg.handler",
+          "senderName": "Dispatch Handler Ilya Ross",
+          "role": "witness",
+          "channel": "DOCUMENT_DROP",
+          "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+          "delaySeconds": 1,
+          "intensity": 68
+        },
+        {
+          "id": "beat-6.msg.secondary",
+          "senderName": "Commuter Witness Nia Vale",
+          "role": "witness",
+          "channel": "SIMULATED_SITE",
+          "text": "Cross-reference this before dawn: Maintenance ledger anomaly.",
+          "delaySeconds": 3,
+          "intensity": 87
+        },
+        {
+          "id": "beat-6.msg.villain",
+          "senderName": "The Curator of Static",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "Confess one lie and I return one life. (Personal Confrontation)",
+          "delaySeconds": 6,
+          "intensity": 100
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "beat-6.choice.default-forward",
+          "label": "Proceed with controlled pressure",
+          "intent": "CURIOSITY",
+          "summary": "Advance investigation while preserving evidence discipline.",
+          "nextBeatId": null,
+          "progressDelta": 30,
+          "reputationDelta": {
+            "trustworthiness": 1,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 1
+          },
+          "flagUpdates": {
+            "beat-6.defaultPath": true
+          }
+        }
+      ],
+      "defaultNextBeatId": null,
+      "backgroundVisual": "/visuals/stories/static-between-stations.svg"
+    }
+  ],
+  "endings": [
+    {
+      "id": "static-between-stations-ending-justice",
+      "title": "Clean Resolution",
+      "type": "JUSTICE",
+      "summary": "You expose the broadcast architecture and keep the last witness alive.",
+      "epilogue": "Truth lands publicly with evidence that survives scrutiny.",
+      "sequelHook": "A tagged evidence box points to the next case."
+    },
+    {
+      "id": "static-between-stations-ending-pyrrhic",
+      "title": "Compromised Truth",
+      "type": "PYRRHIC",
+      "summary": "You identify the culprit but lose the witness chain and public confidence.",
+      "epilogue": "The culprit is exposed, but allies and witnesses are fractured.",
+      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+    },
+    {
+      "id": "static-between-stations-ending-corruption",
+      "title": "Corruption Pact",
+      "type": "CORRUPTION",
+      "summary": "You accept the Curator's private channel and bury the official case.",
+      "epilogue": "You keep control of the case, and the villain keeps control of you.",
+      "sequelHook": "Season continuity marks the player as compromised."
+    }
+  ],
+  "investigationBoard": {
+    "nodes": [
+      {
+        "id": "static-between-stations-suspect-villain",
+        "type": "SUSPECT",
+        "label": "The Curator of Static",
+        "summary": "Primary antagonist operating through layered identities."
+      },
+      {
+        "id": "static-between-stations-suspect-secondary",
+        "type": "SUSPECT",
+        "label": "Commuter Witness Nia Vale",
+        "summary": "Possible accomplice with motive and access."
+      },
+      {
+        "id": "static-between-stations-location-core",
+        "type": "LOCATION",
+        "label": "Abandoned commuter rail control annex",
+        "summary": "Primary scene where contradictions cluster."
+      },
+      {
+        "id": "static-between-stations-evidence-core",
+        "type": "EVIDENCE",
+        "label": "Spectrogram of confession burst",
+        "summary": "Anchor evidence with disputed provenance."
+      }
+    ],
+    "links": [
+      {
+        "fromId": "static-between-stations-suspect-villain",
+        "toId": "static-between-stations-location-core",
+        "relation": "operates-through",
+        "confidence": 0.78
+      },
+      {
+        "fromId": "static-between-stations-suspect-secondary",
+        "toId": "static-between-stations-evidence-core",
+        "relation": "tampered-access",
+        "confidence": 0.64
+      },
+      {
+        "fromId": "static-between-stations-location-core",
+        "toId": "static-between-stations-evidence-core",
+        "relation": "origin-point",
+        "confidence": 0.82
+      }
+    ],
+    "timeline": [
+      {
+        "id": "static-between-stations-timeline-1",
+        "timeLabel": "22:15",
+        "summary": "Initial anomaly reaches player channels.",
+        "relatedNodeIds": [
+          "static-between-stations-location-core",
+          "static-between-stations-evidence-core"
+        ]
+      },
+      {
+        "id": "static-between-stations-timeline-2",
+        "timeLabel": "23:50",
+        "summary": "Witness account conflicts with archive records.",
+        "relatedNodeIds": [
+          "static-between-stations-suspect-secondary",
+          "static-between-stations-evidence-core"
+        ]
+      },
+      {
+        "id": "static-between-stations-timeline-3",
+        "timeLabel": "00:25",
+        "summary": "Villain contact shifts to direct intimidation.",
+        "relatedNodeIds": [
+          "static-between-stations-suspect-villain"
+        ]
+      }
+    ]
+  },
+  "replayHooks": [
+    "Variable witness reliability based on trust.",
+    "Dynamic villain timing windows.",
+    "Secret corruption ending on moral failures."
+  ],
+  "sequelHooks": [
+    "A station map marks a second inactive line in another city."
+  ],
+  "branchingMoments": [
+    "Telecom trace vs witness-first opening",
+    "Rescue route vs forensic route under ultimatum"
+  ]
+}

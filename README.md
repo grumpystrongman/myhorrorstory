@@ -4,6 +4,7 @@ MyHorrorStory is a production-focused, cross-platform horror mystery platform fo
 
 ## Platform Capabilities
 - Web gameplay and marketing funnel.
+- In-browser immersive play simulation with channel popups and branching response flow.
 - Mobile gameplay companion and progression continuity.
 - Backend API with auth, story discovery, party/session orchestration, support endpoints, and realtime gateway.
 - Admin console for operations, moderation, content, campaigns, support, and feature controls.
@@ -62,6 +63,16 @@ Use `/codex` in the web app to run local Codex prompts, stream live execution up
    - `http://127.0.0.1:3000/codex` (or your configured web port)
 4. If token is set, paste it into the bridge token field before running prompts.
 
+## Immersive Web Session (Simulation-First)
+The web play route now simulates live player delivery across SMS/WhatsApp/Telegram/email as in-app popups while preserving direct-provider abstractions for phone delivery later.
+
+1. Start web on a dedicated test port:
+   - `corepack pnpm --filter @myhorrorstory/web exec next dev -p 3100 -H 127.0.0.1`
+2. Open:
+   - `http://127.0.0.1:3100/play?storyId=midnight-lockbox`
+3. Review commercial art gallery:
+   - `http://127.0.0.1:3100/artwork`
+
 ## Core Commands
 - `corepack pnpm lint`
 - `corepack pnpm typecheck`
@@ -81,7 +92,11 @@ Use `/codex` in the web app to run local Codex prompts, stream live execution up
 - `corepack pnpm linear:oauth:client-credentials`
 - `corepack pnpm creative:build-plan`
 - `corepack pnpm creative:generate-visuals`
+- `corepack pnpm creative:materialize-assets`
+- `corepack pnpm creative:validate-visuals`
 - `corepack pnpm stories:build-compendium`
+- `corepack pnpm stories:build-drama`
+- `corepack pnpm voice:build-drama`
 - `node scripts/generate-score-placeholders.mjs`
 - `node scripts/validate-baseline.mjs`
 - `PLAYWRIGHT_WEB_PORT=3100 PLAYWRIGHT_ADMIN_PORT=3101 corepack pnpm test:e2e` (optional explicit port override)
@@ -125,13 +140,16 @@ Use `/codex` in the web app to run local Codex prompts, stream live execution up
 - Voice design spec: `docs/stories/voice-design-spec.md`
 - Voice casting manifest: `docs/stories/voice-casting-manifest.md`
 - Music score spec: `docs/stories/music-score-spec.md`
+- Voice drama production: `docs/stories/voice-drama-production.md`
 - Growth architecture: `docs/growth/architecture.md`
 - Email marketing system: `docs/growth/email-marketing-system.md`
 - Remote testing runbook: `docs/operations/remote-testing-anywhere.md`
 - Messaging setup runbook: `docs/operations/messaging-setup.md`
 - Linear bot suite runbook: `docs/operations/linear-bot-suite.md`
 - Commercial benchmark research: `docs/design/commercial-benchmark-research.md`
+- Visual validation report: `docs/design/visual-validation-report.md`
 - Story branching compendium: `docs/stories/branching-compendium.md`
+- Finalized story playbooks: `docs/stories/finalized-playbooks/*.md`
 - Terms and Conditions source: `docs/legal/terms-and-conditions.md`
 - Phase status reports: `docs/status/phase-01.md` through `docs/status/phase-11.md`
 - Agent workstreams: `docs/agents/README.md`

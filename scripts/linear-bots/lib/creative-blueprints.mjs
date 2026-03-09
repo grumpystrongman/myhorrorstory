@@ -1,6 +1,34 @@
 export function buildCommercialCreativeIssueBlueprints(storyIds) {
   const core = [
     {
+      title: 'Immersive Gameplay UX Delivery Pack',
+      botId: 'AI-Web-App-Agent',
+      priority: 1,
+      description:
+        'Deliver production-grade play-session experience: live message feed, popup channel simulation, branching response controls, investigation board ergonomics, ending debrief, and accessibility-safe interaction pacing.'
+    },
+    {
+      title: 'In-App Channel Simulation and Notification Abstraction',
+      botId: 'AI-Backend-Agent',
+      priority: 1,
+      description:
+        'Implement simulation-first messaging gateway across SMS/WhatsApp/Telegram/email surfaces in web runtime, with provider-agnostic abstractions for future direct phone notifications.'
+    },
+    {
+      title: 'Voice Drama Performance and Casting Production',
+      botId: 'AI-Voice-Audio-Agent',
+      priority: 1,
+      description:
+        'Finalize character voice direction and line delivery system across all story arcs, with provider chain support (Piper, ElevenLabs, OpenAI, Polly), emotion controls, and runtime playback behavior.'
+    },
+    {
+      title: 'Story Arc Finalization and Branch Packaging QA',
+      botId: 'AI-Story-Engine-Agent',
+      priority: 1,
+      description:
+        'Finalize every launch story with complete beat progression, branch outcomes, replay hooks, and ending paths packaged into runtime artifacts and validated against narrative contracts.'
+    },
+    {
       title: 'Commercial Website Art Direction System',
       botId: 'AI-UX-UI-Agent',
       priority: 1,
@@ -45,7 +73,15 @@ export function buildCommercialCreativeIssueBlueprints(storyIds) {
       `Generate complete production-ready asset set for story ${storyId}: character portraits, scene art, evidence visuals, promo creatives, and social variants with reusable manifests.`
   }));
 
-  return [...core, ...perStory];
+  const perStoryNarrative = storyIds.map((storyId) => ({
+    title: `Final Drama Package: ${storyId}`,
+    botId: 'AI-Story-Engine-Agent',
+    priority: 2,
+    description:
+      `Ship fully authored runtime drama package for ${storyId} with beat-level channel drops, response branches, intent impacts, voice line sheets, and final ending debrief outcomes.`
+  }));
+
+  return [...core, ...perStory, ...perStoryNarrative];
 }
 
 export function buildCommercialWebsiteBlueprint() {
