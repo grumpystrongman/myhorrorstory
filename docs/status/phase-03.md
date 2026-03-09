@@ -5,6 +5,8 @@
 - Implemented story engine runtime package with beat unlocking, choice effects, and clue reveal operations.
 - Implemented Narrative Director engine and runtime endpoint (`POST /api/v1/narrative/events/next`) for adaptive multimedia event generation with villain escalation, response branches, and consequence mapping.
 - Implemented worker service for timed unlock, lifecycle email, media generation manifest, and voice synthesis jobs.
+- Implemented channel setup and webhook tooling for SMS/WhatsApp/Telegram (`/channels/setup*`, `/webhooks/twilio`, `/webhooks/telegram`) with provider-adapter routing and runtime ingestion.
+- Extended channel backend with live outbound delivery endpoint (`POST /channels/send`) and mapped-channel lookup (`GET /channels/setup/user`) for operational dispatch workflows.
 
 ## Remaining
 - Replace in-memory module state with Prisma-backed repositories for production persistence.
@@ -23,6 +25,9 @@
 - `corepack pnpm --filter @myhorrorstory/api test`
 - `corepack pnpm --filter @myhorrorstory/api-client typecheck`
 - `corepack pnpm --filter @myhorrorstory/api-client lint`
+- `corepack pnpm --filter @myhorrorstory/messaging lint`
+- `corepack pnpm --filter @myhorrorstory/messaging typecheck`
+- `corepack pnpm --filter @myhorrorstory/messaging test`
 
 ## Risks
 - Provider integrations (payments, CRM, support, voice/media) remain adapter-based until live credentials and staging infra are connected.

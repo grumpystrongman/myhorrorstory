@@ -40,8 +40,11 @@ describe('music manifest', () => {
 
   it('lists all story score entries for launch catalog', () => {
     const stories = listStoryScores();
-    expect(stories).toHaveLength(10);
+    expect(stories).toHaveLength(11);
     expect(stories[0]?.track.usage).toBe('story');
+    const shortMode = stories.find((story) => story.storyId === 'midnight-lockbox');
+    expect(shortMode?.mode).toBe('short-test');
+    expect(shortMode?.timelineLabel).toContain('1-2 days');
   });
 
   it('maps helper functions correctly', () => {

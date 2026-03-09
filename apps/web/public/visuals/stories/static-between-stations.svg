@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="static-between-stations">
+  <defs>
+    <linearGradient id="bg-static-between-stations" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c3c62" />
+      <stop offset="58%" stop-color="#34203f" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-static-between-stations" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#d9a867" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#d9a867" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-static-between-stations">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-static-between-stations">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-static-between-stations)" />
+  <rect width="1600" height="900" fill="url(#flare-static-between-stations)" />
+  <g opacity="0.4">
+    <path d="M-60,239 C180,119 480,419 760,169 C1030,-51 1310,429 1680,209" fill="none" stroke="#d9a867" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,529 C220,379 530,659 830,439 C1120,249 1390,639 1690,459" fill="none" stroke="#d9a867" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,809 C220,669 540,904 860,699 C1160,609 1400,879 1680,764" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-static-between-stations)" opacity="0.3">
+    <ellipse cx="159" cy="89" rx="220" ry="130" fill="#d9a867" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-static-between-stations)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">STATIC BETWEEN STATIONS</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">abandoned rail signal tower under storm</text>
+</svg>

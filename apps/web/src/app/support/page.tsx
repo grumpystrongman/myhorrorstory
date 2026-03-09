@@ -1,10 +1,29 @@
+﻿import { LeadCaptureForm } from '../components/lead-capture-form';
+
 export default function SupportPage(): JSX.Element {
   return (
-    <main className="container" style={{ padding: '32px 0' }}>
-      <div className="panel">
-        <h1 style={{ fontFamily: 'Cinzel, serif' }}>Support Portal</h1>
-        <p>Submit tickets, track status, and access operational troubleshooting guides.</p>
-      </div>
+    <main className="container page-stack">
+      <section className="panel section-shell">
+        <span className="surface-tag">Operations</span>
+        <h1 className="section-title">Support Portal</h1>
+        <p className="section-copy">
+          File support requests, moderation concerns, billing cases, and urgent safety escalations.
+        </p>
+      </section>
+
+      <section className="panel section-shell dual-grid">
+        <div>
+          <h2 className="section-title">Support Channels</h2>
+          <ul className="legal-list">
+            <li>Priority account support for active subscribers</li>
+            <li>Safety moderation escalation in under 24 hours</li>
+            <li>Refund and billing review workflows</li>
+          </ul>
+          <p className="muted">Direct contact: support@myhorrorstory.com</p>
+        </div>
+        <LeadCaptureForm source="support_follow_up" title="Support Follow-up Email" compact />
+      </section>
     </main>
   );
 }
+

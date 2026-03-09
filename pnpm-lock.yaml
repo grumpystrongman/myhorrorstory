@@ -77,6 +77,12 @@ importers:
       '@myhorrorstory/crm':
         specifier: workspace:*
         version: link:../../packages/crm
+      '@myhorrorstory/email':
+        specifier: workspace:*
+        version: link:../../packages/email
+      '@myhorrorstory/messaging':
+        specifier: workspace:*
+        version: link:../../packages/messaging
       '@myhorrorstory/payments':
         specifier: workspace:*
         version: link:../../packages/payments
@@ -119,6 +125,9 @@ importers:
       uuid:
         specifier: ^11.1.0
         version: 11.1.0
+      zod:
+        specifier: ^3.25.76
+        version: 3.25.76
     devDependencies:
       '@nestjs/testing':
         specifier: ^11.0.11
@@ -242,6 +251,8 @@ importers:
   packages/email: {}
 
   packages/media-pipeline: {}
+
+  packages/messaging: {}
 
   packages/music: {}
 

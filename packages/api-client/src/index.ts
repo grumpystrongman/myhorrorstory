@@ -13,6 +13,58 @@ export interface HttpClient {
   request<T>(path: string, init?: { method?: string; body?: unknown; token?: string }): Promise<T>;
 }
 
+export interface SetupChannelContact {
+  channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+  address: string;
+  optIn?: boolean;
+}
+
+export interface SetupUserChannelsRequest {
+  caseId: string;
+  playerId: string;
+  contacts: SetupChannelContact[];
+}
+
+export interface SendSetupTestRequest {
+  caseId: string;
+  playerId: string;
+  channels?: Array<'SMS' | 'WHATSAPP' | 'TELEGRAM'>;
+  message?: string;
+}
+
+export interface SendChannelMessageRequest {
+  caseId: string;
+  playerId: string;
+  channels?: Array<'SMS' | 'WHATSAPP' | 'TELEGRAM'>;
+  message: string;
+  mediaUrls?: string[];
+}
+
+export interface GrowthLeadCaptureRequest {
+  email: string;
+  source: string;
+  firstName?: string;
+  lastName?: string;
+  marketingConsent?: boolean;
+  tags?: string[];
+  country?: string;
+  locale?: string;
+}
+
+export interface GrowthLifecycleEventRequest {
+  email: string;
+  eventType:
+    | 'welcome'
+    | 'abandoned_signup'
+    | 'abandoned_case'
+    | 'win_back'
+    | 'upsell'
+    | 'referral_invite'
+    | 'launch_announcement';
+  storyId?: string;
+  metadata?: Record<string, string | number | boolean>;
+}
+
 export class ApiClient {
   constructor(private readonly http: HttpClient) {}
 
@@ -54,6 +106,145 @@ export class ApiClient {
     return this.http.request('/api/v1/narrative/events/next', {
       method: 'POST',
       body: input
+    });
+  }
+
+  async getChannelSetupStatus(publicBaseUrl?: string): Promise<{
+    baseUrl: string;
+    providers: string[];
+    channels: Array<{
+      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      configured: boolean;
+      liveProvider: string | null;
+      fallbackProvider: string;
+      webhookUrl: string;
+      missingEnv: string[];
+    }>;
+  }> {
+    const query = publicBaseUrl ? `?publicBaseUrl=${encodeURIComponent(publicBaseUrl)}` : '';
+    return this.http.request(`/api/v1/channels/setup${query}`, { method: 'GET' });
+  }
+
+  async setupUserChannels(input: SetupUserChannelsRequest): Promise<{
+    updated: true;
+    caseId: string;
+    playerId: string;
+    channelCount: number;
+    activeRouteCount: number;
+  }> {
+    return this.http.request('/api/v1/channels/setup/user', {
+      method: 'POST',
+      body: input
+    });
+  }
+
+  async sendChannelSetupTest(input: SendSetupTestRequest): Promise<{
+    caseId: string;
+    playerId: string;
+    sentCount: number;
+    receipts: Array<{
+      provider: string;
+      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      to: string;
+      externalMessageId: string;
+      acceptedAt: string;
+    }>;
+  }> {
+    return this.http.request('/api/v1/channels/setup/test', {
+      method: 'POST',
+      body: input
+    });
+  }
+
+  async getUserChannels(input: { caseId: string; playerId: string }): Promise<{
+    caseId: string;
+    playerId: string;
+    updatedAt: string;
+    contacts: Array<{
+      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      address: string;
+      normalizedAddress: string;
+      optIn: boolean;
+    }>;
+  }> {
+    const query = `?caseId=${encodeURIComponent(input.caseId)}&playerId=${encodeURIComponent(input.playerId)}`;
+    return this.http.request(`/api/v1/channels/setup/user${query}`, { method: 'GET' });
+  }
+
+  async sendChannelMessage(input: SendChannelMessageRequest): Promise<{
+    caseId: string;
+    playerId: string;
+    sentCount: number;
+    receipts: Array<{
+      provider: string;
+      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      to: string;
+      externalMessageId: string;
+      acceptedAt: string;
+    }>;
+  }> {
+    return this.http.request('/api/v1/channels/send', {
+      method: 'POST',
+      body: input
+    });
+  }
+
+  async captureLead(input: GrowthLeadCaptureRequest): Promise<{
+    accepted: boolean;
+    segment: string;
+    lifecycleEmailQueued: boolean;
+    leadId: string;
+  }> {
+    return this.http.request('/api/v1/growth/lead-capture', {
+      method: 'POST',
+      body: input
+    });
+  }
+
+  async triggerLifecycleEvent(input: GrowthLifecycleEventRequest): Promise<{
+    accepted: boolean;
+    eventType: GrowthLifecycleEventRequest['eventType'];
+    campaignId: string;
+    emailQueued: boolean;
+  }> {
+    return this.http.request('/api/v1/growth/lifecycle-event', {
+      method: 'POST',
+      body: input
+    });
+  }
+
+  async listGrowthLeads(): Promise<
+    Array<{
+      id: string;
+      email: string;
+      source: string;
+      firstName: string | null;
+      lastName: string | null;
+      marketingConsent: boolean;
+      tags: string[];
+      locale: string | null;
+      country: string | null;
+      createdAt: string;
+      updatedAt: string;
+      lastLifecycleEvent: string | null;
+    }>
+  > {
+    return this.http.request('/api/v1/growth/leads', {
+      method: 'GET'
+    });
+  }
+
+  async listGrowthCampaigns(): Promise<
+    Array<{
+      id: string;
+      label: string;
+      triggerEvent: string;
+      segment: string;
+      sendDelayMinutes: number;
+    }>
+  > {
+    return this.http.request('/api/v1/growth/campaigns', {
+      method: 'GET'
     });
   }
 }

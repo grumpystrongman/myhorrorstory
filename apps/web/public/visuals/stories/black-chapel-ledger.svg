@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="black-chapel-ledger">
+  <defs>
+    <linearGradient id="bg-black-chapel-ledger" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b3047" />
+      <stop offset="58%" stop-color="#3d1f24" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-black-chapel-ledger" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#d0b078" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#d0b078" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-black-chapel-ledger">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-black-chapel-ledger">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-black-chapel-ledger)" />
+  <rect width="1600" height="900" fill="url(#flare-black-chapel-ledger)" />
+  <g opacity="0.4">
+    <path d="M-60,257 C180,137 480,437 760,187 C1030,-33 1310,447 1680,227" fill="none" stroke="#d0b078" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,487 C220,337 530,617 830,397 C1120,207 1390,597 1690,417" fill="none" stroke="#d0b078" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,707 C220,567 540,802 860,597 C1160,507 1400,777 1680,662" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-black-chapel-ledger)" opacity="0.3">
+    <ellipse cx="187" cy="62" rx="220" ry="130" fill="#d0b078" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-black-chapel-ledger)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">BLACK CHAPEL LEDGER</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">cliffside chapel bells and ledger desk</text>
+</svg>

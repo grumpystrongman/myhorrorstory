@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="ward-1908">
+  <defs>
+    <linearGradient id="bg-ward-1908" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27384d" />
+      <stop offset="58%" stop-color="#2b1e28" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-ward-1908" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#ceb588" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#ceb588" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-ward-1908">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-ward-1908">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-ward-1908)" />
+  <rect width="1600" height="900" fill="url(#flare-ward-1908)" />
+  <g opacity="0.4">
+    <path d="M-60,265 C180,145 480,445 760,195 C1030,-25 1310,455 1680,235" fill="none" stroke="#ceb588" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,525 C220,375 530,655 830,435 C1120,245 1390,635 1690,455" fill="none" stroke="#ceb588" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,805 C220,665 540,900 860,695 C1160,605 1400,875 1680,760" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-ward-1908)" opacity="0.3">
+    <ellipse cx="175" cy="70" rx="220" ry="130" fill="#ceb588" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-ward-1908)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">WARD 1908</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">hilltop ward corridor lit by archival lamps</text>
+</svg>

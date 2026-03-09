@@ -179,3 +179,22 @@
 - Reveal Variants: Synthetic manipulator; real anomalous signal
 - Replay Hooks: Mutating feed messages based on prior runs
 - Upsell/Sequel Hooks: Premium "Protocol Red" continuation arc
+
+## Short Mode QA Story
+- Title: Midnight Lockbox
+- Hook: A storage unit sends overnight voicemails that predict player actions.
+- Genre/Subgenre: Horror / Supernatural mystery
+- Tone: Grounded, tense, procedural
+- Target Session Length: 36 minutes active play
+- Calendar Play Window: 1-2 days async for testing
+- Solo Suitability: 5/5
+- Party Suitability: 4/5
+- Age/Content Warnings: Threat, stalking behavior, disturbing audio
+- Main Characters: Case Lead, Night Manager, Courier Witness, Locksmith
+- Setting: 24-hour storage facility and storm-drain service tunnels
+- Act Structure: Night One breach -> Day Two pressure -> Night Two resolution
+- Branching Moments: Audit-first vs witness-first opening; public reveal vs covert extraction
+- Clue/Evidence List: Voicemail waveform, keypad access hash, elevator still, drain map
+- Reveal Variants: Extortion ring using surveillance; anomalous lockbox artifact
+- Replay Hooks: Alternate trust path, countdown variance, corruption epilogue
+- Upsell/Sequel Hooks: Lockbox 404 continuation

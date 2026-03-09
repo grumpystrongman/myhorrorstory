@@ -11,11 +11,24 @@ function makeJob(data: WorkerJob): Job<WorkerJob> {
   } as Job<WorkerJob>;
 }
 
+function mockEmailProvider(send?: EmailProvider['send']): EmailProvider {
+  return {
+    id: 'test-email-provider',
+    send:
+      send ??
+      (vi.fn(async () => ({
+        providerId: 'test-email-provider',
+        messageId: 'msg-1',
+        acceptedAt: new Date().toISOString()
+      })) as EmailProvider['send'])
+  };
+}
+
 describe('worker job handler', () => {
   it('processes timed unlock jobs', async () => {
     const info = vi.fn();
     const handler = createJobHandler({
-      emailService: new EmailService({ send: vi.fn() as EmailProvider['send'] }),
+      emailService: new EmailService(mockEmailProvider()),
       voice: new VoiceOrchestrator([new DeterministicVoiceProvider('deterministic')]),
       logger: { info, error: vi.fn() }
     });
@@ -25,10 +38,12 @@ describe('worker job handler', () => {
   });
 
   it('dispatches lifecycle email jobs', async () => {
-    const send = vi.fn();
-    const provider: EmailProvider = {
-      send
-    };
+    const send = vi.fn(async () => ({
+      providerId: 'test-email-provider',
+      messageId: 'msg-send',
+      acceptedAt: new Date().toISOString()
+    }));
+    const provider = mockEmailProvider(send as EmailProvider['send']);
 
     const handler = createJobHandler({
       emailService: new EmailService(provider),
@@ -51,7 +66,7 @@ describe('worker job handler', () => {
   it('generates media manifest entries', async () => {
     const info = vi.fn();
     const handler = createJobHandler({
-      emailService: new EmailService({ send: vi.fn() as EmailProvider['send'] }),
+      emailService: new EmailService(mockEmailProvider()),
       voice: new VoiceOrchestrator([new DeterministicVoiceProvider('deterministic')]),
       logger: { info, error: vi.fn() }
     });
@@ -76,7 +91,7 @@ describe('worker job handler', () => {
   it('synthesizes voice jobs with cache key', async () => {
     const info = vi.fn();
     const handler = createJobHandler({
-      emailService: new EmailService({ send: vi.fn() as EmailProvider['send'] }),
+      emailService: new EmailService(mockEmailProvider()),
       voice: new VoiceOrchestrator([new DeterministicVoiceProvider('deterministic')]),
       logger: { info, error: vi.fn() }
     });
@@ -94,6 +109,45 @@ describe('worker job handler', () => {
       expect.objectContaining({
         provider: 'deterministic',
         cacheKey: expect.any(String)
+      })
+    );
+  });
+
+  it('builds commercial creative batch plans', async () => {
+    const info = vi.fn();
+    const handler = createJobHandler({
+      emailService: new EmailService(mockEmailProvider()),
+      voice: new VoiceOrchestrator([new DeterministicVoiceProvider('deterministic')]),
+      logger: { info, error: vi.fn() }
+    });
+
+    await handler(
+      makeJob({
+        type: 'commercial_creative_batch',
+        storyIds: ['midnight-lockbox'],
+        websitePrompts: [
+          {
+            id: 'web-landing',
+            type: 'ui_background',
+            prompt: 'Premium hero scene',
+            outputKey: 'assets/production/web/landing-v1.png'
+          }
+        ],
+        storyTemplates: [
+          {
+            type: 'character_portrait',
+            count: 2,
+            promptTemplate: 'Character portrait for {story_id}.'
+          }
+        ]
+      })
+    );
+
+    expect(info).toHaveBeenCalledWith(
+      '[commercial_creative_batch]',
+      expect.objectContaining({
+        assetCount: 3,
+        valid: true
       })
     );
   });

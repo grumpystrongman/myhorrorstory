@@ -1,5 +1,6 @@
-import { getStoryTitle, getTrackById, getStoryTrack } from '@myhorrorstory/music';
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
+import { getTrackById } from '@myhorrorstory/music';
+import { getLaunchCaseById } from '../../../lib/launch-catalog';
 
 interface StoryIntroPageProps {
   params: Promise<{
@@ -9,41 +10,49 @@ interface StoryIntroPageProps {
 
 export default async function StoryIntroPage({ params }: StoryIntroPageProps): Promise<JSX.Element> {
   const { storyId } = await params;
-  const track = getStoryTrack(storyId);
+  const story = getLaunchCaseById(storyId);
 
-  if (!track) {
+  if (!story) {
     notFound();
   }
 
   const globalTrack = getTrackById('platform-overture');
 
   return (
-    <main className="container" style={{ padding: '32px 0' }}>
-      <div className="panel" style={{ marginBottom: 16 }}>
-        <p style={{ letterSpacing: '0.18em', margin: 0, color: 'var(--muted)' }}>STORY INTRO</p>
-        <h1 style={{ fontFamily: 'Cinzel, serif', marginTop: 12 }}>{getStoryTitle(storyId)}</h1>
-        <p>
-          Intro sequence loaded. The global platform overture yields to this case score to set the
-          tone before your first chapter event.
-        </p>
-      </div>
+    <main className="container page-stack">
+      <section className="panel intro-hero">
+        <img src={story.visualPath} alt={`${story.storyTitle} story key art`} />
+        <div>
+          <p className="kicker">Story Intro</p>
+          <h1 className="section-title">{story.storyTitle}</h1>
+          <p className="section-copy">{story.hook}</p>
+          <p className="muted">{story.spotlight}</p>
+          <div className="inline-links">
+            <a href={`/play?storyId=${story.storyId}`} data-testid="intro-start-session">
+              Start Investigation Session
+            </a>
+            <a href="/library">Back to Library</a>
+          </div>
+        </div>
+      </section>
 
-      <div className="panel" style={{ marginBottom: 16 }}>
-        <h2 style={{ marginTop: 0 }}>Score Profile</h2>
-        <p style={{ marginBottom: 6 }}>Track: {track.title}</p>
-        <p style={{ marginBottom: 6 }}>Mood: {track.mood}</p>
-        <p style={{ marginBottom: 6 }}>BPM: {track.bpm}</p>
-        <p style={{ margin: 0 }}>
-          Global Theme: {globalTrack ? globalTrack.title : 'MHS Platform Overture'}
-        </p>
-      </div>
-
-      <div className="panel" style={{ display: 'flex', gap: 12 }}>
-        <a href={`/play?storyId=${storyId}`} data-testid="intro-start-session">
-          Start Investigation Session
-        </a>
-        <a href="/library">Back to Library</a>
-      </div>
+      <section className="panel section-shell dual-grid">
+        <div>
+          <h2 className="section-title">Case Profile</h2>
+          <p className="muted">Subgenre: {story.subgenre}</p>
+          <p className="muted">Tone: {story.toneLabel}</p>
+          <p className="muted">Session: {story.timelineLabel}</p>
+          <p className="warning-line">Warnings: {story.warnings.join(', ')}</p>
+        </div>
+        <div>
+          <h2 className="section-title">Score Profile</h2>
+          <p className="muted">Track: {story.track.title}</p>
+          <p className="muted">Mood: {story.track.mood}</p>
+          <p className="muted">BPM: {story.track.bpm}</p>
+          <p className="muted">Global Theme: {globalTrack?.title ?? 'MHS Platform Overture'}</p>
+        </div>
+      </section>
     </main>
   );
 }
+

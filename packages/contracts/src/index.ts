@@ -34,12 +34,96 @@ export const signUpSchema = z.object({
   marketingConsent: z.boolean().default(false),
   acceptedTerms: z.literal(true),
   acceptedPrivacy: z.literal(true),
-  ageGateConfirmed: z.literal(true)
+  ageGateConfirmed: z.literal(true),
+  termsVersion: z.string().min(1).default('2026-03-09'),
+  privacyVersion: z.string().min(1).default('2026-03-09')
+});
+
+export const legalAcceptanceSchema = z.object({
+  userId: z.string().uuid(),
+  acceptedTerms: z.literal(true),
+  acceptedPrivacy: z.literal(true),
+  ageGateConfirmed: z.literal(true),
+  termsVersion: z.string().min(1).default('2026-03-09'),
+  privacyVersion: z.string().min(1).default('2026-03-09')
+});
+
+export const legalAcceptanceStatusSchema = z.object({
+  acceptedTermsAt: z.string().datetime(),
+  acceptedPrivacyAt: z.string().datetime(),
+  ageGateConfirmedAt: z.string().datetime(),
+  termsVersion: z.string().min(1),
+  privacyVersion: z.string().min(1)
 });
 
 export const signInSchema = z.object({
   email: z.string().email(),
   password: z.string().min(12).max(128)
+});
+
+export const growthLeadCaptureRequestSchema = z.object({
+  email: z.string().email(),
+  source: z.string().min(1),
+  firstName: z.string().min(1).max(80).optional(),
+  lastName: z.string().min(1).max(80).optional(),
+  marketingConsent: z.boolean().default(true),
+  tags: z.array(z.string().min(1)).default([]),
+  country: z.string().min(2).max(2).optional(),
+  locale: z.string().min(2).max(10).optional()
+});
+
+export const growthLeadCaptureResponseSchema = z.object({
+  accepted: z.boolean(),
+  segment: z.string().min(1),
+  lifecycleEmailQueued: z.boolean(),
+  leadId: z.string().min(1)
+});
+
+export const lifecycleEventTypeSchema = z.enum([
+  'welcome',
+  'abandoned_signup',
+  'abandoned_case',
+  'win_back',
+  'upsell',
+  'referral_invite',
+  'launch_announcement'
+]);
+
+export const growthLifecycleEventRequestSchema = z.object({
+  email: z.string().email(),
+  eventType: lifecycleEventTypeSchema,
+  storyId: z.string().min(1).optional(),
+  metadata: z.record(z.union([z.string(), z.number(), z.boolean()])).default({})
+});
+
+export const growthLifecycleEventResponseSchema = z.object({
+  accepted: z.boolean(),
+  eventType: lifecycleEventTypeSchema,
+  campaignId: z.string().min(1),
+  emailQueued: z.boolean()
+});
+
+export const growthLeadRecordSchema = z.object({
+  id: z.string().min(1),
+  email: z.string().email(),
+  source: z.string().min(1),
+  firstName: z.string().nullable(),
+  lastName: z.string().nullable(),
+  marketingConsent: z.boolean(),
+  tags: z.array(z.string().min(1)),
+  locale: z.string().nullable(),
+  country: z.string().nullable(),
+  createdAt: z.string().datetime(),
+  updatedAt: z.string().datetime(),
+  lastLifecycleEvent: lifecycleEventTypeSchema.nullable()
+});
+
+export const growthCampaignSummarySchema = z.object({
+  id: z.string().min(1),
+  label: z.string().min(1),
+  triggerEvent: lifecycleEventTypeSchema,
+  segment: z.string().min(1),
+  sendDelayMinutes: z.number().int().min(0)
 });
 
 export const tokenPairSchema = z.object({
@@ -888,6 +972,7 @@ export const investigationBoardUpsertSchema = z.object({
 export type Role = z.infer<typeof roleSchema>;
 export type PlanTier = z.infer<typeof planTierSchema>;
 export type User = z.infer<typeof userSchema>;
+export type LegalAcceptanceStatus = z.infer<typeof legalAcceptanceStatusSchema>;
 export type DeliveryChannel = z.infer<typeof deliveryChannelSchema>;
 export type PlayerIntent = z.infer<typeof playerIntentSchema>;
 export type CommunicationTone = z.infer<typeof communicationToneSchema>;
@@ -927,3 +1012,10 @@ export type NextNarrativeEventResponse = z.infer<typeof nextNarrativeEventRespon
 export type EvaluateTriggersRequest = z.infer<typeof evaluateTriggersRequestSchema>;
 export type EvaluateTriggersResponse = z.infer<typeof evaluateTriggersResponseSchema>;
 export type InvestigationBoardUpsert = z.infer<typeof investigationBoardUpsertSchema>;
+export type GrowthLeadCaptureRequest = z.infer<typeof growthLeadCaptureRequestSchema>;
+export type GrowthLeadCaptureResponse = z.infer<typeof growthLeadCaptureResponseSchema>;
+export type LifecycleEventType = z.infer<typeof lifecycleEventTypeSchema>;
+export type GrowthLifecycleEventRequest = z.infer<typeof growthLifecycleEventRequestSchema>;
+export type GrowthLifecycleEventResponse = z.infer<typeof growthLifecycleEventResponseSchema>;
+export type GrowthLeadRecord = z.infer<typeof growthLeadRecordSchema>;
+export type GrowthCampaignSummary = z.infer<typeof growthCampaignSummarySchema>;

@@ -8,17 +8,22 @@
 - Implemented soundtrack system with global platform overture + 10 story themes, route-aware playback selection, and web runtime controls.
 - Updated story packages to use story-specific character names aligned with launch catalog and voice casting.
 - Added prompt library, asset manifests, versioning rules, placeholder assets, and updated voice design spec.
+- Added commercial visual renderer script and generated a full story key-art set (11 story visuals + 3 website surface visuals).
+- Upgraded score rendering pass to commercial multi-layer loops (40-44s seamless runtime assets) and updated score manifest metadata.
+- Added story branching compendium generator and published story arc/trigger/ending index for all shipped cases.
 
 ## Remaining
 - Connect live provider credentials in staging/prod and calibrate per-character prosody from editorial review recordings.
 
 ## Validation Evidence
-- Date: 2026-03-08
+- Date: 2026-03-09
 - Commands executed successfully from repository root:
-  - `corepack pnpm lint`
+  - `corepack pnpm creative:generate-visuals`
+  - `node scripts/generate-score-placeholders.mjs`
+  - `corepack pnpm stories:build-compendium`
+  - `corepack pnpm --filter @myhorrorstory/music test`
   - `corepack pnpm typecheck`
   - `corepack pnpm test`
-  - `corepack pnpm build`
 
 ## Risks
 - Provider integrations (payments, CRM, support, voice/media) remain adapter-based until live credentials and staging infra are connected.

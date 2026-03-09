@@ -33,7 +33,11 @@ export class CrmService {
     await this.provider.upsertContact(contact);
   }
 
+  async addToSegment(email: string, segment: string): Promise<void> {
+    await this.provider.addToSegment(email, segment);
+  }
+
   async markAbandonedCase(email: string): Promise<void> {
-    await this.provider.addToSegment(email, 'abandoned_case');
+    await this.addToSegment(email, 'abandoned_case');
   }
 }

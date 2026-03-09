@@ -8,30 +8,38 @@ test.describe('Web consumer interactions', () => {
 
     await Promise.all([
       page.waitForURL('**/onboarding'),
-      page.getByRole('link', { name: 'Onboarding Funnel' }).click()
+      page.getByRole('link', { name: 'Onboarding Funnel' }).first().click()
     ]);
     await expect(page.getByRole('heading', { name: 'Onboarding Funnel' })).toBeVisible();
 
     await page.goto(`${WEB_BASE_URL}/`);
     await Promise.all([
       page.waitForURL('**/library'),
-      page.getByRole('link', { name: 'Case Library' }).click()
+      page.getByRole('link', { name: 'Case Library' }).first().click()
     ]);
     await expect(page.getByRole('heading', { name: 'Case Library' })).toBeVisible();
 
     await page.goto(`${WEB_BASE_URL}/`);
     await Promise.all([
       page.waitForURL('**/play'),
-      page.getByRole('link', { name: 'Play Session UI' }).click()
+      page.getByRole('link', { name: 'Play Session UI' }).first().click()
     ]);
     await expect(page.getByRole('heading', { name: 'Play Session' })).toBeVisible();
 
     await page.goto(`${WEB_BASE_URL}/`);
     await Promise.all([
       page.waitForURL('**/dashboard'),
-      page.getByRole('link', { name: 'User Dashboard' }).click()
+      page.getByRole('link', { name: 'User Dashboard' }).first().click()
     ]);
     await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
+
+    await page.goto(`${WEB_BASE_URL}/`);
+    await Promise.all([
+      page.waitForURL('**/codex'),
+      page.getByRole('link', { name: 'Codex Control Room' }).first().click()
+    ]);
+    await expect(page.getByRole('heading', { name: 'Codex Local Control Room' })).toBeVisible();
+    await expect(page.getByTestId('codex-console')).toBeVisible();
   });
 
   test('switches soundtrack from global overture to story-specific score', async ({ page }) => {
@@ -48,6 +56,53 @@ test.describe('Web consumer interactions', () => {
     ]);
     await expect(page.getByTestId('active-story')).toContainText('Static Between Stations');
     await expect(page.getByTestId('active-score')).toContainText('Signal in the Static');
+  });
+
+  test('supports short mode story flow for 1-2 day QA playthroughs', async ({ page }) => {
+    await page.goto(`${WEB_BASE_URL}/library`);
+
+    const shortModeCard = page.locator('article').filter({ hasText: 'Midnight Lockbox (Short Mode)' });
+    await expect(shortModeCard).toBeVisible();
+    await expect(shortModeCard).toContainText('1-2 days');
+
+    await Promise.all([
+      page.waitForURL('**/stories/midnight-lockbox/intro'),
+      shortModeCard.getByRole('link', { name: 'Open Intro' }).click()
+    ]);
+
+    await expect(page.getByRole('heading', { name: 'Midnight Lockbox' })).toBeVisible();
+    await expect(page.getByTestId('soundtrack-track')).toHaveText('Afterhours Unit 331');
+
+    await Promise.all([
+      page.waitForURL('**/play?storyId=midnight-lockbox'),
+      page.getByTestId('intro-start-session').click()
+    ]);
+    await expect(page.getByTestId('active-story')).toContainText('Midnight Lockbox');
+    await expect(page.getByTestId('active-score')).toContainText('Afterhours Unit 331');
+  });
+
+  test('submits email join and onboarding signup flows', async ({ page }) => {
+    await page.goto(`${WEB_BASE_URL}/`);
+
+    await page.getByLabel('First name').first().fill('Riley');
+    await page.getByLabel('Email').first().fill(`lead+${Date.now()}@example.com`);
+    await page.getByRole('button', { name: 'Join By Email' }).first().click();
+    await expect(page.getByText('Email joined. Launch briefings and case drops will arrive shortly.')).toBeVisible();
+
+    await page.goto(`${WEB_BASE_URL}/onboarding`);
+    await expect(page.getByRole('heading', { name: 'Onboarding Funnel' })).toBeVisible();
+
+    await page.getByLabel('Display name').fill('Riley Noir');
+    await page.getByLabel('Email').first().fill(`player+${Date.now()}@example.com`);
+    await page.getByLabel('Password (12+ characters)').fill('n0cturne_case_001');
+    await page.getByLabel('I accept the Terms and Conditions.').check();
+    await page.getByLabel('I accept the Privacy Notice.').check();
+    await page.getByLabel('I confirm I am 18+ (or legal age in my jurisdiction).').check();
+    await page.getByRole('button', { name: 'Create Account' }).click();
+
+    await expect(
+      page.getByText('Account created. Your legal acceptance is recorded and your first case is ready.')
+    ).toBeVisible();
   });
 
   test('exercises zoom, pan, and audio controls end-to-end', async ({ page }) => {

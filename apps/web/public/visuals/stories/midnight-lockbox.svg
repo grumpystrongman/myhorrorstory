@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="midnight-lockbox">
+  <defs>
+    <linearGradient id="bg-midnight-lockbox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27394f" />
+      <stop offset="58%" stop-color="#2a1e27" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-midnight-lockbox" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#dbb77c" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#dbb77c" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-midnight-lockbox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-midnight-lockbox">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-midnight-lockbox)" />
+  <rect width="1600" height="900" fill="url(#flare-midnight-lockbox)" />
+  <g opacity="0.4">
+    <path d="M-60,241 C180,121 480,421 760,171 C1030,-49 1310,431 1680,211" fill="none" stroke="#dbb77c" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,531 C220,381 530,661 830,441 C1120,251 1390,641 1690,461" fill="none" stroke="#dbb77c" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,791 C220,651 540,886 860,681 C1160,591 1400,861 1680,746" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-midnight-lockbox)" opacity="0.3">
+    <ellipse cx="141" cy="91" rx="220" ry="130" fill="#dbb77c" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-midnight-lockbox)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">MIDNIGHT LOCKBOX</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">self-storage corridor with unit 331 light</text>
+</svg>

@@ -15,7 +15,8 @@ const stories = [
   'Static Between Stations',
   'Black Chapel Ledger',
   'The Harvest Men',
-  'Signal From Kharon-9'
+  'Signal From Kharon-9',
+  'Midnight Lockbox (Short Mode)'
 ];
 
 export default function App(): JSX.Element {

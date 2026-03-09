@@ -1,6 +1,10 @@
 import type { Job } from 'bullmq';
 import type { EmailService } from '@myhorrorstory/email';
-import { createManifestEntry } from '@myhorrorstory/media-pipeline';
+import {
+  buildCommercialAssetPlan,
+  createManifestEntry,
+  validateCommercialAssetPlan
+} from '@myhorrorstory/media-pipeline';
 import type { StoryEventType, VoiceEmotion, VoiceOrchestrator } from '@myhorrorstory/voice';
 
 export interface TimedUnlockJob {
@@ -33,7 +37,19 @@ export interface VoiceGenerationJob {
   urgency?: number;
 }
 
-export type WorkerJob = TimedUnlockJob | LifecycleEmailJob | MediaGenerationJob | VoiceGenerationJob;
+export interface CommercialCreativeBatchJob {
+  type: 'commercial_creative_batch';
+  storyIds: string[];
+  websitePrompts: Array<{ id: string; type: 'ui_background' | 'promo_image' | 'social_creative'; prompt: string; outputKey: string }>;
+  storyTemplates: Array<{ type: 'character_portrait' | 'scene_art' | 'evidence_image' | 'promo_image' | 'social_creative'; count: number; promptTemplate: string }>;
+}
+
+export type WorkerJob =
+  | TimedUnlockJob
+  | LifecycleEmailJob
+  | MediaGenerationJob
+  | VoiceGenerationJob
+  | CommercialCreativeBatchJob;
 
 export interface WorkerLogger {
   info(message: string, payload?: unknown): void;
@@ -91,6 +107,21 @@ export function createJobHandler(deps: {
           voiceId: clip.voiceId,
           emotion: clip.emotion,
           cacheKey: clip.cacheKey
+        });
+        return;
+      }
+      case 'commercial_creative_batch': {
+        const plan = buildCommercialAssetPlan({
+          storyIds: job.data.storyIds,
+          websitePrompts: job.data.websitePrompts,
+          storyTemplates: job.data.storyTemplates
+        });
+        const validation = validateCommercialAssetPlan(plan);
+
+        deps.logger.info('[commercial_creative_batch]', {
+          assetCount: plan.length,
+          valid: validation.valid,
+          duplicateIds: validation.duplicateIds
         });
         return;
       }

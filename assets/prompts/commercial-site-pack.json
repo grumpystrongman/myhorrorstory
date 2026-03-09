@@ -1,0 +1,66 @@
+{
+  "brand_direction": {
+    "positioning": "premium_horror_luxe",
+    "visual_principles": [
+      "cinematic contrast with restrained saturation",
+      "editorial typography hierarchy",
+      "texture-first backgrounds instead of flat fills",
+      "socially playable collaboration cues",
+      "high readability under low-light mood"
+    ],
+    "accessibility_floor": {
+      "minimum_text_contrast_ratio": 4.5,
+      "focus_visibility": "always_visible",
+      "motion_safety": "reduced_motion_variant_required"
+    }
+  },
+  "website_surfaces": [
+    {
+      "surface": "landing_hero",
+      "asset_type": "ui_background",
+      "prompt": "Premium horror web hero scene, remote detective team, muted amber and slate palette, atmospheric depth, elegant negative space for headline and CTA, cinematic realism."
+    },
+    {
+      "surface": "trust_strip",
+      "asset_type": "social_creative",
+      "prompt": "Set of polished trust badge backplates for premium mystery platform, subtle distress textures, editorial composition, clean icon-safe zones."
+    },
+    {
+      "surface": "case_library_banner",
+      "asset_type": "scene_art",
+      "prompt": "Panoramic case-library banner, mystery dossier wall, layered evidence photos and red thread map, premium dark editorial style."
+    },
+    {
+      "surface": "play_session_board",
+      "asset_type": "ui_background",
+      "prompt": "Investigation board background texture, cork and archival paper blend, subtle grain, high readability overlays for cards and timeline."
+    },
+    {
+      "surface": "checkout_offer",
+      "asset_type": "promo_image",
+      "prompt": "Commercial subscription offer visual for premium horror platform, elegant typography-safe space, cinematic intrigue, conversion-focused composition."
+    }
+  ],
+  "story_asset_templates": [
+    {
+      "asset_type": "character_portrait",
+      "prompt_template": "Character portrait for {story_id}, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade."
+    },
+    {
+      "asset_type": "scene_art",
+      "prompt_template": "Story scene art for {story_id}, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance."
+    },
+    {
+      "asset_type": "evidence_image",
+      "prompt_template": "Evidence still for {story_id}, documentary forensic framing, timestamp and metadata cues, believable artifact wear."
+    },
+    {
+      "asset_type": "promo_image",
+      "prompt_template": "Promotional key art for {story_id}, commercial launch-ready composition, suspense and curiosity hook."
+    },
+    {
+      "asset_type": "social_creative",
+      "prompt_template": "Social teaser creative for {story_id}, vertical and square-safe composition, shareable hook line space."
+    }
+  ]
+}

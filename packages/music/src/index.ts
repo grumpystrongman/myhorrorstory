@@ -40,6 +40,9 @@ export interface StoryScoreSummary {
   introPath: string;
   playPath: string;
   track: ScoreTrack;
+  mode: 'launch' | 'short-test';
+  targetSessionMinutes: number;
+  timelineLabel: string;
 }
 
 export interface MusicGenerationRequest {
@@ -90,17 +93,81 @@ export class MusicGenerationOrchestrator {
   }
 }
 
-const storyTitles: Record<string, string> = {
-  'static-between-stations': 'Static Between Stations',
-  'black-chapel-ledger': 'Black Chapel Ledger',
-  'the-harvest-men': 'The Harvest Men',
-  'signal-from-kharon-9': 'Signal From Kharon-9',
-  'the-fourth-tenant': 'The Fourth Tenant',
-  'tape-17-pinewatch': 'Tape 17: Pinewatch',
-  'crown-of-salt': 'Crown of Salt',
-  'red-creek-winter': 'Red Creek Winter',
-  'ward-1908': 'Ward 1908',
-  'dead-channel-protocol': 'Dead Channel Protocol'
+const storyCatalog: Record<
+  string,
+  {
+    title: string;
+    mode: 'launch' | 'short-test';
+    targetSessionMinutes: number;
+    timelineLabel: string;
+  }
+> = {
+  'static-between-stations': {
+    title: 'Static Between Stations',
+    mode: 'launch',
+    targetSessionMinutes: 95,
+    timelineLabel: '2-4 hours'
+  },
+  'black-chapel-ledger': {
+    title: 'Black Chapel Ledger',
+    mode: 'launch',
+    targetSessionMinutes: 100,
+    timelineLabel: '2-4 hours'
+  },
+  'the-harvest-men': {
+    title: 'The Harvest Men',
+    mode: 'launch',
+    targetSessionMinutes: 85,
+    timelineLabel: '2-4 hours'
+  },
+  'signal-from-kharon-9': {
+    title: 'Signal From Kharon-9',
+    mode: 'launch',
+    targetSessionMinutes: 92,
+    timelineLabel: '2-4 hours'
+  },
+  'the-fourth-tenant': {
+    title: 'The Fourth Tenant',
+    mode: 'launch',
+    targetSessionMinutes: 88,
+    timelineLabel: '2-4 hours'
+  },
+  'tape-17-pinewatch': {
+    title: 'Tape 17: Pinewatch',
+    mode: 'launch',
+    targetSessionMinutes: 80,
+    timelineLabel: '2-4 hours'
+  },
+  'crown-of-salt': {
+    title: 'Crown of Salt',
+    mode: 'launch',
+    targetSessionMinutes: 100,
+    timelineLabel: '2-4 hours'
+  },
+  'red-creek-winter': {
+    title: 'Red Creek Winter',
+    mode: 'launch',
+    targetSessionMinutes: 90,
+    timelineLabel: '2-4 hours'
+  },
+  'ward-1908': {
+    title: 'Ward 1908',
+    mode: 'launch',
+    targetSessionMinutes: 95,
+    timelineLabel: '2-4 hours'
+  },
+  'dead-channel-protocol': {
+    title: 'Dead Channel Protocol',
+    mode: 'launch',
+    targetSessionMinutes: 88,
+    timelineLabel: '2-4 hours'
+  },
+  'midnight-lockbox': {
+    title: 'Midnight Lockbox',
+    mode: 'short-test',
+    targetSessionMinutes: 36,
+    timelineLabel: '1-2 days (async test mode)'
+  }
 };
 
 export const launchScoreManifest: ScoreManifest = {
@@ -113,7 +180,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'global',
       mood: 'cinematic_dread',
       bpm: 58,
-      durationSeconds: 12,
+      durationSeconds: 41,
       loop: true,
       src: '/audio/scores/platform-overture.wav'
     },
@@ -124,7 +191,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'psychological_tension',
       bpm: 62,
-      durationSeconds: 12,
+      durationSeconds: 43,
       loop: true,
       src: '/audio/scores/static-between-stations.wav'
     },
@@ -135,7 +202,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'gothic_requiem',
       bpm: 56,
-      durationSeconds: 12,
+      durationSeconds: 43,
       loop: true,
       src: '/audio/scores/black-chapel-ledger.wav'
     },
@@ -146,7 +213,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'folk_ritual',
       bpm: 64,
-      durationSeconds: 12,
+      durationSeconds: 41,
       loop: true,
       src: '/audio/scores/the-harvest-men.wav'
     },
@@ -157,7 +224,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'cosmic_unease',
       bpm: 54,
-      durationSeconds: 12,
+      durationSeconds: 40,
       loop: true,
       src: '/audio/scores/signal-from-kharon-9.wav'
     },
@@ -168,7 +235,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'supernatural_mystery',
       bpm: 60,
-      durationSeconds: 12,
+      durationSeconds: 44,
       loop: true,
       src: '/audio/scores/the-fourth-tenant.wav'
     },
@@ -179,7 +246,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'found_footage_grit',
       bpm: 66,
-      durationSeconds: 12,
+      durationSeconds: 44,
       loop: true,
       src: '/audio/scores/tape-17-pinewatch.wav'
     },
@@ -190,7 +257,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'occult_conspiracy',
       bpm: 63,
-      durationSeconds: 12,
+      durationSeconds: 42,
       loop: true,
       src: '/audio/scores/crown-of-salt.wav'
     },
@@ -201,7 +268,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'slasher_pulse',
       bpm: 70,
-      durationSeconds: 12,
+      durationSeconds: 41,
       loop: true,
       src: '/audio/scores/red-creek-winter.wav'
     },
@@ -212,7 +279,7 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'institutional_haunt',
       bpm: 57,
-      durationSeconds: 12,
+      durationSeconds: 42,
       loop: true,
       src: '/audio/scores/ward-1908.wav'
     },
@@ -223,9 +290,20 @@ export const launchScoreManifest: ScoreManifest = {
       usage: 'story',
       mood: 'techno_paranormal',
       bpm: 74,
-      durationSeconds: 12,
+      durationSeconds: 42,
       loop: true,
       src: '/audio/scores/dead-channel-protocol.wav'
+    },
+    {
+      id: 'score-midnight-lockbox',
+      storyId: 'midnight-lockbox',
+      title: 'Afterhours Unit 331',
+      usage: 'story',
+      mood: 'supernatural_mystery',
+      bpm: 59,
+      durationSeconds: 41,
+      loop: true,
+      src: '/audio/scores/midnight-lockbox.wav'
     }
   ]
 };
@@ -273,8 +351,8 @@ export function resolveScoreTrack(context: ScorePlaybackContext): ScoreTrack {
 }
 
 export function listStoryScores(): StoryScoreSummary[] {
-  return Object.entries(storyTitles)
-    .map(([storyId, storyTitle]) => {
+  return Object.entries(storyCatalog)
+    .map(([storyId, story]) => {
       const track = getStoryTrack(storyId);
       if (!track) {
         return null;
@@ -282,10 +360,13 @@ export function listStoryScores(): StoryScoreSummary[] {
 
       return {
         storyId,
-        storyTitle,
+        storyTitle: story.title,
         introPath: `/stories/${storyId}/intro`,
         playPath: `/play?storyId=${storyId}`,
-        track
+        track,
+        mode: story.mode,
+        targetSessionMinutes: story.targetSessionMinutes,
+        timelineLabel: story.timelineLabel
       } satisfies StoryScoreSummary;
     })
     .filter((item): item is StoryScoreSummary => item !== null);
@@ -319,7 +400,7 @@ export function validateScoreManifest(manifest: ScoreManifest): {
 }
 
 export function getStoryTitle(storyId: string): string {
-  return storyTitles[storyId] ?? storyId;
+  return storyCatalog[storyId]?.title ?? storyId;
 }
 
 const TAU = Math.PI * 2;

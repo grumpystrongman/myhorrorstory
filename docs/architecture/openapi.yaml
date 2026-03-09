@@ -60,6 +60,55 @@ paths:
       responses:
         '201':
           description: Inbound event accepted and processed
+  /channels/setup:
+    get:
+      summary: Retrieve provider readiness and webhook URLs for SMS/WhatsApp/Telegram
+      responses:
+        '200':
+          description: Channel setup status
+  /channels/setup/user:
+    get:
+      summary: Retrieve mapped channels for a specific case/player
+      responses:
+        '200':
+          description: Player channel mapping
+        '404':
+          description: Mapping not found
+    post:
+      summary: Register or update a player's channel contact mapping
+      responses:
+        '201':
+          description: Player channel mapping updated
+  /channels/setup/test:
+    post:
+      summary: Send setup validation messages to mapped player channels
+      responses:
+        '201':
+          description: Setup test messages queued/delivered
+  /channels/send:
+    post:
+      summary: Send live case message across mapped SMS/WhatsApp/Telegram channels
+      responses:
+        '201':
+          description: Message delivered through channel provider chain
+        '404':
+          description: Mapping not found
+  /webhooks/twilio:
+    post:
+      summary: Twilio webhook ingress for SMS and WhatsApp inbound traffic
+      responses:
+        '200':
+          description: Webhook accepted
+        '401':
+          description: Invalid signature when signature validation is enabled
+  /webhooks/telegram:
+    post:
+      summary: Telegram bot webhook ingress
+      responses:
+        '200':
+          description: Webhook accepted
+        '401':
+          description: Invalid webhook secret token
   /story-rules/evaluate:
     post:
       summary: Evaluate trigger DSL rules against runtime state

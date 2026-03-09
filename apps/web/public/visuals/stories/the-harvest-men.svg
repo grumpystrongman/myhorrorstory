@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="the-harvest-men">
+  <defs>
+    <linearGradient id="bg-the-harvest-men" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#29452a" />
+      <stop offset="58%" stop-color="#3e2518" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-the-harvest-men" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#d6b970" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#d6b970" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-the-harvest-men">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-the-harvest-men">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-the-harvest-men)" />
+  <rect width="1600" height="900" fill="url(#flare-the-harvest-men)" />
+  <g opacity="0.4">
+    <path d="M-60,266 C180,146 480,446 760,196 C1030,-24 1310,456 1680,236" fill="none" stroke="#d6b970" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,496 C220,346 530,626 830,406 C1120,216 1390,606 1690,426" fill="none" stroke="#d6b970" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,776 C220,636 540,871 860,666 C1160,576 1400,846 1680,731" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-the-harvest-men)" opacity="0.3">
+    <ellipse cx="186" cy="71" rx="220" ry="130" fill="#d6b970" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-the-harvest-men)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">THE HARVEST MEN</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">ritual field at dusk with masked silhouettes</text>
+</svg>

@@ -1,17 +1,20 @@
-{
-  "version": "v1",
-  "generatedAt": "2026-03-08T00:00:00.000Z",
+﻿{
+  "version": "v2",
+  "generatedAt": "2026-03-09T00:00:00.000Z",
+  "notes": "Commercial-grade loop render pass with extended seamless durations and multi-layer harmonic textures.",
   "tracks": [
-    { "id": "platform-overture", "src": "/audio/scores/platform-overture.wav", "usage": "global" },
-    { "id": "score-static-between-stations", "src": "/audio/scores/static-between-stations.wav", "storyId": "static-between-stations" },
-    { "id": "score-black-chapel-ledger", "src": "/audio/scores/black-chapel-ledger.wav", "storyId": "black-chapel-ledger" },
-    { "id": "score-the-harvest-men", "src": "/audio/scores/the-harvest-men.wav", "storyId": "the-harvest-men" },
-    { "id": "score-signal-from-kharon-9", "src": "/audio/scores/signal-from-kharon-9.wav", "storyId": "signal-from-kharon-9" },
-    { "id": "score-the-fourth-tenant", "src": "/audio/scores/the-fourth-tenant.wav", "storyId": "the-fourth-tenant" },
-    { "id": "score-tape-17-pinewatch", "src": "/audio/scores/tape-17-pinewatch.wav", "storyId": "tape-17-pinewatch" },
-    { "id": "score-crown-of-salt", "src": "/audio/scores/crown-of-salt.wav", "storyId": "crown-of-salt" },
-    { "id": "score-red-creek-winter", "src": "/audio/scores/red-creek-winter.wav", "storyId": "red-creek-winter" },
-    { "id": "score-ward-1908", "src": "/audio/scores/ward-1908.wav", "storyId": "ward-1908" },
-    { "id": "score-dead-channel-protocol", "src": "/audio/scores/dead-channel-protocol.wav", "storyId": "dead-channel-protocol" }
+    { "id": "platform-overture", "src": "/audio/scores/platform-overture.wav", "usage": "global", "durationSeconds": 41 },
+    { "id": "score-static-between-stations", "src": "/audio/scores/static-between-stations.wav", "storyId": "static-between-stations", "durationSeconds": 43 },
+    { "id": "score-black-chapel-ledger", "src": "/audio/scores/black-chapel-ledger.wav", "storyId": "black-chapel-ledger", "durationSeconds": 43 },
+    { "id": "score-the-harvest-men", "src": "/audio/scores/the-harvest-men.wav", "storyId": "the-harvest-men", "durationSeconds": 41 },
+    { "id": "score-signal-from-kharon-9", "src": "/audio/scores/signal-from-kharon-9.wav", "storyId": "signal-from-kharon-9", "durationSeconds": 40 },
+    { "id": "score-the-fourth-tenant", "src": "/audio/scores/the-fourth-tenant.wav", "storyId": "the-fourth-tenant", "durationSeconds": 44 },
+    { "id": "score-tape-17-pinewatch", "src": "/audio/scores/tape-17-pinewatch.wav", "storyId": "tape-17-pinewatch", "durationSeconds": 44 },
+    { "id": "score-crown-of-salt", "src": "/audio/scores/crown-of-salt.wav", "storyId": "crown-of-salt", "durationSeconds": 42 },
+    { "id": "score-red-creek-winter", "src": "/audio/scores/red-creek-winter.wav", "storyId": "red-creek-winter", "durationSeconds": 41 },
+    { "id": "score-ward-1908", "src": "/audio/scores/ward-1908.wav", "storyId": "ward-1908", "durationSeconds": 42 },
+    { "id": "score-dead-channel-protocol", "src": "/audio/scores/dead-channel-protocol.wav", "storyId": "dead-channel-protocol", "durationSeconds": 42 },
+    { "id": "score-midnight-lockbox", "src": "/audio/scores/midnight-lockbox.wav", "storyId": "midnight-lockbox", "durationSeconds": 41 }
   ]
 }
+

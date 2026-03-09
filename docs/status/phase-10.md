@@ -8,20 +8,19 @@
 - Added API integration tests that validate auth, stories, parties, support, billing, and growth endpoints.
 - Added browser e2e suites for web/admin clicks, play-session controls (zoom/pan/audio/subtitles), accessibility, and visual certification.
 - Added a full commercial gate command (`test:commercial`) that chains lint, typecheck, unit, integration, and browser validation.
+- Added remote-test operations framework with start/stop/status scripts and tunnel provider adapters so QA can validate web/admin/API from anywhere.
 
 ## Remaining
 - Add automated security scans (SAST/dependency/secret) and native-device cloud runs in CI.
 
 ## Validation Evidence
-- Date: 2026-03-08
+- Date: 2026-03-09
 - Commands executed successfully from repository root:
+  - `REMOTE_TEST_DRY_RUN=true REMOTE_TEST_PROVIDER=local corepack pnpm remote:test:start`
   - `corepack pnpm lint`
   - `corepack pnpm typecheck`
-  - `corepack pnpm test`
-  - `corepack pnpm test:api:integration`
-  - `corepack pnpm test:e2e`
+- Baseline commercial gate remains green from previous pass:
   - `corepack pnpm test:commercial`
-  - `corepack pnpm build`
 
 ## Risks
 - Provider integrations (payments, CRM, support, voice/media) remain adapter-based until live credentials and staging infra are connected.

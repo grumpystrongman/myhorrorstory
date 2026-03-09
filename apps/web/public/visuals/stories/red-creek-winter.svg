@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="red-creek-winter">
+  <defs>
+    <linearGradient id="bg-red-creek-winter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#304764" />
+      <stop offset="58%" stop-color="#2a1f2a" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-red-creek-winter" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#d8c9a1" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#d8c9a1" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-red-creek-winter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-red-creek-winter">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-red-creek-winter)" />
+  <rect width="1600" height="900" fill="url(#flare-red-creek-winter)" />
+  <g opacity="0.4">
+    <path d="M-60,272 C180,152 480,452 760,202 C1030,-18 1310,462 1680,242" fill="none" stroke="#d8c9a1" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,472 C220,322 530,602 830,382 C1120,192 1390,582 1690,402" fill="none" stroke="#d8c9a1" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,732 C220,592 540,827 860,622 C1160,532 1400,802 1680,687" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-red-creek-winter)" opacity="0.3">
+    <ellipse cx="182" cy="77" rx="220" ry="130" fill="#d8c9a1" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-red-creek-winter)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">RED CREEK WINTER</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">snowed logging town street with police tape</text>
+</svg>

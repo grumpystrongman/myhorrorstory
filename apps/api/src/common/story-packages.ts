@@ -21,5 +21,6 @@ export const storyPackages: StoryPackage[] = [
   loadStory('crown-of-salt.story.json'),
   loadStory('red-creek-winter.story.json'),
   loadStory('ward-1908.story.json'),
-  loadStory('dead-channel-protocol.story.json')
+  loadStory('dead-channel-protocol.story.json'),
+  loadStory('midnight-lockbox.story.json')
 ];

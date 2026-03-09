@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="the-fourth-tenant">
+  <defs>
+    <linearGradient id="bg-the-fourth-tenant" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f3347" />
+      <stop offset="58%" stop-color="#2e2226" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-the-fourth-tenant" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#d5bb85" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#d5bb85" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-the-fourth-tenant">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-the-fourth-tenant">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-the-fourth-tenant)" />
+  <rect width="1600" height="900" fill="url(#flare-the-fourth-tenant)" />
+  <g opacity="0.4">
+    <path d="M-60,225 C180,105 480,405 760,155 C1030,-65 1310,415 1680,195" fill="none" stroke="#d5bb85" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,485 C220,335 530,615 830,395 C1120,205 1390,595 1690,415" fill="none" stroke="#d5bb85" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,725 C220,585 540,820 860,615 C1160,525 1400,795 1680,680" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-the-fourth-tenant)" opacity="0.3">
+    <ellipse cx="165" cy="75" rx="220" ry="130" fill="#d5bb85" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-the-fourth-tenant)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">THE FOURTH TENANT</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">flood district apartment hallway with missing door</text>
+</svg>

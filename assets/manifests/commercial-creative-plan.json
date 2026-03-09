@@ -1,0 +1,3647 @@
+{
+  "version": "v1",
+  "generatedAt": "2026-03-09T14:31:01.399Z",
+  "strategy": {
+    "positioning": "premium_horror_luxe",
+    "visual_principles": [
+      "cinematic contrast with restrained saturation",
+      "editorial typography hierarchy",
+      "texture-first backgrounds instead of flat fills",
+      "socially playable collaboration cues",
+      "high readability under low-light mood"
+    ],
+    "accessibility_floor": {
+      "minimum_text_contrast_ratio": 4.5,
+      "focus_visibility": "always_visible",
+      "motion_safety": "reduced_motion_variant_required"
+    }
+  },
+  "totals": {
+    "stories": 11,
+    "websiteAssets": 5,
+    "storyAssets": 176,
+    "allAssets": 181
+  },
+  "assets": [
+    {
+      "id": "web-landing_hero",
+      "type": "ui_background",
+      "scope": "website",
+      "storyId": null,
+      "prompt": "Premium horror web hero scene, remote detective team, muted amber and slate palette, atmospheric depth, elegant negative space for headline and CTA, cinematic realism.",
+      "outputKey": "assets/production/web/landing_hero-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "web-trust_strip",
+      "type": "social_creative",
+      "scope": "website",
+      "storyId": null,
+      "prompt": "Set of polished trust badge backplates for premium mystery platform, subtle distress textures, editorial composition, clean icon-safe zones.",
+      "outputKey": "assets/production/web/trust_strip-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "web-case_library_banner",
+      "type": "scene_art",
+      "scope": "website",
+      "storyId": null,
+      "prompt": "Panoramic case-library banner, mystery dossier wall, layered evidence photos and red thread map, premium dark editorial style.",
+      "outputKey": "assets/production/web/case_library_banner-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "web-play_session_board",
+      "type": "ui_background",
+      "scope": "website",
+      "storyId": null,
+      "prompt": "Investigation board background texture, cork and archival paper blend, subtle grain, high readability overlays for cards and timeline.",
+      "outputKey": "assets/production/web/play_session_board-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "web-checkout_offer",
+      "type": "promo_image",
+      "scope": "website",
+      "storyId": null,
+      "prompt": "Commercial subscription offer visual for premium horror platform, elegant typography-safe space, cinematic intrigue, conversion-focused composition.",
+      "outputKey": "assets/production/web/checkout_offer-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Character portrait for black-chapel-ledger, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Character portrait for black-chapel-ledger, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Character portrait for black-chapel-ledger, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Character portrait for black-chapel-ledger, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Story scene art for black-chapel-ledger, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Story scene art for black-chapel-ledger, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Story scene art for black-chapel-ledger, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Evidence still for black-chapel-ledger, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Evidence still for black-chapel-ledger, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Evidence still for black-chapel-ledger, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Evidence still for black-chapel-ledger, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Promotional key art for black-chapel-ledger, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Promotional key art for black-chapel-ledger, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Social teaser creative for black-chapel-ledger, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Social teaser creative for black-chapel-ledger, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "black-chapel-ledger",
+      "prompt": "Social teaser creative for black-chapel-ledger, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/black-chapel-ledger/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Character portrait for crown-of-salt, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/crown-of-salt/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Character portrait for crown-of-salt, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/crown-of-salt/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Character portrait for crown-of-salt, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/crown-of-salt/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Character portrait for crown-of-salt, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/crown-of-salt/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Story scene art for crown-of-salt, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/crown-of-salt/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Story scene art for crown-of-salt, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/crown-of-salt/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Story scene art for crown-of-salt, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/crown-of-salt/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Evidence still for crown-of-salt, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/crown-of-salt/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Evidence still for crown-of-salt, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/crown-of-salt/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Evidence still for crown-of-salt, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/crown-of-salt/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Evidence still for crown-of-salt, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/crown-of-salt/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Promotional key art for crown-of-salt, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/crown-of-salt/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Promotional key art for crown-of-salt, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/crown-of-salt/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Social teaser creative for crown-of-salt, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/crown-of-salt/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Social teaser creative for crown-of-salt, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/crown-of-salt/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "crown-of-salt-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "crown-of-salt",
+      "prompt": "Social teaser creative for crown-of-salt, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/crown-of-salt/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Character portrait for dead-channel-protocol, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Character portrait for dead-channel-protocol, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Character portrait for dead-channel-protocol, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Character portrait for dead-channel-protocol, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Story scene art for dead-channel-protocol, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Story scene art for dead-channel-protocol, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Story scene art for dead-channel-protocol, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Evidence still for dead-channel-protocol, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Evidence still for dead-channel-protocol, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Evidence still for dead-channel-protocol, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Evidence still for dead-channel-protocol, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Promotional key art for dead-channel-protocol, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Promotional key art for dead-channel-protocol, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Social teaser creative for dead-channel-protocol, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Social teaser creative for dead-channel-protocol, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "dead-channel-protocol-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "dead-channel-protocol",
+      "prompt": "Social teaser creative for dead-channel-protocol, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/dead-channel-protocol/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Character portrait for midnight-lockbox, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/midnight-lockbox/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Character portrait for midnight-lockbox, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/midnight-lockbox/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Character portrait for midnight-lockbox, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/midnight-lockbox/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Character portrait for midnight-lockbox, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/midnight-lockbox/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Story scene art for midnight-lockbox, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/midnight-lockbox/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Story scene art for midnight-lockbox, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/midnight-lockbox/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Story scene art for midnight-lockbox, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/midnight-lockbox/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Evidence still for midnight-lockbox, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/midnight-lockbox/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Evidence still for midnight-lockbox, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/midnight-lockbox/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Evidence still for midnight-lockbox, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/midnight-lockbox/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Evidence still for midnight-lockbox, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/midnight-lockbox/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Promotional key art for midnight-lockbox, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/midnight-lockbox/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Promotional key art for midnight-lockbox, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/midnight-lockbox/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Social teaser creative for midnight-lockbox, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/midnight-lockbox/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Social teaser creative for midnight-lockbox, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/midnight-lockbox/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "midnight-lockbox",
+      "prompt": "Social teaser creative for midnight-lockbox, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/midnight-lockbox/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Character portrait for red-creek-winter, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/red-creek-winter/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Character portrait for red-creek-winter, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/red-creek-winter/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Character portrait for red-creek-winter, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/red-creek-winter/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Character portrait for red-creek-winter, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/red-creek-winter/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Story scene art for red-creek-winter, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/red-creek-winter/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Story scene art for red-creek-winter, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/red-creek-winter/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Story scene art for red-creek-winter, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/red-creek-winter/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Evidence still for red-creek-winter, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/red-creek-winter/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Evidence still for red-creek-winter, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/red-creek-winter/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Evidence still for red-creek-winter, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/red-creek-winter/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Evidence still for red-creek-winter, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/red-creek-winter/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Promotional key art for red-creek-winter, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/red-creek-winter/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Promotional key art for red-creek-winter, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/red-creek-winter/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Social teaser creative for red-creek-winter, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/red-creek-winter/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Social teaser creative for red-creek-winter, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/red-creek-winter/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "red-creek-winter-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "red-creek-winter",
+      "prompt": "Social teaser creative for red-creek-winter, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/red-creek-winter/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Character portrait for signal-from-kharon-9, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Character portrait for signal-from-kharon-9, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Character portrait for signal-from-kharon-9, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Character portrait for signal-from-kharon-9, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Story scene art for signal-from-kharon-9, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Story scene art for signal-from-kharon-9, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Story scene art for signal-from-kharon-9, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Evidence still for signal-from-kharon-9, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Evidence still for signal-from-kharon-9, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Evidence still for signal-from-kharon-9, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Evidence still for signal-from-kharon-9, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Promotional key art for signal-from-kharon-9, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Promotional key art for signal-from-kharon-9, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Social teaser creative for signal-from-kharon-9, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Social teaser creative for signal-from-kharon-9, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "signal-from-kharon-9-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "signal-from-kharon-9",
+      "prompt": "Social teaser creative for signal-from-kharon-9, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/signal-from-kharon-9/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Character portrait for static-between-stations, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/static-between-stations/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Character portrait for static-between-stations, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/static-between-stations/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Character portrait for static-between-stations, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/static-between-stations/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Character portrait for static-between-stations, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/static-between-stations/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Story scene art for static-between-stations, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/static-between-stations/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Story scene art for static-between-stations, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/static-between-stations/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Story scene art for static-between-stations, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/static-between-stations/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Evidence still for static-between-stations, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/static-between-stations/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Evidence still for static-between-stations, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/static-between-stations/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Evidence still for static-between-stations, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/static-between-stations/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Evidence still for static-between-stations, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/static-between-stations/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Promotional key art for static-between-stations, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/static-between-stations/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Promotional key art for static-between-stations, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/static-between-stations/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Social teaser creative for static-between-stations, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/static-between-stations/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Social teaser creative for static-between-stations, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/static-between-stations/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "static-between-stations-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "static-between-stations",
+      "prompt": "Social teaser creative for static-between-stations, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/static-between-stations/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Character portrait for tape-17-pinewatch, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Character portrait for tape-17-pinewatch, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Character portrait for tape-17-pinewatch, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Character portrait for tape-17-pinewatch, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Story scene art for tape-17-pinewatch, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Story scene art for tape-17-pinewatch, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Story scene art for tape-17-pinewatch, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Evidence still for tape-17-pinewatch, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Evidence still for tape-17-pinewatch, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Evidence still for tape-17-pinewatch, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Evidence still for tape-17-pinewatch, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Promotional key art for tape-17-pinewatch, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Promotional key art for tape-17-pinewatch, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Social teaser creative for tape-17-pinewatch, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Social teaser creative for tape-17-pinewatch, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "tape-17-pinewatch",
+      "prompt": "Social teaser creative for tape-17-pinewatch, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/tape-17-pinewatch/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Character portrait for the-fourth-tenant, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Character portrait for the-fourth-tenant, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Character portrait for the-fourth-tenant, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Character portrait for the-fourth-tenant, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Story scene art for the-fourth-tenant, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Story scene art for the-fourth-tenant, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Story scene art for the-fourth-tenant, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Evidence still for the-fourth-tenant, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Evidence still for the-fourth-tenant, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Evidence still for the-fourth-tenant, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Evidence still for the-fourth-tenant, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Promotional key art for the-fourth-tenant, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Promotional key art for the-fourth-tenant, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Social teaser creative for the-fourth-tenant, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Social teaser creative for the-fourth-tenant, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-fourth-tenant-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "the-fourth-tenant",
+      "prompt": "Social teaser creative for the-fourth-tenant, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/the-fourth-tenant/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Character portrait for the-harvest-men, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-harvest-men/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Character portrait for the-harvest-men, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-harvest-men/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Character portrait for the-harvest-men, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-harvest-men/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Character portrait for the-harvest-men, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/the-harvest-men/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Story scene art for the-harvest-men, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/the-harvest-men/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Story scene art for the-harvest-men, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/the-harvest-men/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Story scene art for the-harvest-men, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/the-harvest-men/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Evidence still for the-harvest-men, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-harvest-men/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Evidence still for the-harvest-men, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-harvest-men/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Evidence still for the-harvest-men, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-harvest-men/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Evidence still for the-harvest-men, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/the-harvest-men/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Promotional key art for the-harvest-men, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/the-harvest-men/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Promotional key art for the-harvest-men, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/the-harvest-men/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Social teaser creative for the-harvest-men, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/the-harvest-men/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Social teaser creative for the-harvest-men, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/the-harvest-men/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "the-harvest-men-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "the-harvest-men",
+      "prompt": "Social teaser creative for the-harvest-men, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/the-harvest-men/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-character_portrait-1",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Character portrait for ward-1908, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/ward-1908/character_portrait-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-character_portrait-2",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Character portrait for ward-1908, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/ward-1908/character_portrait-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-character_portrait-3",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Character portrait for ward-1908, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/ward-1908/character_portrait-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-character_portrait-4",
+      "type": "character_portrait",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Character portrait for ward-1908, dramatic practical lighting, emotionally expressive realism, non-campy, premium color grade.",
+      "outputKey": "assets/production/stories/ward-1908/character_portrait-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-scene_art-1",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Story scene art for ward-1908, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/ward-1908/scene_art-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-scene_art-2",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Story scene art for ward-1908, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/ward-1908/scene_art-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-scene_art-3",
+      "type": "scene_art",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Story scene art for ward-1908, key location establishing shot, atmosphere-heavy cinematic realism, hidden clue affordance.",
+      "outputKey": "assets/production/stories/ward-1908/scene_art-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-evidence_image-1",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Evidence still for ward-1908, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/ward-1908/evidence_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-evidence_image-2",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Evidence still for ward-1908, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/ward-1908/evidence_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-evidence_image-3",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Evidence still for ward-1908, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/ward-1908/evidence_image-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-evidence_image-4",
+      "type": "evidence_image",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Evidence still for ward-1908, documentary forensic framing, timestamp and metadata cues, believable artifact wear.",
+      "outputKey": "assets/production/stories/ward-1908/evidence_image-4-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-promo_image-1",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Promotional key art for ward-1908, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/ward-1908/promo_image-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-promo_image-2",
+      "type": "promo_image",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Promotional key art for ward-1908, commercial launch-ready composition, suspense and curiosity hook.",
+      "outputKey": "assets/production/stories/ward-1908/promo_image-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-social_creative-1",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Social teaser creative for ward-1908, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/ward-1908/social_creative-1-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-social_creative-2",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Social teaser creative for ward-1908, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/ward-1908/social_creative-2-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    },
+    {
+      "id": "ward-1908-social_creative-3",
+      "type": "social_creative",
+      "scope": "story",
+      "storyId": "ward-1908",
+      "prompt": "Social teaser creative for ward-1908, vertical and square-safe composition, shareable hook line space.",
+      "outputKey": "assets/production/stories/ward-1908/social_creative-3-v1.png",
+      "providerChain": [
+        "openai-images",
+        "stability",
+        "manual-art-upload"
+      ],
+      "revision": 1,
+      "qualityGates": [
+        "brand_compliance_passed",
+        "accessibility_contrast_passed",
+        "narrative_coherence_passed",
+        "rights_and_provenance_verified"
+      ]
+    }
+  ]
+}

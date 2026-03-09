@@ -11,6 +11,7 @@ import { RealtimeGateway } from './realtime/realtime.gateway.js';
 import { BillingModule } from './billing/billing.module.js';
 import { GrowthModule } from './growth/growth.module.js';
 import { RuntimeModule } from './runtime/runtime.module.js';
+import { ChannelsModule } from './channels/channels.module.js';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { RuntimeModule } from './runtime/runtime.module.js';
     SupportModule,
     BillingModule,
     GrowthModule,
-    RuntimeModule
+    RuntimeModule,
+    ChannelsModule
   ],
   controllers: [AppController],
   providers: [AppService, RealtimeGateway]

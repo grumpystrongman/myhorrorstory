@@ -53,6 +53,8 @@ describe('API integration', () => {
     expect(signUp.body.userId).toBeDefined();
     expect(signUp.body.accessToken.length).toBeGreaterThan(20);
     expect(signUp.body.refreshToken.length).toBeGreaterThan(20);
+    expect(signUp.body.legal.acceptedTermsAt).toBeDefined();
+    expect(signUp.body.legal.termsVersion).toBe('2026-03-09');
 
     await request(app.getHttpServer()).post('/api/v1/auth/signup').send(testUser).expect(401);
 
@@ -64,6 +66,23 @@ describe('API integration', () => {
     expect(signIn.body.userId).toBeDefined();
     expect(signIn.body.accessToken.length).toBeGreaterThan(20);
     expect(signIn.body.refreshToken.length).toBeGreaterThan(20);
+    expect(signIn.body.legal.acceptedPrivacyAt).toBeDefined();
+    expect(signIn.body.legal.privacyVersion).toBe('2026-03-09');
+
+    const legal = await request(app.getHttpServer())
+      .post('/api/v1/auth/legal/accept')
+      .send({
+        userId: signIn.body.userId,
+        acceptedTerms: true,
+        acceptedPrivacy: true,
+        ageGateConfirmed: true,
+        termsVersion: '2026-03-09',
+        privacyVersion: '2026-03-09'
+      })
+      .expect(201);
+
+    expect(legal.body.acceptedTermsAt).toBeDefined();
+    expect(legal.body.termsVersion).toBe('2026-03-09');
   });
 
   it('lists stories and returns a story by id', async () => {
@@ -134,12 +153,142 @@ describe('API integration', () => {
       .post('/api/v1/growth/lead-capture')
       .send({
         email: 'lead@example.com',
-        source: 'landing_hero'
+        source: 'landing_hero',
+        firstName: 'Lead',
+        marketingConsent: true,
+        tags: ['launch_interest']
       })
       .expect(201);
 
     expect(lead.body.accepted).toBe(true);
     expect(lead.body.segment).toBe('new_lead');
+    expect(lead.body.leadId).toBeDefined();
+    expect(lead.body.lifecycleEmailQueued).toBe(true);
+
+    const lifecycle = await request(app.getHttpServer())
+      .post('/api/v1/growth/lifecycle-event')
+      .send({
+        email: 'lead@example.com',
+        eventType: 'abandoned_case',
+        storyId: 'static-between-stations',
+        metadata: {
+          playerName: 'Lead',
+          sessionUrl: 'https://example.com/play'
+        }
+      })
+      .expect(201);
+
+    expect(lifecycle.body.accepted).toBe(true);
+    expect(lifecycle.body.eventType).toBe('abandoned_case');
+    expect(lifecycle.body.emailQueued).toBe(true);
+
+    const campaigns = await request(app.getHttpServer()).get('/api/v1/growth/campaigns').expect(200);
+    expect(Array.isArray(campaigns.body)).toBe(true);
+    expect(campaigns.body.length).toBeGreaterThanOrEqual(5);
+
+    const leads = await request(app.getHttpServer()).get('/api/v1/growth/leads').expect(200);
+    expect(Array.isArray(leads.body)).toBe(true);
+    expect(leads.body.find((entry: { email: string }) => entry.email === 'lead@example.com')).toBeDefined();
+  });
+
+  it('sets up user messaging channels and validates webhook ingress', async () => {
+    const stories = await request(app.getHttpServer()).get('/api/v1/stories').expect(200);
+    const storyId = stories.body[0].id as string;
+    const playerId = 'integration-channel-player';
+
+    const setupStatus = await request(app.getHttpServer()).get('/api/v1/channels/setup').expect(200);
+    expect(Array.isArray(setupStatus.body.channels)).toBe(true);
+    expect(setupStatus.body.channels.length).toBe(3);
+
+    const registered = await request(app.getHttpServer())
+      .post('/api/v1/channels/setup/user')
+      .send({
+        caseId: storyId,
+        playerId,
+        contacts: [
+          { channel: 'SMS', address: '+15550001111', optIn: true },
+          { channel: 'WHATSAPP', address: 'whatsapp:+15550002222', optIn: true },
+          { channel: 'TELEGRAM', address: '987654321', optIn: true }
+        ]
+      })
+      .expect(201);
+
+    expect(registered.body.updated).toBe(true);
+    expect(registered.body.activeRouteCount).toBe(3);
+
+    const mappedChannels = await request(app.getHttpServer())
+      .get(`/api/v1/channels/setup/user?caseId=${encodeURIComponent(storyId)}&playerId=${encodeURIComponent(playerId)}`)
+      .expect(200);
+
+    expect(mappedChannels.body.caseId).toBe(storyId);
+    expect(mappedChannels.body.playerId).toBe(playerId);
+    expect(Array.isArray(mappedChannels.body.contacts)).toBe(true);
+    expect(mappedChannels.body.contacts.length).toBe(3);
+
+    const testSend = await request(app.getHttpServer())
+      .post('/api/v1/channels/setup/test')
+      .send({
+        caseId: storyId,
+        playerId,
+        message: 'Integration test ping from setup flow.'
+      })
+      .expect(201);
+
+    expect(testSend.body.sentCount).toBe(3);
+    expect(Array.isArray(testSend.body.receipts)).toBe(true);
+    expect(testSend.body.receipts.length).toBe(3);
+
+    const liveSend = await request(app.getHttpServer())
+      .post('/api/v1/channels/send')
+      .send({
+        caseId: storyId,
+        playerId,
+        channels: ['SMS', 'TELEGRAM'],
+        message: 'Live investigation dispatch: secure channel verification complete.'
+      })
+      .expect(201);
+
+    expect(liveSend.body.sentCount).toBe(2);
+    expect(Array.isArray(liveSend.body.receipts)).toBe(true);
+    expect(liveSend.body.receipts.length).toBe(2);
+    expect(liveSend.body.receipts[0].channel).toMatch(/SMS|TELEGRAM/);
+
+    const twilioInbound = await request(app.getHttpServer())
+      .post('/api/v1/webhooks/twilio')
+      .type('form')
+      .send({
+        From: '+15550001111',
+        To: '+15550009999',
+        Body: 'I accuse the broker.',
+        MessageSid: 'SM-integration-1'
+      })
+      .expect(200);
+
+    expect(twilioInbound.body.accepted).toBe(true);
+    expect(twilioInbound.body.channel).toBe('SMS');
+    expect(twilioInbound.body.recognizedIntent).toBe('ACCUSATION');
+    expect(twilioInbound.body.caseId).toBe(storyId);
+    expect(twilioInbound.body.playerId).toBe(playerId);
+
+    const telegramInbound = await request(app.getHttpServer())
+      .post('/api/v1/webhooks/telegram')
+      .send({
+        update_id: 9001,
+        message: {
+          message_id: 22,
+          date: 1710000000,
+          text: 'Threat acknowledged, or else.',
+          chat: { id: 987654321 },
+          from: { id: 987654321 }
+        }
+      })
+      .expect(200);
+
+    expect(telegramInbound.body.accepted).toBe(true);
+    expect(telegramInbound.body.channel).toBe('TELEGRAM');
+    expect(telegramInbound.body.recognizedIntent).toBe('THREAT');
+    expect(telegramInbound.body.caseId).toBe(storyId);
+    expect(telegramInbound.body.playerId).toBe(playerId);
   });
 
   it('processes inbound channel messages, evaluates rules, and saves investigation boards', async () => {

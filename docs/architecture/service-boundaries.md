@@ -4,6 +4,9 @@
 - `Channel Ingress Service`
 - Accepts inbound SMS/WhatsApp/Telegram/email payloads.
 - Normalizes into `processInboundMessageRequestSchema` for downstream orchestration.
+- `Channel Setup Service`
+- Manages player channel enrollment (contact map + opt-in state) and emits provider readiness checks.
+- Drives setup test sends for SMS/WhatsApp/Telegram during QA and live operations onboarding.
 - `Narrative Orchestrator`
 - Resolves active case/session, runs trigger evaluation, and chooses NPC/villain/GM responses.
 - `Narrative Director Service`
@@ -25,6 +28,9 @@
 ## Operational Services
 - `Story CMS Service`
 - Publishes versioned story packages and validates against `storyPackageSchema`.
+- `Linear Bot Orchestrator`
+- Pulls issue queue from Linear, maps work to bot labels, and emits creative execution plans.
+- Maintains dry-run and apply modes for controlled automation.
 - `Growth/CRM Service`
 - Lead capture, lifecycle event dispatch, referral events.
 - `Support Service`
@@ -46,6 +52,7 @@
 - `contracts`: canonical schemas, trigger DSL, DTO contracts.
 - `story-engine`: deterministic rule evaluation and action application.
 - `voice`, `email`, `payments`, `analytics`, `storage`, `crm`: provider adapters only.
+- `messaging`: SMS/WhatsApp/Telegram provider adapters and webhook normalization utilities.
 
 ## External Boundary Rule
 - App/API layers must never call provider SDKs directly.

@@ -4,6 +4,7 @@ import { RuntimeService } from './runtime.service.js';
 
 @Module({
   controllers: [RuntimeController],
-  providers: [RuntimeService]
+  providers: [RuntimeService],
+  exports: [RuntimeService]
 })
 export class RuntimeModule {}

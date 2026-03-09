@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="crown-of-salt">
+  <defs>
+    <linearGradient id="bg-crown-of-salt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3950" />
+      <stop offset="58%" stop-color="#2f1e20" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-crown-of-salt" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#d8b37a" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#d8b37a" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-crown-of-salt">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-crown-of-salt">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-crown-of-salt)" />
+  <rect width="1600" height="900" fill="url(#flare-crown-of-salt)" />
+  <g opacity="0.4">
+    <path d="M-60,242 C180,122 480,422 760,172 C1030,-48 1310,432 1680,212" fill="none" stroke="#d8b37a" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,532 C220,382 530,662 830,442 C1120,252 1390,642 1690,462" fill="none" stroke="#d8b37a" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,712 C220,572 540,807 860,602 C1160,512 1400,782 1680,667" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-crown-of-salt)" opacity="0.3">
+    <ellipse cx="182" cy="92" rx="220" ry="130" fill="#d8b37a" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-crown-of-salt)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">CROWN OF SALT</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">port catacombs with relic crates and candles</text>
+</svg>

@@ -10,6 +10,8 @@
 - Win-back.
 - Upsell and sequel nudges.
 
+Detailed implementation: `docs/growth/email-marketing-system.md`.
+
 ## Core KPIs
 - Activation rate.
 - Day-7 and day-30 retention.

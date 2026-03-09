@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="tape-17-pinewatch">
+  <defs>
+    <linearGradient id="bg-tape-17-pinewatch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#213a34" />
+      <stop offset="58%" stop-color="#2d1f1a" />
+      <stop offset="100%" stop-color="#080b12" />
+    </linearGradient>
+    <radialGradient id="flare-tape-17-pinewatch" cx="72%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#c5b181" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#c5b181" stop-opacity="0" />
+    </radialGradient>
+    <filter id="grain-tape-17-pinewatch">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08" />
+      </feComponentTransfer>
+    </filter>
+    <filter id="blur-tape-17-pinewatch">
+      <feGaussianBlur stdDeviation="42" />
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-tape-17-pinewatch)" />
+  <rect width="1600" height="900" fill="url(#flare-tape-17-pinewatch)" />
+  <g opacity="0.4">
+    <path d="M-60,263 C180,143 480,443 760,193 C1030,-27 1310,453 1680,233" fill="none" stroke="#c5b181" stroke-opacity="0.45" stroke-width="2.5" />
+    <path d="M-80,463 C220,313 530,593 830,373 C1120,183 1390,573 1690,393" fill="none" stroke="#c5b181" stroke-opacity="0.25" stroke-width="1.6" />
+    <path d="M-50,723 C220,583 540,818 860,613 C1160,523 1400,793 1680,678" fill="none" stroke="#f4e2bd" stroke-opacity="0.2" stroke-width="1.2" />
+  </g>
+  <g filter="url(#blur-tape-17-pinewatch)" opacity="0.3">
+    <ellipse cx="173" cy="68" rx="220" ry="130" fill="#c5b181" />
+    <ellipse cx="1280" cy="720" rx="250" ry="140" fill="#2b5a71" />
+  </g>
+  <g filter="url(#grain-tape-17-pinewatch)">
+    <rect width="1600" height="900" fill="#fff" />
+  </g>
+  <text x="90" y="756" fill="#f5e9d2" fill-opacity="0.82" font-size="36" letter-spacing="0.08em" font-family="Georgia,serif">TAPE 17 PINEWATCH</text>
+  <text x="90" y="804" fill="#d8c6a4" fill-opacity="0.75" font-size="22" font-family="Georgia,serif">forest watchtower and distorted camcorder light</text>
+</svg>
