@@ -1,0 +1,320 @@
+{
+  "mode": "apply",
+  "teamKey": "JEF",
+  "teamName": "Jeffbarnes",
+  "authSource": "LINEAR_ACCESS_TOKEN",
+  "backlog": {
+    "packageId": "midnight-lockbox-beat-1",
+    "packageTitle": "Midnight Lockbox Beat 1 - Unit 331 Full Production Package",
+    "sourceReferences": [
+      "docs/stories/midnight-lockbox.story.json",
+      "apps/web/public/content/drama/midnight-lockbox.json"
+    ],
+    "tasks": [
+      {
+        "title": "Production Package Orchestration - Midnight Lockbox Beat 1",
+        "botId": "AI-Executive-Orchestrator",
+        "priority": 1,
+        "description": "Run cross-bot orchestration for Beat 1 delivery: confirm scope, dependencies, sequencing, and signoff gates for story, messaging, media, web, audio, QA, and release.",
+        "deliverables": [
+          "Unified execution board and dependency map",
+          "Phase gate checklist",
+          "Final signoff summary"
+        ],
+        "signoffCriteria": [
+          "All downstream issues labeled, sequenced, and tracked",
+          "No unresolved blocker at release gate"
+        ]
+      },
+      {
+        "title": "Product Acceptance Spec - Midnight Lockbox Beat 1 Experience",
+        "botId": "AI-Product-Agent",
+        "priority": 1,
+        "description": "Define commercial acceptance criteria for Beat 1 immersive experience across channels, clues, timing, and emotional pacing.",
+        "deliverables": [
+          "Beat-level acceptance spec",
+          "Player journey map",
+          "Non-functional quality targets"
+        ],
+        "signoffCriteria": [
+          "Spec fully aligned to story package contracts",
+          "Clear measurable acceptance checks for QA"
+        ]
+      },
+      {
+        "title": "Story Engine Buildout - Midnight Lockbox Beat 1 Branching and Consequences",
+        "botId": "AI-Story-Engine-Agent",
+        "priority": 1,
+        "description": "Implement full branching logic, clue propagation, villain stage handling, and consequence matrix for Beat 1.",
+        "deliverables": [
+          "Runtime branch definitions and outcomes",
+          "Clue map updates",
+          "Consequence table mapped to intents"
+        ],
+        "signoffCriteria": [
+          "All choice paths resolve deterministically",
+          "No dead-end branch without explicit failure handling"
+        ]
+      },
+      {
+        "title": "Backend Messaging and Timing Orchestration - Midnight Lockbox Beat 1",
+        "botId": "AI-Backend-Agent",
+        "priority": 1,
+        "description": "Implement message scheduling, channel simulation payloads, villain direct-contact reaction rules, and persistence updates for Beat 1.",
+        "deliverables": [
+          "Scheduler + timing rules",
+          "Message templates and channel payload mappings",
+          "Runtime state persistence updates"
+        ],
+        "signoffCriteria": [
+          "Message cadence matches spec timing windows",
+          "Ignored/replied villain branches handled correctly"
+        ]
+      },
+      {
+        "title": "Web Gameplay Presentation - Midnight Lockbox Beat 1 Immersive UI",
+        "botId": "AI-Web-App-Agent",
+        "priority": 1,
+        "description": "Deliver polished player-facing web runtime for Beat 1 including popup messages, evidence feed, response actions, and ending transition surfaces.",
+        "deliverables": [
+          "Immersive beat UI components",
+          "Popup and feed interactions",
+          "Responsive and accessible interaction flow"
+        ],
+        "signoffCriteria": [
+          "Desktop/mobile behavior passes functional QA",
+          "Experience reads as premium, not debug controls"
+        ]
+      },
+      {
+        "title": "UX and Visual Direction - Midnight Lockbox Beat 1 Presentation Polish",
+        "botId": "AI-UX-UI-Agent",
+        "priority": 2,
+        "description": "Define and apply visual treatment for Beat 1 layouts, hierarchy, typography, and interaction cues in the horror-luxe style.",
+        "deliverables": [
+          "Beat-specific visual direction notes",
+          "UI hierarchy updates",
+          "Accessibility-safe visual variants"
+        ],
+        "signoffCriteria": [
+          "Visual cohesion across feed, board, and popup layers",
+          "No contrast/legibility regressions"
+        ]
+      },
+      {
+        "title": "Media Pipeline Output - Midnight Lockbox Beat 1 Evidence and Promo Set",
+        "botId": "AI-Media-Pipeline-Agent",
+        "priority": 1,
+        "description": "Generate and validate image/video/document prompt packs and production assets for Beat 1 including embedded visible and hidden clues.",
+        "deliverables": [
+          "Image prompt and output pack",
+          "Video prompt and output pack",
+          "Artifact generation set with metadata"
+        ],
+        "signoffCriteria": [
+          "All critical assets generated with provenance metadata",
+          "Clue embedding consistent across media"
+        ]
+      },
+      {
+        "title": "Voice and Audio Production - Midnight Lockbox Beat 1",
+        "botId": "AI-Voice-Audio-Agent",
+        "priority": 1,
+        "description": "Produce narrator scripts, character voice lines, villain taunts, score prompts, and ambient SFX package with provider-chain readiness.",
+        "deliverables": [
+          "Narration script pack",
+          "Character/villain voice scripts and synthesis plan",
+          "Music + SFX prompts and usage map"
+        ],
+        "signoffCriteria": [
+          "Distinct voice identity for each speaking role",
+          "Audio cues align with tension pacing"
+        ]
+      },
+      {
+        "title": "In-World Website Ecosystem - Midnight Lockbox Beat 1",
+        "botId": "AI-Admin-Ops-Agent",
+        "priority": 2,
+        "description": "Build and manage in-world web content set (Gallowglass pages, local bulletin, hidden maintenance portal) and operational content governance.",
+        "deliverables": [
+          "Web page copy and navigation structures",
+          "Hidden clue placement plan",
+          "Ops moderation checklist"
+        ],
+        "signoffCriteria": [
+          "Site ecosystem feels internally consistent",
+          "Hidden clues discoverable and non-breaking"
+        ]
+      },
+      {
+        "title": "Growth and Re-Engagement Hooks - Midnight Lockbox Beat 1",
+        "botId": "AI-Growth-CRM-Agent",
+        "priority": 3,
+        "description": "Implement lifecycle hooks around Beat 1 drop (resume nudges, teaser emails, referral moments) without breaking immersion.",
+        "deliverables": [
+          "Immersive lifecycle message variants",
+          "CRM event mapping updates",
+          "Re-engagement trigger definitions"
+        ],
+        "signoffCriteria": [
+          "Messages remain in-universe",
+          "Lifecycle triggers mapped to player states"
+        ]
+      },
+      {
+        "title": "Security and Safety Review - Midnight Lockbox Beat 1",
+        "botId": "AI-Security-Compliance-Agent",
+        "priority": 1,
+        "description": "Validate threat tone boundaries, consent preferences, content safety controls, spoofing protections, and legal compliance for Beat 1 messaging/media.",
+        "deliverables": [
+          "Safety and compliance checklist",
+          "Threat-tone guardrail assertions",
+          "Abuse/spoofing risk notes"
+        ],
+        "signoffCriteria": [
+          "Configurable intensity safeguards validated",
+          "No unsafe escalation path without opt controls"
+        ]
+      },
+      {
+        "title": "Commercial QA Certification - Midnight Lockbox Beat 1",
+        "botId": "AI-QA-Test-Agent",
+        "priority": 1,
+        "description": "Create and execute full validation suite for Beat 1: functional, visual, accessibility, media clue, and regression checks.",
+        "deliverables": [
+          "E2E and integration test coverage",
+          "Visual certification captures",
+          "Clue consistency verification"
+        ],
+        "signoffCriteria": [
+          "All critical tests green",
+          "No blocker defects in player-critical path"
+        ]
+      },
+      {
+        "title": "Release Pipeline and Deploy Readiness - Midnight Lockbox Beat 1",
+        "botId": "AI-DevOps-Release-Agent",
+        "priority": 2,
+        "description": "Ensure CI/CD gates, asset build steps, environment configs, and deployment runbook updates include Beat 1 package requirements.",
+        "deliverables": [
+          "Pipeline updates for new generation scripts",
+          "Release checklist delta",
+          "Deploy runbook updates"
+        ],
+        "signoffCriteria": [
+          "CI path includes package generation/validation",
+          "Runbook supports deterministic rollout and rollback"
+        ]
+      },
+      {
+        "title": "Commercial Packaging and Retention Strategy - Midnight Lockbox Beat 1",
+        "botId": "AI-Commercial-Success-Agent",
+        "priority": 3,
+        "description": "Define monetization-safe packaging for Beat 1 (teaser/free depth, premium unlock points, retention loops) aligned to product tone.",
+        "deliverables": [
+          "Packaging recommendation",
+          "Retention and upsell hooks",
+          "KPI measurement plan"
+        ],
+        "signoffCriteria": [
+          "Commercial hooks do not break immersion",
+          "KPIs tied to measurable in-product events"
+        ]
+      },
+      {
+        "title": "Mobile Experience Parity Plan - Midnight Lockbox Beat 1",
+        "botId": "AI-Mobile-App-Agent",
+        "priority": 3,
+        "description": "Define and stage mobile parity implementation for Beat 1 messaging, evidence board interactions, and clue-flow handling.",
+        "deliverables": [
+          "Mobile parity spec",
+          "Interaction adaptation notes",
+          "Performance constraints checklist"
+        ],
+        "signoffCriteria": [
+          "Parity plan ready for implementation sprint",
+          "No unresolved mobile UX blockers"
+        ]
+      }
+    ]
+  },
+  "created": [
+    {
+      "identifier": "JEF-36",
+      "title": "Production Package Orchestration - Midnight Lockbox Beat 1",
+      "botId": "AI-Executive-Orchestrator"
+    },
+    {
+      "identifier": "JEF-37",
+      "title": "Product Acceptance Spec - Midnight Lockbox Beat 1 Experience",
+      "botId": "AI-Product-Agent"
+    },
+    {
+      "identifier": "JEF-38",
+      "title": "Story Engine Buildout - Midnight Lockbox Beat 1 Branching and Consequences",
+      "botId": "AI-Story-Engine-Agent"
+    },
+    {
+      "identifier": "JEF-39",
+      "title": "Backend Messaging and Timing Orchestration - Midnight Lockbox Beat 1",
+      "botId": "AI-Backend-Agent"
+    },
+    {
+      "identifier": "JEF-40",
+      "title": "Web Gameplay Presentation - Midnight Lockbox Beat 1 Immersive UI",
+      "botId": "AI-Web-App-Agent"
+    },
+    {
+      "identifier": "JEF-41",
+      "title": "UX and Visual Direction - Midnight Lockbox Beat 1 Presentation Polish",
+      "botId": "AI-UX-UI-Agent"
+    },
+    {
+      "identifier": "JEF-42",
+      "title": "Media Pipeline Output - Midnight Lockbox Beat 1 Evidence and Promo Set",
+      "botId": "AI-Media-Pipeline-Agent"
+    },
+    {
+      "identifier": "JEF-43",
+      "title": "Voice and Audio Production - Midnight Lockbox Beat 1",
+      "botId": "AI-Voice-Audio-Agent"
+    },
+    {
+      "identifier": "JEF-44",
+      "title": "In-World Website Ecosystem - Midnight Lockbox Beat 1",
+      "botId": "AI-Admin-Ops-Agent"
+    },
+    {
+      "identifier": "JEF-45",
+      "title": "Growth and Re-Engagement Hooks - Midnight Lockbox Beat 1",
+      "botId": "AI-Growth-CRM-Agent"
+    },
+    {
+      "identifier": "JEF-46",
+      "title": "Security and Safety Review - Midnight Lockbox Beat 1",
+      "botId": "AI-Security-Compliance-Agent"
+    },
+    {
+      "identifier": "JEF-47",
+      "title": "Commercial QA Certification - Midnight Lockbox Beat 1",
+      "botId": "AI-QA-Test-Agent"
+    },
+    {
+      "identifier": "JEF-48",
+      "title": "Release Pipeline and Deploy Readiness - Midnight Lockbox Beat 1",
+      "botId": "AI-DevOps-Release-Agent"
+    },
+    {
+      "identifier": "JEF-49",
+      "title": "Commercial Packaging and Retention Strategy - Midnight Lockbox Beat 1",
+      "botId": "AI-Commercial-Success-Agent"
+    },
+    {
+      "identifier": "JEF-50",
+      "title": "Mobile Experience Parity Plan - Midnight Lockbox Beat 1",
+      "botId": "AI-Mobile-App-Agent"
+    }
+  ],
+  "existingMatches": [],
+  "existingCount": 35
+}

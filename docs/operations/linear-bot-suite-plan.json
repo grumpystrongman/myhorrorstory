@@ -1,6 +1,6 @@
 {
   "mode": "apply",
-  "generatedAt": "2026-03-09T15:10:07.216Z",
+  "generatedAt": "2026-03-09T16:43:26.328Z",
   "team": {
     "id": "5fd8f76d-d8b3-4935-b27d-ca694194f160",
     "key": "JEF",
@@ -62,101 +62,130 @@
       ]
     }
   ],
-  "createdIssues": [
-    {
-      "identifier": "JEF-21",
-      "title": "Immersive Gameplay UX Delivery Pack",
-      "botId": "AI-Web-App-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-22",
-      "title": "In-App Channel Simulation and Notification Abstraction",
-      "botId": "AI-Backend-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-23",
-      "title": "Voice Drama Performance and Casting Production",
-      "botId": "AI-Voice-Audio-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-24",
-      "title": "Story Arc Finalization and Branch Packaging QA",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-25",
-      "title": "Final Drama Package: black-chapel-ledger",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-26",
-      "title": "Final Drama Package: crown-of-salt",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-27",
-      "title": "Final Drama Package: dead-channel-protocol",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-28",
-      "title": "Final Drama Package: midnight-lockbox",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-29",
-      "title": "Final Drama Package: red-creek-winter",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-30",
-      "title": "Final Drama Package: signal-from-kharon-9",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-31",
-      "title": "Final Drama Package: static-between-stations",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-32",
-      "title": "Final Drama Package: tape-17-pinewatch",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-33",
-      "title": "Final Drama Package: the-fourth-tenant",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-34",
-      "title": "Final Drama Package: the-harvest-men",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    },
-    {
-      "identifier": "JEF-35",
-      "title": "Final Drama Package: ward-1908",
-      "botId": "AI-Story-Engine-Agent",
-      "created": true
-    }
-  ],
+  "createdIssues": [],
   "reassignedIssues": 0,
-  "issueCount": 35,
+  "issueCount": 50,
   "plan": [
+    {
+      "issueIdentifier": "JEF-50",
+      "issueTitle": "Mobile Experience Parity Plan - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Mobile-App-Agent",
+      "proposedLinearLabel": "AI-Mobile-App-Agent",
+      "rationale": "Matched to AI-Mobile-App-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Mobile parity and responsive runtime UX."
+    },
+    {
+      "issueIdentifier": "JEF-49",
+      "issueTitle": "Commercial Packaging and Retention Strategy - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Commercial-Success-Agent",
+      "proposedLinearLabel": "AI-Commercial-Success-Agent",
+      "rationale": "Matched to AI-Commercial-Success-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Monetization strategy, packaging, and post-launch expansion."
+    },
+    {
+      "issueIdentifier": "JEF-48",
+      "issueTitle": "Release Pipeline and Deploy Readiness - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-DevOps-Release-Agent",
+      "proposedLinearLabel": "AI-DevOps-Release-Agent",
+      "rationale": "Matched to AI-DevOps-Release-Agent through labels/keyword heuristics.",
+      "ownershipScope": "CI/CD reliability, deployment quality, and release controls."
+    },
+    {
+      "issueIdentifier": "JEF-47",
+      "issueTitle": "Commercial QA Certification - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-QA-Test-Agent",
+      "proposedLinearLabel": "AI-QA-Test-Agent",
+      "rationale": "Matched to AI-QA-Test-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Commercial-grade validation, regression protection, and quality evidence."
+    },
+    {
+      "issueIdentifier": "JEF-46",
+      "issueTitle": "Security and Safety Review - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Security-Compliance-Agent",
+      "proposedLinearLabel": "AI-Security-Compliance-Agent",
+      "rationale": "Matched to AI-Security-Compliance-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Security, safety, policy, and legal compliance."
+    },
+    {
+      "issueIdentifier": "JEF-45",
+      "issueTitle": "Growth and Re-Engagement Hooks - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Growth-CRM-Agent",
+      "proposedLinearLabel": "AI-Growth-CRM-Agent",
+      "rationale": "Matched to AI-Growth-CRM-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Lifecycle growth, referral mechanics, and CRM orchestration."
+    },
+    {
+      "issueIdentifier": "JEF-44",
+      "issueTitle": "In-World Website Ecosystem - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Admin-Ops-Agent",
+      "proposedLinearLabel": "AI-Admin-Ops-Agent",
+      "rationale": "Matched to AI-Admin-Ops-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Back-office tooling, moderation, and operations workflows."
+    },
+    {
+      "issueIdentifier": "JEF-43",
+      "issueTitle": "Voice and Audio Production - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Voice-Audio-Agent",
+      "proposedLinearLabel": "AI-Voice-Audio-Agent",
+      "rationale": "Matched to AI-Voice-Audio-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Voice casting, score direction, and adaptive audio experience."
+    },
+    {
+      "issueIdentifier": "JEF-42",
+      "issueTitle": "Media Pipeline Output - Midnight Lockbox Beat 1 Evidence and Promo Set",
+      "proposedBotId": "AI-Media-Pipeline-Agent",
+      "proposedLinearLabel": "AI-Media-Pipeline-Agent",
+      "rationale": "Matched to AI-Media-Pipeline-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Image/video prompt pipeline, manifests, and asset generation quality."
+    },
+    {
+      "issueIdentifier": "JEF-41",
+      "issueTitle": "UX and Visual Direction - Midnight Lockbox Beat 1 Presentation Polish",
+      "proposedBotId": "AI-UX-UI-Agent",
+      "proposedLinearLabel": "AI-UX-UI-Agent",
+      "rationale": "Matched to AI-UX-UI-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Interaction design, visual language, and accessibility."
+    },
+    {
+      "issueIdentifier": "JEF-40",
+      "issueTitle": "Web Gameplay Presentation - Midnight Lockbox Beat 1 Immersive UI",
+      "proposedBotId": "AI-Web-App-Agent",
+      "proposedLinearLabel": "AI-Web-App-Agent",
+      "rationale": "Matched to AI-Web-App-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Marketing and gameplay web implementation."
+    },
+    {
+      "issueIdentifier": "JEF-39",
+      "issueTitle": "Backend Messaging and Timing Orchestration - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Backend-Agent",
+      "proposedLinearLabel": "AI-Backend-Agent",
+      "rationale": "Matched to AI-Backend-Agent through labels/keyword heuristics.",
+      "ownershipScope": "APIs, orchestration, data contracts, and backend reliability."
+    },
+    {
+      "issueIdentifier": "JEF-38",
+      "issueTitle": "Story Engine Buildout - Midnight Lockbox Beat 1 Branching and Consequences",
+      "proposedBotId": "AI-Story-Engine-Agent",
+      "proposedLinearLabel": "AI-Story-Engine-Agent",
+      "rationale": "Matched to AI-Story-Engine-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Narrative logic, branching validation, and content runtime behavior."
+    },
+    {
+      "issueIdentifier": "JEF-37",
+      "issueTitle": "Product Acceptance Spec - Midnight Lockbox Beat 1 Experience",
+      "proposedBotId": "AI-Product-Agent",
+      "proposedLinearLabel": "AI-Product-Agent",
+      "rationale": "Matched to AI-Product-Agent through labels/keyword heuristics.",
+      "ownershipScope": "Commercial product requirements and acceptance criteria."
+    },
+    {
+      "issueIdentifier": "JEF-36",
+      "issueTitle": "Production Package Orchestration - Midnight Lockbox Beat 1",
+      "proposedBotId": "AI-Executive-Orchestrator",
+      "proposedLinearLabel": "AI-Executive-Orchestrator",
+      "rationale": "No specific domain keywords or labels found; orchestration bot selected for triage.",
+      "ownershipScope": "Program control, sequencing, and cross-workstream signoff."
+    },
     {
       "issueIdentifier": "JEF-35",
       "issueTitle": "Final Drama Package: ward-1908",
@@ -441,42 +470,62 @@
   "coverage": [
     {
       "botId": "AI-Media-Pipeline-Agent",
-      "issueCount": 14
+      "issueCount": 15
     },
     {
       "botId": "AI-Story-Engine-Agent",
-      "issueCount": 12
+      "issueCount": 13
     },
     {
       "botId": "AI-QA-Test-Agent",
+      "issueCount": 3
+    },
+    {
+      "botId": "AI-Security-Compliance-Agent",
+      "issueCount": 2
+    },
+    {
+      "botId": "AI-Growth-CRM-Agent",
       "issueCount": 2
     },
     {
       "botId": "AI-Voice-Audio-Agent",
-      "issueCount": 1
-    },
-    {
-      "botId": "AI-Backend-Agent",
-      "issueCount": 1
-    },
-    {
-      "botId": "AI-Web-App-Agent",
-      "issueCount": 1
-    },
-    {
-      "botId": "AI-Security-Compliance-Agent",
-      "issueCount": 1
-    },
-    {
-      "botId": "AI-Growth-CRM-Agent",
-      "issueCount": 1
+      "issueCount": 2
     },
     {
       "botId": "AI-UX-UI-Agent",
-      "issueCount": 1
+      "issueCount": 2
+    },
+    {
+      "botId": "AI-Web-App-Agent",
+      "issueCount": 2
+    },
+    {
+      "botId": "AI-Backend-Agent",
+      "issueCount": 2
     },
     {
       "botId": "AI-Executive-Orchestrator",
+      "issueCount": 2
+    },
+    {
+      "botId": "AI-Mobile-App-Agent",
+      "issueCount": 1
+    },
+    {
+      "botId": "AI-Commercial-Success-Agent",
+      "issueCount": 1
+    },
+    {
+      "botId": "AI-DevOps-Release-Agent",
+      "issueCount": 1
+    },
+    {
+      "botId": "AI-Admin-Ops-Agent",
+      "issueCount": 1
+    },
+    {
+      "botId": "AI-Product-Agent",
       "issueCount": 1
     }
   ]

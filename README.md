@@ -85,6 +85,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `corepack pnpm messaging:setup -- --public-url https://your-api.example.com`
 - `corepack pnpm linear:bots:plan`
 - `corepack pnpm linear:bots:apply`
+- `corepack pnpm linear:bots:dispatch-package`
 - `corepack pnpm linear:oauth:connect`
 - `corepack pnpm linear:oauth:url`
 - `corepack pnpm linear:oauth:exchange -- --code <authorization_code>`

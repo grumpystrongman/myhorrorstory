@@ -1,21 +1,41 @@
 # Linear Bot Suite Report
 
-Generated: 2026-03-09T15:10:07.219Z
+Generated: 2026-03-09T16:43:26.330Z
 Mode: apply
 
 ## Coverage by Bot
-- AI-Media-Pipeline-Agent: 14 issue(s)
-- AI-Story-Engine-Agent: 12 issue(s)
-- AI-QA-Test-Agent: 2 issue(s)
-- AI-Voice-Audio-Agent: 1 issue(s)
-- AI-Backend-Agent: 1 issue(s)
-- AI-Web-App-Agent: 1 issue(s)
-- AI-Security-Compliance-Agent: 1 issue(s)
-- AI-Growth-CRM-Agent: 1 issue(s)
-- AI-UX-UI-Agent: 1 issue(s)
-- AI-Executive-Orchestrator: 1 issue(s)
+- AI-Media-Pipeline-Agent: 15 issue(s)
+- AI-Story-Engine-Agent: 13 issue(s)
+- AI-QA-Test-Agent: 3 issue(s)
+- AI-Security-Compliance-Agent: 2 issue(s)
+- AI-Growth-CRM-Agent: 2 issue(s)
+- AI-Voice-Audio-Agent: 2 issue(s)
+- AI-UX-UI-Agent: 2 issue(s)
+- AI-Web-App-Agent: 2 issue(s)
+- AI-Backend-Agent: 2 issue(s)
+- AI-Executive-Orchestrator: 2 issue(s)
+- AI-Mobile-App-Agent: 1 issue(s)
+- AI-Commercial-Success-Agent: 1 issue(s)
+- AI-DevOps-Release-Agent: 1 issue(s)
+- AI-Admin-Ops-Agent: 1 issue(s)
+- AI-Product-Agent: 1 issue(s)
 
 ## Planned Creative Work Queue
+- JEF-50: Mobile Experience Parity Plan - Midnight Lockbox Beat 1 -> AI-Mobile-App-Agent
+- JEF-49: Commercial Packaging and Retention Strategy - Midnight Lockbox Beat 1 -> AI-Commercial-Success-Agent
+- JEF-48: Release Pipeline and Deploy Readiness - Midnight Lockbox Beat 1 -> AI-DevOps-Release-Agent
+- JEF-47: Commercial QA Certification - Midnight Lockbox Beat 1 -> AI-QA-Test-Agent
+- JEF-46: Security and Safety Review - Midnight Lockbox Beat 1 -> AI-Security-Compliance-Agent
+- JEF-45: Growth and Re-Engagement Hooks - Midnight Lockbox Beat 1 -> AI-Growth-CRM-Agent
+- JEF-44: In-World Website Ecosystem - Midnight Lockbox Beat 1 -> AI-Admin-Ops-Agent
+- JEF-43: Voice and Audio Production - Midnight Lockbox Beat 1 -> AI-Voice-Audio-Agent
+- JEF-42: Media Pipeline Output - Midnight Lockbox Beat 1 Evidence and Promo Set -> AI-Media-Pipeline-Agent
+- JEF-41: UX and Visual Direction - Midnight Lockbox Beat 1 Presentation Polish -> AI-UX-UI-Agent
+- JEF-40: Web Gameplay Presentation - Midnight Lockbox Beat 1 Immersive UI -> AI-Web-App-Agent
+- JEF-39: Backend Messaging and Timing Orchestration - Midnight Lockbox Beat 1 -> AI-Backend-Agent
+- JEF-38: Story Engine Buildout - Midnight Lockbox Beat 1 Branching and Consequences -> AI-Story-Engine-Agent
+- JEF-37: Product Acceptance Spec - Midnight Lockbox Beat 1 Experience -> AI-Product-Agent
+- JEF-36: Production Package Orchestration - Midnight Lockbox Beat 1 -> AI-Executive-Orchestrator
 - JEF-35: Final Drama Package: ward-1908 -> AI-Story-Engine-Agent
 - JEF-34: Final Drama Package: the-harvest-men -> AI-Story-Engine-Agent
 - JEF-33: Final Drama Package: the-fourth-tenant -> AI-Story-Engine-Agent
