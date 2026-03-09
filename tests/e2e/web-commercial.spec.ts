@@ -34,6 +34,22 @@ test.describe('Web consumer interactions', () => {
     await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
   });
 
+  test('switches soundtrack from global overture to story-specific score', async ({ page }) => {
+    await page.goto(`${WEB_BASE_URL}/`);
+    await expect(page.getByTestId('soundtrack-track')).toHaveText('MHS Platform Overture');
+
+    await page.goto(`${WEB_BASE_URL}/stories/static-between-stations/intro`);
+    await expect(page.getByRole('heading', { name: 'Static Between Stations' })).toBeVisible();
+    await expect(page.getByTestId('soundtrack-track')).toHaveText('Signal in the Static');
+
+    await Promise.all([
+      page.waitForURL('**/play?storyId=static-between-stations'),
+      page.getByTestId('intro-start-session').click()
+    ]);
+    await expect(page.getByTestId('active-story')).toContainText('Static Between Stations');
+    await expect(page.getByTestId('active-score')).toContainText('Signal in the Static');
+  });
+
   test('exercises zoom, pan, and audio controls end-to-end', async ({ page }) => {
     await page.goto(`${WEB_BASE_URL}/play`);
 
@@ -43,6 +59,47 @@ test.describe('Web consumer interactions', () => {
     const mutedStatus = page.getByTestId('audio-muted-status');
     const volumeStatus = page.getByTestId('audio-volume-status');
     const subtitleStatus = page.getByTestId('subtitle-status');
+    const directorBand = page.getByTestId('director-band');
+    const soundtrackStatus = page.getByTestId('soundtrack-status');
+    const soundtrackDirectorTension = page.getByTestId('soundtrack-director-tension');
+
+    const setRangeValue = async (testId: string, value: string) => {
+      await page.getByTestId(testId).evaluate(
+        (node, nextValue) => {
+          const input = node as HTMLInputElement;
+          const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')?.set;
+          if (!setter) {
+            throw new Error('Expected HTMLInputElement value setter to exist');
+          }
+          setter.call(input, nextValue);
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        },
+        value
+      );
+    };
+
+    await setRangeValue('director-time', '12');
+    await setRangeValue('director-progress', '0');
+    await setRangeValue('director-villain-proximity', '0');
+    await setRangeValue('director-danger', '0');
+    await expect(directorBand).toContainText('Calm Ambience');
+    await expect(soundtrackStatus).toContainText('Calm Ambience');
+
+    await setRangeValue('director-time', '21');
+    await setRangeValue('director-progress', '50');
+    await setRangeValue('director-villain-proximity', '50');
+    await setRangeValue('director-danger', '50');
+    await expect(directorBand).toContainText('Suspense Drones');
+    await expect(soundtrackStatus).toContainText('Suspense Drones');
+
+    await setRangeValue('director-time', '1');
+    await setRangeValue('director-progress', '95');
+    await setRangeValue('director-villain-proximity', '95');
+    await setRangeValue('director-danger', '95');
+    await expect(directorBand).toContainText('Rapid Heartbeat Percussion');
+    await expect(soundtrackStatus).toContainText('Rapid Heartbeat Percussion');
+    await expect(soundtrackDirectorTension).toContainText('Tension:');
 
     await expect(zoomStatus).toHaveText('Zoom: 100%');
     await expect(panStatus).toHaveText('Pan: x 0, y 0');

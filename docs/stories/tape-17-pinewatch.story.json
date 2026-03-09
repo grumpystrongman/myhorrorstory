@@ -1,160 +1,1195 @@
 {
-    "id":  "tape-17-pinewatch",
-    "version":  "v1",
-    "title":  "Tape 17: Pinewatch",
-    "hook":  "A camcorder tape recovers itself every night with new footage no one recorded.",
-    "subgenre":  "found-footage investigation",
-    "tone":  "GROUNDED",
-    "targetSessionMinutes":  90,
-    "soloSuitability":  5,
-    "partySuitability":  5,
-    "ageWarnings":  [
-                        "violence",
-                        "threat",
-                        "disturbing audio"
-                    ],
-    "characters":  [
-                       "Ranger",
-                       "Media Forensics Analyst",
-                       "Survivor",
-                       "Unknown Cameraperson"
-                   ],
-    "location":  "Closed wilderness watch station and ranger trails",
-    "acts":  [
-                 {
-                     "id":  "act-1",
-                     "title":  "Contact",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-1",
-                                       "title":  "First Disturbance",
-                                       "narrative":  "The party receives a media drop that should be impossible.",
-                                       "unlockAfterSeconds":  0,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-trace",
-                                                           "label":  "Trace the source",
-                                                           "effects":  {
-                                                                           "choice_path":  "trace",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       },
-                                                       {
-                                                           "id":  "choice-interview",
-                                                           "label":  "Interview witnesses",
-                                                           "effects":  {
-                                                                           "choice_path":  "interview",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-origin"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-2",
-                                       "title":  "Escalation",
-                                       "narrative":  "Evidence contradicts itself while a timed event forces a decision.",
-                                       "unlockAfterSeconds":  120,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-contradiction"
-                                                          ]
-                                   }
-                               ]
-                 },
-                 {
-                     "id":  "act-2",
-                     "title":  "Reconstruction",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-3",
-                                       "title":  "Timeline Fracture",
-                                       "narrative":  "Players align timeline events and uncover motive variants.",
-                                       "unlockAfterSeconds":  180,
-                                       "requiredConditions":  [
-                                                                  {
-                                                                      "type":  "HAS_CLUE",
-                                                                      "key":  "clue",
-                                                                      "value":  "clue-origin"
-                                                                  }
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-accuse-a",
-                                                           "label":  "Accuse the inside accomplice",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "inside"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       },
-                                                       {
-                                                           "id":  "choice-accuse-b",
-                                                           "label":  "Accuse the external cult",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "external"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-motive"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-4",
-                                       "title":  "Final Debrief",
-                                       "narrative":  "Case closes with scored debrief and sequel hook transmission.",
-                                       "unlockAfterSeconds":  60,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-reveal"
-                                                          ]
-                                   }
-                               ]
-                 }
-             ],
-    "replayHooks":  [
-                        "Alternative culprit paths",
-                        "Variable clue timing in party mode",
-                        "Hostless AI narrator variance"
-                    ],
-    "sequelHooks":  [
-                        "Encrypted post-credit voicemail",
-                        "Cross-case antagonist breadcrumb"
-                    ],
-    "branchingMoments":  [
-                             "Trace vs interview opening",
-                             "Two reveal variants in act 2"
-                         ],
-    "clueEvidenceList":  [
-                             "Signal transcript",
-                             "Audio spectrogram",
-                             "Witness dossier",
-                             "Tampered photo"
-                         ],
-    "revealVariants":  [
-                           "Inside collaborator reveal",
-                           "External ritual network reveal"
-                       ],
-    "upsellHooks":  [
-                        "Premium epilogue file",
-                        "Linked sequel unlock for subscribers"
-                    ]
+  "id": "tape-17-pinewatch",
+  "version": "v2",
+  "title": "Tape 17: Pinewatch",
+  "hook": "A recovered camcorder tape rewrites itself every midnight.",
+  "subgenre": "found-footage investigation",
+  "tone": "GROUNDED",
+  "targetSessionMinutes": 80,
+  "soloSuitability": 5,
+  "partySuitability": 4,
+  "ageWarnings": [
+    "missing persons",
+    "panic audio",
+    "threat"
+  ],
+  "characters": [
+    "Ranger Juno Hale",
+    "Media Forensics Analyst Priya Sen",
+    "Survivor Cade Rowan",
+    "Volunteer Search Lead Ellis Vann"
+  ],
+  "location": "Closed wilderness watch station and ranger tunnels",
+  "acts": [
+    {
+      "id": "act-1",
+      "title": "Contact",
+      "beats": [
+        {
+          "id": "beat-1",
+          "title": "Tape Reset",
+          "narrative": "The same footage frame arrives through Telegram with different timestamps for each player.",
+          "unlockAfterSeconds": 0,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-trace-source",
+              "label": "Extract frame-level artifacts before midnight overwrite",
+              "effects": {
+                "investigation_path": "trace_source",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            },
+            {
+              "id": "choice-interview-ally",
+              "label": "Interview the survivor while memory is still coherent",
+              "effects": {
+                "investigation_path": "ally_interview",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            }
+          ],
+          "revealsClueIds": [
+            "tape-17-pinewatch-clue-origin"
+          ]
+        },
+        {
+          "id": "beat-2",
+          "title": "Escalation Signal",
+          "narrative": "A contradictory channel drop appears within minutes and forces risk.",
+          "unlockAfterSeconds": 120,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-preserve-evidence",
+              "label": "Preserve original evidence chain",
+              "effects": {
+                "evidence_preserved": true,
+                "moralityDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            },
+            {
+              "id": "choice-fast-pursuit",
+              "label": "Pursue suspect immediately",
+              "effects": {
+                "evidence_preserved": false,
+                "aggressionDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            }
+          ],
+          "revealsClueIds": [
+            "tape-17-pinewatch-clue-pressure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "title": "Interference",
+      "beats": [
+        {
+          "id": "beat-3",
+          "title": "Trust Fracture",
+          "narrative": "The villain mixes real secrets with fabricated claims to split allies.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "tape-17-pinewatch-clue-origin"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-trust-handler",
+              "label": "Trust Ranger Juno Hale and secure witness",
+              "effects": {
+                "trusted_ally": "Ranger Juno Hale",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            },
+            {
+              "id": "choice-trust-witness",
+              "label": "Trust Media Forensics Analyst Priya Sen and expose internal leak",
+              "effects": {
+                "trusted_ally": "Media Forensics Analyst Priya Sen",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            }
+          ],
+          "revealsClueIds": [
+            "tape-17-pinewatch-clue-contradiction"
+          ]
+        },
+        {
+          "id": "beat-4",
+          "title": "Ultimatum Window",
+          "narrative": "A timed message threatens collateral harm unless the party diverts.",
+          "unlockAfterSeconds": 300,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-save-npc",
+              "label": "Divert to save threatened NPC",
+              "effects": {
+                "rescue_route": true,
+                "moralityDelta": 2
+              },
+              "nextBeatId": "beat-5"
+            },
+            {
+              "id": "choice-continue-case",
+              "label": "Continue forensic pursuit under threat",
+              "effects": {
+                "rescue_route": false,
+                "trustworthinessDelta": -1
+              },
+              "nextBeatId": "beat-5"
+            }
+          ],
+          "revealsClueIds": [
+            "tape-17-pinewatch-clue-timed-warning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "title": "Reckoning",
+      "beats": [
+        {
+          "id": "beat-5",
+          "title": "Confrontation Protocol",
+          "narrative": "Players reconstruct motive and false trails before collapse.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "tape-17-pinewatch-clue-pressure"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-charge-villain",
+              "label": "Commit to formal accusation and expose evidence chain",
+              "effects": {
+                "final_strategy": "formal_charge",
+                "scoreDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            },
+            {
+              "id": "choice-private-deal",
+              "label": "Take private contact route for hidden confession",
+              "effects": {
+                "final_strategy": "private_contact",
+                "deceptionDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            }
+          ],
+          "revealsClueIds": [
+            "tape-17-pinewatch-clue-reveal"
+          ]
+        },
+        {
+          "id": "beat-6",
+          "title": "Case Debrief",
+          "narrative": "Final scoring resolves ending branch and season continuity flags.",
+          "unlockAfterSeconds": 60,
+          "requiredConditions": [],
+          "choices": [],
+          "revealsClueIds": [
+            "tape-17-pinewatch-clue-epilogue"
+          ]
+        }
+      ]
+    }
+  ],
+  "replayHooks": [
+    "Branch reveals different perpetrators each run.",
+    "Voice cadence shifts with aggression.",
+    "Puzzle outcome changes final route access."
+  ],
+  "sequelHooks": [
+    "Recovered metadata references an unlogged Tape 18."
+  ],
+  "branchingMoments": [
+    "Forensics-first vs witness-first opening",
+    "Field reenactment vs archive triangulation"
+  ],
+  "clueEvidenceList": [
+    "Frame glitch cluster",
+    "Ranger dispatch excerpt",
+    "Weather siren file",
+    "Tripod footprint cast"
+  ],
+  "revealVariants": [
+    "Manufactured hoax with lethal intent",
+    "Predatory anomaly exploiting camera feedback"
+  ],
+  "upsellHooks": [
+    "Premium prologue: first minute of Tape 18."
+  ],
+  "playerReputationModel": {
+    "startingScores": {
+      "trustworthiness": 0,
+      "aggression": 0,
+      "curiosity": 0,
+      "deception": 0,
+      "morality": 0
+    },
+    "decayPerDay": 0,
+    "axisGuidance": [
+      {
+        "axis": "trustworthiness",
+        "positiveBehavior": "Keep promises.",
+        "negativeBehavior": "Break promises."
+      },
+      {
+        "axis": "aggression",
+        "positiveBehavior": "Use firm pressure.",
+        "negativeBehavior": "Threaten everyone."
+      },
+      {
+        "axis": "curiosity",
+        "positiveBehavior": "Chase anomalies.",
+        "negativeBehavior": "Ignore contradictions."
+      },
+      {
+        "axis": "deception",
+        "positiveBehavior": "Use tactical bluff.",
+        "negativeBehavior": "Lie constantly."
+      },
+      {
+        "axis": "morality",
+        "positiveBehavior": "Protect bystanders.",
+        "negativeBehavior": "Trade lives for speed."
+      }
+    ]
+  },
+  "channelCadence": {
+    "primaryChannels": [
+      "SMS",
+      "WHATSAPP",
+      "TELEGRAM"
+    ],
+    "auxiliaryChannels": [
+      "EMAIL",
+      "VOICE_MESSAGE",
+      "DOCUMENT_DROP",
+      "SIMULATED_SITE"
+    ],
+    "lateNightMessagingDefault": false,
+    "maxVillainTouchesPerDay": 3,
+    "suspenseSilenceWindowMinutes": {
+      "min": 45,
+      "max": 360
+    }
+  },
+  "npcProfiles": [
+    {
+      "id": "tape-17-pinewatch-npc-1",
+      "displayName": "Ranger Juno Hale",
+      "role": "HANDLER",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "tape-17-pinewatch-npc-1-secret",
+          "title": "Ranger Juno Hale withheld a key detail",
+          "summary": "Ranger Juno Hale can expose tape-17-pinewatch-clue-pressure at high trust.",
+          "trustThreshold": 45,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "tape-17-pinewatch-npc-1",
+              "operator": "GTE",
+              "value": 45
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through tape-17-pinewatch-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "tape-17-pinewatch-npc-2",
+      "displayName": "Media Forensics Analyst Priya Sen",
+      "role": "WITNESS",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "tape-17-pinewatch-npc-2-secret",
+          "title": "Media Forensics Analyst Priya Sen withheld a key detail",
+          "summary": "Media Forensics Analyst Priya Sen can expose tape-17-pinewatch-clue-reveal at high trust.",
+          "trustThreshold": 55,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "tape-17-pinewatch-npc-2",
+              "operator": "GTE",
+              "value": 55
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through tape-17-pinewatch-clue-reveal."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "tape-17-pinewatch-npc-3",
+      "displayName": "Survivor Cade Rowan",
+      "role": "SUSPECT",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "tape-17-pinewatch-npc-3-secret",
+          "title": "Survivor Cade Rowan withheld a key detail",
+          "summary": "Survivor Cade Rowan can expose tape-17-pinewatch-clue-origin at high trust.",
+          "trustThreshold": 65,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "tape-17-pinewatch-npc-3",
+              "operator": "GTE",
+              "value": 65
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through tape-17-pinewatch-clue-origin."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "tape-17-pinewatch-npc-4",
+      "displayName": "Volunteer Search Lead Ellis Vann",
+      "role": "ALLY",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "tape-17-pinewatch-npc-4-secret",
+          "title": "Volunteer Search Lead Ellis Vann withheld a key detail",
+          "summary": "Volunteer Search Lead Ellis Vann can expose tape-17-pinewatch-clue-pressure at high trust.",
+          "trustThreshold": 75,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "tape-17-pinewatch-npc-4",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through tape-17-pinewatch-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    }
+  ],
+  "villain": {
+    "id": "tape-17-pinewatch-villain",
+    "displayName": "The Editor",
+    "archetype": "PLAYFUL_SOCIOPATH",
+    "worldview": "Reality is editable if fear is timed correctly.",
+    "motive": "Make players complicit in narrative cuts that cost lives.",
+    "signatureSpeechStyle": "Conversational, playful, then abruptly cruel.",
+    "emotionalVolatility": 0.57,
+    "obsessionTarget": "The player detective profile",
+    "triggerConditions": [
+      "Player nears a correct accusation.",
+      "Player rescues a protected witness.",
+      "Player shows sustained silence after direct contact."
+    ],
+    "manipulationTactics": [
+      "fake reassurance",
+      "jump-cut evidence",
+      "timed panic"
+    ],
+    "riskTolerance": 0.74,
+    "humorOrCruelty": "Gallows humor about failed rescues.",
+    "symbolicMotifs": [
+      "timecode burn-ins",
+      "camera clicks",
+      "forest sirens"
+    ],
+    "escalationStages": [
+      {
+        "stage": 1,
+        "label": "Peripheral Presence",
+        "objective": "Signal surveillance without identity.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "ELAPSED_SECONDS",
+            "key": "elapsed",
+            "operator": "GTE",
+            "value": 0
+          }
+        },
+        "allowedMessageTypes": [
+          "CRYPTIC_CLUE",
+          "PERSONAL_OBSERVATION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 120,
+          "maxTouchesPerDay": 2,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 2,
+        "label": "Psychological Contact",
+        "objective": "Break trust between player and allies.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "HAS_CLUE",
+            "key": "tape-17-pinewatch-clue-origin",
+            "operator": "EQ",
+            "value": true
+          }
+        },
+        "allowedMessageTypes": [
+          "TAUNT",
+          "RIDDLE",
+          "FALSE_REASSURANCE"
+        ],
+        "timing": {
+          "minIntervalMinutes": 90,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 3,
+        "label": "Active Interference",
+        "objective": "Force tactical mistakes.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 65
+          }
+        },
+        "allowedMessageTypes": [
+          "THREAT",
+          "COUNTDOWN",
+          "MEDIA_DROP"
+        ],
+        "timing": {
+          "minIntervalMinutes": 60,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": true
+        }
+      },
+      {
+        "stage": 4,
+        "label": "Personal Confrontation",
+        "objective": "Recruit, corrupt, or break the player.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 85
+          }
+        },
+        "allowedMessageTypes": [
+          "MORAL_TEST",
+          "PARTIAL_CONFESSION",
+          "MANIPULATIVE_INSTRUCTION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 40,
+          "maxTouchesPerDay": 4,
+          "allowLateNight": true
+        }
+      }
+    ]
+  },
+  "villainMessageTemplates": [
+    {
+      "id": "tape-17-pinewatch-msg-1",
+      "stage": 1,
+      "type": "CRYPTIC_CLUE",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "You watched the wrong frame twice.",
+      "personalizationKeys": [
+        "playerName",
+        "recentAction"
+      ],
+      "branchEffects": [
+        "presence-started"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-msg-2",
+      "stage": 2,
+      "type": "TAUNT",
+      "channels": [
+        "WHATSAPP",
+        "TELEGRAM"
+      ],
+      "textTemplate": "You keep chasing ghosts because people are harder to blame.",
+      "personalizationKeys": [
+        "trustedNpc"
+      ],
+      "branchEffects": [
+        "trust-fracture"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-msg-3",
+      "stage": 2,
+      "type": "RIDDLE",
+      "channels": [
+        "TELEGRAM"
+      ],
+      "textTemplate": "Two witnesses, one memory. Which one pays in blood?",
+      "personalizationKeys": [],
+      "branchEffects": [
+        "puzzle-hint"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-msg-4",
+      "stage": 3,
+      "type": "THREAT",
+      "channels": [
+        "SMS",
+        "VOICE_MESSAGE"
+      ],
+      "textTemplate": "If you scrub the footage again, he dies in real time.",
+      "personalizationKeys": [
+        "allyName"
+      ],
+      "branchEffects": [
+        "npc-at-risk"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-msg-5",
+      "stage": 3,
+      "type": "COUNTDOWN",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "Nine minutes. Save the witness or save the truth.",
+      "personalizationKeys": [
+        "countdownTarget"
+      ],
+      "branchEffects": [
+        "ultimatum"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-msg-6",
+      "stage": 4,
+      "type": "MORAL_TEST",
+      "channels": [
+        "EMAIL",
+        "DOCUMENT_DROP"
+      ],
+      "textTemplate": "Confess one lie and I return one life.",
+      "personalizationKeys": [
+        "playerWeakness"
+      ],
+      "branchEffects": [
+        "corruption-offer"
+      ]
+    }
+  ],
+  "arcMap": [
+    {
+      "id": "tape-17-pinewatch-arc-contact",
+      "title": "Contact and Contradiction",
+      "stage": "OPENING",
+      "summary": "The case opens with impossible evidence and uncertain allies.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ELAPSED_SECONDS",
+          "key": "elapsed",
+          "operator": "GTE",
+          "value": 0
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "tape-17-pinewatch-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "tape-17-pinewatch-rule-first-contact",
+        "tape-17-pinewatch-rule-delay-punish"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-arc-disruption",
+      "title": "Interference and Doubt",
+      "stage": "MIDDLE",
+      "summary": "Villain contact escalates while ally trust becomes volatile.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "VILLAIN_STAGE",
+          "key": "stage",
+          "operator": "GTE",
+          "value": 2
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "tape-17-pinewatch-clue-pressure",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "tape-17-pinewatch-rule-incorrect-accusation",
+        "tape-17-pinewatch-rule-ally-cooperation"
+      ]
+    },
+    {
+      "id": "tape-17-pinewatch-arc-endgame",
+      "title": "Confrontation and Reckoning",
+      "stage": "ENDGAME",
+      "summary": "The final branch depends on ethics, timing, and trust.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 80
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "tape-17-pinewatch-event-case-closed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "tape-17-pinewatch-rule-near-success",
+        "tape-17-pinewatch-rule-moral-fork"
+      ]
+    }
+  ],
+  "triggerRules": [
+    {
+      "id": "tape-17-pinewatch-rule-first-contact",
+      "name": "First Villain Contact",
+      "description": "Core clue discovery escalates villain from peripheral to direct contact.",
+      "eventType": "CLUE_DISCOVERED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "tape-17-pinewatch-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 2
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "tape-17-pinewatch-msg-1",
+          "delaySeconds": 180
+        }
+      ],
+      "priority": 80,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "tape-17-pinewatch-rule-delay-punish",
+      "name": "Silence Punisher",
+      "description": "Long response delay causes pressure event and taunt.",
+      "eventType": "PLAYER_DELAY",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "SILENCE_SECONDS",
+          "key": "silence",
+          "operator": "GTE",
+          "value": 14400
+        }
+      },
+      "actions": [
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "WHATSAPP",
+          "templateId": "tape-17-pinewatch-msg-2",
+          "delaySeconds": 60
+        },
+        {
+          "type": "EMIT_EVENT",
+          "eventId": "tape-17-pinewatch-event-witness-risk"
+        }
+      ],
+      "priority": 75,
+      "cooldownSeconds": 1800,
+      "maxActivations": 2
+    },
+    {
+      "id": "tape-17-pinewatch-rule-incorrect-accusation",
+      "name": "Wrong Accusation Fallout",
+      "description": "Incorrect accusation damages trust and escalates interference.",
+      "eventType": "PLAYER_ACCUSATION",
+      "when": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "FLAG",
+              "key": "accusationCorrect",
+              "operator": "EQ",
+              "value": false
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "VILLAIN_STAGE",
+              "key": "stage",
+              "operator": "LTE",
+              "value": 3
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "UPDATE_NPC_TRUST",
+          "npcId": "tape-17-pinewatch-npc-4",
+          "delta": -15
+        },
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 3
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "TELEGRAM",
+          "templateId": "tape-17-pinewatch-msg-4",
+          "delaySeconds": 120
+        }
+      ],
+      "priority": 90,
+      "cooldownSeconds": 900,
+      "maxActivations": 2
+    },
+    {
+      "id": "tape-17-pinewatch-rule-ally-cooperation",
+      "name": "Ally Cooperation Reward",
+      "description": "High trust with a core ally reveals additional evidence.",
+      "eventType": "NPC_TRUST_CHANGED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "NPC_TRUST",
+          "key": "tape-17-pinewatch-npc-4",
+          "operator": "GTE",
+          "value": 70
+        }
+      },
+      "actions": [
+        {
+          "type": "REVEAL_CLUE",
+          "clueId": "tape-17-pinewatch-clue-ally-ledger"
+        },
+        {
+          "type": "SET_FLAG",
+          "key": "allyEvidenceUnlocked",
+          "value": true
+        }
+      ],
+      "priority": 65,
+      "cooldownSeconds": 0,
+      "maxActivations": 1
+    },
+    {
+      "id": "tape-17-pinewatch-rule-near-success",
+      "name": "Near Success Ultimatum",
+      "description": "High progress triggers timed villain ultimatum.",
+      "eventType": "INVESTIGATION_PROGRESS",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 85
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 4
+        },
+        {
+          "type": "START_COUNTDOWN",
+          "countdownId": "tape-17-pinewatch-final-choice",
+          "durationSeconds": 900,
+          "failureEventId": "tape-17-pinewatch-event-hostage-lost"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "tape-17-pinewatch-msg-5",
+          "delaySeconds": 30
+        }
+      ],
+      "priority": 95,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "tape-17-pinewatch-rule-moral-fork",
+      "name": "Corruption Offer",
+      "description": "Low morality unlocks villain corruption ending route.",
+      "eventType": "PLAYER_MESSAGE",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "PLAYER_REPUTATION",
+          "key": "morality",
+          "operator": "LT",
+          "value": -15
+        }
+      },
+      "actions": [
+        {
+          "type": "UNLOCK_ENDING",
+          "endingId": "tape-17-pinewatch-ending-corruption"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "EMAIL",
+          "templateId": "tape-17-pinewatch-msg-6",
+          "delaySeconds": 300
+        }
+      ],
+      "priority": 70,
+      "cooldownSeconds": 1800,
+      "maxActivations": 1
+    }
+  ],
+  "endingVariants": [
+    {
+      "id": "tape-17-pinewatch-ending-justice",
+      "title": "Clean Resolution",
+      "type": "JUSTICE",
+      "summary": "You preserve the authentic footage chain and rescue the final survivor.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 85
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "PLAYER_REPUTATION",
+              "key": "morality",
+              "operator": "GTE",
+              "value": 10
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "tape-17-pinewatch-event-hostage-saved",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "blockedCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "tape-17-pinewatch-event-evidence-destroyed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "Truth lands publicly with evidence that survives scrutiny.",
+      "sequelHook": "A tagged evidence box points to the next case."
+    },
+    {
+      "id": "tape-17-pinewatch-ending-pyrrhic",
+      "title": "Compromised Truth",
+      "type": "PYRRHIC",
+      "summary": "You identify the editor but lose crucial footage and one victim contact.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "tape-17-pinewatch-event-witness-risk",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "epilogue": "The culprit is exposed, but allies and witnesses are fractured.",
+      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+    },
+    {
+      "id": "tape-17-pinewatch-ending-corruption",
+      "title": "Corruption Pact",
+      "type": "CORRUPTION",
+      "summary": "You trade the original tape for influence over what the public sees.",
+      "requiredCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ENDING_STATUS",
+          "key": "unlocked:tape-17-pinewatch-ending-corruption",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "You keep control of the case, and the villain keeps control of you.",
+      "sequelHook": "Season continuity marks the player as compromised."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "tape-17-pinewatch-puzzle-shards",
+      "title": "Timecode Relay",
+      "objective": "Merge three timecode fragments to reconstruct the missing minute.",
+      "shards": [
+        {
+          "id": "tape-17-pinewatch-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives frame numbers without audio."
+        },
+        {
+          "id": "tape-17-pinewatch-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives audio waveform peaks via SMS."
+        },
+        {
+          "id": "tape-17-pinewatch-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Public drop includes lens calibration values required to sync both."
+        }
+      ],
+      "solvedByRuleId": "tape-17-pinewatch-rule-near-success",
+      "rewardClueId": "tape-17-pinewatch-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch."
+    }
+  ],
+  "investigationBoard": {
+    "nodes": [
+      {
+        "id": "tape-17-pinewatch-suspect-villain",
+        "type": "SUSPECT",
+        "label": "The Editor",
+        "summary": "Primary antagonist operating through layered identities."
+      },
+      {
+        "id": "tape-17-pinewatch-suspect-secondary",
+        "type": "SUSPECT",
+        "label": "Survivor Cade Rowan",
+        "summary": "Possible accomplice with motive and access."
+      },
+      {
+        "id": "tape-17-pinewatch-location-core",
+        "type": "LOCATION",
+        "label": "Closed wilderness watch station and ranger tunnels",
+        "summary": "Primary scene where contradictions cluster."
+      },
+      {
+        "id": "tape-17-pinewatch-evidence-core",
+        "type": "EVIDENCE",
+        "label": "Frame glitch cluster",
+        "summary": "Anchor evidence with disputed provenance."
+      }
+    ],
+    "links": [
+      {
+        "fromId": "tape-17-pinewatch-suspect-villain",
+        "toId": "tape-17-pinewatch-location-core",
+        "relation": "operates-through",
+        "confidence": 0.78
+      },
+      {
+        "fromId": "tape-17-pinewatch-suspect-secondary",
+        "toId": "tape-17-pinewatch-evidence-core",
+        "relation": "tampered-access",
+        "confidence": 0.64
+      },
+      {
+        "fromId": "tape-17-pinewatch-location-core",
+        "toId": "tape-17-pinewatch-evidence-core",
+        "relation": "origin-point",
+        "confidence": 0.82
+      }
+    ],
+    "timeline": [
+      {
+        "id": "tape-17-pinewatch-timeline-1",
+        "timeLabel": "22:15",
+        "summary": "Initial anomaly reaches player channels.",
+        "relatedNodeIds": [
+          "tape-17-pinewatch-location-core",
+          "tape-17-pinewatch-evidence-core"
+        ]
+      },
+      {
+        "id": "tape-17-pinewatch-timeline-2",
+        "timeLabel": "23:50",
+        "summary": "Witness account conflicts with archive records.",
+        "relatedNodeIds": [
+          "tape-17-pinewatch-suspect-secondary",
+          "tape-17-pinewatch-evidence-core"
+        ]
+      },
+      {
+        "id": "tape-17-pinewatch-timeline-3",
+        "timeLabel": "00:25",
+        "summary": "Villain contact shifts to direct intimidation.",
+        "relatedNodeIds": [
+          "tape-17-pinewatch-suspect-villain"
+        ]
+      }
+    ]
+  },
+  "seasonContinuity": {
+    "seasonId": "season-1",
+    "returningCharacterIds": [
+      "tape-17-pinewatch-npc-1",
+      "tape-17-pinewatch-villain"
+    ],
+    "persistedReputationAxes": [
+      "trustworthiness",
+      "aggression",
+      "curiosity",
+      "deception",
+      "morality"
+    ],
+    "carryForwardFlags": [
+      "villain-contact-opened",
+      "saved-key-witness",
+      "accepted-corruption-terms"
+    ],
+    "continuityNotes": "Reputation and corruption flags carry into cross-case antagonist threads."
+  },
+  "safetyProfile": {
+    "intensityLevel": 3,
+    "threatTone": "MODERATE",
+    "realismLevel": "IMMERSIVE",
+    "allowLateNightMessaging": false,
+    "supportsOptDown": true,
+    "contentWarnings": [
+      "missing persons",
+      "panic audio",
+      "threat"
+    ]
+  }
 }

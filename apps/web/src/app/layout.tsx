@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
+import { Suspense, type ReactNode } from 'react';
+import { SoundtrackPlayer } from './components/soundtrack-player';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -11,7 +12,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }): JSX.Element {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Suspense fallback={null}>
+          <SoundtrackPlayer />
+        </Suspense>
+      </body>
     </html>
   );
 }

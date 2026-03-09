@@ -1,160 +1,1195 @@
 {
-    "id":  "black-chapel-ledger",
-    "version":  "v1",
-    "title":  "Black Chapel Ledger",
-    "hook":  "A cathedral account book records debts paid in memories, not money.",
-    "subgenre":  "gothic horror",
-    "tone":  "EERIE",
-    "targetSessionMinutes":  90,
-    "soloSuitability":  5,
-    "partySuitability":  5,
-    "ageWarnings":  [
-                        "violence",
-                        "threat",
-                        "disturbing audio"
-                    ],
-    "characters":  [
-                       "Canon Archivist",
-                       "Bell Keeper",
-                       "Choir Witness",
-                       "Debt Collector"
-                   ],
-    "location":  "Storm-lashed cliffside cathedral town",
-    "acts":  [
-                 {
-                     "id":  "act-1",
-                     "title":  "Contact",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-1",
-                                       "title":  "First Disturbance",
-                                       "narrative":  "The party receives a media drop that should be impossible.",
-                                       "unlockAfterSeconds":  0,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-trace",
-                                                           "label":  "Trace the source",
-                                                           "effects":  {
-                                                                           "choice_path":  "trace",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       },
-                                                       {
-                                                           "id":  "choice-interview",
-                                                           "label":  "Interview witnesses",
-                                                           "effects":  {
-                                                                           "choice_path":  "interview",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-origin"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-2",
-                                       "title":  "Escalation",
-                                       "narrative":  "Evidence contradicts itself while a timed event forces a decision.",
-                                       "unlockAfterSeconds":  120,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-contradiction"
-                                                          ]
-                                   }
-                               ]
-                 },
-                 {
-                     "id":  "act-2",
-                     "title":  "Reconstruction",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-3",
-                                       "title":  "Timeline Fracture",
-                                       "narrative":  "Players align timeline events and uncover motive variants.",
-                                       "unlockAfterSeconds":  180,
-                                       "requiredConditions":  [
-                                                                  {
-                                                                      "type":  "HAS_CLUE",
-                                                                      "key":  "clue",
-                                                                      "value":  "clue-origin"
-                                                                  }
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-accuse-a",
-                                                           "label":  "Accuse the inside accomplice",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "inside"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       },
-                                                       {
-                                                           "id":  "choice-accuse-b",
-                                                           "label":  "Accuse the external cult",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "external"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-motive"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-4",
-                                       "title":  "Final Debrief",
-                                       "narrative":  "Case closes with scored debrief and sequel hook transmission.",
-                                       "unlockAfterSeconds":  60,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-reveal"
-                                                          ]
-                                   }
-                               ]
-                 }
-             ],
-    "replayHooks":  [
-                        "Alternative culprit paths",
-                        "Variable clue timing in party mode",
-                        "Hostless AI narrator variance"
-                    ],
-    "sequelHooks":  [
-                        "Encrypted post-credit voicemail",
-                        "Cross-case antagonist breadcrumb"
-                    ],
-    "branchingMoments":  [
-                             "Trace vs interview opening",
-                             "Two reveal variants in act 2"
-                         ],
-    "clueEvidenceList":  [
-                             "Signal transcript",
-                             "Audio spectrogram",
-                             "Witness dossier",
-                             "Tampered photo"
-                         ],
-    "revealVariants":  [
-                           "Inside collaborator reveal",
-                           "External ritual network reveal"
-                       ],
-    "upsellHooks":  [
-                        "Premium epilogue file",
-                        "Linked sequel unlock for subscribers"
-                    ]
+  "id": "black-chapel-ledger",
+  "version": "v2",
+  "title": "Black Chapel Ledger",
+  "hook": "A cathedral ledger records debts paid in memory instead of money.",
+  "subgenre": "gothic horror",
+  "tone": "EERIE",
+  "targetSessionMinutes": 90,
+  "soloSuitability": 4,
+  "partySuitability": 5,
+  "ageWarnings": [
+    "religious horror imagery",
+    "coercion",
+    "threat"
+  ],
+  "characters": [
+    "Canon Archivist Elara Voss",
+    "Bell Keeper Tomas Grell",
+    "Choir Witness Sera March",
+    "Debt Broker Cal Dorn"
+  ],
+  "location": "Cliffside cathedral archive district",
+  "acts": [
+    {
+      "id": "act-1",
+      "title": "Contact",
+      "beats": [
+        {
+          "id": "beat-1",
+          "title": "Ledger Breach",
+          "narrative": "A scanned ledger page appears in WhatsApp showing one player's childhood home as collateral.",
+          "unlockAfterSeconds": 0,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-trace-source",
+              "label": "Authenticate the ledger seals with archival metadata",
+              "effects": {
+                "investigation_path": "trace_source",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            },
+            {
+              "id": "choice-interview-ally",
+              "label": "Confront the bell keeper about missing pages",
+              "effects": {
+                "investigation_path": "ally_interview",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            }
+          ],
+          "revealsClueIds": [
+            "black-chapel-ledger-clue-origin"
+          ]
+        },
+        {
+          "id": "beat-2",
+          "title": "Escalation Signal",
+          "narrative": "A contradictory channel drop appears within minutes and forces risk.",
+          "unlockAfterSeconds": 120,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-preserve-evidence",
+              "label": "Preserve original evidence chain",
+              "effects": {
+                "evidence_preserved": true,
+                "moralityDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            },
+            {
+              "id": "choice-fast-pursuit",
+              "label": "Pursue suspect immediately",
+              "effects": {
+                "evidence_preserved": false,
+                "aggressionDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            }
+          ],
+          "revealsClueIds": [
+            "black-chapel-ledger-clue-pressure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "title": "Interference",
+      "beats": [
+        {
+          "id": "beat-3",
+          "title": "Trust Fracture",
+          "narrative": "The villain mixes real secrets with fabricated claims to split allies.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "black-chapel-ledger-clue-origin"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-trust-handler",
+              "label": "Trust Canon Archivist Elara Voss and secure witness",
+              "effects": {
+                "trusted_ally": "Canon Archivist Elara Voss",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            },
+            {
+              "id": "choice-trust-witness",
+              "label": "Trust Bell Keeper Tomas Grell and expose internal leak",
+              "effects": {
+                "trusted_ally": "Bell Keeper Tomas Grell",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            }
+          ],
+          "revealsClueIds": [
+            "black-chapel-ledger-clue-contradiction"
+          ]
+        },
+        {
+          "id": "beat-4",
+          "title": "Ultimatum Window",
+          "narrative": "A timed message threatens collateral harm unless the party diverts.",
+          "unlockAfterSeconds": 300,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-save-npc",
+              "label": "Divert to save threatened NPC",
+              "effects": {
+                "rescue_route": true,
+                "moralityDelta": 2
+              },
+              "nextBeatId": "beat-5"
+            },
+            {
+              "id": "choice-continue-case",
+              "label": "Continue forensic pursuit under threat",
+              "effects": {
+                "rescue_route": false,
+                "trustworthinessDelta": -1
+              },
+              "nextBeatId": "beat-5"
+            }
+          ],
+          "revealsClueIds": [
+            "black-chapel-ledger-clue-timed-warning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "title": "Reckoning",
+      "beats": [
+        {
+          "id": "beat-5",
+          "title": "Confrontation Protocol",
+          "narrative": "Players reconstruct motive and false trails before collapse.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "black-chapel-ledger-clue-pressure"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-charge-villain",
+              "label": "Commit to formal accusation and expose evidence chain",
+              "effects": {
+                "final_strategy": "formal_charge",
+                "scoreDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            },
+            {
+              "id": "choice-private-deal",
+              "label": "Take private contact route for hidden confession",
+              "effects": {
+                "final_strategy": "private_contact",
+                "deceptionDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            }
+          ],
+          "revealsClueIds": [
+            "black-chapel-ledger-clue-reveal"
+          ]
+        },
+        {
+          "id": "beat-6",
+          "title": "Case Debrief",
+          "narrative": "Final scoring resolves ending branch and season continuity flags.",
+          "unlockAfterSeconds": 60,
+          "requiredConditions": [],
+          "choices": [],
+          "revealsClueIds": [
+            "black-chapel-ledger-clue-epilogue"
+          ]
+        }
+      ]
+    }
+  ],
+  "replayHooks": [
+    "Debtor names rotate each run.",
+    "Culprit can shift from broker to archivist.",
+    "Confession route unlocks secret ending data."
+  ],
+  "sequelHooks": [
+    "A sealed codex references debts transferred to another parish."
+  ],
+  "branchingMoments": [
+    "Archive verification vs keeper confrontation",
+    "Public disclosure vs private restitution"
+  ],
+  "clueEvidenceList": [
+    "Burned vellum fragment",
+    "Choir rehearsal wax recording",
+    "Crypt key inventory",
+    "Ledger watermark scan"
+  ],
+  "revealVariants": [
+    "Predatory debt ring within clergy",
+    "Supernatural debt mechanism feeding on memory"
+  ],
+  "upsellHooks": [
+    "Subscriber chapter: codex translation of unpaid names."
+  ],
+  "playerReputationModel": {
+    "startingScores": {
+      "trustworthiness": 0,
+      "aggression": 0,
+      "curiosity": 0,
+      "deception": 0,
+      "morality": 0
+    },
+    "decayPerDay": 0,
+    "axisGuidance": [
+      {
+        "axis": "trustworthiness",
+        "positiveBehavior": "Keep promises.",
+        "negativeBehavior": "Break promises."
+      },
+      {
+        "axis": "aggression",
+        "positiveBehavior": "Use firm pressure.",
+        "negativeBehavior": "Threaten everyone."
+      },
+      {
+        "axis": "curiosity",
+        "positiveBehavior": "Chase anomalies.",
+        "negativeBehavior": "Ignore contradictions."
+      },
+      {
+        "axis": "deception",
+        "positiveBehavior": "Use tactical bluff.",
+        "negativeBehavior": "Lie constantly."
+      },
+      {
+        "axis": "morality",
+        "positiveBehavior": "Protect bystanders.",
+        "negativeBehavior": "Trade lives for speed."
+      }
+    ]
+  },
+  "channelCadence": {
+    "primaryChannels": [
+      "SMS",
+      "WHATSAPP",
+      "TELEGRAM"
+    ],
+    "auxiliaryChannels": [
+      "EMAIL",
+      "VOICE_MESSAGE",
+      "DOCUMENT_DROP",
+      "SIMULATED_SITE"
+    ],
+    "lateNightMessagingDefault": false,
+    "maxVillainTouchesPerDay": 3,
+    "suspenseSilenceWindowMinutes": {
+      "min": 45,
+      "max": 360
+    }
+  },
+  "npcProfiles": [
+    {
+      "id": "black-chapel-ledger-npc-1",
+      "displayName": "Canon Archivist Elara Voss",
+      "role": "HANDLER",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "black-chapel-ledger-npc-1-secret",
+          "title": "Canon Archivist Elara Voss withheld a key detail",
+          "summary": "Canon Archivist Elara Voss can expose black-chapel-ledger-clue-pressure at high trust.",
+          "trustThreshold": 45,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "black-chapel-ledger-npc-1",
+              "operator": "GTE",
+              "value": 45
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through black-chapel-ledger-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "black-chapel-ledger-npc-2",
+      "displayName": "Bell Keeper Tomas Grell",
+      "role": "WITNESS",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "black-chapel-ledger-npc-2-secret",
+          "title": "Bell Keeper Tomas Grell withheld a key detail",
+          "summary": "Bell Keeper Tomas Grell can expose black-chapel-ledger-clue-reveal at high trust.",
+          "trustThreshold": 55,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "black-chapel-ledger-npc-2",
+              "operator": "GTE",
+              "value": 55
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through black-chapel-ledger-clue-reveal."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "black-chapel-ledger-npc-3",
+      "displayName": "Choir Witness Sera March",
+      "role": "SUSPECT",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "black-chapel-ledger-npc-3-secret",
+          "title": "Choir Witness Sera March withheld a key detail",
+          "summary": "Choir Witness Sera March can expose black-chapel-ledger-clue-origin at high trust.",
+          "trustThreshold": 65,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "black-chapel-ledger-npc-3",
+              "operator": "GTE",
+              "value": 65
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through black-chapel-ledger-clue-origin."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "black-chapel-ledger-npc-4",
+      "displayName": "Debt Broker Cal Dorn",
+      "role": "ALLY",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "black-chapel-ledger-npc-4-secret",
+          "title": "Debt Broker Cal Dorn withheld a key detail",
+          "summary": "Debt Broker Cal Dorn can expose black-chapel-ledger-clue-pressure at high trust.",
+          "trustThreshold": 75,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "black-chapel-ledger-npc-4",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through black-chapel-ledger-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    }
+  ],
+  "villain": {
+    "id": "black-chapel-ledger-villain",
+    "displayName": "The Creditor",
+    "archetype": "RIGHTEOUS_ZEALOT",
+    "worldview": "Every truth must be paid for, and mercy is fraud.",
+    "motive": "Force players to choose who deserves absolution.",
+    "signatureSpeechStyle": "Liturgical cadence with legal precision.",
+    "emotionalVolatility": 0.36,
+    "obsessionTarget": "The player detective profile",
+    "triggerConditions": [
+      "Player nears a correct accusation.",
+      "Player rescues a protected witness.",
+      "Player shows sustained silence after direct contact."
+    ],
+    "manipulationTactics": [
+      "moral blackmail",
+      "half-confessions",
+      "shame weaponization"
+    ],
+    "riskTolerance": 0.64,
+    "humorOrCruelty": "Cold piety and punitive irony.",
+    "symbolicMotifs": [
+      "ink-stained fingers",
+      "funeral bells",
+      "salt wax"
+    ],
+    "escalationStages": [
+      {
+        "stage": 1,
+        "label": "Peripheral Presence",
+        "objective": "Signal surveillance without identity.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "ELAPSED_SECONDS",
+            "key": "elapsed",
+            "operator": "GTE",
+            "value": 0
+          }
+        },
+        "allowedMessageTypes": [
+          "CRYPTIC_CLUE",
+          "PERSONAL_OBSERVATION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 120,
+          "maxTouchesPerDay": 2,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 2,
+        "label": "Psychological Contact",
+        "objective": "Break trust between player and allies.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "HAS_CLUE",
+            "key": "black-chapel-ledger-clue-origin",
+            "operator": "EQ",
+            "value": true
+          }
+        },
+        "allowedMessageTypes": [
+          "TAUNT",
+          "RIDDLE",
+          "FALSE_REASSURANCE"
+        ],
+        "timing": {
+          "minIntervalMinutes": 90,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 3,
+        "label": "Active Interference",
+        "objective": "Force tactical mistakes.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 65
+          }
+        },
+        "allowedMessageTypes": [
+          "THREAT",
+          "COUNTDOWN",
+          "MEDIA_DROP"
+        ],
+        "timing": {
+          "minIntervalMinutes": 60,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": true
+        }
+      },
+      {
+        "stage": 4,
+        "label": "Personal Confrontation",
+        "objective": "Recruit, corrupt, or break the player.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 85
+          }
+        },
+        "allowedMessageTypes": [
+          "MORAL_TEST",
+          "PARTIAL_CONFESSION",
+          "MANIPULATIVE_INSTRUCTION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 40,
+          "maxTouchesPerDay": 4,
+          "allowLateNight": true
+        }
+      }
+    ]
+  },
+  "villainMessageTemplates": [
+    {
+      "id": "black-chapel-ledger-msg-1",
+      "stage": 1,
+      "type": "CRYPTIC_CLUE",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "You opened the ledger; now it records you too.",
+      "personalizationKeys": [
+        "playerName",
+        "recentAction"
+      ],
+      "branchEffects": [
+        "presence-started"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-msg-2",
+      "stage": 2,
+      "type": "TAUNT",
+      "channels": [
+        "WHATSAPP",
+        "TELEGRAM"
+      ],
+      "textTemplate": "Don't trust the one who rings the bell after midnight.",
+      "personalizationKeys": [
+        "trustedNpc"
+      ],
+      "branchEffects": [
+        "trust-fracture"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-msg-3",
+      "stage": 2,
+      "type": "RIDDLE",
+      "channels": [
+        "TELEGRAM"
+      ],
+      "textTemplate": "Two witnesses, one memory. Which one pays in blood?",
+      "personalizationKeys": [],
+      "branchEffects": [
+        "puzzle-hint"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-msg-4",
+      "stage": 3,
+      "type": "THREAT",
+      "channels": [
+        "SMS",
+        "VOICE_MESSAGE"
+      ],
+      "textTemplate": "Confess publicly, or the choir girl pays your debt first.",
+      "personalizationKeys": [
+        "allyName"
+      ],
+      "branchEffects": [
+        "npc-at-risk"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-msg-5",
+      "stage": 3,
+      "type": "COUNTDOWN",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "Nine minutes. Save the witness or save the truth.",
+      "personalizationKeys": [
+        "countdownTarget"
+      ],
+      "branchEffects": [
+        "ultimatum"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-msg-6",
+      "stage": 4,
+      "type": "MORAL_TEST",
+      "channels": [
+        "EMAIL",
+        "DOCUMENT_DROP"
+      ],
+      "textTemplate": "Confess one lie and I return one life.",
+      "personalizationKeys": [
+        "playerWeakness"
+      ],
+      "branchEffects": [
+        "corruption-offer"
+      ]
+    }
+  ],
+  "arcMap": [
+    {
+      "id": "black-chapel-ledger-arc-contact",
+      "title": "Contact and Contradiction",
+      "stage": "OPENING",
+      "summary": "The case opens with impossible evidence and uncertain allies.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ELAPSED_SECONDS",
+          "key": "elapsed",
+          "operator": "GTE",
+          "value": 0
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "black-chapel-ledger-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "black-chapel-ledger-rule-first-contact",
+        "black-chapel-ledger-rule-delay-punish"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-arc-disruption",
+      "title": "Interference and Doubt",
+      "stage": "MIDDLE",
+      "summary": "Villain contact escalates while ally trust becomes volatile.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "VILLAIN_STAGE",
+          "key": "stage",
+          "operator": "GTE",
+          "value": 2
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "black-chapel-ledger-clue-pressure",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "black-chapel-ledger-rule-incorrect-accusation",
+        "black-chapel-ledger-rule-ally-cooperation"
+      ]
+    },
+    {
+      "id": "black-chapel-ledger-arc-endgame",
+      "title": "Confrontation and Reckoning",
+      "stage": "ENDGAME",
+      "summary": "The final branch depends on ethics, timing, and trust.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 80
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "black-chapel-ledger-event-case-closed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "black-chapel-ledger-rule-near-success",
+        "black-chapel-ledger-rule-moral-fork"
+      ]
+    }
+  ],
+  "triggerRules": [
+    {
+      "id": "black-chapel-ledger-rule-first-contact",
+      "name": "First Villain Contact",
+      "description": "Core clue discovery escalates villain from peripheral to direct contact.",
+      "eventType": "CLUE_DISCOVERED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "black-chapel-ledger-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 2
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "black-chapel-ledger-msg-1",
+          "delaySeconds": 180
+        }
+      ],
+      "priority": 80,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "black-chapel-ledger-rule-delay-punish",
+      "name": "Silence Punisher",
+      "description": "Long response delay causes pressure event and taunt.",
+      "eventType": "PLAYER_DELAY",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "SILENCE_SECONDS",
+          "key": "silence",
+          "operator": "GTE",
+          "value": 14400
+        }
+      },
+      "actions": [
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "WHATSAPP",
+          "templateId": "black-chapel-ledger-msg-2",
+          "delaySeconds": 60
+        },
+        {
+          "type": "EMIT_EVENT",
+          "eventId": "black-chapel-ledger-event-witness-risk"
+        }
+      ],
+      "priority": 75,
+      "cooldownSeconds": 1800,
+      "maxActivations": 2
+    },
+    {
+      "id": "black-chapel-ledger-rule-incorrect-accusation",
+      "name": "Wrong Accusation Fallout",
+      "description": "Incorrect accusation damages trust and escalates interference.",
+      "eventType": "PLAYER_ACCUSATION",
+      "when": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "FLAG",
+              "key": "accusationCorrect",
+              "operator": "EQ",
+              "value": false
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "VILLAIN_STAGE",
+              "key": "stage",
+              "operator": "LTE",
+              "value": 3
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "UPDATE_NPC_TRUST",
+          "npcId": "black-chapel-ledger-npc-4",
+          "delta": -15
+        },
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 3
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "TELEGRAM",
+          "templateId": "black-chapel-ledger-msg-4",
+          "delaySeconds": 120
+        }
+      ],
+      "priority": 90,
+      "cooldownSeconds": 900,
+      "maxActivations": 2
+    },
+    {
+      "id": "black-chapel-ledger-rule-ally-cooperation",
+      "name": "Ally Cooperation Reward",
+      "description": "High trust with a core ally reveals additional evidence.",
+      "eventType": "NPC_TRUST_CHANGED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "NPC_TRUST",
+          "key": "black-chapel-ledger-npc-4",
+          "operator": "GTE",
+          "value": 70
+        }
+      },
+      "actions": [
+        {
+          "type": "REVEAL_CLUE",
+          "clueId": "black-chapel-ledger-clue-ally-ledger"
+        },
+        {
+          "type": "SET_FLAG",
+          "key": "allyEvidenceUnlocked",
+          "value": true
+        }
+      ],
+      "priority": 65,
+      "cooldownSeconds": 0,
+      "maxActivations": 1
+    },
+    {
+      "id": "black-chapel-ledger-rule-near-success",
+      "name": "Near Success Ultimatum",
+      "description": "High progress triggers timed villain ultimatum.",
+      "eventType": "INVESTIGATION_PROGRESS",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 85
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 4
+        },
+        {
+          "type": "START_COUNTDOWN",
+          "countdownId": "black-chapel-ledger-final-choice",
+          "durationSeconds": 900,
+          "failureEventId": "black-chapel-ledger-event-hostage-lost"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "black-chapel-ledger-msg-5",
+          "delaySeconds": 30
+        }
+      ],
+      "priority": 95,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "black-chapel-ledger-rule-moral-fork",
+      "name": "Corruption Offer",
+      "description": "Low morality unlocks villain corruption ending route.",
+      "eventType": "PLAYER_MESSAGE",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "PLAYER_REPUTATION",
+          "key": "morality",
+          "operator": "LT",
+          "value": -15
+        }
+      },
+      "actions": [
+        {
+          "type": "UNLOCK_ENDING",
+          "endingId": "black-chapel-ledger-ending-corruption"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "EMAIL",
+          "templateId": "black-chapel-ledger-msg-6",
+          "delaySeconds": 300
+        }
+      ],
+      "priority": 70,
+      "cooldownSeconds": 1800,
+      "maxActivations": 1
+    }
+  ],
+  "endingVariants": [
+    {
+      "id": "black-chapel-ledger-ending-justice",
+      "title": "Clean Resolution",
+      "type": "JUSTICE",
+      "summary": "You expose the debt network and return stolen identities to survivors.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 85
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "PLAYER_REPUTATION",
+              "key": "morality",
+              "operator": "GTE",
+              "value": 10
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "black-chapel-ledger-event-hostage-saved",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "blockedCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "black-chapel-ledger-event-evidence-destroyed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "Truth lands publicly with evidence that survives scrutiny.",
+      "sequelHook": "A tagged evidence box points to the next case."
+    },
+    {
+      "id": "black-chapel-ledger-ending-pyrrhic",
+      "title": "Compromised Truth",
+      "type": "PYRRHIC",
+      "summary": "You close the cathedral operation but lose key testimony to fear.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "black-chapel-ledger-event-witness-risk",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "epilogue": "The culprit is exposed, but allies and witnesses are fractured.",
+      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+    },
+    {
+      "id": "black-chapel-ledger-ending-corruption",
+      "title": "Corruption Pact",
+      "type": "CORRUPTION",
+      "summary": "You accept selective erasures and become keeper of the ledger.",
+      "requiredCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ENDING_STATUS",
+          "key": "unlocked:black-chapel-ledger-ending-corruption",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "You keep control of the case, and the villain keeps control of you.",
+      "sequelHook": "Season continuity marks the player as compromised."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "black-chapel-ledger-puzzle-shards",
+      "title": "Choir Interval Cipher",
+      "objective": "Reassemble chant intervals across three players to decode debtor index.",
+      "shards": [
+        {
+          "id": "black-chapel-ledger-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives a tempo chart with missing beats."
+        },
+        {
+          "id": "black-chapel-ledger-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives the missing Latin initials by SMS."
+        },
+        {
+          "id": "black-chapel-ledger-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast drop includes chapel floor notes mapping beat intervals."
+        }
+      ],
+      "solvedByRuleId": "black-chapel-ledger-rule-near-success",
+      "rewardClueId": "black-chapel-ledger-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch."
+    }
+  ],
+  "investigationBoard": {
+    "nodes": [
+      {
+        "id": "black-chapel-ledger-suspect-villain",
+        "type": "SUSPECT",
+        "label": "The Creditor",
+        "summary": "Primary antagonist operating through layered identities."
+      },
+      {
+        "id": "black-chapel-ledger-suspect-secondary",
+        "type": "SUSPECT",
+        "label": "Choir Witness Sera March",
+        "summary": "Possible accomplice with motive and access."
+      },
+      {
+        "id": "black-chapel-ledger-location-core",
+        "type": "LOCATION",
+        "label": "Cliffside cathedral archive district",
+        "summary": "Primary scene where contradictions cluster."
+      },
+      {
+        "id": "black-chapel-ledger-evidence-core",
+        "type": "EVIDENCE",
+        "label": "Burned vellum fragment",
+        "summary": "Anchor evidence with disputed provenance."
+      }
+    ],
+    "links": [
+      {
+        "fromId": "black-chapel-ledger-suspect-villain",
+        "toId": "black-chapel-ledger-location-core",
+        "relation": "operates-through",
+        "confidence": 0.78
+      },
+      {
+        "fromId": "black-chapel-ledger-suspect-secondary",
+        "toId": "black-chapel-ledger-evidence-core",
+        "relation": "tampered-access",
+        "confidence": 0.64
+      },
+      {
+        "fromId": "black-chapel-ledger-location-core",
+        "toId": "black-chapel-ledger-evidence-core",
+        "relation": "origin-point",
+        "confidence": 0.82
+      }
+    ],
+    "timeline": [
+      {
+        "id": "black-chapel-ledger-timeline-1",
+        "timeLabel": "22:15",
+        "summary": "Initial anomaly reaches player channels.",
+        "relatedNodeIds": [
+          "black-chapel-ledger-location-core",
+          "black-chapel-ledger-evidence-core"
+        ]
+      },
+      {
+        "id": "black-chapel-ledger-timeline-2",
+        "timeLabel": "23:50",
+        "summary": "Witness account conflicts with archive records.",
+        "relatedNodeIds": [
+          "black-chapel-ledger-suspect-secondary",
+          "black-chapel-ledger-evidence-core"
+        ]
+      },
+      {
+        "id": "black-chapel-ledger-timeline-3",
+        "timeLabel": "00:25",
+        "summary": "Villain contact shifts to direct intimidation.",
+        "relatedNodeIds": [
+          "black-chapel-ledger-suspect-villain"
+        ]
+      }
+    ]
+  },
+  "seasonContinuity": {
+    "seasonId": "season-1",
+    "returningCharacterIds": [
+      "black-chapel-ledger-npc-1",
+      "black-chapel-ledger-villain"
+    ],
+    "persistedReputationAxes": [
+      "trustworthiness",
+      "aggression",
+      "curiosity",
+      "deception",
+      "morality"
+    ],
+    "carryForwardFlags": [
+      "villain-contact-opened",
+      "saved-key-witness",
+      "accepted-corruption-terms"
+    ],
+    "continuityNotes": "Reputation and corruption flags carry into cross-case antagonist threads."
+  },
+  "safetyProfile": {
+    "intensityLevel": 3,
+    "threatTone": "MODERATE",
+    "realismLevel": "IMMERSIVE",
+    "allowLateNightMessaging": false,
+    "supportsOptDown": true,
+    "contentWarnings": [
+      "religious horror imagery",
+      "coercion",
+      "threat"
+    ]
+  }
 }

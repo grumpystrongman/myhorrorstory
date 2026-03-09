@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: MyHorrorStory API
-  version: 1.0.0
+  version: 1.1.0
 servers:
   - url: /api/v1
 paths:
@@ -29,6 +29,20 @@ paths:
       responses:
         '200':
           description: Story package list
+  /stories/{id}:
+    get:
+      summary: Get story package by id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Story package
+        '404':
+          description: Not found
   /parties:
     post:
       summary: Create party session
@@ -40,6 +54,30 @@ paths:
       responses:
         '200':
           description: Party list
+  /channels/inbound:
+    post:
+      summary: Process inbound multi-channel player message
+      responses:
+        '201':
+          description: Inbound event accepted and processed
+  /story-rules/evaluate:
+    post:
+      summary: Evaluate trigger DSL rules against runtime state
+      responses:
+        '200':
+          description: Trigger evaluation result
+  /narrative/events/next:
+    post:
+      summary: Generate next adaptive narrative event card for ARG runtime
+      responses:
+        '200':
+          description: Narrative event card with media prompt, responses, and consequences
+  /investigation/board:
+    put:
+      summary: Upsert investigation board state
+      responses:
+        '200':
+          description: Board persisted
   /support/tickets:
     post:
       summary: Create support ticket

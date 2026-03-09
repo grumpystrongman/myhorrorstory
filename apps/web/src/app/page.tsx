@@ -1,9 +1,6 @@
-const launches = [
-  'Static Between Stations',
-  'Black Chapel Ledger',
-  'The Harvest Men',
-  'Signal From Kharon-9'
-];
+﻿import { listStoryScores } from '@myhorrorstory/music';
+
+const launches = listStoryScores();
 
 export default function HomePage(): JSX.Element {
   return (
@@ -20,10 +17,17 @@ export default function HomePage(): JSX.Element {
       </header>
 
       <section className="panel" style={{ marginBottom: 24 }}>
-        <h2 style={{ marginTop: 0 }}>Launch Cases</h2>
-        <ul>
+        <h2 style={{ marginTop: 0 }}>Launch Cases and Scores</h2>
+        <ul style={{ display: 'grid', gap: 8, paddingLeft: 20 }}>
           {launches.map((story) => (
-            <li key={story}>{story}</li>
+            <li key={story.storyId} style={{ display: 'grid', gap: 4 }}>
+              <span>{story.storyTitle}</span>
+              <span style={{ color: 'var(--muted)', fontSize: 13 }}>Score: {story.track.title}</span>
+              <span style={{ display: 'flex', gap: 12 }}>
+                <a href={story.introPath}>Story Intro</a>
+                <a href={story.playPath}>Play Case</a>
+              </span>
+            </li>
           ))}
         </ul>
       </section>

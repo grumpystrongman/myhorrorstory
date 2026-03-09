@@ -1,160 +1,1195 @@
 {
-    "id":  "crown-of-salt",
-    "version":  "v1",
-    "title":  "Crown of Salt",
-    "hook":  "A shipping cartel launders relics through a disappearing coastal city.",
-    "subgenre":  "occult conspiracy",
-    "tone":  "CINEMATIC",
-    "targetSessionMinutes":  90,
-    "soloSuitability":  5,
-    "partySuitability":  5,
-    "ageWarnings":  [
-                        "violence",
-                        "threat",
-                        "disturbing audio"
-                    ],
-    "characters":  [
-                       "Port Auditor",
-                       "Smuggler",
-                       "Archivist Nun",
-                       "Broker"
-                   ],
-    "location":  "Port authority archives and salt-fog catacombs",
-    "acts":  [
-                 {
-                     "id":  "act-1",
-                     "title":  "Contact",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-1",
-                                       "title":  "First Disturbance",
-                                       "narrative":  "The party receives a media drop that should be impossible.",
-                                       "unlockAfterSeconds":  0,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-trace",
-                                                           "label":  "Trace the source",
-                                                           "effects":  {
-                                                                           "choice_path":  "trace",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       },
-                                                       {
-                                                           "id":  "choice-interview",
-                                                           "label":  "Interview witnesses",
-                                                           "effects":  {
-                                                                           "choice_path":  "interview",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-origin"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-2",
-                                       "title":  "Escalation",
-                                       "narrative":  "Evidence contradicts itself while a timed event forces a decision.",
-                                       "unlockAfterSeconds":  120,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-contradiction"
-                                                          ]
-                                   }
-                               ]
-                 },
-                 {
-                     "id":  "act-2",
-                     "title":  "Reconstruction",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-3",
-                                       "title":  "Timeline Fracture",
-                                       "narrative":  "Players align timeline events and uncover motive variants.",
-                                       "unlockAfterSeconds":  180,
-                                       "requiredConditions":  [
-                                                                  {
-                                                                      "type":  "HAS_CLUE",
-                                                                      "key":  "clue",
-                                                                      "value":  "clue-origin"
-                                                                  }
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-accuse-a",
-                                                           "label":  "Accuse the inside accomplice",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "inside"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       },
-                                                       {
-                                                           "id":  "choice-accuse-b",
-                                                           "label":  "Accuse the external cult",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "external"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-motive"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-4",
-                                       "title":  "Final Debrief",
-                                       "narrative":  "Case closes with scored debrief and sequel hook transmission.",
-                                       "unlockAfterSeconds":  60,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-reveal"
-                                                          ]
-                                   }
-                               ]
-                 }
-             ],
-    "replayHooks":  [
-                        "Alternative culprit paths",
-                        "Variable clue timing in party mode",
-                        "Hostless AI narrator variance"
-                    ],
-    "sequelHooks":  [
-                        "Encrypted post-credit voicemail",
-                        "Cross-case antagonist breadcrumb"
-                    ],
-    "branchingMoments":  [
-                             "Trace vs interview opening",
-                             "Two reveal variants in act 2"
-                         ],
-    "clueEvidenceList":  [
-                             "Signal transcript",
-                             "Audio spectrogram",
-                             "Witness dossier",
-                             "Tampered photo"
-                         ],
-    "revealVariants":  [
-                           "Inside collaborator reveal",
-                           "External ritual network reveal"
-                       ],
-    "upsellHooks":  [
-                        "Premium epilogue file",
-                        "Linked sequel unlock for subscribers"
-                    ]
+  "id": "crown-of-salt",
+  "version": "v2",
+  "title": "Crown of Salt",
+  "hook": "A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.",
+  "subgenre": "occult conspiracy",
+  "tone": "CINEMATIC",
+  "targetSessionMinutes": 100,
+  "soloSuitability": 4,
+  "partySuitability": 5,
+  "ageWarnings": [
+    "cult coercion",
+    "violence",
+    "threat"
+  ],
+  "characters": [
+    "Port Auditor Lin Ortega",
+    "Smuggler Rafe Quinn",
+    "Archivist Nun Sister Mirel",
+    "Customs Broker Dax Ren"
+  ],
+  "location": "Port authority archives and salt catacombs",
+  "acts": [
+    {
+      "id": "act-1",
+      "title": "Contact",
+      "beats": [
+        {
+          "id": "beat-1",
+          "title": "Manifest Drift",
+          "narrative": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+          "unlockAfterSeconds": 0,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-trace-source",
+              "label": "Audit crate chain-of-custody from port systems",
+              "effects": {
+                "investigation_path": "trace_source",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            },
+            {
+              "id": "choice-interview-ally",
+              "label": "Flip the smuggler before the cartel locks channels",
+              "effects": {
+                "investigation_path": "ally_interview",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            }
+          ],
+          "revealsClueIds": [
+            "crown-of-salt-clue-origin"
+          ]
+        },
+        {
+          "id": "beat-2",
+          "title": "Escalation Signal",
+          "narrative": "A contradictory channel drop appears within minutes and forces risk.",
+          "unlockAfterSeconds": 120,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-preserve-evidence",
+              "label": "Preserve original evidence chain",
+              "effects": {
+                "evidence_preserved": true,
+                "moralityDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            },
+            {
+              "id": "choice-fast-pursuit",
+              "label": "Pursue suspect immediately",
+              "effects": {
+                "evidence_preserved": false,
+                "aggressionDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            }
+          ],
+          "revealsClueIds": [
+            "crown-of-salt-clue-pressure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "title": "Interference",
+      "beats": [
+        {
+          "id": "beat-3",
+          "title": "Trust Fracture",
+          "narrative": "The villain mixes real secrets with fabricated claims to split allies.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "crown-of-salt-clue-origin"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-trust-handler",
+              "label": "Trust Port Auditor Lin Ortega and secure witness",
+              "effects": {
+                "trusted_ally": "Port Auditor Lin Ortega",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            },
+            {
+              "id": "choice-trust-witness",
+              "label": "Trust Smuggler Rafe Quinn and expose internal leak",
+              "effects": {
+                "trusted_ally": "Smuggler Rafe Quinn",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            }
+          ],
+          "revealsClueIds": [
+            "crown-of-salt-clue-contradiction"
+          ]
+        },
+        {
+          "id": "beat-4",
+          "title": "Ultimatum Window",
+          "narrative": "A timed message threatens collateral harm unless the party diverts.",
+          "unlockAfterSeconds": 300,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-save-npc",
+              "label": "Divert to save threatened NPC",
+              "effects": {
+                "rescue_route": true,
+                "moralityDelta": 2
+              },
+              "nextBeatId": "beat-5"
+            },
+            {
+              "id": "choice-continue-case",
+              "label": "Continue forensic pursuit under threat",
+              "effects": {
+                "rescue_route": false,
+                "trustworthinessDelta": -1
+              },
+              "nextBeatId": "beat-5"
+            }
+          ],
+          "revealsClueIds": [
+            "crown-of-salt-clue-timed-warning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "title": "Reckoning",
+      "beats": [
+        {
+          "id": "beat-5",
+          "title": "Confrontation Protocol",
+          "narrative": "Players reconstruct motive and false trails before collapse.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "crown-of-salt-clue-pressure"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-charge-villain",
+              "label": "Commit to formal accusation and expose evidence chain",
+              "effects": {
+                "final_strategy": "formal_charge",
+                "scoreDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            },
+            {
+              "id": "choice-private-deal",
+              "label": "Take private contact route for hidden confession",
+              "effects": {
+                "final_strategy": "private_contact",
+                "deceptionDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            }
+          ],
+          "revealsClueIds": [
+            "crown-of-salt-clue-reveal"
+          ]
+        },
+        {
+          "id": "beat-6",
+          "title": "Case Debrief",
+          "narrative": "Final scoring resolves ending branch and season continuity flags.",
+          "unlockAfterSeconds": 60,
+          "requiredConditions": [],
+          "choices": [],
+          "revealsClueIds": [
+            "crown-of-salt-clue-epilogue"
+          ]
+        }
+      ]
+    }
+  ],
+  "replayHooks": [
+    "Route graph permutations alter hierarchy.",
+    "Nun-trust branch opens nonviolent path.",
+    "Taunts adapt strongly to deception profile."
+  ],
+  "sequelHooks": [
+    "A salt-marked invoice links to inland transit hubs."
+  ],
+  "branchingMoments": [
+    "Manifest audit vs smuggler flip opening",
+    "Expose logistics vs sever ritual command"
+  ],
+  "clueEvidenceList": [
+    "Brine-sealed manifest",
+    "Dockside CCTV still",
+    "Catacomb symbol tracing",
+    "Customs API anomaly log"
+  ],
+  "revealVariants": [
+    "Political laundering ring using ritual cover",
+    "Ritual network with real anomalous effects"
+  ],
+  "upsellHooks": [
+    "Subscriber continuation: inland crown circuit."
+  ],
+  "playerReputationModel": {
+    "startingScores": {
+      "trustworthiness": 0,
+      "aggression": 0,
+      "curiosity": 0,
+      "deception": 0,
+      "morality": 0
+    },
+    "decayPerDay": 0,
+    "axisGuidance": [
+      {
+        "axis": "trustworthiness",
+        "positiveBehavior": "Keep promises.",
+        "negativeBehavior": "Break promises."
+      },
+      {
+        "axis": "aggression",
+        "positiveBehavior": "Use firm pressure.",
+        "negativeBehavior": "Threaten everyone."
+      },
+      {
+        "axis": "curiosity",
+        "positiveBehavior": "Chase anomalies.",
+        "negativeBehavior": "Ignore contradictions."
+      },
+      {
+        "axis": "deception",
+        "positiveBehavior": "Use tactical bluff.",
+        "negativeBehavior": "Lie constantly."
+      },
+      {
+        "axis": "morality",
+        "positiveBehavior": "Protect bystanders.",
+        "negativeBehavior": "Trade lives for speed."
+      }
+    ]
+  },
+  "channelCadence": {
+    "primaryChannels": [
+      "SMS",
+      "WHATSAPP",
+      "TELEGRAM"
+    ],
+    "auxiliaryChannels": [
+      "EMAIL",
+      "VOICE_MESSAGE",
+      "DOCUMENT_DROP",
+      "SIMULATED_SITE"
+    ],
+    "lateNightMessagingDefault": false,
+    "maxVillainTouchesPerDay": 3,
+    "suspenseSilenceWindowMinutes": {
+      "min": 45,
+      "max": 360
+    }
+  },
+  "npcProfiles": [
+    {
+      "id": "crown-of-salt-npc-1",
+      "displayName": "Port Auditor Lin Ortega",
+      "role": "HANDLER",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "crown-of-salt-npc-1-secret",
+          "title": "Port Auditor Lin Ortega withheld a key detail",
+          "summary": "Port Auditor Lin Ortega can expose crown-of-salt-clue-pressure at high trust.",
+          "trustThreshold": 45,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "crown-of-salt-npc-1",
+              "operator": "GTE",
+              "value": 45
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through crown-of-salt-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "crown-of-salt-npc-2",
+      "displayName": "Smuggler Rafe Quinn",
+      "role": "WITNESS",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "crown-of-salt-npc-2-secret",
+          "title": "Smuggler Rafe Quinn withheld a key detail",
+          "summary": "Smuggler Rafe Quinn can expose crown-of-salt-clue-reveal at high trust.",
+          "trustThreshold": 55,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "crown-of-salt-npc-2",
+              "operator": "GTE",
+              "value": 55
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through crown-of-salt-clue-reveal."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "crown-of-salt-npc-3",
+      "displayName": "Archivist Nun Sister Mirel",
+      "role": "SUSPECT",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "crown-of-salt-npc-3-secret",
+          "title": "Archivist Nun Sister Mirel withheld a key detail",
+          "summary": "Archivist Nun Sister Mirel can expose crown-of-salt-clue-origin at high trust.",
+          "trustThreshold": 65,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "crown-of-salt-npc-3",
+              "operator": "GTE",
+              "value": 65
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through crown-of-salt-clue-origin."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "crown-of-salt-npc-4",
+      "displayName": "Customs Broker Dax Ren",
+      "role": "ALLY",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "crown-of-salt-npc-4-secret",
+          "title": "Customs Broker Dax Ren withheld a key detail",
+          "summary": "Customs Broker Dax Ren can expose crown-of-salt-clue-pressure at high trust.",
+          "trustThreshold": 75,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "crown-of-salt-npc-4",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through crown-of-salt-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    }
+  ],
+  "villain": {
+    "id": "crown-of-salt-villain",
+    "displayName": "The Salt Regent",
+    "archetype": "SEDUCTIVE_CORRUPTER",
+    "worldview": "Order comes from controlled sin, not clean law.",
+    "motive": "Recruit principled investigators into selective corruption.",
+    "signatureSpeechStyle": "Elegant, flattering, and predatory.",
+    "emotionalVolatility": 0.29,
+    "obsessionTarget": "The player detective profile",
+    "triggerConditions": [
+      "Player nears a correct accusation.",
+      "Player rescues a protected witness.",
+      "Player shows sustained silence after direct contact."
+    ],
+    "manipulationTactics": [
+      "reward framing",
+      "strategic confession",
+      "ally bribery reveals"
+    ],
+    "riskTolerance": 0.68,
+    "humorOrCruelty": "Polished cruelty with diplomatic tone.",
+    "symbolicMotifs": [
+      "salt crowns",
+      "wet ledgers",
+      "cargo seals"
+    ],
+    "escalationStages": [
+      {
+        "stage": 1,
+        "label": "Peripheral Presence",
+        "objective": "Signal surveillance without identity.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "ELAPSED_SECONDS",
+            "key": "elapsed",
+            "operator": "GTE",
+            "value": 0
+          }
+        },
+        "allowedMessageTypes": [
+          "CRYPTIC_CLUE",
+          "PERSONAL_OBSERVATION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 120,
+          "maxTouchesPerDay": 2,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 2,
+        "label": "Psychological Contact",
+        "objective": "Break trust between player and allies.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "HAS_CLUE",
+            "key": "crown-of-salt-clue-origin",
+            "operator": "EQ",
+            "value": true
+          }
+        },
+        "allowedMessageTypes": [
+          "TAUNT",
+          "RIDDLE",
+          "FALSE_REASSURANCE"
+        ],
+        "timing": {
+          "minIntervalMinutes": 90,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 3,
+        "label": "Active Interference",
+        "objective": "Force tactical mistakes.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 65
+          }
+        },
+        "allowedMessageTypes": [
+          "THREAT",
+          "COUNTDOWN",
+          "MEDIA_DROP"
+        ],
+        "timing": {
+          "minIntervalMinutes": 60,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": true
+        }
+      },
+      {
+        "stage": 4,
+        "label": "Personal Confrontation",
+        "objective": "Recruit, corrupt, or break the player.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 85
+          }
+        },
+        "allowedMessageTypes": [
+          "MORAL_TEST",
+          "PARTIAL_CONFESSION",
+          "MANIPULATIVE_INSTRUCTION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 40,
+          "maxTouchesPerDay": 4,
+          "allowLateNight": true
+        }
+      }
+    ]
+  },
+  "villainMessageTemplates": [
+    {
+      "id": "crown-of-salt-msg-1",
+      "stage": 1,
+      "type": "CRYPTIC_CLUE",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "You traced the crate, not the oath that moved it.",
+      "personalizationKeys": [
+        "playerName",
+        "recentAction"
+      ],
+      "branchEffects": [
+        "presence-started"
+      ]
+    },
+    {
+      "id": "crown-of-salt-msg-2",
+      "stage": 2,
+      "type": "TAUNT",
+      "channels": [
+        "WHATSAPP",
+        "TELEGRAM"
+      ],
+      "textTemplate": "He smiles because you made his bargain for him.",
+      "personalizationKeys": [
+        "trustedNpc"
+      ],
+      "branchEffects": [
+        "trust-fracture"
+      ]
+    },
+    {
+      "id": "crown-of-salt-msg-3",
+      "stage": 2,
+      "type": "RIDDLE",
+      "channels": [
+        "TELEGRAM"
+      ],
+      "textTemplate": "Two witnesses, one memory. Which one pays in blood?",
+      "personalizationKeys": [],
+      "branchEffects": [
+        "puzzle-hint"
+      ]
+    },
+    {
+      "id": "crown-of-salt-msg-4",
+      "stage": 3,
+      "type": "THREAT",
+      "channels": [
+        "SMS",
+        "VOICE_MESSAGE"
+      ],
+      "textTemplate": "Choose: the nun lives, or the port burns clean.",
+      "personalizationKeys": [
+        "allyName"
+      ],
+      "branchEffects": [
+        "npc-at-risk"
+      ]
+    },
+    {
+      "id": "crown-of-salt-msg-5",
+      "stage": 3,
+      "type": "COUNTDOWN",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "Nine minutes. Save the witness or save the truth.",
+      "personalizationKeys": [
+        "countdownTarget"
+      ],
+      "branchEffects": [
+        "ultimatum"
+      ]
+    },
+    {
+      "id": "crown-of-salt-msg-6",
+      "stage": 4,
+      "type": "MORAL_TEST",
+      "channels": [
+        "EMAIL",
+        "DOCUMENT_DROP"
+      ],
+      "textTemplate": "Confess one lie and I return one life.",
+      "personalizationKeys": [
+        "playerWeakness"
+      ],
+      "branchEffects": [
+        "corruption-offer"
+      ]
+    }
+  ],
+  "arcMap": [
+    {
+      "id": "crown-of-salt-arc-contact",
+      "title": "Contact and Contradiction",
+      "stage": "OPENING",
+      "summary": "The case opens with impossible evidence and uncertain allies.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ELAPSED_SECONDS",
+          "key": "elapsed",
+          "operator": "GTE",
+          "value": 0
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "crown-of-salt-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "crown-of-salt-rule-first-contact",
+        "crown-of-salt-rule-delay-punish"
+      ]
+    },
+    {
+      "id": "crown-of-salt-arc-disruption",
+      "title": "Interference and Doubt",
+      "stage": "MIDDLE",
+      "summary": "Villain contact escalates while ally trust becomes volatile.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "VILLAIN_STAGE",
+          "key": "stage",
+          "operator": "GTE",
+          "value": 2
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "crown-of-salt-clue-pressure",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "crown-of-salt-rule-incorrect-accusation",
+        "crown-of-salt-rule-ally-cooperation"
+      ]
+    },
+    {
+      "id": "crown-of-salt-arc-endgame",
+      "title": "Confrontation and Reckoning",
+      "stage": "ENDGAME",
+      "summary": "The final branch depends on ethics, timing, and trust.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 80
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "crown-of-salt-event-case-closed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "crown-of-salt-rule-near-success",
+        "crown-of-salt-rule-moral-fork"
+      ]
+    }
+  ],
+  "triggerRules": [
+    {
+      "id": "crown-of-salt-rule-first-contact",
+      "name": "First Villain Contact",
+      "description": "Core clue discovery escalates villain from peripheral to direct contact.",
+      "eventType": "CLUE_DISCOVERED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "crown-of-salt-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 2
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "crown-of-salt-msg-1",
+          "delaySeconds": 180
+        }
+      ],
+      "priority": 80,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "crown-of-salt-rule-delay-punish",
+      "name": "Silence Punisher",
+      "description": "Long response delay causes pressure event and taunt.",
+      "eventType": "PLAYER_DELAY",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "SILENCE_SECONDS",
+          "key": "silence",
+          "operator": "GTE",
+          "value": 14400
+        }
+      },
+      "actions": [
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "WHATSAPP",
+          "templateId": "crown-of-salt-msg-2",
+          "delaySeconds": 60
+        },
+        {
+          "type": "EMIT_EVENT",
+          "eventId": "crown-of-salt-event-witness-risk"
+        }
+      ],
+      "priority": 75,
+      "cooldownSeconds": 1800,
+      "maxActivations": 2
+    },
+    {
+      "id": "crown-of-salt-rule-incorrect-accusation",
+      "name": "Wrong Accusation Fallout",
+      "description": "Incorrect accusation damages trust and escalates interference.",
+      "eventType": "PLAYER_ACCUSATION",
+      "when": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "FLAG",
+              "key": "accusationCorrect",
+              "operator": "EQ",
+              "value": false
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "VILLAIN_STAGE",
+              "key": "stage",
+              "operator": "LTE",
+              "value": 3
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "UPDATE_NPC_TRUST",
+          "npcId": "crown-of-salt-npc-4",
+          "delta": -15
+        },
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 3
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "TELEGRAM",
+          "templateId": "crown-of-salt-msg-4",
+          "delaySeconds": 120
+        }
+      ],
+      "priority": 90,
+      "cooldownSeconds": 900,
+      "maxActivations": 2
+    },
+    {
+      "id": "crown-of-salt-rule-ally-cooperation",
+      "name": "Ally Cooperation Reward",
+      "description": "High trust with a core ally reveals additional evidence.",
+      "eventType": "NPC_TRUST_CHANGED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "NPC_TRUST",
+          "key": "crown-of-salt-npc-4",
+          "operator": "GTE",
+          "value": 70
+        }
+      },
+      "actions": [
+        {
+          "type": "REVEAL_CLUE",
+          "clueId": "crown-of-salt-clue-ally-ledger"
+        },
+        {
+          "type": "SET_FLAG",
+          "key": "allyEvidenceUnlocked",
+          "value": true
+        }
+      ],
+      "priority": 65,
+      "cooldownSeconds": 0,
+      "maxActivations": 1
+    },
+    {
+      "id": "crown-of-salt-rule-near-success",
+      "name": "Near Success Ultimatum",
+      "description": "High progress triggers timed villain ultimatum.",
+      "eventType": "INVESTIGATION_PROGRESS",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 85
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 4
+        },
+        {
+          "type": "START_COUNTDOWN",
+          "countdownId": "crown-of-salt-final-choice",
+          "durationSeconds": 900,
+          "failureEventId": "crown-of-salt-event-hostage-lost"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "crown-of-salt-msg-5",
+          "delaySeconds": 30
+        }
+      ],
+      "priority": 95,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "crown-of-salt-rule-moral-fork",
+      "name": "Corruption Offer",
+      "description": "Low morality unlocks villain corruption ending route.",
+      "eventType": "PLAYER_MESSAGE",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "PLAYER_REPUTATION",
+          "key": "morality",
+          "operator": "LT",
+          "value": -15
+        }
+      },
+      "actions": [
+        {
+          "type": "UNLOCK_ENDING",
+          "endingId": "crown-of-salt-ending-corruption"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "EMAIL",
+          "templateId": "crown-of-salt-msg-6",
+          "delaySeconds": 300
+        }
+      ],
+      "priority": 70,
+      "cooldownSeconds": 1800,
+      "maxActivations": 1
+    }
+  ],
+  "endingVariants": [
+    {
+      "id": "crown-of-salt-ending-justice",
+      "title": "Clean Resolution",
+      "type": "JUSTICE",
+      "summary": "You dismantle the smuggling lattice and preserve admissible evidence.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 85
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "PLAYER_REPUTATION",
+              "key": "morality",
+              "operator": "GTE",
+              "value": 10
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "crown-of-salt-event-hostage-saved",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "blockedCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "crown-of-salt-event-evidence-destroyed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "Truth lands publicly with evidence that survives scrutiny.",
+      "sequelHook": "A tagged evidence box points to the next case."
+    },
+    {
+      "id": "crown-of-salt-ending-pyrrhic",
+      "title": "Compromised Truth",
+      "type": "PYRRHIC",
+      "summary": "You collapse the ritual cell but lose legal leverage over sponsors.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "crown-of-salt-event-witness-risk",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "epilogue": "The culprit is exposed, but allies and witnesses are fractured.",
+      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+    },
+    {
+      "id": "crown-of-salt-ending-corruption",
+      "title": "Corruption Pact",
+      "type": "CORRUPTION",
+      "summary": "You become gatekeeper of relic flow under a private pact.",
+      "requiredCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ENDING_STATUS",
+          "key": "unlocked:crown-of-salt-ending-corruption",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "You keep control of the case, and the villain keeps control of you.",
+      "sequelHook": "Season continuity marks the player as compromised."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "crown-of-salt-puzzle-shards",
+      "title": "Manifest Matrix",
+      "objective": "Cross-reference distributed manifest shards to locate the true relic route.",
+      "shards": [
+        {
+          "id": "crown-of-salt-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives container IDs with missing checksum bytes."
+        },
+        {
+          "id": "crown-of-salt-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives checksum bytes hidden in Telegram captions."
+        },
+        {
+          "id": "crown-of-salt-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast map provides route geometry needed to validate the sequence."
+        }
+      ],
+      "solvedByRuleId": "crown-of-salt-rule-near-success",
+      "rewardClueId": "crown-of-salt-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch."
+    }
+  ],
+  "investigationBoard": {
+    "nodes": [
+      {
+        "id": "crown-of-salt-suspect-villain",
+        "type": "SUSPECT",
+        "label": "The Salt Regent",
+        "summary": "Primary antagonist operating through layered identities."
+      },
+      {
+        "id": "crown-of-salt-suspect-secondary",
+        "type": "SUSPECT",
+        "label": "Archivist Nun Sister Mirel",
+        "summary": "Possible accomplice with motive and access."
+      },
+      {
+        "id": "crown-of-salt-location-core",
+        "type": "LOCATION",
+        "label": "Port authority archives and salt catacombs",
+        "summary": "Primary scene where contradictions cluster."
+      },
+      {
+        "id": "crown-of-salt-evidence-core",
+        "type": "EVIDENCE",
+        "label": "Brine-sealed manifest",
+        "summary": "Anchor evidence with disputed provenance."
+      }
+    ],
+    "links": [
+      {
+        "fromId": "crown-of-salt-suspect-villain",
+        "toId": "crown-of-salt-location-core",
+        "relation": "operates-through",
+        "confidence": 0.78
+      },
+      {
+        "fromId": "crown-of-salt-suspect-secondary",
+        "toId": "crown-of-salt-evidence-core",
+        "relation": "tampered-access",
+        "confidence": 0.64
+      },
+      {
+        "fromId": "crown-of-salt-location-core",
+        "toId": "crown-of-salt-evidence-core",
+        "relation": "origin-point",
+        "confidence": 0.82
+      }
+    ],
+    "timeline": [
+      {
+        "id": "crown-of-salt-timeline-1",
+        "timeLabel": "22:15",
+        "summary": "Initial anomaly reaches player channels.",
+        "relatedNodeIds": [
+          "crown-of-salt-location-core",
+          "crown-of-salt-evidence-core"
+        ]
+      },
+      {
+        "id": "crown-of-salt-timeline-2",
+        "timeLabel": "23:50",
+        "summary": "Witness account conflicts with archive records.",
+        "relatedNodeIds": [
+          "crown-of-salt-suspect-secondary",
+          "crown-of-salt-evidence-core"
+        ]
+      },
+      {
+        "id": "crown-of-salt-timeline-3",
+        "timeLabel": "00:25",
+        "summary": "Villain contact shifts to direct intimidation.",
+        "relatedNodeIds": [
+          "crown-of-salt-suspect-villain"
+        ]
+      }
+    ]
+  },
+  "seasonContinuity": {
+    "seasonId": "season-1",
+    "returningCharacterIds": [
+      "crown-of-salt-npc-1",
+      "crown-of-salt-villain"
+    ],
+    "persistedReputationAxes": [
+      "trustworthiness",
+      "aggression",
+      "curiosity",
+      "deception",
+      "morality"
+    ],
+    "carryForwardFlags": [
+      "villain-contact-opened",
+      "saved-key-witness",
+      "accepted-corruption-terms"
+    ],
+    "continuityNotes": "Reputation and corruption flags carry into cross-case antagonist threads."
+  },
+  "safetyProfile": {
+    "intensityLevel": 3,
+    "threatTone": "MODERATE",
+    "realismLevel": "IMMERSIVE",
+    "allowLateNightMessaging": false,
+    "supportsOptDown": true,
+    "contentWarnings": [
+      "cult coercion",
+      "violence",
+      "threat"
+    ]
+  }
 }

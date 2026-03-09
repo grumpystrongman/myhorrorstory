@@ -10,6 +10,7 @@ import { SupportModule } from './support/support.module.js';
 import { RealtimeGateway } from './realtime/realtime.gateway.js';
 import { BillingModule } from './billing/billing.module.js';
 import { GrowthModule } from './growth/growth.module.js';
+import { RuntimeModule } from './runtime/runtime.module.js';
 
 @Module({
   imports: [
@@ -20,7 +21,8 @@ import { GrowthModule } from './growth/growth.module.js';
     AdminModule,
     SupportModule,
     BillingModule,
-    GrowthModule
+    GrowthModule,
+    RuntimeModule
   ],
   controllers: [AppController],
   providers: [AppService, RealtimeGateway]

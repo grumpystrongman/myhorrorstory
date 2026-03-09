@@ -25,6 +25,9 @@ Validate that MyHorrorStory behaves as a commercial-grade product across functio
 - Harness isolation: dedicated ephemeral ports (`PLAYWRIGHT_WEB_PORT=3100`, `PLAYWRIGHT_ADMIN_PORT=3101`) with no server reuse.
 - Coverage:
   - Every primary navigation click in consumer web flow.
+  - Soundtrack routing:
+    - Global overture on landing routes.
+    - Story-specific handoff on intro and story play routes.
   - Play session control deck:
     - Zoom in/out/reset.
     - Pan via directional controls.

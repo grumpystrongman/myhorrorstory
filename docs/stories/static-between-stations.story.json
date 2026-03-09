@@ -1,160 +1,1195 @@
 {
-    "id":  "static-between-stations",
-    "version":  "v1",
-    "title":  "Static Between Stations",
-    "hook":  "A dead rail line starts broadcasting private confessions in your own voice.",
-    "subgenre":  "psychological horror",
-    "tone":  "CINEMATIC",
-    "targetSessionMinutes":  90,
-    "soloSuitability":  5,
-    "partySuitability":  5,
-    "ageWarnings":  [
-                        "violence",
-                        "threat",
-                        "disturbing audio"
-                    ],
-    "characters":  [
-                       "Lead Investigator",
-                       "Handler",
-                       "Witness",
-                       "Antagonist"
-                   ],
-    "location":  "Abandoned commuter rail control annex",
-    "acts":  [
-                 {
-                     "id":  "act-1",
-                     "title":  "Contact",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-1",
-                                       "title":  "First Disturbance",
-                                       "narrative":  "The party receives a media drop that should be impossible.",
-                                       "unlockAfterSeconds":  0,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-trace",
-                                                           "label":  "Trace the source",
-                                                           "effects":  {
-                                                                           "choice_path":  "trace",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       },
-                                                       {
-                                                           "id":  "choice-interview",
-                                                           "label":  "Interview witnesses",
-                                                           "effects":  {
-                                                                           "choice_path":  "interview",
-                                                                           "scoreDelta":  1
-                                                                       },
-                                                           "nextBeatId":  "beat-2"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-origin"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-2",
-                                       "title":  "Escalation",
-                                       "narrative":  "Evidence contradicts itself while a timed event forces a decision.",
-                                       "unlockAfterSeconds":  120,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-contradiction"
-                                                          ]
-                                   }
-                               ]
-                 },
-                 {
-                     "id":  "act-2",
-                     "title":  "Reconstruction",
-                     "beats":  [
-                                   {
-                                       "id":  "beat-3",
-                                       "title":  "Timeline Fracture",
-                                       "narrative":  "Players align timeline events and uncover motive variants.",
-                                       "unlockAfterSeconds":  180,
-                                       "requiredConditions":  [
-                                                                  {
-                                                                      "type":  "HAS_CLUE",
-                                                                      "key":  "clue",
-                                                                      "value":  "clue-origin"
-                                                                  }
-                                                              ],
-                                       "choices":  [
-                                                       {
-                                                           "id":  "choice-accuse-a",
-                                                           "label":  "Accuse the inside accomplice",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "inside"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       },
-                                                       {
-                                                           "id":  "choice-accuse-b",
-                                                           "label":  "Accuse the external cult",
-                                                           "effects":  {
-                                                                           "reveal_variant":  "external"
-                                                                       },
-                                                           "nextBeatId":  "beat-4"
-                                                       }
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-motive"
-                                                          ]
-                                   },
-                                   {
-                                       "id":  "beat-4",
-                                       "title":  "Final Debrief",
-                                       "narrative":  "Case closes with scored debrief and sequel hook transmission.",
-                                       "unlockAfterSeconds":  60,
-                                       "requiredConditions":  [
-
-                                                              ],
-                                       "choices":  [
-
-                                                   ],
-                                       "revealsClueIds":  [
-                                                              "clue-reveal"
-                                                          ]
-                                   }
-                               ]
-                 }
-             ],
-    "replayHooks":  [
-                        "Alternative culprit paths",
-                        "Variable clue timing in party mode",
-                        "Hostless AI narrator variance"
-                    ],
-    "sequelHooks":  [
-                        "Encrypted post-credit voicemail",
-                        "Cross-case antagonist breadcrumb"
-                    ],
-    "branchingMoments":  [
-                             "Trace vs interview opening",
-                             "Two reveal variants in act 2"
-                         ],
-    "clueEvidenceList":  [
-                             "Signal transcript",
-                             "Audio spectrogram",
-                             "Witness dossier",
-                             "Tampered photo"
-                         ],
-    "revealVariants":  [
-                           "Inside collaborator reveal",
-                           "External ritual network reveal"
-                       ],
-    "upsellHooks":  [
-                        "Premium epilogue file",
-                        "Linked sequel unlock for subscribers"
-                    ]
+  "id": "static-between-stations",
+  "version": "v2",
+  "title": "Static Between Stations",
+  "hook": "A dead rail line broadcasts private confessions in the players' own voices.",
+  "subgenre": "psychological horror",
+  "tone": "CINEMATIC",
+  "targetSessionMinutes": 95,
+  "soloSuitability": 5,
+  "partySuitability": 5,
+  "ageWarnings": [
+    "disturbing audio",
+    "stalking",
+    "threat"
+  ],
+  "characters": [
+    "Lead Investigator Mara Quinn",
+    "Dispatch Handler Ilya Ross",
+    "Commuter Witness Nia Vale",
+    "Transit Auditor Bram Keene"
+  ],
+  "location": "Abandoned commuter rail control annex",
+  "acts": [
+    {
+      "id": "act-1",
+      "title": "Contact",
+      "beats": [
+        {
+          "id": "beat-1",
+          "title": "Signal One",
+          "narrative": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+          "unlockAfterSeconds": 0,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-trace-source",
+              "label": "Trace the source frequency through telecom logs",
+              "effects": {
+                "investigation_path": "trace_source",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            },
+            {
+              "id": "choice-interview-ally",
+              "label": "Interview the witness before the line goes dead again",
+              "effects": {
+                "investigation_path": "ally_interview",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-2"
+            }
+          ],
+          "revealsClueIds": [
+            "static-between-stations-clue-origin"
+          ]
+        },
+        {
+          "id": "beat-2",
+          "title": "Escalation Signal",
+          "narrative": "A contradictory channel drop appears within minutes and forces risk.",
+          "unlockAfterSeconds": 120,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-preserve-evidence",
+              "label": "Preserve original evidence chain",
+              "effects": {
+                "evidence_preserved": true,
+                "moralityDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            },
+            {
+              "id": "choice-fast-pursuit",
+              "label": "Pursue suspect immediately",
+              "effects": {
+                "evidence_preserved": false,
+                "aggressionDelta": 1
+              },
+              "nextBeatId": "beat-3"
+            }
+          ],
+          "revealsClueIds": [
+            "static-between-stations-clue-pressure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "title": "Interference",
+      "beats": [
+        {
+          "id": "beat-3",
+          "title": "Trust Fracture",
+          "narrative": "The villain mixes real secrets with fabricated claims to split allies.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "static-between-stations-clue-origin"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-trust-handler",
+              "label": "Trust Lead Investigator Mara Quinn and secure witness",
+              "effects": {
+                "trusted_ally": "Lead Investigator Mara Quinn",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            },
+            {
+              "id": "choice-trust-witness",
+              "label": "Trust Dispatch Handler Ilya Ross and expose internal leak",
+              "effects": {
+                "trusted_ally": "Dispatch Handler Ilya Ross",
+                "scoreDelta": 1
+              },
+              "nextBeatId": "beat-4"
+            }
+          ],
+          "revealsClueIds": [
+            "static-between-stations-clue-contradiction"
+          ]
+        },
+        {
+          "id": "beat-4",
+          "title": "Ultimatum Window",
+          "narrative": "A timed message threatens collateral harm unless the party diverts.",
+          "unlockAfterSeconds": 300,
+          "requiredConditions": [],
+          "choices": [
+            {
+              "id": "choice-save-npc",
+              "label": "Divert to save threatened NPC",
+              "effects": {
+                "rescue_route": true,
+                "moralityDelta": 2
+              },
+              "nextBeatId": "beat-5"
+            },
+            {
+              "id": "choice-continue-case",
+              "label": "Continue forensic pursuit under threat",
+              "effects": {
+                "rescue_route": false,
+                "trustworthinessDelta": -1
+              },
+              "nextBeatId": "beat-5"
+            }
+          ],
+          "revealsClueIds": [
+            "static-between-stations-clue-timed-warning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "title": "Reckoning",
+      "beats": [
+        {
+          "id": "beat-5",
+          "title": "Confrontation Protocol",
+          "narrative": "Players reconstruct motive and false trails before collapse.",
+          "unlockAfterSeconds": 240,
+          "requiredConditions": [
+            {
+              "type": "HAS_CLUE",
+              "key": "clue",
+              "value": "static-between-stations-clue-pressure"
+            }
+          ],
+          "choices": [
+            {
+              "id": "choice-charge-villain",
+              "label": "Commit to formal accusation and expose evidence chain",
+              "effects": {
+                "final_strategy": "formal_charge",
+                "scoreDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            },
+            {
+              "id": "choice-private-deal",
+              "label": "Take private contact route for hidden confession",
+              "effects": {
+                "final_strategy": "private_contact",
+                "deceptionDelta": 2
+              },
+              "nextBeatId": "beat-6"
+            }
+          ],
+          "revealsClueIds": [
+            "static-between-stations-clue-reveal"
+          ]
+        },
+        {
+          "id": "beat-6",
+          "title": "Case Debrief",
+          "narrative": "Final scoring resolves ending branch and season continuity flags.",
+          "unlockAfterSeconds": 60,
+          "requiredConditions": [],
+          "choices": [],
+          "revealsClueIds": [
+            "static-between-stations-clue-epilogue"
+          ]
+        }
+      ]
+    }
+  ],
+  "replayHooks": [
+    "Variable witness reliability based on trust.",
+    "Dynamic villain timing windows.",
+    "Secret corruption ending on moral failures."
+  ],
+  "sequelHooks": [
+    "A station map marks a second inactive line in another city."
+  ],
+  "branchingMoments": [
+    "Telecom trace vs witness-first opening",
+    "Rescue route vs forensic route under ultimatum"
+  ],
+  "clueEvidenceList": [
+    "Spectrogram of confession burst",
+    "Maintenance ledger anomaly",
+    "Turnstile camera still",
+    "Relay room access hash"
+  ],
+  "revealVariants": [
+    "Inside dispatch accomplice",
+    "Cross-city ritual broadcast network"
+  ],
+  "upsellHooks": [
+    "Premium epilogue: recovered voicemail from the line operator."
+  ],
+  "playerReputationModel": {
+    "startingScores": {
+      "trustworthiness": 0,
+      "aggression": 0,
+      "curiosity": 0,
+      "deception": 0,
+      "morality": 0
+    },
+    "decayPerDay": 0,
+    "axisGuidance": [
+      {
+        "axis": "trustworthiness",
+        "positiveBehavior": "Keep promises.",
+        "negativeBehavior": "Break promises."
+      },
+      {
+        "axis": "aggression",
+        "positiveBehavior": "Use firm pressure.",
+        "negativeBehavior": "Threaten everyone."
+      },
+      {
+        "axis": "curiosity",
+        "positiveBehavior": "Chase anomalies.",
+        "negativeBehavior": "Ignore contradictions."
+      },
+      {
+        "axis": "deception",
+        "positiveBehavior": "Use tactical bluff.",
+        "negativeBehavior": "Lie constantly."
+      },
+      {
+        "axis": "morality",
+        "positiveBehavior": "Protect bystanders.",
+        "negativeBehavior": "Trade lives for speed."
+      }
+    ]
+  },
+  "channelCadence": {
+    "primaryChannels": [
+      "SMS",
+      "WHATSAPP",
+      "TELEGRAM"
+    ],
+    "auxiliaryChannels": [
+      "EMAIL",
+      "VOICE_MESSAGE",
+      "DOCUMENT_DROP",
+      "SIMULATED_SITE"
+    ],
+    "lateNightMessagingDefault": false,
+    "maxVillainTouchesPerDay": 3,
+    "suspenseSilenceWindowMinutes": {
+      "min": 45,
+      "max": 360
+    }
+  },
+  "npcProfiles": [
+    {
+      "id": "static-between-stations-npc-1",
+      "displayName": "Lead Investigator Mara Quinn",
+      "role": "HANDLER",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "static-between-stations-npc-1-secret",
+          "title": "Lead Investigator Mara Quinn withheld a key detail",
+          "summary": "Lead Investigator Mara Quinn can expose static-between-stations-clue-pressure at high trust.",
+          "trustThreshold": 45,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "static-between-stations-npc-1",
+              "operator": "GTE",
+              "value": 45
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through static-between-stations-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "static-between-stations-npc-2",
+      "displayName": "Dispatch Handler Ilya Ross",
+      "role": "WITNESS",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "static-between-stations-npc-2-secret",
+          "title": "Dispatch Handler Ilya Ross withheld a key detail",
+          "summary": "Dispatch Handler Ilya Ross can expose static-between-stations-clue-reveal at high trust.",
+          "trustThreshold": 55,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "static-between-stations-npc-2",
+              "operator": "GTE",
+              "value": 55
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through static-between-stations-clue-reveal."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "static-between-stations-npc-3",
+      "displayName": "Commuter Witness Nia Vale",
+      "role": "SUSPECT",
+      "personalityTraits": [
+        "guarded",
+        "analytical"
+      ],
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "static-between-stations-npc-3-secret",
+          "title": "Commuter Witness Nia Vale withheld a key detail",
+          "summary": "Commuter Witness Nia Vale can expose static-between-stations-clue-origin at high trust.",
+          "trustThreshold": 65,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "static-between-stations-npc-3",
+              "operator": "GTE",
+              "value": 65
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through static-between-stations-clue-origin."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    },
+    {
+      "id": "static-between-stations-npc-4",
+      "displayName": "Transit Auditor Bram Keene",
+      "role": "ALLY",
+      "personalityTraits": [
+        "reactive",
+        "observant"
+      ],
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "secrets": [
+        {
+          "id": "static-between-stations-npc-4-secret",
+          "title": "Transit Auditor Bram Keene withheld a key detail",
+          "summary": "Transit Auditor Bram Keene can expose static-between-stations-clue-pressure at high trust.",
+          "trustThreshold": 75,
+          "revealCondition": {
+            "kind": "predicate",
+            "predicate": {
+              "source": "NPC_TRUST",
+              "key": "static-between-stations-npc-4",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          "consequenceOnReveal": "Unlocks an alternate path through static-between-stations-clue-pressure."
+        }
+      ],
+      "responseStyle": {
+        "accusation": "Defensive and selective.",
+        "threat": "Withdraws and delays.",
+        "questioning": "Provides partial truths first."
+      }
+    }
+  ],
+  "villain": {
+    "id": "static-between-stations-villain",
+    "displayName": "The Curator of Static",
+    "archetype": "CALM_GENIUS_MANIPULATOR",
+    "worldview": "Truth is only what survives the loudest channel.",
+    "motive": "Test whether investigators can be rewritten like signals.",
+    "signatureSpeechStyle": "Quietly surgical and personal.",
+    "emotionalVolatility": 0.22,
+    "obsessionTarget": "The player detective profile",
+    "triggerConditions": [
+      "Player nears a correct accusation.",
+      "Player rescues a protected witness.",
+      "Player shows sustained silence after direct contact."
+    ],
+    "manipulationTactics": [
+      "truth-lie braids",
+      "timed pressure",
+      "ally isolation"
+    ],
+    "riskTolerance": 0.71,
+    "humorOrCruelty": "Dry contempt for procedural certainty.",
+    "symbolicMotifs": [
+      "radio hiss",
+      "clock hands",
+      "platform chimes"
+    ],
+    "escalationStages": [
+      {
+        "stage": 1,
+        "label": "Peripheral Presence",
+        "objective": "Signal surveillance without identity.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "ELAPSED_SECONDS",
+            "key": "elapsed",
+            "operator": "GTE",
+            "value": 0
+          }
+        },
+        "allowedMessageTypes": [
+          "CRYPTIC_CLUE",
+          "PERSONAL_OBSERVATION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 120,
+          "maxTouchesPerDay": 2,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 2,
+        "label": "Psychological Contact",
+        "objective": "Break trust between player and allies.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "HAS_CLUE",
+            "key": "static-between-stations-clue-origin",
+            "operator": "EQ",
+            "value": true
+          }
+        },
+        "allowedMessageTypes": [
+          "TAUNT",
+          "RIDDLE",
+          "FALSE_REASSURANCE"
+        ],
+        "timing": {
+          "minIntervalMinutes": 90,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": false
+        }
+      },
+      {
+        "stage": 3,
+        "label": "Active Interference",
+        "objective": "Force tactical mistakes.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 65
+          }
+        },
+        "allowedMessageTypes": [
+          "THREAT",
+          "COUNTDOWN",
+          "MEDIA_DROP"
+        ],
+        "timing": {
+          "minIntervalMinutes": 60,
+          "maxTouchesPerDay": 3,
+          "allowLateNight": true
+        }
+      },
+      {
+        "stage": 4,
+        "label": "Personal Confrontation",
+        "objective": "Recruit, corrupt, or break the player.",
+        "entryCondition": {
+          "kind": "predicate",
+          "predicate": {
+            "source": "INVESTIGATION_PROGRESS",
+            "key": "percent",
+            "operator": "GTE",
+            "value": 85
+          }
+        },
+        "allowedMessageTypes": [
+          "MORAL_TEST",
+          "PARTIAL_CONFESSION",
+          "MANIPULATIVE_INSTRUCTION"
+        ],
+        "timing": {
+          "minIntervalMinutes": 40,
+          "maxTouchesPerDay": 4,
+          "allowLateNight": true
+        }
+      }
+    ]
+  },
+  "villainMessageTemplates": [
+    {
+      "id": "static-between-stations-msg-1",
+      "stage": 1,
+      "type": "CRYPTIC_CLUE",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "You catalogued every signal except the one that was yours.",
+      "personalizationKeys": [
+        "playerName",
+        "recentAction"
+      ],
+      "branchEffects": [
+        "presence-started"
+      ]
+    },
+    {
+      "id": "static-between-stations-msg-2",
+      "stage": 2,
+      "type": "TAUNT",
+      "channels": [
+        "WHATSAPP",
+        "TELEGRAM"
+      ],
+      "textTemplate": "You were sharper before you trusted the wrong voice.",
+      "personalizationKeys": [
+        "trustedNpc"
+      ],
+      "branchEffects": [
+        "trust-fracture"
+      ]
+    },
+    {
+      "id": "static-between-stations-msg-3",
+      "stage": 2,
+      "type": "RIDDLE",
+      "channels": [
+        "TELEGRAM"
+      ],
+      "textTemplate": "Two witnesses, one memory. Which one pays in blood?",
+      "personalizationKeys": [],
+      "branchEffects": [
+        "puzzle-hint"
+      ]
+    },
+    {
+      "id": "static-between-stations-msg-4",
+      "stage": 3,
+      "type": "THREAT",
+      "channels": [
+        "SMS",
+        "VOICE_MESSAGE"
+      ],
+      "textTemplate": "If you call dispatch, she disappears before dawn.",
+      "personalizationKeys": [
+        "allyName"
+      ],
+      "branchEffects": [
+        "npc-at-risk"
+      ]
+    },
+    {
+      "id": "static-between-stations-msg-5",
+      "stage": 3,
+      "type": "COUNTDOWN",
+      "channels": [
+        "SMS"
+      ],
+      "textTemplate": "Nine minutes. Save the witness or save the truth.",
+      "personalizationKeys": [
+        "countdownTarget"
+      ],
+      "branchEffects": [
+        "ultimatum"
+      ]
+    },
+    {
+      "id": "static-between-stations-msg-6",
+      "stage": 4,
+      "type": "MORAL_TEST",
+      "channels": [
+        "EMAIL",
+        "DOCUMENT_DROP"
+      ],
+      "textTemplate": "Confess one lie and I return one life.",
+      "personalizationKeys": [
+        "playerWeakness"
+      ],
+      "branchEffects": [
+        "corruption-offer"
+      ]
+    }
+  ],
+  "arcMap": [
+    {
+      "id": "static-between-stations-arc-contact",
+      "title": "Contact and Contradiction",
+      "stage": "OPENING",
+      "summary": "The case opens with impossible evidence and uncertain allies.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ELAPSED_SECONDS",
+          "key": "elapsed",
+          "operator": "GTE",
+          "value": 0
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "static-between-stations-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "static-between-stations-rule-first-contact",
+        "static-between-stations-rule-delay-punish"
+      ]
+    },
+    {
+      "id": "static-between-stations-arc-disruption",
+      "title": "Interference and Doubt",
+      "stage": "MIDDLE",
+      "summary": "Villain contact escalates while ally trust becomes volatile.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "VILLAIN_STAGE",
+          "key": "stage",
+          "operator": "GTE",
+          "value": 2
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "static-between-stations-clue-pressure",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "static-between-stations-rule-incorrect-accusation",
+        "static-between-stations-rule-ally-cooperation"
+      ]
+    },
+    {
+      "id": "static-between-stations-arc-endgame",
+      "title": "Confrontation and Reckoning",
+      "stage": "ENDGAME",
+      "summary": "The final branch depends on ethics, timing, and trust.",
+      "entryCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 80
+        }
+      },
+      "completionCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "static-between-stations-event-case-closed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "primaryRuleIds": [
+        "static-between-stations-rule-near-success",
+        "static-between-stations-rule-moral-fork"
+      ]
+    }
+  ],
+  "triggerRules": [
+    {
+      "id": "static-between-stations-rule-first-contact",
+      "name": "First Villain Contact",
+      "description": "Core clue discovery escalates villain from peripheral to direct contact.",
+      "eventType": "CLUE_DISCOVERED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "HAS_CLUE",
+          "key": "static-between-stations-clue-origin",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 2
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "static-between-stations-msg-1",
+          "delaySeconds": 180
+        }
+      ],
+      "priority": 80,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "static-between-stations-rule-delay-punish",
+      "name": "Silence Punisher",
+      "description": "Long response delay causes pressure event and taunt.",
+      "eventType": "PLAYER_DELAY",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "SILENCE_SECONDS",
+          "key": "silence",
+          "operator": "GTE",
+          "value": 14400
+        }
+      },
+      "actions": [
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "WHATSAPP",
+          "templateId": "static-between-stations-msg-2",
+          "delaySeconds": 60
+        },
+        {
+          "type": "EMIT_EVENT",
+          "eventId": "static-between-stations-event-witness-risk"
+        }
+      ],
+      "priority": 75,
+      "cooldownSeconds": 1800,
+      "maxActivations": 2
+    },
+    {
+      "id": "static-between-stations-rule-incorrect-accusation",
+      "name": "Wrong Accusation Fallout",
+      "description": "Incorrect accusation damages trust and escalates interference.",
+      "eventType": "PLAYER_ACCUSATION",
+      "when": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "FLAG",
+              "key": "accusationCorrect",
+              "operator": "EQ",
+              "value": false
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "VILLAIN_STAGE",
+              "key": "stage",
+              "operator": "LTE",
+              "value": 3
+            }
+          }
+        ]
+      },
+      "actions": [
+        {
+          "type": "UPDATE_NPC_TRUST",
+          "npcId": "static-between-stations-npc-4",
+          "delta": -15
+        },
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 3
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "TELEGRAM",
+          "templateId": "static-between-stations-msg-4",
+          "delaySeconds": 120
+        }
+      ],
+      "priority": 90,
+      "cooldownSeconds": 900,
+      "maxActivations": 2
+    },
+    {
+      "id": "static-between-stations-rule-ally-cooperation",
+      "name": "Ally Cooperation Reward",
+      "description": "High trust with a core ally reveals additional evidence.",
+      "eventType": "NPC_TRUST_CHANGED",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "NPC_TRUST",
+          "key": "static-between-stations-npc-4",
+          "operator": "GTE",
+          "value": 70
+        }
+      },
+      "actions": [
+        {
+          "type": "REVEAL_CLUE",
+          "clueId": "static-between-stations-clue-ally-ledger"
+        },
+        {
+          "type": "SET_FLAG",
+          "key": "allyEvidenceUnlocked",
+          "value": true
+        }
+      ],
+      "priority": 65,
+      "cooldownSeconds": 0,
+      "maxActivations": 1
+    },
+    {
+      "id": "static-between-stations-rule-near-success",
+      "name": "Near Success Ultimatum",
+      "description": "High progress triggers timed villain ultimatum.",
+      "eventType": "INVESTIGATION_PROGRESS",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "INVESTIGATION_PROGRESS",
+          "key": "percent",
+          "operator": "GTE",
+          "value": 85
+        }
+      },
+      "actions": [
+        {
+          "type": "ADVANCE_VILLAIN_STAGE",
+          "stage": 4
+        },
+        {
+          "type": "START_COUNTDOWN",
+          "countdownId": "static-between-stations-final-choice",
+          "durationSeconds": 900,
+          "failureEventId": "static-between-stations-event-hostage-lost"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "SMS",
+          "templateId": "static-between-stations-msg-5",
+          "delaySeconds": 30
+        }
+      ],
+      "priority": 95,
+      "cooldownSeconds": 300,
+      "maxActivations": 1
+    },
+    {
+      "id": "static-between-stations-rule-moral-fork",
+      "name": "Corruption Offer",
+      "description": "Low morality unlocks villain corruption ending route.",
+      "eventType": "PLAYER_MESSAGE",
+      "when": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "PLAYER_REPUTATION",
+          "key": "morality",
+          "operator": "LT",
+          "value": -15
+        }
+      },
+      "actions": [
+        {
+          "type": "UNLOCK_ENDING",
+          "endingId": "static-between-stations-ending-corruption"
+        },
+        {
+          "type": "SEND_MESSAGE",
+          "channel": "EMAIL",
+          "templateId": "static-between-stations-msg-6",
+          "delaySeconds": 300
+        }
+      ],
+      "priority": 70,
+      "cooldownSeconds": 1800,
+      "maxActivations": 1
+    }
+  ],
+  "endingVariants": [
+    {
+      "id": "static-between-stations-ending-justice",
+      "title": "Clean Resolution",
+      "type": "JUSTICE",
+      "summary": "You expose the broadcast architecture and keep the last witness alive.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 85
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "PLAYER_REPUTATION",
+              "key": "morality",
+              "operator": "GTE",
+              "value": 10
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "static-between-stations-event-hostage-saved",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "blockedCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "EVENT_OCCURRED",
+          "key": "static-between-stations-event-evidence-destroyed",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "Truth lands publicly with evidence that survives scrutiny.",
+      "sequelHook": "A tagged evidence box points to the next case."
+    },
+    {
+      "id": "static-between-stations-ending-pyrrhic",
+      "title": "Compromised Truth",
+      "type": "PYRRHIC",
+      "summary": "You identify the culprit but lose the witness chain and public confidence.",
+      "requiredCondition": {
+        "kind": "all",
+        "conditions": [
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "INVESTIGATION_PROGRESS",
+              "key": "percent",
+              "operator": "GTE",
+              "value": 75
+            }
+          },
+          {
+            "kind": "predicate",
+            "predicate": {
+              "source": "EVENT_OCCURRED",
+              "key": "static-between-stations-event-witness-risk",
+              "operator": "EQ",
+              "value": true
+            }
+          }
+        ]
+      },
+      "epilogue": "The culprit is exposed, but allies and witnesses are fractured.",
+      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+    },
+    {
+      "id": "static-between-stations-ending-corruption",
+      "title": "Corruption Pact",
+      "type": "CORRUPTION",
+      "summary": "You accept the Curator's private channel and bury the official case.",
+      "requiredCondition": {
+        "kind": "predicate",
+        "predicate": {
+          "source": "ENDING_STATUS",
+          "key": "unlocked:static-between-stations-ending-corruption",
+          "operator": "EQ",
+          "value": true
+        }
+      },
+      "epilogue": "You keep control of the case, and the villain keeps control of you.",
+      "sequelHook": "Season continuity marks the player as compromised."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "static-between-stations-puzzle-shards",
+      "title": "Relay Cipher Split",
+      "objective": "Combine three relay fragments distributed across party channels.",
+      "shards": [
+        {
+          "id": "static-between-stations-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives a packet-latency table with one hidden timestamp."
+        },
+        {
+          "id": "static-between-stations-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives a Telegram sticker containing cipher coordinates."
+        },
+        {
+          "id": "static-between-stations-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast drop includes a map layer that aligns only with both clues."
+        }
+      ],
+      "solvedByRuleId": "static-between-stations-rule-near-success",
+      "rewardClueId": "static-between-stations-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch."
+    }
+  ],
+  "investigationBoard": {
+    "nodes": [
+      {
+        "id": "static-between-stations-suspect-villain",
+        "type": "SUSPECT",
+        "label": "The Curator of Static",
+        "summary": "Primary antagonist operating through layered identities."
+      },
+      {
+        "id": "static-between-stations-suspect-secondary",
+        "type": "SUSPECT",
+        "label": "Commuter Witness Nia Vale",
+        "summary": "Possible accomplice with motive and access."
+      },
+      {
+        "id": "static-between-stations-location-core",
+        "type": "LOCATION",
+        "label": "Abandoned commuter rail control annex",
+        "summary": "Primary scene where contradictions cluster."
+      },
+      {
+        "id": "static-between-stations-evidence-core",
+        "type": "EVIDENCE",
+        "label": "Spectrogram of confession burst",
+        "summary": "Anchor evidence with disputed provenance."
+      }
+    ],
+    "links": [
+      {
+        "fromId": "static-between-stations-suspect-villain",
+        "toId": "static-between-stations-location-core",
+        "relation": "operates-through",
+        "confidence": 0.78
+      },
+      {
+        "fromId": "static-between-stations-suspect-secondary",
+        "toId": "static-between-stations-evidence-core",
+        "relation": "tampered-access",
+        "confidence": 0.64
+      },
+      {
+        "fromId": "static-between-stations-location-core",
+        "toId": "static-between-stations-evidence-core",
+        "relation": "origin-point",
+        "confidence": 0.82
+      }
+    ],
+    "timeline": [
+      {
+        "id": "static-between-stations-timeline-1",
+        "timeLabel": "22:15",
+        "summary": "Initial anomaly reaches player channels.",
+        "relatedNodeIds": [
+          "static-between-stations-location-core",
+          "static-between-stations-evidence-core"
+        ]
+      },
+      {
+        "id": "static-between-stations-timeline-2",
+        "timeLabel": "23:50",
+        "summary": "Witness account conflicts with archive records.",
+        "relatedNodeIds": [
+          "static-between-stations-suspect-secondary",
+          "static-between-stations-evidence-core"
+        ]
+      },
+      {
+        "id": "static-between-stations-timeline-3",
+        "timeLabel": "00:25",
+        "summary": "Villain contact shifts to direct intimidation.",
+        "relatedNodeIds": [
+          "static-between-stations-suspect-villain"
+        ]
+      }
+    ]
+  },
+  "seasonContinuity": {
+    "seasonId": "season-1",
+    "returningCharacterIds": [
+      "static-between-stations-npc-1",
+      "static-between-stations-villain"
+    ],
+    "persistedReputationAxes": [
+      "trustworthiness",
+      "aggression",
+      "curiosity",
+      "deception",
+      "morality"
+    ],
+    "carryForwardFlags": [
+      "villain-contact-opened",
+      "saved-key-witness",
+      "accepted-corruption-terms"
+    ],
+    "continuityNotes": "Reputation and corruption flags carry into cross-case antagonist threads."
+  },
+  "safetyProfile": {
+    "intensityLevel": 3,
+    "threatTone": "MODERATE",
+    "realismLevel": "IMMERSIVE",
+    "allowLateNightMessaging": false,
+    "supportsOptDown": true,
+    "contentWarnings": [
+      "disturbing audio",
+      "stalking",
+      "threat"
+    ]
+  }
 }

@@ -5,6 +5,7 @@
 - Implemented voice orchestration package with profile registry, region/sex-aware casting, emotional variation logic, and deterministic cache keys.
 - Added Piper adapter (HTTP + CLI modes) plus ElevenLabs/OpenAI/Polly adapter classes with fallback behavior.
 - Added launch casting set of 40 unique character voice profiles (10 stories x 4 roles) and uniqueness validation tests.
+- Implemented soundtrack system with global platform overture + 10 story themes, route-aware playback selection, and web runtime controls.
 - Updated story packages to use story-specific character names aligned with launch catalog and voice casting.
 - Added prompt library, asset manifests, versioning rules, placeholder assets, and updated voice design spec.
 

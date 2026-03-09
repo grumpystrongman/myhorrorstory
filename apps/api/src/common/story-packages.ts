@@ -1,4 +1,4 @@
-import type { StoryPackage } from '@myhorrorstory/contracts';
+import { storyPackageSchema, type StoryPackage } from '@myhorrorstory/contracts';
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -7,7 +7,8 @@ const currentDir = dirname(fileURLToPath(import.meta.url));
 
 function loadStory(file: string): StoryPackage {
   const absolute = join(currentDir, '../../../../docs/stories', file);
-  return JSON.parse(readFileSync(absolute, 'utf8')) as StoryPackage;
+  const raw = JSON.parse(readFileSync(absolute, 'utf8')) as unknown;
+  return storyPackageSchema.parse(raw);
 }
 
 export const storyPackages: StoryPackage[] = [

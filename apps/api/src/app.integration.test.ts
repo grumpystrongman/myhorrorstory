@@ -141,5 +141,128 @@ describe('API integration', () => {
     expect(lead.body.accepted).toBe(true);
     expect(lead.body.segment).toBe('new_lead');
   });
+
+  it('processes inbound channel messages, evaluates rules, and saves investigation boards', async () => {
+    const stories = await request(app.getHttpServer()).get('/api/v1/stories').expect(200);
+    const storyId = stories.body[0].id as string;
+    const storyBoard = stories.body[0].investigationBoard;
+
+    const inbound = await request(app.getHttpServer())
+      .post('/api/v1/channels/inbound')
+      .send({
+        event: {
+          caseId: storyId,
+          playerId: 'integration-player',
+          channel: 'SMS',
+          message: 'I accuse the broker.',
+          sentAt: new Date().toISOString()
+        },
+        runtimeFlags: {}
+      })
+      .expect(201);
+
+    expect(inbound.body.accepted).toBe(true);
+    expect(inbound.body.recognizedIntent).toBe('ACCUSATION');
+
+    const evaluated = await request(app.getHttpServer())
+      .post('/api/v1/story-rules/evaluate')
+      .send({
+        caseId: storyId,
+        eventType: 'CLUE_DISCOVERED',
+        eventKey: 'integration-rule-check',
+        state: {
+          flags: {},
+          reputation: {
+            trustworthiness: 0,
+            aggression: 0,
+            curiosity: 0,
+            deception: 0,
+            morality: 0
+          },
+          npcTrust: {},
+          clues: [`${storyId}-clue-origin`],
+          events: [],
+          investigationProgress: 10,
+          villainStage: 1,
+          silenceSeconds: 0,
+          elapsedSeconds: 120,
+          lastIntent: null
+        }
+      })
+      .expect(200);
+
+    expect(evaluated.body.triggeredRuleIds).toContain(`${storyId}-rule-first-contact`);
+    expect(Array.isArray(evaluated.body.actions)).toBe(true);
+    expect(evaluated.body.actions.length).toBeGreaterThan(0);
+
+    const board = await request(app.getHttpServer())
+      .put('/api/v1/investigation/board')
+      .send({
+        caseId: storyId,
+        playerId: 'integration-player',
+        board: storyBoard
+      })
+      .expect(200);
+
+    expect(board.body.updated).toBe(true);
+    expect(board.body.revisionKey).toContain(storyId);
+
+    const narrative = await request(app.getHttpServer())
+      .post('/api/v1/narrative/events/next')
+      .send({
+        caseId: storyId,
+        playerId: 'integration-player',
+        nowAt: new Date().toISOString(),
+        behavior: {
+          cluesDiscovered: [`${storyId}-clue-origin`],
+          suspectsAccused: ['Primary Suspect'],
+          alliances: ['Trusted Witness'],
+          communicationTone: 'SKEPTICAL',
+          moralDecisionTrend: 5,
+          responseDelaySeconds: 120,
+          investigativeSkill: 70,
+          curiosity: 80,
+          riskTaking: 45
+        },
+        runtime: {
+          villainStage: 2,
+          investigationProgress: 64,
+          reputation: {
+            trustworthiness: 6,
+            aggression: 4,
+            curiosity: 20,
+            deception: 1,
+            morality: 12
+          },
+          npcTrust: {},
+          unresolvedClues: [`${storyId}-clue-ledger`],
+          flags: {}
+        },
+        context: {
+          storyMood: 'EERIE',
+          sceneType: 'SURVEILLANCE_REVIEW',
+          villainPresence: 68,
+          playerTensionLevel: 63,
+          dangerLevel: 58,
+          location: 'Relay control annex',
+          timeOfNightHour: 23,
+          enabledChannels: ['SMS', 'WHATSAPP', 'TELEGRAM', 'EMAIL', 'WEB_PORTAL']
+        },
+        safety: {
+          intensityLevel: 3,
+          threatTone: 'MODERATE',
+          realismLevel: 'IMMERSIVE',
+          allowLateNightMessaging: true,
+          maxTouchesPerHour: 3
+        }
+      })
+      .expect(200);
+
+    expect(narrative.body.caseId).toBe(storyId);
+    expect(narrative.body.event.mediaType).toBeDefined();
+    expect(narrative.body.event.hiddenClues.length).toBeGreaterThan(0);
+    expect(narrative.body.event.possiblePlayerResponses.length).toBeGreaterThanOrEqual(2);
+    expect(narrative.body.event.storyConsequences.length).toBeGreaterThanOrEqual(2);
+  });
 });
 

@@ -1,0 +1,72 @@
+{
+  "version": "v1",
+  "globalTheme": {
+    "id": "platform-overture",
+    "mood": "cinematic_dread",
+    "prompt": "Premium horror platform overture. Slow pulse, analog tape texture, restrained low brass, sparse choral air, no jump scares, loop-safe tail.",
+    "targetSeconds": 120,
+    "notes": "Homepage, landing funnel, onboarding, default non-story pages"
+  },
+  "storyScores": [
+    {
+      "storyId": "static-between-stations",
+      "mood": "psychological_tension",
+      "prompt": "Psychological commuter-line dread. Metallic resonances, distant rail rhythm, whispered harmonic cluster.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "black-chapel-ledger",
+      "mood": "gothic_requiem",
+      "prompt": "Gothic cathedral mystery. Tension strings, bell overtones, low organ drones.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "the-harvest-men",
+      "mood": "folk_ritual",
+      "prompt": "Folk ritual horror. Frame drum heartbeat, bowed drone, weathered choir fragments.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "signal-from-kharon-9",
+      "mood": "cosmic_unease",
+      "prompt": "Cosmic horror score. Cold synth bed, distant radio chirps, glacial harmonic movement.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "the-fourth-tenant",
+      "mood": "supernatural_mystery",
+      "prompt": "Apartment liminal-space mystery. Piano ostinato, hallway reverb tails, soft sub pulses.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "tape-17-pinewatch",
+      "mood": "found_footage_grit",
+      "prompt": "Found-footage investigation score. Tape hiss, detuned drones, intermittent camera-motor rhythm.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "crown-of-salt",
+      "mood": "occult_conspiracy",
+      "prompt": "Occult conspiracy thriller. Clandestine pulse, antique strings, maritime ambience hints.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "red-creek-winter",
+      "mood": "slasher_pulse",
+      "prompt": "Winter slasher pressure score. Tight rhythmic stabs, icy percussive textures, sustained dread bass.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "ward-1908",
+      "mood": "institutional_haunt",
+      "prompt": "Haunted institution atmosphere. Rusted mechanical hum, string harmonics, breathy choir smear.",
+      "targetSeconds": 150
+    },
+    {
+      "storyId": "dead-channel-protocol",
+      "mood": "techno_paranormal",
+      "prompt": "Techno-paranormal thriller bed. Glitch clockwork, spectral synth pulses, restrained industrial bass.",
+      "targetSeconds": 150
+    }
+  ]
+}

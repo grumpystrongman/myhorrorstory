@@ -75,6 +75,7 @@ MyHorrorStory is a production-focused, cross-platform horror mystery platform fo
 - Commercial-grade test plan: `docs/qa/commercial-grade-test-plan.md`
 - Voice design spec: `docs/stories/voice-design-spec.md`
 - Voice casting manifest: `docs/stories/voice-casting-manifest.md`
+- Music score spec: `docs/stories/music-score-spec.md`
 - Growth architecture: `docs/growth/architecture.md`
 - Phase status reports: `docs/status/phase-01.md` through `docs/status/phase-11.md`
 - Agent workstreams: `docs/agents/README.md`
