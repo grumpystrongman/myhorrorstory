@@ -63,6 +63,22 @@ Use `/codex` in the web app to run local Codex prompts, stream live execution up
    - `http://127.0.0.1:3000/codex` (or your configured web port)
 4. If token is set, paste it into the bridge token field before running prompts.
 
+### OpenClaw-Backed Bridge (Optional)
+To route `/codex` through OpenClaw in WSL instead of local `codex`, set:
+
+- `CODEX_BRIDGE_COMMAND=C:/Users/<you>/<repo>/scripts/openclaw-codex-bridge.cmd`
+- `OPENCLAW_BRIDGE_WSL_DISTRO=Ubuntu`
+- `OPENCLAW_BRIDGE_GATEWAY=nemoclaw`
+- `OPENCLAW_BRIDGE_SANDBOX=my-assistant`
+- `OPENCLAW_BRIDGE_AGENT=myhorrorstory`
+
+Local one-command startup (web/admin/api + health checks):
+- `corepack pnpm dev:openclaw`
+- This uses `apps/web/.env.local` for bridge variables and writes logs to `.run-logs/local-dev`.
+
+To refresh sandbox workspace context after local changes:
+- `wsl -d Ubuntu -- bash -lc "openshell sandbox upload --gateway nemoclaw my-assistant /mnt/c/Users/<you>/<repo> /sandbox/workspaces/myhorrorstory"`
+
 ## Immersive Web Session (Simulation-First)
 The web play route now simulates live player delivery across SMS/WhatsApp/Telegram/email as in-app popups while preserving direct-provider abstractions for phone delivery later.
 

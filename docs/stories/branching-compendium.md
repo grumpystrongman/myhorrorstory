@@ -1,6 +1,6 @@
 # Story Branching Compendium
 
-Generated: 2026-03-09T14:14:48.309Z
+Generated: 2026-03-20T13:59:12.700Z
 
 This index summarizes each shipped story package: hook, arc progression, trigger rules, branching moments, and ending outcomes.
 

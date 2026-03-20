@@ -79,8 +79,8 @@ function getBridgeState(): BridgeState {
 
 function detectCodexWorkdir(): string {
   const explicitWorkdir = process.env.CODEX_BRIDGE_WORKDIR;
-  if (explicitWorkdir) {
-    return resolve(explicitWorkdir);
+  if (explicitWorkdir && explicitWorkdir.trim().length > 0) {
+    return resolve(explicitWorkdir.trim());
   }
 
   const cwd = process.cwd();
@@ -97,7 +97,15 @@ function detectCodexWorkdir(): string {
 }
 
 function codexCommand(): string {
-  return process.env.CODEX_BRIDGE_COMMAND ?? 'codex';
+  return (process.env.CODEX_BRIDGE_COMMAND ?? 'codex').trim();
+}
+
+function shouldUseShellForCommand(command: string): boolean {
+  if (process.platform !== 'win32') {
+    return false;
+  }
+
+  return /\.cmd$/i.test(command) || /\.bat$/i.test(command);
 }
 
 function toSummary(session: CodexSessionState): CodexSessionSummary {
@@ -209,6 +217,7 @@ function startPromptRun(session: CodexSessionState, prompt: string): void {
   }
 
   const command = codexCommand();
+  const workdir = detectCodexWorkdir();
   const args =
     session.threadId === null
       ? ['exec', '--json', prompt]
@@ -229,10 +238,20 @@ function startPromptRun(session: CodexSessionState, prompt: string): void {
     text: 'Codex run started'
   });
 
-  const child = spawn(command, args, {
-    cwd: detectCodexWorkdir(),
-    env: process.env
-  });
+  let child: ChildProcessWithoutNullStreams;
+  try {
+    child = spawn(command, args, {
+      cwd: workdir,
+      env: process.env,
+      shell: shouldUseShellForCommand(command)
+    });
+  } catch (error) {
+    const message =
+      error instanceof Error
+        ? error.message
+        : String(error);
+    throw new Error(`spawn failed: ${message}; command=${command}; cwd=${workdir}; shell=${shouldUseShellForCommand(command)}`);
+  }
   session.process = child;
 
   wireLineReader(child.stdout, (line) => {

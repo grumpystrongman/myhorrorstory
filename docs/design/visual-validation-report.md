@@ -1,6 +1,6 @@
 # Visual Validation Report
 
-Generated: 2026-03-09T15:09:04.494Z
+Generated: 2026-03-20T14:03:23.771Z
 Manifest: `assets\manifests\commercial-creative-plan.json`
 
 ## Summary

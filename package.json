@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "corepack pnpm -r --parallel dev",
+    "dev:openclaw": "powershell -ExecutionPolicy Bypass -File scripts/start-openclaw-local.ps1",
     "build": "corepack pnpm -r build",
     "lint": "corepack pnpm -r lint",
     "test": "corepack pnpm -r test",

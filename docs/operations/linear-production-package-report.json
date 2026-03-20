@@ -1,8 +1,7 @@
 {
-  "mode": "apply",
-  "teamKey": "JEF",
-  "teamName": "Jeffbarnes",
-  "authSource": "LINEAR_ACCESS_TOKEN",
+  "mode": "dry-run-no-token",
+  "teamKey": null,
+  "authSource": "none",
   "backlog": {
     "packageId": "midnight-lockbox-beat-1",
     "packageTitle": "Midnight Lockbox Beat 1 - Unit 331 Full Production Package",
@@ -238,83 +237,7 @@
       }
     ]
   },
-  "created": [
-    {
-      "identifier": "JEF-36",
-      "title": "Production Package Orchestration - Midnight Lockbox Beat 1",
-      "botId": "AI-Executive-Orchestrator"
-    },
-    {
-      "identifier": "JEF-37",
-      "title": "Product Acceptance Spec - Midnight Lockbox Beat 1 Experience",
-      "botId": "AI-Product-Agent"
-    },
-    {
-      "identifier": "JEF-38",
-      "title": "Story Engine Buildout - Midnight Lockbox Beat 1 Branching and Consequences",
-      "botId": "AI-Story-Engine-Agent"
-    },
-    {
-      "identifier": "JEF-39",
-      "title": "Backend Messaging and Timing Orchestration - Midnight Lockbox Beat 1",
-      "botId": "AI-Backend-Agent"
-    },
-    {
-      "identifier": "JEF-40",
-      "title": "Web Gameplay Presentation - Midnight Lockbox Beat 1 Immersive UI",
-      "botId": "AI-Web-App-Agent"
-    },
-    {
-      "identifier": "JEF-41",
-      "title": "UX and Visual Direction - Midnight Lockbox Beat 1 Presentation Polish",
-      "botId": "AI-UX-UI-Agent"
-    },
-    {
-      "identifier": "JEF-42",
-      "title": "Media Pipeline Output - Midnight Lockbox Beat 1 Evidence and Promo Set",
-      "botId": "AI-Media-Pipeline-Agent"
-    },
-    {
-      "identifier": "JEF-43",
-      "title": "Voice and Audio Production - Midnight Lockbox Beat 1",
-      "botId": "AI-Voice-Audio-Agent"
-    },
-    {
-      "identifier": "JEF-44",
-      "title": "In-World Website Ecosystem - Midnight Lockbox Beat 1",
-      "botId": "AI-Admin-Ops-Agent"
-    },
-    {
-      "identifier": "JEF-45",
-      "title": "Growth and Re-Engagement Hooks - Midnight Lockbox Beat 1",
-      "botId": "AI-Growth-CRM-Agent"
-    },
-    {
-      "identifier": "JEF-46",
-      "title": "Security and Safety Review - Midnight Lockbox Beat 1",
-      "botId": "AI-Security-Compliance-Agent"
-    },
-    {
-      "identifier": "JEF-47",
-      "title": "Commercial QA Certification - Midnight Lockbox Beat 1",
-      "botId": "AI-QA-Test-Agent"
-    },
-    {
-      "identifier": "JEF-48",
-      "title": "Release Pipeline and Deploy Readiness - Midnight Lockbox Beat 1",
-      "botId": "AI-DevOps-Release-Agent"
-    },
-    {
-      "identifier": "JEF-49",
-      "title": "Commercial Packaging and Retention Strategy - Midnight Lockbox Beat 1",
-      "botId": "AI-Commercial-Success-Agent"
-    },
-    {
-      "identifier": "JEF-50",
-      "title": "Mobile Experience Parity Plan - Midnight Lockbox Beat 1",
-      "botId": "AI-Mobile-App-Agent"
-    }
-  ],
+  "created": [],
   "existingMatches": [],
-  "existingCount": 35
+  "existingCount": 0
 }
