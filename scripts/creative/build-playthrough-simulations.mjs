@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const dramaDir = join(repoRoot, 'apps', 'web', 'public', 'content', 'drama');
 const storiesDir = join(repoRoot, 'docs', 'stories');
+const agentArmyManifestPath = join(repoRoot, 'assets', 'manifests', 'commercial-agent-army-plan.json');
 const simulationsDir = join(repoRoot, 'apps', 'web', 'public', 'simulations');
 const reportsDir = join(repoRoot, 'docs', 'simulations');
 
@@ -12,6 +13,8 @@ mkdirSync(simulationsDir, { recursive: true });
 mkdirSync(reportsDir, { recursive: true });
 
 const dramaIndex = JSON.parse(readFileSync(join(dramaDir, 'index.json'), 'utf8'));
+const agentArmyManifest = JSON.parse(readFileSync(agentArmyManifestPath, 'utf8'));
+const agentArmyAssets = Array.isArray(agentArmyManifest.assets) ? agentArmyManifest.assets : [];
 
 function escapeHtml(value) {
   return String(value)
@@ -29,6 +32,37 @@ function toChoiceLabel(choice) {
 function findStoryPackage(storyId) {
   const path = join(storiesDir, `${storyId}.story.json`);
   return JSON.parse(readFileSync(path, 'utf8'));
+}
+
+function toAgentPublicPath(outputKey) {
+  return `/${String(outputKey).replaceAll('\\', '/').replace(/^assets\/production\/agent-army\//, 'agent-army/')}`;
+}
+
+function getStoryAgentAssets(storyId) {
+  return agentArmyAssets.filter((asset) => asset.storyId === storyId);
+}
+
+function firstAssetPath(assets, predicate, fallback = null) {
+  const match = assets.find(predicate);
+  if (!match || typeof match.outputKey !== 'string') {
+    return fallback;
+  }
+
+  return toAgentPublicPath(match.outputKey);
+}
+
+function mapBeatVisuals(assets) {
+  const beatVisuals = new Map();
+
+  for (const asset of assets) {
+    if (asset.modality !== 'image' || asset.category !== 'beat_scene_art' || !asset.beatId) {
+      continue;
+    }
+
+    beatVisuals.set(asset.beatId, toAgentPublicPath(asset.outputKey));
+  }
+
+  return beatVisuals;
 }
 
 function buildDefaultRun(drama) {
@@ -60,14 +94,34 @@ function buildDefaultRun(drama) {
   return run;
 }
 
-function renderStoryPage(drama, story, defaultRun) {
-  const heroVisual = drama.beats?.[0]?.backgroundVisual ?? '/visuals/surfaces/landing-hero.svg';
-  const scorePath = `/audio/scores/${drama.id}.wav`;
+function renderStoryPage(drama, story, defaultRun, storyAssets) {
+  const heroVisual = firstAssetPath(
+    storyAssets,
+    (asset) => asset.modality === 'image' && asset.category === 'story_key_art',
+    drama.beats?.[0]?.backgroundVisual ?? '/visuals/surfaces/landing-hero.svg'
+  );
+  const scorePath = firstAssetPath(
+    storyAssets,
+    (asset) => asset.modality === 'audio' && asset.category === 'story_theme_loop',
+    `/audio/scores/${drama.id}.wav`
+  );
+  const storyOverviewPath = firstAssetPath(
+    storyAssets,
+    (asset) => asset.modality === 'web' && asset.category === 'story_overview_page'
+  );
+  const branchLinks = storyAssets
+    .filter((asset) => asset.modality === 'web' && asset.category === 'branch_decision_ui')
+    .map((asset) => ({
+      title: asset.title,
+      href: toAgentPublicPath(asset.outputKey)
+    }));
+  const beatVisuals = mapBeatVisuals(storyAssets);
   const simulationData = {
     title: drama.title,
     beats: drama.beats,
     endings: drama.endings,
-    defaultRun
+    defaultRun,
+    beatVisuals: Object.fromEntries(beatVisuals.entries())
   };
 
   return `<!doctype html>
@@ -173,6 +227,15 @@ function renderStoryPage(drama, story, defaultRun) {
       background: rgba(6, 12, 20, 0.86);
       padding: 10px;
     }
+    .timeline-visual {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      margin: 8px 0 6px;
+      background: #08101a;
+    }
     .timeline-item p {
       margin: 6px 0 0;
       color: var(--muted);
@@ -263,6 +326,10 @@ function renderStoryPage(drama, story, defaultRun) {
         <source src="${escapeHtml(scorePath)}" type="audio/wav" />
       </audio>
       <p class="warning">Playback uses generated score loops; connect final mastered stems before release.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        ${storyOverviewPath ? `<a href="${escapeHtml(storyOverviewPath)}">Open Story Overview Artifact</a>` : ''}
+        ${branchLinks.map((item) => `<a href="${escapeHtml(item.href)}">${escapeHtml(item.title)}</a>`).join('')}
+      </div>
     </section>
 
     <section class="panel layout">
@@ -273,6 +340,11 @@ function renderStoryPage(drama, story, defaultRun) {
             .map(
               (beat) => `<article class="timeline-item">
                 <h3>${escapeHtml(beat.title)}</h3>
+                ${
+                  beatVisuals.has(beat.id)
+                    ? `<img class="timeline-visual" src="${escapeHtml(beatVisuals.get(beat.id))}" alt="${escapeHtml(beat.title)} beat visual" loading="lazy" />`
+                    : ''
+                }
                 <p>${escapeHtml(beat.narrative)}</p>
                 ${(beat.incomingMessages ?? [])
                   .map(
@@ -334,6 +406,7 @@ function renderStoryPage(drama, story, defaultRun) {
   <script>
     const data = ${JSON.stringify(simulationData)};
     const beatById = new Map(data.beats.map((beat) => [beat.id, beat]));
+    const beatVisuals = data.beatVisuals || {};
     const transcript = [];
     let cursor = data.beats[0] ? data.beats[0].id : null;
     let started = false;
@@ -384,7 +457,9 @@ function renderStoryPage(drama, story, defaultRun) {
 
       setHtml(
         'sim-beat',
-        '<h3>' + beat.title + '</h3><p>' + beat.narrative + '</p>' +
+        '<h3>' + beat.title + '</h3>' +
+        (beatVisuals[beat.id] ? '<img class="timeline-visual" src="' + beatVisuals[beat.id] + '" alt="' + beat.title + ' beat visual" />' : '') +
+        '<p>' + beat.narrative + '</p>' +
         (beat.incomingMessages || [])
           .map((msg) => '<p><span class="badge">' + msg.channel + '</span><strong>' + msg.senderName + ':</strong> ' + msg.text + '</p>')
           .join('')
@@ -556,6 +631,7 @@ function buildIndexPage(rows) {
     <section class="panel">
       <h1>Full Playthrough Simulations</h1>
       <p class="muted">Generated cross-story simulation pages with visuals, score playback, branch interactions, villain/NPC dossiers, and default-run transcripts.</p>
+      <p class="muted"><a href="/agent-army/index.html">Open full agent-army artifact index</a></p>
       <div style="display:grid;grid-template-columns:repeat(3,minmax(140px,1fr));gap:12px;">
         <div class="panel"><div class="metric">${rows.length}</div><div class="muted">Stories</div></div>
         <div class="panel"><div class="metric">${rows.reduce((sum, row) => sum + row.beatCount, 0)}</div><div class="muted">Playable Beats</div></div>
@@ -585,9 +661,10 @@ function main() {
   for (const entry of dramaIndex) {
     const drama = JSON.parse(readFileSync(join(dramaDir, `${entry.storyId}.json`), 'utf8'));
     const story = findStoryPackage(entry.storyId);
+    const storyAssets = getStoryAgentAssets(entry.storyId);
     const defaultRun = buildDefaultRun(drama);
 
-    const pageHtml = renderStoryPage(drama, story, defaultRun);
+    const pageHtml = renderStoryPage(drama, story, defaultRun, storyAssets);
     writeFileSync(join(simulationsDir, `${entry.storyId}.html`), pageHtml, 'utf8');
 
     reportRows.push({
