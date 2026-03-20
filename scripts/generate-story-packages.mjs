@@ -24,7 +24,7 @@ const repModel = {
 };
 
 const cadence = {
-  primaryChannels: ['SMS', 'WHATSAPP', 'TELEGRAM'],
+  primaryChannels: ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL'],
   auxiliaryChannels: ['EMAIL', 'VOICE_MESSAGE', 'DOCUMENT_DROP', 'SIMULATED_SITE'],
   lateNightMessagingDefault: false,
   maxVillainTouchesPerDay: 3,
@@ -129,7 +129,7 @@ function messages(storyId, a, b, c) {
       id: `${storyId}-msg-2`,
       stage: 2,
       type: 'TAUNT',
-      channels: ['WHATSAPP', 'TELEGRAM'],
+      channels: ['WHATSAPP', 'TELEGRAM', 'SIGNAL'],
       textTemplate: b,
       personalizationKeys: ['trustedNpc'],
       branchEffects: ['trust-fracture']
@@ -156,7 +156,7 @@ function messages(storyId, a, b, c) {
       id: `${storyId}-msg-5`,
       stage: 3,
       type: 'COUNTDOWN',
-      channels: ['SMS'],
+      channels: ['SMS', 'SIGNAL'],
       textTemplate: 'Nine minutes. Save the witness or save the truth.',
       personalizationKeys: ['countdownTarget'],
       branchEffects: ['ultimatum']

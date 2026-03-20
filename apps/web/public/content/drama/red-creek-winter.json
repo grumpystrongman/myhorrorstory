@@ -15,6 +15,7 @@
     "SMS",
     "WHATSAPP",
     "TELEGRAM",
+    "SIGNAL",
     "EMAIL",
     "VOICE_MESSAGE",
     "DOCUMENT_DROP",
@@ -247,7 +248,7 @@
           "id": "beat-3.msg.secondary",
           "senderName": "Survivor Owen Pike",
           "role": "investigator",
-          "channel": "EMAIL",
+          "channel": "SIGNAL",
           "text": "Cross-reference this before dawn: Ski lodge camera still.",
           "delaySeconds": 3,
           "intensity": 61
@@ -319,7 +320,7 @@
           "id": "beat-4.msg.handler",
           "senderName": "Survivor Owen Pike",
           "role": "investigator",
-          "channel": "EMAIL",
+          "channel": "SIGNAL",
           "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 56
@@ -328,7 +329,7 @@
           "id": "beat-4.msg.secondary",
           "senderName": "Sheriff Dana Holt",
           "role": "operator",
-          "channel": "VOICE_MESSAGE",
+          "channel": "EMAIL",
           "text": "Cross-reference this before dawn: Anonymous tip voicemail.",
           "delaySeconds": 3,
           "intensity": 74
@@ -400,7 +401,7 @@
           "id": "beat-5.msg.handler",
           "senderName": "Sheriff Dana Holt",
           "role": "operator",
-          "channel": "VOICE_MESSAGE",
+          "channel": "EMAIL",
           "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 68
@@ -409,7 +410,7 @@
           "id": "beat-5.msg.secondary",
           "senderName": "Deputy Nico Vale",
           "role": "witness",
-          "channel": "DOCUMENT_DROP",
+          "channel": "VOICE_MESSAGE",
           "text": "Cross-reference this before dawn: Dispatch freeze frame.",
           "delaySeconds": 3,
           "intensity": 87
@@ -481,7 +482,7 @@
           "id": "beat-6.msg.handler",
           "senderName": "Deputy Nico Vale",
           "role": "witness",
-          "channel": "DOCUMENT_DROP",
+          "channel": "VOICE_MESSAGE",
           "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 68
@@ -490,7 +491,7 @@
           "id": "beat-6.msg.secondary",
           "senderName": "Journalist Mara Finch",
           "role": "witness",
-          "channel": "SIMULATED_SITE",
+          "channel": "DOCUMENT_DROP",
           "text": "Cross-reference this before dawn: Snow-depth forensic note.",
           "delaySeconds": 3,
           "intensity": 87

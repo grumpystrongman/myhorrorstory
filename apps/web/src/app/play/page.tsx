@@ -373,7 +373,7 @@ export default function PlayPage(): JSX.Element {
           <p className="kicker">Live Runtime</p>
           <h1 style={{ fontFamily: 'Cinzel, serif', margin: '8px 0 4px' }}>Play Session</h1>
           <p className="section-copy">
-            Simulated SMS, WhatsApp, Telegram, and email drops are delivered as in-app popups now.
+            Simulated SMS, WhatsApp, Telegram, Signal, and email drops are delivered as in-app popups now.
             This flow is wired for future direct phone notification integrations.
           </p>
           <p data-testid="active-story" style={{ margin: 0, color: 'var(--muted)' }}>
@@ -404,7 +404,7 @@ export default function PlayPage(): JSX.Element {
                   : 'Awaiting your next decision.'}
           </p>
           <div className="play-channel-strip">
-            {(dramaPack?.channels ?? ['SMS', 'WHATSAPP', 'TELEGRAM']).slice(0, 6).map((channel) => (
+            {(dramaPack?.channels ?? ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL']).slice(0, 6).map((channel) => (
               <span key={channel} className="play-channel-pill">{channel}</span>
             ))}
           </div>

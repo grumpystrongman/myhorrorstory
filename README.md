@@ -88,6 +88,9 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
    - `http://127.0.0.1:3100/play?storyId=midnight-lockbox`
 3. Review commercial art gallery:
    - `http://127.0.0.1:3100/artwork`
+4. Generate and review full-story simulation pages:
+   - `corepack pnpm simulations:build-playthrough`
+   - `http://127.0.0.1:3100/simulations/index.html`
 
 ## Core Commands
 - `corepack pnpm lint`
@@ -114,6 +117,9 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `corepack pnpm creative:generate-visuals`
 - `corepack pnpm creative:materialize-assets`
 - `corepack pnpm creative:validate-visuals`
+- `corepack pnpm simulations:build-playthrough`
+- `corepack pnpm stories:generate`
+- `corepack pnpm stories:build-dossiers`
 - `corepack pnpm stories:build-compendium`
 - `corepack pnpm stories:build-drama`
 - `corepack pnpm voice:build-drama`

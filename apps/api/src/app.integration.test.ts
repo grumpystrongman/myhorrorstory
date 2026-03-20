@@ -133,6 +133,30 @@ describe('API integration', () => {
     expect(list.body.length).toBeGreaterThan(0);
   });
 
+  it('returns support chat guidance from local llm or fallback', async () => {
+    const chat = await request(app.getHttpServer())
+      .post('/api/v1/support/chat')
+      .send({
+        mode: 'game_guide',
+        storyId: 'midnight-lockbox',
+        playerStateSummary: 'Player is in beat 2 with rising tension and one unresolved clue.',
+        messages: [
+          {
+            role: 'user',
+            content: 'What should I do next if the witness is panicking?'
+          }
+        ]
+      })
+      .expect(201);
+
+    expect(chat.body.sessionId).toBeDefined();
+    expect(['ollama', 'fallback']).toContain(chat.body.provider);
+    expect(typeof chat.body.reply).toBe('string');
+    expect(chat.body.reply.length).toBeGreaterThan(0);
+    expect(Array.isArray(chat.body.guidance)).toBe(true);
+    expect(chat.body.guidance.length).toBeGreaterThan(0);
+  });
+
   it('creates billing checkout sessions', async () => {
     const checkout = await request(app.getHttpServer())
       .post('/api/v1/billing/checkout')
@@ -198,7 +222,7 @@ describe('API integration', () => {
 
     const setupStatus = await request(app.getHttpServer()).get('/api/v1/channels/setup').expect(200);
     expect(Array.isArray(setupStatus.body.channels)).toBe(true);
-    expect(setupStatus.body.channels.length).toBe(3);
+    expect(setupStatus.body.channels.length).toBe(4);
 
     const registered = await request(app.getHttpServer())
       .post('/api/v1/channels/setup/user')
@@ -208,13 +232,14 @@ describe('API integration', () => {
         contacts: [
           { channel: 'SMS', address: '+15550001111', optIn: true },
           { channel: 'WHATSAPP', address: 'whatsapp:+15550002222', optIn: true },
-          { channel: 'TELEGRAM', address: '987654321', optIn: true }
+          { channel: 'TELEGRAM', address: '987654321', optIn: true },
+          { channel: 'SIGNAL', address: '+15550003333', optIn: true }
         ]
       })
       .expect(201);
 
     expect(registered.body.updated).toBe(true);
-    expect(registered.body.activeRouteCount).toBe(3);
+    expect(registered.body.activeRouteCount).toBe(4);
 
     const mappedChannels = await request(app.getHttpServer())
       .get(`/api/v1/channels/setup/user?caseId=${encodeURIComponent(storyId)}&playerId=${encodeURIComponent(playerId)}`)
@@ -223,7 +248,7 @@ describe('API integration', () => {
     expect(mappedChannels.body.caseId).toBe(storyId);
     expect(mappedChannels.body.playerId).toBe(playerId);
     expect(Array.isArray(mappedChannels.body.contacts)).toBe(true);
-    expect(mappedChannels.body.contacts.length).toBe(3);
+    expect(mappedChannels.body.contacts.length).toBe(4);
 
     const testSend = await request(app.getHttpServer())
       .post('/api/v1/channels/setup/test')
@@ -234,9 +259,9 @@ describe('API integration', () => {
       })
       .expect(201);
 
-    expect(testSend.body.sentCount).toBe(3);
+    expect(testSend.body.sentCount).toBe(4);
     expect(Array.isArray(testSend.body.receipts)).toBe(true);
-    expect(testSend.body.receipts.length).toBe(3);
+    expect(testSend.body.receipts.length).toBe(4);
 
     const liveSend = await request(app.getHttpServer())
       .post('/api/v1/channels/send')
@@ -289,6 +314,25 @@ describe('API integration', () => {
     expect(telegramInbound.body.recognizedIntent).toBe('THREAT');
     expect(telegramInbound.body.caseId).toBe(storyId);
     expect(telegramInbound.body.playerId).toBe(playerId);
+
+    const signalInbound = await request(app.getHttpServer())
+      .post('/api/v1/webhooks/signal')
+      .send({
+        envelope: {
+          source: '+15550003333',
+          timestamp: 1710000000,
+          dataMessage: {
+            message: 'How do I decode this cipher?'
+          }
+        }
+      })
+      .expect(200);
+
+    expect(signalInbound.body.accepted).toBe(true);
+    expect(signalInbound.body.channel).toBe('SIGNAL');
+    expect(signalInbound.body.recognizedIntent).toBe('QUESTION');
+    expect(signalInbound.body.caseId).toBe(storyId);
+    expect(signalInbound.body.playerId).toBe(playerId);
   });
 
   it('processes inbound channel messages, evaluates rules, and saves investigation boards', async () => {

@@ -7,7 +7,7 @@ const runtimeOutputDir = join(repoRoot, 'apps', 'web', 'public', 'content', 'dra
 const playbookOutputDir = join(repoRoot, 'docs', 'stories', 'finalized-playbooks');
 const indexOutputFile = join(runtimeOutputDir, 'index.json');
 
-const defaultChannels = ['SMS', 'WHATSAPP', 'TELEGRAM', 'EMAIL', 'VOICE_MESSAGE', 'DOCUMENT_DROP'];
+const defaultChannels = ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL', 'EMAIL', 'VOICE_MESSAGE', 'DOCUMENT_DROP'];
 
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));

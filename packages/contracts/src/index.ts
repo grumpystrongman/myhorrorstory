@@ -138,6 +138,7 @@ export const deliveryChannelSchema = z.enum([
   'SMS',
   'WHATSAPP',
   'TELEGRAM',
+  'SIGNAL',
   'EMAIL',
   'PHONE_CALL',
   'WEB',
@@ -860,7 +861,7 @@ export const narrativeEventContextSchema = z.object({
   dangerLevel: z.number().int().min(0).max(100),
   location: z.string().min(1),
   timeOfNightHour: z.number().int().min(0).max(23),
-  enabledChannels: z.array(deliveryChannelSchema).min(1).default(['SMS', 'WHATSAPP', 'TELEGRAM', 'EMAIL'])
+  enabledChannels: z.array(deliveryChannelSchema).min(1).default(['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL', 'EMAIL'])
 });
 
 export const narrativeHiddenClueSchema = z.object({

@@ -9,12 +9,14 @@ import type {
   ProcessInboundMessageResponse
 } from '@myhorrorstory/contracts';
 
+type MessagingChannel = 'SMS' | 'WHATSAPP' | 'TELEGRAM' | 'SIGNAL';
+
 export interface HttpClient {
   request<T>(path: string, init?: { method?: string; body?: unknown; token?: string }): Promise<T>;
 }
 
 export interface SetupChannelContact {
-  channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+  channel: MessagingChannel;
   address: string;
   optIn?: boolean;
 }
@@ -28,14 +30,14 @@ export interface SetupUserChannelsRequest {
 export interface SendSetupTestRequest {
   caseId: string;
   playerId: string;
-  channels?: Array<'SMS' | 'WHATSAPP' | 'TELEGRAM'>;
+  channels?: MessagingChannel[];
   message?: string;
 }
 
 export interface SendChannelMessageRequest {
   caseId: string;
   playerId: string;
-  channels?: Array<'SMS' | 'WHATSAPP' | 'TELEGRAM'>;
+  channels?: MessagingChannel[];
   message: string;
   mediaUrls?: string[];
 }
@@ -113,7 +115,7 @@ export class ApiClient {
     baseUrl: string;
     providers: string[];
     channels: Array<{
-      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      channel: MessagingChannel;
       configured: boolean;
       liveProvider: string | null;
       fallbackProvider: string;
@@ -144,7 +146,7 @@ export class ApiClient {
     sentCount: number;
     receipts: Array<{
       provider: string;
-      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      channel: MessagingChannel;
       to: string;
       externalMessageId: string;
       acceptedAt: string;
@@ -161,7 +163,7 @@ export class ApiClient {
     playerId: string;
     updatedAt: string;
     contacts: Array<{
-      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      channel: MessagingChannel;
       address: string;
       normalizedAddress: string;
       optIn: boolean;
@@ -177,7 +179,7 @@ export class ApiClient {
     sentCount: number;
     receipts: Array<{
       provider: string;
-      channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+      channel: MessagingChannel;
       to: string;
       externalMessageId: string;
       acceptedAt: string;

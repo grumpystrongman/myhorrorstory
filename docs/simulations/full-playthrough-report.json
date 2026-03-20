@@ -1,0 +1,1040 @@
+{
+  "generatedAt": "2026-03-20T14:50:58.645Z",
+  "storyCount": 11,
+  "stories": [
+    {
+      "storyId": "black-chapel-ledger",
+      "title": "Black Chapel Ledger",
+      "hook": "A cathedral ledger records debts paid in memory instead of money.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Ledger Breach",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Authenticate the ledger seals with archival metadata [intent: CURIOSITY]",
+          "clueReveals": [
+            "black-chapel-ledger-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "black-chapel-ledger-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Canon Archivist Elara Voss and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "black-chapel-ledger-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "black-chapel-ledger-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "black-chapel-ledger-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "black-chapel-ledger-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "crown-of-salt",
+      "title": "Crown of Salt",
+      "hook": "A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Manifest Drift",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Audit crate chain-of-custody from port systems [intent: CURIOSITY]",
+          "clueReveals": [
+            "crown-of-salt-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "crown-of-salt-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Port Auditor Lin Ortega and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "crown-of-salt-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "crown-of-salt-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "crown-of-salt-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "crown-of-salt-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "dead-channel-protocol",
+      "title": "Dead Channel Protocol",
+      "hook": "A ghost app predicts outages, deaths, and your next move.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Protocol Wake",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Audit protocol source code and signing keys [intent: CURIOSITY]",
+          "clueReveals": [
+            "dead-channel-protocol-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "dead-channel-protocol-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Security Engineer Talia Ren and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "dead-channel-protocol-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "dead-channel-protocol-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "dead-channel-protocol-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "dead-channel-protocol-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "midnight-lockbox",
+      "title": "Midnight Lockbox",
+      "hook": "A self-storage unit with no renter sends voice memos predicting what your team will do next.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Unit 331 pings alive",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Audit keypad logs and access events before sunrise [intent: CURIOSITY]",
+          "clueReveals": [
+            "midnight-lockbox-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Lock Cylinder Swap",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "midnight-lockbox-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Morning Leak",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Case Lead Veda Cross and seal internal channels [intent: COMPLIANCE]",
+          "clueReveals": [
+            "midnight-lockbox-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Noon Ultimatum",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "midnight-lockbox-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Drain Tunnel Run",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "midnight-lockbox-clue-reveal"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Lockbox Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "midnight-lockbox-clue-epilogue"
+          ],
+          "channelTouches": [
+            "DOCUMENT_DROP",
+            "SIMULATED_SITE",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "red-creek-winter",
+      "title": "Red Creek Winter",
+      "hook": "Each snowfall uncovers one body and one impossible alibi.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "First Snow Body",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Run forensic timeline from dispatch logs [intent: CURIOSITY]",
+          "clueReveals": [
+            "red-creek-winter-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "red-creek-winter-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Sheriff Dana Holt and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "red-creek-winter-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "red-creek-winter-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "red-creek-winter-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "red-creek-winter-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "signal-from-kharon-9",
+      "title": "Signal From Kharon-9",
+      "hook": "Telemetry returns from a decommissioned orbital array and predicts player replies.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Dormant Array Wake",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Sandbox the signal in a quarantined parser [intent: CURIOSITY]",
+          "clueReveals": [
+            "signal-from-kharon-9-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "signal-from-kharon-9-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Systems Engineer Ari Vance and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "signal-from-kharon-9-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "signal-from-kharon-9-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "signal-from-kharon-9-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "signal-from-kharon-9-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "static-between-stations",
+      "title": "Static Between Stations",
+      "hook": "A dead rail line broadcasts private confessions in the players' own voices.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Signal One",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Trace the source frequency through telecom logs [intent: CURIOSITY]",
+          "clueReveals": [
+            "static-between-stations-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "static-between-stations-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Lead Investigator Mara Quinn and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "static-between-stations-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "static-between-stations-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "static-between-stations-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "static-between-stations-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "tape-17-pinewatch",
+      "title": "Tape 17: Pinewatch",
+      "hook": "A recovered camcorder tape rewrites itself every midnight.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Tape Reset",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Extract frame-level artifacts before midnight overwrite [intent: CURIOSITY]",
+          "clueReveals": [
+            "tape-17-pinewatch-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "tape-17-pinewatch-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Ranger Juno Hale and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "tape-17-pinewatch-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "tape-17-pinewatch-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "tape-17-pinewatch-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "tape-17-pinewatch-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "the-fourth-tenant",
+      "title": "The Fourth Tenant",
+      "hook": "Rent is collected from an apartment that appears on no official map.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Unlisted Unit",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Audit property records and insurance filings [intent: CURIOSITY]",
+          "clueReveals": [
+            "the-fourth-tenant-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "the-fourth-tenant-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Building Superintendent Leda Price and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "the-fourth-tenant-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "the-fourth-tenant-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "the-fourth-tenant-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "the-fourth-tenant-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "the-harvest-men",
+      "title": "The Harvest Men",
+      "hook": "A ritual mask selects a new wearer every dusk, and refusals vanish overnight.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Dusk Selection",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Analyze soil reports linked to ritual sites [intent: CURIOSITY]",
+          "clueReveals": [
+            "the-harvest-men-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "the-harvest-men-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Visiting Agronomist Dina Crowe and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "the-harvest-men-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "the-harvest-men-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "the-harvest-men-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "the-harvest-men-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    },
+    {
+      "storyId": "ward-1908",
+      "title": "Ward 1908",
+      "hook": "A closed psychiatric hospital updates patient files every night at 1:08 a.m.",
+      "beatCount": 6,
+      "endingCount": 3,
+      "defaultRunSteps": 6,
+      "defaultRun": [
+        {
+          "beatId": "beat-1",
+          "beatTitle": "Night Update",
+          "selectedChoiceId": "choice-trace-source",
+          "selectedChoiceLabel": "Validate record edits against archive backups [intent: CURIOSITY]",
+          "clueReveals": [
+            "ward-1908-clue-origin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-2",
+          "beatTitle": "Escalation Signal",
+          "selectedChoiceId": "choice-preserve-evidence",
+          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "clueReveals": [
+            "ward-1908-clue-pressure"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-3",
+          "beatTitle": "Trust Fracture",
+          "selectedChoiceId": "choice-trust-handler",
+          "selectedChoiceLabel": "Trust Hospital Archivist Nella Ward and secure witness [intent: COMPLIANCE]",
+          "clueReveals": [
+            "ward-1908-clue-contradiction"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "SIGNAL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "beat-4",
+          "beatTitle": "Ultimatum Window",
+          "selectedChoiceId": "choice-save-npc",
+          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "clueReveals": [
+            "ward-1908-clue-timed-warning"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "beat-5",
+          "beatTitle": "Confrontation Protocol",
+          "selectedChoiceId": "choice-charge-villain",
+          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "clueReveals": [
+            "ward-1908-clue-reveal"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "beat-6",
+          "beatTitle": "Case Debrief",
+          "selectedChoiceId": "beat-6.choice.default-forward",
+          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "clueReveals": [
+            "ward-1908-clue-epilogue"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "DOCUMENT_DROP",
+            "EMAIL"
+          ]
+        }
+      ]
+    }
+  ]
+}

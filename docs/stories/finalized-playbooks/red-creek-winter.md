@@ -46,7 +46,7 @@
 - Narrative: The villain mixes real secrets with fabricated claims to split allies.
 - Incoming Message Sequence:
   - [TELEGRAM] Journalist Mara Finch: The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 44)
-  - [EMAIL] Survivor Owen Pike: Cross-reference this before dawn: Ski lodge camera still. (delay 3s, intensity 61)
+  - [SIGNAL] Survivor Owen Pike: Cross-reference this before dawn: Ski lodge camera still. (delay 3s, intensity 61)
   - [WHATSAPP] The White Knife: Don't trust the deputy if you like breathing. (Psychological Contact) (delay 6s, intensity 76)
 - Player Response Branches:
   - Trust Sheriff Dana Holt and secure witness -> beat-4 | intent=COMPLIANCE | progress +26
@@ -58,8 +58,8 @@
 - Villain Stage: 3
 - Narrative: A timed message threatens collateral harm unless the party diverts.
 - Incoming Message Sequence:
-  - [EMAIL] Survivor Owen Pike: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
-  - [VOICE_MESSAGE] Sheriff Dana Holt: Cross-reference this before dawn: Anonymous tip voicemail. (delay 3s, intensity 74)
+  - [SIGNAL] Survivor Owen Pike: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
+  - [EMAIL] Sheriff Dana Holt: Cross-reference this before dawn: Anonymous tip voicemail. (delay 3s, intensity 74)
   - [SMS] The White Knife: Tell the state police and she dies before sunrise. (Active Interference) (delay 6s, intensity 90)
 - Player Response Branches:
   - Divert to save threatened NPC -> beat-5 | intent=THREAT | progress +30
@@ -71,8 +71,8 @@
 - Villain Stage: 4
 - Narrative: Players reconstruct motive and false trails before collapse.
 - Incoming Message Sequence:
-  - [VOICE_MESSAGE] Sheriff Dana Holt: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [DOCUMENT_DROP] Deputy Nico Vale: Cross-reference this before dawn: Dispatch freeze frame. (delay 3s, intensity 87)
+  - [EMAIL] Sheriff Dana Holt: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [VOICE_MESSAGE] Deputy Nico Vale: Cross-reference this before dawn: Dispatch freeze frame. (delay 3s, intensity 87)
   - [EMAIL] The White Knife: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Commit to formal accusation and expose evidence chain -> beat-6 | intent=ACCUSATION | progress +34
@@ -84,8 +84,8 @@
 - Villain Stage: 4
 - Narrative: Final scoring resolves ending branch and season continuity flags.
 - Incoming Message Sequence:
-  - [DOCUMENT_DROP] Deputy Nico Vale: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [SIMULATED_SITE] Journalist Mara Finch: Cross-reference this before dawn: Snow-depth forensic note. (delay 3s, intensity 87)
+  - [VOICE_MESSAGE] Deputy Nico Vale: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [DOCUMENT_DROP] Journalist Mara Finch: Cross-reference this before dawn: Snow-depth forensic note. (delay 3s, intensity 87)
   - [EMAIL] The White Knife: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Proceed with controlled pressure -> ending | intent=CURIOSITY | progress +30

@@ -279,7 +279,8 @@
     "primaryChannels": [
       "SMS",
       "WHATSAPP",
-      "TELEGRAM"
+      "TELEGRAM",
+      "SIGNAL"
     ],
     "auxiliaryChannels": [
       "EMAIL",
@@ -595,7 +596,8 @@
       "type": "TAUNT",
       "channels": [
         "WHATSAPP",
-        "TELEGRAM"
+        "TELEGRAM",
+        "SIGNAL"
       ],
       "textTemplate": "The contractor lies because he signed the wall shut.",
       "personalizationKeys": [
@@ -639,7 +641,8 @@
       "stage": 3,
       "type": "COUNTDOWN",
       "channels": [
-        "SMS"
+        "SMS",
+        "SIGNAL"
       ],
       "textTemplate": "Nine minutes. Save the witness or save the truth.",
       "personalizationKeys": [

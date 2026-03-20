@@ -1,7 +1,7 @@
 {
   "storyId": "ward-1908",
   "title": "Ward 1908",
-  "generatedAt": "2026-03-20T13:59:22.943Z",
+  "generatedAt": "2026-03-20T14:49:20.987Z",
   "clips": [
     {
       "clipId": "voice.ward-1908.hospital-archivist-nella-ward.clip-1",
@@ -43,7 +43,7 @@
       "profileId": "voice.ward-1908.hospital-archivist-nella-ward",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Cross-reference this before dawn: Treatment wing floorplan.",
       "targetPath": "assets/audio/voices/ward-1908/hospital-archivist-nella-ward-2.wav",
       "providers": [
@@ -78,7 +78,7 @@
       "profileId": "voice.ward-1908.hospital-archivist-nella-ward",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/ward-1908/hospital-archivist-nella-ward-3.wav",
       "providers": [
@@ -183,7 +183,7 @@
       "profileId": "voice.ward-1908.former-nurse-evan-mire",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Cross-reference this before dawn: Intake ledger photo.",
       "targetPath": "assets/audio/voices/ward-1908/former-nurse-evan-mire-3.wav",
       "providers": [
@@ -218,7 +218,7 @@
       "profileId": "voice.ward-1908.former-nurse-evan-mire",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/ward-1908/former-nurse-evan-mire-4.wav",
       "providers": [
@@ -533,7 +533,7 @@
       "profileId": "voice.ward-1908.renovation-contractor-jo-pike",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "SIMULATED_SITE",
+      "channel": "DOCUMENT_DROP",
       "text": "Cross-reference this before dawn: Orderly shift recording.",
       "targetPath": "assets/audio/voices/ward-1908/renovation-contractor-jo-pike-3.wav",
       "providers": [
@@ -568,7 +568,7 @@
       "profileId": "voice.ward-1908.records-officer-hale-sorn",
       "beatId": "beat-3",
       "beatTitle": "Trust Fracture",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "Cross-reference this before dawn: Basement access override.",
       "targetPath": "assets/audio/voices/ward-1908/records-officer-hale-sorn-1.wav",
       "providers": [
@@ -603,7 +603,7 @@
       "profileId": "voice.ward-1908.records-officer-hale-sorn",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/ward-1908/records-officer-hale-sorn-2.wav",
       "providers": [

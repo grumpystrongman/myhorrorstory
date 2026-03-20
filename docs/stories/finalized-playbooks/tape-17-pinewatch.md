@@ -46,7 +46,7 @@
 - Narrative: The villain mixes real secrets with fabricated claims to split allies.
 - Incoming Message Sequence:
   - [TELEGRAM] Survivor Cade Rowan: The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 44)
-  - [EMAIL] Volunteer Search Lead Ellis Vann: Cross-reference this before dawn: Weather siren file. (delay 3s, intensity 61)
+  - [SIGNAL] Volunteer Search Lead Ellis Vann: Cross-reference this before dawn: Weather siren file. (delay 3s, intensity 61)
   - [WHATSAPP] The Editor: You keep chasing ghosts because people are harder to blame. (Psychological Contact) (delay 6s, intensity 76)
 - Player Response Branches:
   - Trust Ranger Juno Hale and secure witness -> beat-4 | intent=COMPLIANCE | progress +26
@@ -58,8 +58,8 @@
 - Villain Stage: 3
 - Narrative: A timed message threatens collateral harm unless the party diverts.
 - Incoming Message Sequence:
-  - [EMAIL] Volunteer Search Lead Ellis Vann: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
-  - [VOICE_MESSAGE] Ranger Juno Hale: Cross-reference this before dawn: Tripod footprint cast. (delay 3s, intensity 74)
+  - [SIGNAL] Volunteer Search Lead Ellis Vann: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
+  - [EMAIL] Ranger Juno Hale: Cross-reference this before dawn: Tripod footprint cast. (delay 3s, intensity 74)
   - [SMS] The Editor: If you scrub the footage again, he dies in real time. (Active Interference) (delay 6s, intensity 90)
 - Player Response Branches:
   - Divert to save threatened NPC -> beat-5 | intent=THREAT | progress +30
@@ -71,8 +71,8 @@
 - Villain Stage: 4
 - Narrative: Players reconstruct motive and false trails before collapse.
 - Incoming Message Sequence:
-  - [VOICE_MESSAGE] Ranger Juno Hale: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [DOCUMENT_DROP] Media Forensics Analyst Priya Sen: Cross-reference this before dawn: Frame glitch cluster. (delay 3s, intensity 87)
+  - [EMAIL] Ranger Juno Hale: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [VOICE_MESSAGE] Media Forensics Analyst Priya Sen: Cross-reference this before dawn: Frame glitch cluster. (delay 3s, intensity 87)
   - [EMAIL] The Editor: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Commit to formal accusation and expose evidence chain -> beat-6 | intent=ACCUSATION | progress +34
@@ -84,8 +84,8 @@
 - Villain Stage: 4
 - Narrative: Final scoring resolves ending branch and season continuity flags.
 - Incoming Message Sequence:
-  - [DOCUMENT_DROP] Media Forensics Analyst Priya Sen: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [SIMULATED_SITE] Survivor Cade Rowan: Cross-reference this before dawn: Ranger dispatch excerpt. (delay 3s, intensity 87)
+  - [VOICE_MESSAGE] Media Forensics Analyst Priya Sen: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [DOCUMENT_DROP] Survivor Cade Rowan: Cross-reference this before dawn: Ranger dispatch excerpt. (delay 3s, intensity 87)
   - [EMAIL] The Editor: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Proceed with controlled pressure -> ending | intent=CURIOSITY | progress +30

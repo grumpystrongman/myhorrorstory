@@ -1,6 +1,6 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
 
-export type SupportedMessagingChannel = 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+export type SupportedMessagingChannel = 'SMS' | 'WHATSAPP' | 'TELEGRAM' | 'SIGNAL';
 
 export type MessagingMetadataValue = boolean | number | string;
 
@@ -238,6 +238,75 @@ export class TelegramMessagingProvider implements MessagingProvider {
   }
 }
 
+export interface SignalMessagingProviderOptions {
+  gatewayUrl: string;
+  account: string;
+  bearerToken?: string;
+}
+
+interface SignalSendResponse {
+  timestamp?: number | string;
+}
+
+function toIsoFromTimestampMaybeSeconds(input: number): string {
+  const millis = input < 1_000_000_000_000 ? input * 1000 : input;
+  return new Date(millis).toISOString();
+}
+
+export class SignalMessagingProvider implements MessagingProvider {
+  readonly id = 'signal';
+
+  constructor(private readonly options: SignalMessagingProviderOptions) {}
+
+  supports(channel: SupportedMessagingChannel): boolean {
+    return channel === 'SIGNAL';
+  }
+
+  async send(payload: MessagingPayload): Promise<DeliveryReceipt> {
+    if (!this.supports(payload.channel)) {
+      throw new Error(`Signal provider does not support channel ${payload.channel}`);
+    }
+
+    const endpoint = `${this.options.gatewayUrl.replace(/\/$/, '')}/v2/send`;
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json'
+    };
+    if (this.options.bearerToken) {
+      headers.Authorization = `Bearer ${this.options.bearerToken}`;
+    }
+
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        number: this.options.account,
+        recipients: [payload.to],
+        message: payload.text,
+        attachments: payload.mediaUrls ?? []
+      })
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`Signal send failed (${response.status}): ${errorText}`);
+    }
+
+    const data = (await response.json()) as SignalSendResponse;
+    const timestamp = data.timestamp?.toString() ?? Date.now().toString();
+    const acceptedAt = /^\d+$/.test(timestamp)
+      ? toIsoFromTimestampMaybeSeconds(Number(timestamp))
+      : new Date().toISOString();
+
+    return {
+      provider: this.id,
+      channel: payload.channel,
+      to: payload.to,
+      externalMessageId: `signal-${timestamp}`,
+      acceptedAt
+    };
+  }
+}
+
 export class MessagingRouter {
   constructor(private readonly providers: MessagingProvider[]) {}
 
@@ -273,6 +342,9 @@ export interface MessagingEnvironment {
   TELEGRAM_BOT_TOKEN?: string;
   TELEGRAM_PARSE_MODE?: 'HTML' | 'Markdown' | 'MarkdownV2';
   TELEGRAM_DISABLE_NOTIFICATION?: string;
+  SIGNAL_GATEWAY_URL?: string;
+  SIGNAL_ACCOUNT?: string;
+  SIGNAL_BEARER_TOKEN?: string;
 }
 
 export function createDefaultMessagingProviders(
@@ -298,6 +370,16 @@ export function createDefaultMessagingProviders(
         botToken: env.TELEGRAM_BOT_TOKEN,
         parseMode: env.TELEGRAM_PARSE_MODE,
         disableNotification: env.TELEGRAM_DISABLE_NOTIFICATION === 'true'
+      })
+    );
+  }
+
+  if (env.SIGNAL_GATEWAY_URL && env.SIGNAL_ACCOUNT) {
+    providers.push(
+      new SignalMessagingProvider({
+        gatewayUrl: env.SIGNAL_GATEWAY_URL,
+        account: env.SIGNAL_ACCOUNT,
+        bearerToken: env.SIGNAL_BEARER_TOKEN
       })
     );
   }
@@ -387,6 +469,19 @@ export function verifyTelegramSecretToken(input: {
   return safeCompareString(input.expectedToken, input.receivedToken);
 }
 
+export function verifySignalWebhookSecret(input: {
+  expectedSecret?: string;
+  receivedSecret?: string | null;
+}): boolean {
+  if (!input.expectedSecret) {
+    return true;
+  }
+  if (!input.receivedSecret) {
+    return false;
+  }
+  return safeCompareString(input.expectedSecret, input.receivedSecret);
+}
+
 export function normalizeTwilioInbound(body: Record<string, string>): NormalizedInboundMessage {
   const from = body.From ?? body.WaId ?? '';
   const to = body.To ?? '';
@@ -461,5 +556,51 @@ export function normalizeTelegramInbound(update: TelegramUpdateEnvelope): Normal
       updateId: update.update_id ?? 0
     },
     raw: update
+  };
+}
+
+interface SignalInboundEnvelope {
+  envelope?: {
+    source?: string;
+    timestamp?: number;
+    dataMessage?: {
+      message?: string;
+      groupInfo?: {
+        groupId?: string;
+      };
+    };
+  };
+  source?: string;
+  message?: string;
+  timestamp?: number;
+  event?: {
+    source?: string;
+    message?: string;
+    timestamp?: number;
+  };
+}
+
+export function normalizeSignalInbound(payload: SignalInboundEnvelope): NormalizedInboundMessage {
+  const envelopeMessage = payload.envelope?.dataMessage?.message;
+  const eventMessage = payload.event?.message;
+  const text = envelopeMessage ?? eventMessage ?? payload.message ?? '';
+  const from = payload.envelope?.source ?? payload.event?.source ?? payload.source ?? '';
+  const timestamp = payload.envelope?.timestamp ?? payload.event?.timestamp ?? payload.timestamp;
+  const groupId = payload.envelope?.dataMessage?.groupInfo?.groupId;
+
+  if (!from || !text) {
+    throw new Error('signal_payload_invalid');
+  }
+
+  return {
+    channel: 'SIGNAL',
+    from,
+    text,
+    externalMessageId: timestamp ? `signal-${timestamp}` : undefined,
+    receivedAt: typeof timestamp === 'number' ? toIsoFromTimestampMaybeSeconds(timestamp) : new Date().toISOString(),
+    metadata: {
+      groupId: groupId ?? ''
+    },
+    raw: payload
   };
 }

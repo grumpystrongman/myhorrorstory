@@ -46,7 +46,7 @@
 - Narrative: The villain mixes real secrets with fabricated claims to split allies.
 - Incoming Message Sequence:
   - [TELEGRAM] Night Tenant Maris Holt: The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 44)
-  - [EMAIL] Claims Adjuster Felix Noor: Cross-reference this before dawn: Water-damage restoration invoice. (delay 3s, intensity 61)
+  - [SIGNAL] Claims Adjuster Felix Noor: Cross-reference this before dawn: Water-damage restoration invoice. (delay 3s, intensity 61)
   - [WHATSAPP] The Landlord of Rooms That Move: Don't trust the woman in red by the stairwell. (Psychological Contact) (delay 6s, intensity 76)
 - Player Response Branches:
   - Trust Building Superintendent Leda Price and secure witness -> beat-4 | intent=COMPLIANCE | progress +26
@@ -58,8 +58,8 @@
 - Villain Stage: 3
 - Narrative: A timed message threatens collateral harm unless the party diverts.
 - Incoming Message Sequence:
-  - [EMAIL] Claims Adjuster Felix Noor: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
-  - [VOICE_MESSAGE] Building Superintendent Leda Price: Cross-reference this before dawn: Night entry key hash. (delay 3s, intensity 74)
+  - [SIGNAL] Claims Adjuster Felix Noor: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
+  - [EMAIL] Building Superintendent Leda Price: Cross-reference this before dawn: Night entry key hash. (delay 3s, intensity 74)
   - [SMS] The Landlord of Rooms That Move: Tell the police and she loses the door forever. (Active Interference) (delay 6s, intensity 90)
 - Player Response Branches:
   - Divert to save threatened NPC -> beat-5 | intent=THREAT | progress +30
@@ -71,8 +71,8 @@
 - Villain Stage: 4
 - Narrative: Players reconstruct motive and false trails before collapse.
 - Incoming Message Sequence:
-  - [VOICE_MESSAGE] Building Superintendent Leda Price: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [DOCUMENT_DROP] Lease Broker Owen Pike: Cross-reference this before dawn: Lease chain checksum. (delay 3s, intensity 87)
+  - [EMAIL] Building Superintendent Leda Price: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [VOICE_MESSAGE] Lease Broker Owen Pike: Cross-reference this before dawn: Lease chain checksum. (delay 3s, intensity 87)
   - [EMAIL] The Landlord of Rooms That Move: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Commit to formal accusation and expose evidence chain -> beat-6 | intent=ACCUSATION | progress +34
@@ -84,8 +84,8 @@
 - Villain Stage: 4
 - Narrative: Final scoring resolves ending branch and season continuity flags.
 - Incoming Message Sequence:
-  - [DOCUMENT_DROP] Lease Broker Owen Pike: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [SIMULATED_SITE] Night Tenant Maris Holt: Cross-reference this before dawn: Hallway thermal still. (delay 3s, intensity 87)
+  - [VOICE_MESSAGE] Lease Broker Owen Pike: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [DOCUMENT_DROP] Night Tenant Maris Holt: Cross-reference this before dawn: Hallway thermal still. (delay 3s, intensity 87)
   - [EMAIL] The Landlord of Rooms That Move: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Proceed with controlled pressure -> ending | intent=CURIOSITY | progress +30

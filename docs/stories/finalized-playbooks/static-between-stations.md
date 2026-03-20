@@ -46,7 +46,7 @@
 - Narrative: The villain mixes real secrets with fabricated claims to split allies.
 - Incoming Message Sequence:
   - [TELEGRAM] Commuter Witness Nia Vale: The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 44)
-  - [EMAIL] Transit Auditor Bram Keene: Cross-reference this before dawn: Turnstile camera still. (delay 3s, intensity 61)
+  - [SIGNAL] Transit Auditor Bram Keene: Cross-reference this before dawn: Turnstile camera still. (delay 3s, intensity 61)
   - [WHATSAPP] The Curator of Static: You were sharper before you trusted the wrong voice. (Psychological Contact) (delay 6s, intensity 76)
 - Player Response Branches:
   - Trust Lead Investigator Mara Quinn and secure witness -> beat-4 | intent=COMPLIANCE | progress +26
@@ -58,8 +58,8 @@
 - Villain Stage: 3
 - Narrative: A timed message threatens collateral harm unless the party diverts.
 - Incoming Message Sequence:
-  - [EMAIL] Transit Auditor Bram Keene: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
-  - [VOICE_MESSAGE] Lead Investigator Mara Quinn: Cross-reference this before dawn: Relay room access hash. (delay 3s, intensity 74)
+  - [SIGNAL] Transit Auditor Bram Keene: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
+  - [EMAIL] Lead Investigator Mara Quinn: Cross-reference this before dawn: Relay room access hash. (delay 3s, intensity 74)
   - [SMS] The Curator of Static: If you call dispatch, she disappears before dawn. (Active Interference) (delay 6s, intensity 90)
 - Player Response Branches:
   - Divert to save threatened NPC -> beat-5 | intent=THREAT | progress +30
@@ -71,8 +71,8 @@
 - Villain Stage: 4
 - Narrative: Players reconstruct motive and false trails before collapse.
 - Incoming Message Sequence:
-  - [VOICE_MESSAGE] Lead Investigator Mara Quinn: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [DOCUMENT_DROP] Dispatch Handler Ilya Ross: Cross-reference this before dawn: Spectrogram of confession burst. (delay 3s, intensity 87)
+  - [EMAIL] Lead Investigator Mara Quinn: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [VOICE_MESSAGE] Dispatch Handler Ilya Ross: Cross-reference this before dawn: Spectrogram of confession burst. (delay 3s, intensity 87)
   - [EMAIL] The Curator of Static: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Commit to formal accusation and expose evidence chain -> beat-6 | intent=ACCUSATION | progress +34
@@ -84,8 +84,8 @@
 - Villain Stage: 4
 - Narrative: Final scoring resolves ending branch and season continuity flags.
 - Incoming Message Sequence:
-  - [DOCUMENT_DROP] Dispatch Handler Ilya Ross: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [SIMULATED_SITE] Commuter Witness Nia Vale: Cross-reference this before dawn: Maintenance ledger anomaly. (delay 3s, intensity 87)
+  - [VOICE_MESSAGE] Dispatch Handler Ilya Ross: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [DOCUMENT_DROP] Commuter Witness Nia Vale: Cross-reference this before dawn: Maintenance ledger anomaly. (delay 3s, intensity 87)
   - [EMAIL] The Curator of Static: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Proceed with controlled pressure -> ending | intent=CURIOSITY | progress +30

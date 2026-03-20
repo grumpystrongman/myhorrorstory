@@ -3,8 +3,10 @@ import {
   coerceWebhookBodyToRecord,
   computeTwilioSignature,
   MessagingRouter,
+  normalizeSignalInbound,
   normalizeTelegramInbound,
   normalizeTwilioInbound,
+  verifySignalWebhookSecret,
   verifyTelegramSecretToken,
   verifyTwilioSignature,
   type DeliveryReceipt,
@@ -15,11 +17,11 @@ import {
 class StubProvider implements MessagingProvider {
   constructor(
     readonly id: string,
-    private readonly channels: Set<'SMS' | 'WHATSAPP' | 'TELEGRAM'>,
+    private readonly channels: Set<'SMS' | 'WHATSAPP' | 'TELEGRAM' | 'SIGNAL'>,
     private readonly fail = false
   ) {}
 
-  supports(channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM'): boolean {
+  supports(channel: 'SMS' | 'WHATSAPP' | 'TELEGRAM' | 'SIGNAL'): boolean {
     return this.channels.has(channel);
   }
 
@@ -97,6 +99,22 @@ describe('webhook normalization', () => {
     expect(normalized.from).toBe('123');
     expect(normalized.text).toContain('Eli');
   });
+
+  it('normalizes signal payload', () => {
+    const normalized = normalizeSignalInbound({
+      envelope: {
+        source: '+15550009999',
+        timestamp: 1710000100,
+        dataMessage: {
+          message: 'The tunnel lock is false.'
+        }
+      }
+    });
+
+    expect(normalized.channel).toBe('SIGNAL');
+    expect(normalized.from).toBe('+15550009999');
+    expect(normalized.text).toContain('tunnel');
+  });
 });
 
 describe('signature verification', () => {
@@ -131,6 +149,21 @@ describe('signature verification', () => {
       verifyTelegramSecretToken({
         expectedToken: 'secret',
         receivedToken: 'wrong'
+      })
+    ).toBe(false);
+  });
+
+  it('verifies signal webhook secret', () => {
+    expect(
+      verifySignalWebhookSecret({
+        expectedSecret: 'signal-secret',
+        receivedSecret: 'signal-secret'
+      })
+    ).toBe(true);
+    expect(
+      verifySignalWebhookSecret({
+        expectedSecret: 'signal-secret',
+        receivedSecret: 'wrong-secret'
       })
     ).toBe(false);
   });

@@ -46,7 +46,7 @@
 - Narrative: The villain mixes real secrets with fabricated claims to split allies.
 - Incoming Message Sequence:
   - [TELEGRAM] Grid Operator Niko Saye: The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 44)
-  - [EMAIL] Incident Bot Liaison K-12: Cross-reference this before dawn: Intercepted bot transcript. (delay 3s, intensity 61)
+  - [SIGNAL] Incident Bot Liaison K-12: Cross-reference this before dawn: Intercepted bot transcript. (delay 3s, intensity 61)
   - [WHATSAPP] Root Administrator: Don't trust the operator in red status. (Psychological Contact) (delay 6s, intensity 76)
 - Player Response Branches:
   - Trust Security Engineer Talia Ren and secure witness -> beat-4 | intent=COMPLIANCE | progress +26
@@ -58,8 +58,8 @@
 - Villain Stage: 3
 - Narrative: A timed message threatens collateral harm unless the party diverts.
 - Incoming Message Sequence:
-  - [EMAIL] Incident Bot Liaison K-12: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
-  - [VOICE_MESSAGE] Security Engineer Talia Ren: Cross-reference this before dawn: Abandoned node scan. (delay 3s, intensity 74)
+  - [SIGNAL] Incident Bot Liaison K-12: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
+  - [EMAIL] Security Engineer Talia Ren: Cross-reference this before dawn: Abandoned node scan. (delay 3s, intensity 74)
   - [SMS] Root Administrator: Report me, and district three goes dark first. (Active Interference) (delay 6s, intensity 90)
 - Player Response Branches:
   - Divert to save threatened NPC -> beat-5 | intent=THREAT | progress +30
@@ -71,8 +71,8 @@
 - Villain Stage: 4
 - Narrative: Players reconstruct motive and false trails before collapse.
 - Incoming Message Sequence:
-  - [VOICE_MESSAGE] Security Engineer Talia Ren: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [DOCUMENT_DROP] Streamer Bo Finch: Cross-reference this before dawn: Protocol signed payload. (delay 3s, intensity 87)
+  - [EMAIL] Security Engineer Talia Ren: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [VOICE_MESSAGE] Streamer Bo Finch: Cross-reference this before dawn: Protocol signed payload. (delay 3s, intensity 87)
   - [EMAIL] Root Administrator: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Commit to formal accusation and expose evidence chain -> beat-6 | intent=ACCUSATION | progress +34
@@ -84,8 +84,8 @@
 - Villain Stage: 4
 - Narrative: Final scoring resolves ending branch and season continuity flags.
 - Incoming Message Sequence:
-  - [DOCUMENT_DROP] Streamer Bo Finch: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [SIMULATED_SITE] Grid Operator Niko Saye: Cross-reference this before dawn: Substation outage trace. (delay 3s, intensity 87)
+  - [VOICE_MESSAGE] Streamer Bo Finch: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [DOCUMENT_DROP] Grid Operator Niko Saye: Cross-reference this before dawn: Substation outage trace. (delay 3s, intensity 87)
   - [EMAIL] Root Administrator: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Proceed with controlled pressure -> ending | intent=CURIOSITY | progress +30

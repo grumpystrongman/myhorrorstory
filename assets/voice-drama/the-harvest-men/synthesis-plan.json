@@ -1,7 +1,7 @@
 {
   "storyId": "the-harvest-men",
   "title": "The Harvest Men",
-  "generatedAt": "2026-03-20T13:59:22.936Z",
+  "generatedAt": "2026-03-20T14:49:20.980Z",
   "clips": [
     {
       "clipId": "voice.the-harvest-men.visiting-agronomist-dina-crowe.clip-1",
@@ -43,7 +43,7 @@
       "profileId": "voice.the-harvest-men.visiting-agronomist-dina-crowe",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Cross-reference this before dawn: Mask stitch microscopy.",
       "targetPath": "assets/audio/voices/the-harvest-men/visiting-agronomist-dina-crowe-2.wav",
       "providers": [
@@ -78,7 +78,7 @@
       "profileId": "voice.the-harvest-men.visiting-agronomist-dina-crowe",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/the-harvest-men/visiting-agronomist-dina-crowe-3.wav",
       "providers": [
@@ -183,7 +183,7 @@
       "profileId": "voice.the-harvest-men.village-elder-rowan-pike",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Cross-reference this before dawn: Blood-soil composition panel.",
       "targetPath": "assets/audio/voices/the-harvest-men/village-elder-rowan-pike-3.wav",
       "providers": [
@@ -218,7 +218,7 @@
       "profileId": "voice.the-harvest-men.village-elder-rowan-pike",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/the-harvest-men/village-elder-rowan-pike-4.wav",
       "providers": [
@@ -533,7 +533,7 @@
       "profileId": "voice.the-harvest-men.runaway-teen-lio-strand",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "SIMULATED_SITE",
+      "channel": "DOCUMENT_DROP",
       "text": "Cross-reference this before dawn: Festival lantern route map.",
       "targetPath": "assets/audio/voices/the-harvest-men/runaway-teen-lio-strand-3.wav",
       "providers": [
@@ -568,7 +568,7 @@
       "profileId": "voice.the-harvest-men.festival-marshal-jarek-holt",
       "beatId": "beat-3",
       "beatTitle": "Trust Fracture",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "Cross-reference this before dawn: Runaway voice memo.",
       "targetPath": "assets/audio/voices/the-harvest-men/festival-marshal-jarek-holt-1.wav",
       "providers": [
@@ -603,7 +603,7 @@
       "profileId": "voice.the-harvest-men.festival-marshal-jarek-holt",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/the-harvest-men/festival-marshal-jarek-holt-2.wav",
       "providers": [

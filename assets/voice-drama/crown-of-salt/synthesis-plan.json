@@ -1,7 +1,7 @@
 {
   "storyId": "crown-of-salt",
   "title": "Crown of Salt",
-  "generatedAt": "2026-03-20T13:59:22.864Z",
+  "generatedAt": "2026-03-20T14:49:20.913Z",
   "clips": [
     {
       "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-1",
@@ -43,7 +43,7 @@
       "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Cross-reference this before dawn: Customs API anomaly log.",
       "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-2.wav",
       "providers": [
@@ -78,7 +78,7 @@
       "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-3.wav",
       "providers": [
@@ -183,7 +183,7 @@
       "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Cross-reference this before dawn: Brine-sealed manifest.",
       "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-3.wav",
       "providers": [
@@ -218,7 +218,7 @@
       "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-4.wav",
       "providers": [
@@ -533,7 +533,7 @@
       "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "SIMULATED_SITE",
+      "channel": "DOCUMENT_DROP",
       "text": "Cross-reference this before dawn: Dockside CCTV still.",
       "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-3.wav",
       "providers": [
@@ -568,7 +568,7 @@
       "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
       "beatId": "beat-3",
       "beatTitle": "Trust Fracture",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "Cross-reference this before dawn: Catacomb symbol tracing.",
       "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-1.wav",
       "providers": [
@@ -603,7 +603,7 @@
       "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-2.wav",
       "providers": [

@@ -15,6 +15,7 @@
     "SMS",
     "WHATSAPP",
     "TELEGRAM",
+    "SIGNAL",
     "EMAIL",
     "VOICE_MESSAGE",
     "DOCUMENT_DROP",
@@ -247,7 +248,7 @@
           "id": "beat-3.msg.secondary",
           "senderName": "Debt Broker Cal Dorn",
           "role": "investigator",
-          "channel": "EMAIL",
+          "channel": "SIGNAL",
           "text": "Cross-reference this before dawn: Crypt key inventory.",
           "delaySeconds": 3,
           "intensity": 61
@@ -319,7 +320,7 @@
           "id": "beat-4.msg.handler",
           "senderName": "Debt Broker Cal Dorn",
           "role": "investigator",
-          "channel": "EMAIL",
+          "channel": "SIGNAL",
           "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 56
@@ -328,7 +329,7 @@
           "id": "beat-4.msg.secondary",
           "senderName": "Canon Archivist Elara Voss",
           "role": "operator",
-          "channel": "VOICE_MESSAGE",
+          "channel": "EMAIL",
           "text": "Cross-reference this before dawn: Ledger watermark scan.",
           "delaySeconds": 3,
           "intensity": 74
@@ -400,7 +401,7 @@
           "id": "beat-5.msg.handler",
           "senderName": "Canon Archivist Elara Voss",
           "role": "operator",
-          "channel": "VOICE_MESSAGE",
+          "channel": "EMAIL",
           "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 68
@@ -409,7 +410,7 @@
           "id": "beat-5.msg.secondary",
           "senderName": "Bell Keeper Tomas Grell",
           "role": "witness",
-          "channel": "DOCUMENT_DROP",
+          "channel": "VOICE_MESSAGE",
           "text": "Cross-reference this before dawn: Burned vellum fragment.",
           "delaySeconds": 3,
           "intensity": 87
@@ -481,7 +482,7 @@
           "id": "beat-6.msg.handler",
           "senderName": "Bell Keeper Tomas Grell",
           "role": "witness",
-          "channel": "DOCUMENT_DROP",
+          "channel": "VOICE_MESSAGE",
           "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 68
@@ -490,7 +491,7 @@
           "id": "beat-6.msg.secondary",
           "senderName": "Choir Witness Sera March",
           "role": "witness",
-          "channel": "SIMULATED_SITE",
+          "channel": "DOCUMENT_DROP",
           "text": "Cross-reference this before dawn: Choir rehearsal wax recording.",
           "delaySeconds": 3,
           "intensity": 87

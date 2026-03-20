@@ -46,7 +46,7 @@
 - Narrative: The villain mixes real secrets with fabricated claims to split allies.
 - Incoming Message Sequence:
   - [TELEGRAM] Choir Witness Sera March: The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 44)
-  - [EMAIL] Debt Broker Cal Dorn: Cross-reference this before dawn: Crypt key inventory. (delay 3s, intensity 61)
+  - [SIGNAL] Debt Broker Cal Dorn: Cross-reference this before dawn: Crypt key inventory. (delay 3s, intensity 61)
   - [WHATSAPP] The Creditor: Don't trust the one who rings the bell after midnight. (Psychological Contact) (delay 6s, intensity 76)
 - Player Response Branches:
   - Trust Canon Archivist Elara Voss and secure witness -> beat-4 | intent=COMPLIANCE | progress +26
@@ -58,8 +58,8 @@
 - Villain Stage: 3
 - Narrative: A timed message threatens collateral harm unless the party diverts.
 - Incoming Message Sequence:
-  - [EMAIL] Debt Broker Cal Dorn: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
-  - [VOICE_MESSAGE] Canon Archivist Elara Voss: Cross-reference this before dawn: Ledger watermark scan. (delay 3s, intensity 74)
+  - [SIGNAL] Debt Broker Cal Dorn: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
+  - [EMAIL] Canon Archivist Elara Voss: Cross-reference this before dawn: Ledger watermark scan. (delay 3s, intensity 74)
   - [SMS] The Creditor: Confess publicly, or the choir girl pays your debt first. (Active Interference) (delay 6s, intensity 90)
 - Player Response Branches:
   - Divert to save threatened NPC -> beat-5 | intent=THREAT | progress +30
@@ -71,8 +71,8 @@
 - Villain Stage: 4
 - Narrative: Players reconstruct motive and false trails before collapse.
 - Incoming Message Sequence:
-  - [VOICE_MESSAGE] Canon Archivist Elara Voss: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [DOCUMENT_DROP] Bell Keeper Tomas Grell: Cross-reference this before dawn: Burned vellum fragment. (delay 3s, intensity 87)
+  - [EMAIL] Canon Archivist Elara Voss: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [VOICE_MESSAGE] Bell Keeper Tomas Grell: Cross-reference this before dawn: Burned vellum fragment. (delay 3s, intensity 87)
   - [EMAIL] The Creditor: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Commit to formal accusation and expose evidence chain -> beat-6 | intent=ACCUSATION | progress +34
@@ -84,8 +84,8 @@
 - Villain Stage: 4
 - Narrative: Final scoring resolves ending branch and season continuity flags.
 - Incoming Message Sequence:
-  - [DOCUMENT_DROP] Bell Keeper Tomas Grell: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [SIMULATED_SITE] Choir Witness Sera March: Cross-reference this before dawn: Choir rehearsal wax recording. (delay 3s, intensity 87)
+  - [VOICE_MESSAGE] Bell Keeper Tomas Grell: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [DOCUMENT_DROP] Choir Witness Sera March: Cross-reference this before dawn: Choir rehearsal wax recording. (delay 3s, intensity 87)
   - [EMAIL] The Creditor: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Proceed with controlled pressure -> ending | intent=CURIOSITY | progress +30

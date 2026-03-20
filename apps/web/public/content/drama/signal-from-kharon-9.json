@@ -15,6 +15,7 @@
     "SMS",
     "WHATSAPP",
     "TELEGRAM",
+    "SIGNAL",
     "EMAIL",
     "VOICE_MESSAGE",
     "DOCUMENT_DROP",
@@ -247,7 +248,7 @@
           "id": "beat-3.msg.secondary",
           "senderName": "Telemetry Broker Vale-9",
           "role": "investigator",
-          "channel": "EMAIL",
+          "channel": "SIGNAL",
           "text": "Cross-reference this before dawn: Array maintenance gap log.",
           "delaySeconds": 3,
           "intensity": 61
@@ -319,7 +320,7 @@
           "id": "beat-4.msg.handler",
           "senderName": "Telemetry Broker Vale-9",
           "role": "investigator",
-          "channel": "EMAIL",
+          "channel": "SIGNAL",
           "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 56
@@ -328,7 +329,7 @@
           "id": "beat-4.msg.secondary",
           "senderName": "Systems Engineer Ari Vance",
           "role": "operator",
-          "channel": "VOICE_MESSAGE",
+          "channel": "EMAIL",
           "text": "Cross-reference this before dawn: Operator biometric mismatch.",
           "delaySeconds": 3,
           "intensity": 74
@@ -400,7 +401,7 @@
           "id": "beat-5.msg.handler",
           "senderName": "Systems Engineer Ari Vance",
           "role": "operator",
-          "channel": "VOICE_MESSAGE",
+          "channel": "EMAIL",
           "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 68
@@ -409,7 +410,7 @@
           "id": "beat-5.msg.secondary",
           "senderName": "Astrophysicist Dr. Helene Oru",
           "role": "witness",
-          "channel": "DOCUMENT_DROP",
+          "channel": "VOICE_MESSAGE",
           "text": "Cross-reference this before dawn: Telemetry checksum drift.",
           "delaySeconds": 3,
           "intensity": 87
@@ -481,7 +482,7 @@
           "id": "beat-6.msg.handler",
           "senderName": "Astrophysicist Dr. Helene Oru",
           "role": "witness",
-          "channel": "DOCUMENT_DROP",
+          "channel": "VOICE_MESSAGE",
           "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
           "delaySeconds": 1,
           "intensity": 68
@@ -490,7 +491,7 @@
           "id": "beat-6.msg.secondary",
           "senderName": "Array Operator Micah Trent",
           "role": "witness",
-          "channel": "SIMULATED_SITE",
+          "channel": "DOCUMENT_DROP",
           "text": "Cross-reference this before dawn: Starfield deviation map.",
           "delaySeconds": 3,
           "intensity": 87

@@ -46,7 +46,7 @@
 - Narrative: The villain mixes real secrets with fabricated claims to split allies.
 - Incoming Message Sequence:
   - [TELEGRAM] Runaway Teen Lio Strand: The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 44)
-  - [EMAIL] Festival Marshal Jarek Holt: Cross-reference this before dawn: Runaway voice memo. (delay 3s, intensity 61)
+  - [SIGNAL] Festival Marshal Jarek Holt: Cross-reference this before dawn: Runaway voice memo. (delay 3s, intensity 61)
   - [WHATSAPP] The Reaper Steward: You keep calling this rescue. They call it theft. (Psychological Contact) (delay 6s, intensity 76)
 - Player Response Branches:
   - Trust Visiting Agronomist Dina Crowe and secure witness -> beat-4 | intent=COMPLIANCE | progress +26
@@ -58,8 +58,8 @@
 - Villain Stage: 3
 - Narrative: A timed message threatens collateral harm unless the party diverts.
 - Incoming Message Sequence:
-  - [EMAIL] Festival Marshal Jarek Holt: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
-  - [VOICE_MESSAGE] Visiting Agronomist Dina Crowe: Cross-reference this before dawn: Mask stitch microscopy. (delay 3s, intensity 74)
+  - [SIGNAL] Festival Marshal Jarek Holt: A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 56)
+  - [EMAIL] Visiting Agronomist Dina Crowe: Cross-reference this before dawn: Mask stitch microscopy. (delay 3s, intensity 74)
   - [SMS] The Reaper Steward: Miss the dusk bell and the boy is chosen next. (Active Interference) (delay 6s, intensity 90)
 - Player Response Branches:
   - Divert to save threatened NPC -> beat-5 | intent=THREAT | progress +30
@@ -71,8 +71,8 @@
 - Villain Stage: 4
 - Narrative: Players reconstruct motive and false trails before collapse.
 - Incoming Message Sequence:
-  - [VOICE_MESSAGE] Visiting Agronomist Dina Crowe: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [DOCUMENT_DROP] Village Elder Rowan Pike: Cross-reference this before dawn: Blood-soil composition panel. (delay 3s, intensity 87)
+  - [EMAIL] Visiting Agronomist Dina Crowe: Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [VOICE_MESSAGE] Village Elder Rowan Pike: Cross-reference this before dawn: Blood-soil composition panel. (delay 3s, intensity 87)
   - [EMAIL] The Reaper Steward: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Commit to formal accusation and expose evidence chain -> beat-6 | intent=ACCUSATION | progress +34
@@ -84,8 +84,8 @@
 - Villain Stage: 4
 - Narrative: Final scoring resolves ending branch and season continuity flags.
 - Incoming Message Sequence:
-  - [DOCUMENT_DROP] Village Elder Rowan Pike: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
-  - [SIMULATED_SITE] Runaway Teen Lio Strand: Cross-reference this before dawn: Festival lantern route map. (delay 3s, intensity 87)
+  - [VOICE_MESSAGE] Village Elder Rowan Pike: Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open. (delay 1s, intensity 68)
+  - [DOCUMENT_DROP] Runaway Teen Lio Strand: Cross-reference this before dawn: Festival lantern route map. (delay 3s, intensity 87)
   - [EMAIL] The Reaper Steward: Confess one lie and I return one life. (Personal Confrontation) (delay 6s, intensity 100)
 - Player Response Branches:
   - Proceed with controlled pressure -> ending | intent=CURIOSITY | progress +30

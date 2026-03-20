@@ -3,6 +3,7 @@ import {
   coerceWebhookBodyToRecord,
   createDefaultMessagingProviders,
   MessagingRouter,
+  normalizeSignalInbound,
   normalizeTelegramInbound,
   normalizeTwilioInbound,
   type DeliveryReceipt,
@@ -97,6 +98,14 @@ export class ChannelsService {
           fallbackProvider: 'console',
           webhookUrl: `${baseUrl}/api/v1/webhooks/telegram`,
           missingEnv: this.missingTelegramEnv()
+        },
+        {
+          channel: 'SIGNAL',
+          configured: this.hasSignal(),
+          liveProvider: this.hasSignal() ? 'signal' : null,
+          fallbackProvider: 'console',
+          webhookUrl: `${baseUrl}/api/v1/webhooks/signal`,
+          missingEnv: this.missingSignalEnv()
         }
       ]
     };
@@ -283,6 +292,11 @@ export class ChannelsService {
     return this.processInboundMessage(inbound);
   }
 
+  processSignalWebhook(body: unknown): InboundProcessingResult {
+    const inbound = normalizeSignalInbound(body as Parameters<typeof normalizeSignalInbound>[0]);
+    return this.processInboundMessage(inbound);
+  }
+
   private processInboundMessage(message: NormalizedInboundMessage): InboundProcessingResult {
     const channel = message.channel as SetupMessagingChannel;
     const route = this.inboundRouteIndex.get(this.routeKey(channel, this.normalizeAddress(channel, message.from)));
@@ -352,6 +366,10 @@ export class ChannelsService {
     return Boolean(process.env.TELEGRAM_BOT_TOKEN);
   }
 
+  private hasSignal(): boolean {
+    return Boolean(process.env.SIGNAL_GATEWAY_URL && process.env.SIGNAL_ACCOUNT);
+  }
+
   private missingSmsEnv(): string[] {
     const missing = [];
     if (!process.env.TWILIO_ACCOUNT_SID) {
@@ -388,6 +406,17 @@ export class ChannelsService {
     return missing;
   }
 
+  private missingSignalEnv(): string[] {
+    const missing = [];
+    if (!process.env.SIGNAL_GATEWAY_URL) {
+      missing.push('SIGNAL_GATEWAY_URL');
+    }
+    if (!process.env.SIGNAL_ACCOUNT) {
+      missing.push('SIGNAL_ACCOUNT');
+    }
+    return missing;
+  }
+
   private enrollmentKey(caseId: string, playerId: string): string {
     return `${caseId}:${playerId}`;
   }
@@ -409,6 +438,10 @@ export class ChannelsService {
 
     if (channel === 'TELEGRAM') {
       return compact;
+    }
+
+    if (channel === 'SIGNAL') {
+      return compact.toLowerCase();
     }
 
     if (channel === 'WHATSAPP') {

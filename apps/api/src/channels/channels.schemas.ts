@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const setupMessagingChannelSchema = z.enum(['SMS', 'WHATSAPP', 'TELEGRAM']);
+export const setupMessagingChannelSchema = z.enum(['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL']);
 
 export const setupContactSchema = z.object({
   channel: setupMessagingChannelSchema,

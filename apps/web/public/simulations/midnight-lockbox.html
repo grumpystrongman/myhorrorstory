@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Midnight Lockbox | Full Playthrough Simulation</title>
+  <style>
+    :root {
+      --ink: #f5efe2;
+      --muted: #c8bdab;
+      --bg: #05070a;
+      --panel: rgba(13, 19, 27, 0.9);
+      --line: #2a3a4f;
+      --accent: #e3a05d;
+      --accent-2: #6cd0da;
+      --danger: #d46a6a;
+      --heading: "Cormorant Garamond", "Times New Roman", serif;
+      --body: "IBM Plex Sans", "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 14% 0%, rgba(227, 160, 93, 0.24), transparent 42%),
+        radial-gradient(circle at 86% 16%, rgba(108, 208, 218, 0.18), transparent 38%),
+        linear-gradient(165deg, #040609 0%, #080d13 58%, #040608 100%);
+      color: var(--ink);
+      font-family: var(--body);
+      min-height: 100vh;
+      padding: 24px;
+      line-height: 1.45;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    .container { max-width: 1240px; margin: 0 auto; display: grid; gap: 16px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px);
+    }
+    .hero {
+      display: grid;
+      gap: 12px;
+    }
+    .hero-image {
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      background: #09101a;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      font-family: var(--heading);
+      letter-spacing: 0.02em;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.4rem); }
+    h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+    h3 { font-size: 1.2rem; }
+    .meta-grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .meta-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(6, 10, 15, 0.75);
+      padding: 10px 12px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-right: 6px;
+    }
+    .layout {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1.4fr 1fr;
+      align-items: start;
+    }
+    .timeline {
+      display: grid;
+      gap: 10px;
+      max-height: 360px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .timeline-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(6, 12, 20, 0.86);
+      padding: 10px;
+    }
+    .timeline-item p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .grid-2 {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .npc {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      background: rgba(7, 12, 18, 0.88);
+    }
+    .npc ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .sim-controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: #101825;
+      color: var(--ink);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 13px;
+    }
+    button:hover { border-color: var(--accent); }
+    .choice {
+      width: 100%;
+      border-radius: 10px;
+      text-align: left;
+      margin: 6px 0;
+      padding: 10px;
+    }
+    .transcript-item {
+      border-left: 2px solid var(--accent);
+      padding-left: 10px;
+      margin: 8px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .ending {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      background: rgba(21, 10, 10, 0.5);
+      margin-top: 8px;
+    }
+    .warning {
+      color: var(--danger);
+      font-size: 13px;
+    }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      body { padding: 14px; }
+      .hero-image { height: 240px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="panel hero">
+      <a href="/simulations/index.html">← Back to simulation index</a>
+      <img class="hero-image" src="/visuals/stories/midnight-lockbox.svg" alt="Midnight Lockbox key art" />
+      <h1>Midnight Lockbox</h1>
+      <p>A self-storage unit with no renter sends voice memos predicting what your team will do next.</p>
+      <div>
+        <span class="badge">SMS</span><span class="badge">WHATSAPP</span><span class="badge">TELEGRAM</span><span class="badge">EMAIL</span><span class="badge">VOICE_MESSAGE</span><span class="badge">DOCUMENT_DROP</span><span class="badge">SIMULATED_SITE</span>
+      </div>
+      <div class="meta-grid">
+        <div class="meta-card"><strong>Subgenre:</strong> supernatural mystery</div>
+        <div class="meta-card"><strong>Tone:</strong> GROUNDED</div>
+        <div class="meta-card"><strong>Location:</strong> Gallowglass 24-hour storage facility and storm-drain service tunnels</div>
+      </div>
+      <audio controls preload="metadata">
+        <source src="/audio/scores/midnight-lockbox.wav" type="audio/wav" />
+      </audio>
+      <p class="warning">Playback uses generated score loops; connect final mastered stems before release.</p>
+    </section>
+
+    <section class="panel layout">
+      <div>
+        <h2>Message Timeline</h2>
+        <div class="timeline" id="timeline">
+          <article class="timeline-item">
+                <h3>Unit 331 pings alive</h3>
+                <p>At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.</p>
+                <p><span class="badge">SMS</span><strong>Case Lead Veda Cross:</strong> At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word. Maintain chain-of-custody and keep your channel open.</p><p><span class="badge">WHATSAPP</span><strong>Night Manager Eli Mercer:</strong> Cross-reference this before dawn: Voicemail waveform anomaly.</p><p><span class="badge">SMS</span><strong>The Quartermaster:</strong> Unit 331 has your fingerprints now, not mine. (Peripheral Presence)</p>
+              </article><article class="timeline-item">
+                <h3>Lock Cylinder Swap</h3>
+                <p>You find a fresh lock core with a key that should not exist in facility inventory.</p>
+                <p><span class="badge">WHATSAPP</span><strong>Night Manager Eli Mercer:</strong> You find a fresh lock core with a key that should not exist in facility inventory. Maintain chain-of-custody and keep your channel open.</p><p><span class="badge">TELEGRAM</span><strong>Courier Witness Sia Rowan:</strong> Cross-reference this before dawn: Keypad access hash export.</p><p><span class="badge">SMS</span><strong>The Quartermaster:</strong> Unit 331 has your fingerprints now, not mine. (Peripheral Presence)</p>
+              </article><article class="timeline-item">
+                <h3>Morning Leak</h3>
+                <p>By morning, cropped footage of your team appears online before your own upload completes.</p>
+                <p><span class="badge">TELEGRAM</span><strong>Courier Witness Sia Rowan:</strong> By morning, cropped footage of your team appears online before your own upload completes. Maintain chain-of-custody and keep your channel open.</p><p><span class="badge">EMAIL</span><strong>Locksmith Omar Hale:</strong> Cross-reference this before dawn: Freight elevator camera still.</p><p><span class="badge">WHATSAPP</span><strong>The Quartermaster:</strong> You keep protecting the wrong employee. (Psychological Contact)</p>
+              </article><article class="timeline-item">
+                <h3>Noon Ultimatum</h3>
+                <p>The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.</p>
+                <p><span class="badge">EMAIL</span><strong>Locksmith Omar Hale:</strong> The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness. Maintain chain-of-custody and keep your channel open.</p><p><span class="badge">VOICE_MESSAGE</span><strong>Case Lead Veda Cross:</strong> Cross-reference this before dawn: Drain tunnel pressure map.</p><p><span class="badge">SMS</span><strong>The Quartermaster:</strong> If you open the box before noon, your witness walks. If not, count the sirens. (Active Interference)</p>
+              </article><article class="timeline-item">
+                <h3>Drain Tunnel Run</h3>
+                <p>Twelve hours later, the tunnel route opens and you must choose recovery or confrontation.</p>
+                <p><span class="badge">VOICE_MESSAGE</span><strong>Case Lead Veda Cross:</strong> Twelve hours later, the tunnel route opens and you must choose recovery or confrontation. Maintain chain-of-custody and keep your channel open.</p><p><span class="badge">DOCUMENT_DROP</span><strong>Night Manager Eli Mercer:</strong> Cross-reference this before dawn: Voicemail waveform anomaly.</p><p><span class="badge">EMAIL</span><strong>The Quartermaster:</strong> Hand me the access list and I return everyone alive. (Personal Confrontation)</p>
+              </article><article class="timeline-item">
+                <h3>Lockbox Debrief</h3>
+                <p>A final memo reveals whether your team solved the case or joined the cover-up.</p>
+                <p><span class="badge">DOCUMENT_DROP</span><strong>Night Manager Eli Mercer:</strong> A final memo reveals whether your team solved the case or joined the cover-up. Maintain chain-of-custody and keep your channel open.</p><p><span class="badge">SIMULATED_SITE</span><strong>Courier Witness Sia Rowan:</strong> Cross-reference this before dawn: Keypad access hash export.</p><p><span class="badge">EMAIL</span><strong>The Quartermaster:</strong> Hand me the access list and I return everyone alive. (Personal Confrontation)</p>
+              </article>
+        </div>
+      </div>
+      <div>
+        <h2>Simulation Console</h2>
+        <div class="sim-controls">
+          <button id="start-sim">Start</button>
+          <button id="next-choice">Auto Next Choice</button>
+          <button id="run-default">Run Default Path</button>
+          <button id="reset-sim">Reset</button>
+        </div>
+        <div id="sim-beat" class="timeline-item">Press <strong>Start</strong> to begin.</div>
+        <div id="sim-choices"></div>
+        <h3 style="margin-top:12px;">Transcript</h3>
+        <div id="sim-transcript"></div>
+        <div id="sim-endings"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>NPC + Villain Dossiers</h2>
+      <div class="grid-2">
+        <article class="npc">
+          <h3>The Quartermaster (Villain)</h3>
+          <ul>
+            <li>Archetype: CALM_GENIUS_MANIPULATOR</li>
+            <li>Worldview: Storage is memory, and memory belongs to whoever controls access.</li>
+            <li>Motive: Turn investigators into gatekeepers who sell selective truth.</li>
+            <li>Tactics: schedule pressure, real-secret/false-claim blend, ally trust inversion</li>
+            <li>Motifs: unit tags, bolt cutters, time-lock stickers</li>
+          </ul>
+        </article>
+        <article class="npc">
+              <h3>Case Lead Veda Cross</h3>
+              <ul>
+                <li>Role: HANDLER</li>
+                <li>Traits: measured, protective</li>
+                <li>Motivations: Contain leaks before public panic</li>
+                <li>Trust: 58 - 92</li>
+                <li>Secret: Lead Investigator Mara Quinn can expose midnight-lockbox-clue-pressure at high trust.</li>
+              </ul>
+            </article><article class="npc">
+              <h3>Night Manager Eli Mercer</h3>
+              <ul>
+                <li>Role: WITNESS</li>
+                <li>Traits: nervous, detail-oriented</li>
+                <li>Motivations: Keep his family uninvolved</li>
+                <li>Trust: 42 - 84</li>
+                <li>Secret: Dispatch Handler Ilya Ross can expose midnight-lockbox-clue-reveal at high trust.</li>
+              </ul>
+            </article><article class="npc">
+              <h3>Courier Witness Sia Rowan</h3>
+              <ul>
+                <li>Role: SUSPECT</li>
+                <li>Traits: defensive, observant</li>
+                <li>Motivations: Stay out of custody and protect a sibling</li>
+                <li>Trust: 37 - 80</li>
+                <li>Secret: Commuter Witness Nia Vale can expose midnight-lockbox-clue-origin at high trust.</li>
+              </ul>
+            </article><article class="npc">
+              <h3>Locksmith Omar Hale</h3>
+              <ul>
+                <li>Role: EXPERT</li>
+                <li>Traits: dry, forensic</li>
+                <li>Motivations: Document how the lock was spoofed</li>
+                <li>Trust: 46 - 88</li>
+                <li>Secret: Transit Auditor Bram Keene can expose midnight-lockbox-clue-pressure at high trust.</li>
+              </ul>
+            </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    const data = {"title":"Midnight Lockbox","beats":[{"id":"beat-1","actId":"act-1","actTitle":"Night One: Breach","title":"Unit 331 pings alive","narrative":"At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.","stage":1,"unlockAfterSeconds":0,"revealClueIds":["midnight-lockbox-clue-origin"],"incomingMessages":[{"id":"beat-1.msg.handler","senderName":"Case Lead Veda Cross","role":"operator","channel":"SMS","text":"At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word. Maintain chain-of-custody and keep your channel open.","delaySeconds":1,"intensity":32},{"id":"beat-1.msg.secondary","senderName":"Night Manager Eli Mercer","role":"witness","channel":"WHATSAPP","text":"Cross-reference this before dawn: Voicemail waveform anomaly.","delaySeconds":3,"intensity":48},{"id":"beat-1.msg.villain","senderName":"The Quartermaster","role":"antagonist","channel":"SMS","text":"Unit 331 has your fingerprints now, not mine. (Peripheral Presence)","delaySeconds":6,"intensity":62}],"responseOptions":[{"id":"choice-trace-source","label":"Audit keypad logs and access events before sunrise","intent":"CURIOSITY","summary":"Choice 1: Audit keypad logs and access events before sunrise","nextBeatId":"beat-2","progressDelta":20,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":0,"morality":0},"flagUpdates":{"investigation_path":"trace_source"}},{"id":"choice-interview-ally","label":"Interview the night manager before he leaves shift","intent":"QUESTION","summary":"Choice 2: Interview the night manager before he leaves shift","nextBeatId":"beat-2","progressDelta":20,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":0,"morality":0},"flagUpdates":{"investigation_path":"ally_interview"}}],"defaultNextBeatId":"beat-2","backgroundVisual":"/visuals/stories/midnight-lockbox.svg"},{"id":"beat-2","actId":"act-1","actTitle":"Night One: Breach","title":"Lock Cylinder Swap","narrative":"You find a fresh lock core with a key that should not exist in facility inventory.","stage":1,"unlockAfterSeconds":900,"revealClueIds":["midnight-lockbox-clue-pressure"],"incomingMessages":[{"id":"beat-2.msg.handler","senderName":"Night Manager Eli Mercer","role":"witness","channel":"WHATSAPP","text":"You find a fresh lock core with a key that should not exist in facility inventory. Maintain chain-of-custody and keep your channel open.","delaySeconds":1,"intensity":32},{"id":"beat-2.msg.secondary","senderName":"Courier Witness Sia Rowan","role":"witness","channel":"TELEGRAM","text":"Cross-reference this before dawn: Keypad access hash export.","delaySeconds":3,"intensity":48},{"id":"beat-2.msg.villain","senderName":"The Quartermaster","role":"antagonist","channel":"SMS","text":"Unit 331 has your fingerprints now, not mine. (Peripheral Presence)","delaySeconds":6,"intensity":62}],"responseOptions":[{"id":"choice-preserve-evidence","label":"Preserve original evidence chain","intent":"CURIOSITY","summary":"Choice 1: Preserve original evidence chain","nextBeatId":"beat-3","progressDelta":18,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":0,"morality":1},"flagUpdates":{"evidence_preserved":true}},{"id":"choice-fast-pursuit","label":"Pursue suspect immediately","intent":"CURIOSITY","summary":"Choice 2: Pursue suspect immediately","nextBeatId":"beat-3","progressDelta":18,"reputationDelta":{"trustworthiness":0,"aggression":1,"curiosity":0,"deception":0,"morality":0},"flagUpdates":{"evidence_preserved":false}}],"defaultNextBeatId":"beat-3","backgroundVisual":"/visuals/stories/midnight-lockbox.svg"},{"id":"beat-3","actId":"act-2","actTitle":"Day Two: Pressure","title":"Morning Leak","narrative":"By morning, cropped footage of your team appears online before your own upload completes.","stage":2,"unlockAfterSeconds":21600,"revealClueIds":["midnight-lockbox-clue-contradiction"],"incomingMessages":[{"id":"beat-3.msg.handler","senderName":"Courier Witness Sia Rowan","role":"witness","channel":"TELEGRAM","text":"By morning, cropped footage of your team appears online before your own upload completes. Maintain chain-of-custody and keep your channel open.","delaySeconds":1,"intensity":44},{"id":"beat-3.msg.secondary","senderName":"Locksmith Omar Hale","role":"investigator","channel":"EMAIL","text":"Cross-reference this before dawn: Freight elevator camera still.","delaySeconds":3,"intensity":61},{"id":"beat-3.msg.villain","senderName":"The Quartermaster","role":"antagonist","channel":"WHATSAPP","text":"You keep protecting the wrong employee. (Psychological Contact)","delaySeconds":6,"intensity":76}],"responseOptions":[{"id":"choice-trust-handler","label":"Trust Case Lead Veda Cross and seal internal channels","intent":"COMPLIANCE","summary":"Choice 1: Trust Case Lead Veda Cross and seal internal channels","nextBeatId":"beat-4","progressDelta":26,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":0,"morality":0},"flagUpdates":{"trusted_ally":"Lead Investigator Mara Quinn"}},{"id":"choice-trust-witness","label":"Trust Night Manager Eli Mercer and follow his blind spot map","intent":"COMPLIANCE","summary":"Choice 2: Trust Night Manager Eli Mercer and follow his blind spot map","nextBeatId":"beat-4","progressDelta":26,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":0,"morality":0},"flagUpdates":{"trusted_ally":"Dispatch Handler Ilya Ross"}}],"defaultNextBeatId":"beat-4","backgroundVisual":"/visuals/stories/midnight-lockbox.svg"},{"id":"beat-4","actId":"act-2","actTitle":"Day Two: Pressure","title":"Noon Ultimatum","narrative":"The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.","stage":3,"unlockAfterSeconds":28800,"revealClueIds":["midnight-lockbox-clue-timed-warning"],"incomingMessages":[{"id":"beat-4.msg.handler","senderName":"Locksmith Omar Hale","role":"investigator","channel":"EMAIL","text":"The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness. Maintain chain-of-custody and keep your channel open.","delaySeconds":1,"intensity":56},{"id":"beat-4.msg.secondary","senderName":"Case Lead Veda Cross","role":"operator","channel":"VOICE_MESSAGE","text":"Cross-reference this before dawn: Drain tunnel pressure map.","delaySeconds":3,"intensity":74},{"id":"beat-4.msg.villain","senderName":"The Quartermaster","role":"antagonist","channel":"SMS","text":"If you open the box before noon, your witness walks. If not, count the sirens. (Active Interference)","delaySeconds":6,"intensity":90}],"responseOptions":[{"id":"choice-save-npc","label":"Divert to save threatened NPC","intent":"THREAT","summary":"Choice 1: Divert to save threatened NPC","nextBeatId":"beat-5","progressDelta":30,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":0,"morality":2},"flagUpdates":{"rescue_route":true}},{"id":"choice-continue-case","label":"Continue forensic pursuit under threat","intent":"THREAT","summary":"Choice 2: Continue forensic pursuit under threat","nextBeatId":"beat-5","progressDelta":30,"reputationDelta":{"trustworthiness":-1,"aggression":0,"curiosity":0,"deception":0,"morality":0},"flagUpdates":{"rescue_route":false}}],"defaultNextBeatId":"beat-5","backgroundVisual":"/visuals/stories/midnight-lockbox.svg"},{"id":"beat-5","actId":"act-3","actTitle":"Night Two: Resolution","title":"Drain Tunnel Run","narrative":"Twelve hours later, the tunnel route opens and you must choose recovery or confrontation.","stage":4,"unlockAfterSeconds":43200,"revealClueIds":["midnight-lockbox-clue-reveal"],"incomingMessages":[{"id":"beat-5.msg.handler","senderName":"Case Lead Veda Cross","role":"operator","channel":"VOICE_MESSAGE","text":"Twelve hours later, the tunnel route opens and you must choose recovery or confrontation. Maintain chain-of-custody and keep your channel open.","delaySeconds":1,"intensity":68},{"id":"beat-5.msg.secondary","senderName":"Night Manager Eli Mercer","role":"witness","channel":"DOCUMENT_DROP","text":"Cross-reference this before dawn: Voicemail waveform anomaly.","delaySeconds":3,"intensity":87},{"id":"beat-5.msg.villain","senderName":"The Quartermaster","role":"antagonist","channel":"EMAIL","text":"Hand me the access list and I return everyone alive. (Personal Confrontation)","delaySeconds":6,"intensity":100}],"responseOptions":[{"id":"choice-charge-villain","label":"Commit to formal accusation and expose evidence chain","intent":"ACCUSATION","summary":"Choice 1: Commit to formal accusation and expose evidence chain","nextBeatId":"beat-6","progressDelta":34,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":0,"morality":0},"flagUpdates":{"final_strategy":"formal_charge"}},{"id":"choice-private-deal","label":"Take private contact route for hidden confession","intent":"BARGAIN","summary":"Choice 2: Take private contact route for hidden confession","nextBeatId":"beat-6","progressDelta":34,"reputationDelta":{"trustworthiness":0,"aggression":0,"curiosity":0,"deception":2,"morality":0},"flagUpdates":{"final_strategy":"private_contact"}}],"defaultNextBeatId":"beat-6","backgroundVisual":"/visuals/stories/midnight-lockbox.svg"},{"id":"beat-6","actId":"act-3","actTitle":"Night Two: Resolution","title":"Lockbox Debrief","narrative":"A final memo reveals whether your team solved the case or joined the cover-up.","stage":4,"unlockAfterSeconds":46800,"revealClueIds":["midnight-lockbox-clue-epilogue"],"incomingMessages":[{"id":"beat-6.msg.handler","senderName":"Night Manager Eli Mercer","role":"witness","channel":"DOCUMENT_DROP","text":"A final memo reveals whether your team solved the case or joined the cover-up. Maintain chain-of-custody and keep your channel open.","delaySeconds":1,"intensity":68},{"id":"beat-6.msg.secondary","senderName":"Courier Witness Sia Rowan","role":"witness","channel":"SIMULATED_SITE","text":"Cross-reference this before dawn: Keypad access hash export.","delaySeconds":3,"intensity":87},{"id":"beat-6.msg.villain","senderName":"The Quartermaster","role":"antagonist","channel":"EMAIL","text":"Hand me the access list and I return everyone alive. (Personal Confrontation)","delaySeconds":6,"intensity":100}],"responseOptions":[{"id":"beat-6.choice.default-forward","label":"Proceed with controlled pressure","intent":"CURIOSITY","summary":"Advance investigation while preserving evidence discipline.","nextBeatId":null,"progressDelta":30,"reputationDelta":{"trustworthiness":1,"aggression":0,"curiosity":2,"deception":0,"morality":1},"flagUpdates":{"beat-6.defaultPath":true}}],"defaultNextBeatId":null,"backgroundVisual":"/visuals/stories/midnight-lockbox.svg"}],"endings":[{"id":"midnight-lockbox-ending-justice","title":"Sealed Evidence Conviction","type":"JUSTICE","summary":"You preserve the chain and expose the extortion network before the deadline.","epilogue":"Unit 331 is seized with intact evidence, and the witness enters protection.","sequelHook":"A tagged evidence box points to the next case."},{"id":"midnight-lockbox-ending-pyrrhic","title":"Witness Saved, Truth Damaged","type":"PYRRHIC","summary":"You save the witness but lose admissible evidence in the rush.","epilogue":"The team survives, but the case closes with permanent doubt.","sequelHook":"A surviving witness asks for help in a linked disappearance."},{"id":"midnight-lockbox-ending-corruption","title":"Quartermaster Pact","type":"CORRUPTION","summary":"You trade transparency for operational control over future lockboxes.","epilogue":"You receive master access and the next target list at dawn.","sequelHook":"Season continuity marks the player as compromised."}],"defaultRun":[{"beatId":"beat-1","beatTitle":"Unit 331 pings alive","selectedChoiceId":"choice-trace-source","selectedChoiceLabel":"Audit keypad logs and access events before sunrise [intent: CURIOSITY]","clueReveals":["midnight-lockbox-clue-origin"],"channelTouches":["SMS","WHATSAPP","SMS"]},{"beatId":"beat-2","beatTitle":"Lock Cylinder Swap","selectedChoiceId":"choice-preserve-evidence","selectedChoiceLabel":"Preserve original evidence chain [intent: CURIOSITY]","clueReveals":["midnight-lockbox-clue-pressure"],"channelTouches":["WHATSAPP","TELEGRAM","SMS"]},{"beatId":"beat-3","beatTitle":"Morning Leak","selectedChoiceId":"choice-trust-handler","selectedChoiceLabel":"Trust Case Lead Veda Cross and seal internal channels [intent: COMPLIANCE]","clueReveals":["midnight-lockbox-clue-contradiction"],"channelTouches":["TELEGRAM","EMAIL","WHATSAPP"]},{"beatId":"beat-4","beatTitle":"Noon Ultimatum","selectedChoiceId":"choice-save-npc","selectedChoiceLabel":"Divert to save threatened NPC [intent: THREAT]","clueReveals":["midnight-lockbox-clue-timed-warning"],"channelTouches":["EMAIL","VOICE_MESSAGE","SMS"]},{"beatId":"beat-5","beatTitle":"Drain Tunnel Run","selectedChoiceId":"choice-charge-villain","selectedChoiceLabel":"Commit to formal accusation and expose evidence chain [intent: ACCUSATION]","clueReveals":["midnight-lockbox-clue-reveal"],"channelTouches":["VOICE_MESSAGE","DOCUMENT_DROP","EMAIL"]},{"beatId":"beat-6","beatTitle":"Lockbox Debrief","selectedChoiceId":"beat-6.choice.default-forward","selectedChoiceLabel":"Proceed with controlled pressure [intent: CURIOSITY]","clueReveals":["midnight-lockbox-clue-epilogue"],"channelTouches":["DOCUMENT_DROP","SIMULATED_SITE","EMAIL"]}]};
+    const beatById = new Map(data.beats.map((beat) => [beat.id, beat]));
+    const transcript = [];
+    let cursor = data.beats[0] ? data.beats[0].id : null;
+    let started = false;
+
+    function setHtml(id, html) {
+      document.getElementById(id).innerHTML = html;
+    }
+
+    function renderTranscript() {
+      if (transcript.length === 0) {
+        setHtml('sim-transcript', '<p class="warning">No choices logged yet.</p>');
+        return;
+      }
+      setHtml(
+        'sim-transcript',
+        transcript
+          .map((entry) => '<div class="transcript-item"><strong>' + entry.beat + '</strong><br />' + entry.choice + '</div>')
+          .join('')
+      );
+    }
+
+    function renderBeat() {
+      if (!cursor) {
+        setHtml(
+          'sim-beat',
+          '<p>Simulation complete. Review ending options below and replay with alternate branch choices.</p>'
+        );
+        setHtml(
+          'sim-endings',
+          data.endings
+            .map((ending) =>
+              '<article class="ending"><h3>' +
+              ending.title +
+              ' (' + ending.type + ')</h3><p>' + ending.summary + '</p><p><em>' + ending.epilogue + '</em></p></article>'
+            )
+            .join('')
+        );
+        setHtml('sim-choices', '');
+        return;
+      }
+
+      const beat = beatById.get(cursor);
+      if (!beat) {
+        cursor = null;
+        renderBeat();
+        return;
+      }
+
+      setHtml(
+        'sim-beat',
+        '<h3>' + beat.title + '</h3><p>' + beat.narrative + '</p>' +
+        (beat.incomingMessages || [])
+          .map((msg) => '<p><span class="badge">' + msg.channel + '</span><strong>' + msg.senderName + ':</strong> ' + msg.text + '</p>')
+          .join('')
+      );
+
+      const choices = beat.responseOptions || [];
+      if (choices.length === 0) {
+        setHtml('sim-choices', '<p class="warning">No explicit choice. Use Auto Next Choice to continue.</p>');
+        return;
+      }
+
+      setHtml(
+        'sim-choices',
+        choices
+          .map(
+            (choice, index) =>
+              '<button class="choice" data-index="' + index + '">' +
+              choice.label + ' [intent: ' + choice.intent + ']' +
+              '</button>'
+          )
+          .join('')
+      );
+
+      document.querySelectorAll('.choice').forEach((node) => {
+        node.addEventListener('click', () => {
+          const index = Number(node.getAttribute('data-index'));
+          applyChoice(index);
+        });
+      });
+    }
+
+    function applyChoice(choiceIndex) {
+      const beat = beatById.get(cursor);
+      if (!beat) {
+        return;
+      }
+      const selected = (beat.responseOptions || [])[choiceIndex] || null;
+      transcript.push({
+        beat: beat.title,
+        choice: selected ? selected.label + ' [intent: ' + selected.intent + ']' : 'Auto progression'
+      });
+      renderTranscript();
+      cursor = selected && selected.nextBeatId ? selected.nextBeatId : (beat.defaultNextBeatId || null);
+      renderBeat();
+    }
+
+    function runDefaultPath() {
+      if (!started) {
+        started = true;
+      }
+      while (cursor) {
+        const beat = beatById.get(cursor);
+        if (!beat) {
+          cursor = null;
+          break;
+        }
+        if ((beat.responseOptions || []).length > 0) {
+          applyChoice(0);
+        } else {
+          transcript.push({ beat: beat.title, choice: 'Auto progression' });
+          cursor = beat.defaultNextBeatId || null;
+          renderTranscript();
+          renderBeat();
+        }
+      }
+    }
+
+    document.getElementById('start-sim').addEventListener('click', () => {
+      started = true;
+      cursor = data.beats[0] ? data.beats[0].id : null;
+      transcript.length = 0;
+      setHtml('sim-endings', '');
+      renderTranscript();
+      renderBeat();
+    });
+
+    document.getElementById('next-choice').addEventListener('click', () => {
+      if (!started) {
+        document.getElementById('start-sim').click();
+        return;
+      }
+      applyChoice(0);
+    });
+
+    document.getElementById('run-default').addEventListener('click', runDefaultPath);
+
+    document.getElementById('reset-sim').addEventListener('click', () => {
+      started = false;
+      cursor = data.beats[0] ? data.beats[0].id : null;
+      transcript.length = 0;
+      setHtml('sim-endings', '');
+      setHtml('sim-beat', 'Press <strong>Start</strong> to begin.');
+      setHtml('sim-choices', '');
+      renderTranscript();
+    });
+
+    renderTranscript();
+  </script>
+</body>
+</html>

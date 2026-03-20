@@ -1,7 +1,7 @@
 {
   "storyId": "black-chapel-ledger",
   "title": "Black Chapel Ledger",
-  "generatedAt": "2026-03-20T13:59:22.856Z",
+  "generatedAt": "2026-03-20T14:49:20.902Z",
   "clips": [
     {
       "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-1",
@@ -43,7 +43,7 @@
       "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Cross-reference this before dawn: Ledger watermark scan.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-2.wav",
       "providers": [
@@ -78,7 +78,7 @@
       "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-3.wav",
       "providers": [
@@ -183,7 +183,7 @@
       "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Cross-reference this before dawn: Burned vellum fragment.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-3.wav",
       "providers": [
@@ -218,7 +218,7 @@
       "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-4.wav",
       "providers": [
@@ -533,7 +533,7 @@
       "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "SIMULATED_SITE",
+      "channel": "DOCUMENT_DROP",
       "text": "Cross-reference this before dawn: Choir rehearsal wax recording.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-3.wav",
       "providers": [
@@ -568,7 +568,7 @@
       "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
       "beatId": "beat-3",
       "beatTitle": "Trust Fracture",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "Cross-reference this before dawn: Crypt key inventory.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-1.wav",
       "providers": [
@@ -603,7 +603,7 @@
       "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-2.wav",
       "providers": [

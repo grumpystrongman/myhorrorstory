@@ -39,6 +39,7 @@ const hasTwilioBase = Boolean(env.TWILIO_ACCOUNT_SID && env.TWILIO_AUTH_TOKEN);
 const smsConfigured = hasTwilioBase && Boolean(env.TWILIO_SMS_FROM);
 const whatsappConfigured = hasTwilioBase && Boolean(env.TWILIO_WHATSAPP_FROM);
 const telegramConfigured = Boolean(env.TELEGRAM_BOT_TOKEN);
+const signalConfigured = Boolean(env.SIGNAL_GATEWAY_URL && env.SIGNAL_ACCOUNT);
 
 const smsMissing = [];
 if (!env.TWILIO_ACCOUNT_SID) {
@@ -70,6 +71,17 @@ if (!env.TELEGRAM_WEBHOOK_SECRET) {
   telegramMissing.push('TELEGRAM_WEBHOOK_SECRET');
 }
 
+const signalMissing = [];
+if (!env.SIGNAL_GATEWAY_URL) {
+  signalMissing.push('SIGNAL_GATEWAY_URL');
+}
+if (!env.SIGNAL_ACCOUNT) {
+  signalMissing.push('SIGNAL_ACCOUNT');
+}
+if (!env.SIGNAL_WEBHOOK_SECRET) {
+  signalMissing.push('SIGNAL_WEBHOOK_SECRET');
+}
+
 console.log('MyHorrorStory Messaging Setup Helper');
 console.log('------------------------------------');
 console.log(`API base URL: ${apiBaseUrl}`);
@@ -78,12 +90,13 @@ console.log(`Twilio signature validation: ${bool(env.TWILIO_VALIDATE_SIGNATURES)
 printChannelStatus('SMS', smsConfigured, smsMissing, `${apiBaseUrl}/webhooks/twilio`);
 printChannelStatus('WHATSAPP', whatsappConfigured, whatsappMissing, `${apiBaseUrl}/webhooks/twilio`);
 printChannelStatus('TELEGRAM', telegramConfigured, telegramMissing, `${apiBaseUrl}/webhooks/telegram`);
+printChannelStatus('SIGNAL', signalConfigured, signalMissing, `${apiBaseUrl}/webhooks/signal`);
 
 console.log('\nNext steps');
 console.log('1. Configure provider dashboards with the webhook URLs shown above.');
 console.log('2. Register a player contact map:');
 console.log(
-  `   curl -X POST "${apiBaseUrl}/channels/setup/user" -H "content-type: application/json" -d "{\\"caseId\\":\\"midnight-lockbox\\",\\"playerId\\":\\"player-1\\",\\"contacts\\":[{\\"channel\\":\\"SMS\\",\\"address\\":\\"+15550001111\\",\\"optIn\\":true},{\\"channel\\":\\"WHATSAPP\\",\\"address\\":\\"whatsapp:+15550002222\\",\\"optIn\\":true},{\\"channel\\":\\"TELEGRAM\\",\\"address\\":\\"123456789\\",\\"optIn\\":true}]}"` 
+  `   curl -X POST "${apiBaseUrl}/channels/setup/user" -H "content-type: application/json" -d "{\\"caseId\\":\\"midnight-lockbox\\",\\"playerId\\":\\"player-1\\",\\"contacts\\":[{\\"channel\\":\\"SMS\\",\\"address\\":\\"+15550001111\\",\\"optIn\\":true},{\\"channel\\":\\"WHATSAPP\\",\\"address\\":\\"whatsapp:+15550002222\\",\\"optIn\\":true},{\\"channel\\":\\"TELEGRAM\\",\\"address\\":\\"123456789\\",\\"optIn\\":true},{\\"channel\\":\\"SIGNAL\\",\\"address\\":\\"+15550003333\\",\\"optIn\\":true}]}"` 
 );
 console.log('3. Send setup test messages:');
 console.log(

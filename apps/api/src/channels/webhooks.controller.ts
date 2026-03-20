@@ -11,6 +11,7 @@ import {
 } from '@nestjs/common';
 import {
   coerceWebhookBodyToRecord,
+  verifySignalWebhookSecret,
   verifyTelegramSecretToken,
   verifyTwilioSignature
 } from '@myhorrorstory/messaging';
@@ -90,6 +91,31 @@ export class WebhooksController {
     } catch (error) {
       if (error instanceof Error && error.message === 'telegram_payload_invalid') {
         throw new BadRequestException('Invalid Telegram payload.');
+      }
+      throw error;
+    }
+  }
+
+  @Post('signal')
+  @HttpCode(200)
+  processSignal(
+    @Body() body: unknown,
+    @Headers('x-signal-webhook-secret') signalSecret: string | undefined
+  ): ReturnType<ChannelsService['processSignalWebhook']> {
+    const valid = verifySignalWebhookSecret({
+      expectedSecret: process.env.SIGNAL_WEBHOOK_SECRET,
+      receivedSecret: signalSecret
+    });
+
+    if (!valid) {
+      throw new UnauthorizedException('Invalid Signal webhook secret.');
+    }
+
+    try {
+      return this.channelsService.processSignalWebhook(body);
+    } catch (error) {
+      if (error instanceof Error && error.message === 'signal_payload_invalid') {
+        throw new BadRequestException('Invalid Signal payload.');
       }
       throw error;
     }

@@ -1,7 +1,7 @@
 {
   "storyId": "tape-17-pinewatch",
   "title": "Tape 17: Pinewatch",
-  "generatedAt": "2026-03-20T13:59:22.921Z",
+  "generatedAt": "2026-03-20T14:49:20.965Z",
   "clips": [
     {
       "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-1",
@@ -43,7 +43,7 @@
       "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Cross-reference this before dawn: Tripod footprint cast.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-2.wav",
       "providers": [
@@ -78,7 +78,7 @@
       "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-3.wav",
       "providers": [
@@ -183,7 +183,7 @@
       "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Cross-reference this before dawn: Frame glitch cluster.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-3.wav",
       "providers": [
@@ -218,7 +218,7 @@
       "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-4.wav",
       "providers": [
@@ -533,7 +533,7 @@
       "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "SIMULATED_SITE",
+      "channel": "DOCUMENT_DROP",
       "text": "Cross-reference this before dawn: Ranger dispatch excerpt.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-3.wav",
       "providers": [
@@ -568,7 +568,7 @@
       "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
       "beatId": "beat-3",
       "beatTitle": "Trust Fracture",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "Cross-reference this before dawn: Weather siren file.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-1.wav",
       "providers": [
@@ -603,7 +603,7 @@
       "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-2.wav",
       "providers": [

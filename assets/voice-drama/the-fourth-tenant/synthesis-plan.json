@@ -1,7 +1,7 @@
 {
   "storyId": "the-fourth-tenant",
   "title": "The Fourth Tenant",
-  "generatedAt": "2026-03-20T13:59:22.928Z",
+  "generatedAt": "2026-03-20T14:49:20.973Z",
   "clips": [
     {
       "clipId": "voice.the-fourth-tenant.building-superintendent-leda-price.clip-1",
@@ -43,7 +43,7 @@
       "profileId": "voice.the-fourth-tenant.building-superintendent-leda-price",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Cross-reference this before dawn: Night entry key hash.",
       "targetPath": "assets/audio/voices/the-fourth-tenant/building-superintendent-leda-price-2.wav",
       "providers": [
@@ -78,7 +78,7 @@
       "profileId": "voice.the-fourth-tenant.building-superintendent-leda-price",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
+      "channel": "EMAIL",
       "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/the-fourth-tenant/building-superintendent-leda-price-3.wav",
       "providers": [
@@ -183,7 +183,7 @@
       "profileId": "voice.the-fourth-tenant.lease-broker-owen-pike",
       "beatId": "beat-5",
       "beatTitle": "Confrontation Protocol",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Cross-reference this before dawn: Lease chain checksum.",
       "targetPath": "assets/audio/voices/the-fourth-tenant/lease-broker-owen-pike-3.wav",
       "providers": [
@@ -218,7 +218,7 @@
       "profileId": "voice.the-fourth-tenant.lease-broker-owen-pike",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
+      "channel": "VOICE_MESSAGE",
       "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/the-fourth-tenant/lease-broker-owen-pike-4.wav",
       "providers": [
@@ -533,7 +533,7 @@
       "profileId": "voice.the-fourth-tenant.night-tenant-maris-holt",
       "beatId": "beat-6",
       "beatTitle": "Case Debrief",
-      "channel": "SIMULATED_SITE",
+      "channel": "DOCUMENT_DROP",
       "text": "Cross-reference this before dawn: Hallway thermal still.",
       "targetPath": "assets/audio/voices/the-fourth-tenant/night-tenant-maris-holt-3.wav",
       "providers": [
@@ -568,7 +568,7 @@
       "profileId": "voice.the-fourth-tenant.claims-adjuster-felix-noor",
       "beatId": "beat-3",
       "beatTitle": "Trust Fracture",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "Cross-reference this before dawn: Water-damage restoration invoice.",
       "targetPath": "assets/audio/voices/the-fourth-tenant/claims-adjuster-felix-noor-1.wav",
       "providers": [
@@ -603,7 +603,7 @@
       "profileId": "voice.the-fourth-tenant.claims-adjuster-felix-noor",
       "beatId": "beat-4",
       "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
+      "channel": "SIGNAL",
       "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
       "targetPath": "assets/audio/voices/the-fourth-tenant/claims-adjuster-felix-noor-2.wav",
       "providers": [

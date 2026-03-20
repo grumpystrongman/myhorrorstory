@@ -1,4 +1,5 @@
-﻿import { LeadCaptureForm } from '../components/lead-capture-form';
+import { LeadCaptureForm } from '../components/lead-capture-form';
+import { SupportAssistant } from '../components/support-assistant';
 
 export default function SupportPage(): JSX.Element {
   return (
@@ -23,7 +24,8 @@ export default function SupportPage(): JSX.Element {
         </div>
         <LeadCaptureForm source="support_follow_up" title="Support Follow-up Email" compact />
       </section>
+
+      <SupportAssistant />
     </main>
   );
 }
-
