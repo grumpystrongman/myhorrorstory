@@ -1,0 +1,298 @@
+{
+  "id": "day_18",
+  "storyId": "the-fourth-tenant",
+  "day": 18,
+  "week": 3,
+  "phase": "DANGER",
+  "phaseLabel": "Danger & Direct Involvement",
+  "headline": "Danger & Direct Involvement - Day 18",
+  "releaseWindow": {
+    "campaignOffsetHours": 408,
+    "oddHourDelivery": true,
+    "preferredOddHourClock": "02:11"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      17
+    ],
+    "requiredFlags": [
+      "flag.day_17.complete"
+    ],
+    "requiredInteractions": [
+      "day-17-detective-brief"
+    ],
+    "minHoursSincePrevious": 10,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "An antagonist demand threatens collateral unless evidence is withheld.",
+    "beatAnchorId": "beat-4",
+    "beatAnchorTitle": "Ultimatum Window",
+    "beatNarrative": "A timed message threatens collateral harm unless the party diverts.",
+    "threatEscalation": "direct operational threat",
+    "playerInvolvementShift": "participant to active target"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "active",
+      "update": "Ultimatum Window: A timed message threatens collateral harm unless the party diverts.",
+      "clueReference": "Hallway thermal still"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Hallway thermal still remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Hallway thermal still.",
+      "clueReference": "Hallway thermal still"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "cooldown",
+      "update": "No new movement on false lead this cycle.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "spiking",
+      "update": "NPC language mirrors player choices with unsettling precision."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "the-fourth-tenant-d18-voicemail-transcript-hallway-thermal-still",
+      "day": 18,
+      "title": "The Fourth Tenant - Day 18 voicemail transcript",
+      "type": "voicemail_transcript",
+      "sourceNpcId": "npc.the-fourth-tenant-npc-4",
+      "threadId": "thread.hidden_truth",
+      "clueTags": [
+        "hallway-thermal-still",
+        "phase.danger"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Hallway thermal still.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "The Fourth Tenant ARG artifact Day 18. Type: voicemail_transcript. Clue focus: Hallway thermal still. Location: Flood-district prewar apartment block. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "The Fourth Tenant voicemail_transcript audio cue for day 18. Clue anchor: Hallway thermal still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 28
+      }
+    },
+    {
+      "id": "the-fourth-tenant-d18-marked-map-hallway-thermal-still",
+      "day": 18,
+      "title": "The Fourth Tenant - Day 18 marked map",
+      "type": "marked_map",
+      "sourceNpcId": "npc.unknown.contact",
+      "threadId": "thread.psychological_break",
+      "clueTags": [
+        "hallway-thermal-still",
+        "phase.danger"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Hallway thermal still.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "The Fourth Tenant ARG artifact Day 18. Type: marked_map. Clue focus: Hallway thermal still. Location: Flood-district prewar apartment block. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "The Fourth Tenant marked_map audio cue for day 18. Clue anchor: Hallway thermal still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 28
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-18-detective-brief",
+      "actorId": "npc.the-fourth-tenant-npc-1",
+      "role": "detective",
+      "channel": "VOICE_MESSAGE",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 33,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Hallway thermal still and tell me if your last call still stands (decision.day_17.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-18-witness-ping",
+      "actorId": "npc.the-fourth-tenant-npc-2",
+      "role": "witness",
+      "channel": "WHATSAPP",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 58,
+        "oddHourWindow": true
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-18-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 95,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Hallway thermal still.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-18-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "TELEGRAM",
+      "mode": "call_simulation",
+      "scheduled": {
+        "offsetMinutes": 169,
+        "oddHourWindow": true,
+        "oddHourClock": "00:43"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    },
+    {
+      "id": "day-18-unknown-contact",
+      "actorId": "npc.unknown.contact",
+      "role": "unknown_contact",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 190,
+        "oddHourWindow": true,
+        "oddHourClock": "00:43"
+      },
+      "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+      "expectedPlayerActions": [
+        "ask_identity",
+        "follow_instruction",
+        "report_to_detective"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 90,
+        "escalation": "unknown_contact_sends_redacted_attachment"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "the-fourth-tenant-puzzle-day-18",
+    "type": "cross_reference",
+    "title": "Day 18 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Hallway thermal still.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with HALL."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "HALLWAY_THERMAL_STILL_18"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_18.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Antagonist sends a personalized pressure message and witness trust drops."
+  },
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_18.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_18.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.the-fourth-tenant-npc-1",
+        "delta": -2
+      },
+      {
+        "npcId": "npc.the-fourth-tenant-npc-2",
+        "delta": 0
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

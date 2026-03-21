@@ -1,0 +1,270 @@
+{
+  "id": "day_21",
+  "storyId": "black-chapel-ledger",
+  "day": 21,
+  "week": 3,
+  "phase": "DANGER",
+  "phaseLabel": "Danger & Direct Involvement",
+  "headline": "Danger & Direct Involvement - Day 21",
+  "releaseWindow": {
+    "campaignOffsetHours": 480,
+    "oddHourDelivery": true,
+    "preferredOddHourClock": "00:43"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      20
+    ],
+    "requiredFlags": [
+      "flag.day_20.complete"
+    ],
+    "requiredInteractions": [
+      "day-20-detective-brief"
+    ],
+    "minHoursSincePrevious": 10,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "Third branch point locks either protective extraction or aggressive exposure.",
+    "beatAnchorId": "beat-5",
+    "beatAnchorTitle": "Confrontation Protocol",
+    "beatNarrative": "Players reconstruct motive and false trails before collapse.",
+    "threatEscalation": "direct operational threat",
+    "playerInvolvementShift": "participant to active target"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "active",
+      "update": "Confrontation Protocol: Players reconstruct motive and false trails before collapse.",
+      "clueReference": "Burned vellum fragment"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Burned vellum fragment remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Burned vellum fragment.",
+      "clueReference": "Burned vellum fragment"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "cooldown",
+      "update": "No new movement on false lead this cycle.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "spiking",
+      "update": "NPC language mirrors player choices with unsettling precision."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "black-chapel-ledger-d21-marked-map-burned-vellum-fragment",
+      "day": 21,
+      "title": "Black Chapel Ledger - Day 21 marked map",
+      "type": "marked_map",
+      "sourceNpcId": "npc.unknown.contact",
+      "threadId": "thread.main_investigation",
+      "clueTags": [
+        "burned-vellum-fragment",
+        "phase.danger"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Burned vellum fragment.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Black Chapel Ledger ARG artifact Day 21. Type: marked_map. Clue focus: Burned vellum fragment. Location: Cliffside cathedral archive district. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Black Chapel Ledger marked_map audio cue for day 21. Clue anchor: Burned vellum fragment. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 28
+      }
+    },
+    {
+      "id": "black-chapel-ledger-d21-shipping-manifest-burned-vellum-fragment",
+      "day": 21,
+      "title": "Black Chapel Ledger - Day 21 shipping manifest",
+      "type": "shipping_manifest",
+      "sourceNpcId": "npc.black-chapel-ledger-npc-3",
+      "threadId": "thread.hidden_truth",
+      "clueTags": [
+        "burned-vellum-fragment",
+        "phase.danger"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Burned vellum fragment.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Black Chapel Ledger ARG artifact Day 21. Type: shipping_manifest. Clue focus: Burned vellum fragment. Location: Cliffside cathedral archive district. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Black Chapel Ledger shipping_manifest audio cue for day 21. Clue anchor: Burned vellum fragment. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 28
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-21-detective-brief",
+      "actorId": "npc.black-chapel-ledger-npc-1",
+      "role": "detective",
+      "channel": "TELEGRAM",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 19,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Burned vellum fragment and tell me if your last call still stands (decision.day_20.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-21-witness-ping",
+      "actorId": "npc.black-chapel-ledger-npc-2",
+      "role": "witness",
+      "channel": "EMAIL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 49,
+        "oddHourWindow": true
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-21-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 128,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Burned vellum fragment.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-21-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "VOICE_MESSAGE",
+      "mode": "call_simulation",
+      "scheduled": {
+        "offsetMinutes": 143,
+        "oddHourWindow": true,
+        "oddHourClock": "03:33"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    },
+    {
+      "id": "day-21-unknown-contact",
+      "actorId": "npc.unknown.contact",
+      "role": "unknown_contact",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 170,
+        "oddHourWindow": true,
+        "oddHourClock": "03:33"
+      },
+      "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+      "expectedPlayerActions": [
+        "ask_identity",
+        "follow_instruction",
+        "report_to_detective"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 90,
+        "escalation": "unknown_contact_sends_redacted_attachment"
+      }
+    }
+  ],
+  "puzzle": null,
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_21.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_21.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.black-chapel-ledger-npc-1",
+        "delta": -2
+      },
+      {
+        "npcId": "npc.black-chapel-ledger-npc-2",
+        "delta": 0
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

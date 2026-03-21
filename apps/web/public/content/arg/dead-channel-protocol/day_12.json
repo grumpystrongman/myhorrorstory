@@ -1,0 +1,298 @@
+{
+  "id": "day_12",
+  "storyId": "dead-channel-protocol",
+  "day": 12,
+  "week": 2,
+  "phase": "ESCALATION",
+  "phaseLabel": "Escalation & Unease",
+  "headline": "Escalation & Unease - Day 12",
+  "releaseWindow": {
+    "campaignOffsetHours": 264,
+    "oddHourDelivery": true,
+    "preferredOddHourClock": "01:17"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      11
+    ],
+    "requiredFlags": [
+      "flag.day_11.complete"
+    ],
+    "requiredInteractions": [
+      "day-11-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "Unknown contact sends a warning that names your previous choice.",
+    "beatAnchorId": "beat-3",
+    "beatAnchorTitle": "Trust Fracture",
+    "beatNarrative": "The villain mixes real secrets with fabricated claims to split allies.",
+    "threatEscalation": "social and informational pressure",
+    "playerInvolvementShift": "analyst to implicated participant"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "active",
+      "update": "Trust Fracture: The villain mixes real secrets with fabricated claims to split allies.",
+      "clueReference": "Abandoned node scan"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Abandoned node scan remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Abandoned node scan.",
+      "clueReference": "Abandoned node scan"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "misdirecting",
+      "update": "A plausible shortcut appears: Disable network vs exploit protocol for leverage.",
+      "clueReference": "Abandoned node scan"
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "building",
+      "update": "Subtle repetition appears in unrelated communications."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "dead-channel-protocol-d12-shipping-manifest-abandoned-node-scan",
+      "day": 12,
+      "title": "Dead Channel Protocol - Day 12 shipping manifest",
+      "type": "shipping_manifest",
+      "sourceNpcId": "npc.journalist.field",
+      "threadId": "thread.side_mystery",
+      "clueTags": [
+        "abandoned-node-scan",
+        "phase.escalation"
+      ],
+      "misleading": true,
+      "reliabilityScore": 0.42,
+      "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Abandoned node scan.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Dead Channel Protocol ARG artifact Day 12. Type: shipping_manifest. Clue focus: Abandoned node scan. Location: Smart-city control grid and abandoned transit nodes. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Dead Channel Protocol shipping_manifest audio cue for day 12. Clue anchor: Abandoned node scan. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    },
+    {
+      "id": "dead-channel-protocol-d12-journal-entry-abandoned-node-scan",
+      "day": 12,
+      "title": "Dead Channel Protocol - Day 12 journal entry",
+      "type": "journal_entry",
+      "sourceNpcId": "npc.dead-channel-protocol-npc-1",
+      "threadId": "thread.false_lead",
+      "clueTags": [
+        "abandoned-node-scan",
+        "phase.escalation"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Abandoned node scan.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Dead Channel Protocol ARG artifact Day 12. Type: journal_entry. Clue focus: Abandoned node scan. Location: Smart-city control grid and abandoned transit nodes. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Dead Channel Protocol journal_entry audio cue for day 12. Clue anchor: Abandoned node scan. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-12-detective-brief",
+      "actorId": "npc.dead-channel-protocol-npc-1",
+      "role": "detective",
+      "channel": "VOICE_MESSAGE",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 26,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Abandoned node scan and tell me if your last call still stands (decision.day_11.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-12-witness-ping",
+      "actorId": "npc.dead-channel-protocol-npc-2",
+      "role": "witness",
+      "channel": "WHATSAPP",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 40,
+        "oddHourWindow": true
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-12-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 95,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Abandoned node scan.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-12-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "TELEGRAM",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 156,
+        "oddHourWindow": true,
+        "oddHourClock": "04:09"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    },
+    {
+      "id": "day-12-unknown-contact",
+      "actorId": "npc.unknown.contact",
+      "role": "unknown_contact",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 195,
+        "oddHourWindow": true,
+        "oddHourClock": "04:09"
+      },
+      "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+      "expectedPlayerActions": [
+        "ask_identity",
+        "follow_instruction",
+        "report_to_detective"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 90,
+        "escalation": "unknown_contact_sends_redacted_attachment"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "dead-channel-protocol-puzzle-day-12",
+    "type": "timeline_consistency",
+    "title": "Day 12 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Abandoned node scan.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with ABAN."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "ABANDONED_NODE_SCAN_12"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_12.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+  },
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_12.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_12.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.dead-channel-protocol-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.dead-channel-protocol-npc-2",
+        "delta": 0
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

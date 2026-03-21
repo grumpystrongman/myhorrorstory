@@ -1,0 +1,246 @@
+{
+  "id": "signal-from-kharon-9",
+  "version": "arg-v1",
+  "title": "Signal From Kharon-9",
+  "hook": "Telemetry returns from a decommissioned orbital array and predicts player replies.",
+  "subgenre": "cosmic horror",
+  "tone": "INTENSE",
+  "location": "Mountain observatory and subterranean receiver array",
+  "ageWarnings": [
+    "existential dread",
+    "disorientation",
+    "threat"
+  ],
+  "durationDays": 28,
+  "weeklyStructure": [
+    {
+      "week": 1,
+      "label": "Discovery & Curiosity",
+      "dayRange": [
+        1,
+        7
+      ],
+      "objective": "Validate the first anomaly, establish trust baselines, and seed investigative obsession."
+    },
+    {
+      "week": 2,
+      "label": "Escalation & Unease",
+      "dayRange": [
+        8,
+        14
+      ],
+      "objective": "Push contradictions, introduce manipulative pressure, and degrade certainty."
+    },
+    {
+      "week": 3,
+      "label": "Danger & Direct Involvement",
+      "dayRange": [
+        15,
+        21
+      ],
+      "objective": "Force personal risk, urgent tradeoffs, and irreversible consequences."
+    },
+    {
+      "week": 4,
+      "label": "Resolution or Psychological Break",
+      "dayRange": [
+        22,
+        28
+      ],
+      "objective": "Collapse competing truths into final judgement, compromise, or breakdown."
+    }
+  ],
+  "overarchingPlotArc": {
+    "centralQuestion": "Telemetry returns from a decommissioned orbital array and predicts player replies.",
+    "campaignPromise": "A four-week investigation where evidence, conversation, and timing decisions shape the ending.",
+    "resolutionModes": [
+      "justice",
+      "compromised_truth",
+      "corruption_pact",
+      "psychological_break"
+    ]
+  },
+  "threads": [
+    {
+      "id": "thread.main_investigation",
+      "type": "main",
+      "title": "Primary Investigation",
+      "premise": "The case opens with impossible evidence and uncertain allies.",
+      "objective": "Establish an admissible chain-of-custody and identify the orchestrator.",
+      "anchorClues": [
+        "Telemetry checksum drift",
+        "Starfield deviation map"
+      ]
+    },
+    {
+      "id": "thread.side_mystery",
+      "type": "side",
+      "title": "Peripheral Incident",
+      "premise": "Villain contact escalates while ally trust becomes volatile.",
+      "objective": "Determine whether the side event is collateral damage or intentional staging.",
+      "anchorClues": [
+        "Starfield deviation map",
+        "Array maintenance gap log"
+      ]
+    },
+    {
+      "id": "thread.hidden_truth",
+      "type": "hidden_truth",
+      "title": "Suppressed Truth",
+      "premise": "Fabricated anomaly by profiteers",
+      "objective": "Recover suppressed records that reframe motive and victim selection.",
+      "anchorClues": [
+        "Array maintenance gap log",
+        "Operator biometric mismatch"
+      ]
+    },
+    {
+      "id": "thread.false_lead",
+      "type": "false_lead",
+      "title": "Manufactured Lead",
+      "premise": "Sandbox isolate vs immediate decode",
+      "objective": "Expose deliberate misdirection before it burns key evidence time.",
+      "anchorClues": [
+        "Telemetry checksum drift"
+      ]
+    },
+    {
+      "id": "thread.psychological_break",
+      "type": "psychological",
+      "title": "Psychological Pressure Arc",
+      "premise": "The final branch depends on ethics, timing, and trust.",
+      "objective": "Preserve judgement while antagonist personalization escalates.",
+      "anchorClues": [
+        "Telemetry checksum drift",
+        "Starfield deviation map",
+        "Array maintenance gap log",
+        "Operator biometric mismatch"
+      ]
+    }
+  ],
+  "progressionFlags": [
+    "flag.case_opened",
+    "flag.main_thread_active",
+    "flag.side_thread_unstable",
+    "flag.hidden_truth_thread_critical",
+    "flag.false_lead_thread_unmasked",
+    "flag.psychological_pressure_peak",
+    "flag.final_resolution_locked"
+  ],
+  "branchAnchors": [
+    {
+      "id": "branch.anchor.week1",
+      "day": 7,
+      "label": "Sandbox isolate vs immediate decode"
+    },
+    {
+      "id": "branch.anchor.week2",
+      "day": 14,
+      "label": "Seal transmission vs weaponize prediction"
+    },
+    {
+      "id": "branch.anchor.week3",
+      "day": 21,
+      "label": "Protection vs Prosecution"
+    }
+  ],
+  "puzzleCadence": {
+    "puzzleDays": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "expectedDifficultyRamp": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "philosophy": "Grounded deduction over abstract riddles."
+  },
+  "deliveryModel": {
+    "supportedChannels": [
+      "SMS",
+      "WHATSAPP",
+      "TELEGRAM",
+      "SIGNAL",
+      "EMAIL",
+      "VOICE_MESSAGE"
+    ],
+    "oddHourWindows": [
+      "00:43",
+      "01:17",
+      "02:11",
+      "03:33",
+      "04:09"
+    ],
+    "delayedResponsePolicy": "Important interactions can hold for 1-6 hours to preserve world persistence and tension."
+  },
+  "personalizationModel": {
+    "tokens": [
+      "{{player_alias}}",
+      "{{preferred_channel}}",
+      "{{last_major_choice}}",
+      "{{trusted_contact}}"
+    ],
+    "awarenessRules": [
+      "NPCs may reference choices from previous day interactions.",
+      "Antagonist may mirror wording from player decisions under high pressure.",
+      "Unknown contact should feel observant but plausible, never supernatural omniscience."
+    ]
+  },
+  "fileManifest": {
+    "campaign": "campaign.json",
+    "days": [
+      "day_01.json",
+      "day_02.json",
+      "day_03.json",
+      "day_04.json",
+      "day_05.json",
+      "day_06.json",
+      "day_07.json",
+      "day_08.json",
+      "day_09.json",
+      "day_10.json",
+      "day_11.json",
+      "day_12.json",
+      "day_13.json",
+      "day_14.json",
+      "day_15.json",
+      "day_16.json",
+      "day_17.json",
+      "day_18.json",
+      "day_19.json",
+      "day_20.json",
+      "day_21.json",
+      "day_22.json",
+      "day_23.json",
+      "day_24.json",
+      "day_25.json",
+      "day_26.json",
+      "day_27.json",
+      "day_28.json"
+    ],
+    "npcProfiles": "npc_profiles.json",
+    "artifactDefinitions": "artifact_definitions.json",
+    "sampleSevenDayExperience": "sample_7_day_experience.json",
+    "npcDialoguePrompts": "npc_dialogue_system_prompts.json",
+    "frontendIntegrationPlan": "frontend_integration_plan.json",
+    "expansionSystem": "expansion_system.json",
+    "compatibilityRuntime": "../drama/{storyId}.json"
+  }
+}

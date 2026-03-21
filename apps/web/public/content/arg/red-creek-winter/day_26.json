@@ -1,0 +1,273 @@
+{
+  "id": "day_26",
+  "storyId": "red-creek-winter",
+  "day": 26,
+  "week": 4,
+  "phase": "RESOLUTION",
+  "phaseLabel": "Resolution or Psychological Break",
+  "headline": "Resolution or Psychological Break - Day 26",
+  "releaseWindow": {
+    "campaignOffsetHours": 600,
+    "oddHourDelivery": true,
+    "preferredOddHourClock": "00:43"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      25
+    ],
+    "requiredFlags": [
+      "flag.day_25.complete"
+    ],
+    "requiredInteractions": [
+      "day-25-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "Evidence board converges, but one key artifact remains unreliable.",
+    "beatAnchorId": "beat-6",
+    "beatAnchorTitle": "Case Debrief",
+    "beatNarrative": "Final scoring resolves ending branch and season continuity flags.",
+    "threatEscalation": "identity-level confrontation",
+    "playerInvolvementShift": "target to final arbiter"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "closing",
+      "update": "Case Debrief: Final scoring resolves ending branch and season continuity flags.",
+      "clueReference": "Snow-depth forensic note"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Snow-depth forensic note remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Snow-depth forensic note.",
+      "clueReference": "Snow-depth forensic note"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "cooldown",
+      "update": "No new movement on false lead this cycle.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "spiking",
+      "update": "NPC language mirrors player choices with unsettling precision."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "red-creek-winter-d26-handwritten-note-snow-depth-forensic-note",
+      "day": 26,
+      "title": "Red Creek Winter - Day 26 handwritten note",
+      "type": "handwritten_note",
+      "sourceNpcId": "npc.journalist.field",
+      "threadId": "thread.main_investigation",
+      "clueTags": [
+        "snow-depth-forensic-note",
+        "phase.resolution"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Snow-depth forensic note.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Red Creek Winter ARG artifact Day 26. Type: handwritten_note. Clue focus: Snow-depth forensic note. Location: Mountain logging town under blizzard lockdown. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Red Creek Winter handwritten_note audio cue for day 26. Clue anchor: Snow-depth forensic note. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-26-detective-brief",
+      "actorId": "npc.red-creek-winter-npc-1",
+      "role": "detective",
+      "channel": "WHATSAPP",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 19,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Snow-depth forensic note and tell me if your last call still stands (decision.day_25.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-26-witness-ping",
+      "actorId": "npc.red-creek-winter-npc-2",
+      "role": "witness",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 58,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-26-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 117,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Snow-depth forensic note.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-26-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "EMAIL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 143,
+        "oddHourWindow": true,
+        "oddHourClock": "03:33"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    },
+    {
+      "id": "day-26-unknown-contact",
+      "actorId": "npc.unknown.contact",
+      "role": "unknown_contact",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 195,
+        "oddHourWindow": true,
+        "oddHourClock": "03:33"
+      },
+      "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+      "expectedPlayerActions": [
+        "ask_identity",
+        "follow_instruction",
+        "report_to_detective"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 90,
+        "escalation": "unknown_contact_sends_redacted_attachment"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "red-creek-winter-puzzle-day-26",
+    "type": "cipher",
+    "title": "Day 26 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Snow-depth forensic note.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with SNOW."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "SNOW_DEPTH_FORENSIC_NOTE_26"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_26.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+  },
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_26.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_26.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.red-creek-winter-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.red-creek-winter-npc-2",
+        "delta": -1
+      }
+    ],
+    "unlockNextAfterHours": 8
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

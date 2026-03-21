@@ -1,142 +1,384 @@
 # Full Playthrough Simulation Report
 
-Generated: 2026-03-20T20:16:52.353Z
+Generated: 2026-03-21T13:45:52.829Z
 
 - Story count: 11
-- Playable beats total: 66
-- Ending variants total: 33
+- Playable beats total: 308
+- Ending variants total: 44
 
 ## Story Runs
 
 ### Black Chapel Ledger (`black-chapel-ledger`)
 - Hook: A cathedral ledger records debts paid in memory instead of money.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Ledger Breach -> Authenticate the ledger seals with archival metadata [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Canon Archivist Elara Voss and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Crown of Salt (`crown-of-salt`)
 - Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Manifest Drift -> Audit crate chain-of-custody from port systems [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Port Auditor Lin Ortega and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Dead Channel Protocol (`dead-channel-protocol`)
 - Hook: A ghost app predicts outages, deaths, and your next move.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Protocol Wake -> Audit protocol source code and signing keys [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Security Engineer Talia Ren and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Midnight Lockbox (`midnight-lockbox`)
 - Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Unit 331 pings alive -> Audit keypad logs and access events before sunrise [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Lock Cylinder Swap -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Morning Leak -> Trust Case Lead Veda Cross and seal internal channels [intent: COMPLIANCE] [channels: TELEGRAM, EMAIL, WHATSAPP]
-  - 4. Noon Ultimatum -> Divert to save threatened NPC [intent: THREAT] [channels: EMAIL, VOICE_MESSAGE, SMS]
-  - 5. Drain Tunnel Run -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
-  - 6. Lockbox Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: DOCUMENT_DROP, SIMULATED_SITE, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Red Creek Winter (`red-creek-winter`)
 - Hook: Each snowfall uncovers one body and one impossible alibi.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. First Snow Body -> Run forensic timeline from dispatch logs [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Sheriff Dana Holt and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Signal From Kharon-9 (`signal-from-kharon-9`)
 - Hook: Telemetry returns from a decommissioned orbital array and predicts player replies.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Dormant Array Wake -> Sandbox the signal in a quarantined parser [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Systems Engineer Ari Vance and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Static Between Stations (`static-between-stations`)
 - Hook: A dead rail line broadcasts private confessions in the players' own voices.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Signal One -> Trace the source frequency through telecom logs [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Lead Investigator Mara Quinn and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Tape 17: Pinewatch (`tape-17-pinewatch`)
 - Hook: A recovered camcorder tape rewrites itself every midnight.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Tape Reset -> Extract frame-level artifacts before midnight overwrite [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Ranger Juno Hale and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### The Fourth Tenant (`the-fourth-tenant`)
 - Hook: Rent is collected from an apartment that appears on no official map.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Unlisted Unit -> Audit property records and insurance filings [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Building Superintendent Leda Price and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### The Harvest Men (`the-harvest-men`)
 - Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Dusk Selection -> Analyze soil reports linked to ritual sites [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Visiting Agronomist Dina Crowe and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 
 ### Ward 1908 (`ward-1908`)
 - Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m.
-- Beats: 6
-- Endings: 3
-- Default path steps: 6
-  - 1. Night Update -> Validate record edits against archive backups [intent: CURIOSITY] [channels: SMS, WHATSAPP, SMS]
-  - 2. Escalation Signal -> Preserve original evidence chain [intent: CURIOSITY] [channels: WHATSAPP, TELEGRAM, SMS]
-  - 3. Trust Fracture -> Trust Hospital Archivist Nella Ward and secure witness [intent: COMPLIANCE] [channels: TELEGRAM, SIGNAL, WHATSAPP]
-  - 4. Ultimatum Window -> Divert to save threatened NPC [intent: THREAT] [channels: SIGNAL, EMAIL, SMS]
-  - 5. Confrontation Protocol -> Commit to formal accusation and expose evidence chain [intent: ACCUSATION] [channels: EMAIL, VOICE_MESSAGE, EMAIL]
-  - 6. Case Debrief -> Proceed with controlled pressure [intent: CURIOSITY] [channels: VOICE_MESSAGE, DOCUMENT_DROP, EMAIL]
+- Beats: 28
+- Endings: 4
+- Default path steps: 28
+  - 1. Discovery & Curiosity - Day 01 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 2. Discovery & Curiosity - Day 02 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL]
+  - 3. Discovery & Curiosity - Day 03 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, SMS]
+  - 4. Discovery & Curiosity - Day 04 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL]
+  - 5. Discovery & Curiosity - Day 05 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL]
+  - 6. Discovery & Curiosity - Day 06 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, SMS]
+  - 7. Discovery & Curiosity - Day 07 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL]
+  - 8. Escalation & Unease - Day 08 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 9. Escalation & Unease - Day 09 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 10. Escalation & Unease - Day 10 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 11. Escalation & Unease - Day 11 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 12. Escalation & Unease - Day 12 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 13. Escalation & Unease - Day 13 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 14. Escalation & Unease - Day 14 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 15. Danger & Direct Involvement - Day 15 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 16. Danger & Direct Involvement - Day 16 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL]
+  - 17. Danger & Direct Involvement - Day 17 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP]
+  - 18. Danger & Direct Involvement - Day 18 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 19. Danger & Direct Involvement - Day 19 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS]
+  - 20. Danger & Direct Involvement - Day 20 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL]
+  - 21. Danger & Direct Involvement - Day 21 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 22. Resolution or Psychological Break - Day 22 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
+  - 23. Resolution or Psychological Break - Day 23 -> Acknowledge [intent: QUESTION] [channels: EMAIL, SIGNAL, EMAIL, WHATSAPP, SMS]
+  - 24. Resolution or Psychological Break - Day 24 -> Acknowledge [intent: QUESTION] [channels: VOICE_MESSAGE, WHATSAPP, EMAIL, TELEGRAM, SMS]
+  - 25. Resolution or Psychological Break - Day 25 -> Acknowledge [intent: QUESTION] [channels: SIGNAL, TELEGRAM, EMAIL, SMS, SMS]
+  - 26. Resolution or Psychological Break - Day 26 -> Acknowledge [intent: QUESTION] [channels: WHATSAPP, SMS, EMAIL, EMAIL, SMS]
+  - 27. Resolution or Psychological Break - Day 27 -> Acknowledge [intent: QUESTION] [channels: TELEGRAM, EMAIL, EMAIL, VOICE_MESSAGE, SMS]
+  - 28. Resolution or Psychological Break - Day 28 -> Acknowledge [intent: QUESTION] [channels: SMS, VOICE_MESSAGE, EMAIL, SIGNAL, SMS]
 

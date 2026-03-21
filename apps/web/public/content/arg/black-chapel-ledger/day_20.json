@@ -1,0 +1,276 @@
+{
+  "id": "day_20",
+  "storyId": "black-chapel-ledger",
+  "day": 20,
+  "week": 3,
+  "phase": "DANGER",
+  "phaseLabel": "Danger & Direct Involvement",
+  "headline": "Danger & Direct Involvement - Day 20",
+  "releaseWindow": {
+    "campaignOffsetHours": 456,
+    "oddHourDelivery": true,
+    "preferredOddHourClock": "04:09"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      19
+    ],
+    "requiredFlags": [
+      "flag.day_19.complete"
+    ],
+    "requiredInteractions": [
+      "day-19-detective-brief"
+    ],
+    "minHoursSincePrevious": 10,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "Unknown contact reveals personal detail only the player would recognize.",
+    "beatAnchorId": "beat-4",
+    "beatAnchorTitle": "Ultimatum Window",
+    "beatNarrative": "A timed message threatens collateral harm unless the party diverts.",
+    "threatEscalation": "direct operational threat",
+    "playerInvolvementShift": "participant to active target"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "active",
+      "update": "Ultimatum Window: A timed message threatens collateral harm unless the party diverts.",
+      "clueReference": "Ledger watermark scan"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Ledger watermark scan remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Ledger watermark scan.",
+      "clueReference": "Ledger watermark scan"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "misdirecting",
+      "update": "A plausible shortcut appears: Public disclosure vs private restitution.",
+      "clueReference": "Ledger watermark scan"
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "spiking",
+      "update": "NPC language mirrors player choices with unsettling precision."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "black-chapel-ledger-d20-crime-scene-photo-ledger-watermark-scan",
+      "day": 20,
+      "title": "Black Chapel Ledger - Day 20 crime scene photo",
+      "type": "crime_scene_photo",
+      "sourceNpcId": "npc.antagonist.primary",
+      "threadId": "thread.psychological_break",
+      "clueTags": [
+        "ledger-watermark-scan",
+        "phase.danger"
+      ],
+      "misleading": true,
+      "reliabilityScore": 0.42,
+      "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Ledger watermark scan.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Black Chapel Ledger ARG artifact Day 20. Type: crime_scene_photo. Clue focus: Ledger watermark scan. Location: Cliffside cathedral archive district. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Black Chapel Ledger crime_scene_photo audio cue for day 20. Clue anchor: Ledger watermark scan. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 28
+      }
+    },
+    {
+      "id": "black-chapel-ledger-d20-medical-record-ledger-watermark-scan",
+      "day": 20,
+      "title": "Black Chapel Ledger - Day 20 medical record",
+      "type": "medical_record",
+      "sourceNpcId": "npc.black-chapel-ledger-npc-2",
+      "threadId": "thread.side_mystery",
+      "clueTags": [
+        "ledger-watermark-scan",
+        "phase.danger"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Ledger watermark scan.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Black Chapel Ledger ARG artifact Day 20. Type: medical_record. Clue focus: Ledger watermark scan. Location: Cliffside cathedral archive district. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Black Chapel Ledger medical_record audio cue for day 20. Clue anchor: Ledger watermark scan. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 28
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-20-detective-brief",
+      "actorId": "npc.black-chapel-ledger-npc-1",
+      "role": "detective",
+      "channel": "WHATSAPP",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 12,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Ledger watermark scan and tell me if your last call still stands (decision.day_19.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-20-witness-ping",
+      "actorId": "npc.black-chapel-ledger-npc-2",
+      "role": "witness",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 40,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-20-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 117,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Ledger watermark scan.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-20-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "EMAIL",
+      "mode": "call_simulation",
+      "scheduled": {
+        "offsetMinutes": 130,
+        "oddHourWindow": true,
+        "oddHourClock": "02:11"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "black-chapel-ledger-puzzle-day-20",
+    "type": "call_path_reconstruction",
+    "title": "Day 20 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Ledger watermark scan.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with LEDG."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "LEDGER_WATERMARK_SCAN_20"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_20.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Antagonist sends a personalized pressure message and witness trust drops."
+  },
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_20.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_20.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.black-chapel-ledger-npc-1",
+        "delta": -2
+      },
+      {
+        "npcId": "npc.black-chapel-ledger-npc-2",
+        "delta": 0
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "storyId": "red-creek-winter",
+  "designPrinciples": [
+    "Prioritize message-first immersion with asynchronous pacing.",
+    "Keep the player anchored to evidence, not abstract lore dumps.",
+    "Surface contradictions visually on timeline and board layers."
+  ],
+  "surfaces": {
+    "evidenceBoard": {
+      "description": "Pinboard linking artifacts, NPCs, and thread statuses with confidence indicators.",
+      "requiredWidgets": [
+        "node cards",
+        "relation lines",
+        "clue confidence meter",
+        "misdirection markers"
+      ],
+      "updateTriggers": [
+        "artifact drop",
+        "thread status shift",
+        "puzzle solved"
+      ]
+    },
+    "messengerSurface": {
+      "description": "Phone-like thread showing delayed NPC interactions across channels.",
+      "requiredWidgets": [
+        "channel badge",
+        "typing delay simulation",
+        "odd-hour alerts",
+        "voice/call simulation card"
+      ],
+      "inputModes": [
+        "free text",
+        "guided response actions",
+        "puzzle answer submit"
+      ]
+    },
+    "timelineSurface": {
+      "description": "Day-by-day chronology with branch anchors and unresolved contradictions.",
+      "requiredWidgets": [
+        "day cards",
+        "branch markers",
+        "lock state indicator",
+        "phase progression ribbon"
+      ]
+    },
+    "filesSurface": {
+      "description": "Case file cabinet for reports, screenshots, maps, and recordings.",
+      "requiredWidgets": [
+        "artifact filter by type",
+        "verified vs misleading tags",
+        "audio waveform preview"
+      ]
+    }
+  },
+  "mobileModel": {
+    "shell": "iphone-style chat viewport with slide-over evidence tray",
+    "breakpoints": [
+      "360w",
+      "768w",
+      "1024w"
+    ],
+    "controls": [
+      "thumb-safe response chips",
+      "sticky compose bar",
+      "swipe timeline peek"
+    ]
+  },
+  "instrumentation": {
+    "events": [
+      "arg_day_opened",
+      "arg_interaction_submitted",
+      "arg_puzzle_attempted",
+      "arg_artifact_inspected",
+      "arg_branch_decision_committed"
+    ],
+    "qualitySignals": [
+      "daily retention",
+      "interaction completion rate",
+      "puzzle solve latency",
+      "branch distribution"
+    ]
+  },
+  "rollout": {
+    "mode": "feature flag",
+    "target": "/play and /simulations",
+    "fallback": "/content/drama compatibility package"
+  },
+  "references": {
+    "campaignVersion": "arg-v1",
+    "durationDays": 28
+  }
+}

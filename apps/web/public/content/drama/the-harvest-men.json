@@ -1,7 +1,7 @@
 {
   "id": "the-harvest-men",
   "title": "The Harvest Men",
-  "version": "v2",
+  "version": "arg-v1-compat",
   "hook": "A ritual mask selects a new wearer every dusk, and refusals vanish overnight.",
   "tone": "SLOW_BURN",
   "subgenre": "folk horror",
@@ -18,8 +18,7 @@
     "SIGNAL",
     "EMAIL",
     "VOICE_MESSAGE",
-    "DOCUMENT_DROP",
-    "SIMULATED_SITE"
+    "DOCUMENT_DROP"
   ],
   "villain": {
     "id": "the-harvest-men-villain",
@@ -30,499 +29,3224 @@
   },
   "arcs": [
     {
-      "id": "the-harvest-men-arc-contact",
-      "title": "Contact and Contradiction",
-      "stage": "OPENING",
-      "summary": "The case opens with impossible evidence and uncertain allies.",
+      "id": "the-harvest-men-discovery",
+      "title": "Discovery & Curiosity",
+      "stage": "DISCOVERY",
+      "summary": "Validate the first anomaly, establish trust baselines, and seed investigative obsession.",
       "primaryRuleIds": [
-        "the-harvest-men-rule-first-contact",
-        "the-harvest-men-rule-delay-punish"
+        "rule.discovery.pacing",
+        "rule.discovery.pressure"
       ]
     },
     {
-      "id": "the-harvest-men-arc-disruption",
-      "title": "Interference and Doubt",
-      "stage": "MIDDLE",
-      "summary": "Villain contact escalates while ally trust becomes volatile.",
+      "id": "the-harvest-men-escalation",
+      "title": "Escalation & Unease",
+      "stage": "ESCALATION",
+      "summary": "Push contradictions, introduce manipulative pressure, and degrade certainty.",
       "primaryRuleIds": [
-        "the-harvest-men-rule-incorrect-accusation",
-        "the-harvest-men-rule-ally-cooperation"
+        "rule.escalation.pacing",
+        "rule.escalation.pressure"
       ]
     },
     {
-      "id": "the-harvest-men-arc-endgame",
-      "title": "Confrontation and Reckoning",
-      "stage": "ENDGAME",
-      "summary": "The final branch depends on ethics, timing, and trust.",
+      "id": "the-harvest-men-danger",
+      "title": "Danger & Direct Involvement",
+      "stage": "DANGER",
+      "summary": "Force personal risk, urgent tradeoffs, and irreversible consequences.",
       "primaryRuleIds": [
-        "the-harvest-men-rule-near-success",
-        "the-harvest-men-rule-moral-fork"
+        "rule.danger.pacing",
+        "rule.danger.pressure"
+      ]
+    },
+    {
+      "id": "the-harvest-men-resolution",
+      "title": "Resolution or Psychological Break",
+      "stage": "RESOLUTION",
+      "summary": "Collapse competing truths into final judgement, compromise, or breakdown.",
+      "primaryRuleIds": [
+        "rule.resolution.pacing",
+        "rule.resolution.pressure"
       ]
     }
   ],
   "beats": [
     {
-      "id": "beat-1",
-      "actId": "act-1",
-      "actTitle": "Contact",
-      "title": "Dusk Selection",
-      "narrative": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+      "id": "day_01",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 01",
+      "narrative": "An intake anomaly lands across multiple channels before dawn.",
       "stage": 1,
-      "unlockAfterSeconds": 0,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "the-harvest-men-clue-origin"
+        "the-harvest-men-d01-police-report-blood-soil-composition-panel"
       ],
       "incomingMessages": [
         {
-          "id": "beat-1.msg.handler",
+          "id": "day-01-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (none).",
+          "delaySeconds": 2,
+          "intensity": 32
+        },
+        {
+          "id": "day-01-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 36
+        },
+        {
+          "id": "day-01-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "delaySeconds": 11,
+          "intensity": 40
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_01.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 01 response strategy: acknowledge.",
+          "nextBeatId": "day_02",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_01.primary": "acknowledge",
+            "flag.day_01.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_01.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 01 response strategy: request evidence hash.",
+          "nextBeatId": "day_02",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_01.primary": "request_evidence_hash",
+            "flag.day_01.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_01.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 01 response strategy: commit next step.",
+          "nextBeatId": "day_02",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_01.primary": "commit_next_step",
+            "flag.day_01.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_02",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_02",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 02",
+      "narrative": "Metadata drift appears between duplicate files and erodes confidence.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d02-handwritten-note-festival-lantern-route-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-02-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_01.primary).",
+          "delaySeconds": 3,
+          "intensity": 32
+        },
+        {
+          "id": "day-02-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 36
+        },
+        {
+          "id": "day-02-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "delaySeconds": 12,
+          "intensity": 40
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_02.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 02 response strategy: acknowledge.",
+          "nextBeatId": "day_03",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_02.primary": "acknowledge",
+            "flag.day_02.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_02.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 02 response strategy: request evidence hash.",
+          "nextBeatId": "day_03",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_02.primary": "request_evidence_hash",
+            "flag.day_02.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_02.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 02 response strategy: commit next step.",
+          "nextBeatId": "day_03",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_02.primary": "commit_next_step",
+            "flag.day_02.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_03",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_03",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 03",
+      "narrative": "A witness account conflicts with dispatch timing by exactly nine minutes.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d03-journal-entry-runaway-voice-memo"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-03-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_02.primary).",
+          "delaySeconds": 3,
+          "intensity": 32
+        },
+        {
+          "id": "day-03-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 36
+        },
+        {
+          "id": "day-03-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "delaySeconds": 13,
+          "intensity": 40
+        },
+        {
+          "id": "day-03-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 44
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_03.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 03 response strategy: acknowledge.",
+          "nextBeatId": "day_04",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_03.primary": "acknowledge",
+            "flag.day_03.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_03.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 03 response strategy: request evidence hash.",
+          "nextBeatId": "day_04",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_03.primary": "request_evidence_hash",
+            "flag.day_03.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_03.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 03 response strategy: commit next step.",
+          "nextBeatId": "day_04",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_03.primary": "commit_next_step",
+            "flag.day_03.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_04",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_04",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 04",
+      "narrative": "A dead account sends a fresh attachment with current geotag residue.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+        "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-04-detective-brief",
           "senderName": "Visiting Agronomist Dina Crowe",
           "role": "operator",
           "channel": "SMS",
-          "text": "Players receive synchronized SMS photos of the same ritual mask in three different houses. Maintain chain-of-custody and keep your channel open.",
-          "delaySeconds": 1,
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_03.primary).",
+          "delaySeconds": 4,
           "intensity": 32
         },
         {
-          "id": "beat-1.msg.secondary",
+          "id": "day-04-witness-ping",
           "senderName": "Village Elder Rowan Pike",
           "role": "witness",
-          "channel": "WHATSAPP",
-          "text": "Cross-reference this before dawn: Blood-soil composition panel.",
-          "delaySeconds": 3,
-          "intensity": 48
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 36
         },
         {
-          "id": "beat-1.msg.villain",
-          "senderName": "The Reaper Steward",
-          "role": "antagonist",
-          "channel": "SMS",
-          "text": "The valley watched you before you arrived. (Peripheral Presence)",
-          "delaySeconds": 6,
-          "intensity": 62
+          "id": "day-04-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "delaySeconds": 14,
+          "intensity": 40
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-trace-source",
-          "label": "Analyze soil reports linked to ritual sites",
-          "intent": "CURIOSITY",
-          "summary": "Choice 1: Analyze soil reports linked to ritual sites",
-          "nextBeatId": "beat-2",
-          "progressDelta": 20,
+          "id": "day_04.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 04 response strategy: acknowledge.",
+          "nextBeatId": "day_05",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "investigation_path": "trace_source"
+            "decision.day_04.primary": "acknowledge",
+            "flag.day_04.interaction_logged": true
           }
         },
         {
-          "id": "choice-interview-ally",
-          "label": "Interrogate the runaway before the elders find them",
-          "intent": "CURIOSITY",
-          "summary": "Choice 2: Interrogate the runaway before the elders find them",
-          "nextBeatId": "beat-2",
-          "progressDelta": 20,
+          "id": "day_04.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 04 response strategy: request evidence hash.",
+          "nextBeatId": "day_05",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "investigation_path": "ally_interview"
+            "decision.day_04.primary": "request_evidence_hash",
+            "flag.day_04.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_04.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 04 response strategy: commit next step.",
+          "nextBeatId": "day_05",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_04.primary": "commit_next_step",
+            "flag.day_04.interaction_logged": true
           }
         }
       ],
-      "defaultNextBeatId": "beat-2",
+      "defaultNextBeatId": "day_05",
       "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
     },
     {
-      "id": "beat-2",
-      "actId": "act-1",
-      "actTitle": "Contact",
-      "title": "Escalation Signal",
-      "narrative": "A contradictory channel drop appears within minutes and forces risk.",
+      "id": "day_05",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 05",
+      "narrative": "Administrative records reveal prior attempts to bury this case.",
       "stage": 1,
-      "unlockAfterSeconds": 120,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "the-harvest-men-clue-pressure"
+        "the-harvest-men-d05-call-log-blood-soil-composition-panel"
       ],
       "incomingMessages": [
         {
-          "id": "beat-2.msg.handler",
-          "senderName": "Village Elder Rowan Pike",
-          "role": "witness",
-          "channel": "WHATSAPP",
-          "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+          "id": "day-05-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (decision.day_04.primary).",
           "delaySeconds": 1,
           "intensity": 32
         },
         {
-          "id": "beat-2.msg.secondary",
-          "senderName": "Runaway Teen Lio Strand",
+          "id": "day-05-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
           "role": "witness",
-          "channel": "TELEGRAM",
-          "text": "Cross-reference this before dawn: Festival lantern route map.",
-          "delaySeconds": 3,
-          "intensity": 48
+          "channel": "SIGNAL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 36
         },
         {
-          "id": "beat-2.msg.villain",
-          "senderName": "The Reaper Steward",
-          "role": "antagonist",
-          "channel": "SMS",
-          "text": "The valley watched you before you arrived. (Peripheral Presence)",
-          "delaySeconds": 6,
-          "intensity": 62
+          "id": "day-05-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "delaySeconds": 15,
+          "intensity": 40
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-preserve-evidence",
-          "label": "Preserve original evidence chain",
-          "intent": "CURIOSITY",
-          "summary": "Choice 1: Preserve original evidence chain",
-          "nextBeatId": "beat-3",
-          "progressDelta": 18,
+          "id": "day_05.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 05 response strategy: acknowledge.",
+          "nextBeatId": "day_06",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 1
-          },
-          "flagUpdates": {
-            "evidence_preserved": true
-          }
-        },
-        {
-          "id": "choice-fast-pursuit",
-          "label": "Pursue suspect immediately",
-          "intent": "CURIOSITY",
-          "summary": "Choice 2: Pursue suspect immediately",
-          "nextBeatId": "beat-3",
-          "progressDelta": 18,
-          "reputationDelta": {
-            "trustworthiness": 0,
-            "aggression": 1,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "evidence_preserved": false
+            "decision.day_05.primary": "acknowledge",
+            "flag.day_05.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_05.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 05 response strategy: request evidence hash.",
+          "nextBeatId": "day_06",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_05.primary": "request_evidence_hash",
+            "flag.day_05.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_05.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 05 response strategy: commit next step.",
+          "nextBeatId": "day_06",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_05.primary": "commit_next_step",
+            "flag.day_05.interaction_logged": true
           }
         }
       ],
-      "defaultNextBeatId": "beat-3",
+      "defaultNextBeatId": "day_06",
       "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
     },
     {
-      "id": "beat-3",
-      "actId": "act-2",
-      "actTitle": "Interference",
-      "title": "Trust Fracture",
-      "narrative": "The villain mixes real secrets with fabricated claims to split allies.",
-      "stage": 2,
-      "unlockAfterSeconds": 240,
+      "id": "day_06",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 06",
+      "narrative": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "the-harvest-men-clue-contradiction"
+        "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map"
       ],
       "incomingMessages": [
         {
-          "id": "beat-3.msg.handler",
-          "senderName": "Runaway Teen Lio Strand",
+          "id": "day-06-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_05.primary).",
+          "delaySeconds": 2,
+          "intensity": 32
+        },
+        {
+          "id": "day-06-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 36
+        },
+        {
+          "id": "day-06-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "delaySeconds": 10,
+          "intensity": 40
+        },
+        {
+          "id": "day-06-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 44
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_06.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 06 response strategy: acknowledge.",
+          "nextBeatId": "day_07",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_06.primary": "acknowledge",
+            "flag.day_06.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_06.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 06 response strategy: request evidence hash.",
+          "nextBeatId": "day_07",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_06.primary": "request_evidence_hash",
+            "flag.day_06.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_06.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 06 response strategy: commit next step.",
+          "nextBeatId": "day_07",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_06.primary": "commit_next_step",
+            "flag.day_06.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_07",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_07",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 07",
+      "narrative": "The first branch point forces trust in a source you cannot verify.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d07-security-footage-still-runaway-voice-memo"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-07-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_06.primary).",
+          "delaySeconds": 3,
+          "intensity": 32
+        },
+        {
+          "id": "day-07-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
           "role": "witness",
           "channel": "TELEGRAM",
-          "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 36
+        },
+        {
+          "id": "day-07-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "delaySeconds": 11,
+          "intensity": 40
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_07.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 07 response strategy: acknowledge.",
+          "nextBeatId": "day_08",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_07.primary": "acknowledge",
+            "flag.day_07.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_07.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 07 response strategy: request evidence hash.",
+          "nextBeatId": "day_08",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_07.primary": "request_evidence_hash",
+            "flag.day_07.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_07.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 07 response strategy: commit next step.",
+          "nextBeatId": "day_08",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_07.primary": "commit_next_step",
+            "flag.day_07.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_08",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_08",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 08",
+      "narrative": "Friendly channels begin echoing antagonist phrasing.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d08-crime-scene-photo-mask-stitch-microscopy",
+        "the-harvest-men-d08-medical-record-mask-stitch-microscopy"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-08-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_07.primary).",
+          "delaySeconds": 3,
+          "intensity": 44
+        },
+        {
+          "id": "day-08-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 48
+        },
+        {
+          "id": "day-08-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "delaySeconds": 12,
+          "intensity": 52
+        },
+        {
+          "id": "day-08-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_08.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 08 response strategy: acknowledge.",
+          "nextBeatId": "day_09",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_08.primary": "acknowledge",
+            "flag.day_08.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_08.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 08 response strategy: request evidence hash.",
+          "nextBeatId": "day_09",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_08.primary": "request_evidence_hash",
+            "flag.day_08.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_08.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 08 response strategy: commit next step.",
+          "nextBeatId": "day_09",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_08.primary": "commit_next_step",
+            "flag.day_08.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_09",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_09",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 09",
+      "narrative": "Recovered logs contain one corrected timestamp that changes motive.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d09-marked-map-blood-soil-composition-panel"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-09-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (decision.day_08.primary).",
+          "delaySeconds": 4,
+          "intensity": 44
+        },
+        {
+          "id": "day-09-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 48
+        },
+        {
+          "id": "day-09-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "delaySeconds": 13,
+          "intensity": 52
+        },
+        {
+          "id": "day-09-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 56
+        },
+        {
+          "id": "day-09-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 60
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_09.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 09 response strategy: acknowledge.",
+          "nextBeatId": "day_10",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_09.primary": "acknowledge",
+            "flag.day_09.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_09.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 09 response strategy: request evidence hash.",
+          "nextBeatId": "day_10",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_09.primary": "request_evidence_hash",
+            "flag.day_09.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_09.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 09 response strategy: commit next step.",
+          "nextBeatId": "day_10",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_09.primary": "commit_next_step",
+            "flag.day_09.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_10",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_10",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 10",
+      "narrative": "A journalist leak points to an internal collaborator.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d10-receipt-festival-lantern-route-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-10-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_09.primary).",
           "delaySeconds": 1,
           "intensity": 44
         },
         {
-          "id": "beat-3.msg.secondary",
-          "senderName": "Festival Marshal Jarek Holt",
-          "role": "investigator",
-          "channel": "SIGNAL",
-          "text": "Cross-reference this before dawn: Runaway voice memo.",
-          "delaySeconds": 3,
-          "intensity": 61
+          "id": "day-10-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 48
         },
         {
-          "id": "beat-3.msg.villain",
+          "id": "day-10-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "delaySeconds": 14,
+          "intensity": 52
+        },
+        {
+          "id": "day-10-antagonist-contact",
           "senderName": "The Reaper Steward",
           "role": "antagonist",
-          "channel": "WHATSAPP",
-          "text": "You keep calling this rescue. They call it theft. (Psychological Contact)",
-          "delaySeconds": 6,
-          "intensity": 76
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 56
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-trust-handler",
-          "label": "Trust Visiting Agronomist Dina Crowe and secure witness",
-          "intent": "COMPLIANCE",
-          "summary": "Choice 1: Trust Visiting Agronomist Dina Crowe and secure witness",
-          "nextBeatId": "beat-4",
-          "progressDelta": 26,
+          "id": "day_10.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 10 response strategy: acknowledge.",
+          "nextBeatId": "day_11",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "trusted_ally": "Visiting Agronomist Dina Crowe"
+            "decision.day_10.primary": "acknowledge",
+            "flag.day_10.interaction_logged": true
           }
         },
         {
-          "id": "choice-trust-witness",
-          "label": "Trust Village Elder Rowan Pike and expose internal leak",
-          "intent": "COMPLIANCE",
-          "summary": "Choice 2: Trust Village Elder Rowan Pike and expose internal leak",
-          "nextBeatId": "beat-4",
-          "progressDelta": 26,
+          "id": "day_10.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 10 response strategy: request evidence hash.",
+          "nextBeatId": "day_11",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "trusted_ally": "Village Elder Rowan Pike"
+            "decision.day_10.primary": "request_evidence_hash",
+            "flag.day_10.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_10.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 10 response strategy: commit next step.",
+          "nextBeatId": "day_11",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_10.primary": "commit_next_step",
+            "flag.day_10.interaction_logged": true
           }
         }
       ],
-      "defaultNextBeatId": "beat-4",
+      "defaultNextBeatId": "day_11",
       "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
     },
     {
-      "id": "beat-4",
-      "actId": "act-2",
-      "actTitle": "Interference",
-      "title": "Ultimatum Window",
-      "narrative": "A timed message threatens collateral harm unless the party diverts.",
-      "stage": 3,
-      "unlockAfterSeconds": 300,
+      "id": "day_11",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 11",
+      "narrative": "One evidence image contains a planted anomaly meant to bait fast conclusions.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "the-harvest-men-clue-timed-warning"
+        "the-harvest-men-d11-medical-record-runaway-voice-memo"
       ],
       "incomingMessages": [
         {
-          "id": "beat-4.msg.handler",
-          "senderName": "Festival Marshal Jarek Holt",
-          "role": "investigator",
+          "id": "day-11-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_10.primary).",
+          "delaySeconds": 2,
+          "intensity": 44
+        },
+        {
+          "id": "day-11-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
           "channel": "SIGNAL",
-          "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 48
+        },
+        {
+          "id": "day-11-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "delaySeconds": 15,
+          "intensity": 52
+        },
+        {
+          "id": "day-11-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_11.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 11 response strategy: acknowledge.",
+          "nextBeatId": "day_12",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_11.primary": "acknowledge",
+            "flag.day_11.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_11.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 11 response strategy: request evidence hash.",
+          "nextBeatId": "day_12",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_11.primary": "request_evidence_hash",
+            "flag.day_11.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_11.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 11 response strategy: commit next step.",
+          "nextBeatId": "day_12",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_11.primary": "commit_next_step",
+            "flag.day_11.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_12",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_12",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 12",
+      "narrative": "Unknown contact sends a warning that names your previous choice.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d12-shipping-manifest-mask-stitch-microscopy",
+        "the-harvest-men-d12-journal-entry-mask-stitch-microscopy"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-12-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_11.primary).",
+          "delaySeconds": 3,
+          "intensity": 44
+        },
+        {
+          "id": "day-12-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 48
+        },
+        {
+          "id": "day-12-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "delaySeconds": 10,
+          "intensity": 52
+        },
+        {
+          "id": "day-12-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "TELEGRAM",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 56
+        },
+        {
+          "id": "day-12-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 60
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_12.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 12 response strategy: acknowledge.",
+          "nextBeatId": "day_13",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_12.primary": "acknowledge",
+            "flag.day_12.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_12.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 12 response strategy: request evidence hash.",
+          "nextBeatId": "day_13",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_12.primary": "request_evidence_hash",
+            "flag.day_12.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_12.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 12 response strategy: commit next step.",
+          "nextBeatId": "day_13",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_12.primary": "commit_next_step",
+            "flag.day_12.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_13",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_13",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 13",
+      "narrative": "A voicemail includes background audio from a location not yet disclosed.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d13-police-report-blood-soil-composition-panel"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-13-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (decision.day_12.primary).",
+          "delaySeconds": 3,
+          "intensity": 44
+        },
+        {
+          "id": "day-13-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 48
+        },
+        {
+          "id": "day-13-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "delaySeconds": 11,
+          "intensity": 52
+        },
+        {
+          "id": "day-13-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_13.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 13 response strategy: acknowledge.",
+          "nextBeatId": "day_14",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_13.primary": "acknowledge",
+            "flag.day_13.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_13.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 13 response strategy: request evidence hash.",
+          "nextBeatId": "day_14",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_13.primary": "request_evidence_hash",
+            "flag.day_13.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_13.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 13 response strategy: commit next step.",
+          "nextBeatId": "day_14",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_13.primary": "commit_next_step",
+            "flag.day_13.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_14",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_14",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 14",
+      "narrative": "Second branch point determines whether public pressure or covert trace is prioritized.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d14-handwritten-note-festival-lantern-route-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-14-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_13.primary).",
+          "delaySeconds": 4,
+          "intensity": 44
+        },
+        {
+          "id": "day-14-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 48
+        },
+        {
+          "id": "day-14-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "delaySeconds": 12,
+          "intensity": 52
+        },
+        {
+          "id": "day-14-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_14.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 14 response strategy: acknowledge.",
+          "nextBeatId": "day_15",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_14.primary": "acknowledge",
+            "flag.day_14.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_14.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 14 response strategy: request evidence hash.",
+          "nextBeatId": "day_15",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_14.primary": "request_evidence_hash",
+            "flag.day_14.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_14.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 14 response strategy: commit next step.",
+          "nextBeatId": "day_15",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_14.primary": "commit_next_step",
+            "flag.day_14.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_15",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_15",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 15",
+      "narrative": "Direct interference interrupts calls and reroutes message threads.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "the-harvest-men-d15-journal-entry-runaway-voice-memo",
+        "the-harvest-men-d15-voicemail-transcript-runaway-voice-memo"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-15-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_14.primary).",
           "delaySeconds": 1,
           "intensity": 56
         },
         {
-          "id": "beat-4.msg.secondary",
-          "senderName": "Visiting Agronomist Dina Crowe",
-          "role": "operator",
+          "id": "day-15-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
           "channel": "EMAIL",
-          "text": "Cross-reference this before dawn: Mask stitch microscopy.",
-          "delaySeconds": 3,
-          "intensity": 74
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 60
         },
         {
-          "id": "beat-4.msg.villain",
+          "id": "day-15-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "delaySeconds": 13,
+          "intensity": 64
+        },
+        {
+          "id": "day-15-antagonist-contact",
           "senderName": "The Reaper Steward",
           "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 68
+        },
+        {
+          "id": "day-15-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
           "channel": "SMS",
-          "text": "Miss the dusk bell and the boy is chosen next. (Active Interference)",
-          "delaySeconds": 6,
-          "intensity": 90
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 72
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-save-npc",
-          "label": "Divert to save threatened NPC",
-          "intent": "THREAT",
-          "summary": "Choice 1: Divert to save threatened NPC",
-          "nextBeatId": "beat-5",
-          "progressDelta": 30,
+          "id": "day_15.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 15 response strategy: acknowledge.",
+          "nextBeatId": "day_16",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 2
-          },
-          "flagUpdates": {
-            "rescue_route": true
-          }
-        },
-        {
-          "id": "choice-continue-case",
-          "label": "Continue forensic pursuit under threat",
-          "intent": "THREAT",
-          "summary": "Choice 2: Continue forensic pursuit under threat",
-          "nextBeatId": "beat-5",
-          "progressDelta": 30,
-          "reputationDelta": {
-            "trustworthiness": -1,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 0
-          },
-          "flagUpdates": {
-            "rescue_route": false
-          }
-        }
-      ],
-      "defaultNextBeatId": "beat-5",
-      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
-    },
-    {
-      "id": "beat-5",
-      "actId": "act-3",
-      "actTitle": "Reckoning",
-      "title": "Confrontation Protocol",
-      "narrative": "Players reconstruct motive and false trails before collapse.",
-      "stage": 4,
-      "unlockAfterSeconds": 240,
-      "revealClueIds": [
-        "the-harvest-men-clue-reveal"
-      ],
-      "incomingMessages": [
-        {
-          "id": "beat-5.msg.handler",
-          "senderName": "Visiting Agronomist Dina Crowe",
-          "role": "operator",
-          "channel": "EMAIL",
-          "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
-          "delaySeconds": 1,
-          "intensity": 68
-        },
-        {
-          "id": "beat-5.msg.secondary",
-          "senderName": "Village Elder Rowan Pike",
-          "role": "witness",
-          "channel": "VOICE_MESSAGE",
-          "text": "Cross-reference this before dawn: Blood-soil composition panel.",
-          "delaySeconds": 3,
-          "intensity": 87
-        },
-        {
-          "id": "beat-5.msg.villain",
-          "senderName": "The Reaper Steward",
-          "role": "antagonist",
-          "channel": "EMAIL",
-          "text": "Confess one lie and I return one life. (Personal Confrontation)",
-          "delaySeconds": 6,
-          "intensity": 100
-        }
-      ],
-      "responseOptions": [
-        {
-          "id": "choice-charge-villain",
-          "label": "Commit to formal accusation and expose evidence chain",
-          "intent": "ACCUSATION",
-          "summary": "Choice 1: Commit to formal accusation and expose evidence chain",
-          "nextBeatId": "beat-6",
-          "progressDelta": 34,
-          "reputationDelta": {
-            "trustworthiness": 0,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 0
-          },
-          "flagUpdates": {
-            "final_strategy": "formal_charge"
-          }
-        },
-        {
-          "id": "choice-private-deal",
-          "label": "Take private contact route for hidden confession",
-          "intent": "BARGAIN",
-          "summary": "Choice 2: Take private contact route for hidden confession",
-          "nextBeatId": "beat-6",
-          "progressDelta": 34,
-          "reputationDelta": {
-            "trustworthiness": 0,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 2,
-            "morality": 0
-          },
-          "flagUpdates": {
-            "final_strategy": "private_contact"
-          }
-        }
-      ],
-      "defaultNextBeatId": "beat-6",
-      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
-    },
-    {
-      "id": "beat-6",
-      "actId": "act-3",
-      "actTitle": "Reckoning",
-      "title": "Case Debrief",
-      "narrative": "Final scoring resolves ending branch and season continuity flags.",
-      "stage": 4,
-      "unlockAfterSeconds": 60,
-      "revealClueIds": [
-        "the-harvest-men-clue-epilogue"
-      ],
-      "incomingMessages": [
-        {
-          "id": "beat-6.msg.handler",
-          "senderName": "Village Elder Rowan Pike",
-          "role": "witness",
-          "channel": "VOICE_MESSAGE",
-          "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
-          "delaySeconds": 1,
-          "intensity": 68
-        },
-        {
-          "id": "beat-6.msg.secondary",
-          "senderName": "Runaway Teen Lio Strand",
-          "role": "witness",
-          "channel": "DOCUMENT_DROP",
-          "text": "Cross-reference this before dawn: Festival lantern route map.",
-          "delaySeconds": 3,
-          "intensity": 87
-        },
-        {
-          "id": "beat-6.msg.villain",
-          "senderName": "The Reaper Steward",
-          "role": "antagonist",
-          "channel": "EMAIL",
-          "text": "Confess one lie and I return one life. (Personal Confrontation)",
-          "delaySeconds": 6,
-          "intensity": 100
-        }
-      ],
-      "responseOptions": [
-        {
-          "id": "beat-6.choice.default-forward",
-          "label": "Proceed with controlled pressure",
-          "intent": "CURIOSITY",
-          "summary": "Advance investigation while preserving evidence discipline.",
-          "nextBeatId": null,
-          "progressDelta": 30,
-          "reputationDelta": {
-            "trustworthiness": 1,
             "aggression": 0,
             "curiosity": 2,
             "deception": 0,
-            "morality": 1
+            "morality": 0
           },
           "flagUpdates": {
-            "beat-6.defaultPath": true
+            "decision.day_15.primary": "acknowledge",
+            "flag.day_15.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_15.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 15 response strategy: request evidence hash.",
+          "nextBeatId": "day_16",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_15.primary": "request_evidence_hash",
+            "flag.day_15.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_15.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 15 response strategy: commit next step.",
+          "nextBeatId": "day_16",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_15.primary": "commit_next_step",
+            "flag.day_15.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_16",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_16",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 16",
+      "narrative": "A witness goes dark after confirming a hidden ledger.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "the-harvest-men-d16-text-message-screenshot-mask-stitch-microscopy",
+        "the-harvest-men-d16-security-footage-still-mask-stitch-microscopy"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-16-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_15.primary).",
+          "delaySeconds": 2,
+          "intensity": 56
+        },
+        {
+          "id": "day-16-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 60
+        },
+        {
+          "id": "day-16-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "delaySeconds": 14,
+          "intensity": 64
+        },
+        {
+          "id": "day-16-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_16.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 16 response strategy: acknowledge.",
+          "nextBeatId": "day_17",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_16.primary": "acknowledge",
+            "flag.day_16.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_16.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 16 response strategy: request evidence hash.",
+          "nextBeatId": "day_17",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_16.primary": "request_evidence_hash",
+            "flag.day_16.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_16.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 16 response strategy: commit next step.",
+          "nextBeatId": "day_17",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_16.primary": "commit_next_step",
+            "flag.day_16.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_17",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_17",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 17",
+      "narrative": "Emergency dispatch references your alias instead of your legal profile.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "the-harvest-men-d17-call-log-blood-soil-composition-panel",
+        "the-harvest-men-d17-crime-scene-photo-blood-soil-composition-panel"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-17-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (decision.day_16.primary).",
+          "delaySeconds": 3,
+          "intensity": 56
+        },
+        {
+          "id": "day-17-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 60
+        },
+        {
+          "id": "day-17-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "delaySeconds": 15,
+          "intensity": 64
+        },
+        {
+          "id": "day-17-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_17.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 17 response strategy: acknowledge.",
+          "nextBeatId": "day_18",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_17.primary": "acknowledge",
+            "flag.day_17.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_17.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 17 response strategy: request evidence hash.",
+          "nextBeatId": "day_18",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_17.primary": "request_evidence_hash",
+            "flag.day_17.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_17.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 17 response strategy: commit next step.",
+          "nextBeatId": "day_18",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_17.primary": "commit_next_step",
+            "flag.day_17.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_18",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_18",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 18",
+      "narrative": "An antagonist demand threatens collateral unless evidence is withheld.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "the-harvest-men-d18-voicemail-transcript-festival-lantern-route-map",
+        "the-harvest-men-d18-marked-map-festival-lantern-route-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-18-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_17.primary).",
+          "delaySeconds": 3,
+          "intensity": 56
+        },
+        {
+          "id": "day-18-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 60
+        },
+        {
+          "id": "day-18-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "delaySeconds": 10,
+          "intensity": 64
+        },
+        {
+          "id": "day-18-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "TELEGRAM",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 68
+        },
+        {
+          "id": "day-18-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 72
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_18.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 18 response strategy: acknowledge.",
+          "nextBeatId": "day_19",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_18.primary": "acknowledge",
+            "flag.day_18.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_18.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 18 response strategy: request evidence hash.",
+          "nextBeatId": "day_19",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_18.primary": "request_evidence_hash",
+            "flag.day_18.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_18.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 18 response strategy: commit next step.",
+          "nextBeatId": "day_19",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_18.primary": "commit_next_step",
+            "flag.day_18.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_19",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_19",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 19",
+      "narrative": "A forged report nearly redirects the task force toward the wrong target.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "the-harvest-men-d19-security-footage-still-runaway-voice-memo",
+        "the-harvest-men-d19-receipt-runaway-voice-memo"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-19-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_18.primary).",
+          "delaySeconds": 4,
+          "intensity": 56
+        },
+        {
+          "id": "day-19-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 60
+        },
+        {
+          "id": "day-19-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "delaySeconds": 11,
+          "intensity": 64
+        },
+        {
+          "id": "day-19-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_19.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 19 response strategy: acknowledge.",
+          "nextBeatId": "day_20",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_19.primary": "acknowledge",
+            "flag.day_19.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_19.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 19 response strategy: request evidence hash.",
+          "nextBeatId": "day_20",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_19.primary": "request_evidence_hash",
+            "flag.day_19.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_19.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 19 response strategy: commit next step.",
+          "nextBeatId": "day_20",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_19.primary": "commit_next_step",
+            "flag.day_19.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_20",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_20",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 20",
+      "narrative": "Unknown contact reveals personal detail only the player would recognize.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "the-harvest-men-d20-crime-scene-photo-mask-stitch-microscopy",
+        "the-harvest-men-d20-medical-record-mask-stitch-microscopy"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-20-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_19.primary).",
+          "delaySeconds": 1,
+          "intensity": 56
+        },
+        {
+          "id": "day-20-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 60
+        },
+        {
+          "id": "day-20-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "delaySeconds": 12,
+          "intensity": 64
+        },
+        {
+          "id": "day-20-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_20.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 20 response strategy: acknowledge.",
+          "nextBeatId": "day_21",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_20.primary": "acknowledge",
+            "flag.day_20.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_20.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 20 response strategy: request evidence hash.",
+          "nextBeatId": "day_21",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_20.primary": "request_evidence_hash",
+            "flag.day_20.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_20.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 20 response strategy: commit next step.",
+          "nextBeatId": "day_21",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_20.primary": "commit_next_step",
+            "flag.day_20.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_21",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_21",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 21",
+      "narrative": "Third branch point locks either protective extraction or aggressive exposure.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "the-harvest-men-d21-marked-map-blood-soil-composition-panel",
+        "the-harvest-men-d21-shipping-manifest-blood-soil-composition-panel"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-21-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (decision.day_20.primary).",
+          "delaySeconds": 2,
+          "intensity": 56
+        },
+        {
+          "id": "day-21-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 60
+        },
+        {
+          "id": "day-21-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "delaySeconds": 13,
+          "intensity": 64
+        },
+        {
+          "id": "day-21-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 68
+        },
+        {
+          "id": "day-21-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 17,
+          "intensity": 72
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_21.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 21 response strategy: acknowledge.",
+          "nextBeatId": "day_22",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_21.primary": "acknowledge",
+            "flag.day_21.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_21.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 21 response strategy: request evidence hash.",
+          "nextBeatId": "day_22",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_21.primary": "request_evidence_hash",
+            "flag.day_21.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_21.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 21 response strategy: commit next step.",
+          "nextBeatId": "day_22",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_21.primary": "commit_next_step",
+            "flag.day_21.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_22",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_22",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 22",
+      "narrative": "Cross-day clue map finally exposes the suppression mechanism.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d22-receipt-festival-lantern-route-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-22-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_21.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-22-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 72
+        },
+        {
+          "id": "day-22-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "delaySeconds": 14,
+          "intensity": 76
+        },
+        {
+          "id": "day-22-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 80
+        },
+        {
+          "id": "day-22-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_22.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 22 response strategy: acknowledge.",
+          "nextBeatId": "day_23",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_22.primary": "acknowledge",
+            "flag.day_22.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_22.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 22 response strategy: request evidence hash.",
+          "nextBeatId": "day_23",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_22.primary": "request_evidence_hash",
+            "flag.day_22.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_22.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 22 response strategy: commit next step.",
+          "nextBeatId": "day_23",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_22.primary": "commit_next_step",
+            "flag.day_22.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_23",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_23",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 23",
+      "narrative": "Recovered recordings reveal contradiction between public narrative and private orders.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d23-medical-record-runaway-voice-memo"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-23-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_22.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-23-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 72
+        },
+        {
+          "id": "day-23-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "delaySeconds": 15,
+          "intensity": 76
+        },
+        {
+          "id": "day-23-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 80
+        },
+        {
+          "id": "day-23-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_23.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 23 response strategy: acknowledge.",
+          "nextBeatId": "day_24",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_23.primary": "acknowledge",
+            "flag.day_23.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_23.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 23 response strategy: request evidence hash.",
+          "nextBeatId": "day_24",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_23.primary": "request_evidence_hash",
+            "flag.day_23.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_23.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 23 response strategy: commit next step.",
+          "nextBeatId": "day_24",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_23.primary": "commit_next_step",
+            "flag.day_23.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_24",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_24",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 24",
+      "narrative": "A trusted NPC admits one strategic lie and requests off-record forgiveness.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d24-shipping-manifest-mask-stitch-microscopy",
+        "the-harvest-men-d24-journal-entry-mask-stitch-microscopy"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-24-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_23.primary).",
+          "delaySeconds": 4,
+          "intensity": 68
+        },
+        {
+          "id": "day-24-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 72
+        },
+        {
+          "id": "day-24-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "delaySeconds": 10,
+          "intensity": 76
+        },
+        {
+          "id": "day-24-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "TELEGRAM",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 80
+        },
+        {
+          "id": "day-24-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_24.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 24 response strategy: acknowledge.",
+          "nextBeatId": "day_25",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_24.primary": "acknowledge",
+            "flag.day_24.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_24.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 24 response strategy: request evidence hash.",
+          "nextBeatId": "day_25",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_24.primary": "request_evidence_hash",
+            "flag.day_24.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_24.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 24 response strategy: commit next step.",
+          "nextBeatId": "day_25",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_24.primary": "commit_next_step",
+            "flag.day_24.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_25",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_25",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 25",
+      "narrative": "The antagonist offers a final pact framed as damage control.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d25-police-report-blood-soil-composition-panel"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-25-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (decision.day_24.primary).",
+          "delaySeconds": 1,
+          "intensity": 68
+        },
+        {
+          "id": "day-25-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 72
+        },
+        {
+          "id": "day-25-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "delaySeconds": 11,
+          "intensity": 76
+        },
+        {
+          "id": "day-25-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 80
+        },
+        {
+          "id": "day-25-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_25.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 25 response strategy: acknowledge.",
+          "nextBeatId": "day_26",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_25.primary": "acknowledge",
+            "flag.day_25.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_25.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 25 response strategy: request evidence hash.",
+          "nextBeatId": "day_26",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_25.primary": "request_evidence_hash",
+            "flag.day_25.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_25.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 25 response strategy: commit next step.",
+          "nextBeatId": "day_26",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_25.primary": "commit_next_step",
+            "flag.day_25.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_26",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_26",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 26",
+      "narrative": "Evidence board converges, but one key artifact remains unreliable.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d26-handwritten-note-festival-lantern-route-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-26-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_25.primary).",
+          "delaySeconds": 2,
+          "intensity": 68
+        },
+        {
+          "id": "day-26-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 72
+        },
+        {
+          "id": "day-26-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "delaySeconds": 12,
+          "intensity": 76
+        },
+        {
+          "id": "day-26-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 80
+        },
+        {
+          "id": "day-26-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_26.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 26 response strategy: acknowledge.",
+          "nextBeatId": "day_27",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_26.primary": "acknowledge",
+            "flag.day_26.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_26.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 26 response strategy: request evidence hash.",
+          "nextBeatId": "day_27",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_26.primary": "request_evidence_hash",
+            "flag.day_26.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_26.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 26 response strategy: commit next step.",
+          "nextBeatId": "day_27",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_26.primary": "commit_next_step",
+            "flag.day_26.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_27",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_27",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 27",
+      "narrative": "Final puzzle forces interpretation of mutually exclusive truths.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d27-journal-entry-runaway-voice-memo"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-27-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_26.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-27-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 72
+        },
+        {
+          "id": "day-27-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "delaySeconds": 13,
+          "intensity": 76
+        },
+        {
+          "id": "day-27-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 80
+        },
+        {
+          "id": "day-27-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_27.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 27 response strategy: acknowledge.",
+          "nextBeatId": "day_28",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_27.primary": "acknowledge",
+            "flag.day_27.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_27.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 27 response strategy: request evidence hash.",
+          "nextBeatId": "day_28",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_27.primary": "request_evidence_hash",
+            "flag.day_27.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_27.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 27 response strategy: commit next step.",
+          "nextBeatId": "day_28",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_27.primary": "commit_next_step",
+            "flag.day_27.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_28",
+      "backgroundVisual": "/visuals/stories/the-harvest-men.svg"
+    },
+    {
+      "id": "day_28",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 28",
+      "narrative": "Resolution day decides justice, compromise, corruption, or psychological fracture.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "the-harvest-men-d28-text-message-screenshot-mask-stitch-microscopy",
+        "the-harvest-men-d28-security-footage-still-mask-stitch-microscopy"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-28-detective-brief",
+          "senderName": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_27.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-28-witness-ping",
+          "senderName": "Village Elder Rowan Pike",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 72
+        },
+        {
+          "id": "day-28-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "delaySeconds": 14,
+          "intensity": 76
+        },
+        {
+          "id": "day-28-antagonist-contact",
+          "senderName": "The Reaper Steward",
+          "role": "antagonist",
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 80
+        },
+        {
+          "id": "day-28-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 17,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_28.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 28 response strategy: acknowledge.",
+          "nextBeatId": null,
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_28.primary": "acknowledge",
+            "flag.day_28.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_28.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 28 response strategy: request evidence hash.",
+          "nextBeatId": null,
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_28.primary": "request_evidence_hash",
+            "flag.day_28.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_28.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 28 response strategy: commit next step.",
+          "nextBeatId": null,
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_28.primary": "commit_next_step",
+            "flag.day_28.interaction_logged": true
           }
         }
       ],
@@ -533,159 +3257,1127 @@
   "endings": [
     {
       "id": "the-harvest-men-ending-justice",
-      "title": "Clean Resolution",
+      "title": "Documented Justice",
       "type": "JUSTICE",
-      "summary": "You dismantle the selection machine and evacuate vulnerable targets alive.",
-      "epilogue": "Truth lands publicly with evidence that survives scrutiny.",
-      "sequelHook": "A tagged evidence box points to the next case."
+      "summary": "Evidence chain survives scrutiny and responsible parties are exposed.",
+      "epilogue": "The investigation closes publicly, but residual files imply a wider network.",
+      "sequelHook": "A new sealed case number appears in your inbox at 03:11."
     },
     {
       "id": "the-harvest-men-ending-pyrrhic",
-      "title": "Compromised Truth",
+      "title": "Pyrrhic Containment",
       "type": "PYRRHIC",
-      "summary": "You halt tonight's rite but trigger retaliatory disappearances.",
-      "epilogue": "The culprit is exposed, but allies and witnesses are fractured.",
-      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+      "summary": "The immediate threat is contained, but key truths remain buried.",
+      "epilogue": "Witnesses are safe for now, yet official records are permanently altered.",
+      "sequelHook": "Unknown Contact sends a checksum that references a second operation."
     },
     {
       "id": "the-harvest-men-ending-corruption",
-      "title": "Corruption Pact",
+      "title": "Compromised Truth",
       "type": "CORRUPTION",
-      "summary": "You preserve the rite in exchange for selective immunity.",
-      "epilogue": "You keep control of the case, and the villain keeps control of you.",
-      "sequelHook": "Season continuity marks the player as compromised."
+      "summary": "Player choices preserve stability by accepting manipulated facts.",
+      "epilogue": "Case status becomes classified and public narrative diverges from internal logs.",
+      "sequelHook": "An antagonist fragment congratulates your efficiency."
+    },
+    {
+      "id": "the-harvest-men-ending-unresolved",
+      "title": "Psychological Break",
+      "type": "UNRESOLVED",
+      "summary": "Contradictions remain unresolved and trust collapses across all channels.",
+      "epilogue": "Your board is complete but no version of events can be proven cleanly.",
+      "sequelHook": "A mirrored transcript appears using your own phrasing."
     }
   ],
   "investigationBoard": {
     "nodes": [
       {
-        "id": "the-harvest-men-suspect-villain",
-        "type": "SUSPECT",
-        "label": "The Reaper Steward",
-        "summary": "Primary antagonist operating through layered identities."
+        "id": "thread.main_investigation",
+        "type": "thread",
+        "label": "Primary Investigation",
+        "summary": "The case opens with impossible evidence and uncertain allies."
       },
       {
-        "id": "the-harvest-men-suspect-secondary",
-        "type": "SUSPECT",
+        "id": "thread.side_mystery",
+        "type": "thread",
+        "label": "Peripheral Incident",
+        "summary": "Villain contact escalates while ally trust becomes volatile."
+      },
+      {
+        "id": "thread.hidden_truth",
+        "type": "thread",
+        "label": "Suppressed Truth",
+        "summary": "Human conspiracy preserving power"
+      },
+      {
+        "id": "thread.false_lead",
+        "type": "thread",
+        "label": "Manufactured Lead",
+        "summary": "Scientific analysis vs witness protection opening"
+      },
+      {
+        "id": "thread.psychological_break",
+        "type": "thread",
+        "label": "Psychological Pressure Arc",
+        "summary": "The final branch depends on ethics, timing, and trust."
+      },
+      {
+        "id": "npc.the-harvest-men-npc-1",
+        "type": "npc",
+        "label": "Visiting Agronomist Dina Crowe",
+        "summary": "detective: CALM"
+      },
+      {
+        "id": "npc.the-harvest-men-npc-2",
+        "type": "npc",
+        "label": "Village Elder Rowan Pike",
+        "summary": "witness: ANXIOUS"
+      },
+      {
+        "id": "npc.the-harvest-men-npc-3",
+        "type": "npc",
         "label": "Runaway Teen Lio Strand",
-        "summary": "Possible accomplice with motive and access."
+        "summary": "witness: SUSPICIOUS"
       },
       {
-        "id": "the-harvest-men-location-core",
-        "type": "LOCATION",
-        "label": "Isolated valley communes and threshing grounds",
-        "summary": "Primary scene where contradictions cluster."
+        "id": "npc.the-harvest-men-npc-4",
+        "type": "npc",
+        "label": "Festival Marshal Jarek Holt",
+        "summary": "witness: DEFIANT"
       },
       {
-        "id": "the-harvest-men-evidence-core",
-        "type": "EVIDENCE",
-        "label": "Blood-soil composition panel",
-        "summary": "Anchor evidence with disputed provenance."
+        "id": "npc.journalist.field",
+        "type": "npc",
+        "label": "Mina Calder",
+        "summary": "journalist: probing"
+      },
+      {
+        "id": "npc.antagonist.primary",
+        "type": "npc",
+        "label": "The Reaper Steward",
+        "summary": "antagonist: cold"
+      },
+      {
+        "id": "npc.unknown.contact",
+        "type": "npc",
+        "label": "Unknown Contact",
+        "summary": "unknown_contact: flat"
+      },
+      {
+        "id": "the-harvest-men-d01-police-report-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 01 police report",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d02-handwritten-note-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 02 handwritten note",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d03-journal-entry-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 03 journal entry",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 04 text message screenshot",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 04 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d05-call-log-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 05 call log",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 06 voicemail transcript",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d07-security-footage-still-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 07 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d08-crime-scene-photo-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 08 crime scene photo",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d08-medical-record-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 08 medical record",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d09-marked-map-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 09 marked map",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d10-receipt-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 10 receipt",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d11-medical-record-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 11 medical record",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d12-shipping-manifest-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 12 shipping manifest",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d12-journal-entry-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 12 journal entry",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d13-police-report-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 13 police report",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d14-handwritten-note-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 14 handwritten note",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d15-journal-entry-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 15 journal entry",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d15-voicemail-transcript-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 15 voicemail transcript",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d16-text-message-screenshot-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 16 text message screenshot",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d16-security-footage-still-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 16 security footage still",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d17-call-log-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 17 call log",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d17-crime-scene-photo-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 17 crime scene photo",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d18-voicemail-transcript-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 18 voicemail transcript",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d18-marked-map-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 18 marked map",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d19-security-footage-still-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 19 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d19-receipt-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 19 receipt",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d20-crime-scene-photo-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 20 crime scene photo",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d20-medical-record-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 20 medical record",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d21-marked-map-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 21 marked map",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d21-shipping-manifest-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 21 shipping manifest",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d22-receipt-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 22 receipt",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d23-medical-record-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 23 medical record",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d24-shipping-manifest-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 24 shipping manifest",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d24-journal-entry-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 24 journal entry",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d25-police-report-blood-soil-composition-panel",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 25 police report",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d26-handwritten-note-festival-lantern-route-map",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 26 handwritten note",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+      },
+      {
+        "id": "the-harvest-men-d27-journal-entry-runaway-voice-memo",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 27 journal entry",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
+      },
+      {
+        "id": "the-harvest-men-d28-text-message-screenshot-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 28 text message screenshot",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d28-security-footage-still-mask-stitch-microscopy",
+        "type": "evidence",
+        "label": "The Harvest Men - Day 28 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
       }
     ],
     "links": [
       {
-        "fromId": "the-harvest-men-suspect-villain",
-        "toId": "the-harvest-men-location-core",
-        "relation": "operates-through",
-        "confidence": 0.78
+        "fromId": "the-harvest-men-d01-police-report-blood-soil-composition-panel",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
       },
       {
-        "fromId": "the-harvest-men-suspect-secondary",
-        "toId": "the-harvest-men-evidence-core",
-        "relation": "tampered-access",
-        "confidence": 0.64
+        "fromId": "npc.the-harvest-men-npc-1",
+        "toId": "the-harvest-men-d01-police-report-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
       },
       {
-        "fromId": "the-harvest-men-location-core",
-        "toId": "the-harvest-men-evidence-core",
-        "relation": "origin-point",
-        "confidence": 0.82
+        "fromId": "the-harvest-men-d02-handwritten-note-festival-lantern-route-map",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-2",
+        "toId": "the-harvest-men-d02-handwritten-note-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d03-journal-entry-runaway-voice-memo",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-3",
+        "toId": "the-harvest-men-d03-journal-entry-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-4",
+        "toId": "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d05-call-log-blood-soil-composition-panel",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "the-harvest-men-d05-call-log-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d07-security-footage-still-runaway-voice-memo",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "the-harvest-men-d07-security-footage-still-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d08-crime-scene-photo-mask-stitch-microscopy",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-1",
+        "toId": "the-harvest-men-d08-crime-scene-photo-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d08-medical-record-mask-stitch-microscopy",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-4",
+        "toId": "the-harvest-men-d08-medical-record-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d09-marked-map-blood-soil-composition-panel",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-2",
+        "toId": "the-harvest-men-d09-marked-map-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d10-receipt-festival-lantern-route-map",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-3",
+        "toId": "the-harvest-men-d10-receipt-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d11-medical-record-runaway-voice-memo",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-4",
+        "toId": "the-harvest-men-d11-medical-record-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d12-shipping-manifest-mask-stitch-microscopy",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "the-harvest-men-d12-shipping-manifest-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d12-journal-entry-mask-stitch-microscopy",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-1",
+        "toId": "the-harvest-men-d12-journal-entry-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d13-police-report-blood-soil-composition-panel",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "the-harvest-men-d13-police-report-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d14-handwritten-note-festival-lantern-route-map",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "the-harvest-men-d14-handwritten-note-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d15-journal-entry-runaway-voice-memo",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-1",
+        "toId": "the-harvest-men-d15-journal-entry-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d15-voicemail-transcript-runaway-voice-memo",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-4",
+        "toId": "the-harvest-men-d15-voicemail-transcript-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d16-text-message-screenshot-mask-stitch-microscopy",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-2",
+        "toId": "the-harvest-men-d16-text-message-screenshot-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d16-security-footage-still-mask-stitch-microscopy",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "the-harvest-men-d16-security-footage-still-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d17-call-log-blood-soil-composition-panel",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-3",
+        "toId": "the-harvest-men-d17-call-log-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d17-crime-scene-photo-blood-soil-composition-panel",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "the-harvest-men-d17-crime-scene-photo-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d18-voicemail-transcript-festival-lantern-route-map",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-4",
+        "toId": "the-harvest-men-d18-voicemail-transcript-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d18-marked-map-festival-lantern-route-map",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "the-harvest-men-d18-marked-map-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d19-security-footage-still-runaway-voice-memo",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "the-harvest-men-d19-security-footage-still-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d19-receipt-runaway-voice-memo",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-1",
+        "toId": "the-harvest-men-d19-receipt-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d20-crime-scene-photo-mask-stitch-microscopy",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "the-harvest-men-d20-crime-scene-photo-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d20-medical-record-mask-stitch-microscopy",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-2",
+        "toId": "the-harvest-men-d20-medical-record-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d21-marked-map-blood-soil-composition-panel",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "the-harvest-men-d21-marked-map-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d21-shipping-manifest-blood-soil-composition-panel",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-3",
+        "toId": "the-harvest-men-d21-shipping-manifest-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d22-receipt-festival-lantern-route-map",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-1",
+        "toId": "the-harvest-men-d22-receipt-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d23-medical-record-runaway-voice-memo",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-2",
+        "toId": "the-harvest-men-d23-medical-record-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d24-shipping-manifest-mask-stitch-microscopy",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-3",
+        "toId": "the-harvest-men-d24-shipping-manifest-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d24-journal-entry-mask-stitch-microscopy",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "the-harvest-men-d24-journal-entry-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d25-police-report-blood-soil-composition-panel",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-4",
+        "toId": "the-harvest-men-d25-police-report-blood-soil-composition-panel",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d26-handwritten-note-festival-lantern-route-map",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "the-harvest-men-d26-handwritten-note-festival-lantern-route-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d27-journal-entry-runaway-voice-memo",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "the-harvest-men-d27-journal-entry-runaway-voice-memo",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d28-text-message-screenshot-mask-stitch-microscopy",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "the-harvest-men-d28-text-message-screenshot-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "the-harvest-men-d28-security-footage-still-mask-stitch-microscopy",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.the-harvest-men-npc-3",
+        "toId": "the-harvest-men-d28-security-footage-still-mask-stitch-microscopy",
+        "relation": "submitted",
+        "confidence": 0.74
       }
     ],
     "timeline": [
       {
-        "id": "the-harvest-men-timeline-1",
-        "timeLabel": "22:15",
-        "summary": "Initial anomaly reaches player channels.",
+        "id": "day_01.timeline",
+        "timeLabel": "Day 01",
+        "summary": "An intake anomaly lands across multiple channels before dawn.",
         "relatedNodeIds": [
-          "the-harvest-men-location-core",
-          "the-harvest-men-evidence-core"
+          "the-harvest-men-d01-police-report-blood-soil-composition-panel"
         ]
       },
       {
-        "id": "the-harvest-men-timeline-2",
-        "timeLabel": "23:50",
-        "summary": "Witness account conflicts with archive records.",
+        "id": "day_02.timeline",
+        "timeLabel": "Day 02",
+        "summary": "Metadata drift appears between duplicate files and erodes confidence.",
         "relatedNodeIds": [
-          "the-harvest-men-suspect-secondary",
-          "the-harvest-men-evidence-core"
+          "the-harvest-men-d02-handwritten-note-festival-lantern-route-map"
         ]
       },
       {
-        "id": "the-harvest-men-timeline-3",
-        "timeLabel": "00:25",
-        "summary": "Villain contact shifts to direct intimidation.",
+        "id": "day_03.timeline",
+        "timeLabel": "Day 03",
+        "summary": "A witness account conflicts with dispatch timing by exactly nine minutes.",
         "relatedNodeIds": [
-          "the-harvest-men-suspect-villain"
+          "the-harvest-men-d03-journal-entry-runaway-voice-memo"
+        ]
+      },
+      {
+        "id": "day_04.timeline",
+        "timeLabel": "Day 04",
+        "summary": "A dead account sends a fresh attachment with current geotag residue.",
+        "relatedNodeIds": [
+          "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+          "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy"
+        ]
+      },
+      {
+        "id": "day_05.timeline",
+        "timeLabel": "Day 05",
+        "summary": "Administrative records reveal prior attempts to bury this case.",
+        "relatedNodeIds": [
+          "the-harvest-men-d05-call-log-blood-soil-composition-panel"
+        ]
+      },
+      {
+        "id": "day_06.timeline",
+        "timeLabel": "Day 06",
+        "summary": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+        "relatedNodeIds": [
+          "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map"
+        ]
+      },
+      {
+        "id": "day_07.timeline",
+        "timeLabel": "Day 07",
+        "summary": "The first branch point forces trust in a source you cannot verify.",
+        "relatedNodeIds": [
+          "the-harvest-men-d07-security-footage-still-runaway-voice-memo"
+        ]
+      },
+      {
+        "id": "day_08.timeline",
+        "timeLabel": "Day 08",
+        "summary": "Friendly channels begin echoing antagonist phrasing.",
+        "relatedNodeIds": [
+          "the-harvest-men-d08-crime-scene-photo-mask-stitch-microscopy",
+          "the-harvest-men-d08-medical-record-mask-stitch-microscopy"
+        ]
+      },
+      {
+        "id": "day_09.timeline",
+        "timeLabel": "Day 09",
+        "summary": "Recovered logs contain one corrected timestamp that changes motive.",
+        "relatedNodeIds": [
+          "the-harvest-men-d09-marked-map-blood-soil-composition-panel"
+        ]
+      },
+      {
+        "id": "day_10.timeline",
+        "timeLabel": "Day 10",
+        "summary": "A journalist leak points to an internal collaborator.",
+        "relatedNodeIds": [
+          "the-harvest-men-d10-receipt-festival-lantern-route-map"
+        ]
+      },
+      {
+        "id": "day_11.timeline",
+        "timeLabel": "Day 11",
+        "summary": "One evidence image contains a planted anomaly meant to bait fast conclusions.",
+        "relatedNodeIds": [
+          "the-harvest-men-d11-medical-record-runaway-voice-memo"
+        ]
+      },
+      {
+        "id": "day_12.timeline",
+        "timeLabel": "Day 12",
+        "summary": "Unknown contact sends a warning that names your previous choice.",
+        "relatedNodeIds": [
+          "the-harvest-men-d12-shipping-manifest-mask-stitch-microscopy",
+          "the-harvest-men-d12-journal-entry-mask-stitch-microscopy"
+        ]
+      },
+      {
+        "id": "day_13.timeline",
+        "timeLabel": "Day 13",
+        "summary": "A voicemail includes background audio from a location not yet disclosed.",
+        "relatedNodeIds": [
+          "the-harvest-men-d13-police-report-blood-soil-composition-panel"
+        ]
+      },
+      {
+        "id": "day_14.timeline",
+        "timeLabel": "Day 14",
+        "summary": "Second branch point determines whether public pressure or covert trace is prioritized.",
+        "relatedNodeIds": [
+          "the-harvest-men-d14-handwritten-note-festival-lantern-route-map"
+        ]
+      },
+      {
+        "id": "day_15.timeline",
+        "timeLabel": "Day 15",
+        "summary": "Direct interference interrupts calls and reroutes message threads.",
+        "relatedNodeIds": [
+          "the-harvest-men-d15-journal-entry-runaway-voice-memo",
+          "the-harvest-men-d15-voicemail-transcript-runaway-voice-memo"
+        ]
+      },
+      {
+        "id": "day_16.timeline",
+        "timeLabel": "Day 16",
+        "summary": "A witness goes dark after confirming a hidden ledger.",
+        "relatedNodeIds": [
+          "the-harvest-men-d16-text-message-screenshot-mask-stitch-microscopy",
+          "the-harvest-men-d16-security-footage-still-mask-stitch-microscopy"
+        ]
+      },
+      {
+        "id": "day_17.timeline",
+        "timeLabel": "Day 17",
+        "summary": "Emergency dispatch references your alias instead of your legal profile.",
+        "relatedNodeIds": [
+          "the-harvest-men-d17-call-log-blood-soil-composition-panel",
+          "the-harvest-men-d17-crime-scene-photo-blood-soil-composition-panel"
+        ]
+      },
+      {
+        "id": "day_18.timeline",
+        "timeLabel": "Day 18",
+        "summary": "An antagonist demand threatens collateral unless evidence is withheld.",
+        "relatedNodeIds": [
+          "the-harvest-men-d18-voicemail-transcript-festival-lantern-route-map",
+          "the-harvest-men-d18-marked-map-festival-lantern-route-map"
+        ]
+      },
+      {
+        "id": "day_19.timeline",
+        "timeLabel": "Day 19",
+        "summary": "A forged report nearly redirects the task force toward the wrong target.",
+        "relatedNodeIds": [
+          "the-harvest-men-d19-security-footage-still-runaway-voice-memo",
+          "the-harvest-men-d19-receipt-runaway-voice-memo"
+        ]
+      },
+      {
+        "id": "day_20.timeline",
+        "timeLabel": "Day 20",
+        "summary": "Unknown contact reveals personal detail only the player would recognize.",
+        "relatedNodeIds": [
+          "the-harvest-men-d20-crime-scene-photo-mask-stitch-microscopy",
+          "the-harvest-men-d20-medical-record-mask-stitch-microscopy"
+        ]
+      },
+      {
+        "id": "day_21.timeline",
+        "timeLabel": "Day 21",
+        "summary": "Third branch point locks either protective extraction or aggressive exposure.",
+        "relatedNodeIds": [
+          "the-harvest-men-d21-marked-map-blood-soil-composition-panel",
+          "the-harvest-men-d21-shipping-manifest-blood-soil-composition-panel"
+        ]
+      },
+      {
+        "id": "day_22.timeline",
+        "timeLabel": "Day 22",
+        "summary": "Cross-day clue map finally exposes the suppression mechanism.",
+        "relatedNodeIds": [
+          "the-harvest-men-d22-receipt-festival-lantern-route-map"
+        ]
+      },
+      {
+        "id": "day_23.timeline",
+        "timeLabel": "Day 23",
+        "summary": "Recovered recordings reveal contradiction between public narrative and private orders.",
+        "relatedNodeIds": [
+          "the-harvest-men-d23-medical-record-runaway-voice-memo"
+        ]
+      },
+      {
+        "id": "day_24.timeline",
+        "timeLabel": "Day 24",
+        "summary": "A trusted NPC admits one strategic lie and requests off-record forgiveness.",
+        "relatedNodeIds": [
+          "the-harvest-men-d24-shipping-manifest-mask-stitch-microscopy",
+          "the-harvest-men-d24-journal-entry-mask-stitch-microscopy"
+        ]
+      },
+      {
+        "id": "day_25.timeline",
+        "timeLabel": "Day 25",
+        "summary": "The antagonist offers a final pact framed as damage control.",
+        "relatedNodeIds": [
+          "the-harvest-men-d25-police-report-blood-soil-composition-panel"
+        ]
+      },
+      {
+        "id": "day_26.timeline",
+        "timeLabel": "Day 26",
+        "summary": "Evidence board converges, but one key artifact remains unreliable.",
+        "relatedNodeIds": [
+          "the-harvest-men-d26-handwritten-note-festival-lantern-route-map"
+        ]
+      },
+      {
+        "id": "day_27.timeline",
+        "timeLabel": "Day 27",
+        "summary": "Final puzzle forces interpretation of mutually exclusive truths.",
+        "relatedNodeIds": [
+          "the-harvest-men-d27-journal-entry-runaway-voice-memo"
+        ]
+      },
+      {
+        "id": "day_28.timeline",
+        "timeLabel": "Day 28",
+        "summary": "Resolution day decides justice, compromise, corruption, or psychological fracture.",
+        "relatedNodeIds": [
+          "the-harvest-men-d28-text-message-screenshot-mask-stitch-microscopy",
+          "the-harvest-men-d28-security-footage-still-mask-stitch-microscopy"
         ]
       }
     ]
   },
   "playerBriefing": {
-    "roleTitle": "Contract Signal Investigator",
-    "callSign": "THE-HAR-MEN",
-    "recruitmentReason": "A ritual mask selects a new wearer every dusk, and refusals vanish overnight. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
-    "openingIncident": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
-    "personalStakes": "The Reaper Steward has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
-    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every ritual violence marker."
+    "roleTitle": "Case Analyst",
+    "callSign": "{{player_alias}}",
+    "recruitmentReason": "You were selected because your prior casework identified contradiction patterns others ignored.",
+    "openingIncident": "At 02:17 local, synchronized drops across four channels triggered this investigation.",
+    "personalStakes": "The Reaper Steward has begun adapting communications to your decisions.",
+    "firstDirective": "Verify evidence chain before any public move and protect vulnerable contacts."
   },
   "campaignPlan": {
     "totalDays": 28,
     "weeks": [
       {
         "week": 1,
-        "label": "Week 1 - Recruitment And Baseline",
-        "objective": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+        "label": "Discovery & Curiosity",
+        "objective": "Validate the first anomaly, establish trust baselines, and seed investigative obsession.",
         "keyMoments": [
-          "The case opens with impossible evidence and uncertain allies.",
-          "Blood-soil composition panel"
+          "Discovery & Curiosity - Day 01",
+          "Discovery & Curiosity - Day 02"
         ]
       },
       {
         "week": 2,
-        "label": "Week 2 - Contradiction Mapping",
-        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "label": "Escalation & Unease",
+        "objective": "Push contradictions, introduce manipulative pressure, and degrade certainty.",
         "keyMoments": [
-          "Scientific analysis vs witness protection opening",
-          "Festival lantern route map"
+          "Escalation & Unease - Day 08",
+          "Escalation & Unease - Day 09"
         ]
       },
       {
         "week": 3,
-        "label": "Week 3 - Escalation Window",
-        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "label": "Danger & Direct Involvement",
+        "objective": "Force personal risk, urgent tradeoffs, and irreversible consequences.",
         "keyMoments": [
-          "Break rite now vs infiltrate final rite",
-          "Human conspiracy preserving power"
+          "Danger & Direct Involvement - Day 15",
+          "Danger & Direct Involvement - Day 16"
         ]
       },
       {
         "week": 4,
-        "label": "Week 4 - Endgame And Debrief",
-        "objective": "The final branch depends on ethics, timing, and trust.",
+        "label": "Resolution or Psychological Break",
+        "objective": "Collapse competing truths into final judgement, compromise, or breakdown.",
         "keyMoments": [
-          "Ancestral entity fed through staged rituals",
-          "A freight invoice ties the valley rite to coastal distributors."
+          "Resolution or Psychological Break - Day 22",
+          "Resolution or Psychological Break - Day 23"
         ]
       }
     ]
   },
   "npcDossiers": [
     {
-      "id": "the-harvest-men-npc-1",
+      "id": "npc.the-harvest-men-npc-1",
       "displayName": "Visiting Agronomist Dina Crowe",
-      "role": "HANDLER",
+      "role": "detective",
       "baselineEmotion": "CALM",
       "motivations": [
         "Control fallout quickly."
@@ -695,9 +4387,9 @@
       "notableSecret": "Visiting Agronomist Dina Crowe can expose the-harvest-men-clue-pressure at high trust."
     },
     {
-      "id": "the-harvest-men-npc-2",
+      "id": "npc.the-harvest-men-npc-2",
       "displayName": "Village Elder Rowan Pike",
-      "role": "WITNESS",
+      "role": "witness",
       "baselineEmotion": "ANXIOUS",
       "motivations": [
         "Survive and protect a secret."
@@ -707,9 +4399,9 @@
       "notableSecret": "Village Elder Rowan Pike can expose the-harvest-men-clue-reveal at high trust."
     },
     {
-      "id": "the-harvest-men-npc-3",
+      "id": "npc.the-harvest-men-npc-3",
       "displayName": "Runaway Teen Lio Strand",
-      "role": "SUSPECT",
+      "role": "witness",
       "baselineEmotion": "SUSPICIOUS",
       "motivations": [
         "Survive and protect a secret."
@@ -719,9 +4411,9 @@
       "notableSecret": "Runaway Teen Lio Strand can expose the-harvest-men-clue-origin at high trust."
     },
     {
-      "id": "the-harvest-men-npc-4",
+      "id": "npc.the-harvest-men-npc-4",
       "displayName": "Festival Marshal Jarek Holt",
-      "role": "ALLY",
+      "role": "witness",
       "baselineEmotion": "DEFIANT",
       "motivations": [
         "Survive and protect a secret."
@@ -729,128 +4421,203 @@
       "trustBaseline": 64,
       "trustCeiling": 90,
       "notableSecret": "Festival Marshal Jarek Holt can expose the-harvest-men-clue-pressure at high trust."
+    },
+    {
+      "id": "npc.journalist.field",
+      "displayName": "Mina Calder",
+      "role": "journalist",
+      "baselineEmotion": "probing",
+      "motivations": [
+        "publish before suppression",
+        "expose chain-of-command failures"
+      ],
+      "trustBaseline": 30,
+      "trustCeiling": 70,
+      "notableSecret": "Accepted leaked material from a source linked to the antagonist."
+    },
+    {
+      "id": "npc.antagonist.primary",
+      "displayName": "The Reaper Steward",
+      "role": "antagonist",
+      "baselineEmotion": "cold",
+      "motivations": [
+        "Convert the player from observer to willing participant."
+      ],
+      "trustBaseline": 0,
+      "trustCeiling": 5,
+      "notableSecret": "Has direct access to at least one internal evidence channel."
+    },
+    {
+      "id": "npc.unknown.contact",
+      "displayName": "Unknown Contact",
+      "role": "unknown_contact",
+      "baselineEmotion": "flat",
+      "motivations": [
+        "steer investigation without revealing identity"
+      ],
+      "trustBaseline": 20,
+      "trustCeiling": 52,
+      "notableSecret": "Identity intersects with official case administration records."
     }
   ],
   "communityPuzzles": [
     {
-      "id": "the-harvest-men-puzzle-shards",
-      "title": "Lantern Route Triangulation",
-      "objective": "Merge three lantern route fragments to locate the hidden threshing pit.",
+      "id": "the-harvest-men-puzzle-day-02",
+      "title": "Day 02 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Festival lantern route map.",
       "shards": [
         {
-          "id": "the-harvest-men-puzzle-shard-host",
-          "heldBy": "HOST",
-          "content": "Host receives a hand-drawn route with one erased landmark."
-        },
-        {
-          "id": "the-harvest-men-puzzle-shard-ally-a",
-          "heldBy": "ALLY_A",
-          "content": "Ally A gets old festival timestamps with off-by-one pattern."
-        },
-        {
-          "id": "the-harvest-men-puzzle-shard-broadcast",
-          "heldBy": "GLOBAL_BROADCAST",
-          "content": "Broadcast weather radar exposes smoke columns only at key coordinates."
+          "id": "the-harvest-men-puzzle-day-02.shard.1",
+          "heldBy": "handwritten_note",
+          "content": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
         }
       ],
-      "rewardClueId": "the-harvest-men-clue-origin",
-      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
-      "solutionKeyword": "ORIGIN"
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "FESTIVAL_LANTERN_ROUTE_MAP_02"
+    },
+    {
+      "id": "the-harvest-men-puzzle-day-04",
+      "title": "Day 04 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Mask stitch microscopy.",
+      "shards": [
+        {
+          "id": "the-harvest-men-puzzle-day-04.shard.1",
+          "heldBy": "text_message_screenshot",
+          "content": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+        },
+        {
+          "id": "the-harvest-men-puzzle-day-04.shard.2",
+          "heldBy": "security_footage_still",
+          "content": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+        }
+      ],
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "MASK_STITCH_MICROSCOPY_04"
+    },
+    {
+      "id": "the-harvest-men-puzzle-day-06",
+      "title": "Day 06 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Festival lantern route map.",
+      "shards": [
+        {
+          "id": "the-harvest-men-puzzle-day-06.shard.1",
+          "heldBy": "voicemail_transcript",
+          "content": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
+        }
+      ],
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "FESTIVAL_LANTERN_ROUTE_MAP_06"
+    },
+    {
+      "id": "the-harvest-men-puzzle-day-08",
+      "title": "Day 08 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Mask stitch microscopy.",
+      "shards": [
+        {
+          "id": "the-harvest-men-puzzle-day-08.shard.1",
+          "heldBy": "crime_scene_photo",
+          "content": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
+        },
+        {
+          "id": "the-harvest-men-puzzle-day-08.shard.2",
+          "heldBy": "medical_record",
+          "content": "Artifact appears authoritative but contains one intentional inconsistency tied to Mask stitch microscopy."
+        }
+      ],
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "MASK_STITCH_MICROSCOPY_08"
     }
   ],
   "visualDeck": {
-    "heroImage": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-1.png",
+    "heroImage": "/visuals/stories/the-harvest-men.svg",
     "assets": [
       {
-        "id": "the-harvest-men-scene-1",
-        "title": "Scene Art 1",
-        "category": "scene",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-1.png",
-        "promptHint": "Cinematic environment frame 1 for The Harvest Men."
-      },
-      {
-        "id": "the-harvest-men-scene-2",
-        "title": "Scene Art 2",
-        "category": "scene",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-2.png",
-        "promptHint": "Cinematic environment frame 2 for The Harvest Men."
-      },
-      {
-        "id": "the-harvest-men-scene-3",
-        "title": "Scene Art 3",
-        "category": "scene",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-3.png",
-        "promptHint": "Cinematic environment frame 3 for The Harvest Men."
-      },
-      {
-        "id": "the-harvest-men-evidence-1",
-        "title": "Evidence Image 1",
+        "id": "the-harvest-men-d01-police-report-blood-soil-composition-panel",
+        "title": "The Harvest Men - Day 01 police report",
         "category": "evidence",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-1.png",
-        "promptHint": "Forensic clue still 1 tied to The Harvest Men."
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel."
       },
       {
-        "id": "the-harvest-men-evidence-2",
-        "title": "Evidence Image 2",
+        "id": "the-harvest-men-d02-handwritten-note-festival-lantern-route-map",
+        "title": "The Harvest Men - Day 02 handwritten note",
         "category": "evidence",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-2.png",
-        "promptHint": "Forensic clue still 2 tied to The Harvest Men."
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
       },
       {
-        "id": "the-harvest-men-evidence-3",
-        "title": "Evidence Image 3",
+        "id": "the-harvest-men-d03-journal-entry-runaway-voice-memo",
+        "title": "The Harvest Men - Day 03 journal entry",
         "category": "evidence",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-3.png",
-        "promptHint": "Forensic clue still 3 tied to The Harvest Men."
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
       },
       {
-        "id": "the-harvest-men-evidence-4",
-        "title": "Evidence Image 4",
+        "id": "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+        "title": "The Harvest Men - Day 04 text message screenshot",
         "category": "evidence",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-4.png",
-        "promptHint": "Forensic clue still 4 tied to The Harvest Men."
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
       },
       {
-        "id": "the-harvest-men-character-1",
-        "title": "Character Portrait 1",
-        "category": "character",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-1.png",
-        "promptHint": "Character dossier portrait 1 for folk horror arc."
+        "id": "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy",
+        "title": "The Harvest Men - Day 04 security footage still",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
       },
       {
-        "id": "the-harvest-men-character-2",
-        "title": "Character Portrait 2",
-        "category": "character",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-2.png",
-        "promptHint": "Character dossier portrait 2 for folk horror arc."
+        "id": "the-harvest-men-d05-call-log-blood-soil-composition-panel",
+        "title": "The Harvest Men - Day 05 call log",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Blood-soil composition panel."
       },
       {
-        "id": "the-harvest-men-character-3",
-        "title": "Character Portrait 3",
-        "category": "character",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-3.png",
-        "promptHint": "Character dossier portrait 3 for folk horror arc."
+        "id": "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map",
+        "title": "The Harvest Men - Day 06 voicemail transcript",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map."
       },
       {
-        "id": "the-harvest-men-character-4",
-        "title": "Character Portrait 4",
-        "category": "character",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-4.png",
-        "promptHint": "Character dossier portrait 4 for folk horror arc."
+        "id": "the-harvest-men-d07-security-footage-still-runaway-voice-memo",
+        "title": "The Harvest Men - Day 07 security footage still",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo."
       },
       {
-        "id": "the-harvest-men-promo-1",
-        "title": "Promo Frame 1",
-        "category": "promo",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-promo_image-1.png",
-        "promptHint": "Teaser key art 1 for The Harvest Men."
+        "id": "the-harvest-men-d08-crime-scene-photo-mask-stitch-microscopy",
+        "title": "The Harvest Men - Day 08 crime scene photo",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy."
       },
       {
-        "id": "the-harvest-men-promo-2",
-        "title": "Promo Frame 2",
-        "category": "promo",
-        "path": "/creative/stories/the-harvest-men/the-harvest-men-promo_image-2.png",
-        "promptHint": "Teaser key art 2 for The Harvest Men."
+        "id": "the-harvest-men-d08-medical-record-mask-stitch-microscopy",
+        "title": "The Harvest Men - Day 08 medical record",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Mask stitch microscopy."
+      },
+      {
+        "id": "the-harvest-men-d09-marked-map-blood-soil-composition-panel",
+        "title": "The Harvest Men - Day 09 marked map",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Blood-soil composition panel."
+      },
+      {
+        "id": "the-harvest-men-d10-receipt-festival-lantern-route-map",
+        "title": "The Harvest Men - Day 10 receipt",
+        "category": "evidence",
+        "path": "/visuals/stories/the-harvest-men.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Festival lantern route map."
       }
     ]
   },
@@ -865,5 +4632,6 @@
   "branchingMoments": [
     "Scientific analysis vs witness protection opening",
     "Break rite now vs infiltrate final rite"
-  ]
+  ],
+  "generatedFromArg": true
 }

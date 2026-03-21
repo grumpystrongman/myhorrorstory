@@ -1,97 +1,452 @@
 {
-  "generatedAt": "2026-03-20T20:16:52.351Z",
+  "generatedAt": "2026-03-21T13:45:52.826Z",
   "storyCount": 11,
   "stories": [
     {
       "storyId": "black-chapel-ledger",
       "title": "Black Chapel Ledger",
       "hook": "A cathedral ledger records debts paid in memory instead of money.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Ledger Breach",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Authenticate the ledger seals with archival metadata [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "black-chapel-ledger-clue-origin"
+            "black-chapel-ledger-d01-police-report-burned-vellum-fragment"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d02-handwritten-note-choir-rehearsal-wax-recordin"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d03-journal-entry-crypt-key-inventory"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d04-text-message-screenshot-ledger-watermark-scan",
+            "black-chapel-ledger-d04-security-footage-still-ledger-watermark-scan"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "black-chapel-ledger-clue-pressure"
+            "black-chapel-ledger-d05-call-log-burned-vellum-fragment"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Canon Archivist Elara Voss and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "black-chapel-ledger-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d06-voicemail-transcript-choir-rehearsal-wax-recordin"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d07-security-footage-still-crypt-key-inventory"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d08-crime-scene-photo-ledger-watermark-scan",
+            "black-chapel-ledger-d08-medical-record-ledger-watermark-scan"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d09-marked-map-burned-vellum-fragment"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d10-receipt-choir-rehearsal-wax-recordin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d11-medical-record-crypt-key-inventory"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "black-chapel-ledger-clue-timed-warning"
+            "black-chapel-ledger-d12-shipping-manifest-ledger-watermark-scan",
+            "black-chapel-ledger-d12-journal-entry-ledger-watermark-scan"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d13-police-report-burned-vellum-fragment"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "black-chapel-ledger-clue-reveal"
+            "black-chapel-ledger-d14-handwritten-note-choir-rehearsal-wax-recordin"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "black-chapel-ledger-clue-epilogue"
+            "black-chapel-ledger-d15-journal-entry-crypt-key-inventory",
+            "black-chapel-ledger-d15-voicemail-transcript-crypt-key-inventory"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d16-text-message-screenshot-ledger-watermark-scan",
+            "black-chapel-ledger-d16-security-footage-still-ledger-watermark-scan"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d17-call-log-burned-vellum-fragment",
+            "black-chapel-ledger-d17-crime-scene-photo-burned-vellum-fragment"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d18-voicemail-transcript-choir-rehearsal-wax-recordin",
+            "black-chapel-ledger-d18-marked-map-choir-rehearsal-wax-recordin"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d19-security-footage-still-crypt-key-inventory",
+            "black-chapel-ledger-d19-receipt-crypt-key-inventory"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d20-crime-scene-photo-ledger-watermark-scan",
+            "black-chapel-ledger-d20-medical-record-ledger-watermark-scan"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d21-marked-map-burned-vellum-fragment",
+            "black-chapel-ledger-d21-shipping-manifest-burned-vellum-fragment"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d22-receipt-choir-rehearsal-wax-recordin"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d23-medical-record-crypt-key-inventory"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d24-shipping-manifest-ledger-watermark-scan",
+            "black-chapel-ledger-d24-journal-entry-ledger-watermark-scan"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d25-police-report-burned-vellum-fragment"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d26-handwritten-note-choir-rehearsal-wax-recordin"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d27-journal-entry-crypt-key-inventory"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "black-chapel-ledger-d28-text-message-screenshot-ledger-watermark-scan",
+            "black-chapel-ledger-d28-security-footage-still-ledger-watermark-scan"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -100,92 +455,447 @@
       "storyId": "crown-of-salt",
       "title": "Crown of Salt",
       "hook": "A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Manifest Drift",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Audit crate chain-of-custody from port systems [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "crown-of-salt-clue-origin"
+            "crown-of-salt-d01-police-report-brine-sealed-manifest"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d02-handwritten-note-dockside-cctv-still"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d03-journal-entry-catacomb-symbol-tracing"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d04-text-message-screenshot-customs-api-anomaly-log",
+            "crown-of-salt-d04-security-footage-still-customs-api-anomaly-log"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "crown-of-salt-clue-pressure"
+            "crown-of-salt-d05-call-log-brine-sealed-manifest"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Port Auditor Lin Ortega and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "crown-of-salt-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d06-voicemail-transcript-dockside-cctv-still"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d07-security-footage-still-catacomb-symbol-tracing"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d08-crime-scene-photo-customs-api-anomaly-log",
+            "crown-of-salt-d08-medical-record-customs-api-anomaly-log"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d09-marked-map-brine-sealed-manifest"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d10-receipt-dockside-cctv-still"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d11-medical-record-catacomb-symbol-tracing"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "crown-of-salt-clue-timed-warning"
+            "crown-of-salt-d12-shipping-manifest-customs-api-anomaly-log",
+            "crown-of-salt-d12-journal-entry-customs-api-anomaly-log"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d13-police-report-brine-sealed-manifest"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "crown-of-salt-clue-reveal"
+            "crown-of-salt-d14-handwritten-note-dockside-cctv-still"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "crown-of-salt-clue-epilogue"
+            "crown-of-salt-d15-journal-entry-catacomb-symbol-tracing",
+            "crown-of-salt-d15-voicemail-transcript-catacomb-symbol-tracing"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d16-text-message-screenshot-customs-api-anomaly-log",
+            "crown-of-salt-d16-security-footage-still-customs-api-anomaly-log"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d17-call-log-brine-sealed-manifest",
+            "crown-of-salt-d17-crime-scene-photo-brine-sealed-manifest"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d18-voicemail-transcript-dockside-cctv-still",
+            "crown-of-salt-d18-marked-map-dockside-cctv-still"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d19-security-footage-still-catacomb-symbol-tracing",
+            "crown-of-salt-d19-receipt-catacomb-symbol-tracing"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d20-crime-scene-photo-customs-api-anomaly-log",
+            "crown-of-salt-d20-medical-record-customs-api-anomaly-log"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d21-marked-map-brine-sealed-manifest",
+            "crown-of-salt-d21-shipping-manifest-brine-sealed-manifest"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d22-receipt-dockside-cctv-still"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d23-medical-record-catacomb-symbol-tracing"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d24-shipping-manifest-customs-api-anomaly-log",
+            "crown-of-salt-d24-journal-entry-customs-api-anomaly-log"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d25-police-report-brine-sealed-manifest"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d26-handwritten-note-dockside-cctv-still"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d27-journal-entry-catacomb-symbol-tracing"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "crown-of-salt-d28-text-message-screenshot-customs-api-anomaly-log",
+            "crown-of-salt-d28-security-footage-still-customs-api-anomaly-log"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -194,92 +904,447 @@
       "storyId": "dead-channel-protocol",
       "title": "Dead Channel Protocol",
       "hook": "A ghost app predicts outages, deaths, and your next move.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Protocol Wake",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Audit protocol source code and signing keys [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "dead-channel-protocol-clue-origin"
+            "dead-channel-protocol-d01-police-report-protocol-signed-payload"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d02-handwritten-note-substation-outage-trace"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d03-journal-entry-intercepted-bot-transcript"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d04-text-message-screenshot-abandoned-node-scan",
+            "dead-channel-protocol-d04-security-footage-still-abandoned-node-scan"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "dead-channel-protocol-clue-pressure"
+            "dead-channel-protocol-d05-call-log-protocol-signed-payload"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Security Engineer Talia Ren and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "dead-channel-protocol-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d06-voicemail-transcript-substation-outage-trace"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d07-security-footage-still-intercepted-bot-transcript"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d08-crime-scene-photo-abandoned-node-scan",
+            "dead-channel-protocol-d08-medical-record-abandoned-node-scan"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d09-marked-map-protocol-signed-payload"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d10-receipt-substation-outage-trace"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d11-medical-record-intercepted-bot-transcript"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "dead-channel-protocol-clue-timed-warning"
+            "dead-channel-protocol-d12-shipping-manifest-abandoned-node-scan",
+            "dead-channel-protocol-d12-journal-entry-abandoned-node-scan"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d13-police-report-protocol-signed-payload"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "dead-channel-protocol-clue-reveal"
+            "dead-channel-protocol-d14-handwritten-note-substation-outage-trace"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "dead-channel-protocol-clue-epilogue"
+            "dead-channel-protocol-d15-journal-entry-intercepted-bot-transcript",
+            "dead-channel-protocol-d15-voicemail-transcript-intercepted-bot-transcript"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d16-text-message-screenshot-abandoned-node-scan",
+            "dead-channel-protocol-d16-security-footage-still-abandoned-node-scan"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d17-call-log-protocol-signed-payload",
+            "dead-channel-protocol-d17-crime-scene-photo-protocol-signed-payload"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d18-voicemail-transcript-substation-outage-trace",
+            "dead-channel-protocol-d18-marked-map-substation-outage-trace"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d19-security-footage-still-intercepted-bot-transcript",
+            "dead-channel-protocol-d19-receipt-intercepted-bot-transcript"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d20-crime-scene-photo-abandoned-node-scan",
+            "dead-channel-protocol-d20-medical-record-abandoned-node-scan"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d21-marked-map-protocol-signed-payload",
+            "dead-channel-protocol-d21-shipping-manifest-protocol-signed-payload"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d22-receipt-substation-outage-trace"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d23-medical-record-intercepted-bot-transcript"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d24-shipping-manifest-abandoned-node-scan",
+            "dead-channel-protocol-d24-journal-entry-abandoned-node-scan"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d25-police-report-protocol-signed-payload"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d26-handwritten-note-substation-outage-trace"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d27-journal-entry-intercepted-bot-transcript"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "dead-channel-protocol-d28-text-message-screenshot-abandoned-node-scan",
+            "dead-channel-protocol-d28-security-footage-still-abandoned-node-scan"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -288,92 +1353,447 @@
       "storyId": "midnight-lockbox",
       "title": "Midnight Lockbox",
       "hook": "A self-storage unit with no renter sends voice memos predicting what your team will do next.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Unit 331 pings alive",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Audit keypad logs and access events before sunrise [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "midnight-lockbox-clue-origin"
+            "midnight-lockbox-d01-police-report-voicemail-waveform-anomaly"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d02-handwritten-note-keypad-access-hash-export"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d03-journal-entry-freight-elevator-camera-stil"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d04-text-message-screenshot-drain-tunnel-pressure-map",
+            "midnight-lockbox-d04-security-footage-still-drain-tunnel-pressure-map"
           ],
           "channelTouches": [
             "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d05-call-log-voicemail-waveform-anomaly"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d06-voicemail-transcript-keypad-access-hash-export"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
             "WHATSAPP",
+            "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Lock Cylinder Swap",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "midnight-lockbox-clue-pressure"
+            "midnight-lockbox-d07-security-footage-still-freight-elevator-camera-stil"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d08-crime-scene-photo-drain-tunnel-pressure-map",
+            "midnight-lockbox-d08-medical-record-drain-tunnel-pressure-map"
           ],
           "channelTouches": [
             "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d09-marked-map-voicemail-waveform-anomaly"
+          ],
+          "channelTouches": [
             "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-3",
-          "beatTitle": "Morning Leak",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Case Lead Veda Cross and seal internal channels [intent: COMPLIANCE]",
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "midnight-lockbox-clue-contradiction"
+            "midnight-lockbox-d10-receipt-keypad-access-hash-export"
           ],
           "channelTouches": [
-            "TELEGRAM",
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d11-medical-record-freight-elevator-camera-stil"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
             "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Noon Ultimatum",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "midnight-lockbox-clue-timed-warning"
+            "midnight-lockbox-d12-shipping-manifest-drain-tunnel-pressure-map",
+            "midnight-lockbox-d12-journal-entry-drain-tunnel-pressure-map"
           ],
           "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d13-police-report-voicemail-waveform-anomaly"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d14-handwritten-note-keypad-access-hash-export"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d15-journal-entry-freight-elevator-camera-stil",
+            "midnight-lockbox-d15-voicemail-transcript-freight-elevator-camera-stil"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
             "EMAIL",
             "VOICE_MESSAGE",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Drain Tunnel Run",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "midnight-lockbox-clue-reveal"
+            "midnight-lockbox-d16-text-message-screenshot-drain-tunnel-pressure-map",
+            "midnight-lockbox-d16-security-footage-still-drain-tunnel-pressure-map"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d17-call-log-voicemail-waveform-anomaly",
+            "midnight-lockbox-d17-crime-scene-photo-voicemail-waveform-anomaly"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d18-voicemail-transcript-keypad-access-hash-export",
+            "midnight-lockbox-d18-marked-map-keypad-access-hash-export"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d19-security-footage-still-freight-elevator-camera-stil",
+            "midnight-lockbox-d19-receipt-freight-elevator-camera-stil"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d20-crime-scene-photo-drain-tunnel-pressure-map",
+            "midnight-lockbox-d20-medical-record-drain-tunnel-pressure-map"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Lockbox Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "midnight-lockbox-clue-epilogue"
+            "midnight-lockbox-d21-marked-map-voicemail-waveform-anomaly",
+            "midnight-lockbox-d21-shipping-manifest-voicemail-waveform-anomaly"
           ],
           "channelTouches": [
-            "DOCUMENT_DROP",
-            "SIMULATED_SITE",
-            "EMAIL"
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d22-receipt-keypad-access-hash-export"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d23-medical-record-freight-elevator-camera-stil"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d24-shipping-manifest-drain-tunnel-pressure-map",
+            "midnight-lockbox-d24-journal-entry-drain-tunnel-pressure-map"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d25-police-report-voicemail-waveform-anomaly"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d26-handwritten-note-keypad-access-hash-export"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d27-journal-entry-freight-elevator-camera-stil"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "midnight-lockbox-d28-text-message-screenshot-drain-tunnel-pressure-map",
+            "midnight-lockbox-d28-security-footage-still-drain-tunnel-pressure-map"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -382,92 +1802,447 @@
       "storyId": "red-creek-winter",
       "title": "Red Creek Winter",
       "hook": "Each snowfall uncovers one body and one impossible alibi.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "First Snow Body",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Run forensic timeline from dispatch logs [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "red-creek-winter-clue-origin"
+            "red-creek-winter-d01-police-report-dispatch-freeze-frame"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d02-handwritten-note-snow-depth-forensic-note"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d03-journal-entry-ski-lodge-camera-still"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d04-text-message-screenshot-anonymous-tip-voicemail",
+            "red-creek-winter-d04-security-footage-still-anonymous-tip-voicemail"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "red-creek-winter-clue-pressure"
+            "red-creek-winter-d05-call-log-dispatch-freeze-frame"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Sheriff Dana Holt and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "red-creek-winter-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d06-voicemail-transcript-snow-depth-forensic-note"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d07-security-footage-still-ski-lodge-camera-still"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d08-crime-scene-photo-anonymous-tip-voicemail",
+            "red-creek-winter-d08-medical-record-anonymous-tip-voicemail"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d09-marked-map-dispatch-freeze-frame"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d10-receipt-snow-depth-forensic-note"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d11-medical-record-ski-lodge-camera-still"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "red-creek-winter-clue-timed-warning"
+            "red-creek-winter-d12-shipping-manifest-anonymous-tip-voicemail",
+            "red-creek-winter-d12-journal-entry-anonymous-tip-voicemail"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d13-police-report-dispatch-freeze-frame"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "red-creek-winter-clue-reveal"
+            "red-creek-winter-d14-handwritten-note-snow-depth-forensic-note"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "red-creek-winter-clue-epilogue"
+            "red-creek-winter-d15-journal-entry-ski-lodge-camera-still",
+            "red-creek-winter-d15-voicemail-transcript-ski-lodge-camera-still"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d16-text-message-screenshot-anonymous-tip-voicemail",
+            "red-creek-winter-d16-security-footage-still-anonymous-tip-voicemail"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d17-call-log-dispatch-freeze-frame",
+            "red-creek-winter-d17-crime-scene-photo-dispatch-freeze-frame"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d18-voicemail-transcript-snow-depth-forensic-note",
+            "red-creek-winter-d18-marked-map-snow-depth-forensic-note"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d19-security-footage-still-ski-lodge-camera-still",
+            "red-creek-winter-d19-receipt-ski-lodge-camera-still"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d20-crime-scene-photo-anonymous-tip-voicemail",
+            "red-creek-winter-d20-medical-record-anonymous-tip-voicemail"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d21-marked-map-dispatch-freeze-frame",
+            "red-creek-winter-d21-shipping-manifest-dispatch-freeze-frame"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d22-receipt-snow-depth-forensic-note"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d23-medical-record-ski-lodge-camera-still"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d24-shipping-manifest-anonymous-tip-voicemail",
+            "red-creek-winter-d24-journal-entry-anonymous-tip-voicemail"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d25-police-report-dispatch-freeze-frame"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d26-handwritten-note-snow-depth-forensic-note"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d27-journal-entry-ski-lodge-camera-still"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "red-creek-winter-d28-text-message-screenshot-anonymous-tip-voicemail",
+            "red-creek-winter-d28-security-footage-still-anonymous-tip-voicemail"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -476,92 +2251,447 @@
       "storyId": "signal-from-kharon-9",
       "title": "Signal From Kharon-9",
       "hook": "Telemetry returns from a decommissioned orbital array and predicts player replies.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Dormant Array Wake",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Sandbox the signal in a quarantined parser [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "signal-from-kharon-9-clue-origin"
+            "signal-from-kharon-9-d01-police-report-telemetry-checksum-drift"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d02-handwritten-note-starfield-deviation-map"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d03-journal-entry-array-maintenance-gap-log"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d04-text-message-screenshot-operator-biometric-mismatch",
+            "signal-from-kharon-9-d04-security-footage-still-operator-biometric-mismatch"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "signal-from-kharon-9-clue-pressure"
+            "signal-from-kharon-9-d05-call-log-telemetry-checksum-drift"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Systems Engineer Ari Vance and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "signal-from-kharon-9-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d06-voicemail-transcript-starfield-deviation-map"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d07-security-footage-still-array-maintenance-gap-log"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d08-crime-scene-photo-operator-biometric-mismatch",
+            "signal-from-kharon-9-d08-medical-record-operator-biometric-mismatch"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d09-marked-map-telemetry-checksum-drift"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d10-receipt-starfield-deviation-map"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d11-medical-record-array-maintenance-gap-log"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "signal-from-kharon-9-clue-timed-warning"
+            "signal-from-kharon-9-d12-shipping-manifest-operator-biometric-mismatch",
+            "signal-from-kharon-9-d12-journal-entry-operator-biometric-mismatch"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d13-police-report-telemetry-checksum-drift"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "signal-from-kharon-9-clue-reveal"
+            "signal-from-kharon-9-d14-handwritten-note-starfield-deviation-map"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "signal-from-kharon-9-clue-epilogue"
+            "signal-from-kharon-9-d15-journal-entry-array-maintenance-gap-log",
+            "signal-from-kharon-9-d15-voicemail-transcript-array-maintenance-gap-log"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d16-text-message-screenshot-operator-biometric-mismatch",
+            "signal-from-kharon-9-d16-security-footage-still-operator-biometric-mismatch"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d17-call-log-telemetry-checksum-drift",
+            "signal-from-kharon-9-d17-crime-scene-photo-telemetry-checksum-drift"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d18-voicemail-transcript-starfield-deviation-map",
+            "signal-from-kharon-9-d18-marked-map-starfield-deviation-map"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d19-security-footage-still-array-maintenance-gap-log",
+            "signal-from-kharon-9-d19-receipt-array-maintenance-gap-log"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d20-crime-scene-photo-operator-biometric-mismatch",
+            "signal-from-kharon-9-d20-medical-record-operator-biometric-mismatch"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d21-marked-map-telemetry-checksum-drift",
+            "signal-from-kharon-9-d21-shipping-manifest-telemetry-checksum-drift"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d22-receipt-starfield-deviation-map"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d23-medical-record-array-maintenance-gap-log"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d24-shipping-manifest-operator-biometric-mismatch",
+            "signal-from-kharon-9-d24-journal-entry-operator-biometric-mismatch"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d25-police-report-telemetry-checksum-drift"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d26-handwritten-note-starfield-deviation-map"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d27-journal-entry-array-maintenance-gap-log"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "signal-from-kharon-9-d28-text-message-screenshot-operator-biometric-mismatch",
+            "signal-from-kharon-9-d28-security-footage-still-operator-biometric-mismatch"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -570,92 +2700,447 @@
       "storyId": "static-between-stations",
       "title": "Static Between Stations",
       "hook": "A dead rail line broadcasts private confessions in the players' own voices.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Signal One",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Trace the source frequency through telecom logs [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "static-between-stations-clue-origin"
+            "static-between-stations-d01-police-report-spectrogram-of-confession-bu"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d02-handwritten-note-maintenance-ledger-anomaly"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d03-journal-entry-turnstile-camera-still"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d04-text-message-screenshot-relay-room-access-hash",
+            "static-between-stations-d04-security-footage-still-relay-room-access-hash"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "static-between-stations-clue-pressure"
+            "static-between-stations-d05-call-log-spectrogram-of-confession-bu"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Lead Investigator Mara Quinn and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "static-between-stations-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d06-voicemail-transcript-maintenance-ledger-anomaly"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d07-security-footage-still-turnstile-camera-still"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d08-crime-scene-photo-relay-room-access-hash",
+            "static-between-stations-d08-medical-record-relay-room-access-hash"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d09-marked-map-spectrogram-of-confession-bu"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d10-receipt-maintenance-ledger-anomaly"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d11-medical-record-turnstile-camera-still"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "static-between-stations-clue-timed-warning"
+            "static-between-stations-d12-shipping-manifest-relay-room-access-hash",
+            "static-between-stations-d12-journal-entry-relay-room-access-hash"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d13-police-report-spectrogram-of-confession-bu"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "static-between-stations-clue-reveal"
+            "static-between-stations-d14-handwritten-note-maintenance-ledger-anomaly"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "static-between-stations-clue-epilogue"
+            "static-between-stations-d15-journal-entry-turnstile-camera-still",
+            "static-between-stations-d15-voicemail-transcript-turnstile-camera-still"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d16-text-message-screenshot-relay-room-access-hash",
+            "static-between-stations-d16-security-footage-still-relay-room-access-hash"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d17-call-log-spectrogram-of-confession-bu",
+            "static-between-stations-d17-crime-scene-photo-spectrogram-of-confession-bu"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d18-voicemail-transcript-maintenance-ledger-anomaly",
+            "static-between-stations-d18-marked-map-maintenance-ledger-anomaly"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d19-security-footage-still-turnstile-camera-still",
+            "static-between-stations-d19-receipt-turnstile-camera-still"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d20-crime-scene-photo-relay-room-access-hash",
+            "static-between-stations-d20-medical-record-relay-room-access-hash"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d21-marked-map-spectrogram-of-confession-bu",
+            "static-between-stations-d21-shipping-manifest-spectrogram-of-confession-bu"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d22-receipt-maintenance-ledger-anomaly"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d23-medical-record-turnstile-camera-still"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d24-shipping-manifest-relay-room-access-hash",
+            "static-between-stations-d24-journal-entry-relay-room-access-hash"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d25-police-report-spectrogram-of-confession-bu"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d26-handwritten-note-maintenance-ledger-anomaly"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d27-journal-entry-turnstile-camera-still"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "static-between-stations-d28-text-message-screenshot-relay-room-access-hash",
+            "static-between-stations-d28-security-footage-still-relay-room-access-hash"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -664,92 +3149,447 @@
       "storyId": "tape-17-pinewatch",
       "title": "Tape 17: Pinewatch",
       "hook": "A recovered camcorder tape rewrites itself every midnight.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Tape Reset",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Extract frame-level artifacts before midnight overwrite [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "tape-17-pinewatch-clue-origin"
+            "tape-17-pinewatch-d01-police-report-frame-glitch-cluster"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d02-handwritten-note-ranger-dispatch-excerpt"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d03-journal-entry-weather-siren-file"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d04-text-message-screenshot-tripod-footprint-cast",
+            "tape-17-pinewatch-d04-security-footage-still-tripod-footprint-cast"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "tape-17-pinewatch-clue-pressure"
+            "tape-17-pinewatch-d05-call-log-frame-glitch-cluster"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Ranger Juno Hale and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "tape-17-pinewatch-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d06-voicemail-transcript-ranger-dispatch-excerpt"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d07-security-footage-still-weather-siren-file"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d08-crime-scene-photo-tripod-footprint-cast",
+            "tape-17-pinewatch-d08-medical-record-tripod-footprint-cast"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d09-marked-map-frame-glitch-cluster"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d10-receipt-ranger-dispatch-excerpt"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d11-medical-record-weather-siren-file"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "tape-17-pinewatch-clue-timed-warning"
+            "tape-17-pinewatch-d12-shipping-manifest-tripod-footprint-cast",
+            "tape-17-pinewatch-d12-journal-entry-tripod-footprint-cast"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d13-police-report-frame-glitch-cluster"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "tape-17-pinewatch-clue-reveal"
+            "tape-17-pinewatch-d14-handwritten-note-ranger-dispatch-excerpt"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "tape-17-pinewatch-clue-epilogue"
+            "tape-17-pinewatch-d15-journal-entry-weather-siren-file",
+            "tape-17-pinewatch-d15-voicemail-transcript-weather-siren-file"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d16-text-message-screenshot-tripod-footprint-cast",
+            "tape-17-pinewatch-d16-security-footage-still-tripod-footprint-cast"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d17-call-log-frame-glitch-cluster",
+            "tape-17-pinewatch-d17-crime-scene-photo-frame-glitch-cluster"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d18-voicemail-transcript-ranger-dispatch-excerpt",
+            "tape-17-pinewatch-d18-marked-map-ranger-dispatch-excerpt"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d19-security-footage-still-weather-siren-file",
+            "tape-17-pinewatch-d19-receipt-weather-siren-file"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d20-crime-scene-photo-tripod-footprint-cast",
+            "tape-17-pinewatch-d20-medical-record-tripod-footprint-cast"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d21-marked-map-frame-glitch-cluster",
+            "tape-17-pinewatch-d21-shipping-manifest-frame-glitch-cluster"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d22-receipt-ranger-dispatch-excerpt"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d23-medical-record-weather-siren-file"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d24-shipping-manifest-tripod-footprint-cast",
+            "tape-17-pinewatch-d24-journal-entry-tripod-footprint-cast"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d25-police-report-frame-glitch-cluster"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d26-handwritten-note-ranger-dispatch-excerpt"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d27-journal-entry-weather-siren-file"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "tape-17-pinewatch-d28-text-message-screenshot-tripod-footprint-cast",
+            "tape-17-pinewatch-d28-security-footage-still-tripod-footprint-cast"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -758,92 +3598,447 @@
       "storyId": "the-fourth-tenant",
       "title": "The Fourth Tenant",
       "hook": "Rent is collected from an apartment that appears on no official map.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Unlisted Unit",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Audit property records and insurance filings [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-fourth-tenant-clue-origin"
+            "the-fourth-tenant-d01-police-report-lease-chain-checksum"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d02-handwritten-note-hallway-thermal-still"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d03-journal-entry-water-damage-restoration-inv"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d04-text-message-screenshot-night-entry-key-hash",
+            "the-fourth-tenant-d04-security-footage-still-night-entry-key-hash"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-fourth-tenant-clue-pressure"
+            "the-fourth-tenant-d05-call-log-lease-chain-checksum"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Building Superintendent Leda Price and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "the-fourth-tenant-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d06-voicemail-transcript-hallway-thermal-still"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d07-security-footage-still-water-damage-restoration-inv"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d08-crime-scene-photo-night-entry-key-hash",
+            "the-fourth-tenant-d08-medical-record-night-entry-key-hash"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d09-marked-map-lease-chain-checksum"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d10-receipt-hallway-thermal-still"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d11-medical-record-water-damage-restoration-inv"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-fourth-tenant-clue-timed-warning"
+            "the-fourth-tenant-d12-shipping-manifest-night-entry-key-hash",
+            "the-fourth-tenant-d12-journal-entry-night-entry-key-hash"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d13-police-report-lease-chain-checksum"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-fourth-tenant-clue-reveal"
+            "the-fourth-tenant-d14-handwritten-note-hallway-thermal-still"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-fourth-tenant-clue-epilogue"
+            "the-fourth-tenant-d15-journal-entry-water-damage-restoration-inv",
+            "the-fourth-tenant-d15-voicemail-transcript-water-damage-restoration-inv"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d16-text-message-screenshot-night-entry-key-hash",
+            "the-fourth-tenant-d16-security-footage-still-night-entry-key-hash"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d17-call-log-lease-chain-checksum",
+            "the-fourth-tenant-d17-crime-scene-photo-lease-chain-checksum"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d18-voicemail-transcript-hallway-thermal-still",
+            "the-fourth-tenant-d18-marked-map-hallway-thermal-still"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d19-security-footage-still-water-damage-restoration-inv",
+            "the-fourth-tenant-d19-receipt-water-damage-restoration-inv"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d20-crime-scene-photo-night-entry-key-hash",
+            "the-fourth-tenant-d20-medical-record-night-entry-key-hash"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d21-marked-map-lease-chain-checksum",
+            "the-fourth-tenant-d21-shipping-manifest-lease-chain-checksum"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d22-receipt-hallway-thermal-still"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d23-medical-record-water-damage-restoration-inv"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d24-shipping-manifest-night-entry-key-hash",
+            "the-fourth-tenant-d24-journal-entry-night-entry-key-hash"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d25-police-report-lease-chain-checksum"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d26-handwritten-note-hallway-thermal-still"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d27-journal-entry-water-damage-restoration-inv"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-fourth-tenant-d28-text-message-screenshot-night-entry-key-hash",
+            "the-fourth-tenant-d28-security-footage-still-night-entry-key-hash"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -852,92 +4047,447 @@
       "storyId": "the-harvest-men",
       "title": "The Harvest Men",
       "hook": "A ritual mask selects a new wearer every dusk, and refusals vanish overnight.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Dusk Selection",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Analyze soil reports linked to ritual sites [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-harvest-men-clue-origin"
+            "the-harvest-men-d01-police-report-blood-soil-composition-panel"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d02-handwritten-note-festival-lantern-route-map"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d03-journal-entry-runaway-voice-memo"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+            "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-harvest-men-clue-pressure"
+            "the-harvest-men-d05-call-log-blood-soil-composition-panel"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Visiting Agronomist Dina Crowe and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "the-harvest-men-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d07-security-footage-still-runaway-voice-memo"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d08-crime-scene-photo-mask-stitch-microscopy",
+            "the-harvest-men-d08-medical-record-mask-stitch-microscopy"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d09-marked-map-blood-soil-composition-panel"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d10-receipt-festival-lantern-route-map"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d11-medical-record-runaway-voice-memo"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-harvest-men-clue-timed-warning"
+            "the-harvest-men-d12-shipping-manifest-mask-stitch-microscopy",
+            "the-harvest-men-d12-journal-entry-mask-stitch-microscopy"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d13-police-report-blood-soil-composition-panel"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-harvest-men-clue-reveal"
+            "the-harvest-men-d14-handwritten-note-festival-lantern-route-map"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "the-harvest-men-clue-epilogue"
+            "the-harvest-men-d15-journal-entry-runaway-voice-memo",
+            "the-harvest-men-d15-voicemail-transcript-runaway-voice-memo"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d16-text-message-screenshot-mask-stitch-microscopy",
+            "the-harvest-men-d16-security-footage-still-mask-stitch-microscopy"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d17-call-log-blood-soil-composition-panel",
+            "the-harvest-men-d17-crime-scene-photo-blood-soil-composition-panel"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d18-voicemail-transcript-festival-lantern-route-map",
+            "the-harvest-men-d18-marked-map-festival-lantern-route-map"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d19-security-footage-still-runaway-voice-memo",
+            "the-harvest-men-d19-receipt-runaway-voice-memo"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d20-crime-scene-photo-mask-stitch-microscopy",
+            "the-harvest-men-d20-medical-record-mask-stitch-microscopy"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d21-marked-map-blood-soil-composition-panel",
+            "the-harvest-men-d21-shipping-manifest-blood-soil-composition-panel"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d22-receipt-festival-lantern-route-map"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d23-medical-record-runaway-voice-memo"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d24-shipping-manifest-mask-stitch-microscopy",
+            "the-harvest-men-d24-journal-entry-mask-stitch-microscopy"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d25-police-report-blood-soil-composition-panel"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d26-handwritten-note-festival-lantern-route-map"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d27-journal-entry-runaway-voice-memo"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "the-harvest-men-d28-text-message-screenshot-mask-stitch-microscopy",
+            "the-harvest-men-d28-security-footage-still-mask-stitch-microscopy"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]
@@ -946,92 +4496,447 @@
       "storyId": "ward-1908",
       "title": "Ward 1908",
       "hook": "A closed psychiatric hospital updates patient files every night at 1:08 a.m.",
-      "beatCount": 6,
-      "endingCount": 3,
-      "defaultRunSteps": 6,
+      "beatCount": 28,
+      "endingCount": 4,
+      "defaultRunSteps": 28,
       "defaultRun": [
         {
-          "beatId": "beat-1",
-          "beatTitle": "Night Update",
-          "selectedChoiceId": "choice-trace-source",
-          "selectedChoiceLabel": "Validate record edits against archive backups [intent: CURIOSITY]",
+          "beatId": "day_01",
+          "beatTitle": "Discovery & Curiosity - Day 01",
+          "selectedChoiceId": "day_01.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "ward-1908-clue-origin"
+            "ward-1908-d01-police-report-intake-ledger-photo"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_02",
+          "beatTitle": "Discovery & Curiosity - Day 02",
+          "selectedChoiceId": "day_02.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d02-handwritten-note-orderly-shift-recording"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_03",
+          "beatTitle": "Discovery & Curiosity - Day 03",
+          "selectedChoiceId": "day_03.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d03-journal-entry-basement-access-override"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_04",
+          "beatTitle": "Discovery & Curiosity - Day 04",
+          "selectedChoiceId": "day_04.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d04-text-message-screenshot-treatment-wing-floorplan",
+            "ward-1908-d04-security-footage-still-treatment-wing-floorplan"
           ],
           "channelTouches": [
             "SMS",
-            "WHATSAPP",
-            "SMS"
+            "VOICE_MESSAGE",
+            "EMAIL"
           ]
         },
         {
-          "beatId": "beat-2",
-          "beatTitle": "Escalation Signal",
-          "selectedChoiceId": "choice-preserve-evidence",
-          "selectedChoiceLabel": "Preserve original evidence chain [intent: CURIOSITY]",
+          "beatId": "day_05",
+          "beatTitle": "Discovery & Curiosity - Day 05",
+          "selectedChoiceId": "day_05.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "ward-1908-clue-pressure"
+            "ward-1908-d05-call-log-intake-ledger-photo"
           ],
           "channelTouches": [
-            "WHATSAPP",
-            "TELEGRAM",
-            "SMS"
-          ]
-        },
-        {
-          "beatId": "beat-3",
-          "beatTitle": "Trust Fracture",
-          "selectedChoiceId": "choice-trust-handler",
-          "selectedChoiceLabel": "Trust Hospital Archivist Nella Ward and secure witness [intent: COMPLIANCE]",
-          "clueReveals": [
-            "ward-1908-clue-contradiction"
-          ],
-          "channelTouches": [
-            "TELEGRAM",
+            "EMAIL",
             "SIGNAL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_06",
+          "beatTitle": "Discovery & Curiosity - Day 06",
+          "selectedChoiceId": "day_06.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d06-voicemail-transcript-orderly-shift-recording"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_07",
+          "beatTitle": "Discovery & Curiosity - Day 07",
+          "selectedChoiceId": "day_07.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d07-security-footage-still-basement-access-override"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_08",
+          "beatTitle": "Escalation & Unease - Day 08",
+          "selectedChoiceId": "day_08.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d08-crime-scene-photo-treatment-wing-floorplan",
+            "ward-1908-d08-medical-record-treatment-wing-floorplan"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_09",
+          "beatTitle": "Escalation & Unease - Day 09",
+          "selectedChoiceId": "day_09.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d09-marked-map-intake-ledger-photo"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_10",
+          "beatTitle": "Escalation & Unease - Day 10",
+          "selectedChoiceId": "day_10.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d10-receipt-orderly-shift-recording"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_11",
+          "beatTitle": "Escalation & Unease - Day 11",
+          "selectedChoiceId": "day_11.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d11-medical-record-basement-access-override"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
             "WHATSAPP"
           ]
         },
         {
-          "beatId": "beat-4",
-          "beatTitle": "Ultimatum Window",
-          "selectedChoiceId": "choice-save-npc",
-          "selectedChoiceLabel": "Divert to save threatened NPC [intent: THREAT]",
+          "beatId": "day_12",
+          "beatTitle": "Escalation & Unease - Day 12",
+          "selectedChoiceId": "day_12.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "ward-1908-clue-timed-warning"
+            "ward-1908-d12-shipping-manifest-treatment-wing-floorplan",
+            "ward-1908-d12-journal-entry-treatment-wing-floorplan"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_13",
+          "beatTitle": "Escalation & Unease - Day 13",
+          "selectedChoiceId": "day_13.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d13-police-report-intake-ledger-photo"
           ],
           "channelTouches": [
             "SIGNAL",
+            "TELEGRAM",
             "EMAIL",
             "SMS"
           ]
         },
         {
-          "beatId": "beat-5",
-          "beatTitle": "Confrontation Protocol",
-          "selectedChoiceId": "choice-charge-villain",
-          "selectedChoiceLabel": "Commit to formal accusation and expose evidence chain [intent: ACCUSATION]",
+          "beatId": "day_14",
+          "beatTitle": "Escalation & Unease - Day 14",
+          "selectedChoiceId": "day_14.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "ward-1908-clue-reveal"
+            "ward-1908-d14-handwritten-note-orderly-shift-recording"
           ],
           "channelTouches": [
+            "WHATSAPP",
+            "SMS",
             "EMAIL",
-            "VOICE_MESSAGE",
             "EMAIL"
           ]
         },
         {
-          "beatId": "beat-6",
-          "beatTitle": "Case Debrief",
-          "selectedChoiceId": "beat-6.choice.default-forward",
-          "selectedChoiceLabel": "Proceed with controlled pressure [intent: CURIOSITY]",
+          "beatId": "day_15",
+          "beatTitle": "Danger & Direct Involvement - Day 15",
+          "selectedChoiceId": "day_15.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
           "clueReveals": [
-            "ward-1908-clue-epilogue"
+            "ward-1908-d15-journal-entry-basement-access-override",
+            "ward-1908-d15-voicemail-transcript-basement-access-override"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_16",
+          "beatTitle": "Danger & Direct Involvement - Day 16",
+          "selectedChoiceId": "day_16.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d16-text-message-screenshot-treatment-wing-floorplan",
+            "ward-1908-d16-security-footage-still-treatment-wing-floorplan"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL"
+          ]
+        },
+        {
+          "beatId": "day_17",
+          "beatTitle": "Danger & Direct Involvement - Day 17",
+          "selectedChoiceId": "day_17.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d17-call-log-intake-ledger-photo",
+            "ward-1908-d17-crime-scene-photo-intake-ledger-photo"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP"
+          ]
+        },
+        {
+          "beatId": "day_18",
+          "beatTitle": "Danger & Direct Involvement - Day 18",
+          "selectedChoiceId": "day_18.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d18-voicemail-transcript-orderly-shift-recording",
+            "ward-1908-d18-marked-map-orderly-shift-recording"
           ],
           "channelTouches": [
             "VOICE_MESSAGE",
-            "DOCUMENT_DROP",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_19",
+          "beatTitle": "Danger & Direct Involvement - Day 19",
+          "selectedChoiceId": "day_19.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d19-security-footage-still-basement-access-override",
+            "ward-1908-d19-receipt-basement-access-override"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_20",
+          "beatTitle": "Danger & Direct Involvement - Day 20",
+          "selectedChoiceId": "day_20.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d20-crime-scene-photo-treatment-wing-floorplan",
+            "ward-1908-d20-medical-record-treatment-wing-floorplan"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
             "EMAIL"
+          ]
+        },
+        {
+          "beatId": "day_21",
+          "beatTitle": "Danger & Direct Involvement - Day 21",
+          "selectedChoiceId": "day_21.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d21-marked-map-intake-ledger-photo",
+            "ward-1908-d21-shipping-manifest-intake-ledger-photo"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_22",
+          "beatTitle": "Resolution or Psychological Break - Day 22",
+          "selectedChoiceId": "day_22.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d22-receipt-orderly-shift-recording"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_23",
+          "beatTitle": "Resolution or Psychological Break - Day 23",
+          "selectedChoiceId": "day_23.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d23-medical-record-basement-access-override"
+          ],
+          "channelTouches": [
+            "EMAIL",
+            "SIGNAL",
+            "EMAIL",
+            "WHATSAPP",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_24",
+          "beatTitle": "Resolution or Psychological Break - Day 24",
+          "selectedChoiceId": "day_24.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d24-shipping-manifest-treatment-wing-floorplan",
+            "ward-1908-d24-journal-entry-treatment-wing-floorplan"
+          ],
+          "channelTouches": [
+            "VOICE_MESSAGE",
+            "WHATSAPP",
+            "EMAIL",
+            "TELEGRAM",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_25",
+          "beatTitle": "Resolution or Psychological Break - Day 25",
+          "selectedChoiceId": "day_25.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d25-police-report-intake-ledger-photo"
+          ],
+          "channelTouches": [
+            "SIGNAL",
+            "TELEGRAM",
+            "EMAIL",
+            "SMS",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_26",
+          "beatTitle": "Resolution or Psychological Break - Day 26",
+          "selectedChoiceId": "day_26.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d26-handwritten-note-orderly-shift-recording"
+          ],
+          "channelTouches": [
+            "WHATSAPP",
+            "SMS",
+            "EMAIL",
+            "EMAIL",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_27",
+          "beatTitle": "Resolution or Psychological Break - Day 27",
+          "selectedChoiceId": "day_27.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d27-journal-entry-basement-access-override"
+          ],
+          "channelTouches": [
+            "TELEGRAM",
+            "EMAIL",
+            "EMAIL",
+            "VOICE_MESSAGE",
+            "SMS"
+          ]
+        },
+        {
+          "beatId": "day_28",
+          "beatTitle": "Resolution or Psychological Break - Day 28",
+          "selectedChoiceId": "day_28.choice.acknowledge",
+          "selectedChoiceLabel": "Acknowledge [intent: QUESTION]",
+          "clueReveals": [
+            "ward-1908-d28-text-message-screenshot-treatment-wing-floorplan",
+            "ward-1908-d28-security-footage-still-treatment-wing-floorplan"
+          ],
+          "channelTouches": [
+            "SMS",
+            "VOICE_MESSAGE",
+            "EMAIL",
+            "SIGNAL",
+            "SMS"
           ]
         }
       ]

@@ -1,0 +1,304 @@
+{
+  "id": "day_28",
+  "storyId": "static-between-stations",
+  "day": 28,
+  "week": 4,
+  "phase": "RESOLUTION",
+  "phaseLabel": "Resolution or Psychological Break",
+  "headline": "Resolution or Psychological Break - Day 28",
+  "releaseWindow": {
+    "campaignOffsetHours": 648,
+    "oddHourDelivery": true,
+    "preferredOddHourClock": "02:11"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      27
+    ],
+    "requiredFlags": [
+      "flag.day_27.complete"
+    ],
+    "requiredInteractions": [
+      "day-27-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "Resolution day decides justice, compromise, corruption, or psychological fracture.",
+    "beatAnchorId": "beat-6",
+    "beatAnchorTitle": "Case Debrief",
+    "beatNarrative": "Final scoring resolves ending branch and season continuity flags.",
+    "threatEscalation": "identity-level confrontation",
+    "playerInvolvementShift": "target to final arbiter"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "closing",
+      "update": "Case Debrief: Final scoring resolves ending branch and season continuity flags.",
+      "clueReference": "Relay room access hash"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Relay room access hash remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Relay room access hash.",
+      "clueReference": "Relay room access hash"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "misdirecting",
+      "update": "A plausible shortcut appears: Rescue route vs forensic route under ultimatum.",
+      "clueReference": "Relay room access hash"
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "spiking",
+      "update": "NPC language mirrors player choices with unsettling precision."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "static-between-stations-d28-text-message-screenshot-relay-room-access-hash",
+      "day": 28,
+      "title": "Static Between Stations - Day 28 text message screenshot",
+      "type": "text_message_screenshot",
+      "sourceNpcId": "npc.unknown.contact",
+      "threadId": "thread.hidden_truth",
+      "clueTags": [
+        "relay-room-access-hash",
+        "phase.resolution"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Static Between Stations ARG artifact Day 28. Type: text_message_screenshot. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Static Between Stations text_message_screenshot audio cue for day 28. Clue anchor: Relay room access hash. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    },
+    {
+      "id": "static-between-stations-d28-security-footage-still-relay-room-access-hash",
+      "day": 28,
+      "title": "Static Between Stations - Day 28 security footage still",
+      "type": "security_footage_still",
+      "sourceNpcId": "npc.static-between-stations-npc-3",
+      "threadId": "thread.psychological_break",
+      "clueTags": [
+        "relay-room-access-hash",
+        "phase.resolution"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Static Between Stations ARG artifact Day 28. Type: security_footage_still. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Static Between Stations security_footage_still audio cue for day 28. Clue anchor: Relay room access hash. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-28-detective-brief",
+      "actorId": "npc.static-between-stations-npc-1",
+      "role": "detective",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 33,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Relay room access hash and tell me if your last call still stands (decision.day_27.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-28-witness-ping",
+      "actorId": "npc.static-between-stations-npc-2",
+      "role": "witness",
+      "channel": "VOICE_MESSAGE",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 40,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-28-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 139,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Relay room access hash.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-28-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "SIGNAL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 169,
+        "oddHourWindow": true,
+        "oddHourClock": "00:43"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    },
+    {
+      "id": "day-28-unknown-contact",
+      "actorId": "npc.unknown.contact",
+      "role": "unknown_contact",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 170,
+        "oddHourWindow": true,
+        "oddHourClock": "00:43"
+      },
+      "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+      "expectedPlayerActions": [
+        "ask_identity",
+        "follow_instruction",
+        "report_to_detective"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 90,
+        "escalation": "unknown_contact_sends_redacted_attachment"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "static-between-stations-puzzle-day-28",
+    "type": "cross_reference",
+    "title": "Day 28 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Relay room access hash.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with RELA."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "RELAY_ROOM_ACCESS_HASH_28"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_28.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+  },
+  "distraction": {
+    "id": "static-between-stations-distraction-day-28",
+    "title": "Red Herring 28",
+    "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+    "whyItFeelsPlausible": "It references Relay room access hash with convincing formatting and apparent chain-of-custody metadata.",
+    "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+  },
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_28.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_28.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.static-between-stations-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.static-between-stations-npc-2",
+        "delta": -1
+      }
+    ],
+    "unlockNextAfterHours": 8
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

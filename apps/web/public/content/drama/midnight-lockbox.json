@@ -1,7 +1,7 @@
 {
   "id": "midnight-lockbox",
   "title": "Midnight Lockbox",
-  "version": "v2",
+  "version": "arg-v1-compat",
   "hook": "A self-storage unit with no renter sends voice memos predicting what your team will do next.",
   "tone": "GROUNDED",
   "subgenre": "supernatural mystery",
@@ -15,10 +15,10 @@
     "SMS",
     "WHATSAPP",
     "TELEGRAM",
+    "SIGNAL",
     "EMAIL",
     "VOICE_MESSAGE",
-    "DOCUMENT_DROP",
-    "SIMULATED_SITE"
+    "DOCUMENT_DROP"
   ],
   "villain": {
     "id": "midnight-lockbox-villain",
@@ -29,499 +29,3224 @@
   },
   "arcs": [
     {
-      "id": "midnight-lockbox-arc-contact",
-      "title": "Lockbox Contact",
-      "stage": "OPENING",
-      "summary": "An impossible voicemail starts the case at the storage facility.",
+      "id": "midnight-lockbox-discovery",
+      "title": "Discovery & Curiosity",
+      "stage": "DISCOVERY",
+      "summary": "Validate the first anomaly, establish trust baselines, and seed investigative obsession.",
       "primaryRuleIds": [
-        "midnight-lockbox-rule-first-contact",
-        "midnight-lockbox-rule-delay-punish"
+        "rule.discovery.pacing",
+        "rule.discovery.pressure"
       ]
     },
     {
-      "id": "midnight-lockbox-arc-disruption",
-      "title": "Leak and Fracture",
-      "stage": "MIDDLE",
-      "summary": "Daylight leaks force trust decisions under public pressure.",
+      "id": "midnight-lockbox-escalation",
+      "title": "Escalation & Unease",
+      "stage": "ESCALATION",
+      "summary": "Push contradictions, introduce manipulative pressure, and degrade certainty.",
       "primaryRuleIds": [
-        "midnight-lockbox-rule-incorrect-accusation",
-        "midnight-lockbox-rule-ally-cooperation"
+        "rule.escalation.pacing",
+        "rule.escalation.pressure"
       ]
     },
     {
-      "id": "midnight-lockbox-arc-endgame",
-      "title": "Second-Night Reckoning",
-      "stage": "ENDGAME",
-      "summary": "A final tunnel run decides truth, compromise, or collapse.",
+      "id": "midnight-lockbox-danger",
+      "title": "Danger & Direct Involvement",
+      "stage": "DANGER",
+      "summary": "Force personal risk, urgent tradeoffs, and irreversible consequences.",
       "primaryRuleIds": [
-        "midnight-lockbox-rule-near-success",
-        "midnight-lockbox-rule-moral-fork"
+        "rule.danger.pacing",
+        "rule.danger.pressure"
+      ]
+    },
+    {
+      "id": "midnight-lockbox-resolution",
+      "title": "Resolution or Psychological Break",
+      "stage": "RESOLUTION",
+      "summary": "Collapse competing truths into final judgement, compromise, or breakdown.",
+      "primaryRuleIds": [
+        "rule.resolution.pacing",
+        "rule.resolution.pressure"
       ]
     }
   ],
   "beats": [
     {
-      "id": "beat-1",
-      "actId": "act-1",
-      "actTitle": "Night One: Breach",
-      "title": "Unit 331 pings alive",
-      "narrative": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.",
+      "id": "day_01",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 01",
+      "narrative": "An intake anomaly lands across multiple channels before dawn.",
       "stage": 1,
-      "unlockAfterSeconds": 0,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "midnight-lockbox-clue-origin"
+        "midnight-lockbox-d01-police-report-voicemail-waveform-anomaly"
       ],
       "incomingMessages": [
         {
-          "id": "beat-1.msg.handler",
+          "id": "day-01-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Voicemail waveform anomaly and tell me if your last call still stands (none).",
+          "delaySeconds": 2,
+          "intensity": 32
+        },
+        {
+          "id": "day-01-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 36
+        },
+        {
+          "id": "day-01-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Voicemail waveform anomaly.",
+          "delaySeconds": 11,
+          "intensity": 40
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_01.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 01 response strategy: acknowledge.",
+          "nextBeatId": "day_02",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_01.primary": "acknowledge",
+            "flag.day_01.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_01.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 01 response strategy: request evidence hash.",
+          "nextBeatId": "day_02",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_01.primary": "request_evidence_hash",
+            "flag.day_01.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_01.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 01 response strategy: commit next step.",
+          "nextBeatId": "day_02",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_01.primary": "commit_next_step",
+            "flag.day_01.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_02",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_02",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 02",
+      "narrative": "Metadata drift appears between duplicate files and erodes confidence.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d02-handwritten-note-keypad-access-hash-export"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-02-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Keypad access hash export and tell me if your last call still stands (decision.day_01.primary).",
+          "delaySeconds": 3,
+          "intensity": 32
+        },
+        {
+          "id": "day-02-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 36
+        },
+        {
+          "id": "day-02-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Keypad access hash export.",
+          "delaySeconds": 12,
+          "intensity": 40
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_02.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 02 response strategy: acknowledge.",
+          "nextBeatId": "day_03",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_02.primary": "acknowledge",
+            "flag.day_02.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_02.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 02 response strategy: request evidence hash.",
+          "nextBeatId": "day_03",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_02.primary": "request_evidence_hash",
+            "flag.day_02.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_02.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 02 response strategy: commit next step.",
+          "nextBeatId": "day_03",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_02.primary": "commit_next_step",
+            "flag.day_02.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_03",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_03",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 03",
+      "narrative": "A witness account conflicts with dispatch timing by exactly nine minutes.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d03-journal-entry-freight-elevator-camera-stil"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-03-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Freight elevator camera still and tell me if your last call still stands (decision.day_02.primary).",
+          "delaySeconds": 3,
+          "intensity": 32
+        },
+        {
+          "id": "day-03-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 36
+        },
+        {
+          "id": "day-03-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Freight elevator camera still.",
+          "delaySeconds": 13,
+          "intensity": 40
+        },
+        {
+          "id": "day-03-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 44
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_03.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 03 response strategy: acknowledge.",
+          "nextBeatId": "day_04",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_03.primary": "acknowledge",
+            "flag.day_03.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_03.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 03 response strategy: request evidence hash.",
+          "nextBeatId": "day_04",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_03.primary": "request_evidence_hash",
+            "flag.day_03.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_03.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 03 response strategy: commit next step.",
+          "nextBeatId": "day_04",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_03.primary": "commit_next_step",
+            "flag.day_03.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_04",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_04",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 04",
+      "narrative": "A dead account sends a fresh attachment with current geotag residue.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d04-text-message-screenshot-drain-tunnel-pressure-map",
+        "midnight-lockbox-d04-security-footage-still-drain-tunnel-pressure-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-04-detective-brief",
           "senderName": "Case Lead Veda Cross",
           "role": "operator",
           "channel": "SMS",
-          "text": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word. Maintain chain-of-custody and keep your channel open.",
-          "delaySeconds": 1,
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Drain tunnel pressure map and tell me if your last call still stands (decision.day_03.primary).",
+          "delaySeconds": 4,
           "intensity": 32
         },
         {
-          "id": "beat-1.msg.secondary",
+          "id": "day-04-witness-ping",
           "senderName": "Night Manager Eli Mercer",
           "role": "witness",
-          "channel": "WHATSAPP",
-          "text": "Cross-reference this before dawn: Voicemail waveform anomaly.",
-          "delaySeconds": 3,
-          "intensity": 48
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 36
         },
         {
-          "id": "beat-1.msg.villain",
-          "senderName": "The Quartermaster",
-          "role": "antagonist",
-          "channel": "SMS",
-          "text": "Unit 331 has your fingerprints now, not mine. (Peripheral Presence)",
-          "delaySeconds": 6,
-          "intensity": 62
+          "id": "day-04-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Drain tunnel pressure map.",
+          "delaySeconds": 14,
+          "intensity": 40
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-trace-source",
-          "label": "Audit keypad logs and access events before sunrise",
-          "intent": "CURIOSITY",
-          "summary": "Choice 1: Audit keypad logs and access events before sunrise",
-          "nextBeatId": "beat-2",
-          "progressDelta": 20,
-          "reputationDelta": {
-            "trustworthiness": 0,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 0
-          },
-          "flagUpdates": {
-            "investigation_path": "trace_source"
-          }
-        },
-        {
-          "id": "choice-interview-ally",
-          "label": "Interview the night manager before he leaves shift",
+          "id": "day_04.choice.acknowledge",
+          "label": "Acknowledge",
           "intent": "QUESTION",
-          "summary": "Choice 2: Interview the night manager before he leaves shift",
-          "nextBeatId": "beat-2",
-          "progressDelta": 20,
+          "summary": "Day 04 response strategy: acknowledge.",
+          "nextBeatId": "day_05",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "investigation_path": "ally_interview"
+            "decision.day_04.primary": "acknowledge",
+            "flag.day_04.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_04.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 04 response strategy: request evidence hash.",
+          "nextBeatId": "day_05",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_04.primary": "request_evidence_hash",
+            "flag.day_04.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_04.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 04 response strategy: commit next step.",
+          "nextBeatId": "day_05",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_04.primary": "commit_next_step",
+            "flag.day_04.interaction_logged": true
           }
         }
       ],
-      "defaultNextBeatId": "beat-2",
+      "defaultNextBeatId": "day_05",
       "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
     },
     {
-      "id": "beat-2",
-      "actId": "act-1",
-      "actTitle": "Night One: Breach",
-      "title": "Lock Cylinder Swap",
-      "narrative": "You find a fresh lock core with a key that should not exist in facility inventory.",
+      "id": "day_05",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 05",
+      "narrative": "Administrative records reveal prior attempts to bury this case.",
       "stage": 1,
-      "unlockAfterSeconds": 900,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "midnight-lockbox-clue-pressure"
+        "midnight-lockbox-d05-call-log-voicemail-waveform-anomaly"
       ],
       "incomingMessages": [
         {
-          "id": "beat-2.msg.handler",
-          "senderName": "Night Manager Eli Mercer",
-          "role": "witness",
-          "channel": "WHATSAPP",
-          "text": "You find a fresh lock core with a key that should not exist in facility inventory. Maintain chain-of-custody and keep your channel open.",
+          "id": "day-05-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Voicemail waveform anomaly and tell me if your last call still stands (decision.day_04.primary).",
           "delaySeconds": 1,
           "intensity": 32
         },
         {
-          "id": "beat-2.msg.secondary",
-          "senderName": "Courier Witness Sia Rowan",
+          "id": "day-05-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
           "role": "witness",
-          "channel": "TELEGRAM",
-          "text": "Cross-reference this before dawn: Keypad access hash export.",
-          "delaySeconds": 3,
-          "intensity": 48
+          "channel": "SIGNAL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 36
         },
         {
-          "id": "beat-2.msg.villain",
-          "senderName": "The Quartermaster",
-          "role": "antagonist",
-          "channel": "SMS",
-          "text": "Unit 331 has your fingerprints now, not mine. (Peripheral Presence)",
-          "delaySeconds": 6,
-          "intensity": 62
+          "id": "day-05-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Voicemail waveform anomaly.",
+          "delaySeconds": 15,
+          "intensity": 40
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-preserve-evidence",
-          "label": "Preserve original evidence chain",
-          "intent": "CURIOSITY",
-          "summary": "Choice 1: Preserve original evidence chain",
-          "nextBeatId": "beat-3",
-          "progressDelta": 18,
+          "id": "day_05.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 05 response strategy: acknowledge.",
+          "nextBeatId": "day_06",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 1
-          },
-          "flagUpdates": {
-            "evidence_preserved": true
-          }
-        },
-        {
-          "id": "choice-fast-pursuit",
-          "label": "Pursue suspect immediately",
-          "intent": "CURIOSITY",
-          "summary": "Choice 2: Pursue suspect immediately",
-          "nextBeatId": "beat-3",
-          "progressDelta": 18,
-          "reputationDelta": {
-            "trustworthiness": 0,
-            "aggression": 1,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "evidence_preserved": false
+            "decision.day_05.primary": "acknowledge",
+            "flag.day_05.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_05.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 05 response strategy: request evidence hash.",
+          "nextBeatId": "day_06",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_05.primary": "request_evidence_hash",
+            "flag.day_05.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_05.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 05 response strategy: commit next step.",
+          "nextBeatId": "day_06",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_05.primary": "commit_next_step",
+            "flag.day_05.interaction_logged": true
           }
         }
       ],
-      "defaultNextBeatId": "beat-3",
+      "defaultNextBeatId": "day_06",
       "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
     },
     {
-      "id": "beat-3",
-      "actId": "act-2",
-      "actTitle": "Day Two: Pressure",
-      "title": "Morning Leak",
-      "narrative": "By morning, cropped footage of your team appears online before your own upload completes.",
-      "stage": 2,
-      "unlockAfterSeconds": 21600,
+      "id": "day_06",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 06",
+      "narrative": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "midnight-lockbox-clue-contradiction"
+        "midnight-lockbox-d06-voicemail-transcript-keypad-access-hash-export"
       ],
       "incomingMessages": [
         {
-          "id": "beat-3.msg.handler",
-          "senderName": "Courier Witness Sia Rowan",
+          "id": "day-06-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Keypad access hash export and tell me if your last call still stands (decision.day_05.primary).",
+          "delaySeconds": 2,
+          "intensity": 32
+        },
+        {
+          "id": "day-06-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 36
+        },
+        {
+          "id": "day-06-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Keypad access hash export.",
+          "delaySeconds": 10,
+          "intensity": 40
+        },
+        {
+          "id": "day-06-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 44
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_06.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 06 response strategy: acknowledge.",
+          "nextBeatId": "day_07",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_06.primary": "acknowledge",
+            "flag.day_06.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_06.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 06 response strategy: request evidence hash.",
+          "nextBeatId": "day_07",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_06.primary": "request_evidence_hash",
+            "flag.day_06.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_06.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 06 response strategy: commit next step.",
+          "nextBeatId": "day_07",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_06.primary": "commit_next_step",
+            "flag.day_06.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_07",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_07",
+      "actId": "DISCOVERY",
+      "actTitle": "Discovery & Curiosity",
+      "title": "Discovery & Curiosity - Day 07",
+      "narrative": "The first branch point forces trust in a source you cannot verify.",
+      "stage": 1,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d07-security-footage-still-freight-elevator-camera-stil"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-07-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Freight elevator camera still and tell me if your last call still stands (decision.day_06.primary).",
+          "delaySeconds": 3,
+          "intensity": 32
+        },
+        {
+          "id": "day-07-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
           "role": "witness",
           "channel": "TELEGRAM",
-          "text": "By morning, cropped footage of your team appears online before your own upload completes. Maintain chain-of-custody and keep your channel open.",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 36
+        },
+        {
+          "id": "day-07-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Freight elevator camera still.",
+          "delaySeconds": 11,
+          "intensity": 40
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_07.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 07 response strategy: acknowledge.",
+          "nextBeatId": "day_08",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_07.primary": "acknowledge",
+            "flag.day_07.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_07.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 07 response strategy: request evidence hash.",
+          "nextBeatId": "day_08",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_07.primary": "request_evidence_hash",
+            "flag.day_07.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_07.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 07 response strategy: commit next step.",
+          "nextBeatId": "day_08",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_07.primary": "commit_next_step",
+            "flag.day_07.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_08",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_08",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 08",
+      "narrative": "Friendly channels begin echoing antagonist phrasing.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d08-crime-scene-photo-drain-tunnel-pressure-map",
+        "midnight-lockbox-d08-medical-record-drain-tunnel-pressure-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-08-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Drain tunnel pressure map and tell me if your last call still stands (decision.day_07.primary).",
+          "delaySeconds": 3,
+          "intensity": 44
+        },
+        {
+          "id": "day-08-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 48
+        },
+        {
+          "id": "day-08-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Drain tunnel pressure map.",
+          "delaySeconds": 12,
+          "intensity": 52
+        },
+        {
+          "id": "day-08-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_08.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 08 response strategy: acknowledge.",
+          "nextBeatId": "day_09",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_08.primary": "acknowledge",
+            "flag.day_08.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_08.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 08 response strategy: request evidence hash.",
+          "nextBeatId": "day_09",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_08.primary": "request_evidence_hash",
+            "flag.day_08.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_08.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 08 response strategy: commit next step.",
+          "nextBeatId": "day_09",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_08.primary": "commit_next_step",
+            "flag.day_08.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_09",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_09",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 09",
+      "narrative": "Recovered logs contain one corrected timestamp that changes motive.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d09-marked-map-voicemail-waveform-anomaly"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-09-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Voicemail waveform anomaly and tell me if your last call still stands (decision.day_08.primary).",
+          "delaySeconds": 4,
+          "intensity": 44
+        },
+        {
+          "id": "day-09-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 48
+        },
+        {
+          "id": "day-09-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Voicemail waveform anomaly.",
+          "delaySeconds": 13,
+          "intensity": 52
+        },
+        {
+          "id": "day-09-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 56
+        },
+        {
+          "id": "day-09-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 60
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_09.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 09 response strategy: acknowledge.",
+          "nextBeatId": "day_10",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_09.primary": "acknowledge",
+            "flag.day_09.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_09.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 09 response strategy: request evidence hash.",
+          "nextBeatId": "day_10",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_09.primary": "request_evidence_hash",
+            "flag.day_09.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_09.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 09 response strategy: commit next step.",
+          "nextBeatId": "day_10",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_09.primary": "commit_next_step",
+            "flag.day_09.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_10",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_10",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 10",
+      "narrative": "A journalist leak points to an internal collaborator.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d10-receipt-keypad-access-hash-export"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-10-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Keypad access hash export and tell me if your last call still stands (decision.day_09.primary).",
           "delaySeconds": 1,
           "intensity": 44
         },
         {
-          "id": "beat-3.msg.secondary",
-          "senderName": "Locksmith Omar Hale",
-          "role": "investigator",
-          "channel": "EMAIL",
-          "text": "Cross-reference this before dawn: Freight elevator camera still.",
-          "delaySeconds": 3,
-          "intensity": 61
+          "id": "day-10-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 48
         },
         {
-          "id": "beat-3.msg.villain",
+          "id": "day-10-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Keypad access hash export.",
+          "delaySeconds": 14,
+          "intensity": 52
+        },
+        {
+          "id": "day-10-antagonist-contact",
           "senderName": "The Quartermaster",
           "role": "antagonist",
-          "channel": "WHATSAPP",
-          "text": "You keep protecting the wrong employee. (Psychological Contact)",
-          "delaySeconds": 6,
-          "intensity": 76
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 56
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-trust-handler",
-          "label": "Trust Case Lead Veda Cross and seal internal channels",
-          "intent": "COMPLIANCE",
-          "summary": "Choice 1: Trust Case Lead Veda Cross and seal internal channels",
-          "nextBeatId": "beat-4",
-          "progressDelta": 26,
+          "id": "day_10.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 10 response strategy: acknowledge.",
+          "nextBeatId": "day_11",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "trusted_ally": "Lead Investigator Mara Quinn"
+            "decision.day_10.primary": "acknowledge",
+            "flag.day_10.interaction_logged": true
           }
         },
         {
-          "id": "choice-trust-witness",
-          "label": "Trust Night Manager Eli Mercer and follow his blind spot map",
-          "intent": "COMPLIANCE",
-          "summary": "Choice 2: Trust Night Manager Eli Mercer and follow his blind spot map",
-          "nextBeatId": "beat-4",
-          "progressDelta": 26,
+          "id": "day_10.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 10 response strategy: request evidence hash.",
+          "nextBeatId": "day_11",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
             "aggression": 0,
-            "curiosity": 0,
+            "curiosity": 2,
             "deception": 0,
             "morality": 0
           },
           "flagUpdates": {
-            "trusted_ally": "Dispatch Handler Ilya Ross"
+            "decision.day_10.primary": "request_evidence_hash",
+            "flag.day_10.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_10.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 10 response strategy: commit next step.",
+          "nextBeatId": "day_11",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_10.primary": "commit_next_step",
+            "flag.day_10.interaction_logged": true
           }
         }
       ],
-      "defaultNextBeatId": "beat-4",
+      "defaultNextBeatId": "day_11",
       "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
     },
     {
-      "id": "beat-4",
-      "actId": "act-2",
-      "actTitle": "Day Two: Pressure",
-      "title": "Noon Ultimatum",
-      "narrative": "The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.",
-      "stage": 3,
-      "unlockAfterSeconds": 28800,
+      "id": "day_11",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 11",
+      "narrative": "One evidence image contains a planted anomaly meant to bait fast conclusions.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
       "revealClueIds": [
-        "midnight-lockbox-clue-timed-warning"
+        "midnight-lockbox-d11-medical-record-freight-elevator-camera-stil"
       ],
       "incomingMessages": [
         {
-          "id": "beat-4.msg.handler",
-          "senderName": "Locksmith Omar Hale",
-          "role": "investigator",
+          "id": "day-11-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
           "channel": "EMAIL",
-          "text": "The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness. Maintain chain-of-custody and keep your channel open.",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Freight elevator camera still and tell me if your last call still stands (decision.day_10.primary).",
+          "delaySeconds": 2,
+          "intensity": 44
+        },
+        {
+          "id": "day-11-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 48
+        },
+        {
+          "id": "day-11-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Freight elevator camera still.",
+          "delaySeconds": 15,
+          "intensity": 52
+        },
+        {
+          "id": "day-11-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_11.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 11 response strategy: acknowledge.",
+          "nextBeatId": "day_12",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_11.primary": "acknowledge",
+            "flag.day_11.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_11.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 11 response strategy: request evidence hash.",
+          "nextBeatId": "day_12",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_11.primary": "request_evidence_hash",
+            "flag.day_11.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_11.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 11 response strategy: commit next step.",
+          "nextBeatId": "day_12",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_11.primary": "commit_next_step",
+            "flag.day_11.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_12",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_12",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 12",
+      "narrative": "Unknown contact sends a warning that names your previous choice.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d12-shipping-manifest-drain-tunnel-pressure-map",
+        "midnight-lockbox-d12-journal-entry-drain-tunnel-pressure-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-12-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Drain tunnel pressure map and tell me if your last call still stands (decision.day_11.primary).",
+          "delaySeconds": 3,
+          "intensity": 44
+        },
+        {
+          "id": "day-12-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 48
+        },
+        {
+          "id": "day-12-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Drain tunnel pressure map.",
+          "delaySeconds": 10,
+          "intensity": 52
+        },
+        {
+          "id": "day-12-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "TELEGRAM",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 56
+        },
+        {
+          "id": "day-12-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 60
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_12.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 12 response strategy: acknowledge.",
+          "nextBeatId": "day_13",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_12.primary": "acknowledge",
+            "flag.day_12.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_12.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 12 response strategy: request evidence hash.",
+          "nextBeatId": "day_13",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_12.primary": "request_evidence_hash",
+            "flag.day_12.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_12.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 12 response strategy: commit next step.",
+          "nextBeatId": "day_13",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_12.primary": "commit_next_step",
+            "flag.day_12.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_13",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_13",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 13",
+      "narrative": "A voicemail includes background audio from a location not yet disclosed.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d13-police-report-voicemail-waveform-anomaly"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-13-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Voicemail waveform anomaly and tell me if your last call still stands (decision.day_12.primary).",
+          "delaySeconds": 3,
+          "intensity": 44
+        },
+        {
+          "id": "day-13-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 48
+        },
+        {
+          "id": "day-13-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Voicemail waveform anomaly.",
+          "delaySeconds": 11,
+          "intensity": 52
+        },
+        {
+          "id": "day-13-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_13.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 13 response strategy: acknowledge.",
+          "nextBeatId": "day_14",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_13.primary": "acknowledge",
+            "flag.day_13.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_13.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 13 response strategy: request evidence hash.",
+          "nextBeatId": "day_14",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_13.primary": "request_evidence_hash",
+            "flag.day_13.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_13.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 13 response strategy: commit next step.",
+          "nextBeatId": "day_14",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_13.primary": "commit_next_step",
+            "flag.day_13.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_14",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_14",
+      "actId": "ESCALATION",
+      "actTitle": "Escalation & Unease",
+      "title": "Escalation & Unease - Day 14",
+      "narrative": "Second branch point determines whether public pressure or covert trace is prioritized.",
+      "stage": 2,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d14-handwritten-note-keypad-access-hash-export"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-14-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Keypad access hash export and tell me if your last call still stands (decision.day_13.primary).",
+          "delaySeconds": 4,
+          "intensity": 44
+        },
+        {
+          "id": "day-14-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 48
+        },
+        {
+          "id": "day-14-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Keypad access hash export.",
+          "delaySeconds": 12,
+          "intensity": 52
+        },
+        {
+          "id": "day-14-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 56
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_14.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 14 response strategy: acknowledge.",
+          "nextBeatId": "day_15",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_14.primary": "acknowledge",
+            "flag.day_14.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_14.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 14 response strategy: request evidence hash.",
+          "nextBeatId": "day_15",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_14.primary": "request_evidence_hash",
+            "flag.day_14.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_14.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 14 response strategy: commit next step.",
+          "nextBeatId": "day_15",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_14.primary": "commit_next_step",
+            "flag.day_14.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_15",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_15",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 15",
+      "narrative": "Direct interference interrupts calls and reroutes message threads.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "midnight-lockbox-d15-journal-entry-freight-elevator-camera-stil",
+        "midnight-lockbox-d15-voicemail-transcript-freight-elevator-camera-stil"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-15-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Freight elevator camera still and tell me if your last call still stands (decision.day_14.primary).",
           "delaySeconds": 1,
           "intensity": 56
         },
         {
-          "id": "beat-4.msg.secondary",
-          "senderName": "Case Lead Veda Cross",
-          "role": "operator",
-          "channel": "VOICE_MESSAGE",
-          "text": "Cross-reference this before dawn: Drain tunnel pressure map.",
-          "delaySeconds": 3,
-          "intensity": 74
+          "id": "day-15-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 60
         },
         {
-          "id": "beat-4.msg.villain",
+          "id": "day-15-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Freight elevator camera still.",
+          "delaySeconds": 13,
+          "intensity": 64
+        },
+        {
+          "id": "day-15-antagonist-contact",
           "senderName": "The Quartermaster",
           "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 68
+        },
+        {
+          "id": "day-15-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
           "channel": "SMS",
-          "text": "If you open the box before noon, your witness walks. If not, count the sirens. (Active Interference)",
-          "delaySeconds": 6,
-          "intensity": 90
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 72
         }
       ],
       "responseOptions": [
         {
-          "id": "choice-save-npc",
-          "label": "Divert to save threatened NPC",
-          "intent": "THREAT",
-          "summary": "Choice 1: Divert to save threatened NPC",
-          "nextBeatId": "beat-5",
-          "progressDelta": 30,
+          "id": "day_15.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 15 response strategy: acknowledge.",
+          "nextBeatId": "day_16",
+          "progressDelta": 3,
           "reputationDelta": {
             "trustworthiness": 0,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 2
-          },
-          "flagUpdates": {
-            "rescue_route": true
-          }
-        },
-        {
-          "id": "choice-continue-case",
-          "label": "Continue forensic pursuit under threat",
-          "intent": "THREAT",
-          "summary": "Choice 2: Continue forensic pursuit under threat",
-          "nextBeatId": "beat-5",
-          "progressDelta": 30,
-          "reputationDelta": {
-            "trustworthiness": -1,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 0
-          },
-          "flagUpdates": {
-            "rescue_route": false
-          }
-        }
-      ],
-      "defaultNextBeatId": "beat-5",
-      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
-    },
-    {
-      "id": "beat-5",
-      "actId": "act-3",
-      "actTitle": "Night Two: Resolution",
-      "title": "Drain Tunnel Run",
-      "narrative": "Twelve hours later, the tunnel route opens and you must choose recovery or confrontation.",
-      "stage": 4,
-      "unlockAfterSeconds": 43200,
-      "revealClueIds": [
-        "midnight-lockbox-clue-reveal"
-      ],
-      "incomingMessages": [
-        {
-          "id": "beat-5.msg.handler",
-          "senderName": "Case Lead Veda Cross",
-          "role": "operator",
-          "channel": "VOICE_MESSAGE",
-          "text": "Twelve hours later, the tunnel route opens and you must choose recovery or confrontation. Maintain chain-of-custody and keep your channel open.",
-          "delaySeconds": 1,
-          "intensity": 68
-        },
-        {
-          "id": "beat-5.msg.secondary",
-          "senderName": "Night Manager Eli Mercer",
-          "role": "witness",
-          "channel": "DOCUMENT_DROP",
-          "text": "Cross-reference this before dawn: Voicemail waveform anomaly.",
-          "delaySeconds": 3,
-          "intensity": 87
-        },
-        {
-          "id": "beat-5.msg.villain",
-          "senderName": "The Quartermaster",
-          "role": "antagonist",
-          "channel": "EMAIL",
-          "text": "Hand me the access list and I return everyone alive. (Personal Confrontation)",
-          "delaySeconds": 6,
-          "intensity": 100
-        }
-      ],
-      "responseOptions": [
-        {
-          "id": "choice-charge-villain",
-          "label": "Commit to formal accusation and expose evidence chain",
-          "intent": "ACCUSATION",
-          "summary": "Choice 1: Commit to formal accusation and expose evidence chain",
-          "nextBeatId": "beat-6",
-          "progressDelta": 34,
-          "reputationDelta": {
-            "trustworthiness": 0,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 0,
-            "morality": 0
-          },
-          "flagUpdates": {
-            "final_strategy": "formal_charge"
-          }
-        },
-        {
-          "id": "choice-private-deal",
-          "label": "Take private contact route for hidden confession",
-          "intent": "BARGAIN",
-          "summary": "Choice 2: Take private contact route for hidden confession",
-          "nextBeatId": "beat-6",
-          "progressDelta": 34,
-          "reputationDelta": {
-            "trustworthiness": 0,
-            "aggression": 0,
-            "curiosity": 0,
-            "deception": 2,
-            "morality": 0
-          },
-          "flagUpdates": {
-            "final_strategy": "private_contact"
-          }
-        }
-      ],
-      "defaultNextBeatId": "beat-6",
-      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
-    },
-    {
-      "id": "beat-6",
-      "actId": "act-3",
-      "actTitle": "Night Two: Resolution",
-      "title": "Lockbox Debrief",
-      "narrative": "A final memo reveals whether your team solved the case or joined the cover-up.",
-      "stage": 4,
-      "unlockAfterSeconds": 46800,
-      "revealClueIds": [
-        "midnight-lockbox-clue-epilogue"
-      ],
-      "incomingMessages": [
-        {
-          "id": "beat-6.msg.handler",
-          "senderName": "Night Manager Eli Mercer",
-          "role": "witness",
-          "channel": "DOCUMENT_DROP",
-          "text": "A final memo reveals whether your team solved the case or joined the cover-up. Maintain chain-of-custody and keep your channel open.",
-          "delaySeconds": 1,
-          "intensity": 68
-        },
-        {
-          "id": "beat-6.msg.secondary",
-          "senderName": "Courier Witness Sia Rowan",
-          "role": "witness",
-          "channel": "SIMULATED_SITE",
-          "text": "Cross-reference this before dawn: Keypad access hash export.",
-          "delaySeconds": 3,
-          "intensity": 87
-        },
-        {
-          "id": "beat-6.msg.villain",
-          "senderName": "The Quartermaster",
-          "role": "antagonist",
-          "channel": "EMAIL",
-          "text": "Hand me the access list and I return everyone alive. (Personal Confrontation)",
-          "delaySeconds": 6,
-          "intensity": 100
-        }
-      ],
-      "responseOptions": [
-        {
-          "id": "beat-6.choice.default-forward",
-          "label": "Proceed with controlled pressure",
-          "intent": "CURIOSITY",
-          "summary": "Advance investigation while preserving evidence discipline.",
-          "nextBeatId": null,
-          "progressDelta": 30,
-          "reputationDelta": {
-            "trustworthiness": 1,
             "aggression": 0,
             "curiosity": 2,
             "deception": 0,
-            "morality": 1
+            "morality": 0
           },
           "flagUpdates": {
-            "beat-6.defaultPath": true
+            "decision.day_15.primary": "acknowledge",
+            "flag.day_15.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_15.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 15 response strategy: request evidence hash.",
+          "nextBeatId": "day_16",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_15.primary": "request_evidence_hash",
+            "flag.day_15.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_15.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 15 response strategy: commit next step.",
+          "nextBeatId": "day_16",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_15.primary": "commit_next_step",
+            "flag.day_15.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_16",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_16",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 16",
+      "narrative": "A witness goes dark after confirming a hidden ledger.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "midnight-lockbox-d16-text-message-screenshot-drain-tunnel-pressure-map",
+        "midnight-lockbox-d16-security-footage-still-drain-tunnel-pressure-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-16-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Drain tunnel pressure map and tell me if your last call still stands (decision.day_15.primary).",
+          "delaySeconds": 2,
+          "intensity": 56
+        },
+        {
+          "id": "day-16-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 60
+        },
+        {
+          "id": "day-16-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Drain tunnel pressure map.",
+          "delaySeconds": 14,
+          "intensity": 64
+        },
+        {
+          "id": "day-16-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_16.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 16 response strategy: acknowledge.",
+          "nextBeatId": "day_17",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_16.primary": "acknowledge",
+            "flag.day_16.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_16.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 16 response strategy: request evidence hash.",
+          "nextBeatId": "day_17",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_16.primary": "request_evidence_hash",
+            "flag.day_16.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_16.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 16 response strategy: commit next step.",
+          "nextBeatId": "day_17",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_16.primary": "commit_next_step",
+            "flag.day_16.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_17",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_17",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 17",
+      "narrative": "Emergency dispatch references your alias instead of your legal profile.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "midnight-lockbox-d17-call-log-voicemail-waveform-anomaly",
+        "midnight-lockbox-d17-crime-scene-photo-voicemail-waveform-anomaly"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-17-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Voicemail waveform anomaly and tell me if your last call still stands (decision.day_16.primary).",
+          "delaySeconds": 3,
+          "intensity": 56
+        },
+        {
+          "id": "day-17-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 60
+        },
+        {
+          "id": "day-17-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Voicemail waveform anomaly.",
+          "delaySeconds": 15,
+          "intensity": 64
+        },
+        {
+          "id": "day-17-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_17.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 17 response strategy: acknowledge.",
+          "nextBeatId": "day_18",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_17.primary": "acknowledge",
+            "flag.day_17.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_17.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 17 response strategy: request evidence hash.",
+          "nextBeatId": "day_18",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_17.primary": "request_evidence_hash",
+            "flag.day_17.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_17.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 17 response strategy: commit next step.",
+          "nextBeatId": "day_18",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_17.primary": "commit_next_step",
+            "flag.day_17.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_18",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_18",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 18",
+      "narrative": "An antagonist demand threatens collateral unless evidence is withheld.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "midnight-lockbox-d18-voicemail-transcript-keypad-access-hash-export",
+        "midnight-lockbox-d18-marked-map-keypad-access-hash-export"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-18-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Keypad access hash export and tell me if your last call still stands (decision.day_17.primary).",
+          "delaySeconds": 3,
+          "intensity": 56
+        },
+        {
+          "id": "day-18-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 60
+        },
+        {
+          "id": "day-18-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Keypad access hash export.",
+          "delaySeconds": 10,
+          "intensity": 64
+        },
+        {
+          "id": "day-18-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "TELEGRAM",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 68
+        },
+        {
+          "id": "day-18-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 72
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_18.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 18 response strategy: acknowledge.",
+          "nextBeatId": "day_19",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_18.primary": "acknowledge",
+            "flag.day_18.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_18.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 18 response strategy: request evidence hash.",
+          "nextBeatId": "day_19",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_18.primary": "request_evidence_hash",
+            "flag.day_18.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_18.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 18 response strategy: commit next step.",
+          "nextBeatId": "day_19",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_18.primary": "commit_next_step",
+            "flag.day_18.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_19",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_19",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 19",
+      "narrative": "A forged report nearly redirects the task force toward the wrong target.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "midnight-lockbox-d19-security-footage-still-freight-elevator-camera-stil",
+        "midnight-lockbox-d19-receipt-freight-elevator-camera-stil"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-19-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Freight elevator camera still and tell me if your last call still stands (decision.day_18.primary).",
+          "delaySeconds": 4,
+          "intensity": 56
+        },
+        {
+          "id": "day-19-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 60
+        },
+        {
+          "id": "day-19-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Freight elevator camera still.",
+          "delaySeconds": 11,
+          "intensity": 64
+        },
+        {
+          "id": "day-19-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_19.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 19 response strategy: acknowledge.",
+          "nextBeatId": "day_20",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_19.primary": "acknowledge",
+            "flag.day_19.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_19.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 19 response strategy: request evidence hash.",
+          "nextBeatId": "day_20",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_19.primary": "request_evidence_hash",
+            "flag.day_19.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_19.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 19 response strategy: commit next step.",
+          "nextBeatId": "day_20",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_19.primary": "commit_next_step",
+            "flag.day_19.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_20",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_20",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 20",
+      "narrative": "Unknown contact reveals personal detail only the player would recognize.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "midnight-lockbox-d20-crime-scene-photo-drain-tunnel-pressure-map",
+        "midnight-lockbox-d20-medical-record-drain-tunnel-pressure-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-20-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Drain tunnel pressure map and tell me if your last call still stands (decision.day_19.primary).",
+          "delaySeconds": 1,
+          "intensity": 56
+        },
+        {
+          "id": "day-20-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 60
+        },
+        {
+          "id": "day-20-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Drain tunnel pressure map.",
+          "delaySeconds": 12,
+          "intensity": 64
+        },
+        {
+          "id": "day-20-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 68
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_20.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 20 response strategy: acknowledge.",
+          "nextBeatId": "day_21",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_20.primary": "acknowledge",
+            "flag.day_20.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_20.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 20 response strategy: request evidence hash.",
+          "nextBeatId": "day_21",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_20.primary": "request_evidence_hash",
+            "flag.day_20.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_20.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 20 response strategy: commit next step.",
+          "nextBeatId": "day_21",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_20.primary": "commit_next_step",
+            "flag.day_20.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_21",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_21",
+      "actId": "DANGER",
+      "actTitle": "Danger & Direct Involvement",
+      "title": "Danger & Direct Involvement - Day 21",
+      "narrative": "Third branch point locks either protective extraction or aggressive exposure.",
+      "stage": 3,
+      "unlockAfterSeconds": 600,
+      "revealClueIds": [
+        "midnight-lockbox-d21-marked-map-voicemail-waveform-anomaly",
+        "midnight-lockbox-d21-shipping-manifest-voicemail-waveform-anomaly"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-21-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Voicemail waveform anomaly and tell me if your last call still stands (decision.day_20.primary).",
+          "delaySeconds": 2,
+          "intensity": 56
+        },
+        {
+          "id": "day-21-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 60
+        },
+        {
+          "id": "day-21-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Voicemail waveform anomaly.",
+          "delaySeconds": 13,
+          "intensity": 64
+        },
+        {
+          "id": "day-21-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 68
+        },
+        {
+          "id": "day-21-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 17,
+          "intensity": 72
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_21.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 21 response strategy: acknowledge.",
+          "nextBeatId": "day_22",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_21.primary": "acknowledge",
+            "flag.day_21.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_21.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 21 response strategy: request evidence hash.",
+          "nextBeatId": "day_22",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_21.primary": "request_evidence_hash",
+            "flag.day_21.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_21.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 21 response strategy: commit next step.",
+          "nextBeatId": "day_22",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_21.primary": "commit_next_step",
+            "flag.day_21.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_22",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_22",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 22",
+      "narrative": "Cross-day clue map finally exposes the suppression mechanism.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d22-receipt-keypad-access-hash-export"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-22-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Keypad access hash export and tell me if your last call still stands (decision.day_21.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-22-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 72
+        },
+        {
+          "id": "day-22-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Keypad access hash export.",
+          "delaySeconds": 14,
+          "intensity": 76
+        },
+        {
+          "id": "day-22-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 80
+        },
+        {
+          "id": "day-22-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_22.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 22 response strategy: acknowledge.",
+          "nextBeatId": "day_23",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_22.primary": "acknowledge",
+            "flag.day_22.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_22.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 22 response strategy: request evidence hash.",
+          "nextBeatId": "day_23",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_22.primary": "request_evidence_hash",
+            "flag.day_22.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_22.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 22 response strategy: commit next step.",
+          "nextBeatId": "day_23",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_22.primary": "commit_next_step",
+            "flag.day_22.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_23",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_23",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 23",
+      "narrative": "Recovered recordings reveal contradiction between public narrative and private orders.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d23-medical-record-freight-elevator-camera-stil"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-23-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Freight elevator camera still and tell me if your last call still stands (decision.day_22.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-23-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 72
+        },
+        {
+          "id": "day-23-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Freight elevator camera still.",
+          "delaySeconds": 15,
+          "intensity": 76
+        },
+        {
+          "id": "day-23-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "WHATSAPP",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 80
+        },
+        {
+          "id": "day-23-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 18,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_23.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 23 response strategy: acknowledge.",
+          "nextBeatId": "day_24",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_23.primary": "acknowledge",
+            "flag.day_23.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_23.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 23 response strategy: request evidence hash.",
+          "nextBeatId": "day_24",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_23.primary": "request_evidence_hash",
+            "flag.day_23.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_23.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 23 response strategy: commit next step.",
+          "nextBeatId": "day_24",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_23.primary": "commit_next_step",
+            "flag.day_23.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_24",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_24",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 24",
+      "narrative": "A trusted NPC admits one strategic lie and requests off-record forgiveness.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d24-shipping-manifest-drain-tunnel-pressure-map",
+        "midnight-lockbox-d24-journal-entry-drain-tunnel-pressure-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-24-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "VOICE_MESSAGE",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Drain tunnel pressure map and tell me if your last call still stands (decision.day_23.primary).",
+          "delaySeconds": 4,
+          "intensity": 68
+        },
+        {
+          "id": "day-24-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 72
+        },
+        {
+          "id": "day-24-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Drain tunnel pressure map.",
+          "delaySeconds": 10,
+          "intensity": 76
+        },
+        {
+          "id": "day-24-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "TELEGRAM",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 18,
+          "intensity": 80
+        },
+        {
+          "id": "day-24-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_24.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 24 response strategy: acknowledge.",
+          "nextBeatId": "day_25",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_24.primary": "acknowledge",
+            "flag.day_24.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_24.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 24 response strategy: request evidence hash.",
+          "nextBeatId": "day_25",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_24.primary": "request_evidence_hash",
+            "flag.day_24.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_24.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 24 response strategy: commit next step.",
+          "nextBeatId": "day_25",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_24.primary": "commit_next_step",
+            "flag.day_24.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_25",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_25",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 25",
+      "narrative": "The antagonist offers a final pact framed as damage control.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d25-police-report-voicemail-waveform-anomaly"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-25-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SIGNAL",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Voicemail waveform anomaly and tell me if your last call still stands (decision.day_24.primary).",
+          "delaySeconds": 1,
+          "intensity": 68
+        },
+        {
+          "id": "day-25-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 5,
+          "intensity": 72
+        },
+        {
+          "id": "day-25-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Voicemail waveform anomaly.",
+          "delaySeconds": 11,
+          "intensity": 76
+        },
+        {
+          "id": "day-25-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "SMS",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 13,
+          "intensity": 80
+        },
+        {
+          "id": "day-25-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 19,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_25.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 25 response strategy: acknowledge.",
+          "nextBeatId": "day_26",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_25.primary": "acknowledge",
+            "flag.day_25.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_25.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 25 response strategy: request evidence hash.",
+          "nextBeatId": "day_26",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_25.primary": "request_evidence_hash",
+            "flag.day_25.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_25.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 25 response strategy: commit next step.",
+          "nextBeatId": "day_26",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_25.primary": "commit_next_step",
+            "flag.day_25.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_26",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_26",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 26",
+      "narrative": "Evidence board converges, but one key artifact remains unreliable.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d26-handwritten-note-keypad-access-hash-export"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-26-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "WHATSAPP",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Keypad access hash export and tell me if your last call still stands (decision.day_25.primary).",
+          "delaySeconds": 2,
+          "intensity": 68
+        },
+        {
+          "id": "day-26-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "SMS",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 6,
+          "intensity": 72
+        },
+        {
+          "id": "day-26-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Keypad access hash export.",
+          "delaySeconds": 12,
+          "intensity": 76
+        },
+        {
+          "id": "day-26-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "EMAIL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 14,
+          "intensity": 80
+        },
+        {
+          "id": "day-26-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_26.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 26 response strategy: acknowledge.",
+          "nextBeatId": "day_27",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_26.primary": "acknowledge",
+            "flag.day_26.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_26.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 26 response strategy: request evidence hash.",
+          "nextBeatId": "day_27",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_26.primary": "request_evidence_hash",
+            "flag.day_26.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_26.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 26 response strategy: commit next step.",
+          "nextBeatId": "day_27",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_26.primary": "commit_next_step",
+            "flag.day_26.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_27",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_27",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 27",
+      "narrative": "Final puzzle forces interpretation of mutually exclusive truths.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d27-journal-entry-freight-elevator-camera-stil"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-27-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "TELEGRAM",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Freight elevator camera still and tell me if your last call still stands (decision.day_26.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-27-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "EMAIL",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 7,
+          "intensity": 72
+        },
+        {
+          "id": "day-27-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Freight elevator camera still.",
+          "delaySeconds": 13,
+          "intensity": 76
+        },
+        {
+          "id": "day-27-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "VOICE_MESSAGE",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 16,
+          "intensity": 80
+        },
+        {
+          "id": "day-27-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 20,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_27.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 27 response strategy: acknowledge.",
+          "nextBeatId": "day_28",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_27.primary": "acknowledge",
+            "flag.day_27.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_27.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 27 response strategy: request evidence hash.",
+          "nextBeatId": "day_28",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_27.primary": "request_evidence_hash",
+            "flag.day_27.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_27.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 27 response strategy: commit next step.",
+          "nextBeatId": "day_28",
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_27.primary": "commit_next_step",
+            "flag.day_27.interaction_logged": true
+          }
+        }
+      ],
+      "defaultNextBeatId": "day_28",
+      "backgroundVisual": "/visuals/stories/midnight-lockbox.svg"
+    },
+    {
+      "id": "day_28",
+      "actId": "RESOLUTION",
+      "actTitle": "Resolution or Psychological Break",
+      "title": "Resolution or Psychological Break - Day 28",
+      "narrative": "Resolution day decides justice, compromise, corruption, or psychological fracture.",
+      "stage": 4,
+      "unlockAfterSeconds": 840,
+      "revealClueIds": [
+        "midnight-lockbox-d28-text-message-screenshot-drain-tunnel-pressure-map",
+        "midnight-lockbox-d28-security-footage-still-drain-tunnel-pressure-map"
+      ],
+      "incomingMessages": [
+        {
+          "id": "day-28-detective-brief",
+          "senderName": "Case Lead Veda Cross",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "Operator, before you move: chain-of-custody on today's drop is unstable. Confirm Drain tunnel pressure map and tell me if your last call still stands (decision.day_27.primary).",
+          "delaySeconds": 3,
+          "intensity": 68
+        },
+        {
+          "id": "day-28-witness-ping",
+          "senderName": "Night Manager Eli Mercer",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "text": "I heard my own words on a line I never called. If you still trust your trusted contact, do not forward this to the wrong desk.",
+          "delaySeconds": 4,
+          "intensity": 72
+        },
+        {
+          "id": "day-28-journalist-thread",
+          "senderName": "Mina Calder",
+          "role": "operator",
+          "channel": "EMAIL",
+          "text": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Drain tunnel pressure map.",
+          "delaySeconds": 14,
+          "intensity": 76
+        },
+        {
+          "id": "day-28-antagonist-contact",
+          "senderName": "The Quartermaster",
+          "role": "antagonist",
+          "channel": "SIGNAL",
+          "text": "You chose your last choice and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+          "delaySeconds": 17,
+          "intensity": 80
+        },
+        {
+          "id": "day-28-unknown-contact",
+          "senderName": "Unknown Contact",
+          "role": "operator",
+          "channel": "SMS",
+          "text": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "delaySeconds": 17,
+          "intensity": 84
+        }
+      ],
+      "responseOptions": [
+        {
+          "id": "day_28.choice.acknowledge",
+          "label": "Acknowledge",
+          "intent": "QUESTION",
+          "summary": "Day 28 response strategy: acknowledge.",
+          "nextBeatId": null,
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_28.primary": "acknowledge",
+            "flag.day_28.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_28.choice.request-evidence-hash",
+          "label": "Request Evidence Hash",
+          "intent": "QUESTION",
+          "summary": "Day 28 response strategy: request evidence hash.",
+          "nextBeatId": null,
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_28.primary": "request_evidence_hash",
+            "flag.day_28.interaction_logged": true
+          }
+        },
+        {
+          "id": "day_28.choice.commit-next-step",
+          "label": "Commit Next Step",
+          "intent": "QUESTION",
+          "summary": "Day 28 response strategy: commit next step.",
+          "nextBeatId": null,
+          "progressDelta": 3,
+          "reputationDelta": {
+            "trustworthiness": 0,
+            "aggression": 0,
+            "curiosity": 2,
+            "deception": 0,
+            "morality": 0
+          },
+          "flagUpdates": {
+            "decision.day_28.primary": "commit_next_step",
+            "flag.day_28.interaction_logged": true
           }
         }
       ],
@@ -532,159 +3257,1127 @@
   "endings": [
     {
       "id": "midnight-lockbox-ending-justice",
-      "title": "Sealed Evidence Conviction",
+      "title": "Documented Justice",
       "type": "JUSTICE",
-      "summary": "You preserve the chain and expose the extortion network before the deadline.",
-      "epilogue": "Unit 331 is seized with intact evidence, and the witness enters protection.",
-      "sequelHook": "A tagged evidence box points to the next case."
+      "summary": "Evidence chain survives scrutiny and responsible parties are exposed.",
+      "epilogue": "The investigation closes publicly, but residual files imply a wider network.",
+      "sequelHook": "A new sealed case number appears in your inbox at 03:11."
     },
     {
       "id": "midnight-lockbox-ending-pyrrhic",
-      "title": "Witness Saved, Truth Damaged",
+      "title": "Pyrrhic Containment",
       "type": "PYRRHIC",
-      "summary": "You save the witness but lose admissible evidence in the rush.",
-      "epilogue": "The team survives, but the case closes with permanent doubt.",
-      "sequelHook": "A surviving witness asks for help in a linked disappearance."
+      "summary": "The immediate threat is contained, but key truths remain buried.",
+      "epilogue": "Witnesses are safe for now, yet official records are permanently altered.",
+      "sequelHook": "Unknown Contact sends a checksum that references a second operation."
     },
     {
       "id": "midnight-lockbox-ending-corruption",
-      "title": "Quartermaster Pact",
+      "title": "Compromised Truth",
       "type": "CORRUPTION",
-      "summary": "You trade transparency for operational control over future lockboxes.",
-      "epilogue": "You receive master access and the next target list at dawn.",
-      "sequelHook": "Season continuity marks the player as compromised."
+      "summary": "Player choices preserve stability by accepting manipulated facts.",
+      "epilogue": "Case status becomes classified and public narrative diverges from internal logs.",
+      "sequelHook": "An antagonist fragment congratulates your efficiency."
+    },
+    {
+      "id": "midnight-lockbox-ending-unresolved",
+      "title": "Psychological Break",
+      "type": "UNRESOLVED",
+      "summary": "Contradictions remain unresolved and trust collapses across all channels.",
+      "epilogue": "Your board is complete but no version of events can be proven cleanly.",
+      "sequelHook": "A mirrored transcript appears using your own phrasing."
     }
   ],
   "investigationBoard": {
     "nodes": [
       {
-        "id": "midnight-lockbox-suspect-villain",
-        "type": "SUSPECT",
-        "label": "The Quartermaster",
-        "summary": "Planner controlling lock schedules and leak timing."
+        "id": "thread.main_investigation",
+        "type": "thread",
+        "label": "Primary Investigation",
+        "summary": "An impossible voicemail starts the case at the storage facility."
       },
       {
-        "id": "midnight-lockbox-suspect-secondary",
-        "type": "SUSPECT",
+        "id": "thread.side_mystery",
+        "type": "thread",
+        "label": "Peripheral Incident",
+        "summary": "Daylight leaks force trust decisions under public pressure."
+      },
+      {
+        "id": "thread.hidden_truth",
+        "type": "thread",
+        "label": "Suppressed Truth",
+        "summary": "Inside-job extortion ring using predictive surveillance"
+      },
+      {
+        "id": "thread.false_lead",
+        "type": "thread",
+        "label": "Manufactured Lead",
+        "summary": "Digital audit-first versus witness-first opening"
+      },
+      {
+        "id": "thread.psychological_break",
+        "type": "thread",
+        "label": "Psychological Pressure Arc",
+        "summary": "A final tunnel run decides truth, compromise, or collapse."
+      },
+      {
+        "id": "npc.midnight-lockbox-npc-1",
+        "type": "npc",
+        "label": "Case Lead Veda Cross",
+        "summary": "detective: CALM"
+      },
+      {
+        "id": "npc.midnight-lockbox-npc-2",
+        "type": "npc",
+        "label": "Night Manager Eli Mercer",
+        "summary": "witness: ANXIOUS"
+      },
+      {
+        "id": "npc.midnight-lockbox-npc-3",
+        "type": "npc",
         "label": "Courier Witness Sia Rowan",
-        "summary": "Witness with partial route data and shifting alibi."
+        "summary": "witness: SUSPICIOUS"
       },
       {
-        "id": "midnight-lockbox-location-core",
-        "type": "LOCATION",
-        "label": "Gallowglass Storage",
-        "summary": "Facility where unit 331 generates predictive voicemails."
+        "id": "npc.midnight-lockbox-npc-4",
+        "type": "npc",
+        "label": "Locksmith Omar Hale",
+        "summary": "witness: CALM"
       },
       {
-        "id": "midnight-lockbox-evidence-core",
-        "type": "EVIDENCE",
-        "label": "Voicemail Waveform",
-        "summary": "Audio signature that appears before each threat window."
+        "id": "npc.journalist.field",
+        "type": "npc",
+        "label": "Mina Calder",
+        "summary": "journalist: probing"
+      },
+      {
+        "id": "npc.antagonist.primary",
+        "type": "npc",
+        "label": "The Quartermaster",
+        "summary": "antagonist: cold"
+      },
+      {
+        "id": "npc.unknown.contact",
+        "type": "npc",
+        "label": "Unknown Contact",
+        "summary": "unknown_contact: flat"
+      },
+      {
+        "id": "midnight-lockbox-d01-police-report-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 01 police report",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d02-handwritten-note-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 02 handwritten note",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d03-journal-entry-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 03 journal entry",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d04-text-message-screenshot-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 04 text message screenshot",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d04-security-footage-still-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 04 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d05-call-log-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 05 call log",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d06-voicemail-transcript-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 06 voicemail transcript",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d07-security-footage-still-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 07 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d08-crime-scene-photo-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 08 crime scene photo",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d08-medical-record-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 08 medical record",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d09-marked-map-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 09 marked map",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d10-receipt-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 10 receipt",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d11-medical-record-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 11 medical record",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d12-shipping-manifest-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 12 shipping manifest",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d12-journal-entry-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 12 journal entry",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d13-police-report-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 13 police report",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d14-handwritten-note-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 14 handwritten note",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d15-journal-entry-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 15 journal entry",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d15-voicemail-transcript-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 15 voicemail transcript",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d16-text-message-screenshot-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 16 text message screenshot",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d16-security-footage-still-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 16 security footage still",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d17-call-log-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 17 call log",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d17-crime-scene-photo-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 17 crime scene photo",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d18-voicemail-transcript-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 18 voicemail transcript",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d18-marked-map-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 18 marked map",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d19-security-footage-still-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 19 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d19-receipt-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 19 receipt",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d20-crime-scene-photo-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 20 crime scene photo",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d20-medical-record-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 20 medical record",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d21-marked-map-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 21 marked map",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d21-shipping-manifest-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 21 shipping manifest",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d22-receipt-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 22 receipt",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d23-medical-record-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 23 medical record",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d24-shipping-manifest-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 24 shipping manifest",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d24-journal-entry-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 24 journal entry",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d25-police-report-voicemail-waveform-anomaly",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 25 police report",
+        "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d26-handwritten-note-keypad-access-hash-export",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 26 handwritten note",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+      },
+      {
+        "id": "midnight-lockbox-d27-journal-entry-freight-elevator-camera-stil",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 27 journal entry",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
+      },
+      {
+        "id": "midnight-lockbox-d28-text-message-screenshot-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 28 text message screenshot",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d28-security-footage-still-drain-tunnel-pressure-map",
+        "type": "evidence",
+        "label": "Midnight Lockbox - Day 28 security footage still",
+        "summary": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
       }
     ],
     "links": [
       {
-        "fromId": "midnight-lockbox-suspect-villain",
-        "toId": "midnight-lockbox-location-core",
-        "relation": "operates-through",
-        "confidence": 0.78
+        "fromId": "midnight-lockbox-d01-police-report-voicemail-waveform-anomaly",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
       },
       {
-        "fromId": "midnight-lockbox-suspect-secondary",
-        "toId": "midnight-lockbox-evidence-core",
-        "relation": "tampered-access",
-        "confidence": 0.64
+        "fromId": "npc.midnight-lockbox-npc-1",
+        "toId": "midnight-lockbox-d01-police-report-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
       },
       {
-        "fromId": "midnight-lockbox-location-core",
-        "toId": "midnight-lockbox-evidence-core",
-        "relation": "origin-point",
-        "confidence": 0.82
+        "fromId": "midnight-lockbox-d02-handwritten-note-keypad-access-hash-export",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-2",
+        "toId": "midnight-lockbox-d02-handwritten-note-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d03-journal-entry-freight-elevator-camera-stil",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-3",
+        "toId": "midnight-lockbox-d03-journal-entry-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d04-text-message-screenshot-drain-tunnel-pressure-map",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-4",
+        "toId": "midnight-lockbox-d04-text-message-screenshot-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d04-security-footage-still-drain-tunnel-pressure-map",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "midnight-lockbox-d04-security-footage-still-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d05-call-log-voicemail-waveform-anomaly",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "midnight-lockbox-d05-call-log-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d06-voicemail-transcript-keypad-access-hash-export",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "midnight-lockbox-d06-voicemail-transcript-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d07-security-footage-still-freight-elevator-camera-stil",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "midnight-lockbox-d07-security-footage-still-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d08-crime-scene-photo-drain-tunnel-pressure-map",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-1",
+        "toId": "midnight-lockbox-d08-crime-scene-photo-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d08-medical-record-drain-tunnel-pressure-map",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-4",
+        "toId": "midnight-lockbox-d08-medical-record-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d09-marked-map-voicemail-waveform-anomaly",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-2",
+        "toId": "midnight-lockbox-d09-marked-map-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d10-receipt-keypad-access-hash-export",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-3",
+        "toId": "midnight-lockbox-d10-receipt-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d11-medical-record-freight-elevator-camera-stil",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-4",
+        "toId": "midnight-lockbox-d11-medical-record-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d12-shipping-manifest-drain-tunnel-pressure-map",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "midnight-lockbox-d12-shipping-manifest-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d12-journal-entry-drain-tunnel-pressure-map",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-1",
+        "toId": "midnight-lockbox-d12-journal-entry-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d13-police-report-voicemail-waveform-anomaly",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "midnight-lockbox-d13-police-report-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d14-handwritten-note-keypad-access-hash-export",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "midnight-lockbox-d14-handwritten-note-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d15-journal-entry-freight-elevator-camera-stil",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-1",
+        "toId": "midnight-lockbox-d15-journal-entry-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d15-voicemail-transcript-freight-elevator-camera-stil",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-4",
+        "toId": "midnight-lockbox-d15-voicemail-transcript-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d16-text-message-screenshot-drain-tunnel-pressure-map",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-2",
+        "toId": "midnight-lockbox-d16-text-message-screenshot-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d16-security-footage-still-drain-tunnel-pressure-map",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "midnight-lockbox-d16-security-footage-still-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d17-call-log-voicemail-waveform-anomaly",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-3",
+        "toId": "midnight-lockbox-d17-call-log-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d17-crime-scene-photo-voicemail-waveform-anomaly",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "midnight-lockbox-d17-crime-scene-photo-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d18-voicemail-transcript-keypad-access-hash-export",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-4",
+        "toId": "midnight-lockbox-d18-voicemail-transcript-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d18-marked-map-keypad-access-hash-export",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "midnight-lockbox-d18-marked-map-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d19-security-footage-still-freight-elevator-camera-stil",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "midnight-lockbox-d19-security-footage-still-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d19-receipt-freight-elevator-camera-stil",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-1",
+        "toId": "midnight-lockbox-d19-receipt-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d20-crime-scene-photo-drain-tunnel-pressure-map",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "midnight-lockbox-d20-crime-scene-photo-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d20-medical-record-drain-tunnel-pressure-map",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-2",
+        "toId": "midnight-lockbox-d20-medical-record-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d21-marked-map-voicemail-waveform-anomaly",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "midnight-lockbox-d21-marked-map-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d21-shipping-manifest-voicemail-waveform-anomaly",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-3",
+        "toId": "midnight-lockbox-d21-shipping-manifest-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d22-receipt-keypad-access-hash-export",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-1",
+        "toId": "midnight-lockbox-d22-receipt-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d23-medical-record-freight-elevator-camera-stil",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-2",
+        "toId": "midnight-lockbox-d23-medical-record-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d24-shipping-manifest-drain-tunnel-pressure-map",
+        "toId": "thread.false_lead",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-3",
+        "toId": "midnight-lockbox-d24-shipping-manifest-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d24-journal-entry-drain-tunnel-pressure-map",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "midnight-lockbox-d24-journal-entry-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d25-police-report-voicemail-waveform-anomaly",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.42
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-4",
+        "toId": "midnight-lockbox-d25-police-report-voicemail-waveform-anomaly",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d26-handwritten-note-keypad-access-hash-export",
+        "toId": "thread.main_investigation",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.journalist.field",
+        "toId": "midnight-lockbox-d26-handwritten-note-keypad-access-hash-export",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d27-journal-entry-freight-elevator-camera-stil",
+        "toId": "thread.side_mystery",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.antagonist.primary",
+        "toId": "midnight-lockbox-d27-journal-entry-freight-elevator-camera-stil",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d28-text-message-screenshot-drain-tunnel-pressure-map",
+        "toId": "thread.hidden_truth",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.unknown.contact",
+        "toId": "midnight-lockbox-d28-text-message-screenshot-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
+      },
+      {
+        "fromId": "midnight-lockbox-d28-security-footage-still-drain-tunnel-pressure-map",
+        "toId": "thread.psychological_break",
+        "relation": "supports",
+        "confidence": 0.84
+      },
+      {
+        "fromId": "npc.midnight-lockbox-npc-3",
+        "toId": "midnight-lockbox-d28-security-footage-still-drain-tunnel-pressure-map",
+        "relation": "submitted",
+        "confidence": 0.74
       }
     ],
     "timeline": [
       {
-        "id": "midnight-lockbox-timeline-1",
-        "timeLabel": "22:15",
-        "summary": "Initial anomaly reaches player channels.",
+        "id": "day_01.timeline",
+        "timeLabel": "Day 01",
+        "summary": "An intake anomaly lands across multiple channels before dawn.",
         "relatedNodeIds": [
-          "midnight-lockbox-location-core",
-          "midnight-lockbox-evidence-core"
+          "midnight-lockbox-d01-police-report-voicemail-waveform-anomaly"
         ]
       },
       {
-        "id": "midnight-lockbox-timeline-2",
-        "timeLabel": "23:50",
-        "summary": "Witness account conflicts with archive records.",
+        "id": "day_02.timeline",
+        "timeLabel": "Day 02",
+        "summary": "Metadata drift appears between duplicate files and erodes confidence.",
         "relatedNodeIds": [
-          "midnight-lockbox-suspect-secondary",
-          "midnight-lockbox-evidence-core"
+          "midnight-lockbox-d02-handwritten-note-keypad-access-hash-export"
         ]
       },
       {
-        "id": "midnight-lockbox-timeline-3",
-        "timeLabel": "00:25",
-        "summary": "Villain contact shifts to direct intimidation.",
+        "id": "day_03.timeline",
+        "timeLabel": "Day 03",
+        "summary": "A witness account conflicts with dispatch timing by exactly nine minutes.",
         "relatedNodeIds": [
-          "midnight-lockbox-suspect-villain"
+          "midnight-lockbox-d03-journal-entry-freight-elevator-camera-stil"
+        ]
+      },
+      {
+        "id": "day_04.timeline",
+        "timeLabel": "Day 04",
+        "summary": "A dead account sends a fresh attachment with current geotag residue.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d04-text-message-screenshot-drain-tunnel-pressure-map",
+          "midnight-lockbox-d04-security-footage-still-drain-tunnel-pressure-map"
+        ]
+      },
+      {
+        "id": "day_05.timeline",
+        "timeLabel": "Day 05",
+        "summary": "Administrative records reveal prior attempts to bury this case.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d05-call-log-voicemail-waveform-anomaly"
+        ]
+      },
+      {
+        "id": "day_06.timeline",
+        "timeLabel": "Day 06",
+        "summary": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d06-voicemail-transcript-keypad-access-hash-export"
+        ]
+      },
+      {
+        "id": "day_07.timeline",
+        "timeLabel": "Day 07",
+        "summary": "The first branch point forces trust in a source you cannot verify.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d07-security-footage-still-freight-elevator-camera-stil"
+        ]
+      },
+      {
+        "id": "day_08.timeline",
+        "timeLabel": "Day 08",
+        "summary": "Friendly channels begin echoing antagonist phrasing.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d08-crime-scene-photo-drain-tunnel-pressure-map",
+          "midnight-lockbox-d08-medical-record-drain-tunnel-pressure-map"
+        ]
+      },
+      {
+        "id": "day_09.timeline",
+        "timeLabel": "Day 09",
+        "summary": "Recovered logs contain one corrected timestamp that changes motive.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d09-marked-map-voicemail-waveform-anomaly"
+        ]
+      },
+      {
+        "id": "day_10.timeline",
+        "timeLabel": "Day 10",
+        "summary": "A journalist leak points to an internal collaborator.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d10-receipt-keypad-access-hash-export"
+        ]
+      },
+      {
+        "id": "day_11.timeline",
+        "timeLabel": "Day 11",
+        "summary": "One evidence image contains a planted anomaly meant to bait fast conclusions.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d11-medical-record-freight-elevator-camera-stil"
+        ]
+      },
+      {
+        "id": "day_12.timeline",
+        "timeLabel": "Day 12",
+        "summary": "Unknown contact sends a warning that names your previous choice.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d12-shipping-manifest-drain-tunnel-pressure-map",
+          "midnight-lockbox-d12-journal-entry-drain-tunnel-pressure-map"
+        ]
+      },
+      {
+        "id": "day_13.timeline",
+        "timeLabel": "Day 13",
+        "summary": "A voicemail includes background audio from a location not yet disclosed.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d13-police-report-voicemail-waveform-anomaly"
+        ]
+      },
+      {
+        "id": "day_14.timeline",
+        "timeLabel": "Day 14",
+        "summary": "Second branch point determines whether public pressure or covert trace is prioritized.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d14-handwritten-note-keypad-access-hash-export"
+        ]
+      },
+      {
+        "id": "day_15.timeline",
+        "timeLabel": "Day 15",
+        "summary": "Direct interference interrupts calls and reroutes message threads.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d15-journal-entry-freight-elevator-camera-stil",
+          "midnight-lockbox-d15-voicemail-transcript-freight-elevator-camera-stil"
+        ]
+      },
+      {
+        "id": "day_16.timeline",
+        "timeLabel": "Day 16",
+        "summary": "A witness goes dark after confirming a hidden ledger.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d16-text-message-screenshot-drain-tunnel-pressure-map",
+          "midnight-lockbox-d16-security-footage-still-drain-tunnel-pressure-map"
+        ]
+      },
+      {
+        "id": "day_17.timeline",
+        "timeLabel": "Day 17",
+        "summary": "Emergency dispatch references your alias instead of your legal profile.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d17-call-log-voicemail-waveform-anomaly",
+          "midnight-lockbox-d17-crime-scene-photo-voicemail-waveform-anomaly"
+        ]
+      },
+      {
+        "id": "day_18.timeline",
+        "timeLabel": "Day 18",
+        "summary": "An antagonist demand threatens collateral unless evidence is withheld.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d18-voicemail-transcript-keypad-access-hash-export",
+          "midnight-lockbox-d18-marked-map-keypad-access-hash-export"
+        ]
+      },
+      {
+        "id": "day_19.timeline",
+        "timeLabel": "Day 19",
+        "summary": "A forged report nearly redirects the task force toward the wrong target.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d19-security-footage-still-freight-elevator-camera-stil",
+          "midnight-lockbox-d19-receipt-freight-elevator-camera-stil"
+        ]
+      },
+      {
+        "id": "day_20.timeline",
+        "timeLabel": "Day 20",
+        "summary": "Unknown contact reveals personal detail only the player would recognize.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d20-crime-scene-photo-drain-tunnel-pressure-map",
+          "midnight-lockbox-d20-medical-record-drain-tunnel-pressure-map"
+        ]
+      },
+      {
+        "id": "day_21.timeline",
+        "timeLabel": "Day 21",
+        "summary": "Third branch point locks either protective extraction or aggressive exposure.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d21-marked-map-voicemail-waveform-anomaly",
+          "midnight-lockbox-d21-shipping-manifest-voicemail-waveform-anomaly"
+        ]
+      },
+      {
+        "id": "day_22.timeline",
+        "timeLabel": "Day 22",
+        "summary": "Cross-day clue map finally exposes the suppression mechanism.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d22-receipt-keypad-access-hash-export"
+        ]
+      },
+      {
+        "id": "day_23.timeline",
+        "timeLabel": "Day 23",
+        "summary": "Recovered recordings reveal contradiction between public narrative and private orders.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d23-medical-record-freight-elevator-camera-stil"
+        ]
+      },
+      {
+        "id": "day_24.timeline",
+        "timeLabel": "Day 24",
+        "summary": "A trusted NPC admits one strategic lie and requests off-record forgiveness.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d24-shipping-manifest-drain-tunnel-pressure-map",
+          "midnight-lockbox-d24-journal-entry-drain-tunnel-pressure-map"
+        ]
+      },
+      {
+        "id": "day_25.timeline",
+        "timeLabel": "Day 25",
+        "summary": "The antagonist offers a final pact framed as damage control.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d25-police-report-voicemail-waveform-anomaly"
+        ]
+      },
+      {
+        "id": "day_26.timeline",
+        "timeLabel": "Day 26",
+        "summary": "Evidence board converges, but one key artifact remains unreliable.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d26-handwritten-note-keypad-access-hash-export"
+        ]
+      },
+      {
+        "id": "day_27.timeline",
+        "timeLabel": "Day 27",
+        "summary": "Final puzzle forces interpretation of mutually exclusive truths.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d27-journal-entry-freight-elevator-camera-stil"
+        ]
+      },
+      {
+        "id": "day_28.timeline",
+        "timeLabel": "Day 28",
+        "summary": "Resolution day decides justice, compromise, corruption, or psychological fracture.",
+        "relatedNodeIds": [
+          "midnight-lockbox-d28-text-message-screenshot-drain-tunnel-pressure-map",
+          "midnight-lockbox-d28-security-footage-still-drain-tunnel-pressure-map"
         ]
       }
     ]
   },
   "playerBriefing": {
-    "roleTitle": "Contract Signal Investigator",
-    "callSign": "MID-LOC",
-    "recruitmentReason": "A self-storage unit with no renter sends voice memos predicting what your team will do next. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
-    "openingIncident": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.",
-    "personalStakes": "The Quartermaster has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
-    "firstDirective": "Lockbox Contact: An impossible voicemail starts the case at the storage facility. Maintain evidence discipline and document every threat marker."
+    "roleTitle": "Case Analyst",
+    "callSign": "{{player_alias}}",
+    "recruitmentReason": "You were selected because your prior casework identified contradiction patterns others ignored.",
+    "openingIncident": "At 02:17 local, synchronized drops across four channels triggered this investigation.",
+    "personalStakes": "The Quartermaster has begun adapting communications to your decisions.",
+    "firstDirective": "Verify evidence chain before any public move and protect vulnerable contacts."
   },
   "campaignPlan": {
     "totalDays": 28,
     "weeks": [
       {
         "week": 1,
-        "label": "Week 1 - Recruitment And Baseline",
-        "objective": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.",
+        "label": "Discovery & Curiosity",
+        "objective": "Validate the first anomaly, establish trust baselines, and seed investigative obsession.",
         "keyMoments": [
-          "An impossible voicemail starts the case at the storage facility.",
-          "Voicemail waveform anomaly"
+          "Discovery & Curiosity - Day 01",
+          "Discovery & Curiosity - Day 02"
         ]
       },
       {
         "week": 2,
-        "label": "Week 2 - Contradiction Mapping",
-        "objective": "Daylight leaks force trust decisions under public pressure.",
+        "label": "Escalation & Unease",
+        "objective": "Push contradictions, introduce manipulative pressure, and degrade certainty.",
         "keyMoments": [
-          "Digital audit-first versus witness-first opening",
-          "Keypad access hash export"
+          "Escalation & Unease - Day 08",
+          "Escalation & Unease - Day 09"
         ]
       },
       {
         "week": 3,
-        "label": "Week 3 - Escalation Window",
-        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "label": "Danger & Direct Involvement",
+        "objective": "Force personal risk, urgent tradeoffs, and irreversible consequences.",
         "keyMoments": [
-          "Public reveal versus covert extraction at noon",
-          "Inside-job extortion ring using predictive surveillance"
+          "Danger & Direct Involvement - Day 15",
+          "Danger & Direct Involvement - Day 16"
         ]
       },
       {
         "week": 4,
-        "label": "Week 4 - Endgame And Debrief",
-        "objective": "A final tunnel run decides truth, compromise, or collapse.",
+        "label": "Resolution or Psychological Break",
+        "objective": "Collapse competing truths into final judgement, compromise, or breakdown.",
         "keyMoments": [
-          "Anomalous lockbox artifact that mirrors future intent",
-          "A second lockbox in another city starts transmitting the same timestamp."
+          "Resolution or Psychological Break - Day 22",
+          "Resolution or Psychological Break - Day 23"
         ]
       }
     ]
   },
   "npcDossiers": [
     {
-      "id": "midnight-lockbox-npc-1",
+      "id": "npc.midnight-lockbox-npc-1",
       "displayName": "Case Lead Veda Cross",
-      "role": "HANDLER",
+      "role": "detective",
       "baselineEmotion": "CALM",
       "motivations": [
         "Contain leaks before public panic"
@@ -694,9 +4387,9 @@
       "notableSecret": "Lead Investigator Mara Quinn can expose midnight-lockbox-clue-pressure at high trust."
     },
     {
-      "id": "midnight-lockbox-npc-2",
+      "id": "npc.midnight-lockbox-npc-2",
       "displayName": "Night Manager Eli Mercer",
-      "role": "WITNESS",
+      "role": "witness",
       "baselineEmotion": "ANXIOUS",
       "motivations": [
         "Keep his family uninvolved"
@@ -706,9 +4399,9 @@
       "notableSecret": "Dispatch Handler Ilya Ross can expose midnight-lockbox-clue-reveal at high trust."
     },
     {
-      "id": "midnight-lockbox-npc-3",
+      "id": "npc.midnight-lockbox-npc-3",
       "displayName": "Courier Witness Sia Rowan",
-      "role": "SUSPECT",
+      "role": "witness",
       "baselineEmotion": "SUSPICIOUS",
       "motivations": [
         "Stay out of custody and protect a sibling"
@@ -718,9 +4411,9 @@
       "notableSecret": "Commuter Witness Nia Vale can expose midnight-lockbox-clue-origin at high trust."
     },
     {
-      "id": "midnight-lockbox-npc-4",
+      "id": "npc.midnight-lockbox-npc-4",
       "displayName": "Locksmith Omar Hale",
-      "role": "EXPERT",
+      "role": "witness",
       "baselineEmotion": "CALM",
       "motivations": [
         "Document how the lock was spoofed"
@@ -728,128 +4421,203 @@
       "trustBaseline": 46,
       "trustCeiling": 88,
       "notableSecret": "Transit Auditor Bram Keene can expose midnight-lockbox-clue-pressure at high trust."
+    },
+    {
+      "id": "npc.journalist.field",
+      "displayName": "Mina Calder",
+      "role": "journalist",
+      "baselineEmotion": "probing",
+      "motivations": [
+        "publish before suppression",
+        "expose chain-of-command failures"
+      ],
+      "trustBaseline": 30,
+      "trustCeiling": 70,
+      "notableSecret": "Accepted leaked material from a source linked to the antagonist."
+    },
+    {
+      "id": "npc.antagonist.primary",
+      "displayName": "The Quartermaster",
+      "role": "antagonist",
+      "baselineEmotion": "cold",
+      "motivations": [
+        "Turn investigators into gatekeepers who sell selective truth."
+      ],
+      "trustBaseline": 0,
+      "trustCeiling": 5,
+      "notableSecret": "Has direct access to at least one internal evidence channel."
+    },
+    {
+      "id": "npc.unknown.contact",
+      "displayName": "Unknown Contact",
+      "role": "unknown_contact",
+      "baselineEmotion": "flat",
+      "motivations": [
+        "steer investigation without revealing identity"
+      ],
+      "trustBaseline": 20,
+      "trustCeiling": 52,
+      "notableSecret": "Identity intersects with official case administration records."
     }
   ],
   "communityPuzzles": [
     {
-      "id": "midnight-lockbox-puzzle-shards",
-      "title": "Unit Grid Reconstruction",
-      "objective": "Combine shared lock patterns to identify the real unit sequence.",
+      "id": "midnight-lockbox-puzzle-day-02",
+      "title": "Day 02 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Keypad access hash export.",
       "shards": [
         {
-          "id": "midnight-lockbox-puzzle-shard-host",
-          "heldBy": "HOST",
-          "content": "Host gets lock serials without floor order."
-        },
-        {
-          "id": "midnight-lockbox-puzzle-shard-ally-a",
-          "heldBy": "ALLY_A",
-          "content": "Ally gets floor order without serials."
-        },
-        {
-          "id": "midnight-lockbox-puzzle-shard-broadcast",
-          "heldBy": "GLOBAL_BROADCAST",
-          "content": "Broadcast drop includes the timing offset key."
+          "id": "midnight-lockbox-puzzle-day-02.shard.1",
+          "heldBy": "handwritten_note",
+          "content": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
         }
       ],
-      "rewardClueId": "midnight-lockbox-clue-origin",
-      "failureConsequence": "Wrong sequence triggers false evidence upload and witness relocation.",
-      "solutionKeyword": "ORIGIN"
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "KEYPAD_ACCESS_HASH_EXPORT_02"
+    },
+    {
+      "id": "midnight-lockbox-puzzle-day-04",
+      "title": "Day 04 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Drain tunnel pressure map.",
+      "shards": [
+        {
+          "id": "midnight-lockbox-puzzle-day-04.shard.1",
+          "heldBy": "text_message_screenshot",
+          "content": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+        },
+        {
+          "id": "midnight-lockbox-puzzle-day-04.shard.2",
+          "heldBy": "security_footage_still",
+          "content": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+        }
+      ],
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "DRAIN_TUNNEL_PRESSURE_MAP_04"
+    },
+    {
+      "id": "midnight-lockbox-puzzle-day-06",
+      "title": "Day 06 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Keypad access hash export.",
+      "shards": [
+        {
+          "id": "midnight-lockbox-puzzle-day-06.shard.1",
+          "heldBy": "voicemail_transcript",
+          "content": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
+        }
+      ],
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "KEYPAD_ACCESS_HASH_EXPORT_06"
+    },
+    {
+      "id": "midnight-lockbox-puzzle-day-08",
+      "title": "Day 08 Puzzle",
+      "objective": "Use the new evidence and prior logs to resolve contradiction around Drain tunnel pressure map.",
+      "shards": [
+        {
+          "id": "midnight-lockbox-puzzle-day-08.shard.1",
+          "heldBy": "crime_scene_photo",
+          "content": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
+        },
+        {
+          "id": "midnight-lockbox-puzzle-day-08.shard.2",
+          "heldBy": "medical_record",
+          "content": "Artifact appears authoritative but contains one intentional inconsistency tied to Drain tunnel pressure map."
+        }
+      ],
+      "rewardClueId": "thread.hidden_truth",
+      "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged.",
+      "solutionKeyword": "DRAIN_TUNNEL_PRESSURE_MAP_08"
     }
   ],
   "visualDeck": {
-    "heroImage": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-1.png",
+    "heroImage": "/visuals/stories/midnight-lockbox.svg",
     "assets": [
       {
-        "id": "midnight-lockbox-scene-1",
-        "title": "Scene Art 1",
-        "category": "scene",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-1.png",
-        "promptHint": "Cinematic environment frame 1 for Midnight Lockbox."
-      },
-      {
-        "id": "midnight-lockbox-scene-2",
-        "title": "Scene Art 2",
-        "category": "scene",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-2.png",
-        "promptHint": "Cinematic environment frame 2 for Midnight Lockbox."
-      },
-      {
-        "id": "midnight-lockbox-scene-3",
-        "title": "Scene Art 3",
-        "category": "scene",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-3.png",
-        "promptHint": "Cinematic environment frame 3 for Midnight Lockbox."
-      },
-      {
-        "id": "midnight-lockbox-evidence-1",
-        "title": "Evidence Image 1",
+        "id": "midnight-lockbox-d01-police-report-voicemail-waveform-anomaly",
+        "title": "Midnight Lockbox - Day 01 police report",
         "category": "evidence",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-1.png",
-        "promptHint": "Forensic clue still 1 tied to Midnight Lockbox."
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Voicemail waveform anomaly."
       },
       {
-        "id": "midnight-lockbox-evidence-2",
-        "title": "Evidence Image 2",
+        "id": "midnight-lockbox-d02-handwritten-note-keypad-access-hash-export",
+        "title": "Midnight Lockbox - Day 02 handwritten note",
         "category": "evidence",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-2.png",
-        "promptHint": "Forensic clue still 2 tied to Midnight Lockbox."
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
       },
       {
-        "id": "midnight-lockbox-evidence-3",
-        "title": "Evidence Image 3",
+        "id": "midnight-lockbox-d03-journal-entry-freight-elevator-camera-stil",
+        "title": "Midnight Lockbox - Day 03 journal entry",
         "category": "evidence",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-3.png",
-        "promptHint": "Forensic clue still 3 tied to Midnight Lockbox."
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
       },
       {
-        "id": "midnight-lockbox-evidence-4",
-        "title": "Evidence Image 4",
+        "id": "midnight-lockbox-d04-text-message-screenshot-drain-tunnel-pressure-map",
+        "title": "Midnight Lockbox - Day 04 text message screenshot",
         "category": "evidence",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-4.png",
-        "promptHint": "Forensic clue still 4 tied to Midnight Lockbox."
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
       },
       {
-        "id": "midnight-lockbox-character-1",
-        "title": "Character Portrait 1",
-        "category": "character",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-1.png",
-        "promptHint": "Character dossier portrait 1 for supernatural mystery arc."
+        "id": "midnight-lockbox-d04-security-footage-still-drain-tunnel-pressure-map",
+        "title": "Midnight Lockbox - Day 04 security footage still",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
       },
       {
-        "id": "midnight-lockbox-character-2",
-        "title": "Character Portrait 2",
-        "category": "character",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-2.png",
-        "promptHint": "Character dossier portrait 2 for supernatural mystery arc."
+        "id": "midnight-lockbox-d05-call-log-voicemail-waveform-anomaly",
+        "title": "Midnight Lockbox - Day 05 call log",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Voicemail waveform anomaly."
       },
       {
-        "id": "midnight-lockbox-character-3",
-        "title": "Character Portrait 3",
-        "category": "character",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-3.png",
-        "promptHint": "Character dossier portrait 3 for supernatural mystery arc."
+        "id": "midnight-lockbox-d06-voicemail-transcript-keypad-access-hash-export",
+        "title": "Midnight Lockbox - Day 06 voicemail transcript",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Keypad access hash export."
       },
       {
-        "id": "midnight-lockbox-character-4",
-        "title": "Character Portrait 4",
-        "category": "character",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-4.png",
-        "promptHint": "Character dossier portrait 4 for supernatural mystery arc."
+        "id": "midnight-lockbox-d07-security-footage-still-freight-elevator-camera-stil",
+        "title": "Midnight Lockbox - Day 07 security footage still",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Freight elevator camera still."
       },
       {
-        "id": "midnight-lockbox-promo-1",
-        "title": "Promo Frame 1",
-        "category": "promo",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-promo_image-1.png",
-        "promptHint": "Teaser key art 1 for Midnight Lockbox."
+        "id": "midnight-lockbox-d08-crime-scene-photo-drain-tunnel-pressure-map",
+        "title": "Midnight Lockbox - Day 08 crime scene photo",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact advances verified evidence chain and supports deduction around Drain tunnel pressure map."
       },
       {
-        "id": "midnight-lockbox-promo-2",
-        "title": "Promo Frame 2",
-        "category": "promo",
-        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-promo_image-2.png",
-        "promptHint": "Teaser key art 2 for Midnight Lockbox."
+        "id": "midnight-lockbox-d08-medical-record-drain-tunnel-pressure-map",
+        "title": "Midnight Lockbox - Day 08 medical record",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Drain tunnel pressure map."
+      },
+      {
+        "id": "midnight-lockbox-d09-marked-map-voicemail-waveform-anomaly",
+        "title": "Midnight Lockbox - Day 09 marked map",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Voicemail waveform anomaly."
+      },
+      {
+        "id": "midnight-lockbox-d10-receipt-keypad-access-hash-export",
+        "title": "Midnight Lockbox - Day 10 receipt",
+        "category": "evidence",
+        "path": "/visuals/stories/midnight-lockbox.svg",
+        "promptHint": "Artifact appears authoritative but contains one intentional inconsistency tied to Keypad access hash export."
       }
     ]
   },
@@ -864,5 +4632,6 @@
   "branchingMoments": [
     "Digital audit-first versus witness-first opening",
     "Public reveal versus covert extraction at noon"
-  ]
+  ],
+  "generatedFromArg": true
 }

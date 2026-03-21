@@ -1,0 +1,257 @@
+{
+  "id": "day_10",
+  "storyId": "static-between-stations",
+  "day": 10,
+  "week": 2,
+  "phase": "ESCALATION",
+  "phaseLabel": "Escalation & Unease",
+  "headline": "Escalation & Unease - Day 10",
+  "releaseWindow": {
+    "campaignOffsetHours": 216,
+    "oddHourDelivery": false,
+    "preferredOddHourClock": "04:09"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      9
+    ],
+    "requiredFlags": [
+      "flag.day_09.complete"
+    ],
+    "requiredInteractions": [
+      "day-09-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "A journalist leak points to an internal collaborator.",
+    "beatAnchorId": "beat-2",
+    "beatAnchorTitle": "Escalation Signal",
+    "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+    "threatEscalation": "social and informational pressure",
+    "playerInvolvementShift": "analyst to implicated participant"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "active",
+      "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+      "clueReference": "Maintenance ledger anomaly"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Maintenance ledger anomaly remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Maintenance ledger anomaly.",
+      "clueReference": "Maintenance ledger anomaly"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "cooldown",
+      "update": "No new movement on false lead this cycle.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "building",
+      "update": "Subtle repetition appears in unrelated communications."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "static-between-stations-d10-receipt-maintenance-ledger-anomaly",
+      "day": 10,
+      "title": "Static Between Stations - Day 10 receipt",
+      "type": "receipt",
+      "sourceNpcId": "npc.static-between-stations-npc-3",
+      "threadId": "thread.psychological_break",
+      "clueTags": [
+        "maintenance-ledger-anomaly",
+        "phase.escalation"
+      ],
+      "misleading": true,
+      "reliabilityScore": 0.42,
+      "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Maintenance ledger anomaly.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Static Between Stations ARG artifact Day 10. Type: receipt. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Static Between Stations receipt audio cue for day 10. Clue anchor: Maintenance ledger anomaly. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-10-detective-brief",
+      "actorId": "npc.static-between-stations-npc-1",
+      "role": "detective",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 12,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Maintenance ledger anomaly and tell me if your last call still stands (decision.day_09.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-10-witness-ping",
+      "actorId": "npc.static-between-stations-npc-2",
+      "role": "witness",
+      "channel": "VOICE_MESSAGE",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 58,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-10-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 139,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Maintenance ledger anomaly.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-10-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "SIGNAL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 130,
+        "oddHourWindow": true,
+        "oddHourClock": "02:11"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "static-between-stations-puzzle-day-10",
+    "type": "call_path_reconstruction",
+    "title": "Day 10 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Maintenance ledger anomaly.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with MAIN."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "MAINTENANCE_LEDGER_ANOMALY_10"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_10.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+  },
+  "distraction": {
+    "id": "static-between-stations-distraction-day-10",
+    "title": "Red Herring 10",
+    "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+    "whyItFeelsPlausible": "It references Maintenance ledger anomaly with convincing formatting and apparent chain-of-custody metadata.",
+    "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+  },
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_10.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_10.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.static-between-stations-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.static-between-stations-npc-2",
+        "delta": 0
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

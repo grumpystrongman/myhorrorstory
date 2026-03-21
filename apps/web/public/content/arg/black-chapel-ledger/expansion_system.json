@@ -1,0 +1,49 @@
+{
+  "storyId": "black-chapel-ledger",
+  "campaignVersion": "arg-v1",
+  "expansionSteps": [
+    {
+      "step": 1,
+      "title": "Clone Campaign Template",
+      "detail": "Duplicate campaign manifest and day files, preserving IDs and unlock schema."
+    },
+    {
+      "step": 2,
+      "title": "Swap Narrative Inputs",
+      "detail": "Replace hook, location, villain profile, clue evidence, and branch anchors."
+    },
+    {
+      "step": 3,
+      "title": "Regenerate Artifacts and Prompts",
+      "detail": "Run generator to rebuild artifact definitions, image/audio prompts, and NPC dialogue packs."
+    },
+    {
+      "step": 4,
+      "title": "Tune Difficulty and Cadence",
+      "detail": "Adjust puzzle cadence, no-response escalations, and odd-hour windows per audience."
+    },
+    {
+      "step": 5,
+      "title": "Validate Full Month Playthrough",
+      "detail": "Run simulation and smoke tests across all days and branch anchors before release."
+    }
+  ],
+  "schemaContracts": {
+    "requiredFiles": [
+      "campaign.json",
+      "day_01.json...day_28.json",
+      "npc_profiles.json",
+      "artifact_definitions.json"
+    ],
+    "optionalFiles": [
+      "frontend_integration_plan.json",
+      "expansion_system.json",
+      "npc_dialogue_system_prompts.json"
+    ]
+  },
+  "authoringGuardrails": [
+    "Never ship disconnected day entries; each day must reference prior progression flags.",
+    "Maintain at least one misleading artifact every escalation cycle.",
+    "Include at least one awareness moment from day 09 onward."
+  ]
+}

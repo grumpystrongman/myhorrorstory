@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "crown-of-salt-d01-police-report-brine-sealed-manifest",
+    "day": 1,
+    "title": "Crown of Salt - Day 01 police report",
+    "type": "police_report",
+    "sourceNpcId": "npc.crown-of-salt-npc-1",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 01. Type: police_report. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt police_report audio cue for day 1. Clue anchor: Brine-sealed manifest. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d02-handwritten-note-dockside-cctv-still",
+    "day": 2,
+    "title": "Crown of Salt - Day 02 handwritten note",
+    "type": "handwritten_note",
+    "sourceNpcId": "npc.crown-of-salt-npc-2",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 02. Type: handwritten_note. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt handwritten_note audio cue for day 2. Clue anchor: Dockside CCTV still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d03-journal-entry-catacomb-symbol-tracing",
+    "day": 3,
+    "title": "Crown of Salt - Day 03 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.crown-of-salt-npc-3",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 03. Type: journal_entry. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt journal_entry audio cue for day 3. Clue anchor: Catacomb symbol tracing. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d04-text-message-screenshot-customs-api-anomaly-log",
+    "day": 4,
+    "title": "Crown of Salt - Day 04 text message screenshot",
+    "type": "text_message_screenshot",
+    "sourceNpcId": "npc.crown-of-salt-npc-4",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 04. Type: text_message_screenshot. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt text_message_screenshot audio cue for day 4. Clue anchor: Customs API anomaly log. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d04-security-footage-still-customs-api-anomaly-log",
+    "day": 4,
+    "title": "Crown of Salt - Day 04 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 04. Type: security_footage_still. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt security_footage_still audio cue for day 4. Clue anchor: Customs API anomaly log. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d05-call-log-brine-sealed-manifest",
+    "day": 5,
+    "title": "Crown of Salt - Day 05 call log",
+    "type": "call_log",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.discovery"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 05. Type: call_log. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt call_log audio cue for day 5. Clue anchor: Brine-sealed manifest. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d06-voicemail-transcript-dockside-cctv-still",
+    "day": 6,
+    "title": "Crown of Salt - Day 06 voicemail transcript",
+    "type": "voicemail_transcript",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 06. Type: voicemail_transcript. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt voicemail_transcript audio cue for day 6. Clue anchor: Dockside CCTV still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d07-security-footage-still-catacomb-symbol-tracing",
+    "day": 7,
+    "title": "Crown of Salt - Day 07 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 07. Type: security_footage_still. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt security_footage_still audio cue for day 7. Clue anchor: Catacomb symbol tracing. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d08-crime-scene-photo-customs-api-anomaly-log",
+    "day": 8,
+    "title": "Crown of Salt - Day 08 crime scene photo",
+    "type": "crime_scene_photo",
+    "sourceNpcId": "npc.crown-of-salt-npc-1",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 08. Type: crime_scene_photo. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt crime_scene_photo audio cue for day 8. Clue anchor: Customs API anomaly log. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d08-medical-record-customs-api-anomaly-log",
+    "day": 8,
+    "title": "Crown of Salt - Day 08 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.crown-of-salt-npc-4",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 08. Type: medical_record. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt medical_record audio cue for day 8. Clue anchor: Customs API anomaly log. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d09-marked-map-brine-sealed-manifest",
+    "day": 9,
+    "title": "Crown of Salt - Day 09 marked map",
+    "type": "marked_map",
+    "sourceNpcId": "npc.crown-of-salt-npc-2",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 09. Type: marked_map. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt marked_map audio cue for day 9. Clue anchor: Brine-sealed manifest. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d10-receipt-dockside-cctv-still",
+    "day": 10,
+    "title": "Crown of Salt - Day 10 receipt",
+    "type": "receipt",
+    "sourceNpcId": "npc.crown-of-salt-npc-3",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 10. Type: receipt. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt receipt audio cue for day 10. Clue anchor: Dockside CCTV still. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d11-medical-record-catacomb-symbol-tracing",
+    "day": 11,
+    "title": "Crown of Salt - Day 11 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.crown-of-salt-npc-4",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 11. Type: medical_record. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt medical_record audio cue for day 11. Clue anchor: Catacomb symbol tracing. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d12-shipping-manifest-customs-api-anomaly-log",
+    "day": 12,
+    "title": "Crown of Salt - Day 12 shipping manifest",
+    "type": "shipping_manifest",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 12. Type: shipping_manifest. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt shipping_manifest audio cue for day 12. Clue anchor: Customs API anomaly log. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d12-journal-entry-customs-api-anomaly-log",
+    "day": 12,
+    "title": "Crown of Salt - Day 12 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.crown-of-salt-npc-1",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 12. Type: journal_entry. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt journal_entry audio cue for day 12. Clue anchor: Customs API anomaly log. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d13-police-report-brine-sealed-manifest",
+    "day": 13,
+    "title": "Crown of Salt - Day 13 police report",
+    "type": "police_report",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 13. Type: police_report. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt police_report audio cue for day 13. Clue anchor: Brine-sealed manifest. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d14-handwritten-note-dockside-cctv-still",
+    "day": 14,
+    "title": "Crown of Salt - Day 14 handwritten note",
+    "type": "handwritten_note",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 14. Type: handwritten_note. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt handwritten_note audio cue for day 14. Clue anchor: Dockside CCTV still. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d15-journal-entry-catacomb-symbol-tracing",
+    "day": 15,
+    "title": "Crown of Salt - Day 15 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.crown-of-salt-npc-1",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.danger"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 15. Type: journal_entry. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt journal_entry audio cue for day 15. Clue anchor: Catacomb symbol tracing. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d15-voicemail-transcript-catacomb-symbol-tracing",
+    "day": 15,
+    "title": "Crown of Salt - Day 15 voicemail transcript",
+    "type": "voicemail_transcript",
+    "sourceNpcId": "npc.crown-of-salt-npc-4",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 15. Type: voicemail_transcript. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt voicemail_transcript audio cue for day 15. Clue anchor: Catacomb symbol tracing. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d16-text-message-screenshot-customs-api-anomaly-log",
+    "day": 16,
+    "title": "Crown of Salt - Day 16 text message screenshot",
+    "type": "text_message_screenshot",
+    "sourceNpcId": "npc.crown-of-salt-npc-2",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 16. Type: text_message_screenshot. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt text_message_screenshot audio cue for day 16. Clue anchor: Customs API anomaly log. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d16-security-footage-still-customs-api-anomaly-log",
+    "day": 16,
+    "title": "Crown of Salt - Day 16 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.danger"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 16. Type: security_footage_still. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt security_footage_still audio cue for day 16. Clue anchor: Customs API anomaly log. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d17-call-log-brine-sealed-manifest",
+    "day": 17,
+    "title": "Crown of Salt - Day 17 call log",
+    "type": "call_log",
+    "sourceNpcId": "npc.crown-of-salt-npc-3",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 17. Type: call_log. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt call_log audio cue for day 17. Clue anchor: Brine-sealed manifest. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d17-crime-scene-photo-brine-sealed-manifest",
+    "day": 17,
+    "title": "Crown of Salt - Day 17 crime scene photo",
+    "type": "crime_scene_photo",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 17. Type: crime_scene_photo. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt crime_scene_photo audio cue for day 17. Clue anchor: Brine-sealed manifest. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d18-voicemail-transcript-dockside-cctv-still",
+    "day": 18,
+    "title": "Crown of Salt - Day 18 voicemail transcript",
+    "type": "voicemail_transcript",
+    "sourceNpcId": "npc.crown-of-salt-npc-4",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 18. Type: voicemail_transcript. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt voicemail_transcript audio cue for day 18. Clue anchor: Dockside CCTV still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d18-marked-map-dockside-cctv-still",
+    "day": 18,
+    "title": "Crown of Salt - Day 18 marked map",
+    "type": "marked_map",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 18. Type: marked_map. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt marked_map audio cue for day 18. Clue anchor: Dockside CCTV still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d19-security-footage-still-catacomb-symbol-tracing",
+    "day": 19,
+    "title": "Crown of Salt - Day 19 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 19. Type: security_footage_still. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt security_footage_still audio cue for day 19. Clue anchor: Catacomb symbol tracing. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d19-receipt-catacomb-symbol-tracing",
+    "day": 19,
+    "title": "Crown of Salt - Day 19 receipt",
+    "type": "receipt",
+    "sourceNpcId": "npc.crown-of-salt-npc-1",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 19. Type: receipt. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt receipt audio cue for day 19. Clue anchor: Catacomb symbol tracing. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d20-crime-scene-photo-customs-api-anomaly-log",
+    "day": 20,
+    "title": "Crown of Salt - Day 20 crime scene photo",
+    "type": "crime_scene_photo",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.danger"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 20. Type: crime_scene_photo. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt crime_scene_photo audio cue for day 20. Clue anchor: Customs API anomaly log. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d20-medical-record-customs-api-anomaly-log",
+    "day": 20,
+    "title": "Crown of Salt - Day 20 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.crown-of-salt-npc-2",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 20. Type: medical_record. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt medical_record audio cue for day 20. Clue anchor: Customs API anomaly log. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d21-marked-map-brine-sealed-manifest",
+    "day": 21,
+    "title": "Crown of Salt - Day 21 marked map",
+    "type": "marked_map",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 21. Type: marked_map. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt marked_map audio cue for day 21. Clue anchor: Brine-sealed manifest. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d21-shipping-manifest-brine-sealed-manifest",
+    "day": 21,
+    "title": "Crown of Salt - Day 21 shipping manifest",
+    "type": "shipping_manifest",
+    "sourceNpcId": "npc.crown-of-salt-npc-3",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 21. Type: shipping_manifest. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt shipping_manifest audio cue for day 21. Clue anchor: Brine-sealed manifest. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "crown-of-salt-d22-receipt-dockside-cctv-still",
+    "day": 22,
+    "title": "Crown of Salt - Day 22 receipt",
+    "type": "receipt",
+    "sourceNpcId": "npc.crown-of-salt-npc-1",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 22. Type: receipt. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt receipt audio cue for day 22. Clue anchor: Dockside CCTV still. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d23-medical-record-catacomb-symbol-tracing",
+    "day": 23,
+    "title": "Crown of Salt - Day 23 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.crown-of-salt-npc-2",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 23. Type: medical_record. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt medical_record audio cue for day 23. Clue anchor: Catacomb symbol tracing. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d24-shipping-manifest-customs-api-anomaly-log",
+    "day": 24,
+    "title": "Crown of Salt - Day 24 shipping manifest",
+    "type": "shipping_manifest",
+    "sourceNpcId": "npc.crown-of-salt-npc-3",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 24. Type: shipping_manifest. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt shipping_manifest audio cue for day 24. Clue anchor: Customs API anomaly log. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d24-journal-entry-customs-api-anomaly-log",
+    "day": 24,
+    "title": "Crown of Salt - Day 24 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.resolution"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 24. Type: journal_entry. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt journal_entry audio cue for day 24. Clue anchor: Customs API anomaly log. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d25-police-report-brine-sealed-manifest",
+    "day": 25,
+    "title": "Crown of Salt - Day 25 police report",
+    "type": "police_report",
+    "sourceNpcId": "npc.crown-of-salt-npc-4",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "brine-sealed-manifest",
+      "phase.resolution"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Brine-sealed manifest.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 25. Type: police_report. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt police_report audio cue for day 25. Clue anchor: Brine-sealed manifest. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d26-handwritten-note-dockside-cctv-still",
+    "day": 26,
+    "title": "Crown of Salt - Day 26 handwritten note",
+    "type": "handwritten_note",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "dockside-cctv-still",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 26. Type: handwritten_note. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt handwritten_note audio cue for day 26. Clue anchor: Dockside CCTV still. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d27-journal-entry-catacomb-symbol-tracing",
+    "day": 27,
+    "title": "Crown of Salt - Day 27 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "catacomb-symbol-tracing",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 27. Type: journal_entry. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt journal_entry audio cue for day 27. Clue anchor: Catacomb symbol tracing. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d28-text-message-screenshot-customs-api-anomaly-log",
+    "day": 28,
+    "title": "Crown of Salt - Day 28 text message screenshot",
+    "type": "text_message_screenshot",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 28. Type: text_message_screenshot. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt text_message_screenshot audio cue for day 28. Clue anchor: Customs API anomaly log. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "crown-of-salt-d28-security-footage-still-customs-api-anomaly-log",
+    "day": 28,
+    "title": "Crown of Salt - Day 28 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.crown-of-salt-npc-3",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "customs-api-anomaly-log",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Crown of Salt ARG artifact Day 28. Type: security_footage_still. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Crown of Salt security_footage_still audio cue for day 28. Clue anchor: Customs API anomaly log. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  }
+]

@@ -1,0 +1,1180 @@
+{
+  "storyId": "ward-1908",
+  "title": "Ward 1908 - 7 Day Immersion Sample",
+  "generatedFromCampaignVersion": "arg-v1",
+  "objective": "Demonstrate full daily flow with narrative progression, clues, interactions, puzzle cadence, and immersion-aware personalization.",
+  "days": [
+    {
+      "day": 1,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 01",
+      "narrativeProgression": {
+        "summary": "An intake anomaly lands across multiple channels before dawn.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Night Update",
+        "beatNarrative": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Night Update: A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+          "clueReference": "Intake ledger photo"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Intake ledger photo remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "ward-1908-d01-police-report-intake-ledger-photo",
+          "day": 1,
+          "title": "Ward 1908 - Day 01 police report",
+          "type": "police_report",
+          "sourceNpcId": "npc.ward-1908-npc-1",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "intake-ledger-photo",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Intake ledger photo.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 01. Type: police_report. Clue focus: Intake ledger photo. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 police_report audio cue for day 1. Clue anchor: Intake ledger photo. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-01-detective-brief",
+          "actorId": "npc.ward-1908-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Intake ledger photo and tell me if your last call still stands (none).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-01-witness-ping",
+          "actorId": "npc.ward-1908-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-01-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Intake ledger photo.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "ward-1908-distraction-day-01",
+        "title": "Red Herring 01",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Intake ledger photo with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 02",
+      "narrativeProgression": {
+        "summary": "Metadata drift appears between duplicate files and erodes confidence.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Night Update",
+        "beatNarrative": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Night Update: A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+          "clueReference": "Orderly shift recording"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Orderly shift recording remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "ward-1908-d02-handwritten-note-orderly-shift-recording",
+          "day": 2,
+          "title": "Ward 1908 - Day 02 handwritten note",
+          "type": "handwritten_note",
+          "sourceNpcId": "npc.ward-1908-npc-2",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "orderly-shift-recording",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Orderly shift recording.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 02. Type: handwritten_note. Clue focus: Orderly shift recording. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 handwritten_note audio cue for day 2. Clue anchor: Orderly shift recording. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-02-detective-brief",
+          "actorId": "npc.ward-1908-npc-1",
+          "role": "detective",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Orderly shift recording and tell me if your last call still stands (decision.day_01.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-02-witness-ping",
+          "actorId": "npc.ward-1908-npc-2",
+          "role": "witness",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-02-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 117,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Orderly shift recording.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "ward-1908-puzzle-day-02",
+        "type": "timeline_consistency",
+        "title": "Day 02 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Orderly shift recording.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with ORDE."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "ORDERLY_SHIFT_RECORDING_02"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_02.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 03",
+      "narrativeProgression": {
+        "summary": "A witness account conflicts with dispatch timing by exactly nine minutes.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Night Update",
+        "beatNarrative": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Night Update: A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+          "clueReference": "Basement access override"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Basement access override remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "ward-1908-d03-journal-entry-basement-access-override",
+          "day": 3,
+          "title": "Ward 1908 - Day 03 journal entry",
+          "type": "journal_entry",
+          "sourceNpcId": "npc.ward-1908-npc-3",
+          "threadId": "thread.hidden_truth",
+          "clueTags": [
+            "basement-access-override",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Basement access override.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 03. Type: journal_entry. Clue focus: Basement access override. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 journal_entry audio cue for day 3. Clue anchor: Basement access override. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-03-detective-brief",
+          "actorId": "npc.ward-1908-npc-1",
+          "role": "detective",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 33,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Basement access override and tell me if your last call still stands (decision.day_02.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-03-witness-ping",
+          "actorId": "npc.ward-1908-npc-2",
+          "role": "witness",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-03-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 128,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Basement access override.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-03-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 185,
+            "oddHourWindow": true,
+            "oddHourClock": "00:43"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 04",
+      "narrativeProgression": {
+        "summary": "A dead account sends a fresh attachment with current geotag residue.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Night Update",
+        "beatNarrative": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Night Update: A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+          "clueReference": "Treatment wing floorplan"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Treatment wing floorplan remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "misdirecting",
+          "update": "A plausible shortcut appears: Restore names publicly vs protect descendants privately.",
+          "clueReference": "Treatment wing floorplan"
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "ward-1908-d04-text-message-screenshot-treatment-wing-floorplan",
+          "day": 4,
+          "title": "Ward 1908 - Day 04 text message screenshot",
+          "type": "text_message_screenshot",
+          "sourceNpcId": "npc.ward-1908-npc-4",
+          "threadId": "thread.false_lead",
+          "clueTags": [
+            "treatment-wing-floorplan",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Treatment wing floorplan.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 04. Type: text_message_screenshot. Clue focus: Treatment wing floorplan. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 text_message_screenshot audio cue for day 4. Clue anchor: Treatment wing floorplan. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        },
+        {
+          "id": "ward-1908-d04-security-footage-still-treatment-wing-floorplan",
+          "day": 4,
+          "title": "Ward 1908 - Day 04 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "treatment-wing-floorplan",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Treatment wing floorplan.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 04. Type: security_footage_still. Clue focus: Treatment wing floorplan. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 security_footage_still audio cue for day 4. Clue anchor: Treatment wing floorplan. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-04-detective-brief",
+          "actorId": "npc.ward-1908-npc-1",
+          "role": "detective",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Treatment wing floorplan and tell me if your last call still stands (decision.day_03.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-04-witness-ping",
+          "actorId": "npc.ward-1908-npc-2",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-04-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 139,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Treatment wing floorplan.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "ward-1908-puzzle-day-04",
+        "type": "metadata_diff",
+        "title": "Day 04 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Treatment wing floorplan.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with TREA."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "TREATMENT_WING_FLOORPLAN_04"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_04.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": {
+        "id": "ward-1908-distraction-day-04",
+        "title": "Red Herring 04",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Treatment wing floorplan with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 05",
+      "narrativeProgression": {
+        "summary": "Administrative records reveal prior attempts to bury this case.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Night Update",
+        "beatNarrative": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Night Update: A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+          "clueReference": "Intake ledger photo"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Intake ledger photo remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "ward-1908-d05-call-log-intake-ledger-photo",
+          "day": 5,
+          "title": "Ward 1908 - Day 05 call log",
+          "type": "call_log",
+          "sourceNpcId": "npc.journalist.field",
+          "threadId": "thread.psychological_break",
+          "clueTags": [
+            "intake-ledger-photo",
+            "phase.discovery"
+          ],
+          "misleading": true,
+          "reliabilityScore": 0.42,
+          "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Intake ledger photo.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 05. Type: call_log. Clue focus: Intake ledger photo. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 call_log audio cue for day 5. Clue anchor: Intake ledger photo. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-05-detective-brief",
+          "actorId": "npc.ward-1908-npc-1",
+          "role": "detective",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 12,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Intake ledger photo and tell me if your last call still stands (decision.day_04.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-05-witness-ping",
+          "actorId": "npc.ward-1908-npc-2",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-05-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 150,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Intake ledger photo.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 06",
+      "narrativeProgression": {
+        "summary": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Orderly shift recording"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Orderly shift recording remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "ward-1908-d06-voicemail-transcript-orderly-shift-recording",
+          "day": 6,
+          "title": "Ward 1908 - Day 06 voicemail transcript",
+          "type": "voicemail_transcript",
+          "sourceNpcId": "npc.antagonist.primary",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "orderly-shift-recording",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Orderly shift recording.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 06. Type: voicemail_transcript. Clue focus: Orderly shift recording. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 voicemail_transcript audio cue for day 6. Clue anchor: Orderly shift recording. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-06-detective-brief",
+          "actorId": "npc.ward-1908-npc-1",
+          "role": "detective",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Orderly shift recording and tell me if your last call still stands (decision.day_05.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-06-witness-ping",
+          "actorId": "npc.ward-1908-npc-2",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-06-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 95,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Orderly shift recording.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-06-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 200,
+            "oddHourWindow": true,
+            "oddHourClock": "03:33"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "ward-1908-puzzle-day-06",
+        "type": "cipher",
+        "title": "Day 06 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Orderly shift recording.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with ORDE."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "ORDERLY_SHIFT_RECORDING_06"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_06.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 07",
+      "narrativeProgression": {
+        "summary": "The first branch point forces trust in a source you cannot verify.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Basement access override"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Basement access override remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "ward-1908-d07-security-footage-still-basement-access-override",
+          "day": 7,
+          "title": "Ward 1908 - Day 07 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "basement-access-override",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Basement access override.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Ward 1908 ARG artifact Day 07. Type: security_footage_still. Clue focus: Basement access override. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Ward 1908 security_footage_still audio cue for day 7. Clue anchor: Basement access override. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-07-detective-brief",
+          "actorId": "npc.ward-1908-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Basement access override and tell me if your last call still stands (decision.day_06.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-07-witness-ping",
+          "actorId": "npc.ward-1908-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-07-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Basement access override.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "ward-1908-distraction-day-07",
+        "title": "Red Herring 07",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Basement access override with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    }
+  ]
+}

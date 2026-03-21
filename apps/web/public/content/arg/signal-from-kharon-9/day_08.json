@@ -1,0 +1,277 @@
+{
+  "id": "day_08",
+  "storyId": "signal-from-kharon-9",
+  "day": 8,
+  "week": 2,
+  "phase": "ESCALATION",
+  "phaseLabel": "Escalation & Unease",
+  "headline": "Escalation & Unease - Day 08",
+  "releaseWindow": {
+    "campaignOffsetHours": 168,
+    "oddHourDelivery": false,
+    "preferredOddHourClock": "02:11"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      7
+    ],
+    "requiredFlags": [
+      "flag.day_07.complete"
+    ],
+    "requiredInteractions": [
+      "day-07-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": [
+      {
+        "flag": "decision.day_07.primary",
+        "operator": "exists"
+      }
+    ]
+  },
+  "narrativeProgression": {
+    "summary": "Friendly channels begin echoing antagonist phrasing.",
+    "beatAnchorId": "beat-2",
+    "beatAnchorTitle": "Escalation Signal",
+    "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+    "threatEscalation": "social and informational pressure",
+    "playerInvolvementShift": "analyst to implicated participant"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "active",
+      "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+      "clueReference": "Operator biometric mismatch"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Operator biometric mismatch remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "latent",
+      "update": "Minor anomaly logged but not yet actionable.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "misdirecting",
+      "update": "A plausible shortcut appears: Seal transmission vs weaponize prediction.",
+      "clueReference": "Operator biometric mismatch"
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "building",
+      "update": "Subtle repetition appears in unrelated communications."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "signal-from-kharon-9-d08-crime-scene-photo-operator-biometric-mismatch",
+      "day": 8,
+      "title": "Signal From Kharon-9 - Day 08 crime scene photo",
+      "type": "crime_scene_photo",
+      "sourceNpcId": "npc.signal-from-kharon-9-npc-1",
+      "threadId": "thread.hidden_truth",
+      "clueTags": [
+        "operator-biometric-mismatch",
+        "phase.escalation"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Operator biometric mismatch.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Signal From Kharon-9 ARG artifact Day 08. Type: crime_scene_photo. Clue focus: Operator biometric mismatch. Location: Mountain observatory and subterranean receiver array. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Signal From Kharon-9 crime_scene_photo audio cue for day 8. Clue anchor: Operator biometric mismatch. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    },
+    {
+      "id": "signal-from-kharon-9-d08-medical-record-operator-biometric-mismatch",
+      "day": 8,
+      "title": "Signal From Kharon-9 - Day 08 medical record",
+      "type": "medical_record",
+      "sourceNpcId": "npc.signal-from-kharon-9-npc-4",
+      "threadId": "thread.psychological_break",
+      "clueTags": [
+        "operator-biometric-mismatch",
+        "phase.escalation"
+      ],
+      "misleading": true,
+      "reliabilityScore": 0.42,
+      "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Operator biometric mismatch.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Signal From Kharon-9 ARG artifact Day 08. Type: medical_record. Clue focus: Operator biometric mismatch. Location: Mountain observatory and subterranean receiver array. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Signal From Kharon-9 medical_record audio cue for day 8. Clue anchor: Operator biometric mismatch. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-08-detective-brief",
+      "actorId": "npc.signal-from-kharon-9-npc-1",
+      "role": "detective",
+      "channel": "WHATSAPP",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 33,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Operator biometric mismatch and tell me if your last call still stands (decision.day_07.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-08-witness-ping",
+      "actorId": "npc.signal-from-kharon-9-npc-2",
+      "role": "witness",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 40,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-08-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 117,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Operator biometric mismatch.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-08-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "EMAIL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 169,
+        "oddHourWindow": true,
+        "oddHourClock": "00:43"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "signal-from-kharon-9-puzzle-day-08",
+    "type": "cross_reference",
+    "title": "Day 08 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Operator biometric mismatch.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with OPER."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "OPERATOR_BIOMETRIC_MISMATCH_08"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_08.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+  },
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_08.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_08.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.signal-from-kharon-9-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.signal-from-kharon-9-npc-2",
+        "delta": 0
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

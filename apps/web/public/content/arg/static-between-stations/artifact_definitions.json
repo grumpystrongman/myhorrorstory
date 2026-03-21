@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "static-between-stations-d01-police-report-spectrogram-of-confession-bu",
+    "day": 1,
+    "title": "Static Between Stations - Day 01 police report",
+    "type": "police_report",
+    "sourceNpcId": "npc.static-between-stations-npc-1",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 01. Type: police_report. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations police_report audio cue for day 1. Clue anchor: Spectrogram of confession burst. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d02-handwritten-note-maintenance-ledger-anomaly",
+    "day": 2,
+    "title": "Static Between Stations - Day 02 handwritten note",
+    "type": "handwritten_note",
+    "sourceNpcId": "npc.static-between-stations-npc-2",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 02. Type: handwritten_note. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations handwritten_note audio cue for day 2. Clue anchor: Maintenance ledger anomaly. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d03-journal-entry-turnstile-camera-still",
+    "day": 3,
+    "title": "Static Between Stations - Day 03 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.static-between-stations-npc-3",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 03. Type: journal_entry. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations journal_entry audio cue for day 3. Clue anchor: Turnstile camera still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d04-text-message-screenshot-relay-room-access-hash",
+    "day": 4,
+    "title": "Static Between Stations - Day 04 text message screenshot",
+    "type": "text_message_screenshot",
+    "sourceNpcId": "npc.static-between-stations-npc-4",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 04. Type: text_message_screenshot. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations text_message_screenshot audio cue for day 4. Clue anchor: Relay room access hash. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d04-security-footage-still-relay-room-access-hash",
+    "day": 4,
+    "title": "Static Between Stations - Day 04 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 04. Type: security_footage_still. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations security_footage_still audio cue for day 4. Clue anchor: Relay room access hash. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d05-call-log-spectrogram-of-confession-bu",
+    "day": 5,
+    "title": "Static Between Stations - Day 05 call log",
+    "type": "call_log",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.discovery"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 05. Type: call_log. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations call_log audio cue for day 5. Clue anchor: Spectrogram of confession burst. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d06-voicemail-transcript-maintenance-ledger-anomaly",
+    "day": 6,
+    "title": "Static Between Stations - Day 06 voicemail transcript",
+    "type": "voicemail_transcript",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 06. Type: voicemail_transcript. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations voicemail_transcript audio cue for day 6. Clue anchor: Maintenance ledger anomaly. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d07-security-footage-still-turnstile-camera-still",
+    "day": 7,
+    "title": "Static Between Stations - Day 07 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.discovery"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 07. Type: security_footage_still. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations security_footage_still audio cue for day 7. Clue anchor: Turnstile camera still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d08-crime-scene-photo-relay-room-access-hash",
+    "day": 8,
+    "title": "Static Between Stations - Day 08 crime scene photo",
+    "type": "crime_scene_photo",
+    "sourceNpcId": "npc.static-between-stations-npc-1",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 08. Type: crime_scene_photo. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations crime_scene_photo audio cue for day 8. Clue anchor: Relay room access hash. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d08-medical-record-relay-room-access-hash",
+    "day": 8,
+    "title": "Static Between Stations - Day 08 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.static-between-stations-npc-4",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 08. Type: medical_record. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations medical_record audio cue for day 8. Clue anchor: Relay room access hash. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d09-marked-map-spectrogram-of-confession-bu",
+    "day": 9,
+    "title": "Static Between Stations - Day 09 marked map",
+    "type": "marked_map",
+    "sourceNpcId": "npc.static-between-stations-npc-2",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 09. Type: marked_map. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations marked_map audio cue for day 9. Clue anchor: Spectrogram of confession burst. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d10-receipt-maintenance-ledger-anomaly",
+    "day": 10,
+    "title": "Static Between Stations - Day 10 receipt",
+    "type": "receipt",
+    "sourceNpcId": "npc.static-between-stations-npc-3",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 10. Type: receipt. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations receipt audio cue for day 10. Clue anchor: Maintenance ledger anomaly. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d11-medical-record-turnstile-camera-still",
+    "day": 11,
+    "title": "Static Between Stations - Day 11 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.static-between-stations-npc-4",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 11. Type: medical_record. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations medical_record audio cue for day 11. Clue anchor: Turnstile camera still. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d12-shipping-manifest-relay-room-access-hash",
+    "day": 12,
+    "title": "Static Between Stations - Day 12 shipping manifest",
+    "type": "shipping_manifest",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.escalation"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 12. Type: shipping_manifest. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations shipping_manifest audio cue for day 12. Clue anchor: Relay room access hash. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d12-journal-entry-relay-room-access-hash",
+    "day": 12,
+    "title": "Static Between Stations - Day 12 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.static-between-stations-npc-1",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 12. Type: journal_entry. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations journal_entry audio cue for day 12. Clue anchor: Relay room access hash. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d13-police-report-spectrogram-of-confession-bu",
+    "day": 13,
+    "title": "Static Between Stations - Day 13 police report",
+    "type": "police_report",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 13. Type: police_report. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations police_report audio cue for day 13. Clue anchor: Spectrogram of confession burst. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d14-handwritten-note-maintenance-ledger-anomaly",
+    "day": 14,
+    "title": "Static Between Stations - Day 14 handwritten note",
+    "type": "handwritten_note",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.escalation"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 14. Type: handwritten_note. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations handwritten_note audio cue for day 14. Clue anchor: Maintenance ledger anomaly. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d15-journal-entry-turnstile-camera-still",
+    "day": 15,
+    "title": "Static Between Stations - Day 15 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.static-between-stations-npc-1",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.danger"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 15. Type: journal_entry. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations journal_entry audio cue for day 15. Clue anchor: Turnstile camera still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d15-voicemail-transcript-turnstile-camera-still",
+    "day": 15,
+    "title": "Static Between Stations - Day 15 voicemail transcript",
+    "type": "voicemail_transcript",
+    "sourceNpcId": "npc.static-between-stations-npc-4",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 15. Type: voicemail_transcript. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations voicemail_transcript audio cue for day 15. Clue anchor: Turnstile camera still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d16-text-message-screenshot-relay-room-access-hash",
+    "day": 16,
+    "title": "Static Between Stations - Day 16 text message screenshot",
+    "type": "text_message_screenshot",
+    "sourceNpcId": "npc.static-between-stations-npc-2",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 16. Type: text_message_screenshot. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations text_message_screenshot audio cue for day 16. Clue anchor: Relay room access hash. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d16-security-footage-still-relay-room-access-hash",
+    "day": 16,
+    "title": "Static Between Stations - Day 16 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.danger"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 16. Type: security_footage_still. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations security_footage_still audio cue for day 16. Clue anchor: Relay room access hash. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d17-call-log-spectrogram-of-confession-bu",
+    "day": 17,
+    "title": "Static Between Stations - Day 17 call log",
+    "type": "call_log",
+    "sourceNpcId": "npc.static-between-stations-npc-3",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 17. Type: call_log. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations call_log audio cue for day 17. Clue anchor: Spectrogram of confession burst. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d17-crime-scene-photo-spectrogram-of-confession-bu",
+    "day": 17,
+    "title": "Static Between Stations - Day 17 crime scene photo",
+    "type": "crime_scene_photo",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 17. Type: crime_scene_photo. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations crime_scene_photo audio cue for day 17. Clue anchor: Spectrogram of confession burst. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d18-voicemail-transcript-maintenance-ledger-anomaly",
+    "day": 18,
+    "title": "Static Between Stations - Day 18 voicemail transcript",
+    "type": "voicemail_transcript",
+    "sourceNpcId": "npc.static-between-stations-npc-4",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 18. Type: voicemail_transcript. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations voicemail_transcript audio cue for day 18. Clue anchor: Maintenance ledger anomaly. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d18-marked-map-maintenance-ledger-anomaly",
+    "day": 18,
+    "title": "Static Between Stations - Day 18 marked map",
+    "type": "marked_map",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 18. Type: marked_map. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations marked_map audio cue for day 18. Clue anchor: Maintenance ledger anomaly. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d19-security-footage-still-turnstile-camera-still",
+    "day": 19,
+    "title": "Static Between Stations - Day 19 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 19. Type: security_footage_still. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations security_footage_still audio cue for day 19. Clue anchor: Turnstile camera still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d19-receipt-turnstile-camera-still",
+    "day": 19,
+    "title": "Static Between Stations - Day 19 receipt",
+    "type": "receipt",
+    "sourceNpcId": "npc.static-between-stations-npc-1",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 19. Type: receipt. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations receipt audio cue for day 19. Clue anchor: Turnstile camera still. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d20-crime-scene-photo-relay-room-access-hash",
+    "day": 20,
+    "title": "Static Between Stations - Day 20 crime scene photo",
+    "type": "crime_scene_photo",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.danger"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 20. Type: crime_scene_photo. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations crime_scene_photo audio cue for day 20. Clue anchor: Relay room access hash. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d20-medical-record-relay-room-access-hash",
+    "day": 20,
+    "title": "Static Between Stations - Day 20 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.static-between-stations-npc-2",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 20. Type: medical_record. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations medical_record audio cue for day 20. Clue anchor: Relay room access hash. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d21-marked-map-spectrogram-of-confession-bu",
+    "day": 21,
+    "title": "Static Between Stations - Day 21 marked map",
+    "type": "marked_map",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 21. Type: marked_map. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations marked_map audio cue for day 21. Clue anchor: Spectrogram of confession burst. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d21-shipping-manifest-spectrogram-of-confession-bu",
+    "day": 21,
+    "title": "Static Between Stations - Day 21 shipping manifest",
+    "type": "shipping_manifest",
+    "sourceNpcId": "npc.static-between-stations-npc-3",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.danger"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 21. Type: shipping_manifest. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Danger & Direct Involvement. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations shipping_manifest audio cue for day 21. Clue anchor: Spectrogram of confession burst. Phase: Danger & Direct Involvement. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 28
+    }
+  },
+  {
+    "id": "static-between-stations-d22-receipt-maintenance-ledger-anomaly",
+    "day": 22,
+    "title": "Static Between Stations - Day 22 receipt",
+    "type": "receipt",
+    "sourceNpcId": "npc.static-between-stations-npc-1",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 22. Type: receipt. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations receipt audio cue for day 22. Clue anchor: Maintenance ledger anomaly. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d23-medical-record-turnstile-camera-still",
+    "day": 23,
+    "title": "Static Between Stations - Day 23 medical record",
+    "type": "medical_record",
+    "sourceNpcId": "npc.static-between-stations-npc-2",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 23. Type: medical_record. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations medical_record audio cue for day 23. Clue anchor: Turnstile camera still. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d24-shipping-manifest-relay-room-access-hash",
+    "day": 24,
+    "title": "Static Between Stations - Day 24 shipping manifest",
+    "type": "shipping_manifest",
+    "sourceNpcId": "npc.static-between-stations-npc-3",
+    "threadId": "thread.false_lead",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 24. Type: shipping_manifest. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations shipping_manifest audio cue for day 24. Clue anchor: Relay room access hash. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d24-journal-entry-relay-room-access-hash",
+    "day": 24,
+    "title": "Static Between Stations - Day 24 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.resolution"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 24. Type: journal_entry. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations journal_entry audio cue for day 24. Clue anchor: Relay room access hash. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d25-police-report-spectrogram-of-confession-bu",
+    "day": 25,
+    "title": "Static Between Stations - Day 25 police report",
+    "type": "police_report",
+    "sourceNpcId": "npc.static-between-stations-npc-4",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "spectrogram-of-confession-burst",
+      "phase.resolution"
+    ],
+    "misleading": true,
+    "reliabilityScore": 0.42,
+    "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Spectrogram of confession burst.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 25. Type: police_report. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations police_report audio cue for day 25. Clue anchor: Spectrogram of confession burst. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d26-handwritten-note-maintenance-ledger-anomaly",
+    "day": 26,
+    "title": "Static Between Stations - Day 26 handwritten note",
+    "type": "handwritten_note",
+    "sourceNpcId": "npc.journalist.field",
+    "threadId": "thread.main_investigation",
+    "clueTags": [
+      "maintenance-ledger-anomaly",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 26. Type: handwritten_note. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations handwritten_note audio cue for day 26. Clue anchor: Maintenance ledger anomaly. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d27-journal-entry-turnstile-camera-still",
+    "day": 27,
+    "title": "Static Between Stations - Day 27 journal entry",
+    "type": "journal_entry",
+    "sourceNpcId": "npc.antagonist.primary",
+    "threadId": "thread.side_mystery",
+    "clueTags": [
+      "turnstile-camera-still",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 27. Type: journal_entry. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations journal_entry audio cue for day 27. Clue anchor: Turnstile camera still. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d28-text-message-screenshot-relay-room-access-hash",
+    "day": 28,
+    "title": "Static Between Stations - Day 28 text message screenshot",
+    "type": "text_message_screenshot",
+    "sourceNpcId": "npc.unknown.contact",
+    "threadId": "thread.hidden_truth",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 28. Type: text_message_screenshot. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations text_message_screenshot audio cue for day 28. Clue anchor: Relay room access hash. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  },
+  {
+    "id": "static-between-stations-d28-security-footage-still-relay-room-access-hash",
+    "day": 28,
+    "title": "Static Between Stations - Day 28 security footage still",
+    "type": "security_footage_still",
+    "sourceNpcId": "npc.static-between-stations-npc-3",
+    "threadId": "thread.psychological_break",
+    "clueTags": [
+      "relay-room-access-hash",
+      "phase.resolution"
+    ],
+    "misleading": false,
+    "reliabilityScore": 0.84,
+    "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+    "imagePrompt": {
+      "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+      "prompt": "Static Between Stations ARG artifact Day 28. Type: security_footage_still. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Resolution or Psychological Break. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+      "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+    },
+    "audioPrompt": {
+      "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+      "prompt": "Static Between Stations security_footage_still audio cue for day 28. Clue anchor: Relay room access hash. Phase: Resolution or Psychological Break. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+      "durationSeconds": 18
+    }
+  }
+]

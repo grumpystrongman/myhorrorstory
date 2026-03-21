@@ -1,0 +1,1180 @@
+{
+  "storyId": "crown-of-salt",
+  "title": "Crown of Salt - 7 Day Immersion Sample",
+  "generatedFromCampaignVersion": "arg-v1",
+  "objective": "Demonstrate full daily flow with narrative progression, clues, interactions, puzzle cadence, and immersion-aware personalization.",
+  "days": [
+    {
+      "day": 1,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 01",
+      "narrativeProgression": {
+        "summary": "An intake anomaly lands across multiple channels before dawn.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Manifest Drift",
+        "beatNarrative": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Manifest Drift: Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+          "clueReference": "Brine-sealed manifest"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Brine-sealed manifest remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "crown-of-salt-d01-police-report-brine-sealed-manifest",
+          "day": 1,
+          "title": "Crown of Salt - Day 01 police report",
+          "type": "police_report",
+          "sourceNpcId": "npc.crown-of-salt-npc-1",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "brine-sealed-manifest",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Brine-sealed manifest.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 01. Type: police_report. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt police_report audio cue for day 1. Clue anchor: Brine-sealed manifest. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-01-detective-brief",
+          "actorId": "npc.crown-of-salt-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Brine-sealed manifest and tell me if your last call still stands (none).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-01-witness-ping",
+          "actorId": "npc.crown-of-salt-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-01-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Brine-sealed manifest.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "crown-of-salt-distraction-day-01",
+        "title": "Red Herring 01",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Brine-sealed manifest with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 02",
+      "narrativeProgression": {
+        "summary": "Metadata drift appears between duplicate files and erodes confidence.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Manifest Drift",
+        "beatNarrative": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Manifest Drift: Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+          "clueReference": "Dockside CCTV still"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Dockside CCTV still remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "crown-of-salt-d02-handwritten-note-dockside-cctv-still",
+          "day": 2,
+          "title": "Crown of Salt - Day 02 handwritten note",
+          "type": "handwritten_note",
+          "sourceNpcId": "npc.crown-of-salt-npc-2",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "dockside-cctv-still",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 02. Type: handwritten_note. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt handwritten_note audio cue for day 2. Clue anchor: Dockside CCTV still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-02-detective-brief",
+          "actorId": "npc.crown-of-salt-npc-1",
+          "role": "detective",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Dockside CCTV still and tell me if your last call still stands (decision.day_01.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-02-witness-ping",
+          "actorId": "npc.crown-of-salt-npc-2",
+          "role": "witness",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-02-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 117,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Dockside CCTV still.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "crown-of-salt-puzzle-day-02",
+        "type": "timeline_consistency",
+        "title": "Day 02 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Dockside CCTV still.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with DOCK."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "DOCKSIDE_CCTV_STILL_02"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_02.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 03",
+      "narrativeProgression": {
+        "summary": "A witness account conflicts with dispatch timing by exactly nine minutes.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Manifest Drift",
+        "beatNarrative": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Manifest Drift: Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+          "clueReference": "Catacomb symbol tracing"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Catacomb symbol tracing remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "crown-of-salt-d03-journal-entry-catacomb-symbol-tracing",
+          "day": 3,
+          "title": "Crown of Salt - Day 03 journal entry",
+          "type": "journal_entry",
+          "sourceNpcId": "npc.crown-of-salt-npc-3",
+          "threadId": "thread.hidden_truth",
+          "clueTags": [
+            "catacomb-symbol-tracing",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 03. Type: journal_entry. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt journal_entry audio cue for day 3. Clue anchor: Catacomb symbol tracing. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-03-detective-brief",
+          "actorId": "npc.crown-of-salt-npc-1",
+          "role": "detective",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 33,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Catacomb symbol tracing and tell me if your last call still stands (decision.day_02.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-03-witness-ping",
+          "actorId": "npc.crown-of-salt-npc-2",
+          "role": "witness",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-03-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 128,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Catacomb symbol tracing.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-03-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 185,
+            "oddHourWindow": true,
+            "oddHourClock": "00:43"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 04",
+      "narrativeProgression": {
+        "summary": "A dead account sends a fresh attachment with current geotag residue.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Manifest Drift",
+        "beatNarrative": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Manifest Drift: Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+          "clueReference": "Customs API anomaly log"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Customs API anomaly log remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "misdirecting",
+          "update": "A plausible shortcut appears: Expose logistics vs sever ritual command.",
+          "clueReference": "Customs API anomaly log"
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "crown-of-salt-d04-text-message-screenshot-customs-api-anomaly-log",
+          "day": 4,
+          "title": "Crown of Salt - Day 04 text message screenshot",
+          "type": "text_message_screenshot",
+          "sourceNpcId": "npc.crown-of-salt-npc-4",
+          "threadId": "thread.false_lead",
+          "clueTags": [
+            "customs-api-anomaly-log",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 04. Type: text_message_screenshot. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt text_message_screenshot audio cue for day 4. Clue anchor: Customs API anomaly log. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        },
+        {
+          "id": "crown-of-salt-d04-security-footage-still-customs-api-anomaly-log",
+          "day": 4,
+          "title": "Crown of Salt - Day 04 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "customs-api-anomaly-log",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Customs API anomaly log.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 04. Type: security_footage_still. Clue focus: Customs API anomaly log. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt security_footage_still audio cue for day 4. Clue anchor: Customs API anomaly log. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-04-detective-brief",
+          "actorId": "npc.crown-of-salt-npc-1",
+          "role": "detective",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Customs API anomaly log and tell me if your last call still stands (decision.day_03.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-04-witness-ping",
+          "actorId": "npc.crown-of-salt-npc-2",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-04-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 139,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Customs API anomaly log.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "crown-of-salt-puzzle-day-04",
+        "type": "metadata_diff",
+        "title": "Day 04 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Customs API anomaly log.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with CUST."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "CUSTOMS_API_ANOMALY_LOG_04"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_04.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": {
+        "id": "crown-of-salt-distraction-day-04",
+        "title": "Red Herring 04",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Customs API anomaly log with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 05",
+      "narrativeProgression": {
+        "summary": "Administrative records reveal prior attempts to bury this case.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Manifest Drift",
+        "beatNarrative": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Manifest Drift: Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+          "clueReference": "Brine-sealed manifest"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Brine-sealed manifest remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "crown-of-salt-d05-call-log-brine-sealed-manifest",
+          "day": 5,
+          "title": "Crown of Salt - Day 05 call log",
+          "type": "call_log",
+          "sourceNpcId": "npc.journalist.field",
+          "threadId": "thread.psychological_break",
+          "clueTags": [
+            "brine-sealed-manifest",
+            "phase.discovery"
+          ],
+          "misleading": true,
+          "reliabilityScore": 0.42,
+          "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Brine-sealed manifest.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 05. Type: call_log. Clue focus: Brine-sealed manifest. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt call_log audio cue for day 5. Clue anchor: Brine-sealed manifest. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-05-detective-brief",
+          "actorId": "npc.crown-of-salt-npc-1",
+          "role": "detective",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 12,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Brine-sealed manifest and tell me if your last call still stands (decision.day_04.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-05-witness-ping",
+          "actorId": "npc.crown-of-salt-npc-2",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-05-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 150,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Brine-sealed manifest.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 06",
+      "narrativeProgression": {
+        "summary": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Dockside CCTV still"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Dockside CCTV still remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "crown-of-salt-d06-voicemail-transcript-dockside-cctv-still",
+          "day": 6,
+          "title": "Crown of Salt - Day 06 voicemail transcript",
+          "type": "voicemail_transcript",
+          "sourceNpcId": "npc.antagonist.primary",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "dockside-cctv-still",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Dockside CCTV still.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 06. Type: voicemail_transcript. Clue focus: Dockside CCTV still. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt voicemail_transcript audio cue for day 6. Clue anchor: Dockside CCTV still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-06-detective-brief",
+          "actorId": "npc.crown-of-salt-npc-1",
+          "role": "detective",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Dockside CCTV still and tell me if your last call still stands (decision.day_05.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-06-witness-ping",
+          "actorId": "npc.crown-of-salt-npc-2",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-06-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 95,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Dockside CCTV still.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-06-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 200,
+            "oddHourWindow": true,
+            "oddHourClock": "03:33"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "crown-of-salt-puzzle-day-06",
+        "type": "cipher",
+        "title": "Day 06 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Dockside CCTV still.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with DOCK."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "DOCKSIDE_CCTV_STILL_06"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_06.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 07",
+      "narrativeProgression": {
+        "summary": "The first branch point forces trust in a source you cannot verify.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Catacomb symbol tracing"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Catacomb symbol tracing remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "crown-of-salt-d07-security-footage-still-catacomb-symbol-tracing",
+          "day": 7,
+          "title": "Crown of Salt - Day 07 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "catacomb-symbol-tracing",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Catacomb symbol tracing.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Crown of Salt ARG artifact Day 07. Type: security_footage_still. Clue focus: Catacomb symbol tracing. Location: Port authority archives and salt catacombs. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Crown of Salt security_footage_still audio cue for day 7. Clue anchor: Catacomb symbol tracing. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-07-detective-brief",
+          "actorId": "npc.crown-of-salt-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Catacomb symbol tracing and tell me if your last call still stands (decision.day_06.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-07-witness-ping",
+          "actorId": "npc.crown-of-salt-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-07-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Catacomb symbol tracing.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "crown-of-salt-distraction-day-07",
+        "title": "Red Herring 07",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Catacomb symbol tracing with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    }
+  ]
+}

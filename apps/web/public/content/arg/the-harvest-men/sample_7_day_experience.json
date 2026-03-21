@@ -1,0 +1,1180 @@
+{
+  "storyId": "the-harvest-men",
+  "title": "The Harvest Men - 7 Day Immersion Sample",
+  "generatedFromCampaignVersion": "arg-v1",
+  "objective": "Demonstrate full daily flow with narrative progression, clues, interactions, puzzle cadence, and immersion-aware personalization.",
+  "days": [
+    {
+      "day": 1,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 01",
+      "narrativeProgression": {
+        "summary": "An intake anomaly lands across multiple channels before dawn.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Dusk Selection",
+        "beatNarrative": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Dusk Selection: Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+          "clueReference": "Blood-soil composition panel"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Blood-soil composition panel remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "the-harvest-men-d01-police-report-blood-soil-composition-panel",
+          "day": 1,
+          "title": "The Harvest Men - Day 01 police report",
+          "type": "police_report",
+          "sourceNpcId": "npc.the-harvest-men-npc-1",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "blood-soil-composition-panel",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Blood-soil composition panel.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 01. Type: police_report. Clue focus: Blood-soil composition panel. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men police_report audio cue for day 1. Clue anchor: Blood-soil composition panel. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-01-detective-brief",
+          "actorId": "npc.the-harvest-men-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (none).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-01-witness-ping",
+          "actorId": "npc.the-harvest-men-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-01-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "the-harvest-men-distraction-day-01",
+        "title": "Red Herring 01",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Blood-soil composition panel with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 02",
+      "narrativeProgression": {
+        "summary": "Metadata drift appears between duplicate files and erodes confidence.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Dusk Selection",
+        "beatNarrative": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Dusk Selection: Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+          "clueReference": "Festival lantern route map"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Festival lantern route map remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "the-harvest-men-d02-handwritten-note-festival-lantern-route-map",
+          "day": 2,
+          "title": "The Harvest Men - Day 02 handwritten note",
+          "type": "handwritten_note",
+          "sourceNpcId": "npc.the-harvest-men-npc-2",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "festival-lantern-route-map",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 02. Type: handwritten_note. Clue focus: Festival lantern route map. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men handwritten_note audio cue for day 2. Clue anchor: Festival lantern route map. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-02-detective-brief",
+          "actorId": "npc.the-harvest-men-npc-1",
+          "role": "detective",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_01.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-02-witness-ping",
+          "actorId": "npc.the-harvest-men-npc-2",
+          "role": "witness",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-02-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 117,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "the-harvest-men-puzzle-day-02",
+        "type": "timeline_consistency",
+        "title": "Day 02 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Festival lantern route map.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with FEST."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "FESTIVAL_LANTERN_ROUTE_MAP_02"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_02.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 03",
+      "narrativeProgression": {
+        "summary": "A witness account conflicts with dispatch timing by exactly nine minutes.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Dusk Selection",
+        "beatNarrative": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Dusk Selection: Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+          "clueReference": "Runaway voice memo"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Runaway voice memo remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "the-harvest-men-d03-journal-entry-runaway-voice-memo",
+          "day": 3,
+          "title": "The Harvest Men - Day 03 journal entry",
+          "type": "journal_entry",
+          "sourceNpcId": "npc.the-harvest-men-npc-3",
+          "threadId": "thread.hidden_truth",
+          "clueTags": [
+            "runaway-voice-memo",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 03. Type: journal_entry. Clue focus: Runaway voice memo. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men journal_entry audio cue for day 3. Clue anchor: Runaway voice memo. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-03-detective-brief",
+          "actorId": "npc.the-harvest-men-npc-1",
+          "role": "detective",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 33,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_02.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-03-witness-ping",
+          "actorId": "npc.the-harvest-men-npc-2",
+          "role": "witness",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-03-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 128,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-03-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 185,
+            "oddHourWindow": true,
+            "oddHourClock": "00:43"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 04",
+      "narrativeProgression": {
+        "summary": "A dead account sends a fresh attachment with current geotag residue.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Dusk Selection",
+        "beatNarrative": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Dusk Selection: Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+          "clueReference": "Mask stitch microscopy"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Mask stitch microscopy remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "misdirecting",
+          "update": "A plausible shortcut appears: Break rite now vs infiltrate final rite.",
+          "clueReference": "Mask stitch microscopy"
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "the-harvest-men-d04-text-message-screenshot-mask-stitch-microscopy",
+          "day": 4,
+          "title": "The Harvest Men - Day 04 text message screenshot",
+          "type": "text_message_screenshot",
+          "sourceNpcId": "npc.the-harvest-men-npc-4",
+          "threadId": "thread.false_lead",
+          "clueTags": [
+            "mask-stitch-microscopy",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 04. Type: text_message_screenshot. Clue focus: Mask stitch microscopy. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men text_message_screenshot audio cue for day 4. Clue anchor: Mask stitch microscopy. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        },
+        {
+          "id": "the-harvest-men-d04-security-footage-still-mask-stitch-microscopy",
+          "day": 4,
+          "title": "The Harvest Men - Day 04 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "mask-stitch-microscopy",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Mask stitch microscopy.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 04. Type: security_footage_still. Clue focus: Mask stitch microscopy. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men security_footage_still audio cue for day 4. Clue anchor: Mask stitch microscopy. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-04-detective-brief",
+          "actorId": "npc.the-harvest-men-npc-1",
+          "role": "detective",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Mask stitch microscopy and tell me if your last call still stands (decision.day_03.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-04-witness-ping",
+          "actorId": "npc.the-harvest-men-npc-2",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-04-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 139,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Mask stitch microscopy.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "the-harvest-men-puzzle-day-04",
+        "type": "metadata_diff",
+        "title": "Day 04 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Mask stitch microscopy.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with MASK."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "MASK_STITCH_MICROSCOPY_04"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_04.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": {
+        "id": "the-harvest-men-distraction-day-04",
+        "title": "Red Herring 04",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Mask stitch microscopy with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 05",
+      "narrativeProgression": {
+        "summary": "Administrative records reveal prior attempts to bury this case.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Dusk Selection",
+        "beatNarrative": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Dusk Selection: Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+          "clueReference": "Blood-soil composition panel"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Blood-soil composition panel remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "the-harvest-men-d05-call-log-blood-soil-composition-panel",
+          "day": 5,
+          "title": "The Harvest Men - Day 05 call log",
+          "type": "call_log",
+          "sourceNpcId": "npc.journalist.field",
+          "threadId": "thread.psychological_break",
+          "clueTags": [
+            "blood-soil-composition-panel",
+            "phase.discovery"
+          ],
+          "misleading": true,
+          "reliabilityScore": 0.42,
+          "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Blood-soil composition panel.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 05. Type: call_log. Clue focus: Blood-soil composition panel. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men call_log audio cue for day 5. Clue anchor: Blood-soil composition panel. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-05-detective-brief",
+          "actorId": "npc.the-harvest-men-npc-1",
+          "role": "detective",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 12,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Blood-soil composition panel and tell me if your last call still stands (decision.day_04.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-05-witness-ping",
+          "actorId": "npc.the-harvest-men-npc-2",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-05-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 150,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Blood-soil composition panel.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 06",
+      "narrativeProgression": {
+        "summary": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Festival lantern route map"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Festival lantern route map remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "the-harvest-men-d06-voicemail-transcript-festival-lantern-route-map",
+          "day": 6,
+          "title": "The Harvest Men - Day 06 voicemail transcript",
+          "type": "voicemail_transcript",
+          "sourceNpcId": "npc.antagonist.primary",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "festival-lantern-route-map",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Festival lantern route map.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 06. Type: voicemail_transcript. Clue focus: Festival lantern route map. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men voicemail_transcript audio cue for day 6. Clue anchor: Festival lantern route map. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-06-detective-brief",
+          "actorId": "npc.the-harvest-men-npc-1",
+          "role": "detective",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Festival lantern route map and tell me if your last call still stands (decision.day_05.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-06-witness-ping",
+          "actorId": "npc.the-harvest-men-npc-2",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-06-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 95,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Festival lantern route map.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-06-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 200,
+            "oddHourWindow": true,
+            "oddHourClock": "03:33"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "the-harvest-men-puzzle-day-06",
+        "type": "cipher",
+        "title": "Day 06 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Festival lantern route map.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with FEST."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "FESTIVAL_LANTERN_ROUTE_MAP_06"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_06.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 07",
+      "narrativeProgression": {
+        "summary": "The first branch point forces trust in a source you cannot verify.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Runaway voice memo"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Runaway voice memo remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "the-harvest-men-d07-security-footage-still-runaway-voice-memo",
+          "day": 7,
+          "title": "The Harvest Men - Day 07 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "runaway-voice-memo",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Runaway voice memo.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "The Harvest Men ARG artifact Day 07. Type: security_footage_still. Clue focus: Runaway voice memo. Location: Isolated valley communes and threshing grounds. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "The Harvest Men security_footage_still audio cue for day 7. Clue anchor: Runaway voice memo. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-07-detective-brief",
+          "actorId": "npc.the-harvest-men-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Runaway voice memo and tell me if your last call still stands (decision.day_06.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-07-witness-ping",
+          "actorId": "npc.the-harvest-men-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-07-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Runaway voice memo.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "the-harvest-men-distraction-day-07",
+        "title": "Red Herring 07",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Runaway voice memo with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    }
+  ]
+}

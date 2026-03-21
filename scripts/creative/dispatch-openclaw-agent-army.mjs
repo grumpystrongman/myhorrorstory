@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const repoRoot = process.cwd();
-const jobsPath = join(repoRoot, 'docs', 'operations', 'openclaw-agent-army-jobs.json');
+const defaultJobsPath = join(repoRoot, 'docs', 'operations', 'openclaw-agent-army-jobs.json');
 const jsonReportPath = join(
   repoRoot,
   'docs',
@@ -23,20 +23,24 @@ function parseArgs() {
   const limitIndex = args.indexOf('--limit');
   const startIndex = args.indexOf('--start');
   const retriesIndex = args.indexOf('--max-retries');
+  const jobsIndex = args.indexOf('--jobs');
 
   const limitRaw = limitIndex >= 0 ? args[limitIndex + 1] : undefined;
   const startRaw = startIndex >= 0 ? args[startIndex + 1] : undefined;
   const retriesRaw = retriesIndex >= 0 ? args[retriesIndex + 1] : undefined;
+  const jobsRaw = jobsIndex >= 0 ? args[jobsIndex + 1] : undefined;
   const limit = Number.isFinite(Number(limitRaw)) ? Math.max(1, Number(limitRaw)) : null;
   const start = Number.isFinite(Number(startRaw)) ? Math.max(0, Number(startRaw)) : 0;
   const maxRetries = Number.isFinite(Number(retriesRaw)) ? Math.max(0, Number(retriesRaw)) : 2;
+  const jobsPath = jobsRaw ? join(repoRoot, jobsRaw) : defaultJobsPath;
 
   return {
     execute,
     strictStructuredOutput,
     limit,
     start,
-    maxRetries
+    maxRetries,
+    jobsPath
   };
 }
 
@@ -196,6 +200,7 @@ function toMarkdown(report) {
   lines.push('');
   lines.push(`Generated: ${report.generatedAt}`);
   lines.push(`Mode: ${report.mode}`);
+  lines.push(`Jobs file: ${report.jobsPath}`);
   lines.push(`Strict structured output: ${report.strictStructuredOutput}`);
   lines.push(`Max retries: ${report.maxRetries}`);
   lines.push(`Jobs considered: ${report.jobsConsidered}`);
@@ -229,7 +234,7 @@ function toMarkdown(report) {
 
 async function main() {
   const options = parseArgs();
-  const raw = await readFile(jobsPath, 'utf8');
+  const raw = await readFile(options.jobsPath, 'utf8');
   const jobsDoc = JSON.parse(raw);
   const jobs = Array.isArray(jobsDoc.jobs) ? jobsDoc.jobs : [];
 
@@ -304,6 +309,7 @@ async function main() {
   const report = {
     generatedAt: new Date().toISOString(),
     mode,
+    jobsPath: options.jobsPath,
     strictStructuredOutput: options.strictStructuredOutput,
     maxRetries: options.maxRetries,
     jobsConsidered: jobs.length,

@@ -18,6 +18,8 @@ import {
   type DramaResponseOption,
   type SessionState
 } from '../lib/play-session';
+import type { ArgCampaignManifest, ArgDayPackage } from '../lib/arg-campaign';
+import { adaptArgToDramaPackage, type ArgNpcProfile } from '../lib/arg-to-drama';
 import { getLaunchCaseById } from '../lib/launch-catalog';
 import {
   useEffect,
@@ -86,6 +88,32 @@ function inferResponseOptionFromText(
   }
 
   return bestOption;
+}
+
+async function fetchJson<T>(url: string): Promise<T> {
+  const response = await fetch(url, { cache: 'no-store' });
+  if (!response.ok) {
+    throw new Error(`Failed to load ${url}`);
+  }
+  return (await response.json()) as T;
+}
+
+async function loadArgAsDramaPackage(storyId: string): Promise<DramaPackage | null> {
+  try {
+    const campaign = await fetchJson<ArgCampaignManifest>(`/content/arg/${storyId}/campaign.json`);
+    const dayFiles = campaign.fileManifest?.days ?? [];
+    if (dayFiles.length === 0) {
+      return null;
+    }
+
+    const dayResults = await Promise.all(
+      dayFiles.map((dayFile) => fetchJson<ArgDayPackage>(`/content/arg/${storyId}/${dayFile}`))
+    );
+    const npcProfiles = await fetchJson<ArgNpcProfile[]>(`/content/arg/${storyId}/npc_profiles.json`);
+    return adaptArgToDramaPackage(campaign, dayResults, npcProfiles);
+  } catch {
+    return null;
+  }
 }
 
 function speakVoiceLine(pack: DramaPackage | null, message: DramaMessage): void {
@@ -358,13 +386,10 @@ export default function PlayPage(): JSX.Element {
     clearBeatTimers();
 
     try {
-      const response = await fetch(`/content/drama/${nextStoryId}.json`, {
-        cache: 'no-store'
-      });
-      if (!response.ok) {
-        throw new Error(`Unable to load drama package for ${nextStoryId}`);
-      }
-      const parsed = (await response.json()) as DramaPackage;
+      const argDerivedPackage = await loadArgAsDramaPackage(nextStoryId);
+      const parsed =
+        argDerivedPackage ??
+        (await fetchJson<DramaPackage>(`/content/drama/${nextStoryId}.json`));
       const initialState = createInitialSessionState(parsed);
       setDramaPack(parsed);
       setSessionState(initialState);

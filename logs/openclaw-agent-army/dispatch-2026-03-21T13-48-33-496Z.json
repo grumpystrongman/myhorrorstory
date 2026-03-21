@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-03-21T13:48:33.496Z",
+  "mode": "dry-run",
+  "jobsPath": "C:\\Users\\grump\\MyHorrorStory\\docs\\operations\\openclaw-arg-reframe-jobs.json",
+  "strictStructuredOutput": true,
+  "maxRetries": 2,
+  "jobsConsidered": 6,
+  "jobsSelected": 6,
+  "executed": 0,
+  "succeeded": 0,
+  "failed": 0,
+  "results": [
+    {
+      "id": "arg-reframe-job-1",
+      "taskTitle": "ARG Architecture Validation",
+      "botId": "AI-Executive-Orchestrator",
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
+    },
+    {
+      "id": "arg-reframe-job-2",
+      "taskTitle": "Narrative Continuity Pass",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
+    },
+    {
+      "id": "arg-reframe-job-3",
+      "taskTitle": "Artifact Prompt Quality Pass",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
+    },
+    {
+      "id": "arg-reframe-job-4",
+      "taskTitle": "NPC Dialogue Immersion Pass",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
+    },
+    {
+      "id": "arg-reframe-job-5",
+      "taskTitle": "Web Runtime Compatibility Pass",
+      "botId": "AI-Web-App-Agent",
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
+    },
+    {
+      "id": "arg-reframe-job-6",
+      "taskTitle": "ARG End-to-End QA Smoke",
+      "botId": "AI-Quality-Agent",
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
+    }
+  ]
+}

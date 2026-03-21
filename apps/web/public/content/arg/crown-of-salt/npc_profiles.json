@@ -1,0 +1,260 @@
+[
+  {
+    "id": "npc.crown-of-salt-npc-1",
+    "role": "detective",
+    "displayName": "Port Auditor Lin Ortega",
+    "baselineEmotion": "CALM",
+    "personality": [
+      "guarded",
+      "analytical"
+    ],
+    "motivations": [
+      "Control fallout quickly."
+    ],
+    "trustBaseline": 40,
+    "trustCeiling": 90,
+    "secrets": [
+      {
+        "id": "crown-of-salt-npc-1-secret-1",
+        "summary": "Port Auditor Lin Ortega can expose crown-of-salt-clue-pressure at high trust.",
+        "revealConditions": []
+      }
+    ],
+    "deceptionRules": {
+      "lieWhen": [
+        "player_trust_below_35",
+        "villain_pressure_above_70",
+        "question_targets_secret"
+      ],
+      "tellTruthWhen": [
+        "player_presents_chain_of_custody",
+        "evidence_flagged_verified"
+      ]
+    },
+    "panicTriggers": [
+      "direct_confrontation",
+      "voice_message_from_antagonist",
+      "unexpected_night_call"
+    ]
+  },
+  {
+    "id": "npc.crown-of-salt-npc-2",
+    "role": "witness",
+    "displayName": "Smuggler Rafe Quinn",
+    "baselineEmotion": "ANXIOUS",
+    "personality": [
+      "reactive",
+      "observant"
+    ],
+    "motivations": [
+      "Survive and protect a secret."
+    ],
+    "trustBaseline": 48,
+    "trustCeiling": 90,
+    "secrets": [
+      {
+        "id": "crown-of-salt-npc-2-secret-1",
+        "summary": "Smuggler Rafe Quinn can expose crown-of-salt-clue-reveal at high trust.",
+        "revealConditions": []
+      }
+    ],
+    "deceptionRules": {
+      "lieWhen": [
+        "player_trust_below_35",
+        "villain_pressure_above_70",
+        "question_targets_secret"
+      ],
+      "tellTruthWhen": [
+        "player_presents_chain_of_custody",
+        "evidence_flagged_verified"
+      ]
+    },
+    "panicTriggers": [
+      "direct_confrontation",
+      "voice_message_from_antagonist",
+      "unexpected_night_call"
+    ]
+  },
+  {
+    "id": "npc.crown-of-salt-npc-3",
+    "role": "witness",
+    "displayName": "Archivist Nun Sister Mirel",
+    "baselineEmotion": "SUSPICIOUS",
+    "personality": [
+      "guarded",
+      "analytical"
+    ],
+    "motivations": [
+      "Survive and protect a secret."
+    ],
+    "trustBaseline": 56,
+    "trustCeiling": 90,
+    "secrets": [
+      {
+        "id": "crown-of-salt-npc-3-secret-1",
+        "summary": "Archivist Nun Sister Mirel can expose crown-of-salt-clue-origin at high trust.",
+        "revealConditions": []
+      }
+    ],
+    "deceptionRules": {
+      "lieWhen": [
+        "player_trust_below_35",
+        "villain_pressure_above_70",
+        "question_targets_secret"
+      ],
+      "tellTruthWhen": [
+        "player_presents_chain_of_custody",
+        "evidence_flagged_verified"
+      ]
+    },
+    "panicTriggers": [
+      "direct_confrontation",
+      "voice_message_from_antagonist",
+      "unexpected_night_call"
+    ]
+  },
+  {
+    "id": "npc.crown-of-salt-npc-4",
+    "role": "witness",
+    "displayName": "Customs Broker Dax Ren",
+    "baselineEmotion": "DEFIANT",
+    "personality": [
+      "reactive",
+      "observant"
+    ],
+    "motivations": [
+      "Survive and protect a secret."
+    ],
+    "trustBaseline": 64,
+    "trustCeiling": 90,
+    "secrets": [
+      {
+        "id": "crown-of-salt-npc-4-secret-1",
+        "summary": "Customs Broker Dax Ren can expose crown-of-salt-clue-pressure at high trust.",
+        "revealConditions": []
+      }
+    ],
+    "deceptionRules": {
+      "lieWhen": [
+        "player_trust_below_35",
+        "villain_pressure_above_70",
+        "question_targets_secret"
+      ],
+      "tellTruthWhen": [
+        "player_presents_chain_of_custody",
+        "evidence_flagged_verified"
+      ]
+    },
+    "panicTriggers": [
+      "direct_confrontation",
+      "voice_message_from_antagonist",
+      "unexpected_night_call"
+    ]
+  },
+  {
+    "id": "npc.journalist.field",
+    "role": "journalist",
+    "displayName": "Mina Calder",
+    "baselineEmotion": "probing",
+    "personality": [
+      "persistent",
+      "skeptical"
+    ],
+    "motivations": [
+      "publish before suppression",
+      "expose chain-of-command failures"
+    ],
+    "trustBaseline": 30,
+    "trustCeiling": 70,
+    "secrets": [
+      {
+        "id": "journalist-secret-1",
+        "summary": "Accepted leaked material from a source linked to the antagonist.",
+        "revealConditions": [
+          "flag.false_lead_thread_unmasked"
+        ]
+      }
+    ],
+    "deceptionRules": {
+      "lieWhen": [
+        "protecting_source_identity"
+      ],
+      "tellTruthWhen": [
+        "player_agrees_off_record_exchange"
+      ]
+    },
+    "panicTriggers": [
+      "legal_threat_notice",
+      "camera_stolen"
+    ]
+  },
+  {
+    "id": "npc.antagonist.primary",
+    "role": "antagonist",
+    "displayName": "The Salt Regent",
+    "baselineEmotion": "cold",
+    "personality": [
+      "SEDUCTIVE_CORRUPTER"
+    ],
+    "motivations": [
+      "Recruit principled investigators into selective corruption."
+    ],
+    "trustBaseline": 0,
+    "trustCeiling": 5,
+    "secrets": [
+      {
+        "id": "antagonist-secret-1",
+        "summary": "Has direct access to at least one internal evidence channel.",
+        "revealConditions": [
+          "day_18.completed",
+          "flag.hidden_truth_thread_critical"
+        ]
+      }
+    ],
+    "deceptionRules": {
+      "lieWhen": [
+        "always"
+      ],
+      "tellTruthWhen": [
+        "truth_is_more_damaging_than_lie"
+      ]
+    },
+    "panicTriggers": []
+  },
+  {
+    "id": "npc.unknown.contact",
+    "role": "unknown_contact",
+    "displayName": "Unknown Contact",
+    "baselineEmotion": "flat",
+    "personality": [
+      "cryptic",
+      "timed"
+    ],
+    "motivations": [
+      "steer investigation without revealing identity"
+    ],
+    "trustBaseline": 20,
+    "trustCeiling": 52,
+    "secrets": [
+      {
+        "id": "unknown-secret-1",
+        "summary": "Identity intersects with official case administration records.",
+        "revealConditions": [
+          "flag.main_thread_final_lock",
+          "day_24.completed"
+        ]
+      }
+    ],
+    "deceptionRules": {
+      "lieWhen": [
+        "player_too_close_to_identity"
+      ],
+      "tellTruthWhen": [
+        "player_selects_high_morality_path"
+      ]
+    },
+    "panicTriggers": [
+      "direct_name_guess"
+    ]
+  }
+]

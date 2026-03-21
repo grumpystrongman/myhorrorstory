@@ -1,0 +1,1180 @@
+{
+  "storyId": "dead-channel-protocol",
+  "title": "Dead Channel Protocol - 7 Day Immersion Sample",
+  "generatedFromCampaignVersion": "arg-v1",
+  "objective": "Demonstrate full daily flow with narrative progression, clues, interactions, puzzle cadence, and immersion-aware personalization.",
+  "days": [
+    {
+      "day": 1,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 01",
+      "narrativeProgression": {
+        "summary": "An intake anomaly lands across multiple channels before dawn.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Protocol Wake",
+        "beatNarrative": "An app push notification predicts a substation failure and names your trusted ally.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Protocol Wake: An app push notification predicts a substation failure and names your trusted ally.",
+          "clueReference": "Protocol signed payload"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Protocol signed payload remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "dead-channel-protocol-d01-police-report-protocol-signed-payload",
+          "day": 1,
+          "title": "Dead Channel Protocol - Day 01 police report",
+          "type": "police_report",
+          "sourceNpcId": "npc.dead-channel-protocol-npc-1",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "protocol-signed-payload",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Protocol signed payload.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 01. Type: police_report. Clue focus: Protocol signed payload. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol police_report audio cue for day 1. Clue anchor: Protocol signed payload. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-01-detective-brief",
+          "actorId": "npc.dead-channel-protocol-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Protocol signed payload and tell me if your last call still stands (none).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-01-witness-ping",
+          "actorId": "npc.dead-channel-protocol-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-01-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Protocol signed payload.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "dead-channel-protocol-distraction-day-01",
+        "title": "Red Herring 01",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Protocol signed payload with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 02",
+      "narrativeProgression": {
+        "summary": "Metadata drift appears between duplicate files and erodes confidence.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Protocol Wake",
+        "beatNarrative": "An app push notification predicts a substation failure and names your trusted ally.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Protocol Wake: An app push notification predicts a substation failure and names your trusted ally.",
+          "clueReference": "Substation outage trace"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Substation outage trace remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "dead-channel-protocol-d02-handwritten-note-substation-outage-trace",
+          "day": 2,
+          "title": "Dead Channel Protocol - Day 02 handwritten note",
+          "type": "handwritten_note",
+          "sourceNpcId": "npc.dead-channel-protocol-npc-2",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "substation-outage-trace",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Substation outage trace.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 02. Type: handwritten_note. Clue focus: Substation outage trace. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol handwritten_note audio cue for day 2. Clue anchor: Substation outage trace. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-02-detective-brief",
+          "actorId": "npc.dead-channel-protocol-npc-1",
+          "role": "detective",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Substation outage trace and tell me if your last call still stands (decision.day_01.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-02-witness-ping",
+          "actorId": "npc.dead-channel-protocol-npc-2",
+          "role": "witness",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-02-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 117,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Substation outage trace.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "dead-channel-protocol-puzzle-day-02",
+        "type": "timeline_consistency",
+        "title": "Day 02 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Substation outage trace.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with SUBS."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "SUBSTATION_OUTAGE_TRACE_02"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_02.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 03",
+      "narrativeProgression": {
+        "summary": "A witness account conflicts with dispatch timing by exactly nine minutes.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Protocol Wake",
+        "beatNarrative": "An app push notification predicts a substation failure and names your trusted ally.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Protocol Wake: An app push notification predicts a substation failure and names your trusted ally.",
+          "clueReference": "Intercepted bot transcript"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Intercepted bot transcript remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "dead-channel-protocol-d03-journal-entry-intercepted-bot-transcript",
+          "day": 3,
+          "title": "Dead Channel Protocol - Day 03 journal entry",
+          "type": "journal_entry",
+          "sourceNpcId": "npc.dead-channel-protocol-npc-3",
+          "threadId": "thread.hidden_truth",
+          "clueTags": [
+            "intercepted-bot-transcript",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Intercepted bot transcript.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 03. Type: journal_entry. Clue focus: Intercepted bot transcript. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol journal_entry audio cue for day 3. Clue anchor: Intercepted bot transcript. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-03-detective-brief",
+          "actorId": "npc.dead-channel-protocol-npc-1",
+          "role": "detective",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 33,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Intercepted bot transcript and tell me if your last call still stands (decision.day_02.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-03-witness-ping",
+          "actorId": "npc.dead-channel-protocol-npc-2",
+          "role": "witness",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-03-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 128,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Intercepted bot transcript.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-03-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 185,
+            "oddHourWindow": true,
+            "oddHourClock": "00:43"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 04",
+      "narrativeProgression": {
+        "summary": "A dead account sends a fresh attachment with current geotag residue.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Protocol Wake",
+        "beatNarrative": "An app push notification predicts a substation failure and names your trusted ally.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Protocol Wake: An app push notification predicts a substation failure and names your trusted ally.",
+          "clueReference": "Abandoned node scan"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Abandoned node scan remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "misdirecting",
+          "update": "A plausible shortcut appears: Disable network vs exploit protocol for leverage.",
+          "clueReference": "Abandoned node scan"
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "dead-channel-protocol-d04-text-message-screenshot-abandoned-node-scan",
+          "day": 4,
+          "title": "Dead Channel Protocol - Day 04 text message screenshot",
+          "type": "text_message_screenshot",
+          "sourceNpcId": "npc.dead-channel-protocol-npc-4",
+          "threadId": "thread.false_lead",
+          "clueTags": [
+            "abandoned-node-scan",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Abandoned node scan.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 04. Type: text_message_screenshot. Clue focus: Abandoned node scan. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol text_message_screenshot audio cue for day 4. Clue anchor: Abandoned node scan. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        },
+        {
+          "id": "dead-channel-protocol-d04-security-footage-still-abandoned-node-scan",
+          "day": 4,
+          "title": "Dead Channel Protocol - Day 04 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "abandoned-node-scan",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Abandoned node scan.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 04. Type: security_footage_still. Clue focus: Abandoned node scan. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol security_footage_still audio cue for day 4. Clue anchor: Abandoned node scan. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-04-detective-brief",
+          "actorId": "npc.dead-channel-protocol-npc-1",
+          "role": "detective",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Abandoned node scan and tell me if your last call still stands (decision.day_03.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-04-witness-ping",
+          "actorId": "npc.dead-channel-protocol-npc-2",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-04-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 139,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Abandoned node scan.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "dead-channel-protocol-puzzle-day-04",
+        "type": "metadata_diff",
+        "title": "Day 04 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Abandoned node scan.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with ABAN."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "ABANDONED_NODE_SCAN_04"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_04.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": {
+        "id": "dead-channel-protocol-distraction-day-04",
+        "title": "Red Herring 04",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Abandoned node scan with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 05",
+      "narrativeProgression": {
+        "summary": "Administrative records reveal prior attempts to bury this case.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Protocol Wake",
+        "beatNarrative": "An app push notification predicts a substation failure and names your trusted ally.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Protocol Wake: An app push notification predicts a substation failure and names your trusted ally.",
+          "clueReference": "Protocol signed payload"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Protocol signed payload remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "dead-channel-protocol-d05-call-log-protocol-signed-payload",
+          "day": 5,
+          "title": "Dead Channel Protocol - Day 05 call log",
+          "type": "call_log",
+          "sourceNpcId": "npc.journalist.field",
+          "threadId": "thread.psychological_break",
+          "clueTags": [
+            "protocol-signed-payload",
+            "phase.discovery"
+          ],
+          "misleading": true,
+          "reliabilityScore": 0.42,
+          "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Protocol signed payload.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 05. Type: call_log. Clue focus: Protocol signed payload. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol call_log audio cue for day 5. Clue anchor: Protocol signed payload. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-05-detective-brief",
+          "actorId": "npc.dead-channel-protocol-npc-1",
+          "role": "detective",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 12,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Protocol signed payload and tell me if your last call still stands (decision.day_04.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-05-witness-ping",
+          "actorId": "npc.dead-channel-protocol-npc-2",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-05-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 150,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Protocol signed payload.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 06",
+      "narrativeProgression": {
+        "summary": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Substation outage trace"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Substation outage trace remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "dead-channel-protocol-d06-voicemail-transcript-substation-outage-trace",
+          "day": 6,
+          "title": "Dead Channel Protocol - Day 06 voicemail transcript",
+          "type": "voicemail_transcript",
+          "sourceNpcId": "npc.antagonist.primary",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "substation-outage-trace",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Substation outage trace.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 06. Type: voicemail_transcript. Clue focus: Substation outage trace. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol voicemail_transcript audio cue for day 6. Clue anchor: Substation outage trace. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-06-detective-brief",
+          "actorId": "npc.dead-channel-protocol-npc-1",
+          "role": "detective",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Substation outage trace and tell me if your last call still stands (decision.day_05.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-06-witness-ping",
+          "actorId": "npc.dead-channel-protocol-npc-2",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-06-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 95,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Substation outage trace.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-06-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 200,
+            "oddHourWindow": true,
+            "oddHourClock": "03:33"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "dead-channel-protocol-puzzle-day-06",
+        "type": "cipher",
+        "title": "Day 06 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Substation outage trace.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with SUBS."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "SUBSTATION_OUTAGE_TRACE_06"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_06.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 07",
+      "narrativeProgression": {
+        "summary": "The first branch point forces trust in a source you cannot verify.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Intercepted bot transcript"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Intercepted bot transcript remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "dead-channel-protocol-d07-security-footage-still-intercepted-bot-transcript",
+          "day": 7,
+          "title": "Dead Channel Protocol - Day 07 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "intercepted-bot-transcript",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Intercepted bot transcript.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Dead Channel Protocol ARG artifact Day 07. Type: security_footage_still. Clue focus: Intercepted bot transcript. Location: Smart-city control grid and abandoned transit nodes. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Dead Channel Protocol security_footage_still audio cue for day 7. Clue anchor: Intercepted bot transcript. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-07-detective-brief",
+          "actorId": "npc.dead-channel-protocol-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Intercepted bot transcript and tell me if your last call still stands (decision.day_06.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-07-witness-ping",
+          "actorId": "npc.dead-channel-protocol-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-07-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Intercepted bot transcript.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "dead-channel-protocol-distraction-day-07",
+        "title": "Red Herring 07",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Intercepted bot transcript with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    }
+  ]
+}

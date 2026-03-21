@@ -1,0 +1,1180 @@
+{
+  "storyId": "static-between-stations",
+  "title": "Static Between Stations - 7 Day Immersion Sample",
+  "generatedFromCampaignVersion": "arg-v1",
+  "objective": "Demonstrate full daily flow with narrative progression, clues, interactions, puzzle cadence, and immersion-aware personalization.",
+  "days": [
+    {
+      "day": 1,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 01",
+      "narrativeProgression": {
+        "summary": "An intake anomaly lands across multiple channels before dawn.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Signal One",
+        "beatNarrative": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Signal One: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+          "clueReference": "Spectrogram of confession burst"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Spectrogram of confession burst remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "static-between-stations-d01-police-report-spectrogram-of-confession-bu",
+          "day": 1,
+          "title": "Static Between Stations - Day 01 police report",
+          "type": "police_report",
+          "sourceNpcId": "npc.static-between-stations-npc-1",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "spectrogram-of-confession-burst",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Spectrogram of confession burst.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 01. Type: police_report. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations police_report audio cue for day 1. Clue anchor: Spectrogram of confession burst. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-01-detective-brief",
+          "actorId": "npc.static-between-stations-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Spectrogram of confession burst and tell me if your last call still stands (none).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-01-witness-ping",
+          "actorId": "npc.static-between-stations-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-01-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Spectrogram of confession burst.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "static-between-stations-distraction-day-01",
+        "title": "Red Herring 01",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Spectrogram of confession burst with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 02",
+      "narrativeProgression": {
+        "summary": "Metadata drift appears between duplicate files and erodes confidence.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Signal One",
+        "beatNarrative": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Signal One: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+          "clueReference": "Maintenance ledger anomaly"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Maintenance ledger anomaly remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "static-between-stations-d02-handwritten-note-maintenance-ledger-anomaly",
+          "day": 2,
+          "title": "Static Between Stations - Day 02 handwritten note",
+          "type": "handwritten_note",
+          "sourceNpcId": "npc.static-between-stations-npc-2",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "maintenance-ledger-anomaly",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 02. Type: handwritten_note. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations handwritten_note audio cue for day 2. Clue anchor: Maintenance ledger anomaly. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-02-detective-brief",
+          "actorId": "npc.static-between-stations-npc-1",
+          "role": "detective",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Maintenance ledger anomaly and tell me if your last call still stands (decision.day_01.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-02-witness-ping",
+          "actorId": "npc.static-between-stations-npc-2",
+          "role": "witness",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-02-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 117,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Maintenance ledger anomaly.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "static-between-stations-puzzle-day-02",
+        "type": "timeline_consistency",
+        "title": "Day 02 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Maintenance ledger anomaly.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with MAIN."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "MAINTENANCE_LEDGER_ANOMALY_02"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_02.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 03",
+      "narrativeProgression": {
+        "summary": "A witness account conflicts with dispatch timing by exactly nine minutes.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Signal One",
+        "beatNarrative": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Signal One: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+          "clueReference": "Turnstile camera still"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Turnstile camera still remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "static-between-stations-d03-journal-entry-turnstile-camera-still",
+          "day": 3,
+          "title": "Static Between Stations - Day 03 journal entry",
+          "type": "journal_entry",
+          "sourceNpcId": "npc.static-between-stations-npc-3",
+          "threadId": "thread.hidden_truth",
+          "clueTags": [
+            "turnstile-camera-still",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 03. Type: journal_entry. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations journal_entry audio cue for day 3. Clue anchor: Turnstile camera still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-03-detective-brief",
+          "actorId": "npc.static-between-stations-npc-1",
+          "role": "detective",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 33,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Turnstile camera still and tell me if your last call still stands (decision.day_02.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-03-witness-ping",
+          "actorId": "npc.static-between-stations-npc-2",
+          "role": "witness",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-03-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 128,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Turnstile camera still.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-03-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 185,
+            "oddHourWindow": true,
+            "oddHourClock": "00:43"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 04",
+      "narrativeProgression": {
+        "summary": "A dead account sends a fresh attachment with current geotag residue.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Signal One",
+        "beatNarrative": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Signal One: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+          "clueReference": "Relay room access hash"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Relay room access hash remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "misdirecting",
+          "update": "A plausible shortcut appears: Rescue route vs forensic route under ultimatum.",
+          "clueReference": "Relay room access hash"
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "static-between-stations-d04-text-message-screenshot-relay-room-access-hash",
+          "day": 4,
+          "title": "Static Between Stations - Day 04 text message screenshot",
+          "type": "text_message_screenshot",
+          "sourceNpcId": "npc.static-between-stations-npc-4",
+          "threadId": "thread.false_lead",
+          "clueTags": [
+            "relay-room-access-hash",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 04. Type: text_message_screenshot. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations text_message_screenshot audio cue for day 4. Clue anchor: Relay room access hash. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        },
+        {
+          "id": "static-between-stations-d04-security-footage-still-relay-room-access-hash",
+          "day": 4,
+          "title": "Static Between Stations - Day 04 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "relay-room-access-hash",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Relay room access hash.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 04. Type: security_footage_still. Clue focus: Relay room access hash. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations security_footage_still audio cue for day 4. Clue anchor: Relay room access hash. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-04-detective-brief",
+          "actorId": "npc.static-between-stations-npc-1",
+          "role": "detective",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Relay room access hash and tell me if your last call still stands (decision.day_03.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-04-witness-ping",
+          "actorId": "npc.static-between-stations-npc-2",
+          "role": "witness",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 40,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-04-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 139,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Relay room access hash.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "static-between-stations-puzzle-day-04",
+        "type": "metadata_diff",
+        "title": "Day 04 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Relay room access hash.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with RELA."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "RELAY_ROOM_ACCESS_HASH_04"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_04.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": {
+        "id": "static-between-stations-distraction-day-04",
+        "title": "Red Herring 04",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Relay room access hash with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 05",
+      "narrativeProgression": {
+        "summary": "Administrative records reveal prior attempts to bury this case.",
+        "beatAnchorId": "beat-1",
+        "beatAnchorTitle": "Signal One",
+        "beatNarrative": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Signal One: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+          "clueReference": "Spectrogram of confession burst"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Spectrogram of confession burst remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "static-between-stations-d05-call-log-spectrogram-of-confession-bu",
+          "day": 5,
+          "title": "Static Between Stations - Day 05 call log",
+          "type": "call_log",
+          "sourceNpcId": "npc.journalist.field",
+          "threadId": "thread.psychological_break",
+          "clueTags": [
+            "spectrogram-of-confession-burst",
+            "phase.discovery"
+          ],
+          "misleading": true,
+          "reliabilityScore": 0.42,
+          "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Spectrogram of confession burst.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 05. Type: call_log. Clue focus: Spectrogram of confession burst. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations call_log audio cue for day 5. Clue anchor: Spectrogram of confession burst. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-05-detective-brief",
+          "actorId": "npc.static-between-stations-npc-1",
+          "role": "detective",
+          "channel": "EMAIL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 12,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Spectrogram of confession burst and tell me if your last call still stands (decision.day_04.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-05-witness-ping",
+          "actorId": "npc.static-between-stations-npc-2",
+          "role": "witness",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 49,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-05-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 150,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Spectrogram of confession burst.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 06",
+      "narrativeProgression": {
+        "summary": "Evidence custody breaks for twenty-two minutes and no one logs it.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Maintenance ledger anomaly"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Maintenance ledger anomaly remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "static-between-stations-d06-voicemail-transcript-maintenance-ledger-anomaly",
+          "day": 6,
+          "title": "Static Between Stations - Day 06 voicemail transcript",
+          "type": "voicemail_transcript",
+          "sourceNpcId": "npc.antagonist.primary",
+          "threadId": "thread.main_investigation",
+          "clueTags": [
+            "maintenance-ledger-anomaly",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Maintenance ledger anomaly.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 06. Type: voicemail_transcript. Clue focus: Maintenance ledger anomaly. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations voicemail_transcript audio cue for day 6. Clue anchor: Maintenance ledger anomaly. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-06-detective-brief",
+          "actorId": "npc.static-between-stations-npc-1",
+          "role": "detective",
+          "channel": "VOICE_MESSAGE",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 19,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Maintenance ledger anomaly and tell me if your last call still stands (decision.day_05.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-06-witness-ping",
+          "actorId": "npc.static-between-stations-npc-2",
+          "role": "witness",
+          "channel": "WHATSAPP",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 58,
+            "oddHourWindow": true
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-06-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 95,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Maintenance ledger anomaly.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        },
+        {
+          "id": "day-06-unknown-contact",
+          "actorId": "npc.unknown.contact",
+          "role": "unknown_contact",
+          "channel": "SMS",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 200,
+            "oddHourWindow": true,
+            "oddHourClock": "03:33"
+          },
+          "messageTemplate": "I watched your response window close. If you still want the living truth, compare day 03 to today before sunrise.",
+          "expectedPlayerActions": [
+            "ask_identity",
+            "follow_instruction",
+            "report_to_detective"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 90,
+            "escalation": "unknown_contact_sends_redacted_attachment"
+          }
+        }
+      ],
+      "puzzle": {
+        "id": "static-between-stations-puzzle-day-06",
+        "type": "cipher",
+        "title": "Day 06 Puzzle",
+        "objective": "Use the new evidence and prior logs to resolve contradiction around Maintenance ledger anomaly.",
+        "instructions": [
+          "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+          "Compare against at least one artifact from a previous day.",
+          "Submit a concise deduction statement before unlocking the next high-risk contact."
+        ],
+        "hintLadder": [
+          "Hint 1: One timestamp appears valid but is offset from device timezone.",
+          "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+          "Hint 3: The answer keyword starts with MAIN."
+        ],
+        "answerValidation": {
+          "mode": "keyword",
+          "acceptedKeywords": [
+            "MAINTENANCE_LEDGER_ANOMALY_06"
+          ]
+        },
+        "reward": {
+          "unlockFlags": [
+            "flag.puzzle.day_06.solved"
+          ],
+          "revealsThread": "thread.hidden_truth"
+        },
+        "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+      },
+      "distraction": null,
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "phase": "Discovery & Curiosity",
+      "headline": "Discovery & Curiosity - Day 07",
+      "narrativeProgression": {
+        "summary": "The first branch point forces trust in a source you cannot verify.",
+        "beatAnchorId": "beat-2",
+        "beatAnchorTitle": "Escalation Signal",
+        "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+        "threatEscalation": "ambient monitoring",
+        "playerInvolvementShift": "observer to trusted analyst"
+      },
+      "threadUpdates": [
+        {
+          "threadId": "thread.main_investigation",
+          "status": "opening",
+          "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+          "clueReference": "Turnstile camera still"
+        },
+        {
+          "threadId": "thread.side_mystery",
+          "status": "monitoring",
+          "update": "Peripheral signal tied to Turnstile camera still remains unresolved."
+        },
+        {
+          "threadId": "thread.hidden_truth",
+          "status": "latent",
+          "update": "Minor anomaly logged but not yet actionable.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.false_lead",
+          "status": "cooldown",
+          "update": "No new movement on false lead this cycle.",
+          "clueReference": null
+        },
+        {
+          "threadId": "thread.psychological_break",
+          "status": "building",
+          "update": "Subtle repetition appears in unrelated communications."
+        }
+      ],
+      "evidenceDrops": [
+        {
+          "id": "static-between-stations-d07-security-footage-still-turnstile-camera-still",
+          "day": 7,
+          "title": "Static Between Stations - Day 07 security footage still",
+          "type": "security_footage_still",
+          "sourceNpcId": "npc.unknown.contact",
+          "threadId": "thread.side_mystery",
+          "clueTags": [
+            "turnstile-camera-still",
+            "phase.discovery"
+          ],
+          "misleading": false,
+          "reliabilityScore": 0.84,
+          "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+          "imagePrompt": {
+            "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+            "prompt": "Static Between Stations ARG artifact Day 07. Type: security_footage_still. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+            "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+          },
+          "audioPrompt": {
+            "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+            "prompt": "Static Between Stations security_footage_still audio cue for day 7. Clue anchor: Turnstile camera still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+            "durationSeconds": 18
+          }
+        }
+      ],
+      "interactions": [
+        {
+          "id": "day-07-detective-brief",
+          "actorId": "npc.static-between-stations-npc-1",
+          "role": "detective",
+          "channel": "SIGNAL",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 26,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Turnstile camera still and tell me if your last call still stands (decision.day_06.primary).",
+          "expectedPlayerActions": [
+            "acknowledge",
+            "request_evidence_hash",
+            "commit_next_step"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 180,
+            "escalation": "detective_followup_call"
+          }
+        },
+        {
+          "id": "day-07-witness-ping",
+          "actorId": "npc.static-between-stations-npc-2",
+          "role": "witness",
+          "channel": "TELEGRAM",
+          "mode": "message",
+          "scheduled": {
+            "offsetMinutes": 67,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+          "expectedPlayerActions": [
+            "ask_followup",
+            "validate_metadata",
+            "offer_protection"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 240,
+            "escalation": "witness_withdraws_temporarily"
+          }
+        },
+        {
+          "id": "day-07-journalist-thread",
+          "actorId": "npc.journalist.field",
+          "role": "journalist",
+          "channel": "EMAIL",
+          "mode": "email",
+          "scheduled": {
+            "offsetMinutes": 106,
+            "oddHourWindow": false
+          },
+          "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Turnstile camera still.",
+          "expectedPlayerActions": [
+            "share_partial_truth",
+            "delay_publication",
+            "decline_comment"
+          ],
+          "noResponseFallback": {
+            "afterMinutes": 360,
+            "escalation": "journalist_posts_without_context"
+          }
+        }
+      ],
+      "puzzle": null,
+      "distraction": {
+        "id": "static-between-stations-distraction-day-07",
+        "title": "Red Herring 07",
+        "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+        "whyItFeelsPlausible": "It references Turnstile camera still with convincing formatting and apparent chain-of-custody metadata.",
+        "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+      },
+      "awarenessMoments": [
+        {
+          "trigger": "if decision.log contains any entry for previous day",
+          "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "day_14",
+  "storyId": "ward-1908",
+  "day": 14,
+  "week": 2,
+  "phase": "ESCALATION",
+  "phaseLabel": "Escalation & Unease",
+  "headline": "Escalation & Unease - Day 14",
+  "releaseWindow": {
+    "campaignOffsetHours": 312,
+    "oddHourDelivery": false,
+    "preferredOddHourClock": "03:33"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      13
+    ],
+    "requiredFlags": [
+      "flag.day_13.complete"
+    ],
+    "requiredInteractions": [
+      "day-13-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "Second branch point determines whether public pressure or covert trace is prioritized.",
+    "beatAnchorId": "beat-3",
+    "beatAnchorTitle": "Trust Fracture",
+    "beatNarrative": "The villain mixes real secrets with fabricated claims to split allies.",
+    "threatEscalation": "social and informational pressure",
+    "playerInvolvementShift": "analyst to implicated participant"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "active",
+      "update": "Trust Fracture: The villain mixes real secrets with fabricated claims to split allies.",
+      "clueReference": "Orderly shift recording"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Orderly shift recording remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "surfacing",
+      "update": "Cross-day mismatch suggests archival tampering tied to Orderly shift recording.",
+      "clueReference": "Orderly shift recording"
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "cooldown",
+      "update": "No new movement on false lead this cycle.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "building",
+      "update": "Subtle repetition appears in unrelated communications."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "ward-1908-d14-handwritten-note-orderly-shift-recording",
+      "day": 14,
+      "title": "Ward 1908 - Day 14 handwritten note",
+      "type": "handwritten_note",
+      "sourceNpcId": "npc.unknown.contact",
+      "threadId": "thread.false_lead",
+      "clueTags": [
+        "orderly-shift-recording",
+        "phase.escalation"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Orderly shift recording.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Ward 1908 ARG artifact Day 14. Type: handwritten_note. Clue focus: Orderly shift recording. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Escalation & Unease. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Ward 1908 handwritten_note audio cue for day 14. Clue anchor: Orderly shift recording. Phase: Escalation & Unease. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-14-detective-brief",
+      "actorId": "npc.ward-1908-npc-1",
+      "role": "detective",
+      "channel": "WHATSAPP",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 40,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Orderly shift recording and tell me if your last call still stands (decision.day_13.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-14-witness-ping",
+      "actorId": "npc.ward-1908-npc-2",
+      "role": "witness",
+      "channel": "SMS",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 58,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-14-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 117,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Orderly shift recording.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    },
+    {
+      "id": "day-14-antagonist-contact",
+      "actorId": "npc.antagonist.primary",
+      "role": "antagonist",
+      "channel": "EMAIL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 182,
+        "oddHourWindow": true,
+        "oddHourClock": "01:17"
+      },
+      "messageTemplate": "You chose {{last_major_choice}} and still think this is about evidence. Check the mirror timestamp and decide who you are willing to sacrifice.",
+      "expectedPlayerActions": [
+        "defy",
+        "comply_temporarily",
+        "counter_question"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 120,
+        "escalation": "antagonist_targets_secondary_contact"
+      }
+    }
+  ],
+  "puzzle": {
+    "id": "ward-1908-puzzle-day-14",
+    "type": "metadata_diff",
+    "title": "Day 14 Puzzle",
+    "objective": "Use the new evidence and prior logs to resolve contradiction around Orderly shift recording.",
+    "instructions": [
+      "Extract timestamp, sender route, and one lexical anomaly from today's artifacts.",
+      "Compare against at least one artifact from a previous day.",
+      "Submit a concise deduction statement before unlocking the next high-risk contact."
+    ],
+    "hintLadder": [
+      "Hint 1: One timestamp appears valid but is offset from device timezone.",
+      "Hint 2: Cross-check sender metadata against yesterday's call-log route.",
+      "Hint 3: The answer keyword starts with ORDE."
+    ],
+    "answerValidation": {
+      "mode": "keyword",
+      "acceptedKeywords": [
+        "ORDERLY_SHIFT_RECORDING_14"
+      ]
+    },
+    "reward": {
+      "unlockFlags": [
+        "flag.puzzle.day_14.solved"
+      ],
+      "revealsThread": "thread.hidden_truth"
+    },
+    "failureConsequence": "Next day unlock remains delayed until one additional interaction is logged."
+  },
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    },
+    {
+      "trigger": "if trusted contact changed within last 3 days",
+      "lineTemplate": "Your channel loyalty shifted to {{trusted_contact}}. That tells me what you fear most."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_14.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_14.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.ward-1908-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.ward-1908-npc-2",
+        "delta": 0
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

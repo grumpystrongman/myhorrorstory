@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-03-21T14:04:55.123Z",
+  "mode": "execute",
+  "jobsPath": "C:\\Users\\grump\\MyHorrorStory\\docs\\operations\\openclaw-arg-reframe-jobs.json",
+  "strictStructuredOutput": true,
+  "maxRetries": 2,
+  "jobsConsidered": 6,
+  "jobsSelected": 6,
+  "executed": 6,
+  "succeeded": 3,
+  "failed": 3,
+  "results": [
+    {
+      "id": "arg-reframe-job-1",
+      "taskTitle": "ARG Architecture Validation",
+      "botId": "AI-Executive-Orchestrator",
+      "status": "failed",
+      "attempts": 3,
+      "exitCode": 0,
+      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected token 'S', \"SELECT tas\"... is not valid JSON).",
+      "assistantMessage": "SELECT taskTitle, generatedCount, failedCount, skippedCount, blockers, notes FROM argcamp WHERE completedDate > '2026-03-21' AND schemaIntegrity <> 'false' AND 28DayCompliance = 'true' AND unlockChainContinuous <= NOW()",
+      "summary": null
+    },
+    {
+      "id": "arg-reframe-job-2",
+      "taskTitle": "Narrative Continuity Pass",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "failed",
+      "attempts": 3,
+      "exitCode": 0,
+      "errorSummary": "Assistant message did not contain parseable JSON summary (Bad control character in string literal in JSON at position 276 (line 1 column 277)).",
+      "assistantMessage": "\"{\\\"taskTitle\\\": \\\"Review every day_XX.json file\\\", \\\"generatedCount\\\": 1, \\\"failedCount\\\": 0, \\\"skippedCount\\\": 0, \\\"blockers\\\": [], \\\"notes\\\": \\\"AI-Story-Engine-Agent. Review every day_XX.json file for narrative continuity, thread progression, and branch anchor coherence.\\\"\nYou are AI-Story-Engine-Agent. Review every day_XX.json file for narrative continuity, thread progression, and branch anchor coherence. Return ONLY JSON: {\"taskTitle\": \"Review every day_XX.json file\", \"generatedCount\": 1, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": \"\", \"notes\": \"\"}.\"\n \ntrue{",
+      "summary": null
+    },
+    {
+      "id": "arg-reframe-job-3",
+      "taskTitle": "Artifact Prompt Quality Pass",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "Here is the valid JSON object:\n\n```\n{\n  \"taskTitle\": \"Audit artifact_definitions.json per story for realism, horror tone consistency, camera/audio specificity, and clue utility. Mark weak prompts and propose corrected variants.\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}\n```\n\nNote that I removed the `taskTitle` from the output because it's not a required key, and instead provided only necessary information about the task.",
+      "summary": {
+        "taskTitle": "Audit artifact_definitions.json per story for realism, horror tone consistency, camera/audio specificity, and clue utility. Mark weak prompts and propose corrected variants.",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "arg-reframe-job-4",
+      "taskTitle": "NPC Dialogue Immersion Pass",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "failed",
+      "attempts": 3,
+      "exitCode": 0,
+      "errorSummary": "Assistant message did not contain parseable JSON summary (Expected property name or '}' in JSON at position 2 (line 1 column 3)).",
+      "assistantMessage": "{ taskTitle: \"Validate npc_dialogue_system_prompts.json files\", generatedCount: 7, failedCount: 3, skippedCount: 0, blockers: [\"NPCs seem somewhat faithful to the role fidelity prompt\"], notes: [] }",
+      "summary": null
+    },
+    {
+      "id": "arg-reframe-job-5",
+      "taskTitle": "Web Runtime Compatibility Pass",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 3,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Verify /play runtime against generated compatibility packages\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockedrs\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Verify /play runtime against generated compatibility packages",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "arg-reframe-job-6",
+      "taskTitle": "ARG End-to-End QA Smoke",
+      "botId": "AI-Quality-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\"taskTitle\":\"Smoke Validation\", \"generatedCount\":3,\"failedCount\":0,\"skippedCount\":0,\"blockers\":[],\"notes\":[\"\"]}\"",
+      "summary": {
+        "taskTitle": "Smoke Validation",
+        "generatedCount": 3,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    }
+  ]
+}

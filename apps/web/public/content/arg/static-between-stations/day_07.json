@@ -1,0 +1,203 @@
+{
+  "id": "day_07",
+  "storyId": "static-between-stations",
+  "day": 7,
+  "week": 1,
+  "phase": "DISCOVERY",
+  "phaseLabel": "Discovery & Curiosity",
+  "headline": "Discovery & Curiosity - Day 07",
+  "releaseWindow": {
+    "campaignOffsetHours": 144,
+    "oddHourDelivery": false,
+    "preferredOddHourClock": "01:17"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      6
+    ],
+    "requiredFlags": [
+      "flag.day_06.complete"
+    ],
+    "requiredInteractions": [
+      "day-06-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "The first branch point forces trust in a source you cannot verify.",
+    "beatAnchorId": "beat-2",
+    "beatAnchorTitle": "Escalation Signal",
+    "beatNarrative": "A contradictory channel drop appears within minutes and forces risk.",
+    "threatEscalation": "ambient monitoring",
+    "playerInvolvementShift": "observer to trusted analyst"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "opening",
+      "update": "Escalation Signal: A contradictory channel drop appears within minutes and forces risk.",
+      "clueReference": "Turnstile camera still"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Turnstile camera still remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "latent",
+      "update": "Minor anomaly logged but not yet actionable.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "cooldown",
+      "update": "No new movement on false lead this cycle.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "building",
+      "update": "Subtle repetition appears in unrelated communications."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "static-between-stations-d07-security-footage-still-turnstile-camera-still",
+      "day": 7,
+      "title": "Static Between Stations - Day 07 security footage still",
+      "type": "security_footage_still",
+      "sourceNpcId": "npc.unknown.contact",
+      "threadId": "thread.side_mystery",
+      "clueTags": [
+        "turnstile-camera-still",
+        "phase.discovery"
+      ],
+      "misleading": false,
+      "reliabilityScore": 0.84,
+      "summary": "Artifact advances verified evidence chain and supports deduction around Turnstile camera still.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Static Between Stations ARG artifact Day 07. Type: security_footage_still. Clue focus: Turnstile camera still. Location: Abandoned commuter rail control annex. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. No intentional misdirection.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Static Between Stations security_footage_still audio cue for day 7. Clue anchor: Turnstile camera still. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-07-detective-brief",
+      "actorId": "npc.static-between-stations-npc-1",
+      "role": "detective",
+      "channel": "SIGNAL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 26,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Turnstile camera still and tell me if your last call still stands (decision.day_06.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-07-witness-ping",
+      "actorId": "npc.static-between-stations-npc-2",
+      "role": "witness",
+      "channel": "TELEGRAM",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 67,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-07-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 106,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Turnstile camera still.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    }
+  ],
+  "puzzle": null,
+  "distraction": {
+    "id": "static-between-stations-distraction-day-07",
+    "title": "Red Herring 07",
+    "summary": "A polished leak points toward an emotionally satisfying suspect, but timeline math does not support it.",
+    "whyItFeelsPlausible": "It references Turnstile camera still with convincing formatting and apparent chain-of-custody metadata.",
+    "hiddenFault": "Embedded timezone marker is impossible for the claimed capture device, indicating staged fabrication."
+  },
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_07.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_07.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.static-between-stations-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.static-between-stations-npc-2",
+        "delta": 2
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}

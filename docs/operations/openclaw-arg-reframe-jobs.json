@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-03-21T00:00:00.000Z",
+  "packageId": "arg-reframe-2026-03-21",
+  "packageTitle": "ARG Daily Experience Reframe",
+  "jobs": [
+    {
+      "id": "arg-reframe-job-1",
+      "taskTitle": "ARG Architecture Validation",
+      "botId": "AI-Executive-Orchestrator",
+      "priority": 1,
+      "estimatedCount": 11,
+      "prompt": "You are AI-Executive-Orchestrator. Validate all ARG campaign outputs under apps/web/public/content/arg/* with focus on schema integrity, 28-day completeness, and unlock-chain continuity. Return ONLY JSON: {\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "campaignRoot": "apps/web/public/content/arg",
+        "architectureDoc": "docs/arg/architecture.md"
+      }
+    },
+    {
+      "id": "arg-reframe-job-2",
+      "taskTitle": "Narrative Continuity Pass",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 1,
+      "estimatedCount": 308,
+      "prompt": "You are AI-Story-Engine-Agent. Review every day_XX.json file for narrative continuity, thread progression, and branch anchor coherence. Flag any disconnected day or contradiction that cannot be solved by player deduction. Return ONLY JSON: {\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "dataContract": "campaign.json + day_01..day_28.json",
+        "threadTypes": "main, side, hidden_truth, false_lead"
+      }
+    },
+    {
+      "id": "arg-reframe-job-3",
+      "taskTitle": "Artifact Prompt Quality Pass",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "estimatedCount": 700,
+      "prompt": "You are AI-Media-Pipeline-Agent. Audit artifact_definitions.json per story for realism, horror tone consistency, camera/audio specificity, and clue utility. Mark weak prompts and propose corrected variants. Return ONLY JSON: {\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "artifactFiles": "apps/web/public/content/arg/*/artifact_definitions.json"
+      }
+    },
+    {
+      "id": "arg-reframe-job-4",
+      "taskTitle": "NPC Dialogue Immersion Pass",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 1,
+      "estimatedCount": 55,
+      "prompt": "You are AI-Story-Engine-Agent. Validate npc_dialogue_system_prompts.json files for role fidelity, plausible deception, player-aware references, and non-meta immersion. Return ONLY JSON: {\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "npcPromptFiles": "apps/web/public/content/arg/*/npc_dialogue_system_prompts.json"
+      }
+    },
+    {
+      "id": "arg-reframe-job-5",
+      "taskTitle": "Web Runtime Compatibility Pass",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "estimatedCount": 11,
+      "prompt": "You are AI-Web-App-Agent. Verify /play runtime against generated compatibility packages under apps/web/public/content/drama. Confirm each story has 28 beats (one per day) and message interactions are rendered with options. Return ONLY JSON: {\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "compatibilityRoot": "apps/web/public/content/drama",
+        "adapterFile": "apps/web/src/app/lib/arg-to-drama.ts"
+      }
+    },
+    {
+      "id": "arg-reframe-job-6",
+      "taskTitle": "ARG End-to-End QA Smoke",
+      "botId": "AI-Quality-Agent",
+      "priority": 1,
+      "estimatedCount": 1,
+      "prompt": "You are AI-Quality-Agent. Execute smoke validation: build arg content, run web tests, and report blockers by severity. Return ONLY JSON: {\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "commands": [
+          "pnpm stories:build-arg",
+          "pnpm --filter @myhorrorstory/web test",
+          "pnpm simulations:build-playthrough"
+        ]
+      }
+    }
+  ]
+}

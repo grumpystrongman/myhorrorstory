@@ -1,0 +1,197 @@
+{
+  "id": "day_05",
+  "storyId": "ward-1908",
+  "day": 5,
+  "week": 1,
+  "phase": "DISCOVERY",
+  "phaseLabel": "Discovery & Curiosity",
+  "headline": "Discovery & Curiosity - Day 05",
+  "releaseWindow": {
+    "campaignOffsetHours": 96,
+    "oddHourDelivery": false,
+    "preferredOddHourClock": "04:09"
+  },
+  "unlockConditions": {
+    "requiredCompletedDays": [
+      4
+    ],
+    "requiredFlags": [
+      "flag.day_04.complete"
+    ],
+    "requiredInteractions": [
+      "day-04-detective-brief"
+    ],
+    "minHoursSincePrevious": 14,
+    "branchConditions": []
+  },
+  "narrativeProgression": {
+    "summary": "Administrative records reveal prior attempts to bury this case.",
+    "beatAnchorId": "beat-1",
+    "beatAnchorTitle": "Night Update",
+    "beatNarrative": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+    "threatEscalation": "ambient monitoring",
+    "playerInvolvementShift": "observer to trusted analyst"
+  },
+  "threadUpdates": [
+    {
+      "threadId": "thread.main_investigation",
+      "status": "opening",
+      "update": "Night Update: A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+      "clueReference": "Intake ledger photo"
+    },
+    {
+      "threadId": "thread.side_mystery",
+      "status": "monitoring",
+      "update": "Peripheral signal tied to Intake ledger photo remains unresolved."
+    },
+    {
+      "threadId": "thread.hidden_truth",
+      "status": "latent",
+      "update": "Minor anomaly logged but not yet actionable.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.false_lead",
+      "status": "cooldown",
+      "update": "No new movement on false lead this cycle.",
+      "clueReference": null
+    },
+    {
+      "threadId": "thread.psychological_break",
+      "status": "building",
+      "update": "Subtle repetition appears in unrelated communications."
+    }
+  ],
+  "evidenceDrops": [
+    {
+      "id": "ward-1908-d05-call-log-intake-ledger-photo",
+      "day": 5,
+      "title": "Ward 1908 - Day 05 call log",
+      "type": "call_log",
+      "sourceNpcId": "npc.journalist.field",
+      "threadId": "thread.psychological_break",
+      "clueTags": [
+        "intake-ledger-photo",
+        "phase.discovery"
+      ],
+      "misleading": true,
+      "reliabilityScore": 0.42,
+      "summary": "Artifact appears authoritative but contains one intentional inconsistency tied to Intake ledger photo.",
+      "imagePrompt": {
+        "style": "hyper-realistic forensic horror, analog imperfection, grounded true-crime framing",
+        "prompt": "Ward 1908 ARG artifact Day 05. Type: call_log. Clue focus: Intake ledger photo. Location: Decommissioned hilltop hospital and sub-basement records wing. Phase: Discovery & Curiosity. Camera: Canon EOS R6, 35mm prime, ISO 3200, f/1.8, 1/40 shutter. Visual defects: sensor noise, halation bloom, slight motion blur, fingerprint smudge, timestamp burn-in. Lighting: practical sodium-vapor spill with deep shadow falloff, imperfect white balance. Composition: evidence-forward framing, handwritten marks, believable wear, no cinematic polish. Subtle misleading cue included.",
+        "negativePrompt": "clean CGI, fantasy look, glossy studio lighting, over-sharpened edges, watermark, logo, gore fetish, cartoon style"
+      },
+      "audioPrompt": {
+        "style": "psychological dread, industrial ambience, noisy field recording authenticity",
+        "prompt": "Ward 1908 call_log audio cue for day 5. Clue anchor: Intake ledger photo. Phase: Discovery & Curiosity. Texture: low drone bed, distant metallic resonance, intermittent room-tone dropouts. Include one decipherable spoken fragment and one environmental clue (HVAC hum, rail click, siren bleed, pager chirp). Add mild tape flutter, codec smear, clipped transients, and uneven dynamic floor to keep it grounded.",
+        "durationSeconds": 18
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "day-05-detective-brief",
+      "actorId": "npc.ward-1908-npc-1",
+      "role": "detective",
+      "channel": "EMAIL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 12,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "{{player_alias}}, before you move: chain-of-custody on today's drop is unstable. Confirm Intake ledger photo and tell me if your last call still stands (decision.day_04.primary).",
+      "expectedPlayerActions": [
+        "acknowledge",
+        "request_evidence_hash",
+        "commit_next_step"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 180,
+        "escalation": "detective_followup_call"
+      }
+    },
+    {
+      "id": "day-05-witness-ping",
+      "actorId": "npc.ward-1908-npc-2",
+      "role": "witness",
+      "channel": "SIGNAL",
+      "mode": "message",
+      "scheduled": {
+        "offsetMinutes": 49,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "I heard my own words on a line I never called. If you still trust {{trusted_contact}}, do not forward this to the wrong desk.",
+      "expectedPlayerActions": [
+        "ask_followup",
+        "validate_metadata",
+        "offer_protection"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 240,
+        "escalation": "witness_withdraws_temporarily"
+      }
+    },
+    {
+      "id": "day-05-journalist-thread",
+      "actorId": "npc.journalist.field",
+      "role": "journalist",
+      "channel": "EMAIL",
+      "mode": "email",
+      "scheduled": {
+        "offsetMinutes": 150,
+        "oddHourWindow": false
+      },
+      "messageTemplate": "Off-record: I can publish tonight, but your previous choice is already circulating. I need one verification point tied to Intake ledger photo.",
+      "expectedPlayerActions": [
+        "share_partial_truth",
+        "delay_publication",
+        "decline_comment"
+      ],
+      "noResponseFallback": {
+        "afterMinutes": 360,
+        "escalation": "journalist_posts_without_context"
+      }
+    }
+  ],
+  "puzzle": null,
+  "distraction": null,
+  "awarenessMoments": [
+    {
+      "trigger": "if decision.log contains any entry for previous day",
+      "lineTemplate": "You repeated yesterday's pattern ({{last_major_choice}}). People who survive this case learn faster."
+    }
+  ],
+  "progressionEffectsOnCompletion": {
+    "setFlags": [
+      "flag.day_05.complete"
+    ],
+    "setDecisionPlaceholders": [
+      "decision.day_05.primary"
+    ],
+    "npcTrustDelta": [
+      {
+        "npcId": "npc.ward-1908-npc-1",
+        "delta": 1
+      },
+      {
+        "npcId": "npc.ward-1908-npc-2",
+        "delta": 2
+      }
+    ],
+    "unlockNextAfterHours": 12
+  },
+  "personalization": {
+    "requiredContextTokens": [
+      "player_alias",
+      "preferred_channel",
+      "last_major_choice",
+      "trusted_contact"
+    ],
+    "adaptiveLines": [
+      "Reference previous choice without breaking realism.",
+      "Acknowledge response latency as if monitored by live actors.",
+      "Escalate or soften tone based on trust flags and solved puzzles."
+    ]
+  }
+}
