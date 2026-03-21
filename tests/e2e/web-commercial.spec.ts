@@ -226,6 +226,8 @@ test.describe('Web consumer interactions', () => {
   test('simulates messaging popup and branching progression', async ({ page }) => {
     await page.goto(`${WEB_BASE_URL}/play?storyId=midnight-lockbox`);
 
+    await expect(page.getByTestId('mission-overlay')).toBeVisible();
+    await page.getByTestId('mission-begin').click();
     await expect(page.getByTestId('current-beat')).toBeVisible();
     await expect(page.getByTestId('message-feed')).toBeVisible();
 
@@ -239,5 +241,29 @@ test.describe('Web consumer interactions', () => {
     const initialBeat = await page.getByTestId('current-beat').textContent();
     await responseButtons.first().click();
     await expect(page.getByTestId('current-beat')).not.toHaveText(initialBeat ?? '');
+  });
+
+  test('ultimate player smoke-agent completes typed and quick-reply loops in phone runtime', async ({ page }) => {
+    await page.goto(`${WEB_BASE_URL}/play?storyId=midnight-lockbox`);
+
+    await expect(page.getByTestId('mission-overlay')).toBeVisible();
+    await page.getByTestId('mission-begin').click();
+
+    await expect(page.getByTestId('iphone-chat-shell')).toBeVisible();
+    await expect(page.getByTestId('phone-chat-messages')).toBeVisible();
+
+    const firstBeat = await page.getByTestId('current-beat').textContent();
+    await page.getByTestId('phone-input').fill('I am on site. Start with witness contradictions.');
+    await page.getByTestId('phone-send').click();
+    await expect(page.getByTestId('current-beat')).not.toHaveText(firstBeat ?? '', { timeout: 10000 });
+
+    const quickReply = page.locator('[data-testid^="phone-quick-reply-"]').first();
+    await expect(quickReply).toBeVisible();
+    const secondBeat = await page.getByTestId('current-beat').textContent();
+    await quickReply.click();
+    await expect(page.getByTestId('current-beat')).not.toHaveText(secondBeat ?? '', { timeout: 10000 });
+
+    await expect(page.getByTestId('phone-chat-messages').locator('.iphone-bubble').first()).toBeVisible();
+    await expect(page.getByTestId('message-feed').locator('.play-feed-item').first()).toBeVisible();
   });
 });

@@ -1,0 +1,320 @@
+{
+  "generatedAt": "2026-03-20T19:08:11.167Z",
+  "mode": "execute",
+  "strictStructuredOutput": true,
+  "maxRetries": 4,
+  "jobsConsidered": 64,
+  "jobsSelected": 16,
+  "executed": 16,
+  "succeeded": 16,
+  "failed": 0,
+  "results": [
+    {
+      "id": "openclaw-agent-army-job-49",
+      "taskTitle": "Agent Army - The Harvest Men - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Outputs for the Story: The Harvest Men\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Generate Outputs for the Story: The Harvest Men",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-50",
+      "taskTitle": "Agent Army - The Harvest Men - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Execute Production Tasks\",\n  \"generatedCount\": 13,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Execute Production Tasks",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-51",
+      "taskTitle": "Agent Army - The Harvest Men - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Output 3\",\n  \"generatedCount\": 1,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": [\"None\"]\n}",
+      "summary": {
+        "taskTitle": "Output 3",
+        "generatedCount": 1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "None"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-52",
+      "taskTitle": "Agent Army - Ward 1908 - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Horror Horror Shorts\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [\"no_villain_motifs\", \"too_long_story\"],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Generate Horror Horror Shorts",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [
+          "no_villain_motifs",
+          "too_long_story"
+        ],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-53",
+      "taskTitle": "Agent Army - Ward 1908 - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Horror Story\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Generate Horror Story",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-54",
+      "taskTitle": "Agent Army - Ward 1908 - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate outputs for story hook arc villain motif Ward 1908\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": [\"Generated 28 assets mapping to manifest outputKey targets\"]\n}",
+      "summary": {
+        "taskTitle": "Generate outputs for story hook arc villain motif Ward 1908",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "Generated 28 assets mapping to manifest outputKey targets"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-55",
+      "taskTitle": "Agent Army - Ward 1908 - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Deliver Outputs for Ward 1908\",\n  \"generatedCount\": 13,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Deliver Outputs for Ward 1908",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-56",
+      "taskTitle": "Agent Army - Ward 1908 - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Task Name\",\n  \"generatedCount\": 3,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": [] \n}",
+      "summary": {
+        "taskTitle": "Task Name",
+        "generatedCount": 3,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-57",
+      "taskTitle": "Agent Army - Website - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n \"taskTitle\": \"generate outputs for commercial-agent-army-prompts\",\n \"generatedCount\": 7,\n \"failedCount\": 0,\n \"skippedCount\": 0,\n \"blockers\": [],\n \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "generate outputs for commercial-agent-army-prompts",
+        "generatedCount": 7,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-58",
+      "taskTitle": "Agent Army - Website - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Finish the story\",\n  \"generatedCount\": 7,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Finish the story",
+        "generatedCount": 7,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-59",
+      "taskTitle": "Agent Army - Website - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"Output Generation and Quality Control\", \"generatedCount\": 0, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": [] }",
+      "summary": {
+        "taskTitle": "Output Generation and Quality Control",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-60",
+      "taskTitle": "Agent Army - Website - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"Deliver Outputs\", \"generatedCount\": 7, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": \"Success\" }",
+      "summary": {
+        "taskTitle": "Deliver Outputs",
+        "generatedCount": 7,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "Success"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-61",
+      "taskTitle": "Agent Army - Website - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Outputs for Mission: Agent Army - Website - Web Production\",\n  \"generatedCount\": 7,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Generate Outputs for Mission: Agent Army - Website - Web Production",
+        "generatedCount": 7,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-62",
+      "taskTitle": "Agent Army - Cross-Modal QA Certification",
+      "botId": "AI-QA-Test-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Task\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Task",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-63",
+      "taskTitle": "Agent Army - Rights, Safety, and Provenance Audit",
+      "botId": "AI-Security-Compliance-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-64",
+      "taskTitle": "Agent Army - Release Packaging and Deployment Sync",
+      "botId": "AI-DevOps-Release-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Update Packaging\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Update Packaging",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "the-harvest-men-trailer-main",
+  "title": "The Harvest Men Main Trailer",
+  "modality": "video",
+  "category": "story_trailer",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/the-harvest-men/video/story_trailer/the-harvest-men-trailer-main-v1.mp4",
+  "specs": {
+    "durationSeconds": 18,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise-video",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 640,
+    "height": 360,
+    "durationSeconds": 4,
+    "fps": 24,
+    "baseColor": "#2e6a4d",
+    "accentColor": "#86562a"
+  },
+  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
+  "providerChain": [
+    "runway",
+    "pika",
+    "luma",
+    "stable-video",
+    "manual-video-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:52.363Z"
+}

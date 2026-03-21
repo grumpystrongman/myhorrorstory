@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "WAR-190",
+    "recruitmentReason": "A closed psychiatric hospital updates patient files every night at 1:08 a.m. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+    "personalStakes": "The Record Keeper has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every medical trauma themes marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "A patient record edited at 1:08 arrives by email with your profile in attending notes.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Intake ledger photo"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Archive-first vs nurse-first opening",
+          "Orderly shift recording"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Restore names publicly vs protect descendants privately",
+          "Institutional abuse cover-up sustained by staff"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Persistent record loop with nonhuman agency",
+          "A second institution shares the same nocturnal edit signature."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "ward-1908-npc-1",
+      "displayName": "Hospital Archivist Nella Ward",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Hospital Archivist Nella Ward can expose ward-1908-clue-pressure at high trust."
+    },
+    {
+      "id": "ward-1908-npc-2",
+      "displayName": "Former Nurse Evan Mire",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Former Nurse Evan Mire can expose ward-1908-clue-reveal at high trust."
+    },
+    {
+      "id": "ward-1908-npc-3",
+      "displayName": "Renovation Contractor Jo Pike",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Renovation Contractor Jo Pike can expose ward-1908-clue-origin at high trust."
+    },
+    {
+      "id": "ward-1908-npc-4",
+      "displayName": "Records Officer Hale Sorn",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Records Officer Hale Sorn can expose ward-1908-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "ward-1908-puzzle-shards",
+      "title": "Intake Ledger Concordance",
+      "objective": "Align patient IDs split across channels to reconstruct missing admissions.",
+      "shards": [
+        {
+          "id": "ward-1908-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives ward index numbers without names."
+        },
+        {
+          "id": "ward-1908-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives names without index order."
+        },
+        {
+          "id": "ward-1908-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast includes admission dates needed to merge the two lists."
+        }
+      ],
+      "rewardClueId": "ward-1908-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/ward-1908/ward-1908-scene_art-1.png",
+    "assets": [
+      {
+        "id": "ward-1908-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/ward-1908/ward-1908-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for Ward 1908."
+      },
+      {
+        "id": "ward-1908-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/ward-1908/ward-1908-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for Ward 1908."
+      },
+      {
+        "id": "ward-1908-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/ward-1908/ward-1908-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for Ward 1908."
+      },
+      {
+        "id": "ward-1908-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/ward-1908/ward-1908-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to Ward 1908."
+      },
+      {
+        "id": "ward-1908-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/ward-1908/ward-1908-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to Ward 1908."
+      },
+      {
+        "id": "ward-1908-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/ward-1908/ward-1908-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to Ward 1908."
+      },
+      {
+        "id": "ward-1908-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/ward-1908/ward-1908-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to Ward 1908."
+      },
+      {
+        "id": "ward-1908-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/ward-1908/ward-1908-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for haunted institution arc."
+      },
+      {
+        "id": "ward-1908-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/ward-1908/ward-1908-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for haunted institution arc."
+      },
+      {
+        "id": "ward-1908-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/ward-1908/ward-1908-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for haunted institution arc."
+      },
+      {
+        "id": "ward-1908-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/ward-1908/ward-1908-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for haunted institution arc."
+      },
+      {
+        "id": "ward-1908-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/ward-1908/ward-1908-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for Ward 1908."
+      },
+      {
+        "id": "ward-1908-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/ward-1908/ward-1908-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for Ward 1908."
+      }
+    ]
+  },
   "replayHooks": [
     "Patient file set rotates by pacing.",
     "Empathy-heavy play unlocks memorial branch.",

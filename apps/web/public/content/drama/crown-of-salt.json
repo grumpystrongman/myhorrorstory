@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "CRO-OF-SAL",
+    "recruitmentReason": "A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+    "personalStakes": "The Salt Regent has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every cult coercion marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Brine-sealed manifest"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Manifest audit vs smuggler flip opening",
+          "Dockside CCTV still"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Expose logistics vs sever ritual command",
+          "Political laundering ring using ritual cover"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Ritual network with real anomalous effects",
+          "A salt-marked invoice links to inland transit hubs."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "crown-of-salt-npc-1",
+      "displayName": "Port Auditor Lin Ortega",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Port Auditor Lin Ortega can expose crown-of-salt-clue-pressure at high trust."
+    },
+    {
+      "id": "crown-of-salt-npc-2",
+      "displayName": "Smuggler Rafe Quinn",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Smuggler Rafe Quinn can expose crown-of-salt-clue-reveal at high trust."
+    },
+    {
+      "id": "crown-of-salt-npc-3",
+      "displayName": "Archivist Nun Sister Mirel",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Archivist Nun Sister Mirel can expose crown-of-salt-clue-origin at high trust."
+    },
+    {
+      "id": "crown-of-salt-npc-4",
+      "displayName": "Customs Broker Dax Ren",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Customs Broker Dax Ren can expose crown-of-salt-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "crown-of-salt-puzzle-shards",
+      "title": "Manifest Matrix",
+      "objective": "Cross-reference distributed manifest shards to locate the true relic route.",
+      "shards": [
+        {
+          "id": "crown-of-salt-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives container IDs with missing checksum bytes."
+        },
+        {
+          "id": "crown-of-salt-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives checksum bytes hidden in Telegram captions."
+        },
+        {
+          "id": "crown-of-salt-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast map provides route geometry needed to validate the sequence."
+        }
+      ],
+      "rewardClueId": "crown-of-salt-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/crown-of-salt/crown-of-salt-scene_art-1.png",
+    "assets": [
+      {
+        "id": "crown-of-salt-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for occult conspiracy arc."
+      },
+      {
+        "id": "crown-of-salt-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for occult conspiracy arc."
+      },
+      {
+        "id": "crown-of-salt-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for occult conspiracy arc."
+      },
+      {
+        "id": "crown-of-salt-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for occult conspiracy arc."
+      },
+      {
+        "id": "crown-of-salt-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for Crown of Salt."
+      },
+      {
+        "id": "crown-of-salt-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/crown-of-salt/crown-of-salt-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for Crown of Salt."
+      }
+    ]
+  },
   "replayHooks": [
     "Route graph permutations alter hierarchy.",
     "Nun-trust branch opens nonviolent path.",

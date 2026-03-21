@@ -1,0 +1,39 @@
+{
+  "id": "tape-17-pinewatch-story-key-art",
+  "title": "Tape 17: Pinewatch Story Key Art",
+  "modality": "image",
+  "category": "story_key_art",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/story_key_art/tape-17-pinewatch-story-key-art-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#4e5480",
+    "accentColor": "#5c8995"
+  },
+  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:50.795Z"
+}

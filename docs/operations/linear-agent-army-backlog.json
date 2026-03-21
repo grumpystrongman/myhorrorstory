@@ -1,0 +1,1352 @@
+{
+  "packageId": "agent-army-2026-03-20",
+  "packageTitle": "Commercial Agent Army - Full Multimodal Asset Production",
+  "sourceReferences": [
+    "assets/manifests/commercial-agent-army-plan.json",
+    "assets/prompts/commercial-agent-army-prompts.json",
+    "assets/prompts/commercial-site-pack.json",
+    "docs/stories/*.story.json"
+  ],
+  "tasks": [
+    {
+      "title": "Agent Army Command - Global Creative Orchestration",
+      "botId": "AI-Executive-Orchestrator",
+      "priority": 1,
+      "description": "Orchestrate all story and website production lanes across image, audio, video, artifact, and web outputs; maintain dependency board and unblock execution.",
+      "deliverables": [
+        "Master execution board for all modalities and stories",
+        "Daily burn-down snapshot with blocker tracking",
+        "Final signoff memo for commercial readiness"
+      ],
+      "signoffCriteria": [
+        "Every modality lane has explicit ownership and acceptance target",
+        "No unresolved blocker remains in launch-critical paths"
+      ],
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      }
+    },
+    {
+      "title": "Agent Army - Black Chapel Ledger - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Black Chapel Ledger using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Black Chapel Ledger - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Black Chapel Ledger using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Black Chapel Ledger - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Black Chapel Ledger using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Black Chapel Ledger - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Black Chapel Ledger using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Black Chapel Ledger - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Black Chapel Ledger using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Crown of Salt - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Crown of Salt using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Crown of Salt - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Crown of Salt using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Crown of Salt - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Crown of Salt using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Crown of Salt - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Crown of Salt using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Crown of Salt - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Crown of Salt using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Dead Channel Protocol - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Dead Channel Protocol using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Dead Channel Protocol - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Dead Channel Protocol using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Dead Channel Protocol - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Dead Channel Protocol using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Dead Channel Protocol - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Dead Channel Protocol using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Dead Channel Protocol - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Dead Channel Protocol using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Midnight Lockbox - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 13 artifact assets for Midnight Lockbox using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "artifact",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Midnight Lockbox - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Midnight Lockbox using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Midnight Lockbox - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 29 image assets for Midnight Lockbox using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "29 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "image",
+        "estimatedCount": 29
+      }
+    },
+    {
+      "title": "Agent Army - Midnight Lockbox - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Midnight Lockbox using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Midnight Lockbox - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Midnight Lockbox using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Red Creek Winter - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Red Creek Winter using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Red Creek Winter - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Red Creek Winter using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Red Creek Winter - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Red Creek Winter using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Red Creek Winter - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Red Creek Winter using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Red Creek Winter - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Red Creek Winter using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Signal From Kharon-9 - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Signal From Kharon-9 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Signal From Kharon-9 - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Signal From Kharon-9 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Signal From Kharon-9 - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Signal From Kharon-9 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Signal From Kharon-9 - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Signal From Kharon-9 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Signal From Kharon-9 - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Signal From Kharon-9 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Static Between Stations - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Static Between Stations using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Static Between Stations - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Static Between Stations using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Static Between Stations - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Static Between Stations using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Static Between Stations - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Static Between Stations using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Static Between Stations - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Static Between Stations using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Tape 17: Pinewatch - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Tape 17: Pinewatch using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Tape 17: Pinewatch - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Tape 17: Pinewatch using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Tape 17: Pinewatch - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Tape 17: Pinewatch using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Tape 17: Pinewatch - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Tape 17: Pinewatch using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Tape 17: Pinewatch - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Tape 17: Pinewatch using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - The Fourth Tenant - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for The Fourth Tenant using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - The Fourth Tenant - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for The Fourth Tenant using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - The Fourth Tenant - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for The Fourth Tenant using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - The Fourth Tenant - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for The Fourth Tenant using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - The Fourth Tenant - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for The Fourth Tenant using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - The Harvest Men - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for The Harvest Men using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - The Harvest Men - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for The Harvest Men using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - The Harvest Men - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for The Harvest Men using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - The Harvest Men - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for The Harvest Men using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - The Harvest Men - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for The Harvest Men using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Ward 1908 - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 12 artifact assets for Ward 1908 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "artifact",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Ward 1908 - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 12 audio assets for Ward 1908 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "12 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "audio",
+        "estimatedCount": 12
+      }
+    },
+    {
+      "title": "Agent Army - Ward 1908 - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 28 image assets for Ward 1908 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "28 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "image",
+        "estimatedCount": 28
+      }
+    },
+    {
+      "title": "Agent Army - Ward 1908 - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 13 video assets for Ward 1908 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "13 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "video",
+        "estimatedCount": 13
+      }
+    },
+    {
+      "title": "Agent Army - Ward 1908 - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 3 web assets for Ward 1908 using arc-aware and beat-aware prompts from the commercial agent-army manifest.",
+      "deliverables": [
+        "3 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: branch_decision_ui, story_overview_page"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "web",
+        "estimatedCount": 3
+      }
+    },
+    {
+      "title": "Agent Army - Website - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "description": "Produce 7 website artifact assets across landing, library, onboarding, play, codex, and mobile surfaces.",
+      "deliverables": [
+        "7 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: button_system_artifact"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "artifact",
+        "estimatedCount": 7
+      }
+    },
+    {
+      "title": "Agent Army - Website - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "description": "Produce 7 website audio assets across landing, library, onboarding, play, codex, and mobile surfaces.",
+      "deliverables": [
+        "7 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: surface_ambient_loop"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "audio",
+        "estimatedCount": 7
+      }
+    },
+    {
+      "title": "Agent Army - Website - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "description": "Produce 14 website image assets across landing, library, onboarding, play, codex, and mobile surfaces.",
+      "deliverables": [
+        "14 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: page_banner, background_texture"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "image",
+        "estimatedCount": 14
+      }
+    },
+    {
+      "title": "Agent Army - Website - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "description": "Produce 7 website video assets across landing, library, onboarding, play, codex, and mobile surfaces.",
+      "deliverables": [
+        "7 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: surface_motion_teaser"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "video",
+        "estimatedCount": 7
+      }
+    },
+    {
+      "title": "Agent Army - Website - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "description": "Produce 7 website web assets across landing, library, onboarding, play, codex, and mobile surfaces.",
+      "deliverables": [
+        "7 generated outputs mapped to manifest outputKey targets",
+        "Prompt execution metadata for each generated asset",
+        "Creative QA notes for categories: surface_layout_blueprint"
+      ],
+      "signoffCriteria": [
+        "All outputs pass declared quality gates and are referenced in metadata",
+        "No missing asset in the filtered modality queue"
+      ],
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "web",
+        "estimatedCount": 7
+      }
+    },
+    {
+      "title": "Agent Army - Cross-Modal QA Certification",
+      "botId": "AI-QA-Test-Agent",
+      "priority": 1,
+      "description": "Run cross-modal QA on all generated outputs, including playback sanity, visual integrity, artifact continuity, and responsive web checks.",
+      "deliverables": [
+        "Certification report by modality and story",
+        "Blocking defect list with repro notes",
+        "Final pass/fail matrix for launch gate"
+      ],
+      "signoffCriteria": [
+        "Critical defects resolved or waived by policy owner",
+        "Certification report attached to release gate"
+      ],
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      }
+    },
+    {
+      "title": "Agent Army - Rights, Safety, and Provenance Audit",
+      "botId": "AI-Security-Compliance-Agent",
+      "priority": 1,
+      "description": "Audit generated media for rights provenance, safety policy compliance, and commercial usage constraints before launch.",
+      "deliverables": [
+        "Rights/provenance manifest review",
+        "Safety and policy checklist",
+        "Risk exception log"
+      ],
+      "signoffCriteria": [
+        "No unresolved rights conflict",
+        "Safety controls validated for all release surfaces"
+      ],
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      }
+    },
+    {
+      "title": "Agent Army - Release Packaging and Deployment Sync",
+      "botId": "AI-DevOps-Release-Agent",
+      "priority": 2,
+      "description": "Sync generated outputs into deterministic release packaging, cache strategy, and deployment gating across web and mobile delivery paths.",
+      "deliverables": [
+        "Updated packaging checklist for generated assets",
+        "Cache invalidation plan for revised media",
+        "Rollback-safe deployment notes"
+      ],
+      "signoffCriteria": [
+        "Release pipeline handles new assets deterministically",
+        "Rollback path proven in staging"
+      ],
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      }
+    }
+  ]
+}

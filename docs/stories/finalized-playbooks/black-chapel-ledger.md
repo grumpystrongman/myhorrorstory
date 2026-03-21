@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: BLA-CHA-LED
+- Recruitment: A cathedral ledger records debts paid in memory instead of money. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: A scanned ledger page appears in WhatsApp showing one player's childhood home as collateral.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every religious horror imagery marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: A scanned ledger page appears in WhatsApp showing one player's childhood home as collateral.
+  - The case opens with impossible evidence and uncertain allies.
+  - Burned vellum fragment
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Archive verification vs keeper confrontation
+  - Choir rehearsal wax recording
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Public disclosure vs private restitution
+  - Predatory debt ring within clergy
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Supernatural debt mechanism feeding on memory
+  - A sealed codex references debts transferred to another parish.
+
 ## Beat-by-Beat Runtime Package
 ### Ledger Breach (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Debtor names rotate each run.
 - Culprit can shift from broker to archivist.
 - Confession route unlocks secret ending data.
+
+## Community Puzzle Hooks
+- Choir Interval Cipher: Reassemble chant intervals across three players to decode debtor index.
+  - Reward clue: black-chapel-ledger-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

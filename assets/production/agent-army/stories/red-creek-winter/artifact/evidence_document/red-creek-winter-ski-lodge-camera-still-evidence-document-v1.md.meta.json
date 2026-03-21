@@ -1,0 +1,28 @@
+{
+  "id": "red-creek-winter-ski-lodge-camera-still-evidence-document",
+  "title": "Red Creek Winter - Evidence Document - Ski lodge camera still",
+  "modality": "artifact",
+  "category": "evidence_document",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/red-creek-winter/artifact/evidence_document/red-creek-winter-ski-lodge-camera-still-evidence-document-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Produce in-world evidence artifact for \"Ski lodge camera still\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:56.168Z"
+}

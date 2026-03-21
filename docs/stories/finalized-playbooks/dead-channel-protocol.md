@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: DEA-CHA-PRO
+- Recruitment: A ghost app predicts outages, deaths, and your next move. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: An app push notification predicts a substation failure and names your trusted ally.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every surveillance anxiety marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: An app push notification predicts a substation failure and names your trusted ally.
+  - The case opens with impossible evidence and uncertain allies.
+  - Protocol signed payload
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Code audit vs field response opening
+  - Substation outage trace
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Disable network vs exploit protocol for leverage
+  - Human syndicate using predictive analytics
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Anomalous system learning from fear responses
+  - A dormant protocol node pings from a transit authority in another state.
+
 ## Beat-by-Beat Runtime Package
 ### Protocol Wake (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Prediction feed mutates by prior endings.
 - Fast-response players get shorter silence windows.
 - Hidden branch if all ultimatums are answered in time.
+
+## Community Puzzle Hooks
+- Node Handshake Puzzle: Combine handshake fragments to reveal real command origin.
+  - Reward clue: dead-channel-protocol-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

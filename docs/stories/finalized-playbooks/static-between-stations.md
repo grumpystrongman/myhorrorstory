@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: STA-BET-STA
+- Recruitment: A dead rail line broadcasts private confessions in the players' own voices. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every disturbing audio marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.
+  - The case opens with impossible evidence and uncertain allies.
+  - Spectrogram of confession burst
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Telecom trace vs witness-first opening
+  - Maintenance ledger anomaly
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Rescue route vs forensic route under ultimatum
+  - Inside dispatch accomplice
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Cross-city ritual broadcast network
+  - A station map marks a second inactive line in another city.
+
 ## Beat-by-Beat Runtime Package
 ### Signal One (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Variable witness reliability based on trust.
 - Dynamic villain timing windows.
 - Secret corruption ending on moral failures.
+
+## Community Puzzle Hooks
+- Relay Cipher Split: Combine three relay fragments distributed across party channels.
+  - Reward clue: static-between-stations-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

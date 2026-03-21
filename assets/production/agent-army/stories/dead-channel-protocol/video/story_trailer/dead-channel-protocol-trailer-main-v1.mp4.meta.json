@@ -1,0 +1,44 @@
+{
+  "id": "dead-channel-protocol-trailer-main",
+  "title": "Dead Channel Protocol Main Trailer",
+  "modality": "video",
+  "category": "story_trailer",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/video/story_trailer/dead-channel-protocol-trailer-main-v1.mp4",
+  "specs": {
+    "durationSeconds": 18,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise-video",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 640,
+    "height": 360,
+    "durationSeconds": 4,
+    "fps": 24,
+    "baseColor": "#308360",
+    "accentColor": "#684d2f"
+  },
+  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
+  "providerChain": [
+    "runway",
+    "pika",
+    "luma",
+    "stable-video",
+    "manual-video-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:17.512Z"
+}

@@ -1,14 +1,14 @@
 # Linear Production Package Dispatch Report
 
-Generated: 2026-03-20T14:11:45.128Z
+Generated: 2026-03-20T17:01:17.572Z
 Mode: dry-run-no-token
-Package: Midnight Lockbox Beat 1 - Unit 331 Full Production Package
+Package: Commercial Agent Army - Full Multimodal Asset Production
 Team: null
 Auth source: none
 
 ## Summary
 - Existing issues scanned: 0
-- Tasks in backlog: 15
+- Tasks in backlog: 64
 - Created: 0
 - Already present: 0
 

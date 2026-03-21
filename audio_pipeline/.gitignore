@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Generated audio outputs (keep only placeholders/versioned manifests)
+generated/**/*.wav
+generated/**/*.mp3
+processed/**/*.wav
+processed/**/*.mp3
+stems/**/*.wav
+stems/**/*.mp3

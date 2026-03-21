@@ -1,0 +1,28 @@
+{
+  "id": "crown-of-salt-manifest-audit-vs-smuggler-flip-opening-decision-artifact",
+  "title": "Crown of Salt - Branch Artifact - Manifest audit vs smuggler flip opening",
+  "modality": "artifact",
+  "category": "branch_decision_artifact",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/crown-of-salt/artifact/branch_decision_artifact/crown-of-salt-manifest-audit-vs-smuggler-flip-opening-decision-artifact-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Create in-world branching evidence note for \"Manifest audit vs smuggler flip opening\" showing consequences of each path without explicit spoilers.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:54.198Z"
+}

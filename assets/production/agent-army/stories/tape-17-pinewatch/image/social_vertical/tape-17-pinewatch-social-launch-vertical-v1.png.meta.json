@@ -1,0 +1,39 @@
+{
+  "id": "tape-17-pinewatch-social-launch-vertical",
+  "title": "Tape 17: Pinewatch Social Launch Vertical",
+  "modality": "image",
+  "category": "social_vertical",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/social_vertical/tape-17-pinewatch-social-launch-vertical-v1.png",
+  "specs": {
+    "width": 1080,
+    "height": 1080,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1080,
+    "height": 1080,
+    "baseColor": "#3f6c33",
+    "accentColor": "#883451"
+  },
+  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:09.838Z"
+}

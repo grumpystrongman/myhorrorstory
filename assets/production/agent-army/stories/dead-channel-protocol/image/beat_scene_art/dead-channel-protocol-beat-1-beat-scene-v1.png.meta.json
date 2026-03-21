@@ -1,0 +1,39 @@
+{
+  "id": "dead-channel-protocol-beat-1-beat-scene",
+  "title": "Dead Channel Protocol - Protocol Wake Beat Scene",
+  "modality": "image",
+  "category": "beat_scene_art",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-1-beat-scene-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#4d8b6f",
+    "accentColor": "#2c6b70"
+  },
+  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Protocol Wake (Contact). Narrative: An app push notification predicts a substation failure and names your trusted ally.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:59.717Z"
+}

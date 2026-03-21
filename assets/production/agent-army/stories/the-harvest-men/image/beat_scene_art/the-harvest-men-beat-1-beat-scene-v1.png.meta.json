@@ -1,0 +1,39 @@
+{
+  "id": "the-harvest-men-beat-1-beat-scene",
+  "title": "The Harvest Men - Dusk Selection Beat Scene",
+  "modality": "image",
+  "category": "beat_scene_art",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-1-beat-scene-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#2e309f",
+    "accentColor": "#883738"
+  },
+  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Dusk Selection (Contact). Narrative: Players receive synchronized SMS photos of the same ritual mask in three different houses.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:37.052Z"
+}

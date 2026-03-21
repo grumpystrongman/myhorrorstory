@@ -631,6 +631,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "MID-LOC",
+    "recruitmentReason": "A self-storage unit with no renter sends voice memos predicting what your team will do next. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.",
+    "personalStakes": "The Quartermaster has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Lockbox Contact: An impossible voicemail starts the case at the storage facility. Maintain evidence discipline and document every threat marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.",
+        "keyMoments": [
+          "An impossible voicemail starts the case at the storage facility.",
+          "Voicemail waveform anomaly"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Daylight leaks force trust decisions under public pressure.",
+        "keyMoments": [
+          "Digital audit-first versus witness-first opening",
+          "Keypad access hash export"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Public reveal versus covert extraction at noon",
+          "Inside-job extortion ring using predictive surveillance"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "A final tunnel run decides truth, compromise, or collapse.",
+        "keyMoments": [
+          "Anomalous lockbox artifact that mirrors future intent",
+          "A second lockbox in another city starts transmitting the same timestamp."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "midnight-lockbox-npc-1",
+      "displayName": "Case Lead Veda Cross",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Contain leaks before public panic"
+      ],
+      "trustBaseline": 58,
+      "trustCeiling": 92,
+      "notableSecret": "Lead Investigator Mara Quinn can expose midnight-lockbox-clue-pressure at high trust."
+    },
+    {
+      "id": "midnight-lockbox-npc-2",
+      "displayName": "Night Manager Eli Mercer",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Keep his family uninvolved"
+      ],
+      "trustBaseline": 42,
+      "trustCeiling": 84,
+      "notableSecret": "Dispatch Handler Ilya Ross can expose midnight-lockbox-clue-reveal at high trust."
+    },
+    {
+      "id": "midnight-lockbox-npc-3",
+      "displayName": "Courier Witness Sia Rowan",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Stay out of custody and protect a sibling"
+      ],
+      "trustBaseline": 37,
+      "trustCeiling": 80,
+      "notableSecret": "Commuter Witness Nia Vale can expose midnight-lockbox-clue-origin at high trust."
+    },
+    {
+      "id": "midnight-lockbox-npc-4",
+      "displayName": "Locksmith Omar Hale",
+      "role": "EXPERT",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Document how the lock was spoofed"
+      ],
+      "trustBaseline": 46,
+      "trustCeiling": 88,
+      "notableSecret": "Transit Auditor Bram Keene can expose midnight-lockbox-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "midnight-lockbox-puzzle-shards",
+      "title": "Unit Grid Reconstruction",
+      "objective": "Combine shared lock patterns to identify the real unit sequence.",
+      "shards": [
+        {
+          "id": "midnight-lockbox-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host gets lock serials without floor order."
+        },
+        {
+          "id": "midnight-lockbox-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally gets floor order without serials."
+        },
+        {
+          "id": "midnight-lockbox-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast drop includes the timing offset key."
+        }
+      ],
+      "rewardClueId": "midnight-lockbox-clue-origin",
+      "failureConsequence": "Wrong sequence triggers false evidence upload and witness relocation.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-1.png",
+    "assets": [
+      {
+        "id": "midnight-lockbox-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for supernatural mystery arc."
+      },
+      {
+        "id": "midnight-lockbox-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for supernatural mystery arc."
+      },
+      {
+        "id": "midnight-lockbox-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for supernatural mystery arc."
+      },
+      {
+        "id": "midnight-lockbox-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for supernatural mystery arc."
+      },
+      {
+        "id": "midnight-lockbox-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for Midnight Lockbox."
+      },
+      {
+        "id": "midnight-lockbox-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/midnight-lockbox/midnight-lockbox-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for Midnight Lockbox."
+      }
+    ]
+  },
   "replayHooks": [
     "Fast-response runs uncover hidden keypad metadata.",
     "Different ally trust choices change witness survival odds.",

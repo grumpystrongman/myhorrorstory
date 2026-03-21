@@ -1,0 +1,39 @@
+{
+  "id": "web-library-page-banner",
+  "title": "Case Library Page Banner",
+  "modality": "image",
+  "category": "page_banner",
+  "scope": "website",
+  "outputKey": "assets/production/agent-army/website/image/web-library-page-banner-v1.png",
+  "specs": {
+    "width": 2048,
+    "height": 1152,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#767e31",
+    "accentColor": "#92999a"
+  },
+  "prompt": "Surface Case Library (/library) objective: Browse and select stories with premium visual hierarchy.. Create cinematic horror-luxe page banner art with layered atmosphere and typography-safe focal zone. Style principles: cinematic contrast with restrained saturation; editorial typography hierarchy; texture-first backgrounds instead of flat fills; socially playable collaboration cues; high readability under low-light mood.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:03.690Z"
+}

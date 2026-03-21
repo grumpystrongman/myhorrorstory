@@ -1,0 +1,28 @@
+{
+  "id": "midnight-lockbox-public-reveal-versus-covert-extraction-at-noon-decision-artifact",
+  "title": "Midnight Lockbox - Branch Artifact - Public reveal versus covert extraction at noon",
+  "modality": "artifact",
+  "category": "branch_decision_artifact",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/midnight-lockbox/artifact/branch_decision_artifact/midnight-lockbox-public-reveal-versus-covert-extraction-at-noon-decision-artifact-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Create in-world branching evidence note for \"Public reveal versus covert extraction at noon\" showing consequences of each path without explicit spoilers.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:37.629Z"
+}

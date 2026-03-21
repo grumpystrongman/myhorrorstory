@@ -1,0 +1,39 @@
+{
+  "id": "red-creek-winter-social-launch-square",
+  "title": "Red Creek Winter Social Launch Square",
+  "modality": "image",
+  "category": "social_square",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/red-creek-winter/image/social_square/red-creek-winter-social-launch-square-v1.png",
+  "specs": {
+    "width": 1080,
+    "height": 1080,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1080,
+    "height": 1080,
+    "baseColor": "#29843a",
+    "accentColor": "#493288"
+  },
+  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:05.108Z"
+}

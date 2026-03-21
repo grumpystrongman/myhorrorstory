@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: RED-CRE-WIN
+- Recruitment: Each snowfall uncovers one body and one impossible alibi. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: Dispatch pushes a crime scene map to SMS while social channels spread contradictory alibis.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every slasher violence marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: Dispatch pushes a crime scene map to SMS while social channels spread contradictory alibis.
+  - The case opens with impossible evidence and uncertain allies.
+  - Dispatch freeze frame
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Forensics-first vs interrogation-first opening
+  - Snow-depth forensic note
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Protect survivor vs bait killer with false lead
+  - Single killer with staged alibis
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Coordinated copycat pair exploiting panic
+  - A second mountain county reports matching wound signatures.
+
 ## Beat-by-Beat Runtime Package
 ### First Snow Body (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Suspect order rotates by weather seed.
 - Aggressive play increases misinformation floods.
 - Perfect run unlocks tribunal ending sequence.
+
+## Community Puzzle Hooks
+- Blizzard Alibi Grid: Merge weather and movement shards to break impossible alibis.
+  - Reward clue: red-creek-winter-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

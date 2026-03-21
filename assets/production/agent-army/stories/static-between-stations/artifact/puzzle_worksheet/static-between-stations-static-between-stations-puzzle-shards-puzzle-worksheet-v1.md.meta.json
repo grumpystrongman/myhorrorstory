@@ -1,0 +1,28 @@
+{
+  "id": "static-between-stations-static-between-stations-puzzle-shards-puzzle-worksheet",
+  "title": "Static Between Stations - Relay Cipher Split Puzzle Worksheet",
+  "modality": "artifact",
+  "category": "puzzle_worksheet",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/static-between-stations/artifact/puzzle_worksheet/static-between-stations-static-between-stations-puzzle-shards-puzzle-worksheet-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Create puzzle worksheet for \"Relay Cipher Split\" with clear player instructions, shard mapping, and anti-spoiler hint progression.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:43.513Z"
+}

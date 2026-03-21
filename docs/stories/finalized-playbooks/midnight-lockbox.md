@@ -13,6 +13,27 @@
 - Leak and Fracture (MIDDLE): Daylight leaks force trust decisions under public pressure.
 - Second-Night Reckoning (ENDGAME): A final tunnel run decides truth, compromise, or collapse.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: MID-LOC
+- Recruitment: A self-storage unit with no renter sends voice memos predicting what your team will do next. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.
+- First Directive: Lockbox Contact: An impossible voicemail starts the case at the storage facility. Maintain evidence discipline and document every threat marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word.
+  - An impossible voicemail starts the case at the storage facility.
+  - Voicemail waveform anomaly
+- Week 2 - Contradiction Mapping: Daylight leaks force trust decisions under public pressure.
+  - Digital audit-first versus witness-first opening
+  - Keypad access hash export
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Public reveal versus covert extraction at noon
+  - Inside-job extortion ring using predictive surveillance
+- Week 4 - Endgame And Debrief: A final tunnel run decides truth, compromise, or collapse.
+  - Anomalous lockbox artifact that mirrors future intent
+  - A second lockbox in another city starts transmitting the same timestamp.
+
 ## Beat-by-Beat Runtime Package
 ### Unit 331 pings alive (`beat-1`)
 - Act: Night One: Breach
@@ -109,4 +130,9 @@
 - Fast-response runs uncover hidden keypad metadata.
 - Different ally trust choices change witness survival odds.
 - Low-morality runs unlock a compromised operator epilogue.
+
+## Community Puzzle Hooks
+- Unit Grid Reconstruction: Combine shared lock patterns to identify the real unit sequence.
+  - Reward clue: midnight-lockbox-clue-origin
+  - Failure: Wrong sequence triggers false evidence upload and witness relocation.
 

@@ -1,0 +1,28 @@
+{
+  "id": "red-creek-winter-villain-dossier",
+  "title": "Red Creek Winter - Villain Dossier",
+  "modality": "artifact",
+  "category": "villain_dossier",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/red-creek-winter/artifact/villain_dossier/red-creek-winter-villain-dossier-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build antagonist dossier covering motive, manipulation tactics (public bait, alibi poisoning, countdown threats), risk tolerance 0.79, and predicted pressure pathways.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:55.353Z"
+}

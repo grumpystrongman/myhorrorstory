@@ -1,0 +1,40 @@
+{
+  "id": "midnight-lockbox-midnight-lockbox-npc-3-voice-profile",
+  "title": "Midnight Lockbox - Courier Witness Sia Rowan Voice Profile",
+  "modality": "audio",
+  "category": "npc_voice_profile",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/midnight-lockbox/audio/npc_voice_profile/midnight-lockbox-midnight-lockbox-npc-3-voice-profile-v1.wav",
+  "specs": {
+    "durationSeconds": 20,
+    "format": "wav",
+    "sampleRateHz": 48000,
+    "channels": 1
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-sine-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "frequencyHz": 207,
+    "durationSeconds": 8,
+    "sampleRateHz": 48000
+  },
+  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Build unique voice profile for Courier Witness Sia Rowan. Baseline emotion=SUSPICIOUS. Motivations=Stay out of custody and protect a sibling. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
+  "providerChain": [
+    "piper",
+    "elevenlabs",
+    "openai-tts",
+    "polly",
+    "manual-audio-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:30.604Z"
+}

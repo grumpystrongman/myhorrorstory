@@ -1,0 +1,325 @@
+{
+  "generatedAt": "2026-03-20T18:32:16.610Z",
+  "mode": "execute",
+  "strictStructuredOutput": true,
+  "maxRetries": 4,
+  "jobsConsidered": 64,
+  "jobsSelected": 16,
+  "executed": 16,
+  "succeeded": 16,
+  "failed": 0,
+  "results": [
+    {
+      "id": "openclaw-agent-army-job-33",
+      "taskTitle": "Agent Army - Static Between Stations - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Story Outline\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Story Outline",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-34",
+      "taskTitle": "Agent Army - Static Between Stations - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Finish Image Story Production\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"Finished all outputs and recorded effective metadata for asset outputKeys. Passed quality gate checks without missing any assets in the filtered modality queue.\"\n}",
+      "summary": {
+        "taskTitle": "Finish Image Story Production",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "Finished all outputs and recorded effective metadata for asset outputKeys. Passed quality gate checks without missing any assets in the filtered modality queue."
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-35",
+      "taskTitle": "Agent Army - Static Between Stations - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Story Story Hook\",\n  \"generatedCount\": 1,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Story Story Hook",
+        "generatedCount": 1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-36",
+      "taskTitle": "Agent Army - Static Between Stations - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"Generate Outputs for MyHorrorStory Production\", \"generatedCount\": 0, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": \"[Agent Army]\" }",
+      "summary": {
+        "taskTitle": "Generate Outputs for MyHorrorStory Production",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "[Agent Army]"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-37",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Deliverables for this mission\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Deliverables for this mission",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-38",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Final Audio Delivery for Pinewatch - Audio Production\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Final Audio Delivery for Pinewatch - Audio Production",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-39",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"Film Production - Scene 3\", \"generatedCount\": 28, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": [] }",
+      "summary": {
+        "taskTitle": "Film Production - Scene 3",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-40",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Production: MyHorrorStory\",\n  \"generatedCount\": 13,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Production: MyHorrorStory",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-41",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Pinewatch Storyline Milestones\",\n  \"generatedCount\": 1,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": [\"Successful story production\"]\n}",
+      "summary": {
+        "taskTitle": "Generate Pinewatch Storyline Milestones",
+        "generatedCount": 1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "Successful story production"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-42",
+      "taskTitle": "Agent Army - The Fourth Tenant - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Story Outputs\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Generate Story Outputs",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-43",
+      "taskTitle": "Agent Army - The Fourth Tenant - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Horror Story\",\n  \"generatedCount\": 1,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Generate Horror Story",
+        "generatedCount": 1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-44",
+      "taskTitle": "Agent Army - The Fourth Tenant - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-45",
+      "taskTitle": "Agent Army - The Fourth Tenant - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"Generate Assets for Horror Story\", \"generatedCount\": 13, \"failedCount\": 0, \"skippedCount\": 1, \"blockers\": [], \"notes\": [] }",
+      "summary": {
+        "taskTitle": "Generate Assets for Horror Story",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 1,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-46",
+      "taskTitle": "Agent Army - The Fourth Tenant - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"\",\n  \"generatedCount\": 1,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "",
+        "generatedCount": 1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-47",
+      "taskTitle": "Agent Army - The Harvest Men - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate story outputs for The Horror Story\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Generate story outputs for The Horror Story",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-48",
+      "taskTitle": "Agent Army - The Harvest Men - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Outputs for MyHorrorStory\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Generate Outputs for MyHorrorStory",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-03-20T17:52:33.543Z",
+  "mode": "execute",
+  "strictStructuredOutput": true,
+  "maxRetries": 4,
+  "jobsConsidered": 64,
+  "jobsSelected": 5,
+  "executed": 5,
+  "succeeded": 5,
+  "failed": 0,
+  "results": [
+    {
+      "id": "openclaw-agent-army-job-1",
+      "taskTitle": "Agent Army Command - Global Creative Orchestration",
+      "botId": "AI-Executive-Orchestrator",
+      "status": "success",
+      "attempts": 2,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Task 1234\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\" }",
+      "summary": {
+        "taskTitle": "Task 1234",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-2",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 3,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\"taskTitle\": \"Generate horror stories\", \"generatedCount\": 12, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": \"\"}",
+      "summary": {
+        "taskTitle": "Generate horror stories",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-3",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Black Chapel Ledger\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Black Chapel Ledger",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-4",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Black Chapel Ledger\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"Success\"\n}",
+      "summary": {
+        "taskTitle": "Black Chapel Ledger",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "Success"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-5",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"Run Clapback Script\", \"generatedCount\": 13, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": \"Successfully launched all outputs for the selected queue.\" }",
+      "summary": {
+        "taskTitle": "Run Clapback Script",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "Successfully launched all outputs for the selected queue."
+        ]
+      }
+    }
+  ]
+}

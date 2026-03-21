@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
@@ -157,11 +157,11 @@ export function LibraryLivePreview({ stories }: LibraryLivePreviewProps): JSX.El
     <section className="panel section-shell library-preview-shell">
       <div className="library-preview-top">
         <div>
-          <span className="surface-tag">Playable Preview</span>
+          <span className="surface-tag">Signal Preview</span>
           <h2 className="section-title">Live Investigation Simulation</h2>
           <p className="section-copy">
-            This is the actual branching runtime: incoming channel drops, villain contact, response
-            choices, and progression state.
+            Preview the real branching runtime: incoming transmissions, antagonist pressure, response
+            decisions, and progression state.
           </p>
         </div>
         <div className="library-preview-controls">
@@ -178,7 +178,7 @@ export function LibraryLivePreview({ stories }: LibraryLivePreviewProps): JSX.El
             ))}
           </select>
           <button type="button" onClick={restartPreview} disabled={!pack}>
-            Restart Preview
+            Reset Signal
           </button>
           <a className="cta-primary" href={selectedStory?.playPath ?? '/play'}>
             Open Full Session
@@ -190,14 +190,14 @@ export function LibraryLivePreview({ stories }: LibraryLivePreviewProps): JSX.El
         <article className="library-preview-story panel">
           <img src={selectedStory?.coverImagePath ?? '/visuals/surfaces/library.svg'} alt="Story cover" />
           <div>
-            <p className="kicker">Current Beat</p>
+            <p className="kicker">Active Transmission Beat</p>
             <h3>{currentBeat ? `${currentBeat.actTitle}: ${currentBeat.title}` : 'Loading Case Runtime'}</h3>
             <p className="muted">
               {currentBeat?.narrative ??
                 (loading ? 'Loading runtime package...' : error ?? 'Waiting for runtime package.')}
             </p>
             <p className="muted">
-              Progress: {Math.round(sessionState?.investigationProgress ?? 0)}% · Stage {currentBeat?.stage ?? 1}/4
+              Progress: {Math.round(sessionState?.investigationProgress ?? 0)}% - Stage {currentBeat?.stage ?? 1}/4
             </p>
           </div>
         </article>
@@ -206,16 +206,16 @@ export function LibraryLivePreview({ stories }: LibraryLivePreviewProps): JSX.El
           <h3>Channel Feed</h3>
           <p className="muted">
             {isStreaming
-              ? 'Transmissions are arriving now.'
+              ? 'Transmission burst in progress.'
               : loading
                 ? 'Loading feed...'
                 : sessionState?.complete
                   ? 'Case preview reached an ending.'
-                  : 'Awaiting your response.'}
+                  : 'Awaiting operator response.'}
           </p>
           <div className="library-preview-feed-list">
             {feed.length === 0 ? (
-              <p className="muted">No transmissions yet.</p>
+              <p className="muted">No transmissions captured yet.</p>
             ) : (
               feed.map((message) => (
                 <article key={message.id} className={`play-feed-item role-${message.role}`}>
@@ -233,7 +233,7 @@ export function LibraryLivePreview({ stories }: LibraryLivePreviewProps): JSX.El
 
       <div className="library-preview-bottom">
         <article className="panel library-preview-alert">
-          <h3>Villain Contact</h3>
+          <h3>Antagonist Contact</h3>
           <p className="muted">
             {antagonistMessage?.text ??
               'No direct antagonist line yet. Advance a beat to trigger escalation.'}
@@ -246,7 +246,7 @@ export function LibraryLivePreview({ stories }: LibraryLivePreviewProps): JSX.El
         </article>
 
         <article className="panel library-preview-choices">
-          <h3>Choose Response</h3>
+          <h3>Dispatch Response</h3>
           <div className="play-response-list">
             {(currentBeat?.responseOptions ?? []).map((option) => (
               <button

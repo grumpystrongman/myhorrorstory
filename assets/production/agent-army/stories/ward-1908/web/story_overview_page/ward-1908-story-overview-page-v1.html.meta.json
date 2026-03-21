@@ -1,0 +1,27 @@
+{
+  "id": "ward-1908-story-overview-page",
+  "title": "Ward 1908 Story Overview Page",
+  "modality": "web",
+  "category": "story_overview_page",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/ward-1908/web/story_overview_page/ward-1908-story-overview-page-v1.html",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "html-template"
+  },
+  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
+  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
+  "providerChain": [
+    "gpt-4.1",
+    "manual-design-review"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:33:11.718Z"
+}

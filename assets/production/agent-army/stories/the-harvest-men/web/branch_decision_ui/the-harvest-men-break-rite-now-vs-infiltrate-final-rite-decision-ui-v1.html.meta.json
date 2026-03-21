@@ -1,0 +1,27 @@
+{
+  "id": "the-harvest-men-break-rite-now-vs-infiltrate-final-rite-decision-ui",
+  "title": "The Harvest Men - Branch UI - Break rite now vs infiltrate final rite",
+  "modality": "web",
+  "category": "branch_decision_ui",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/the-harvest-men/web/branch_decision_ui/the-harvest-men-break-rite-now-vs-infiltrate-final-rite-decision-ui-v1.html",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "html-template"
+  },
+  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build interactive branch decision page for \"Break rite now vs infiltrate final rite\" with tension-forward copy, clear options, and high-readability input controls.",
+  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
+  "providerChain": [
+    "gpt-4.1",
+    "manual-design-review"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:50.645Z"
+}

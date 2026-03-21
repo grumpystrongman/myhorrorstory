@@ -1,0 +1,39 @@
+{
+  "id": "dead-channel-protocol-social-launch-square",
+  "title": "Dead Channel Protocol Social Launch Square",
+  "modality": "image",
+  "category": "social_square",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/social_square/dead-channel-protocol-social-launch-square-v1.png",
+  "specs": {
+    "width": 1080,
+    "height": 1080,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1080,
+    "height": 1080,
+    "baseColor": "#7e793c",
+    "accentColor": "#559a53"
+  },
+  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:16.766Z"
+}

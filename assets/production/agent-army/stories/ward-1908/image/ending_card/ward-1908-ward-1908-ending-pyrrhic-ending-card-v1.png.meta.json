@@ -1,0 +1,39 @@
+{
+  "id": "ward-1908-ward-1908-ending-pyrrhic-ending-card",
+  "title": "Ward 1908 - Compromised Truth Ending Card",
+  "modality": "image",
+  "category": "ending_card",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/ward-1908/image/ending_card/ward-1908-ward-1908-ending-pyrrhic-ending-card-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#283929",
+    "accentColor": "#9f3c56"
+  },
+  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You reveal the abuse but trigger backlash against survivors' families.. Deliver emotional closure with sequel-hook tension.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:33:08.077Z"
+}

@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-03-20T17:56:34.044Z",
+  "mode": "execute",
+  "strictStructuredOutput": true,
+  "maxRetries": 4,
+  "jobsConsidered": 64,
+  "jobsSelected": 3,
+  "executed": 3,
+  "succeeded": 3,
+  "failed": 0,
+  "results": [
+    {
+      "id": "openclaw-agent-army-job-1",
+      "taskTitle": "Agent Army Command - Global Creative Orchestration",
+      "botId": "AI-Executive-Orchestrator",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Deliver Commercial Readiness for Agent Army Command\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Deliver Commercial Readiness for Agent Army Command",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-2",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Outputs for Agent Army - Black Chapel Ledger - Artifact Production Mission\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \".notes\": \"Executing AI-Story-Engine-Agent operations in MyHorrorStory production mode.\"\n}",
+      "summary": {
+        "taskTitle": "Generate Outputs for Agent Army - Black Chapel Ledger - Artifact Production Mission",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-3",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Horror Story\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \" notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Generate Horror Story",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    }
+  ]
+}

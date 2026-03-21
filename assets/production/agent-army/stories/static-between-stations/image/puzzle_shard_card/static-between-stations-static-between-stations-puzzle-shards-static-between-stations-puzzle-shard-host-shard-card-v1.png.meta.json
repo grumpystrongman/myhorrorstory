@@ -1,0 +1,39 @@
+{
+  "id": "static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-host-shard-card",
+  "title": "Static Between Stations - Relay Cipher Split - HOST Shard Card",
+  "modality": "image",
+  "category": "puzzle_shard_card",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/static-between-stations/image/puzzle_shard_card/static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-host-shard-card-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#552d41",
+    "accentColor": "#4a5d4f"
+  },
+  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Create shard card for holder HOST. Content brief: Host receives a packet-latency table with one hidden timestamp.. Ensure it can stand alone but becomes decisive when combined with other shards.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:43.691Z"
+}

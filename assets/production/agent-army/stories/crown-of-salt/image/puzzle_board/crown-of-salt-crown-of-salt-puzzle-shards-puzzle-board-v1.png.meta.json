@@ -1,0 +1,39 @@
+{
+  "id": "crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board",
+  "title": "Crown of Salt - Manifest Matrix Puzzle Board",
+  "modality": "image",
+  "category": "puzzle_board",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/crown-of-salt/image/puzzle_board/crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#84714f",
+    "accentColor": "#5c3458"
+  },
+  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Puzzle visual for \"Manifest Matrix\". Objective: Cross-reference distributed manifest shards to locate the true relic route.. Build layered clue board where each shard can be solved collaboratively.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:49.391Z"
+}

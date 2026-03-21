@@ -1,0 +1,28 @@
+{
+  "id": "tape-17-pinewatch-frame-glitch-cluster-evidence-document",
+  "title": "Tape 17: Pinewatch - Evidence Document - Frame glitch cluster",
+  "modality": "artifact",
+  "category": "evidence_document",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/artifact/evidence_document/tape-17-pinewatch-frame-glitch-cluster-evidence-document-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Produce in-world evidence artifact for \"Frame glitch cluster\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:04.792Z"
+}

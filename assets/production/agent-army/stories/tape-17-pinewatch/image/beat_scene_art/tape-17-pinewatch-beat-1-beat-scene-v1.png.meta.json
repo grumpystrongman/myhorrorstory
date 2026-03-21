@@ -1,0 +1,39 @@
+{
+  "id": "tape-17-pinewatch-beat-1-beat-scene",
+  "title": "Tape 17: Pinewatch - Tape Reset Beat Scene",
+  "modality": "image",
+  "category": "beat_scene_art",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-1-beat-scene-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#9b5b63",
+    "accentColor": "#9e645e"
+  },
+  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Tape Reset (Contact). Narrative: The same footage frame arrives through Telegram with different timestamps for each player.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:55.349Z"
+}

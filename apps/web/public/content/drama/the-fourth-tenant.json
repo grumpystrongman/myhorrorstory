@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "THE-FOU-TEN",
+    "recruitmentReason": "Rent is collected from an apartment that appears on no official map. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "An email receipt references Unit 4 despite floor plans showing only three apartments.",
+    "personalStakes": "The Landlord of Rooms That Move has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every stalking marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "An email receipt references Unit 4 despite floor plans showing only three apartments.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Lease chain checksum"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Records-first vs pursuit-first opening",
+          "Hallway thermal still"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Expose fraud publicly vs close case quietly",
+          "Insurance fraud using synthetic tenants"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Liminal resident sustained by contractual ritual",
+          "Other cities report rent receipts tied to non-existent units."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "the-fourth-tenant-npc-1",
+      "displayName": "Building Superintendent Leda Price",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Building Superintendent Leda Price can expose the-fourth-tenant-clue-pressure at high trust."
+    },
+    {
+      "id": "the-fourth-tenant-npc-2",
+      "displayName": "Lease Broker Owen Pike",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Lease Broker Owen Pike can expose the-fourth-tenant-clue-reveal at high trust."
+    },
+    {
+      "id": "the-fourth-tenant-npc-3",
+      "displayName": "Night Tenant Maris Holt",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Night Tenant Maris Holt can expose the-fourth-tenant-clue-origin at high trust."
+    },
+    {
+      "id": "the-fourth-tenant-npc-4",
+      "displayName": "Claims Adjuster Felix Noor",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Claims Adjuster Felix Noor can expose the-fourth-tenant-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "the-fourth-tenant-puzzle-shards",
+      "title": "Lease Fragment Reconstruction",
+      "objective": "Assemble split lease clauses distributed by channel to locate Unit 4 entrance.",
+      "shards": [
+        {
+          "id": "the-fourth-tenant-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives a redacted PDF with clause numbering intact."
+        },
+        {
+          "id": "the-fourth-tenant-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives the missing clause text over WhatsApp."
+        },
+        {
+          "id": "the-fourth-tenant-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Global drop contains watermark coordinates for the hidden hallway."
+        }
+      ],
+      "rewardClueId": "the-fourth-tenant-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/the-fourth-tenant/the-fourth-tenant-scene_art-1.png",
+    "assets": [
+      {
+        "id": "the-fourth-tenant-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for supernatural mystery arc."
+      },
+      {
+        "id": "the-fourth-tenant-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for supernatural mystery arc."
+      },
+      {
+        "id": "the-fourth-tenant-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for supernatural mystery arc."
+      },
+      {
+        "id": "the-fourth-tenant-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for supernatural mystery arc."
+      },
+      {
+        "id": "the-fourth-tenant-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for The Fourth Tenant."
+      },
+      {
+        "id": "the-fourth-tenant-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/the-fourth-tenant/the-fourth-tenant-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for The Fourth Tenant."
+      }
+    ]
+  },
   "replayHooks": [
     "Timeline offsets by response speed.",
     "Forgery branch implicates different suspects.",

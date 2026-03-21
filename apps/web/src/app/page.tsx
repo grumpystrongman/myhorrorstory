@@ -10,11 +10,12 @@ export default function HomePage(): JSX.Element {
       <header className="hero-shell">
         <div className="hero-backdrop" aria-hidden="true" />
         <div className="hero-content">
-          <p className="kicker">MyHorrorStory</p>
+          <p className="kicker">MyHorrorStory Signal Desk</p>
           <h1 className="hero-title">Remote Horror Mystery Platform</h1>
           <p className="hero-copy">
-            Premium cinematic investigations for solo and remote party play. Each case combines story
-            chat, voice drops, evidence boards, adaptive score, and branching endings.
+            Enter a live investigation portal built around phone-call anomalies, found-audio clues, and
+            escalating transmissions. Each case blends story chat, voice drops, evidence boards, adaptive
+            score, and branching endings.
           </p>
           <div className="hero-actions">
             <a className="cta-primary" href="/onboarding">
@@ -29,20 +30,54 @@ export default function HomePage(): JSX.Element {
           </div>
           <div className="metric-strip">
             <article className="metric">
-              <strong>{launchCases.length} Story Frameworks</strong>
-              <span>10 launch arcs plus 1 short-mode QA case.</span>
+              <strong>{launchCases.length} Active Case Files</strong>
+              <span>Cold opens, recorded anomalies, and multi-path outcomes.</span>
             </article>
             <article className="metric">
-              <strong>Async + Live Party Play</strong>
-              <span>Invite links, host/hostless, and synchronized chapter events.</span>
+              <strong>Signal-First Runtime</strong>
+              <span>SMS, WhatsApp, Telegram, Signal, and email channels in one feed.</span>
             </article>
             <article className="metric">
-              <strong>Commercial Lifecycle Ops</strong>
-              <span>Email automation, analytics, referrals, billing, and support coverage.</span>
+              <strong>Forensic Audio Loop</strong>
+              <span>Evidence playback, clue cadence, and pressure-driven soundtrack cues.</span>
             </article>
           </div>
         </div>
       </header>
+
+      <section className="panel section-shell arg-protocol-shell">
+        <span className="surface-tag">Case Access Protocol</span>
+        <h2 className="section-title">Follow The Signal Chain</h2>
+        <p className="section-copy">
+          The experience opens like an investigation dashboard, not a storefront. Players move through
+          incoming-call logs, archived clips, and numeric audio ciphers before each major narrative turn.
+        </p>
+        <div className="arg-protocol-grid">
+          <article className="arg-protocol-card">
+            <p className="kicker">Phase 01</p>
+            <h3>Incoming Call Capture</h3>
+            <p>
+              Launch each case with a timed contact event, caller metadata, and unexplained disconnect
+              behavior.
+            </p>
+          </article>
+          <article className="arg-protocol-card">
+            <p className="kicker">Phase 02</p>
+            <h3>Audio Trace Analysis</h3>
+            <p>
+              Surface short clips, tone fragments, and playback hints that reveal numeric or lexical access
+              keys.
+            </p>
+          </article>
+          <article className="arg-protocol-card">
+            <p className="kicker">Phase 03</p>
+            <h3>Portal Escalation</h3>
+            <p>
+              Unlock new suspect threads, hidden nodes, and antagonist contact once the clue chain resolves.
+            </p>
+          </article>
+        </div>
+      </section>
 
       <section className="panel section-shell">
         <span className="surface-tag">Featured Cases</span>
@@ -74,21 +109,21 @@ export default function HomePage(): JSX.Element {
       <section className="panel section-shell dual-grid">
         <div>
           <span className="surface-tag">Email Join</span>
-          <h2 className="section-title">Get New Cases and Launch Drops</h2>
+          <h2 className="section-title">Get New Cases And Signal Drops</h2>
           <p className="section-copy">
-            Join lifecycle briefings, abandoned-case reminders, win-back campaigns, and premium upsell
-            drops through our growth automation stack.
+            Join lifecycle briefings, dormant-case reactivation prompts, and release-night alerts with the
+            same operator tone used inside the game runtime.
           </p>
           <LeadCaptureForm source="landing_primary" title="Email Join" />
         </div>
         <div className="feature-column">
           <article className="feature-card">
-            <h3>Commercial Website Design</h3>
-            <p>Bespoke story art surfaces, premium copy hierarchy, and conversion-led onboarding.</p>
+            <h3>Investigation Portal Interface</h3>
+            <p>Evidence-forward layouts with analog signal texture and high-tension copy structure.</p>
           </article>
           <article className="feature-card">
             <h3>Adaptive Audio Direction</h3>
-            <p>Global theme and story score switch dynamically with scene tension and villain pressure.</p>
+            <p>Global theme and case score switch with tension, silence windows, and villain proximity.</p>
           </article>
           <article className="feature-card">
             <h3>Operations Coverage</h3>

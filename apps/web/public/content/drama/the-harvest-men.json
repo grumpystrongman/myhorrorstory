@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "THE-HAR-MEN",
+    "recruitmentReason": "A ritual mask selects a new wearer every dusk, and refusals vanish overnight. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+    "personalStakes": "The Reaper Steward has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every ritual violence marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "Players receive synchronized SMS photos of the same ritual mask in three different houses.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Blood-soil composition panel"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Scientific analysis vs witness protection opening",
+          "Festival lantern route map"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Break rite now vs infiltrate final rite",
+          "Human conspiracy preserving power"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Ancestral entity fed through staged rituals",
+          "A freight invoice ties the valley rite to coastal distributors."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "the-harvest-men-npc-1",
+      "displayName": "Visiting Agronomist Dina Crowe",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Visiting Agronomist Dina Crowe can expose the-harvest-men-clue-pressure at high trust."
+    },
+    {
+      "id": "the-harvest-men-npc-2",
+      "displayName": "Village Elder Rowan Pike",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Village Elder Rowan Pike can expose the-harvest-men-clue-reveal at high trust."
+    },
+    {
+      "id": "the-harvest-men-npc-3",
+      "displayName": "Runaway Teen Lio Strand",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Runaway Teen Lio Strand can expose the-harvest-men-clue-origin at high trust."
+    },
+    {
+      "id": "the-harvest-men-npc-4",
+      "displayName": "Festival Marshal Jarek Holt",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Festival Marshal Jarek Holt can expose the-harvest-men-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "the-harvest-men-puzzle-shards",
+      "title": "Lantern Route Triangulation",
+      "objective": "Merge three lantern route fragments to locate the hidden threshing pit.",
+      "shards": [
+        {
+          "id": "the-harvest-men-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives a hand-drawn route with one erased landmark."
+        },
+        {
+          "id": "the-harvest-men-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A gets old festival timestamps with off-by-one pattern."
+        },
+        {
+          "id": "the-harvest-men-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast weather radar exposes smoke columns only at key coordinates."
+        }
+      ],
+      "rewardClueId": "the-harvest-men-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-1.png",
+    "assets": [
+      {
+        "id": "the-harvest-men-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for folk horror arc."
+      },
+      {
+        "id": "the-harvest-men-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for folk horror arc."
+      },
+      {
+        "id": "the-harvest-men-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for folk horror arc."
+      },
+      {
+        "id": "the-harvest-men-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for folk horror arc."
+      },
+      {
+        "id": "the-harvest-men-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for The Harvest Men."
+      },
+      {
+        "id": "the-harvest-men-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/the-harvest-men/the-harvest-men-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for The Harvest Men."
+      }
+    ]
+  },
   "replayHooks": [
     "Ritual order randomizes by date and latency.",
     "Community puzzle can unlock nonviolent break path.",

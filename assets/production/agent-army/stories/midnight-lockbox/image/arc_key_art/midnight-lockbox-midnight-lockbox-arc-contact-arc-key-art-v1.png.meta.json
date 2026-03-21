@@ -1,0 +1,39 @@
+{
+  "id": "midnight-lockbox-midnight-lockbox-arc-contact-arc-key-art",
+  "title": "Midnight Lockbox - Lockbox Contact Arc Key Art",
+  "modality": "image",
+  "category": "arc_key_art",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/midnight-lockbox/image/arc_key_art/midnight-lockbox-midnight-lockbox-arc-contact-arc-key-art-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#345443",
+    "accentColor": "#314c63"
+  },
+  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Arc focus: Lockbox Contact (OPENING). Summary: An impossible voicemail starts the case at the storage facility.. Create cinematic key art with readable clue anchors and escalating threat language.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:18.068Z"
+}

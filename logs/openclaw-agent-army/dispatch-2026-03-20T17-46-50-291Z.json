@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-03-20T17:46:50.291Z",
+  "mode": "execute",
+  "strictStructuredOutput": true,
+  "jobsConsidered": 64,
+  "jobsSelected": 5,
+  "executed": 5,
+  "succeeded": 4,
+  "failed": 1,
+  "results": [
+    {
+      "id": "openclaw-agent-army-job-1",
+      "taskTitle": "Agent Army Command - Global Creative Orchestration",
+      "botId": "AI-Executive-Orchestrator",
+      "status": "success",
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Delivery Confirmation\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Delivery Confirmation",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-2",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Production Output\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Production Output",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-3",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n    \"taskTitle\": \"\",\n    \"generatedCount\": 0,\n    \"failedCount\": 0,\n    \"skippedCount\": 0,\n    \"blockers\": [],\n    \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-4",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "failed",
+      "exitCode": 0,
+      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected non-whitespace character after JSON at position 16 (line 2 column 1)).",
+      "assistantMessage": "The validation failed because the `query` property is missing from the argument. In your tool calls, you should provide a query string that exactly matches one of your pre-defined queries.\n\nFor example:\n\n```\n\"memory_search\"\n{\n  \"query\": \"{name}\", // You might need to add specific fields like 'name', 'story' depending on what story you're processing\n  \"parameters\": {\n    \"fields\": [\"name\"]\n  }\n}\n```\n\nReplace `memory_search` with your actual query, and adjust the other parameters as needed.\n\nLet me know if this resolves the issue!",
+      "summary": null
+    },
+    {
+      "id": "openclaw-agent-army-job-5",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Deliver final video outputs for Black Chapel\",\n  \"generatedCount\": 13,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Deliver final video outputs for Black Chapel",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    }
+  ]
+}

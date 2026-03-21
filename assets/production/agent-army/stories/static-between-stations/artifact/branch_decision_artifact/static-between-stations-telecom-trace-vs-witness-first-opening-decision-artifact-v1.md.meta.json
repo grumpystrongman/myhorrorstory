@@ -1,0 +1,28 @@
+{
+  "id": "static-between-stations-telecom-trace-vs-witness-first-opening-decision-artifact",
+  "title": "Static Between Stations - Branch Artifact - Telecom trace vs witness-first opening",
+  "modality": "artifact",
+  "category": "branch_decision_artifact",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/static-between-stations/artifact/branch_decision_artifact/static-between-stations-telecom-trace-vs-witness-first-opening-decision-artifact-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Create in-world branching evidence note for \"Telecom trace vs witness-first opening\" showing consequences of each path without explicit spoilers.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:48.624Z"
+}

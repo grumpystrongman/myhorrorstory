@@ -1,0 +1,39 @@
+{
+  "id": "crown-of-salt-crown-of-salt-npc-4-portrait",
+  "title": "Crown of Salt - Customs Broker Dax Ren Portrait",
+  "modality": "image",
+  "category": "character_portrait",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/crown-of-salt/image/character_portrait/crown-of-salt-crown-of-salt-npc-4-portrait-v1.png",
+  "specs": {
+    "width": 1024,
+    "height": 1365,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 960,
+    "height": 1280,
+    "baseColor": "#3d2c32",
+    "accentColor": "#9c6b42"
+  },
+  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Character portrait for Customs Broker Dax Ren, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:47.818Z"
+}

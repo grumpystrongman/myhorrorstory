@@ -1,0 +1,28 @@
+{
+  "id": "black-chapel-ledger-villain-dossier",
+  "title": "Black Chapel Ledger - Villain Dossier",
+  "modality": "artifact",
+  "category": "villain_dossier",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/artifact/villain_dossier/black-chapel-ledger-villain-dossier-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build antagonist dossier covering motive, manipulation tactics (moral blackmail, half-confessions, shame weaponization), risk tolerance 0.64, and predicted pressure pathways.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:26.997Z"
+}

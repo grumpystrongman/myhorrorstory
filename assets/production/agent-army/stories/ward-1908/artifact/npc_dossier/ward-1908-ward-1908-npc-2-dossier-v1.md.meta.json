@@ -1,0 +1,28 @@
+{
+  "id": "ward-1908-ward-1908-npc-2-dossier",
+  "title": "Ward 1908 - Former Nurse Evan Mire Dossier",
+  "modality": "artifact",
+  "category": "npc_dossier",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/ward-1908/artifact/npc_dossier/ward-1908-ward-1908-npc-2-dossier-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Write in-world dossier for Former Nurse Evan Mire including known history, hidden motives, trust thresholds, and clue-link references for interactive evidence board.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:33:04.338Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-ambience",
+  "title": "The Fourth Tenant - Interference and Doubt Arc Ambience",
+  "modality": "audio",
+  "category": "arc_ambience",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/audio/arc_ambience/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-ambience-v1.wav",
+  "specs": {
+    "durationSeconds": 75,
+    "format": "wav",
+    "sampleRateHz": 48000,
+    "channels": 2
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-sine-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "frequencyHz": 358,
+    "durationSeconds": 8,
+    "sampleRateHz": 48000
+  },
+  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
+  "providerChain": [
+    "piper",
+    "elevenlabs",
+    "openai-tts",
+    "polly",
+    "manual-audio-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:13.832Z"
+}

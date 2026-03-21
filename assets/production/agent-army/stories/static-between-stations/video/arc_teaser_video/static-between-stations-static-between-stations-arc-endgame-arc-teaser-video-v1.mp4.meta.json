@@ -1,0 +1,44 @@
+{
+  "id": "static-between-stations-static-between-stations-arc-endgame-arc-teaser-video",
+  "title": "Static Between Stations - Confrontation and Reckoning Arc Teaser Video",
+  "modality": "video",
+  "category": "arc_teaser_video",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-endgame-arc-teaser-video-v1.mp4",
+  "specs": {
+    "durationSeconds": 18,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise-video",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 640,
+    "height": 360,
+    "durationSeconds": 4,
+    "fps": 24,
+    "baseColor": "#876f2a",
+    "accentColor": "#9f6298"
+  },
+  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
+  "providerChain": [
+    "runway",
+    "pika",
+    "luma",
+    "stable-video",
+    "manual-video-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:33.496Z"
+}

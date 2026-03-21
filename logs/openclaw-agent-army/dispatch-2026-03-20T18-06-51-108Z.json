@@ -1,0 +1,325 @@
+{
+  "generatedAt": "2026-03-20T18:06:51.108Z",
+  "mode": "execute",
+  "strictStructuredOutput": true,
+  "maxRetries": 4,
+  "jobsConsidered": 64,
+  "jobsSelected": 16,
+  "executed": 16,
+  "succeeded": 16,
+  "failed": 0,
+  "results": [
+    {
+      "id": "openclaw-agent-army-job-1",
+      "taskTitle": "Agent Army Command - Global Creative Orchestration",
+      "botId": "AI-Executive-Orchestrator",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Execute Final Mission Report\",\n  \"generatedCount\": -1,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Execute Final Mission Report",
+        "generatedCount": -1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-2",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Response\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Generate Response",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-3",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"[Story Hook] Black Chapel Introduces The Entity\", \"generatedCount\": 1, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"_notes\": [] }",
+      "summary": {
+        "taskTitle": "[Story Hook] Black Chapel Introduces The Entity",
+        "generatedCount": 1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-4",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Deliver story outputs\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 2,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Deliver story outputs",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 2,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-5",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Output Generation for BLACK CHapel Ledger - Video Production\",\n  \"generatedCount\": 13,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Output Generation for BLACK CHapel Ledger - Video Production",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-6",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Outputs and Send Notes\",\n  \"generatedCount\": 3,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockedPaths\": [],\n  \"notes\": [\n    \"// Story Hook Anchored to Arc Summaries and Villain Motifs\",\n    \"// Narrative Continuity Respected\"\n  ]\n}",
+      "summary": {
+        "taskTitle": "Generate Outputs and Send Notes",
+        "generatedCount": 3,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "// Story Hook Anchored to Arc Summaries and Villain Motifs",
+          "// Narrative Continuity Respected"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-7",
+      "taskTitle": "Agent Army - Crown of Salt - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Outputs\",\n  \"generatedCount\": 12,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Generate Outputs",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-8",
+      "taskTitle": "Agent Army - Crown of Salt - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"/story/production/myhorroromance-crownofsalt/output001\", \"generatedCount\": 12, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": [] }",
+      "summary": {
+        "taskTitle": "/story/production/myhorroromance-crownofsalt/output001",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-9",
+      "taskTitle": "Agent Army - Crown of Salt - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Horror Story Assets\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Generate Horror Story Assets",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-10",
+      "taskTitle": "Agent Army - Crown of Salt - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Story Completion\",\n  \"generatedCount\": 13,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "Story Completion",
+        "generatedCount": 13,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-11",
+      "taskTitle": "Agent Army - Crown of Salt - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\"taskTitle\": \"Generate Story Outfits\", \"generatedCount\": 0, \"failedCount\": 2, \"skippedCount\": 1, \"blockers\": \"\", \"notes\": [\"Please deliver only valid JSON objects\"]}",
+      "summary": {
+        "taskTitle": "Generate Story Outfits",
+        "generatedCount": 0,
+        "failedCount": 2,
+        "skippedCount": 1,
+        "blockers": [
+          ""
+        ],
+        "notes": [
+          "Please deliver only valid JSON objects"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-12",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{ \"taskTitle\": \"Narrative Storytelling Task\", \"generatedCount\": 12, \"failedCount\": 0, \"skippedCount\": 0, \"blockers\": [], \"notes\": \"\" }",
+      "summary": {
+        "taskTitle": "Narrative Storytelling Task",
+        "generatedCount": 12,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-13",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"MyHorrorStory task\",\n  \"generatedCount\": 1,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"\"\n}",
+      "summary": {
+        "taskTitle": "MyHorrorStory task",
+        "generatedCount": 1,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-14",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 3,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Outputs of Production\",\n  \"generatedCount\": 28,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": []\n}",
+      "summary": {
+        "taskTitle": "Generate Outputs of Production",
+        "generatedCount": 28,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": []
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-15",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "{\n  \"taskTitle\": \"Generate Story Outputs\",\n  \"generatedCount\": 0,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": \"Task complete.\"\n}",
+      "summary": {
+        "taskTitle": "Generate Story Outputs",
+        "generatedCount": 0,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "Task complete."
+        ]
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-16",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "status": "success",
+      "attempts": 1,
+      "exitCode": 0,
+      "errorSummary": null,
+      "assistantMessage": "```\n{\n  \"taskTitle\": \"Generate outputs for MyHorrorStory\",\n  \"generatedCount\": 3,\n  \"failedCount\": 0,\n  \"skippedCount\": 0,\n  \"blockers\": [],\n  \"notes\": [\n    \"\",\n    \"\"\n  ]\n}\n```",
+      "summary": {
+        "taskTitle": "Generate outputs for MyHorrorStory",
+        "generatedCount": 3,
+        "failedCount": 0,
+        "skippedCount": 0,
+        "blockers": [],
+        "notes": [
+          "",
+          ""
+        ]
+      }
+    }
+  ]
+}

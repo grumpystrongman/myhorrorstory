@@ -1,0 +1,39 @@
+{
+  "id": "ward-1908-ward-1908-npc-4-portrait",
+  "title": "Ward 1908 - Records Officer Hale Sorn Portrait",
+  "modality": "image",
+  "category": "character_portrait",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-4-portrait-v1.png",
+  "specs": {
+    "width": 1024,
+    "height": 1365,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 960,
+    "height": 1280,
+    "baseColor": "#91329e",
+    "accentColor": "#9f3b36"
+  },
+  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Records Officer Hale Sorn, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:33:04.932Z"
+}

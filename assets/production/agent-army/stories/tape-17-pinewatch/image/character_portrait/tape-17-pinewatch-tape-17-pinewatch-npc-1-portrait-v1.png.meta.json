@@ -1,0 +1,39 @@
+{
+  "id": "tape-17-pinewatch-tape-17-pinewatch-npc-1-portrait",
+  "title": "Tape 17: Pinewatch - Ranger Juno Hale Portrait",
+  "modality": "image",
+  "category": "character_portrait",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-1-portrait-v1.png",
+  "specs": {
+    "width": 1024,
+    "height": 1365,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 960,
+    "height": 1280,
+    "baseColor": "#38667a",
+    "accentColor": "#319b45"
+  },
+  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Character portrait for Ranger Juno Hale, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:02.970Z"
+}

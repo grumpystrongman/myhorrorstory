@@ -1,0 +1,28 @@
+{
+  "id": "web-play-button-kit",
+  "title": "Play Session Button Kit",
+  "modality": "artifact",
+  "category": "button_system_artifact",
+  "scope": "website",
+  "outputKey": "assets/production/agent-army/website/artifact/web-play-button-kit-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Surface Play Session (/play) objective: Sustain long-form immersion while preserving readability.. Design button system blueprint for primary, secondary, danger, disabled, hover, focus-visible, and pressed states with brand-coherent wording and accessibility notes.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:07.276Z"
+}

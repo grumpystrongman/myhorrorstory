@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: TAP-17-PIN
+- Recruitment: A recovered camcorder tape rewrites itself every midnight. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: The same footage frame arrives through Telegram with different timestamps for each player.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every missing persons marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: The same footage frame arrives through Telegram with different timestamps for each player.
+  - The case opens with impossible evidence and uncertain allies.
+  - Frame glitch cluster
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Forensics-first vs witness-first opening
+  - Ranger dispatch excerpt
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Field reenactment vs archive triangulation
+  - Manufactured hoax with lethal intent
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Predatory anomaly exploiting camera feedback
+  - Recovered metadata references an unlogged Tape 18.
+
 ## Beat-by-Beat Runtime Package
 ### Tape Reset (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Branch reveals different perpetrators each run.
 - Voice cadence shifts with aggression.
 - Puzzle outcome changes final route access.
+
+## Community Puzzle Hooks
+- Timecode Relay: Merge three timecode fragments to reconstruct the missing minute.
+  - Reward clue: tape-17-pinewatch-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

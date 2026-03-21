@@ -1,0 +1,28 @@
+{
+  "id": "tape-17-pinewatch-forensics-first-vs-witness-first-opening-decision-artifact",
+  "title": "Tape 17: Pinewatch - Branch Artifact - Forensics-first vs witness-first opening",
+  "modality": "artifact",
+  "category": "branch_decision_artifact",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/artifact/branch_decision_artifact/tape-17-pinewatch-forensics-first-vs-witness-first-opening-decision-artifact-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Create in-world branching evidence note for \"Forensics-first vs witness-first opening\" showing consequences of each path without explicit spoilers.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:09.560Z"
+}

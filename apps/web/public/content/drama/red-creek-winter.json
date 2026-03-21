@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "RED-CRE-WIN",
+    "recruitmentReason": "Each snowfall uncovers one body and one impossible alibi. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "Dispatch pushes a crime scene map to SMS while social channels spread contradictory alibis.",
+    "personalStakes": "The White Knife has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every slasher violence marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "Dispatch pushes a crime scene map to SMS while social channels spread contradictory alibis.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Dispatch freeze frame"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Forensics-first vs interrogation-first opening",
+          "Snow-depth forensic note"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Protect survivor vs bait killer with false lead",
+          "Single killer with staged alibis"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Coordinated copycat pair exploiting panic",
+          "A second mountain county reports matching wound signatures."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "red-creek-winter-npc-1",
+      "displayName": "Sheriff Dana Holt",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Sheriff Dana Holt can expose red-creek-winter-clue-pressure at high trust."
+    },
+    {
+      "id": "red-creek-winter-npc-2",
+      "displayName": "Deputy Nico Vale",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Deputy Nico Vale can expose red-creek-winter-clue-reveal at high trust."
+    },
+    {
+      "id": "red-creek-winter-npc-3",
+      "displayName": "Journalist Mara Finch",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Journalist Mara Finch can expose red-creek-winter-clue-origin at high trust."
+    },
+    {
+      "id": "red-creek-winter-npc-4",
+      "displayName": "Survivor Owen Pike",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Survivor Owen Pike can expose red-creek-winter-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "red-creek-winter-puzzle-shards",
+      "title": "Blizzard Alibi Grid",
+      "objective": "Merge weather and movement shards to break impossible alibis.",
+      "shards": [
+        {
+          "id": "red-creek-winter-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives patrol timestamps with one missing route leg."
+        },
+        {
+          "id": "red-creek-winter-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives GPS drift deltas from a seized phone."
+        },
+        {
+          "id": "red-creek-winter-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast radar reveals travel impossibilities for one suspect window."
+        }
+      ],
+      "rewardClueId": "red-creek-winter-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/red-creek-winter/red-creek-winter-scene_art-1.png",
+    "assets": [
+      {
+        "id": "red-creek-winter-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for small-town slasher mystery arc."
+      },
+      {
+        "id": "red-creek-winter-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for small-town slasher mystery arc."
+      },
+      {
+        "id": "red-creek-winter-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for small-town slasher mystery arc."
+      },
+      {
+        "id": "red-creek-winter-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for small-town slasher mystery arc."
+      },
+      {
+        "id": "red-creek-winter-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for Red Creek Winter."
+      },
+      {
+        "id": "red-creek-winter-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/red-creek-winter/red-creek-winter-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for Red Creek Winter."
+      }
+    ]
+  },
   "replayHooks": [
     "Suspect order rotates by weather seed.",
     "Aggressive play increases misinformation floods.",

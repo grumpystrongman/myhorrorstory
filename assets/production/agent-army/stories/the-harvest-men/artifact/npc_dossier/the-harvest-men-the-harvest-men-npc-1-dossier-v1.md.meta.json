@@ -1,0 +1,28 @@
+{
+  "id": "the-harvest-men-the-harvest-men-npc-1-dossier",
+  "title": "The Harvest Men - Visiting Agronomist Dina Crowe Dossier",
+  "modality": "artifact",
+  "category": "npc_dossier",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/the-harvest-men/artifact/npc_dossier/the-harvest-men-the-harvest-men-npc-1-dossier-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Write in-world dossier for Visiting Agronomist Dina Crowe including known history, hidden motives, trust thresholds, and clue-link references for interactive evidence board.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:43.469Z"
+}

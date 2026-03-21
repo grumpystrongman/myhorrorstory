@@ -1,0 +1,40 @@
+{
+  "id": "black-chapel-ledger-black-chapel-ledger-npc-2-voice-profile",
+  "title": "Black Chapel Ledger - Bell Keeper Tomas Grell Voice Profile",
+  "modality": "audio",
+  "category": "npc_voice_profile",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/audio/npc_voice_profile/black-chapel-ledger-black-chapel-ledger-npc-2-voice-profile-v1.wav",
+  "specs": {
+    "durationSeconds": 20,
+    "format": "wav",
+    "sampleRateHz": 48000,
+    "channels": 1
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-sine-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "frequencyHz": 278,
+    "durationSeconds": 8,
+    "sampleRateHz": 48000
+  },
+  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build unique voice profile for Bell Keeper Tomas Grell. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
+  "providerChain": [
+    "piper",
+    "elevenlabs",
+    "openai-tts",
+    "polly",
+    "manual-audio-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:25.813Z"
+}

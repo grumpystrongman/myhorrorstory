@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "STA-BET-STA",
+    "recruitmentReason": "A dead rail line broadcasts private confessions in the players' own voices. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+    "personalStakes": "The Curator of Static has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every disturbing audio marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Spectrogram of confession burst"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Telecom trace vs witness-first opening",
+          "Maintenance ledger anomaly"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Rescue route vs forensic route under ultimatum",
+          "Inside dispatch accomplice"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Cross-city ritual broadcast network",
+          "A station map marks a second inactive line in another city."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "static-between-stations-npc-1",
+      "displayName": "Lead Investigator Mara Quinn",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Lead Investigator Mara Quinn can expose static-between-stations-clue-pressure at high trust."
+    },
+    {
+      "id": "static-between-stations-npc-2",
+      "displayName": "Dispatch Handler Ilya Ross",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Dispatch Handler Ilya Ross can expose static-between-stations-clue-reveal at high trust."
+    },
+    {
+      "id": "static-between-stations-npc-3",
+      "displayName": "Commuter Witness Nia Vale",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Commuter Witness Nia Vale can expose static-between-stations-clue-origin at high trust."
+    },
+    {
+      "id": "static-between-stations-npc-4",
+      "displayName": "Transit Auditor Bram Keene",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Transit Auditor Bram Keene can expose static-between-stations-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "static-between-stations-puzzle-shards",
+      "title": "Relay Cipher Split",
+      "objective": "Combine three relay fragments distributed across party channels.",
+      "shards": [
+        {
+          "id": "static-between-stations-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives a packet-latency table with one hidden timestamp."
+        },
+        {
+          "id": "static-between-stations-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives a Telegram sticker containing cipher coordinates."
+        },
+        {
+          "id": "static-between-stations-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Broadcast drop includes a map layer that aligns only with both clues."
+        }
+      ],
+      "rewardClueId": "static-between-stations-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/static-between-stations/static-between-stations-scene_art-1.png",
+    "assets": [
+      {
+        "id": "static-between-stations-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/static-between-stations/static-between-stations-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/static-between-stations/static-between-stations-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/static-between-stations/static-between-stations-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/static-between-stations/static-between-stations-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/static-between-stations/static-between-stations-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/static-between-stations/static-between-stations-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/static-between-stations/static-between-stations-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/static-between-stations/static-between-stations-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for psychological horror arc."
+      },
+      {
+        "id": "static-between-stations-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/static-between-stations/static-between-stations-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for psychological horror arc."
+      },
+      {
+        "id": "static-between-stations-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/static-between-stations/static-between-stations-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for psychological horror arc."
+      },
+      {
+        "id": "static-between-stations-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/static-between-stations/static-between-stations-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for psychological horror arc."
+      },
+      {
+        "id": "static-between-stations-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/static-between-stations/static-between-stations-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for Static Between Stations."
+      },
+      {
+        "id": "static-between-stations-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/static-between-stations/static-between-stations-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for Static Between Stations."
+      }
+    ]
+  },
   "replayHooks": [
     "Variable witness reliability based on trust.",
     "Dynamic villain timing windows.",

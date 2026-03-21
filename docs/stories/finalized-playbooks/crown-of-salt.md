@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: CRO-OF-SAL
+- Recruitment: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: Shipping manifests arrive by email and WhatsApp with contradictory destination ports.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every cult coercion marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: Shipping manifests arrive by email and WhatsApp with contradictory destination ports.
+  - The case opens with impossible evidence and uncertain allies.
+  - Brine-sealed manifest
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Manifest audit vs smuggler flip opening
+  - Dockside CCTV still
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Expose logistics vs sever ritual command
+  - Political laundering ring using ritual cover
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Ritual network with real anomalous effects
+  - A salt-marked invoice links to inland transit hubs.
+
 ## Beat-by-Beat Runtime Package
 ### Manifest Drift (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Route graph permutations alter hierarchy.
 - Nun-trust branch opens nonviolent path.
 - Taunts adapt strongly to deception profile.
+
+## Community Puzzle Hooks
+- Manifest Matrix: Cross-reference distributed manifest shards to locate the true relic route.
+  - Reward clue: crown-of-salt-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

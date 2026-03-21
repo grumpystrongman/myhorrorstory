@@ -1,0 +1,40 @@
+{
+  "id": "web-play-ambient-loop",
+  "title": "Play Session Ambient Loop",
+  "modality": "audio",
+  "category": "surface_ambient_loop",
+  "scope": "website",
+  "outputKey": "assets/production/agent-army/website/audio/web-play-ambient-loop-v1.wav",
+  "specs": {
+    "durationSeconds": 75,
+    "format": "wav",
+    "sampleRateHz": 48000,
+    "channels": 2
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-sine-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "frequencyHz": 242,
+    "durationSeconds": 8,
+    "sampleRateHz": 48000
+  },
+  "prompt": "Surface Play Session (/play) objective: Sustain long-form immersion while preserving readability.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
+  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
+  "providerChain": [
+    "piper",
+    "elevenlabs",
+    "openai-tts",
+    "polly",
+    "manual-audio-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:07.264Z"
+}

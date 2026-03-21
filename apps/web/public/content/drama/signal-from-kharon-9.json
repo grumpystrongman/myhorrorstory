@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "SIG-FRO-KHA-9",
+    "recruitmentReason": "Telemetry returns from a decommissioned orbital array and predicts player replies. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message.",
+    "personalStakes": "The Quiet Orbit has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every existential dread marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Telemetry checksum drift"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Sandbox isolate vs immediate decode",
+          "Starfield deviation map"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Seal transmission vs weaponize prediction",
+          "Fabricated anomaly by profiteers"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Authentic hostile contact exploiting human channels",
+          "A second array station replies from beneath ocean coordinates."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "signal-from-kharon-9-npc-1",
+      "displayName": "Systems Engineer Ari Vance",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Systems Engineer Ari Vance can expose signal-from-kharon-9-clue-pressure at high trust."
+    },
+    {
+      "id": "signal-from-kharon-9-npc-2",
+      "displayName": "Astrophysicist Dr. Helene Oru",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Astrophysicist Dr. Helene Oru can expose signal-from-kharon-9-clue-reveal at high trust."
+    },
+    {
+      "id": "signal-from-kharon-9-npc-3",
+      "displayName": "Array Operator Micah Trent",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Array Operator Micah Trent can expose signal-from-kharon-9-clue-origin at high trust."
+    },
+    {
+      "id": "signal-from-kharon-9-npc-4",
+      "displayName": "Telemetry Broker Vale-9",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Telemetry Broker Vale-9 can expose signal-from-kharon-9-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "signal-from-kharon-9-puzzle-shards",
+      "title": "Tri-band Drift Lock",
+      "objective": "Align three phase drifts shared across players to stabilize decryption.",
+      "shards": [
+        {
+          "id": "signal-from-kharon-9-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host gets a raw phase graph with missing y-axis scale."
+        },
+        {
+          "id": "signal-from-kharon-9-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives y-scale coefficients over SMS."
+        },
+        {
+          "id": "signal-from-kharon-9-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Public burst includes the final parity bit hidden in noise."
+        }
+      ],
+      "rewardClueId": "signal-from-kharon-9-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-scene_art-1.png",
+    "assets": [
+      {
+        "id": "signal-from-kharon-9-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for cosmic horror arc."
+      },
+      {
+        "id": "signal-from-kharon-9-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for cosmic horror arc."
+      },
+      {
+        "id": "signal-from-kharon-9-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for cosmic horror arc."
+      },
+      {
+        "id": "signal-from-kharon-9-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for cosmic horror arc."
+      },
+      {
+        "id": "signal-from-kharon-9-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for Signal From Kharon-9."
+      },
+      {
+        "id": "signal-from-kharon-9-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/signal-from-kharon-9/signal-from-kharon-9-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for Signal From Kharon-9."
+      }
+    ]
+  },
   "replayHooks": [
     "Signal packet ordering mutates by prior endings.",
     "Curiosity alters villain pacing.",

@@ -1,0 +1,234 @@
+project_root: .
+
+global:
+  sample_rate: 48000
+  loudness_target_dbfs: -17.0
+  normalize_peak_dbfs: -1.0
+  fade_in_ms: 1200
+  fade_out_ms: 2400
+  loop_padding_ms: 320
+  loop_crossfade_ms: 120
+  stinger_density: 0.35
+  model_defaults:
+    musicgen: facebook/musicgen-medium
+    audiogen: facebook/audiogen-medium
+
+generation_jobs:
+  - cue_id: title_screen_main
+    stem_type: drone_bed
+    engine: musicgen
+    prompt_category: title_screen_dark_ambient
+    prompt_variant: 0
+    duration: 110
+    generation_count: 1
+    seed: 4101
+    temperature: 0.95
+    cfg_coef: 3.2
+
+  - cue_id: title_screen_main
+    stem_type: texture_layer
+    engine: audiogen
+    prompt_category: occult_chamber_drone
+    prompt_variant: 1
+    duration: 110
+    generation_count: 1
+    seed: 4102
+    temperature: 1.1
+
+  - cue_id: exploration_hospital
+    stem_type: drone_bed
+    engine: musicgen
+    prompt_category: abandoned_hospital_ambience
+    prompt_variant: 2
+    duration: 150
+    generation_count: 1
+    seed: 4201
+
+  - cue_id: exploration_hospital
+    stem_type: texture_layer
+    engine: audiogen
+    prompt_category: abandoned_hospital_ambience
+    prompt_variant: 0
+    duration: 150
+    generation_count: 1
+    seed: 4202
+
+  - cue_id: tension_enemy_near
+    stem_type: drone_bed
+    engine: musicgen
+    prompt_category: enemy_stalking_tension
+    prompt_variant: 0
+    duration: 90
+    generation_count: 1
+    seed: 4301
+
+  - cue_id: tension_enemy_near
+    stem_type: pulse_layer
+    engine: audiogen
+    prompt_category: enemy_stalking_tension
+    prompt_variant: 1
+    duration: 90
+    generation_count: 1
+    seed: 4302
+
+  - cue_id: chase_industrial
+    stem_type: pulse_layer
+    engine: musicgen
+    prompt_category: industrial_nightmare_chase
+    prompt_variant: 0
+    duration: 70
+    generation_count: 1
+    seed: 4401
+    temperature: 1.15
+
+  - cue_id: chase_industrial
+    stem_type: texture_layer
+    engine: audiogen
+    prompt_category: industrial_nightmare_chase
+    prompt_variant: 2
+    duration: 70
+    generation_count: 1
+    seed: 4402
+
+  - cue_id: boss_encounter
+    stem_type: drone_bed
+    engine: musicgen
+    prompt_category: boss_dread_build
+    prompt_variant: 1
+    duration: 95
+    generation_count: 1
+    seed: 4501
+    temperature: 1.05
+
+  - cue_id: boss_encounter
+    stem_type: impact_stingers
+    engine: audiogen
+    prompt_category: scare_hit_stinger
+    prompt_variant: 2
+    duration: 20
+    generation_count: 2
+    seed: 4502
+
+  - cue_id: post_death_void
+    stem_type: drone_bed
+    engine: musicgen
+    prompt_category: post_death_void_ambience
+    prompt_variant: 0
+    duration: 65
+    generation_count: 1
+    seed: 4601
+
+mix_jobs:
+  - cue_id: title_screen_main
+    output_file: processed/title_screen_main_mix.wav
+    layers:
+      - source: stems/title_screen_main/drone_bed_001.wav
+        gain_db: -1.0
+        highpass_hz: 28
+        lowpass_hz: 8200
+        eq_low_db: 1.2
+        eq_mid_db: -0.5
+        eq_high_db: -1.8
+      - source: stems/title_screen_main/texture_layer_001.wav
+        gain_db: -5.0
+        lowpass_hz: 5600
+        eq_high_db: -2.2
+        distortion: 0.08
+
+  - cue_id: exploration_hospital
+    output_file: processed/exploration_hospital_mix.wav
+    layers:
+      - source: stems/exploration_hospital/drone_bed_001.wav
+        gain_db: -2.0
+        highpass_hz: 32
+        lowpass_hz: 7600
+      - source: stems/exploration_hospital/texture_layer_001.wav
+        gain_db: -6.5
+        highpass_hz: 140
+        eq_mid_db: 1.2
+        eq_high_db: -1.2
+
+  - cue_id: tension_enemy_near
+    output_file: processed/tension_enemy_near_mix.wav
+    layers:
+      - source: stems/tension_enemy_near/drone_bed_001.wav
+        gain_db: -1.8
+        eq_low_db: 1.4
+      - source: stems/tension_enemy_near/pulse_layer_001.wav
+        gain_db: -4.0
+        highpass_hz: 70
+        distortion: 0.12
+
+  - cue_id: chase_industrial
+    output_file: processed/chase_industrial_mix.wav
+    layers:
+      - source: stems/chase_industrial/pulse_layer_001.wav
+        gain_db: -0.8
+        highpass_hz: 36
+        distortion: 0.09
+      - source: stems/chase_industrial/texture_layer_001.wav
+        gain_db: -4.8
+        highpass_hz: 90
+        eq_high_db: 1.0
+
+  - cue_id: boss_encounter
+    output_file: processed/boss_encounter_mix.wav
+    layers:
+      - source: stems/boss_encounter/drone_bed_001.wav
+        gain_db: -1.0
+        eq_low_db: 1.8
+        eq_mid_db: -0.8
+      - source: stems/boss_encounter/impact_stingers_001.wav
+        gain_db: -6.0
+        highpass_hz: 120
+        distortion: 0.2
+      - source: stems/boss_encounter/impact_stingers_002.wav
+        gain_db: -7.0
+        reverse: true
+        stretch: 0.92
+        eq_high_db: -1.5
+
+  - cue_id: post_death_void
+    output_file: processed/post_death_void_mix.wav
+    layers:
+      - source: stems/post_death_void/drone_bed_001.wav
+        gain_db: -2.4
+        lowpass_hz: 5200
+        eq_high_db: -3.0
+
+export_jobs:
+  - cue_id: title_screen_main
+    source: processed/title_screen_main_mix.wav
+    output_dir: processed/title_screen_main
+    stinger_duration_ms: 900
+    seed: 5001
+
+  - cue_id: exploration_hospital
+    source: processed/exploration_hospital_mix.wav
+    output_dir: processed/exploration_hospital
+    stinger_duration_ms: 900
+    seed: 5002
+
+  - cue_id: tension_enemy_near
+    source: processed/tension_enemy_near_mix.wav
+    output_dir: processed/tension_enemy_near
+    stinger_duration_ms: 1000
+    seed: 5003
+
+  - cue_id: chase_industrial
+    source: processed/chase_industrial_mix.wav
+    output_dir: processed/chase_industrial
+    stinger_duration_ms: 1200
+    seed: 5004
+
+  - cue_id: boss_encounter
+    source: processed/boss_encounter_mix.wav
+    output_dir: processed/boss_encounter
+    stinger_duration_ms: 1300
+    seed: 5005
+
+  - cue_id: post_death_void
+    source: processed/post_death_void_mix.wav
+    output_dir: processed/post_death_void
+    stinger_duration_ms: 900
+    seed: 5006

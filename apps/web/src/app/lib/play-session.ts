@@ -45,6 +45,65 @@ export interface DramaEnding {
   sequelHook: string;
 }
 
+export interface DramaPlayerBriefing {
+  roleTitle: string;
+  callSign: string;
+  recruitmentReason: string;
+  openingIncident: string;
+  personalStakes: string;
+  firstDirective: string;
+}
+
+export interface DramaCampaignWeek {
+  week: number;
+  label: string;
+  objective: string;
+  keyMoments: string[];
+}
+
+export interface DramaCampaignPlan {
+  totalDays: number;
+  weeks: DramaCampaignWeek[];
+}
+
+export interface DramaNpcDossier {
+  id: string;
+  displayName: string;
+  role: string;
+  baselineEmotion: string;
+  motivations: string[];
+  trustBaseline: number;
+  trustCeiling: number;
+  notableSecret: string;
+}
+
+export interface DramaCommunityPuzzle {
+  id: string;
+  title: string;
+  objective: string;
+  shards: Array<{
+    id: string;
+    heldBy: string;
+    content: string;
+  }>;
+  rewardClueId: string;
+  failureConsequence: string;
+  solutionKeyword: string;
+}
+
+export interface DramaVisualAsset {
+  id: string;
+  title: string;
+  category: 'scene' | 'evidence' | 'character' | 'promo';
+  path: string;
+  promptHint: string;
+}
+
+export interface DramaVisualDeck {
+  heroImage: string;
+  assets: DramaVisualAsset[];
+}
+
 export interface DramaPackage {
   id: string;
   title: string;
@@ -91,6 +150,11 @@ export interface DramaPackage {
       relatedNodeIds: string[];
     }>;
   };
+  playerBriefing?: DramaPlayerBriefing;
+  campaignPlan?: DramaCampaignPlan;
+  npcDossiers?: DramaNpcDossier[];
+  communityPuzzles?: DramaCommunityPuzzle[];
+  visualDeck?: DramaVisualDeck;
   replayHooks: string[];
   sequelHooks: string[];
   branchingMoments: string[];

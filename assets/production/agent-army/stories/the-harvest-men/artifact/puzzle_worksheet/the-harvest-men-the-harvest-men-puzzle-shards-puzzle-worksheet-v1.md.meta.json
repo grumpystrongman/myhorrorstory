@@ -1,0 +1,28 @@
+{
+  "id": "the-harvest-men-the-harvest-men-puzzle-shards-puzzle-worksheet",
+  "title": "The Harvest Men - Lantern Route Triangulation Puzzle Worksheet",
+  "modality": "artifact",
+  "category": "puzzle_worksheet",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/the-harvest-men/artifact/puzzle_worksheet/the-harvest-men-the-harvest-men-puzzle-shards-puzzle-worksheet-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Create puzzle worksheet for \"Lantern Route Triangulation\" with clear player instructions, shard mapping, and anti-spoiler hint progression.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:45.832Z"
+}

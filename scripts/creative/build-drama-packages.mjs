@@ -165,6 +165,160 @@ function buildIncomingMessages(input) {
   ];
 }
 
+function toCallSign(storyId) {
+  return storyId
+    .split('-')
+    .map((segment) => segment.slice(0, 3).toUpperCase())
+    .join('-');
+}
+
+function normalizeKeyword(value) {
+  return String(value ?? '')
+    .replace(/[^a-z0-9 ]/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toUpperCase();
+}
+
+function buildPlayerBriefing(story) {
+  const firstArc = story.arcMap?.[0];
+  const firstBeat = story.acts?.[0]?.beats?.[0];
+  const obsessionTarget = story.villain?.obsessionTarget ?? 'the investigative team';
+  const firstWarning = story.ageWarnings?.[0] ?? 'disturbing evidence streams';
+
+  return {
+    roleTitle: 'Contract Signal Investigator',
+    callSign: toCallSign(story.id),
+    recruitmentReason: `${story.hook} Your pattern-recognition profile flagged a match with prior unresolved incidents.`,
+    openingIncident: firstBeat?.narrative ?? story.hook,
+    personalStakes: `${story.villain.displayName} has fixated on ${obsessionTarget}. If the case stalls, collateral witnesses remain exposed.`,
+    firstDirective: firstArc
+      ? `${firstArc.title}: ${firstArc.summary} Maintain evidence discipline and document every ${firstWarning} marker.`
+      : 'Establish a verified evidence chain before responding to direct villain contact.'
+  };
+}
+
+function buildCampaignPlan(story) {
+  const arcs = story.arcMap ?? [];
+  const firstBeat = story.acts?.[0]?.beats?.[0];
+
+  return {
+    totalDays: 28,
+    weeks: [
+      {
+        week: 1,
+        label: 'Week 1 - Recruitment And Baseline',
+        objective: firstBeat?.narrative ?? story.hook,
+        keyMoments: [arcs[0]?.summary ?? 'Open incident validation', story.clueEvidenceList?.[0] ?? 'Initial clue intake']
+      },
+      {
+        week: 2,
+        label: 'Week 2 - Contradiction Mapping',
+        objective: arcs[1]?.summary ?? 'Cross-check witness accounts against channel anomalies.',
+        keyMoments: [story.branchingMoments?.[0] ?? 'Primary branch fork', story.clueEvidenceList?.[1] ?? 'Secondary evidence']
+      },
+      {
+        week: 3,
+        label: 'Week 3 - Escalation Window',
+        objective: 'Run live interventions while antagonist pressure rises and trust fractures.',
+        keyMoments: [story.branchingMoments?.[1] ?? 'Escalation choice', story.revealVariants?.[0] ?? 'Major reveal']
+      },
+      {
+        week: 4,
+        label: 'Week 4 - Endgame And Debrief',
+        objective: arcs[2]?.summary ?? 'Resolve motive chain, secure witnesses, and close final branch.',
+        keyMoments: [story.revealVariants?.[1] ?? 'Final contradiction', story.sequelHooks?.[0] ?? 'Season continuity hook']
+      }
+    ]
+  };
+}
+
+function buildNpcDossiers(story) {
+  return (story.npcProfiles ?? []).slice(0, 6).map((npc) => ({
+    id: npc.id,
+    displayName: npc.displayName,
+    role: npc.role,
+    baselineEmotion: npc.baselineEmotion,
+    motivations: npc.motivations ?? [],
+    trustBaseline: npc.trustBaseline ?? 40,
+    trustCeiling: npc.trustCeiling ?? 85,
+    notableSecret: npc.secrets?.[0]?.summary ?? 'No confirmed secret disclosure yet.'
+  }));
+}
+
+function buildCommunityPuzzles(story) {
+  return (story.communityPuzzles ?? []).map((puzzle) => {
+    const fallbackKeyword =
+      puzzle.rewardClueId?.split('-').at(-1) ??
+      story.clueEvidenceList?.[0] ??
+      story.title;
+
+    return {
+      id: puzzle.id,
+      title: puzzle.title,
+      objective: puzzle.objective,
+      shards: (puzzle.shards ?? []).map((shard) => ({
+        id: shard.id,
+        heldBy: shard.heldBy,
+        content: shard.content
+      })),
+      rewardClueId: puzzle.rewardClueId,
+      failureConsequence: puzzle.failureConsequence,
+      solutionKeyword: normalizeKeyword(fallbackKeyword)
+    };
+  });
+}
+
+function buildVisualDeck(story) {
+  const basePath = `/creative/stories/${story.id}/${story.id}`;
+  const assets = [];
+
+  for (let index = 1; index <= 3; index += 1) {
+    assets.push({
+      id: `${story.id}-scene-${index}`,
+      title: `Scene Art ${index}`,
+      category: 'scene',
+      path: `${basePath}-scene_art-${index}.png`,
+      promptHint: `Cinematic environment frame ${index} for ${story.title}.`
+    });
+  }
+
+  for (let index = 1; index <= 4; index += 1) {
+    assets.push({
+      id: `${story.id}-evidence-${index}`,
+      title: `Evidence Image ${index}`,
+      category: 'evidence',
+      path: `${basePath}-evidence_image-${index}.png`,
+      promptHint: `Forensic clue still ${index} tied to ${story.title}.`
+    });
+  }
+
+  for (let index = 1; index <= 4; index += 1) {
+    assets.push({
+      id: `${story.id}-character-${index}`,
+      title: `Character Portrait ${index}`,
+      category: 'character',
+      path: `${basePath}-character_portrait-${index}.png`,
+      promptHint: `Character dossier portrait ${index} for ${story.subgenre} arc.`
+    });
+  }
+
+  for (let index = 1; index <= 2; index += 1) {
+    assets.push({
+      id: `${story.id}-promo-${index}`,
+      title: `Promo Frame ${index}`,
+      category: 'promo',
+      path: `${basePath}-promo_image-${index}.png`,
+      promptHint: `Teaser key art ${index} for ${story.title}.`
+    });
+  }
+
+  return {
+    heroImage: `${basePath}-scene_art-1.png`,
+    assets
+  };
+}
+
 function buildRuntimePackage(story) {
   const channels = [...story.channelCadence.primaryChannels, ...story.channelCadence.auxiliaryChannels];
   const channelList = channels.length > 0 ? channels : defaultChannels;
@@ -280,6 +434,11 @@ function buildRuntimePackage(story) {
       sequelHook: ending.sequelHook
     })),
     investigationBoard: story.investigationBoard,
+    playerBriefing: buildPlayerBriefing(story),
+    campaignPlan: buildCampaignPlan(story),
+    npcDossiers: buildNpcDossiers(story),
+    communityPuzzles: buildCommunityPuzzles(story),
+    visualDeck: buildVisualDeck(story),
     replayHooks: story.replayHooks,
     sequelHooks: story.sequelHooks,
     branchingMoments: story.branchingMoments
@@ -301,6 +460,21 @@ function buildPlaybookMarkdown(story, runtimePackage) {
   lines.push('## Arc Map');
   for (const arc of runtimePackage.arcs) {
     lines.push(`- ${arc.title} (${arc.stage}): ${arc.summary}`);
+  }
+  lines.push('');
+  lines.push('## Player Briefing');
+  lines.push(`- Role: ${runtimePackage.playerBriefing.roleTitle}`);
+  lines.push(`- Call Sign: ${runtimePackage.playerBriefing.callSign}`);
+  lines.push(`- Recruitment: ${runtimePackage.playerBriefing.recruitmentReason}`);
+  lines.push(`- Opening Incident: ${runtimePackage.playerBriefing.openingIncident}`);
+  lines.push(`- First Directive: ${runtimePackage.playerBriefing.firstDirective}`);
+  lines.push('');
+  lines.push('## 28-Day Campaign Plan');
+  for (const week of runtimePackage.campaignPlan.weeks) {
+    lines.push(`- ${week.label}: ${week.objective}`);
+    for (const keyMoment of week.keyMoments) {
+      lines.push(`  - ${keyMoment}`);
+    }
   }
   lines.push('');
   lines.push('## Beat-by-Beat Runtime Package');
@@ -335,6 +509,13 @@ function buildPlaybookMarkdown(story, runtimePackage) {
   lines.push('## Replay Hooks');
   for (const hook of runtimePackage.replayHooks) {
     lines.push(`- ${hook}`);
+  }
+  lines.push('');
+  lines.push('## Community Puzzle Hooks');
+  for (const puzzle of runtimePackage.communityPuzzles) {
+    lines.push(`- ${puzzle.title}: ${puzzle.objective}`);
+    lines.push(`  - Reward clue: ${puzzle.rewardClueId}`);
+    lines.push(`  - Failure: ${puzzle.failureConsequence}`);
   }
   lines.push('');
   return `${lines.join('\n')}\n`;

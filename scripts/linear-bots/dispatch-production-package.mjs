@@ -1,5 +1,5 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { basename, join } from 'node:path';
 import { LinearClient } from './lib/linear-client.mjs';
 import { createLinearClientCredentialsToken } from './lib/oauth-client.mjs';
 
@@ -15,6 +15,22 @@ function parseArgs() {
   return {
     mode: apply ? 'apply' : 'dry-run',
     backlog
+  };
+}
+
+function resolveOutputPaths(repoRoot, backlogPathArg) {
+  const defaultBacklog = 'docs/operations/linear-production-package-backlog.json';
+  if (backlogPathArg === defaultBacklog) {
+    return {
+      outputJson: join(repoRoot, 'docs', 'operations', 'linear-production-package-report.json'),
+      outputMd: join(repoRoot, 'docs', 'operations', 'linear-production-package-report.md')
+    };
+  }
+
+  const backlogBase = basename(backlogPathArg, '.json');
+  return {
+    outputJson: join(repoRoot, 'docs', 'operations', `${backlogBase}-report.json`),
+    outputMd: join(repoRoot, 'docs', 'operations', `${backlogBase}-report.md`)
   };
 }
 
@@ -126,9 +142,7 @@ async function main() {
   const backlogPath = join(repoRoot, backlog);
   const backlogRaw = await readFile(backlogPath, 'utf8');
   const backlogDoc = JSON.parse(backlogRaw);
-
-  const outputJson = join(repoRoot, 'docs', 'operations', 'linear-production-package-report.json');
-  const outputMd = join(repoRoot, 'docs', 'operations', 'linear-production-package-report.md');
+  const { outputJson, outputMd } = resolveOutputPaths(repoRoot, backlog);
   await mkdir(join(repoRoot, 'docs', 'operations'), { recursive: true });
 
   const teamKey = process.env.LINEAR_TEAM_KEY?.trim();
@@ -146,7 +160,9 @@ async function main() {
     };
     await writeFile(outputJson, JSON.stringify(dryRunData, null, 2), 'utf8');
     await writeFile(outputMd, buildMarkdownReport(dryRunData), 'utf8');
-    console.log('[linear-package] Missing Linear credentials or team key. Wrote dry-run report only.');
+    console.log(
+      '[linear-package] Missing Linear credentials or team key. Wrote dry-run report only.'
+    );
     console.log(`[linear-package] ${outputJson}`);
     console.log(`[linear-package] ${outputMd}`);
     return;
@@ -164,7 +180,9 @@ async function main() {
     includeCompleted: false
   });
 
-  const existingByTitle = new Map(existingIssues.map((issue) => [issue.title.trim().toLowerCase(), issue]));
+  const existingByTitle = new Map(
+    existingIssues.map((issue) => [issue.title.trim().toLowerCase(), issue])
+  );
   const created = [];
   const existingMatches = [];
 

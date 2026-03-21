@@ -632,6 +632,228 @@
       }
     ]
   },
+  "playerBriefing": {
+    "roleTitle": "Contract Signal Investigator",
+    "callSign": "TAP-17-PIN",
+    "recruitmentReason": "A recovered camcorder tape rewrites itself every midnight. Your pattern-recognition profile flagged a match with prior unresolved incidents.",
+    "openingIncident": "The same footage frame arrives through Telegram with different timestamps for each player.",
+    "personalStakes": "The Editor has fixated on The player detective profile. If the case stalls, collateral witnesses remain exposed.",
+    "firstDirective": "Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every missing persons marker."
+  },
+  "campaignPlan": {
+    "totalDays": 28,
+    "weeks": [
+      {
+        "week": 1,
+        "label": "Week 1 - Recruitment And Baseline",
+        "objective": "The same footage frame arrives through Telegram with different timestamps for each player.",
+        "keyMoments": [
+          "The case opens with impossible evidence and uncertain allies.",
+          "Frame glitch cluster"
+        ]
+      },
+      {
+        "week": 2,
+        "label": "Week 2 - Contradiction Mapping",
+        "objective": "Villain contact escalates while ally trust becomes volatile.",
+        "keyMoments": [
+          "Forensics-first vs witness-first opening",
+          "Ranger dispatch excerpt"
+        ]
+      },
+      {
+        "week": 3,
+        "label": "Week 3 - Escalation Window",
+        "objective": "Run live interventions while antagonist pressure rises and trust fractures.",
+        "keyMoments": [
+          "Field reenactment vs archive triangulation",
+          "Manufactured hoax with lethal intent"
+        ]
+      },
+      {
+        "week": 4,
+        "label": "Week 4 - Endgame And Debrief",
+        "objective": "The final branch depends on ethics, timing, and trust.",
+        "keyMoments": [
+          "Predatory anomaly exploiting camera feedback",
+          "Recovered metadata references an unlogged Tape 18."
+        ]
+      }
+    ]
+  },
+  "npcDossiers": [
+    {
+      "id": "tape-17-pinewatch-npc-1",
+      "displayName": "Ranger Juno Hale",
+      "role": "HANDLER",
+      "baselineEmotion": "CALM",
+      "motivations": [
+        "Control fallout quickly."
+      ],
+      "trustBaseline": 40,
+      "trustCeiling": 90,
+      "notableSecret": "Ranger Juno Hale can expose tape-17-pinewatch-clue-pressure at high trust."
+    },
+    {
+      "id": "tape-17-pinewatch-npc-2",
+      "displayName": "Media Forensics Analyst Priya Sen",
+      "role": "WITNESS",
+      "baselineEmotion": "ANXIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 48,
+      "trustCeiling": 90,
+      "notableSecret": "Media Forensics Analyst Priya Sen can expose tape-17-pinewatch-clue-reveal at high trust."
+    },
+    {
+      "id": "tape-17-pinewatch-npc-3",
+      "displayName": "Survivor Cade Rowan",
+      "role": "SUSPECT",
+      "baselineEmotion": "SUSPICIOUS",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 56,
+      "trustCeiling": 90,
+      "notableSecret": "Survivor Cade Rowan can expose tape-17-pinewatch-clue-origin at high trust."
+    },
+    {
+      "id": "tape-17-pinewatch-npc-4",
+      "displayName": "Volunteer Search Lead Ellis Vann",
+      "role": "ALLY",
+      "baselineEmotion": "DEFIANT",
+      "motivations": [
+        "Survive and protect a secret."
+      ],
+      "trustBaseline": 64,
+      "trustCeiling": 90,
+      "notableSecret": "Volunteer Search Lead Ellis Vann can expose tape-17-pinewatch-clue-pressure at high trust."
+    }
+  ],
+  "communityPuzzles": [
+    {
+      "id": "tape-17-pinewatch-puzzle-shards",
+      "title": "Timecode Relay",
+      "objective": "Merge three timecode fragments to reconstruct the missing minute.",
+      "shards": [
+        {
+          "id": "tape-17-pinewatch-puzzle-shard-host",
+          "heldBy": "HOST",
+          "content": "Host receives frame numbers without audio."
+        },
+        {
+          "id": "tape-17-pinewatch-puzzle-shard-ally-a",
+          "heldBy": "ALLY_A",
+          "content": "Ally A receives audio waveform peaks via SMS."
+        },
+        {
+          "id": "tape-17-pinewatch-puzzle-shard-broadcast",
+          "heldBy": "GLOBAL_BROADCAST",
+          "content": "Public drop includes lens calibration values required to sync both."
+        }
+      ],
+      "rewardClueId": "tape-17-pinewatch-clue-origin",
+      "failureConsequence": "The villain captures your partial decode and reroutes the final branch.",
+      "solutionKeyword": "ORIGIN"
+    }
+  ],
+  "visualDeck": {
+    "heroImage": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-scene_art-1.png",
+    "assets": [
+      {
+        "id": "tape-17-pinewatch-scene-1",
+        "title": "Scene Art 1",
+        "category": "scene",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-scene_art-1.png",
+        "promptHint": "Cinematic environment frame 1 for Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-scene-2",
+        "title": "Scene Art 2",
+        "category": "scene",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-scene_art-2.png",
+        "promptHint": "Cinematic environment frame 2 for Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-scene-3",
+        "title": "Scene Art 3",
+        "category": "scene",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-scene_art-3.png",
+        "promptHint": "Cinematic environment frame 3 for Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-evidence-1",
+        "title": "Evidence Image 1",
+        "category": "evidence",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-evidence_image-1.png",
+        "promptHint": "Forensic clue still 1 tied to Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-evidence-2",
+        "title": "Evidence Image 2",
+        "category": "evidence",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-evidence_image-2.png",
+        "promptHint": "Forensic clue still 2 tied to Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-evidence-3",
+        "title": "Evidence Image 3",
+        "category": "evidence",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-evidence_image-3.png",
+        "promptHint": "Forensic clue still 3 tied to Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-evidence-4",
+        "title": "Evidence Image 4",
+        "category": "evidence",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-evidence_image-4.png",
+        "promptHint": "Forensic clue still 4 tied to Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-character-1",
+        "title": "Character Portrait 1",
+        "category": "character",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-character_portrait-1.png",
+        "promptHint": "Character dossier portrait 1 for found-footage investigation arc."
+      },
+      {
+        "id": "tape-17-pinewatch-character-2",
+        "title": "Character Portrait 2",
+        "category": "character",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-character_portrait-2.png",
+        "promptHint": "Character dossier portrait 2 for found-footage investigation arc."
+      },
+      {
+        "id": "tape-17-pinewatch-character-3",
+        "title": "Character Portrait 3",
+        "category": "character",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-character_portrait-3.png",
+        "promptHint": "Character dossier portrait 3 for found-footage investigation arc."
+      },
+      {
+        "id": "tape-17-pinewatch-character-4",
+        "title": "Character Portrait 4",
+        "category": "character",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-character_portrait-4.png",
+        "promptHint": "Character dossier portrait 4 for found-footage investigation arc."
+      },
+      {
+        "id": "tape-17-pinewatch-promo-1",
+        "title": "Promo Frame 1",
+        "category": "promo",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-promo_image-1.png",
+        "promptHint": "Teaser key art 1 for Tape 17: Pinewatch."
+      },
+      {
+        "id": "tape-17-pinewatch-promo-2",
+        "title": "Promo Frame 2",
+        "category": "promo",
+        "path": "/creative/stories/tape-17-pinewatch/tape-17-pinewatch-promo_image-2.png",
+        "promptHint": "Teaser key art 2 for Tape 17: Pinewatch."
+      }
+    ]
+  },
   "replayHooks": [
     "Branch reveals different perpetrators each run.",
     "Voice cadence shifts with aggression.",

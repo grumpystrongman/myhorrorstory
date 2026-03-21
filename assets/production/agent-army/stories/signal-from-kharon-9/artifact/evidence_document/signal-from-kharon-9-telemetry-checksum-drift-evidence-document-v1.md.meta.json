@@ -1,0 +1,28 @@
+{
+  "id": "signal-from-kharon-9-telemetry-checksum-drift-evidence-document",
+  "title": "Signal From Kharon-9 - Evidence Document - Telemetry checksum drift",
+  "modality": "artifact",
+  "category": "evidence_document",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/artifact/evidence_document/signal-from-kharon-9-telemetry-checksum-drift-evidence-document-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce in-world evidence artifact for \"Telemetry checksum drift\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:21.157Z"
+}

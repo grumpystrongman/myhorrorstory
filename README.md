@@ -3,6 +3,7 @@
 MyHorrorStory is a production-focused, cross-platform horror mystery platform for solo and remote party play. It includes a consumer web app, mobile app, backend API, admin operations platform, story engine, media/voice pipelines, growth operations, and deployment infrastructure.
 
 ## Platform Capabilities
+
 - Web gameplay and marketing funnel.
 - In-browser immersive play simulation with channel popups and branching response flow.
 - Mobile gameplay companion and progression continuity.
@@ -16,6 +17,7 @@ MyHorrorStory is a production-focused, cross-platform horror mystery platform fo
 - Legal acceptance flows (terms, privacy, age gate) built into onboarding.
 
 ## Repository Structure
+
 - `apps/web`: Next.js consumer app.
 - `apps/admin`: Next.js admin app.
 - `apps/mobile`: Expo React Native app.
@@ -26,6 +28,7 @@ MyHorrorStory is a production-focused, cross-platform horror mystery platform fo
 - `infra/*`: local Docker and Terraform baseline.
 
 ## Quickstart
+
 1. Install Node.js 22+.
 2. Enable Corepack and activate pnpm:
    - `corepack enable`
@@ -42,6 +45,7 @@ MyHorrorStory is a production-focused, cross-platform horror mystery platform fo
    - `pnpm dev`
 
 ## Remote Testing Anywhere
+
 Use the built-in remote test orchestrator to expose web/admin/API with public tunnel URLs.
 
 1. Install a tunnel provider (`cloudflared` recommended).
@@ -53,6 +57,7 @@ Use the built-in remote test orchestrator to expose web/admin/API with public tu
    - `corepack pnpm remote:test:stop`
 
 ## Codex Browser Control Room
+
 Use `/codex` in the web app to run local Codex prompts, stream live execution updates, and send follow-up guidance.
 
 1. Set optional bridge hardening token:
@@ -64,6 +69,7 @@ Use `/codex` in the web app to run local Codex prompts, stream live execution up
 4. If token is set, paste it into the bridge token field before running prompts.
 
 ### OpenClaw-Backed Bridge (Optional)
+
 To route `/codex` through OpenClaw in WSL instead of local `codex`, set:
 
 - `CODEX_BRIDGE_COMMAND=C:/Users/<you>/<repo>/scripts/openclaw-codex-bridge.cmd`
@@ -73,13 +79,16 @@ To route `/codex` through OpenClaw in WSL instead of local `codex`, set:
 - `OPENCLAW_BRIDGE_AGENT=myhorrorstory`
 
 Local one-command startup (web/admin/api + health checks):
+
 - `corepack pnpm dev:openclaw`
 - This uses `apps/web/.env.local` for bridge variables and writes logs to `.run-logs/local-dev`.
 
 To refresh sandbox workspace context after local changes:
+
 - `wsl -d Ubuntu -- bash -lc "openshell sandbox upload --gateway nemoclaw my-assistant /mnt/c/Users/<you>/<repo> /sandbox/workspaces/myhorrorstory"`
 
 ## Immersive Web Session (Simulation-First)
+
 The web play route now simulates live player delivery across SMS/WhatsApp/Telegram/email as in-app popups while preserving direct-provider abstractions for phone delivery later.
 
 1. Start web on a dedicated test port:
@@ -93,6 +102,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
    - `http://127.0.0.1:3100/simulations/index.html`
 
 ## Core Commands
+
 - `corepack pnpm lint`
 - `corepack pnpm typecheck`
 - `corepack pnpm test`
@@ -108,15 +118,23 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `corepack pnpm linear:bots:autorun:once`
 - `corepack pnpm linear:bots:autorun:dry`
 - `corepack pnpm linear:bots:dispatch-package`
+- `corepack pnpm linear:bots:dispatch-agent-army`
+- `corepack pnpm linear:bots:dispatch-agent-army:dry`
 - `corepack pnpm linear:oauth:connect`
 - `corepack pnpm linear:oauth:url`
 - `corepack pnpm linear:oauth:exchange -- --code <authorization_code>`
 - `corepack pnpm linear:oauth:refresh -- --refresh-token <refresh_token>`
 - `corepack pnpm linear:oauth:client-credentials`
 - `corepack pnpm creative:build-plan`
+- `corepack pnpm creative:build-agent-army`
+- `corepack pnpm creative:materialize-agent-army`
+- `corepack pnpm creative:verify-agent-army`
 - `corepack pnpm creative:generate-visuals`
 - `corepack pnpm creative:materialize-assets`
 - `corepack pnpm creative:validate-visuals`
+- `corepack pnpm creative:dispatch-openclaw-agent-army:dry`
+- `corepack pnpm creative:dispatch-openclaw-agent-army -- --limit 5`
+- `corepack pnpm creative:dispatch-openclaw-agent-army -- --limit 5 --max-retries 4`
 - `corepack pnpm simulations:build-playthrough`
 - `corepack pnpm stories:generate`
 - `corepack pnpm stories:build-dossiers`
@@ -128,6 +146,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `PLAYWRIGHT_WEB_PORT=3100 PLAYWRIGHT_ADMIN_PORT=3101 corepack pnpm test:e2e` (optional explicit port override)
 
 ## API Contract Summary
+
 - `POST /api/v1/auth/signup`
 - `POST /api/v1/auth/signin`
 - `POST /api/v1/auth/legal/accept`
@@ -150,6 +169,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `GET /api/v1/growth/campaigns`
 
 ## Realtime Events
+
 - `session.joined`
 - `chapter.revealed`
 - `clue.unlocked`
@@ -158,6 +178,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `gm.narration`
 
 ## Documentation Index
+
 - Architecture overview: `docs/architecture/overview.md`
 - Domain model: `docs/domain/domain-model.md`
 - Security model: `docs/security/security-model.md`
@@ -182,6 +203,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - Agent workstreams: `docs/agents/README.md`
 
 ## Launch Story Catalog
+
 1. Static Between Stations
 2. Black Chapel Ledger
 3. The Harvest Men
@@ -194,12 +216,15 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 10. Dead Channel Protocol
 
 ## Short Mode Test Story
+
 - Midnight Lockbox (short-mode QA arc, 1-2 day async playthrough)
 
 ## Security and Compliance Notes
+
 - RBAC and audit logs are first-class in data schema and API boundaries.
 - Age gate, terms acceptance, and privacy consent are modeled per user.
 - External provider integrations use adapter packages to avoid vendor lock-in.
 
 ## Licensing
+
 Apache-2.0

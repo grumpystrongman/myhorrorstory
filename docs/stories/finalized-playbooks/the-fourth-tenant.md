@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: THE-FOU-TEN
+- Recruitment: Rent is collected from an apartment that appears on no official map. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: An email receipt references Unit 4 despite floor plans showing only three apartments.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every stalking marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: An email receipt references Unit 4 despite floor plans showing only three apartments.
+  - The case opens with impossible evidence and uncertain allies.
+  - Lease chain checksum
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Records-first vs pursuit-first opening
+  - Hallway thermal still
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Expose fraud publicly vs close case quietly
+  - Insurance fraud using synthetic tenants
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Liminal resident sustained by contractual ritual
+  - Other cities report rent receipts tied to non-existent units.
+
 ## Beat-by-Beat Runtime Package
 ### Unlisted Unit (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Timeline offsets by response speed.
 - Forgery branch implicates different suspects.
 - High-trust path unlocks hidden lease archive ending.
+
+## Community Puzzle Hooks
+- Lease Fragment Reconstruction: Assemble split lease clauses distributed by channel to locate Unit 4 entrance.
+  - Reward clue: the-fourth-tenant-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

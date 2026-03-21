@@ -5,12 +5,31 @@ export default function OnboardingPage(): JSX.Element {
   return (
     <main className="container page-stack">
       <section className="panel section-shell onboarding-hero">
-        <span className="surface-tag">Onboarding Funnel</span>
+        <span className="surface-tag">Operator Intake</span>
         <h1 className="section-title">Onboarding Funnel</h1>
         <p className="section-copy">
-          Create your investigator profile, record legal acceptance, pass age gate confirmation, and opt
-          into lifecycle briefings.
+          Pair your investigator identity, record legal acceptance, pass age gate confirmation, and enable
+          signal updates before first case access.
         </p>
+      </section>
+
+      <section className="panel section-shell onboarding-protocol-shell">
+        <span className="surface-tag">Access Sequence</span>
+        <h2 className="section-title">Pairing Checklist</h2>
+        <div className="onboarding-protocol-grid">
+          <article className="onboarding-protocol-card">
+            <h3>Identity Pairing</h3>
+            <p>Create your investigator record and attach contact channels for live transmissions.</p>
+          </article>
+          <article className="onboarding-protocol-card">
+            <h3>Consent Record</h3>
+            <p>Capture terms, privacy, and age-gate acceptance before activating mature story content.</p>
+          </article>
+          <article className="onboarding-protocol-card">
+            <h3>Signal Sync</h3>
+            <p>Enable lifecycle updates so dormant investigations and chapter drops are never missed.</p>
+          </article>
+        </div>
       </section>
 
       <section className="onboarding-grid">
@@ -20,7 +39,7 @@ export default function OnboardingPage(): JSX.Element {
         <div className="panel section-shell">
           <h3>Need updates before signup?</h3>
           <p className="section-copy">
-            Join by email first. You will still receive new case launch drops, win-back prompts, and
+            Join by email first. You will still receive new case launch drops, recovery prompts, and
             referral campaigns.
           </p>
           <LeadCaptureForm source="onboarding_secondary" />
@@ -42,4 +61,3 @@ export default function OnboardingPage(): JSX.Element {
     </main>
   );
 }
-

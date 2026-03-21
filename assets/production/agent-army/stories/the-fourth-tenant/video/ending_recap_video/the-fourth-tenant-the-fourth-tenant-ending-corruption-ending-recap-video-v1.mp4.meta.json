@@ -1,0 +1,44 @@
+{
+  "id": "the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video",
+  "title": "The Fourth Tenant - Corruption Pact Ending Recap Video",
+  "modality": "video",
+  "category": "ending_recap_video",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/video/ending_recap_video/the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video-v1.mp4",
+  "specs": {
+    "durationSeconds": 18,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise-video",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 640,
+    "height": 360,
+    "durationSeconds": 4,
+    "fps": 24,
+    "baseColor": "#9e9152",
+    "accentColor": "#43432f"
+  },
+  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
+  "providerChain": [
+    "runway",
+    "pika",
+    "luma",
+    "stable-video",
+    "manual-video-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:32:31.331Z"
+}

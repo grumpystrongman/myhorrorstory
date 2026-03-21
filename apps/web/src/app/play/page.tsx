@@ -19,15 +19,73 @@ import {
   type SessionState
 } from '../lib/play-session';
 import { getLaunchCaseById } from '../lib/launch-catalog';
-import { useEffect, useMemo, useRef, useState, type PointerEvent, type WheelEvent } from 'react';
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type FormEvent,
+  type PointerEvent,
+  type WheelEvent
+} from 'react';
 
 const MIN_ZOOM = 50;
 const MAX_ZOOM = 200;
 const PAN_STEP = 24;
 const SOUND_DIRECTOR_EVENT = 'myhorrorstory:sound-director-telemetry';
+const AUDIO_CIPHER_CODE = '440';
+const DEFAULT_CAMPAIGN_DAYS = 28;
+const MESSENGER_CHANNELS = ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL'] as const;
+
+type MessengerChannel = (typeof MESSENGER_CHANNELS)[number];
 
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
+}
+
+function normalizeMessageInput(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function inferResponseOptionFromText(
+  options: DramaResponseOption[],
+  draftMessage: string
+): DramaResponseOption | null {
+  if (options.length === 0) {
+    return null;
+  }
+
+  const normalizedDraft = normalizeMessageInput(draftMessage);
+  if (!normalizedDraft) {
+    return options[0] ?? null;
+  }
+
+  const draftTokens = normalizedDraft.split(' ').filter((token) => token.length > 2);
+  let bestOption: DramaResponseOption | null = options[0] ?? null;
+  let bestScore = Number.NEGATIVE_INFINITY;
+
+  for (const option of options) {
+    const searchable = normalizeMessageInput(`${option.label} ${option.summary} ${option.intent}`);
+    let score = 0;
+    if (searchable.includes(normalizedDraft)) {
+      score += 8;
+    }
+    for (const token of draftTokens) {
+      if (searchable.includes(token)) {
+        score += 1;
+      }
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      bestOption = option;
+    }
+  }
+
+  return bestOption;
 }
 
 function speakVoiceLine(pack: DramaPackage | null, message: DramaMessage): void {
@@ -90,6 +148,21 @@ export default function PlayPage(): JSX.Element {
   const [loading, setLoading] = useState(false);
   const [loadingError, setLoadingError] = useState<string | null>(null);
   const [isSimulatingBeat, setIsSimulatingBeat] = useState(false);
+  const [audioCipherInput, setAudioCipherInput] = useState('');
+  const [audioCipherStatus, setAudioCipherStatus] = useState<'idle' | 'failed' | 'solved'>('idle');
+  const [audioCipherAttempts, setAudioCipherAttempts] = useState(0);
+  const [campaignDay, setCampaignDay] = useState(1);
+  const [fieldActionHistory, setFieldActionHistory] = useState<Record<string, string[]>>({});
+  const [fieldOpsLog, setFieldOpsLog] = useState<Array<{ id: string; day: number; title: string; detail: string }>>(
+    []
+  );
+  const [puzzleInput, setPuzzleInput] = useState('');
+  const [puzzleStatus, setPuzzleStatus] = useState<'idle' | 'failed' | 'solved'>('idle');
+  const [puzzleAttempts, setPuzzleAttempts] = useState(0);
+  const [unlockedShardIds, setUnlockedShardIds] = useState<string[]>([]);
+  const [selectedMessengerChannel, setSelectedMessengerChannel] = useState<MessengerChannel>('SIGNAL');
+  const [messageDraft, setMessageDraft] = useState('');
+  const [missionReady, setMissionReady] = useState(false);
 
   const dragAnchor = useRef<{ x: number; y: number } | null>(null);
   const soundDirector = useMemo(() => new AISoundDirector(), []);
@@ -164,6 +237,113 @@ export default function PlayPage(): JSX.Element {
       detail: item.summary
     }));
   }, [dramaPack, evidenceNodes]);
+  const cipherReference = useMemo(() => {
+    const timelineReference = dramaPack?.investigationBoard.timeline[0]?.timeLabel;
+    return timelineReference ? `${timelineReference} marker` : '9 second dead-air marker';
+  }, [dramaPack]);
+  const playerBriefing = dramaPack?.playerBriefing;
+  const campaignPlan = useMemo(
+    () =>
+      dramaPack?.campaignPlan ?? {
+        totalDays: DEFAULT_CAMPAIGN_DAYS,
+        weeks: [
+          {
+            week: 1,
+            label: 'Week 1 - Intake',
+            objective: 'Establish baseline evidence chain and verify first contact.',
+            keyMoments: ['Initial clue validation']
+          },
+          {
+            week: 2,
+            label: 'Week 2 - Contradiction Mapping',
+            objective: 'Cross-check witness statements and channel anomalies.',
+            keyMoments: ['First branch fork']
+          },
+          {
+            week: 3,
+            label: 'Week 3 - Escalation',
+            objective: 'Run live interventions while pressure increases.',
+            keyMoments: ['Antagonist direct contact']
+          },
+          {
+            week: 4,
+            label: 'Week 4 - Endgame',
+            objective: 'Resolve final branch and close evidence loop.',
+            keyMoments: ['Debrief and sequel hook']
+          }
+        ]
+      },
+    [dramaPack?.campaignPlan]
+  );
+  const activeCampaignWeek = useMemo(() => {
+    const totalWeeks = Math.max(campaignPlan.weeks.length, 1);
+    const weekSize = Math.max(Math.ceil(campaignPlan.totalDays / totalWeeks), 1);
+    const weekNumber = clamp(Math.ceil(campaignDay / weekSize), 1, totalWeeks);
+    return campaignPlan.weeks[weekNumber - 1];
+  }, [campaignDay, campaignPlan.totalDays, campaignPlan.weeks]);
+  const visualDeck = dramaPack?.visualDeck;
+  const visualAssets = visualDeck?.assets ?? [];
+  const visualGallery = useMemo(
+    () => ({
+      scenes: visualAssets.filter((asset) => asset.category === 'scene').slice(0, 3),
+      evidence: visualAssets.filter((asset) => asset.category === 'evidence').slice(0, 4),
+      characters: visualAssets.filter((asset) => asset.category === 'character').slice(0, 4)
+    }),
+    [visualAssets]
+  );
+  const activePuzzle = dramaPack?.communityPuzzles?.[0];
+  const activePuzzleSolution = useMemo(
+    () =>
+      activePuzzle?.solutionKeyword && activePuzzle.solutionKeyword.length > 0
+        ? activePuzzle.solutionKeyword
+        : 'ORIGIN',
+    [activePuzzle?.solutionKeyword]
+  );
+  const unlockedPuzzleShards = useMemo(
+    () => (activePuzzle?.shards ?? []).filter((shard) => unlockedShardIds.includes(shard.id)),
+    [activePuzzle?.shards, unlockedShardIds]
+  );
+  const unresolvedObjectives = useMemo(() => {
+    const objectives = [
+      {
+        id: 'objective-beat',
+        label: `Resolve beat: ${currentBeat?.title ?? 'Awaiting beat load'}`,
+        complete: Boolean(sessionState?.selectedResponses.find((entry) => entry.beatId === currentBeat?.id))
+      },
+      {
+        id: 'objective-evidence',
+        label: 'Inspect at least one evidence node from the board',
+        complete: fieldOpsLog.some((entry) => entry.title.includes('Evidence'))
+      },
+      {
+        id: 'objective-puzzle',
+        label: 'Complete the active community puzzle keyword',
+        complete: puzzleStatus === 'solved'
+      }
+    ];
+    return objectives;
+  }, [currentBeat?.id, currentBeat?.title, fieldOpsLog, puzzleStatus, sessionState?.selectedResponses]);
+  const availableMessengerChannels = useMemo(() => {
+    const packChannels = dramaPack?.channels ?? [];
+    return MESSENGER_CHANNELS.filter(
+      (channel) => packChannels.includes(channel) || channel === selectedMessengerChannel
+    );
+  }, [dramaPack?.channels, selectedMessengerChannel]);
+  const canReplyToBeat =
+    !loading && !isSimulatingBeat && missionReady && Boolean(currentBeat) && !sessionState?.complete;
+  const missionContext = useMemo(() => {
+    return {
+      recruitmentReason:
+        playerBriefing?.recruitmentReason ??
+        'You were recruited after prior squads failed to maintain narrative control during active incidents.',
+      openingIncident:
+        playerBriefing?.openingIncident ??
+        'At 02:17 local, all major channels delivered synchronized fragments from the same hostile source.',
+      firstDirective:
+        playerBriefing?.firstDirective ??
+        'Operate from a single secure thread, preserve witness trust, and isolate contradictions before escalation.'
+    };
+  }, [playerBriefing?.firstDirective, playerBriefing?.openingIncident, playerBriefing?.recruitmentReason]);
 
   function clearBeatTimers(): void {
     for (const timeout of messageTimeouts.current) {
@@ -196,6 +376,22 @@ export default function PlayPage(): JSX.Element {
       setVillainProximity(8);
       setDangerLevel(10);
       setIsSimulatingBeat(false);
+      setAudioCipherInput('');
+      setAudioCipherStatus('idle');
+      setAudioCipherAttempts(0);
+      setCampaignDay(1);
+      setFieldActionHistory({});
+      setFieldOpsLog([]);
+      setPuzzleInput('');
+      setPuzzleStatus('idle');
+      setPuzzleAttempts(0);
+      setUnlockedShardIds([]);
+      setMissionReady(false);
+      setMessageDraft('');
+      const firstSupportedChannel = MESSENGER_CHANNELS.find((channel) =>
+        parsed.channels.includes(channel)
+      );
+      setSelectedMessengerChannel(firstSupportedChannel ?? 'SIGNAL');
     } catch (error) {
       setLoadingError(error instanceof Error ? error.message : 'Unable to load story runtime package.');
     } finally {
@@ -228,15 +424,28 @@ export default function PlayPage(): JSX.Element {
     setActivePopup(null);
   }
 
-  function chooseResponse(option: DramaResponseOption): void {
-    if (!dramaPack || !sessionState || !currentBeat) {
+  function chooseResponse(option: DramaResponseOption, customMessage?: string): void {
+    if (!dramaPack || !sessionState || !currentBeat || !missionReady) {
       return;
     }
+
+    const outboundMessage: DramaMessage = {
+      id: `outbound-${currentBeat.id}-${option.id}-${Date.now()}`,
+      senderName: playerBriefing?.callSign ?? 'You',
+      role: 'investigator',
+      channel: selectedMessengerChannel,
+      text: customMessage?.trim() || option.label,
+      delaySeconds: 0,
+      intensity: 28
+    };
+    setMessageFeed((current) => [...current, outboundMessage]);
+
     const result = applyResponseChoice(dramaPack, sessionState, currentBeat, option);
     setSessionState(result.nextState);
     setPlayerProgress(result.nextState.investigationProgress);
     setVillainProximity((current) => clamp(current + currentBeat.stage * 4 + option.reputationDelta.aggression, 0, 100));
     setDangerLevel((current) => clamp(current + currentBeat.stage * 5 + Math.max(0, option.reputationDelta.aggression), 0, 100));
+    setCampaignDay((current) => clamp(current + (currentBeat.stage >= 3 ? 5 : 4), 1, campaignPlan.totalDays));
     setPopupQueue([]);
     setActivePopup(null);
 
@@ -245,6 +454,48 @@ export default function PlayPage(): JSX.Element {
       setSessionEndingId(ending.id);
       setIsSimulatingBeat(false);
     }
+  }
+
+  function startMissionThread(): void {
+    if (!dramaPack || missionReady) {
+      return;
+    }
+    setMissionReady(true);
+
+    const dispatchMessage: DramaMessage = {
+      id: `dispatch-${dramaPack.id}-${Date.now()}`,
+      senderName: 'Control',
+      role: 'operator',
+      channel: selectedMessengerChannel,
+      text: `${missionContext.openingIncident} Directive: ${missionContext.firstDirective}`,
+      delaySeconds: 0,
+      intensity: 34
+    };
+    setMessageFeed((current) => [...current, dispatchMessage]);
+    setPopupQueue((current) => [...current, dispatchMessage]);
+    if (voiceDramaEnabled) {
+      speakVoiceLine(dramaPack, dispatchMessage);
+    }
+  }
+
+  function submitMessengerReply(event: FormEvent<HTMLFormElement>): void {
+    event.preventDefault();
+    if (!currentBeat || !canReplyToBeat) {
+      return;
+    }
+
+    const normalizedDraft = messageDraft.trim();
+    if (!normalizedDraft) {
+      return;
+    }
+
+    const matchedOption = inferResponseOptionFromText(currentBeat.responseOptions, normalizedDraft);
+    if (!matchedOption) {
+      return;
+    }
+
+    chooseResponse(matchedOption, normalizedDraft);
+    setMessageDraft('');
   }
 
   function restartSession(): void {
@@ -261,6 +512,162 @@ export default function PlayPage(): JSX.Element {
     setPlayerProgress(initial.investigationProgress);
     setVillainProximity(8);
     setDangerLevel(10);
+    setAudioCipherInput('');
+    setAudioCipherStatus('idle');
+    setAudioCipherAttempts(0);
+    setCampaignDay(1);
+    setFieldActionHistory({});
+    setFieldOpsLog([]);
+    setPuzzleInput('');
+    setPuzzleStatus('idle');
+    setPuzzleAttempts(0);
+    setUnlockedShardIds([]);
+    setMissionReady(false);
+    setMessageDraft('');
+  }
+
+  function submitAudioCipher(event: FormEvent<HTMLFormElement>): void {
+    event.preventDefault();
+
+    const normalizedInput = audioCipherInput.trim();
+    if (!normalizedInput) {
+      return;
+    }
+
+    if (normalizedInput === AUDIO_CIPHER_CODE) {
+      const puzzleMessage: DramaMessage = {
+        id: `cipher-${Date.now()}`,
+        senderName: 'Archive Operator',
+        role: 'operator',
+        channel: 'SIGNAL',
+        text:
+          'Cipher accepted. Hidden reel unlocked. Cross-check the timeline fracture and isolate the seventh caller.',
+        delaySeconds: 0,
+        intensity: 35
+      };
+      setAudioCipherStatus('solved');
+      setAudioCipherAttempts((current) => current + 1);
+      setPlayerProgress((current) => clamp(current + 6, 0, 100));
+      setDangerLevel((current) => clamp(current - 4, 0, 100));
+      setCampaignDay((current) => clamp(current + 1, 1, campaignPlan.totalDays));
+      setMessageFeed((current) => [...current, puzzleMessage]);
+      setPopupQueue((current) => [...current, puzzleMessage]);
+      if (voiceDramaEnabled) {
+        speakVoiceLine(dramaPack, puzzleMessage);
+      }
+      return;
+    }
+
+    setAudioCipherStatus('failed');
+    setAudioCipherAttempts((current) => current + 1);
+    setDangerLevel((current) => clamp(current + 5, 0, 100));
+  }
+
+  function performFieldAction(actionId: 'analyze_audio' | 'interview_witness' | 'review_evidence' | 'trace_number'): void {
+    if (!currentBeat) {
+      return;
+    }
+
+    const usedActions = fieldActionHistory[currentBeat.id] ?? [];
+    if (usedActions.includes(actionId)) {
+      return;
+    }
+
+    const actionLabels = {
+      analyze_audio: {
+        title: 'Audio Analysis Sweep',
+        detail: 'Detected modulation drift matching prior contact windows.'
+      },
+      interview_witness: {
+        title: 'Witness Interview Snapshot',
+        detail: 'Witness account introduced a contradiction tied to station access logs.'
+      },
+      review_evidence: {
+        title: 'Evidence Frame Review',
+        detail: 'Recovered a frame marker hidden in archived still imagery.'
+      },
+      trace_number: {
+        title: 'Telecom Trace Attempt',
+        detail: 'Line route bounced through relay mirrors before dropping into dead infrastructure.'
+      }
+    };
+
+    const selectedAction = actionLabels[actionId];
+    const clueReference =
+      dramaPack?.investigationBoard.timeline[Math.min(fieldOpsLog.length, (dramaPack?.investigationBoard.timeline.length ?? 1) - 1)]
+        ?.summary ?? 'No additional timeline annotation.';
+
+    const opsMessage: DramaMessage = {
+      id: `ops-${currentBeat.id}-${actionId}-${Date.now()}`,
+      senderName: 'Field Operations Desk',
+      role: 'operator',
+      channel: 'SIGNAL',
+      text: `${selectedAction.title}: ${selectedAction.detail} Timeline note: ${clueReference}`,
+      delaySeconds: 0,
+      intensity: 42
+    };
+
+    setFieldActionHistory((current) => ({
+      ...current,
+      [currentBeat.id]: [...usedActions, actionId]
+    }));
+    setFieldOpsLog((current) => [
+      ...current,
+      {
+        id: opsMessage.id,
+        day: campaignDay,
+        title: selectedAction.title,
+        detail: selectedAction.detail
+      }
+    ]);
+    setPlayerProgress((current) => clamp(current + 3, 0, 100));
+    setDangerLevel((current) => clamp(current + 2, 0, 100));
+    setCampaignDay((current) => clamp(current + 1, 1, campaignPlan.totalDays));
+    setMessageFeed((current) => [...current, opsMessage]);
+    setPopupQueue((current) => [...current, opsMessage]);
+
+    if (activePuzzle && unlockedShardIds.length < activePuzzle.shards.length) {
+      const nextShard = activePuzzle.shards[unlockedShardIds.length];
+      if (nextShard) {
+        setUnlockedShardIds((current) => [...current, nextShard.id]);
+      }
+    }
+  }
+
+  function submitCommunityPuzzle(event: FormEvent<HTMLFormElement>): void {
+    event.preventDefault();
+
+    if (!activePuzzle || puzzleStatus === 'solved') {
+      return;
+    }
+
+    const normalizedGuess = puzzleInput.trim().toUpperCase();
+    if (!normalizedGuess) {
+      return;
+    }
+
+    setPuzzleAttempts((current) => current + 1);
+
+    if (normalizedGuess === activePuzzleSolution) {
+      const solvedMessage: DramaMessage = {
+        id: `puzzle-solved-${Date.now()}`,
+        senderName: 'Archive Operator',
+        role: 'operator',
+        channel: 'DOCUMENT_DROP',
+        text: `Puzzle ${activePuzzle.title} resolved. Reward clue ${activePuzzle.rewardClueId} is now tagged for final debrief alignment.`,
+        delaySeconds: 0,
+        intensity: 50
+      };
+      setPuzzleStatus('solved');
+      setPlayerProgress((current) => clamp(current + 8, 0, 100));
+      setCampaignDay((current) => clamp(current + 2, 1, campaignPlan.totalDays));
+      setMessageFeed((current) => [...current, solvedMessage]);
+      setPopupQueue((current) => [...current, solvedMessage]);
+      return;
+    }
+
+    setPuzzleStatus('failed');
+    setDangerLevel((current) => clamp(current + 4, 0, 100));
   }
 
   useEffect(() => {
@@ -279,7 +686,7 @@ export default function PlayPage(): JSX.Element {
   }, [storyId]);
 
   useEffect(() => {
-    if (!currentBeat || !sessionState || sessionState.complete) {
+    if (!missionReady || !currentBeat || !sessionState || sessionState.complete) {
       setIsSimulatingBeat(false);
       return;
     }
@@ -288,7 +695,7 @@ export default function PlayPage(): JSX.Element {
     return () => {
       clearBeatTimers();
     };
-  }, [currentBeat?.id, sessionState?.complete, voiceDramaEnabled]);
+  }, [currentBeat?.id, missionReady, sessionState?.complete, voiceDramaEnabled]);
 
   useEffect(() => {
     if (!activePopup && popupQueue.length > 0) {
@@ -370,11 +777,11 @@ export default function PlayPage(): JSX.Element {
           }}
         />
         <div className="play-session-hero-content">
-          <p className="kicker">Live Runtime</p>
+          <p className="kicker">Signal Runtime</p>
           <h1 style={{ fontFamily: 'Cinzel, serif', margin: '8px 0 4px' }}>Play Session</h1>
           <p className="section-copy">
-            Simulated SMS, WhatsApp, Telegram, Signal, and email drops are delivered as in-app popups now.
-            This flow is wired for future direct phone notification integrations.
+            Incoming channels are staged as call logs, short transmissions, and archived operator drops.
+            Treat each beat like an active incident: decode the clue chain before the next escalation.
           </p>
           <p data-testid="active-story" style={{ margin: 0, color: 'var(--muted)' }}>
             Active Story: {dramaPack?.title ?? activeStoryTitle}
@@ -382,12 +789,155 @@ export default function PlayPage(): JSX.Element {
           <p data-testid="active-score" style={{ margin: 0, color: 'var(--muted)' }}>
             Score: {activeStoryTrack?.title ?? 'MHS Platform Overture'}
           </p>
+          <p style={{ margin: 0, color: 'var(--muted)' }}>
+            Campaign Day: {campaignDay} / {campaignPlan.totalDays}
+          </p>
+          {playerBriefing ? (
+            <p style={{ margin: 0, color: 'var(--muted)' }}>
+              Call Sign {playerBriefing.callSign} - {playerBriefing.roleTitle}
+            </p>
+          ) : null}
           <div className="inline-links">
             <button type="button" onClick={restartSession}>Restart Session</button>
             <button type="button" onClick={() => setVoiceDramaEnabled((current) => !current)}>
               Voice Drama: {voiceDramaEnabled ? 'Enabled' : 'Disabled'}
             </button>
           </div>
+        </div>
+      </div>
+
+      {!missionReady ? (
+        <div className="panel section-shell play-mission-overlay" data-testid="mission-overlay">
+          <p className="kicker">Mission Brief</p>
+          <h2 style={{ margin: '8px 0 6px' }}>Why You Are In This Story</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            {missionContext.recruitmentReason}
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Opening Incident:</strong> {missionContext.openingIncident}
+          </p>
+          <p style={{ marginBottom: 10 }}>
+            <strong>First Directive:</strong> {missionContext.firstDirective}
+          </p>
+          <div className="inline-links" style={{ marginTop: 0 }}>
+            <button type="button" data-testid="mission-begin" onClick={startMissionThread} disabled={loading}>
+              Start Live Thread
+            </button>
+            <span className="play-mission-channel">Primary channel: {selectedMessengerChannel}</span>
+          </div>
+        </div>
+      ) : null}
+
+      <div className="panel section-shell play-messenger-shell">
+        <div className="play-messenger-topline">
+          <div>
+            <p className="kicker">Messenger Runtime</p>
+            <h2 style={{ margin: '8px 0 4px' }}>iPhone Chat Simulation</h2>
+            <p className="muted" style={{ margin: 0 }}>
+              Case events are played through a single channel thread. Type freely or use quick replies to branch.
+            </p>
+          </div>
+          <label htmlFor="messenger-channel-select" className="play-messenger-channel-picker">
+            Active channel
+            <select
+              id="messenger-channel-select"
+              data-testid="messenger-channel-select"
+              value={selectedMessengerChannel}
+              onChange={(event) => setSelectedMessengerChannel(event.target.value as MessengerChannel)}
+            >
+              {availableMessengerChannels.map((channel) => (
+                <option key={channel} value={channel}>
+                  {channel}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+
+        <div className="play-messenger-grid">
+          <article className="play-messenger-brief">
+            <h3 style={{ marginTop: 0 }}>Thread Rules</h3>
+            <p className="muted" style={{ marginTop: 0 }}>
+              Keep responses in-channel. Every reply updates trust, danger, and the next unlock.
+            </p>
+            <ul className="plain-list">
+              <li>
+                <strong>1. Observe:</strong>
+                <span>Read incoming messages for contradictions, timeline clues, and emotional shifts.</span>
+              </li>
+              <li>
+                <strong>2. Respond:</strong>
+                <span>Type any natural response or send a quick option to advance the narrative.</span>
+              </li>
+              <li>
+                <strong>3. Escalate:</strong>
+                <span>Field ops and puzzle unlocks deepen each branch without leaving the thread.</span>
+              </li>
+            </ul>
+          </article>
+
+          <article className="iphone-chat-shell" data-testid="iphone-chat-shell">
+            <div className="iphone-frame">
+              <div className="iphone-notch" />
+              <div className={`iphone-screen channel-${selectedMessengerChannel.toLowerCase()}`}>
+                <header className="iphone-chat-header">
+                  <strong>{dramaPack?.title ?? activeStoryTitle}</strong>
+                  <span>{selectedMessengerChannel} secure thread</span>
+                </header>
+                <div className="iphone-chat-messages" data-testid="phone-chat-messages">
+                  {messageFeed.length === 0 ? (
+                    <article className="iphone-bubble incoming">
+                      <strong>Control</strong>
+                      <p>{missionContext.openingIncident}</p>
+                    </article>
+                  ) : (
+                    messageFeed.map((message) => {
+                      const outgoing = message.role === 'investigator';
+                      return (
+                        <article
+                          key={message.id}
+                          className={`iphone-bubble ${outgoing ? 'outgoing' : 'incoming'} role-${message.role}`}
+                        >
+                          <strong>{outgoing ? 'You' : message.senderName}</strong>
+                          <p>{message.text}</p>
+                          <span>{selectedMessengerChannel}</span>
+                        </article>
+                      );
+                    })
+                  )}
+                </div>
+                <div className="iphone-quick-replies">
+                  {(currentBeat?.responseOptions ?? []).slice(0, 3).map((option) => (
+                    <button
+                      type="button"
+                      key={`phone-${option.id}`}
+                      data-testid={`phone-quick-reply-${option.id}`}
+                      onClick={() => chooseResponse(option, option.label)}
+                      disabled={!canReplyToBeat}
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+                <form className="iphone-composer" onSubmit={submitMessengerReply}>
+                  <label htmlFor="messenger-reply-input" className="sr-only">
+                    Reply
+                  </label>
+                  <input
+                    id="messenger-reply-input"
+                    data-testid="phone-input"
+                    value={messageDraft}
+                    onChange={(event) => setMessageDraft(event.target.value)}
+                    placeholder={missionReady ? 'Type your response...' : 'Start mission to unlock chat input'}
+                    disabled={!canReplyToBeat}
+                  />
+                  <button type="submit" data-testid="phone-send" disabled={!canReplyToBeat}>
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
 
@@ -399,9 +949,11 @@ export default function PlayPage(): JSX.Element {
               ? 'Loading runtime package...'
               : loadingError
                 ? loadingError
+                : !missionReady
+                  ? 'Mission briefing pending. Start the thread to receive live transmissions.'
                 : isSimulatingBeat
-                  ? 'New transmissions are arriving.'
-                  : 'Awaiting your next decision.'}
+                  ? 'Transmission burst in progress.'
+                  : 'Awaiting operator input.'}
           </p>
           <div className="play-channel-strip">
             {(dramaPack?.channels ?? ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL']).slice(0, 6).map((channel) => (
@@ -410,7 +962,7 @@ export default function PlayPage(): JSX.Element {
           </div>
           <div className="play-feed-list" data-testid="message-feed">
             {messageFeed.length === 0 ? (
-              <p className="muted" style={{ margin: 0 }}>No transmissions yet.</p>
+              <p className="muted" style={{ margin: 0 }}>No transmissions captured yet.</p>
             ) : (
               messageFeed.map((message) => (
                 <article key={message.id} className={`play-feed-item role-${message.role}`}>
@@ -455,7 +1007,7 @@ export default function PlayPage(): JSX.Element {
                 key={option.id}
                 data-testid={`response-option-${option.id}`}
                 onClick={() => chooseResponse(option)}
-                disabled={loading || isSimulatingBeat || Boolean(sessionState?.complete)}
+                disabled={loading || isSimulatingBeat || !missionReady || Boolean(sessionState?.complete)}
               >
                 <strong>{option.label}</strong>
                 <small>{option.summary}</small>
@@ -478,10 +1030,131 @@ export default function PlayPage(): JSX.Element {
         </section>
       </div>
 
+      <div className="panel section-shell play-briefing-grid">
+        <article className="play-briefing-card">
+          <h2 style={{ marginTop: 0 }}>Investigator Briefing</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            {playerBriefing?.recruitmentReason ??
+              'You were assigned as a specialist after cross-case anomaly markers aligned with your prior investigations.'}
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Opening Incident:</strong>{' '}
+            {playerBriefing?.openingIncident ?? 'A synchronized multi-channel drop triggered this file.'}
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Personal Stakes:</strong>{' '}
+            {playerBriefing?.personalStakes ?? 'Failure leaves witnesses exposed to escalating antagonist pressure.'}
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong>First Directive:</strong>{' '}
+            {playerBriefing?.firstDirective ?? 'Maintain evidence chain and preserve witness trust under pressure.'}
+          </p>
+        </article>
+        <article className="play-briefing-card">
+          <h2 style={{ marginTop: 0 }}>28-Day Campaign Tracker</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            This case is designed as a month-long progression with weekly escalation milestones.
+          </p>
+          <div className="campaign-week-list">
+            {campaignPlan.weeks.map((week) => {
+              const weekNumber = week.week;
+              const totalWeeks = Math.max(campaignPlan.weeks.length, 1);
+              const weekSize = Math.max(Math.ceil(campaignPlan.totalDays / totalWeeks), 1);
+              const currentWeek = clamp(Math.ceil(campaignDay / weekSize), 1, totalWeeks);
+              const isActive = weekNumber === currentWeek;
+              const isComplete = weekNumber < currentWeek;
+              return (
+                <article
+                  key={week.label}
+                  className={`campaign-week-card ${isActive ? 'is-active' : ''} ${isComplete ? 'is-complete' : ''}`}
+                >
+                  <p className="kicker" style={{ marginBottom: 6 }}>
+                    Week {week.week}
+                  </p>
+                  <h3 style={{ margin: '0 0 4px' }}>{week.label}</h3>
+                  <p className="muted" style={{ margin: 0 }}>
+                    {week.objective}
+                  </p>
+                </article>
+              );
+            })}
+          </div>
+          <p className="muted" style={{ marginBottom: 0 }}>
+            Active focus: {activeCampaignWeek?.objective}
+          </p>
+        </article>
+      </div>
+
+      <div className="panel section-shell play-ops-grid">
+        <article className="play-ops-card">
+          <h2 style={{ marginTop: 0 }}>Field Operations</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            Perform non-branch actions between major decisions to surface additional context.
+          </p>
+          <div className="play-ops-actions">
+            <button
+              type="button"
+              onClick={() => performFieldAction('analyze_audio')}
+              disabled={!currentBeat || (fieldActionHistory[currentBeat.id] ?? []).includes('analyze_audio')}
+            >
+              Analyze Audio
+            </button>
+            <button
+              type="button"
+              onClick={() => performFieldAction('interview_witness')}
+              disabled={!currentBeat || (fieldActionHistory[currentBeat.id] ?? []).includes('interview_witness')}
+            >
+              Interview Witness
+            </button>
+            <button
+              type="button"
+              onClick={() => performFieldAction('review_evidence')}
+              disabled={!currentBeat || (fieldActionHistory[currentBeat.id] ?? []).includes('review_evidence')}
+            >
+              Review Evidence
+            </button>
+            <button
+              type="button"
+              onClick={() => performFieldAction('trace_number')}
+              disabled={!currentBeat || (fieldActionHistory[currentBeat.id] ?? []).includes('trace_number')}
+            >
+              Trace Number
+            </button>
+          </div>
+          <div className="play-ops-log">
+            {fieldOpsLog.length === 0 ? (
+              <p className="muted" style={{ margin: 0 }}>
+                No operations logged yet.
+              </p>
+            ) : (
+              fieldOpsLog.slice(-5).map((entry) => (
+                <article key={entry.id} className="play-ops-log-item">
+                  <strong>Day {entry.day}: {entry.title}</strong>
+                  <span>{entry.detail}</span>
+                </article>
+              ))
+            )}
+          </div>
+        </article>
+        <article className="play-ops-card">
+          <h2 style={{ marginTop: 0 }}>Mission Objectives</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            Resolve objectives to keep the month-long arc moving forward.
+          </p>
+          <ul className="objective-list">
+            {unresolvedObjectives.map((objective) => (
+              <li key={objective.id} className={objective.complete ? 'complete' : ''}>
+                <strong>{objective.complete ? 'Complete' : 'Open'}:</strong> {objective.label}
+              </li>
+            ))}
+          </ul>
+        </article>
+      </div>
+
       <div className="panel section-shell">
         <h2 style={{ marginTop: 0 }}>Investigation Board</h2>
         <p className="muted" style={{ marginTop: 0 }}>
-          Suspects, locations, evidence links, and timeline reconstruction are surfaced below.
+          Suspects, locations, evidence links, and timeline reconstruction are mapped below.
         </p>
         <div className="investigation-board-grid">
           <div className="investigation-cover-card">
@@ -491,7 +1164,7 @@ export default function PlayPage(): JSX.Element {
               <h3 style={{ margin: '8px 0 4px' }}>{dramaPack?.title ?? activeStoryTitle}</h3>
               <p className="muted" style={{ margin: 0 }}>
                 {dramaPack?.hook ??
-                  'Branching clues, suspect pressure, and villain escalation across channels.'}
+                  'Branching clues, suspect pressure, and antagonist escalation across channels.'}
               </p>
             </div>
           </div>
@@ -535,6 +1208,153 @@ export default function PlayPage(): JSX.Element {
               ))}
             </ul>
           </div>
+        </div>
+      </div>
+
+      <div className="panel section-shell play-puzzle-grid">
+        <article className="play-puzzle-card">
+          <h2 style={{ marginTop: 0 }}>Community Puzzle Board</h2>
+          {activePuzzle ? (
+            <>
+              <p className="kicker" style={{ marginBottom: 8 }}>Puzzle: {activePuzzle.title}</p>
+              <p style={{ marginTop: 0 }}>{activePuzzle.objective}</p>
+              <div className="puzzle-shard-list">
+                {activePuzzle.shards.map((shard) => {
+                  const unlocked = unlockedShardIds.includes(shard.id);
+                  return (
+                    <article key={shard.id} className={`puzzle-shard ${unlocked ? 'unlocked' : ''}`}>
+                      <strong>{shard.heldBy}</strong>
+                      <span>{unlocked ? shard.content : 'Locked shard - run field operations to unlock.'}</span>
+                    </article>
+                  );
+                })}
+              </div>
+              <form className="play-cipher-form" onSubmit={submitCommunityPuzzle}>
+                <label htmlFor="community-puzzle-input">
+                  Enter keyword
+                  <input
+                    id="community-puzzle-input"
+                    value={puzzleInput}
+                    onChange={(event) => setPuzzleInput(event.target.value)}
+                    placeholder="Keyword from shard pattern"
+                  />
+                </label>
+                <button type="submit">Submit Keyword</button>
+              </form>
+              <p className="muted" style={{ marginBottom: 4 }}>
+                Unlocked shards: {unlockedPuzzleShards.length} / {activePuzzle.shards.length}
+              </p>
+              <p
+                className={
+                  puzzleStatus === 'solved'
+                    ? 'form-success'
+                    : puzzleStatus === 'failed'
+                      ? 'form-error'
+                      : 'muted'
+                }
+                style={{ marginBottom: 4 }}
+              >
+                {puzzleStatus === 'solved'
+                  ? `Puzzle solved. Reward clue unlocked: ${activePuzzle.rewardClueId}.`
+                  : puzzleStatus === 'failed'
+                    ? 'Keyword mismatch. Re-read shard details and timeline notes.'
+                    : 'Collect shards and infer the keyword before submission.'}
+              </p>
+              <p className="muted" style={{ marginBottom: 0 }}>
+                Attempts: {puzzleAttempts} · Failure consequence: {activePuzzle.failureConsequence}
+              </p>
+            </>
+          ) : (
+            <p className="muted">No puzzle configured for this case package.</p>
+          )}
+        </article>
+
+        <article className="play-puzzle-card">
+          <h2 style={{ marginTop: 0 }}>Visual Evidence Gallery</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            AI-generated story visuals are surfaced here for scene context, clues, and character recognition.
+          </p>
+          <div className="visual-gallery-grid">
+            {[...visualGallery.scenes, ...visualGallery.evidence, ...visualGallery.characters]
+              .slice(0, 9)
+              .map((asset) => (
+                <figure key={asset.id} className="visual-gallery-item">
+                  <img src={asset.path} alt={asset.title} loading="lazy" />
+                  <figcaption>
+                    <strong>{asset.title}</strong>
+                    <span>{asset.promptHint}</span>
+                  </figcaption>
+                </figure>
+              ))}
+          </div>
+          {visualAssets.length === 0 ? (
+            <p className="muted" style={{ marginBottom: 0 }}>
+              Visual deck unavailable for this package.
+            </p>
+          ) : null}
+        </article>
+      </div>
+
+      <div className="panel section-shell play-cipher-panel">
+        <h2 style={{ marginTop: 0 }}>Audio Cipher Lab</h2>
+        <p className="muted" style={{ marginTop: 0 }}>
+          Inspired by found-audio ARG flow: isolate repeated numbers, verify against call duration, and
+          decode the access gate.
+        </p>
+        <div className="play-cipher-grid">
+          <article className="play-cipher-card">
+            <h3 style={{ marginTop: 0 }}>Decode Directive</h3>
+            <ol className="play-cipher-steps">
+              <li>Review repeated number fragments across transmissions.</li>
+              <li>Correlate with the {cipherReference}.</li>
+              <li>Enter the three-digit access code to unlock a hidden clue.</li>
+            </ol>
+            <p className="muted" style={{ margin: 0 }}>
+              Hint: the same number appears across multiple puzzle prompts and resolves when audio speed
+              changes.
+            </p>
+          </article>
+          <article className="play-cipher-card">
+            <h3 style={{ marginTop: 0 }}>Access Input</h3>
+            <form className="play-cipher-form" onSubmit={submitAudioCipher}>
+              <label htmlFor="audio-cipher-code">
+                Three-digit code
+                <input
+                  id="audio-cipher-code"
+                  data-testid="audio-cipher-input"
+                  value={audioCipherInput}
+                  onChange={(event) => setAudioCipherInput(event.target.value)}
+                  inputMode="numeric"
+                  pattern="[0-9]{3}"
+                  maxLength={3}
+                  placeholder="000"
+                />
+              </label>
+              <button type="submit" data-testid="audio-cipher-submit">
+                Decode Clip
+              </button>
+            </form>
+            <p
+              data-testid="audio-cipher-status"
+              className={
+                audioCipherStatus === 'solved'
+                  ? 'form-success'
+                  : audioCipherStatus === 'failed'
+                    ? 'form-error'
+                    : 'muted'
+              }
+              style={{ marginBottom: 6 }}
+            >
+              {audioCipherStatus === 'solved'
+                ? 'Access granted. Hidden reel routed to incoming feed.'
+                : audioCipherStatus === 'failed'
+                  ? 'Code mismatch. Re-check the call-duration clue.'
+                  : 'Awaiting first decode attempt.'}
+            </p>
+            <p className="muted" style={{ margin: 0 }}>
+              Attempts: {audioCipherAttempts}
+            </p>
+          </article>
         </div>
       </div>
 
@@ -625,7 +1445,7 @@ export default function PlayPage(): JSX.Element {
       <div className="panel section-shell">
         <h2 style={{ marginTop: 0 }}>AI Sound Director</h2>
         <p style={{ marginTop: 0 }}>
-          Real-time score direction from progress, time of night, villain proximity, and danger.
+          Real-time score direction from progress, time of night, villain proximity, and incident danger.
         </p>
         <div style={{ display: 'grid', gap: 10 }}>
           <label htmlFor="director-progress">

@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: THE-HAR-MEN
+- Recruitment: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: Players receive synchronized SMS photos of the same ritual mask in three different houses.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every ritual violence marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: Players receive synchronized SMS photos of the same ritual mask in three different houses.
+  - The case opens with impossible evidence and uncertain allies.
+  - Blood-soil composition panel
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Scientific analysis vs witness protection opening
+  - Festival lantern route map
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Break rite now vs infiltrate final rite
+  - Human conspiracy preserving power
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Ancestral entity fed through staged rituals
+  - A freight invoice ties the valley rite to coastal distributors.
+
 ## Beat-by-Beat Runtime Package
 ### Dusk Selection (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Ritual order randomizes by date and latency.
 - Community puzzle can unlock nonviolent break path.
 - Villain style shifts by choices.
+
+## Community Puzzle Hooks
+- Lantern Route Triangulation: Merge three lantern route fragments to locate the hidden threshing pit.
+  - Reward clue: the-harvest-men-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

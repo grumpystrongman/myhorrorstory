@@ -1,0 +1,28 @@
+{
+  "id": "crown-of-salt-dockside-cctv-still-evidence-document",
+  "title": "Crown of Salt - Evidence Document - Dockside CCTV still",
+  "modality": "artifact",
+  "category": "evidence_document",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/crown-of-salt/artifact/evidence_document/crown-of-salt-dockside-cctv-still-evidence-document-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Produce in-world evidence artifact for \"Dockside CCTV still\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:48.735Z"
+}

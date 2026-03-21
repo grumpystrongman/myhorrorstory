@@ -21,3 +21,17 @@ Updated: 2026-03-09
 - `assets/prompts/commercial-site-pack.json` defines generation prompts for website and campaign surfaces.
 - `assets/manifests/commercial-creative-plan.json` expands to a full production asset plan across website and stories.
 - `scripts/linear-bots/control.mjs` turns this into Linear-managed issue assignments for AI bot execution.
+
+## Horror Reference Crawl (2026-03-20)
+
+Primary inspiration crawl used for the refreshed play-session UX and visual tone:
+
+- Resident Evil Requiem official site (image-first, minimal-copy cinematic presentation): https://www.residentevil.com/requiem/en-us/
+- Alan Wake 2 official site (trailers + lore-forward framing + dual-character narrative context): https://www.alanwake.com/
+- The Last of Us Part II Remastered product page (commercial clarity with story stakes and platform-specific value framing): https://www.playstation.com/en-us/games/the-last-of-us-part-ii-remastered/
+
+Applied translation decisions:
+
+- Front-load player context with a mission brief before interactive branching begins.
+- Keep a single-thread messenger runtime as the primary interaction model to mirror phone-channel play.
+- Increase atmosphere through device framing, channel-themed palettes, and story-first copy in the first viewport.

@@ -1,0 +1,1155 @@
+{
+  "generatedAt": "2026-03-20T17:54:54.892Z",
+  "packageId": "agent-army-2026-03-20",
+  "packageTitle": "Commercial Agent Army - Full Multimodal Asset Production",
+  "jobs": [
+    {
+      "id": "openclaw-agent-army-job-1",
+      "taskTitle": "Agent Army Command - Global Creative Orchestration",
+      "botId": "AI-Executive-Orchestrator",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      },
+      "estimatedCount": 792,
+      "prompt": "You are AI-Executive-Orchestrator operating in MyHorrorStory production mode.\nMission: Agent Army Command - Global Creative Orchestration.\nWork queue selector: scope=all modality=all.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- Master execution board for all modalities and stories\n- Daily burn-down snapshot with blocker tracking\n- Final signoff memo for commercial readiness\n\nSignoff criteria:\n- Every modality lane has explicit ownership and acceptance target\n- No unresolved blocker remains in launch-critical paths\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-2",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Black Chapel Ledger - Artifact Production.\nWork queue selector: scope=story storyId=black-chapel-ledger modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-3",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Black Chapel Ledger - Audio Production.\nWork queue selector: scope=story storyId=black-chapel-ledger modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-4",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Black Chapel Ledger - Image Production.\nWork queue selector: scope=story storyId=black-chapel-ledger modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-5",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Black Chapel Ledger - Video Production.\nWork queue selector: scope=story storyId=black-chapel-ledger modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-6",
+      "taskTitle": "Agent Army - Black Chapel Ledger - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "black-chapel-ledger",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Black Chapel Ledger - Web Production.\nWork queue selector: scope=story storyId=black-chapel-ledger modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-7",
+      "taskTitle": "Agent Army - Crown of Salt - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Crown of Salt - Artifact Production.\nWork queue selector: scope=story storyId=crown-of-salt modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-8",
+      "taskTitle": "Agent Army - Crown of Salt - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Crown of Salt - Audio Production.\nWork queue selector: scope=story storyId=crown-of-salt modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-9",
+      "taskTitle": "Agent Army - Crown of Salt - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Crown of Salt - Image Production.\nWork queue selector: scope=story storyId=crown-of-salt modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-10",
+      "taskTitle": "Agent Army - Crown of Salt - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Crown of Salt - Video Production.\nWork queue selector: scope=story storyId=crown-of-salt modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-11",
+      "taskTitle": "Agent Army - Crown of Salt - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "crown-of-salt",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Crown of Salt - Web Production.\nWork queue selector: scope=story storyId=crown-of-salt modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-12",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Dead Channel Protocol - Artifact Production.\nWork queue selector: scope=story storyId=dead-channel-protocol modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-13",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Dead Channel Protocol - Audio Production.\nWork queue selector: scope=story storyId=dead-channel-protocol modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-14",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Dead Channel Protocol - Image Production.\nWork queue selector: scope=story storyId=dead-channel-protocol modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-15",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Dead Channel Protocol - Video Production.\nWork queue selector: scope=story storyId=dead-channel-protocol modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-16",
+      "taskTitle": "Agent Army - Dead Channel Protocol - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "dead-channel-protocol",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Dead Channel Protocol - Web Production.\nWork queue selector: scope=story storyId=dead-channel-protocol modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-17",
+      "taskTitle": "Agent Army - Midnight Lockbox - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "artifact",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Midnight Lockbox - Artifact Production.\nWork queue selector: scope=story storyId=midnight-lockbox modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-18",
+      "taskTitle": "Agent Army - Midnight Lockbox - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Midnight Lockbox - Audio Production.\nWork queue selector: scope=story storyId=midnight-lockbox modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-19",
+      "taskTitle": "Agent Army - Midnight Lockbox - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "image",
+        "estimatedCount": 29
+      },
+      "estimatedCount": 29,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Midnight Lockbox - Image Production.\nWork queue selector: scope=story storyId=midnight-lockbox modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 29 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-20",
+      "taskTitle": "Agent Army - Midnight Lockbox - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Midnight Lockbox - Video Production.\nWork queue selector: scope=story storyId=midnight-lockbox modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-21",
+      "taskTitle": "Agent Army - Midnight Lockbox - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "midnight-lockbox",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Midnight Lockbox - Web Production.\nWork queue selector: scope=story storyId=midnight-lockbox modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-22",
+      "taskTitle": "Agent Army - Red Creek Winter - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Red Creek Winter - Artifact Production.\nWork queue selector: scope=story storyId=red-creek-winter modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-23",
+      "taskTitle": "Agent Army - Red Creek Winter - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Red Creek Winter - Audio Production.\nWork queue selector: scope=story storyId=red-creek-winter modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-24",
+      "taskTitle": "Agent Army - Red Creek Winter - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Red Creek Winter - Image Production.\nWork queue selector: scope=story storyId=red-creek-winter modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-25",
+      "taskTitle": "Agent Army - Red Creek Winter - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Red Creek Winter - Video Production.\nWork queue selector: scope=story storyId=red-creek-winter modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-26",
+      "taskTitle": "Agent Army - Red Creek Winter - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "red-creek-winter",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Red Creek Winter - Web Production.\nWork queue selector: scope=story storyId=red-creek-winter modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-27",
+      "taskTitle": "Agent Army - Signal From Kharon-9 - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Signal From Kharon-9 - Artifact Production.\nWork queue selector: scope=story storyId=signal-from-kharon-9 modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-28",
+      "taskTitle": "Agent Army - Signal From Kharon-9 - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Signal From Kharon-9 - Audio Production.\nWork queue selector: scope=story storyId=signal-from-kharon-9 modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-29",
+      "taskTitle": "Agent Army - Signal From Kharon-9 - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Signal From Kharon-9 - Image Production.\nWork queue selector: scope=story storyId=signal-from-kharon-9 modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-30",
+      "taskTitle": "Agent Army - Signal From Kharon-9 - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Signal From Kharon-9 - Video Production.\nWork queue selector: scope=story storyId=signal-from-kharon-9 modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-31",
+      "taskTitle": "Agent Army - Signal From Kharon-9 - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "signal-from-kharon-9",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Signal From Kharon-9 - Web Production.\nWork queue selector: scope=story storyId=signal-from-kharon-9 modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-32",
+      "taskTitle": "Agent Army - Static Between Stations - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Static Between Stations - Artifact Production.\nWork queue selector: scope=story storyId=static-between-stations modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-33",
+      "taskTitle": "Agent Army - Static Between Stations - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Static Between Stations - Audio Production.\nWork queue selector: scope=story storyId=static-between-stations modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-34",
+      "taskTitle": "Agent Army - Static Between Stations - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Static Between Stations - Image Production.\nWork queue selector: scope=story storyId=static-between-stations modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-35",
+      "taskTitle": "Agent Army - Static Between Stations - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Static Between Stations - Video Production.\nWork queue selector: scope=story storyId=static-between-stations modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-36",
+      "taskTitle": "Agent Army - Static Between Stations - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "static-between-stations",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Static Between Stations - Web Production.\nWork queue selector: scope=story storyId=static-between-stations modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-37",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Tape 17: Pinewatch - Artifact Production.\nWork queue selector: scope=story storyId=tape-17-pinewatch modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-38",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Tape 17: Pinewatch - Audio Production.\nWork queue selector: scope=story storyId=tape-17-pinewatch modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-39",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Tape 17: Pinewatch - Image Production.\nWork queue selector: scope=story storyId=tape-17-pinewatch modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-40",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Tape 17: Pinewatch - Video Production.\nWork queue selector: scope=story storyId=tape-17-pinewatch modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-41",
+      "taskTitle": "Agent Army - Tape 17: Pinewatch - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "tape-17-pinewatch",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Tape 17: Pinewatch - Web Production.\nWork queue selector: scope=story storyId=tape-17-pinewatch modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-42",
+      "taskTitle": "Agent Army - The Fourth Tenant - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Fourth Tenant - Artifact Production.\nWork queue selector: scope=story storyId=the-fourth-tenant modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-43",
+      "taskTitle": "Agent Army - The Fourth Tenant - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Fourth Tenant - Audio Production.\nWork queue selector: scope=story storyId=the-fourth-tenant modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-44",
+      "taskTitle": "Agent Army - The Fourth Tenant - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Fourth Tenant - Image Production.\nWork queue selector: scope=story storyId=the-fourth-tenant modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-45",
+      "taskTitle": "Agent Army - The Fourth Tenant - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Fourth Tenant - Video Production.\nWork queue selector: scope=story storyId=the-fourth-tenant modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-46",
+      "taskTitle": "Agent Army - The Fourth Tenant - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-fourth-tenant",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Fourth Tenant - Web Production.\nWork queue selector: scope=story storyId=the-fourth-tenant modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-47",
+      "taskTitle": "Agent Army - The Harvest Men - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Harvest Men - Artifact Production.\nWork queue selector: scope=story storyId=the-harvest-men modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-48",
+      "taskTitle": "Agent Army - The Harvest Men - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Harvest Men - Audio Production.\nWork queue selector: scope=story storyId=the-harvest-men modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-49",
+      "taskTitle": "Agent Army - The Harvest Men - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Harvest Men - Image Production.\nWork queue selector: scope=story storyId=the-harvest-men modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-50",
+      "taskTitle": "Agent Army - The Harvest Men - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Harvest Men - Video Production.\nWork queue selector: scope=story storyId=the-harvest-men modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-51",
+      "taskTitle": "Agent Army - The Harvest Men - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "the-harvest-men",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - The Harvest Men - Web Production.\nWork queue selector: scope=story storyId=the-harvest-men modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-52",
+      "taskTitle": "Agent Army - Ward 1908 - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "artifact",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Ward 1908 - Artifact Production.\nWork queue selector: scope=story storyId=ward-1908 modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: npc_dossier, villain_dossier, evidence_document, puzzle_worksheet, branch_decision_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-53",
+      "taskTitle": "Agent Army - Ward 1908 - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "audio",
+        "estimatedCount": 12
+      },
+      "estimatedCount": 12,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Ward 1908 - Audio Production.\nWork queue selector: scope=story storyId=ward-1908 modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 12 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_ambience, npc_voice_profile, villain_voice_profile, ending_score, story_theme_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-54",
+      "taskTitle": "Agent Army - Ward 1908 - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "image",
+        "estimatedCount": 28
+      },
+      "estimatedCount": 28,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Ward 1908 - Image Production.\nWork queue selector: scope=story storyId=ward-1908 modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 28 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: story_key_art, arc_key_art, beat_scene_art, character_portrait, villain_portrait, evidence_still, puzzle_board, puzzle_shard_card\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-55",
+      "taskTitle": "Agent Army - Ward 1908 - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "video",
+        "estimatedCount": 13
+      },
+      "estimatedCount": 13,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Ward 1908 - Video Production.\nWork queue selector: scope=story storyId=ward-1908 modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 13 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: arc_teaser_video, beat_transition_video, ending_recap_video, story_trailer\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-56",
+      "taskTitle": "Agent Army - Ward 1908 - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "story",
+        "storyId": "ward-1908",
+        "modality": "web",
+        "estimatedCount": 3
+      },
+      "estimatedCount": 3,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Ward 1908 - Web Production.\nWork queue selector: scope=story storyId=ward-1908 modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 3 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: branch_decision_ui, story_overview_page\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-57",
+      "taskTitle": "Agent Army - Website - Artifact Production",
+      "botId": "AI-Story-Engine-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "artifact",
+        "estimatedCount": 7
+      },
+      "estimatedCount": 7,
+      "prompt": "You are AI-Story-Engine-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Website - Artifact Production.\nWork queue selector: scope=website modality=artifact.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 7 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: button_system_artifact\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-58",
+      "taskTitle": "Agent Army - Website - Audio Production",
+      "botId": "AI-Voice-Audio-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "audio",
+        "estimatedCount": 7
+      },
+      "estimatedCount": 7,
+      "prompt": "You are AI-Voice-Audio-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Website - Audio Production.\nWork queue selector: scope=website modality=audio.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 7 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: surface_ambient_loop\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-59",
+      "taskTitle": "Agent Army - Website - Image Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "image",
+        "estimatedCount": 14
+      },
+      "estimatedCount": 14,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Website - Image Production.\nWork queue selector: scope=website modality=image.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 14 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: page_banner, background_texture\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-60",
+      "taskTitle": "Agent Army - Website - Video Production",
+      "botId": "AI-Media-Pipeline-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "video",
+        "estimatedCount": 7
+      },
+      "estimatedCount": 7,
+      "prompt": "You are AI-Media-Pipeline-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Website - Video Production.\nWork queue selector: scope=website modality=video.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 7 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: surface_motion_teaser\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-61",
+      "taskTitle": "Agent Army - Website - Web Production",
+      "botId": "AI-Web-App-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "website",
+        "storyId": null,
+        "modality": "web",
+        "estimatedCount": 7
+      },
+      "estimatedCount": 7,
+      "prompt": "You are AI-Web-App-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Website - Web Production.\nWork queue selector: scope=website modality=web.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- 7 generated outputs mapped to manifest outputKey targets\n- Prompt execution metadata for each generated asset\n- Creative QA notes for categories: surface_layout_blueprint\n\nSignoff criteria:\n- All outputs pass declared quality gates and are referenced in metadata\n- No missing asset in the filtered modality queue\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-62",
+      "taskTitle": "Agent Army - Cross-Modal QA Certification",
+      "botId": "AI-QA-Test-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      },
+      "estimatedCount": 792,
+      "prompt": "You are AI-QA-Test-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Cross-Modal QA Certification.\nWork queue selector: scope=all modality=all.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- Certification report by modality and story\n- Blocking defect list with repro notes\n- Final pass/fail matrix for launch gate\n\nSignoff criteria:\n- Critical defects resolved or waived by policy owner\n- Certification report attached to release gate\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-63",
+      "taskTitle": "Agent Army - Rights, Safety, and Provenance Audit",
+      "botId": "AI-Security-Compliance-Agent",
+      "priority": 1,
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      },
+      "estimatedCount": 792,
+      "prompt": "You are AI-Security-Compliance-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Rights, Safety, and Provenance Audit.\nWork queue selector: scope=all modality=all.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- Rights/provenance manifest review\n- Safety and policy checklist\n- Risk exception log\n\nSignoff criteria:\n- No unresolved rights conflict\n- Safety controls validated for all release surfaces\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    },
+    {
+      "id": "openclaw-agent-army-job-64",
+      "taskTitle": "Agent Army - Release Packaging and Deployment Sync",
+      "botId": "AI-DevOps-Release-Agent",
+      "priority": 2,
+      "assetSelection": {
+        "scope": "all",
+        "modality": "all",
+        "estimatedCount": 792
+      },
+      "estimatedCount": 792,
+      "prompt": "You are AI-DevOps-Release-Agent operating in MyHorrorStory production mode.\nMission: Agent Army - Release Packaging and Deployment Sync.\nWork queue selector: scope=all modality=all.\nSource manifest: assets/manifests/commercial-agent-army-plan.json\nPrompt index: assets/prompts/commercial-agent-army-prompts.json\n\nExecution requirements:\n- Produce all outputs for the selected queue and write to each asset outputKey path.\n- Record prompt/provider metadata adjacent to each output.\n- Respect quality gates and negative prompt constraints for each modality.\n- Keep narrative continuity anchored to story hook, arc summaries, and villain motifs.\n\nDeliverables for this mission:\n- Updated packaging checklist for generated assets\n- Cache invalidation plan for revised media\n- Rollback-safe deployment notes\n\nSignoff criteria:\n- Release pipeline handles new assets deterministically\n- Rollback path proven in staging\n\nReturn ONLY a valid JSON object (no markdown, no prose) with keys:\n{\"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[]}.",
+      "references": {
+        "manifestVersion": "v1",
+        "manifestGeneratedAt": "2026-03-20T17:54:54.889Z"
+      }
+    }
+  ]
+}

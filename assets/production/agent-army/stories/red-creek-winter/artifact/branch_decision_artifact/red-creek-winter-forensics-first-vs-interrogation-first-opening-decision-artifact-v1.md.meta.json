@@ -1,0 +1,28 @@
+{
+  "id": "red-creek-winter-forensics-first-vs-interrogation-first-opening-decision-artifact",
+  "title": "Red Creek Winter - Branch Artifact - Forensics-first vs interrogation-first opening",
+  "modality": "artifact",
+  "category": "branch_decision_artifact",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/red-creek-winter/artifact/branch_decision_artifact/red-creek-winter-forensics-first-vs-interrogation-first-opening-decision-artifact-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Create in-world branching evidence note for \"Forensics-first vs interrogation-first opening\" showing consequences of each path without explicit spoilers.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:04.523Z"
+}

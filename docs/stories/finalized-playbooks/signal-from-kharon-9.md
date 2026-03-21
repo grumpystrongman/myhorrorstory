@@ -13,6 +13,27 @@
 - Interference and Doubt (MIDDLE): Villain contact escalates while ally trust becomes volatile.
 - Confrontation and Reckoning (ENDGAME): The final branch depends on ethics, timing, and trust.
 
+## Player Briefing
+- Role: Contract Signal Investigator
+- Call Sign: SIG-FRO-KHA-9
+- Recruitment: Telemetry returns from a decommissioned orbital array and predicts player replies. Your pattern-recognition profile flagged a match with prior unresolved incidents.
+- Opening Incident: A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message.
+- First Directive: Contact and Contradiction: The case opens with impossible evidence and uncertain allies. Maintain evidence discipline and document every existential dread marker.
+
+## 28-Day Campaign Plan
+- Week 1 - Recruitment And Baseline: A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message.
+  - The case opens with impossible evidence and uncertain allies.
+  - Telemetry checksum drift
+- Week 2 - Contradiction Mapping: Villain contact escalates while ally trust becomes volatile.
+  - Sandbox isolate vs immediate decode
+  - Starfield deviation map
+- Week 3 - Escalation Window: Run live interventions while antagonist pressure rises and trust fractures.
+  - Seal transmission vs weaponize prediction
+  - Fabricated anomaly by profiteers
+- Week 4 - Endgame And Debrief: The final branch depends on ethics, timing, and trust.
+  - Authentic hostile contact exploiting human channels
+  - A second array station replies from beneath ocean coordinates.
+
 ## Beat-by-Beat Runtime Package
 ### Dormant Array Wake (`beat-1`)
 - Act: Contact
@@ -109,4 +130,9 @@
 - Signal packet ordering mutates by prior endings.
 - Curiosity alters villain pacing.
 - Secret ending for perfect countdown run.
+
+## Community Puzzle Hooks
+- Tri-band Drift Lock: Align three phase drifts shared across players to stabilize decryption.
+  - Reward clue: signal-from-kharon-9-clue-origin
+  - Failure: The villain captures your partial decode and reroutes the final branch.
 

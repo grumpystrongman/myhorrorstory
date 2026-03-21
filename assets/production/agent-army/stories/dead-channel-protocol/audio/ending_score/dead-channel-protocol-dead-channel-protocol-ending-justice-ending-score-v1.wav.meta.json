@@ -1,0 +1,40 @@
+{
+  "id": "dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score",
+  "title": "Dead Channel Protocol - Clean Resolution Ending Score",
+  "modality": "audio",
+  "category": "ending_score",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/audio/ending_score/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
+  "specs": {
+    "durationSeconds": 75,
+    "format": "wav",
+    "sampleRateHz": 48000,
+    "channels": 2
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-sine-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "frequencyHz": 228,
+    "durationSeconds": 8,
+    "sampleRateHz": 48000
+  },
+  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Compose ending score cue for \"Clean Resolution\" that supports summary \"You isolate protocol command and preserve chain-of-custody for prosecution.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
+  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
+  "providerChain": [
+    "piper",
+    "elevenlabs",
+    "openai-tts",
+    "polly",
+    "manual-audio-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:30:11.385Z"
+}

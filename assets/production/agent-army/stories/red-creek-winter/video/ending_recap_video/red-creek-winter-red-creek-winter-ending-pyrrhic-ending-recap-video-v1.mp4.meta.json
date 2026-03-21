@@ -1,0 +1,44 @@
+{
+  "id": "red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video",
+  "title": "Red Creek Winter - Compromised Truth Ending Recap Video",
+  "modality": "video",
+  "category": "ending_recap_video",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.mp4",
+  "specs": {
+    "durationSeconds": 18,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise-video",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 640,
+    "height": 360,
+    "durationSeconds": 4,
+    "fps": 24,
+    "baseColor": "#6d948b",
+    "accentColor": "#566961"
+  },
+  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
+  "providerChain": [
+    "runway",
+    "pika",
+    "luma",
+    "stable-video",
+    "manual-video-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:03.214Z"
+}

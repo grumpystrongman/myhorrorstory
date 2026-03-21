@@ -1,0 +1,39 @@
+{
+  "id": "web-mobile-home-background-texture",
+  "title": "Mobile Home Background Texture",
+  "modality": "image",
+  "category": "background_texture",
+  "scope": "website",
+  "outputKey": "assets/production/agent-army/website/image/web-mobile-home-background-texture-v1.png",
+  "specs": {
+    "width": 1600,
+    "height": 900,
+    "format": "png"
+  },
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "ffmpeg-color-noise",
+    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
+    "width": 1280,
+    "height": 720,
+    "baseColor": "#8a6834",
+    "accentColor": "#943852"
+  },
+  "prompt": "Surface Mobile Home (mobile://home) objective: Mobile-first discovery and campaign continuity.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
+  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
+  "providerChain": [
+    "openai-images",
+    "stability",
+    "ideogram",
+    "manual-art-upload"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:09.503Z"
+}

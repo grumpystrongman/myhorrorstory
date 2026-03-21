@@ -1,0 +1,28 @@
+{
+  "id": "static-between-stations-maintenance-ledger-anomaly-evidence-document",
+  "title": "Static Between Stations - Evidence Document - Maintenance ledger anomaly",
+  "modality": "artifact",
+  "category": "evidence_document",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/static-between-stations/artifact/evidence_document/static-between-stations-maintenance-ledger-anomaly-evidence-document-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Produce in-world evidence artifact for \"Maintenance ledger anomaly\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:42.857Z"
+}

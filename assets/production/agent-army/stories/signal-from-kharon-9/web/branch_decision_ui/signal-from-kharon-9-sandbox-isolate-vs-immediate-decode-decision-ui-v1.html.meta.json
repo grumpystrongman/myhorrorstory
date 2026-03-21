@@ -1,0 +1,27 @@
+{
+  "id": "signal-from-kharon-9-sandbox-isolate-vs-immediate-decode-decision-ui",
+  "title": "Signal From Kharon-9 - Branch UI - Sandbox isolate vs immediate decode",
+  "modality": "web",
+  "category": "branch_decision_ui",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/web/branch_decision_ui/signal-from-kharon-9-sandbox-isolate-vs-immediate-decode-decision-ui-v1.html",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "html-template"
+  },
+  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build interactive branch decision page for \"Sandbox isolate vs immediate decode\" with tension-forward copy, clear options, and high-readability input controls.",
+  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
+  "providerChain": [
+    "gpt-4.1",
+    "manual-design-review"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:31:26.988Z"
+}

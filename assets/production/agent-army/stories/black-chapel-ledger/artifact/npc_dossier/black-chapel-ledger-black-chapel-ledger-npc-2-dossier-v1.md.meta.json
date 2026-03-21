@@ -1,0 +1,28 @@
+{
+  "id": "black-chapel-ledger-black-chapel-ledger-npc-2-dossier",
+  "title": "Black Chapel Ledger - Bell Keeper Tomas Grell Dossier",
+  "modality": "artifact",
+  "category": "npc_dossier",
+  "scope": "story",
+  "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/artifact/npc_dossier/black-chapel-ledger-black-chapel-ledger-npc-2-dossier-v1.md",
+  "generatedProxy": true,
+  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
+  "renderer": {
+    "type": "markdown-template"
+  },
+  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Write in-world dossier for Bell Keeper Tomas Grell including known history, hidden motives, trust thresholds, and clue-link references for interactive evidence board.",
+  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
+  "providerChain": [
+    "gpt-4.1",
+    "claude",
+    "manual-editorial"
+  ],
+  "qualityGates": [
+    "brand_compliance_passed",
+    "accessibility_contrast_passed",
+    "narrative_coherence_passed",
+    "rights_and_provenance_verified",
+    "commercial_readiness_reviewed"
+  ],
+  "generatedAt": "2026-03-20T19:29:25.820Z"
+}
