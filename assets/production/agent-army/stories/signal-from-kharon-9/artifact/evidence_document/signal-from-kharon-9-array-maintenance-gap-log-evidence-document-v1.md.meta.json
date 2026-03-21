@@ -1,28 +1,19 @@
 {
-  "id": "signal-from-kharon-9-array-maintenance-gap-log-evidence-document",
-  "title": "Signal From Kharon-9 - Evidence Document - Array maintenance gap log",
+  "story_id": "signal-from-kharon-9",
+  "asset_id": "signal-from-kharon-9-array-maintenance-gap-log-evidence-document",
+  "asset_type": "evidence_document",
   "modality": "artifact",
-  "category": "evidence_document",
-  "scope": "story",
+  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce in-world evidence artifact for \"Array maintenance gap log\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\artifact\\evidence_document\\signal-from-kharon-9-array-maintenance-gap-log-evidence-document-v1.md",
+  "public_path": "/agent-army/stories/signal-from-kharon-9/artifact/evidence_document/signal-from-kharon-9-array-maintenance-gap-log-evidence-document-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.576Z",
+  "checksum": "6149ccd5452f50946553a79e10738ad6d61ac303",
+  "file_size": 1239,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/artifact/evidence_document/signal-from-kharon-9-array-maintenance-gap-log-evidence-document-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce in-world evidence artifact for \"Array maintenance gap log\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:21.654Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

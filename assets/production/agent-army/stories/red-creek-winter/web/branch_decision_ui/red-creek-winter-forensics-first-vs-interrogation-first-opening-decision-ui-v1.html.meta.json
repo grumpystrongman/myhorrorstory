@@ -1,27 +1,19 @@
 {
-  "id": "red-creek-winter-forensics-first-vs-interrogation-first-opening-decision-ui",
-  "title": "Red Creek Winter - Branch UI - Forensics-first vs interrogation-first opening",
+  "story_id": "red-creek-winter",
+  "asset_id": "red-creek-winter-forensics-first-vs-interrogation-first-opening-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build interactive branch decision page for \"Forensics-first vs interrogation-first opening\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\web\\branch_decision_ui\\red-creek-winter-forensics-first-vs-interrogation-first-opening-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/red-creek-winter/web/branch_decision_ui/red-creek-winter-forensics-first-vs-interrogation-first-opening-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.534Z",
+  "checksum": "b9373401556bc9699ad13118f949040ab9a025ce",
+  "file_size": 1418,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/web/branch_decision_ui/red-creek-winter-forensics-first-vs-interrogation-first-opening-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build interactive branch decision page for \"Forensics-first vs interrogation-first opening\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:04.516Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

@@ -1,27 +1,19 @@
 {
-  "id": "the-fourth-tenant-expose-fraud-publicly-vs-close-case-quietly-decision-ui",
-  "title": "The Fourth Tenant - Branch UI - Expose fraud publicly vs close case quietly",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-expose-fraud-publicly-vs-close-case-quietly-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build interactive branch decision page for \"Expose fraud publicly vs close case quietly\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\web\\branch_decision_ui\\the-fourth-tenant-expose-fraud-publicly-vs-close-case-quietly-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/the-fourth-tenant/web/branch_decision_ui/the-fourth-tenant-expose-fraud-publicly-vs-close-case-quietly-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.605Z",
+  "checksum": "56efd5f1c8f2c01f054be81642662b4642b7f800",
+  "file_size": 1418,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/web/branch_decision_ui/the-fourth-tenant-expose-fraud-publicly-vs-close-case-quietly-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build interactive branch decision page for \"Expose fraud publicly vs close case quietly\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:31.351Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

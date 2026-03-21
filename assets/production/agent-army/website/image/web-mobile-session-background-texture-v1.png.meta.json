@@ -1,39 +1,26 @@
 {
-  "id": "web-mobile-session-background-texture",
-  "title": "Mobile Session Background Texture",
+  "story_id": "website",
+  "asset_id": "web-mobile-session-background-texture",
+  "asset_type": "background_texture",
   "modality": "image",
-  "category": "background_texture",
-  "scope": "website",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Mobile Session Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "source_prompt": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-session-background-texture-v1.png",
+  "public_path": "/agent-army/website/image/web-mobile-session-background-texture-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-session-background-texture-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/website/image/web-mobile-session-background-texture-v1.thumb.jpg",
+  "created_at": "2026-03-21T16:50:53.397Z",
+  "checksum": "9a1c7626fc63b2a22c9ae9b9316a807f0a71decb",
+  "file_size": 2494681,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-mobile-session-background-texture-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#368f8c",
-    "accentColor": "#37385a"
-  },
-  "prompt": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:10.821Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

@@ -1,39 +1,26 @@
 {
-  "id": "midnight-lockbox-midnight-lockbox-npc-2-portrait",
-  "title": "Midnight Lockbox - Night Manager Eli Mercer Portrait",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-midnight-lockbox-npc-2-portrait",
+  "asset_type": "character_portrait",
   "modality": "image",
-  "category": "character_portrait",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Midnight Lockbox. Premise: A self-storage unit with no renter sends voice memos predicting what your team will do next.. Setting: Gallowglass 24-hour storage facility and storm-drain service tunnels. Threat presence: The Quartermaster. Recurring motifs: unit tags, bolt cutters, time-lock stickers. Character portrait for Night Manager Eli Mercer, role WITNESS. Traits: nervous, detail-oriented. Response style: accusation=Stammers and omits timeline details.; threat=Goes silent and leaves shift.; questioning=Answers in fragments with timestamps... Subgenre: supernatural mystery. Tone: GROUNDED. Immediate scene brief: Midnight Lockbox - Night Manager Eli Mercer Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Character portrait for Night Manager Eli Mercer, role WITNESS. Traits: nervous, detail-oriented. Response style: accusation=Stammers and omits timeline details.; threat=Goes silent and leaves shift.; questioning=Answers in fragments with timestamps..",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\character_portrait\\midnight-lockbox-midnight-lockbox-npc-2-portrait-v1.png",
+  "public_path": "/agent-army/stories/midnight-lockbox/image/character_portrait/midnight-lockbox-midnight-lockbox-npc-2-portrait-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\character_portrait\\midnight-lockbox-midnight-lockbox-npc-2-portrait-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/image/character_portrait/midnight-lockbox-midnight-lockbox-npc-2-portrait-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:11:40.448Z",
+  "checksum": "085aa15059e9cd561d64ec12ece165d7f1677e8e",
+  "file_size": 3343100,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/image/character_portrait/midnight-lockbox-midnight-lockbox-npc-2-portrait-v1.png",
-  "specs": {
-    "width": 1024,
-    "height": 1365,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 960,
-    "height": 1280,
-    "baseColor": "#2a8f83",
-    "accentColor": "#2c2b2c"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Character portrait for Night Manager Eli Mercer, role WITNESS. Traits: nervous, detail-oriented. Response style: accusation=Stammers and omits timeline details.; threat=Goes silent and leaves shift.; questioning=Answers in fragments with timestamps..",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:30.185Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

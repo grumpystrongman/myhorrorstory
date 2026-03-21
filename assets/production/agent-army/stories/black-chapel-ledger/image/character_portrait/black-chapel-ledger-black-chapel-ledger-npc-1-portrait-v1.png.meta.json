@@ -1,39 +1,26 @@
 {
-  "id": "black-chapel-ledger-black-chapel-ledger-npc-1-portrait",
-  "title": "Black Chapel Ledger - Canon Archivist Elara Voss Portrait",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-black-chapel-ledger-npc-1-portrait",
+  "asset_type": "character_portrait",
   "modality": "image",
-  "category": "character_portrait",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Black Chapel Ledger. Premise: A cathedral ledger records debts paid in memory instead of money.. Setting: Cliffside cathedral archive district. Threat presence: The Creditor. Recurring motifs: ink-stained fingers, funeral bells, salt wax. Character portrait for Canon Archivist Elara Voss, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: gothic horror. Tone: EERIE. Immediate scene brief: Black Chapel Ledger - Canon Archivist Elara Voss Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+  "source_prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Character portrait for Canon Archivist Elara Voss, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\character_portrait\\black-chapel-ledger-black-chapel-ledger-npc-1-portrait-v1.png",
+  "public_path": "/agent-army/stories/black-chapel-ledger/image/character_portrait/black-chapel-ledger-black-chapel-ledger-npc-1-portrait-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\character_portrait\\black-chapel-ledger-black-chapel-ledger-npc-1-portrait-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/black-chapel-ledger/image/character_portrait/black-chapel-ledger-black-chapel-ledger-npc-1-portrait-v1.thumb.jpg",
+  "created_at": "2026-03-21T16:53:50.664Z",
+  "checksum": "431595bbb78031f0f2859d5453c607f45cd0a39d",
+  "file_size": 3213521,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/image/character_portrait/black-chapel-ledger-black-chapel-ledger-npc-1-portrait-v1.png",
-  "specs": {
-    "width": 1024,
-    "height": 1365,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 960,
-    "height": 1280,
-    "baseColor": "#3e506a",
-    "accentColor": "#424571"
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Character portrait for Canon Archivist Elara Voss, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:25.356Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

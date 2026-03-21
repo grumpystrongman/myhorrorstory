@@ -1,39 +1,23 @@
 {
-  "id": "the-fourth-tenant-social-launch-vertical",
-  "title": "The Fourth Tenant Social Launch Vertical",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-social-launch-vertical",
+  "asset_type": "social_vertical",
   "modality": "image",
-  "category": "social_vertical",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\social_vertical\\the-fourth-tenant-social-launch-vertical-v1.png",
+  "public_path": "/agent-army/stories/the-fourth-tenant/image/social_vertical/the-fourth-tenant-social-launch-vertical-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\social_vertical\\the-fourth-tenant-social-launch-vertical-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/social_vertical/the-fourth-tenant-social-launch-vertical-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:38:58.787Z",
+  "checksum": "acb2426dcffe3a5fe66bdaedd7d1d91fbf68f2f2",
+  "file_size": 768533,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/image/social_vertical/the-fourth-tenant-social-launch-vertical-v1.png",
-  "specs": {
-    "width": 1080,
-    "height": 1080,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1080,
-    "height": 1080,
-    "baseColor": "#2f5b84",
-    "accentColor": "#75656a"
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:31.609Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

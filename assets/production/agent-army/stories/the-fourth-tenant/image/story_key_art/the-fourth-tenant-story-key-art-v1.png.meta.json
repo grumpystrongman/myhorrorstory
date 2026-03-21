@@ -1,39 +1,23 @@
 {
-  "id": "the-fourth-tenant-story-key-art",
-  "title": "The Fourth Tenant Story Key Art",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-story-key-art",
+  "asset_type": "story_key_art",
   "modality": "image",
-  "category": "story_key_art",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png",
+  "public_path": "/agent-army/stories/the-fourth-tenant/image/story_key_art/the-fourth-tenant-story-key-art-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/story_key_art/the-fourth-tenant-story-key-art-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:38:30.766Z",
+  "checksum": "a7ee465b510fd79d231afbbd5b9c14c378ae34a7",
+  "file_size": 878928,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/image/story_key_art/the-fourth-tenant-story-key-art-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#285f6a",
-    "accentColor": "#4a3538"
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:11.588Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

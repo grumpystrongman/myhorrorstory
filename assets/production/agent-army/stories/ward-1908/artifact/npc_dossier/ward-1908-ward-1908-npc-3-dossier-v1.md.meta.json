@@ -1,28 +1,19 @@
 {
-  "id": "ward-1908-ward-1908-npc-3-dossier",
-  "title": "Ward 1908 - Renovation Contractor Jo Pike Dossier",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-ward-1908-npc-3-dossier",
+  "asset_type": "npc_dossier",
   "modality": "artifact",
-  "category": "npc_dossier",
-  "scope": "story",
+  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Write in-world dossier for Renovation Contractor Jo Pike including known history, hidden motives, trust thresholds, and clue-link references for interactive evidence board.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\artifact\\npc_dossier\\ward-1908-ward-1908-npc-3-dossier-v1.md",
+  "public_path": "/agent-army/stories/ward-1908/artifact/npc_dossier/ward-1908-ward-1908-npc-3-dossier-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.832Z",
+  "checksum": "49b1b19aba85179a3f02aee37cd5004945ea496f",
+  "file_size": 1185,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/artifact/npc_dossier/ward-1908-ward-1908-npc-3-dossier-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Write in-world dossier for Renovation Contractor Jo Pike including known history, hidden motives, trust thresholds, and clue-link references for interactive evidence board.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:33:04.703Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

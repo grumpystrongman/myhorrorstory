@@ -1,40 +1,20 @@
 {
-  "id": "the-harvest-men-the-harvest-men-arc-endgame-arc-ambience",
-  "title": "The Harvest Men - Confrontation and Reckoning Arc Ambience",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-the-harvest-men-arc-endgame-arc-ambience",
+  "asset_type": "arc_ambience",
   "modality": "audio",
-  "category": "arc_ambience",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-endgame-arc-ambience-v1.wav",
+  "public_path": "/agent-army/stories/the-harvest-men/audio/arc_ambience/the-harvest-men-the-harvest-men-arc-endgame-arc-ambience-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:13:45.067Z",
+  "checksum": "5e81a7dfea89bd7b694b147798152fef686469cc",
+  "file_size": 15699326,
+  "duration_seconds": 81.77,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/audio/arc_ambience/the-harvest-men-the-harvest-men-arc-endgame-arc-ambience-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 294,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:35.849Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

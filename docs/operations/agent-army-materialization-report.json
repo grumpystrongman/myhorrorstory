@@ -1,48 +1,45 @@
 {
-  "generatedAt": "2026-03-20T19:33:11.721Z",
-  "manifestPath": "assets\\manifests\\commercial-agent-army-plan.json",
-  "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-  "start": 0,
-  "limit": null,
-  "modality": null,
-  "regenerate": true,
+  "generatedAt": "2026-03-21T17:44:51.216Z",
+  "planPath": "assets/manifests/commercial-agent-army-plan.json",
+  "statusLedgerPath": "apps/web/public/agent-army/status/generation-status.json",
+  "filters": {
+    "storyId": null,
+    "assetId": "midnight-lockbox-drain-tunnel-pressure-map-evidence-still",
+    "modality": "image",
+    "scope": null,
+    "imageBackend": "local",
+    "regenerate": false,
+    "start": 0,
+    "limit": null,
+    "timeoutMs": 45000,
+    "maxRetries": 1,
+    "concurrency": null
+  },
   "planned": 792,
-  "selected": 792,
-  "generated": 792,
+  "selected": 1,
+  "generated": 1,
   "skippedExisting": 0,
   "failed": 0,
-  "bytesGenerated": 926823004,
+  "unavailable": 0,
   "byModality": {
     "image": {
-      "selected": 323,
-      "generated": 323,
+      "selected": 1,
+      "generated": 1,
       "skipped": 0,
-      "failed": 0
-    },
-    "video": {
-      "selected": 150,
-      "generated": 150,
-      "skipped": 0,
-      "failed": 0
-    },
-    "audio": {
-      "selected": 139,
-      "generated": 139,
-      "skipped": 0,
-      "failed": 0
-    },
-    "artifact": {
-      "selected": 140,
-      "generated": 140,
-      "skipped": 0,
-      "failed": 0
-    },
-    "web": {
-      "selected": 40,
-      "generated": 40,
-      "skipped": 0,
-      "failed": 0
+      "failed": 0,
+      "unavailable": 0
     }
   },
-  "failures": []
+  "issues": [],
+  "catalog": {
+    "generatedAt": "2026-03-21T17:44:51.192Z",
+    "totals": {
+      "stories": 12,
+      "completeAssets": 642,
+      "failedAssets": 0,
+      "unavailableAssets": 150,
+      "invalidAssets": 0,
+      "missingAssets": 0
+    }
+  }
 }

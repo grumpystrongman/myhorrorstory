@@ -1,39 +1,23 @@
 {
-  "id": "the-fourth-tenant-water-damage-restoration-invoice-evidence-still",
-  "title": "The Fourth Tenant - Evidence Still - Water-damage restoration invoice",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-water-damage-restoration-invoice-evidence-still",
+  "asset_type": "evidence_still",
   "modality": "image",
-  "category": "evidence_still",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Water-damage restoration invoice. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
+  "public_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:38:49.828Z",
+  "checksum": "24e8c1f68727a569be7e9a389b22bc07c8e37faa",
+  "file_size": 967227,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#6f657c",
-    "accentColor": "#334b79"
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:26.799Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

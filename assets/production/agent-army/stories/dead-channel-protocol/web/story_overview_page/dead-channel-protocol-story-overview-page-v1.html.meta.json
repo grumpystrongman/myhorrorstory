@@ -1,27 +1,19 @@
 {
-  "id": "dead-channel-protocol-story-overview-page",
-  "title": "Dead Channel Protocol Story Overview Page",
+  "story_id": "dead-channel-protocol",
+  "asset_id": "dead-channel-protocol-story-overview-page",
+  "asset_type": "story_overview_page",
   "modality": "web",
-  "category": "story_overview_page",
-  "scope": "story",
+  "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\web\\story_overview_page\\dead-channel-protocol-story-overview-page-v1.html",
+  "public_path": "/agent-army/stories/dead-channel-protocol/web/story_overview_page/dead-channel-protocol-story-overview-page-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.511Z",
+  "checksum": "7d731e4756afc8b02fe167c7570dcbd17b2271b8",
+  "file_size": 1321,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/web/story_overview_page/dead-channel-protocol-story-overview-page-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:17.623Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

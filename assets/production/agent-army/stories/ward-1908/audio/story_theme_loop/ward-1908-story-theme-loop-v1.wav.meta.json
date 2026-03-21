@@ -1,40 +1,20 @@
 {
-  "id": "ward-1908-story-theme-loop",
-  "title": "Ward 1908 Story Theme Loop",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-story-theme-loop",
+  "asset_type": "story_theme_loop",
   "modality": "audio",
-  "category": "story_theme_loop",
-  "scope": "story",
+  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+  "public_path": "/agent-army/stories/ward-1908/audio/story_theme_loop/ward-1908-story-theme-loop-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:04.120Z",
+  "checksum": "2aaeaed0d0573fd1b0a46802d1e923bdc22a303b",
+  "file_size": 15698890,
+  "duration_seconds": 81.76,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/audio/story_theme_loop/ward-1908-story-theme-loop-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 165,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:33:11.707Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

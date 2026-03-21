@@ -1,28 +1,19 @@
 {
-  "id": "web-mobile-session-button-kit",
-  "title": "Mobile Session Button Kit",
+  "story_id": "website",
+  "asset_id": "web-mobile-session-button-kit",
+  "asset_type": "button_system_artifact",
   "modality": "artifact",
-  "category": "button_system_artifact",
-  "scope": "website",
+  "prompt_used": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Design button system blueprint for primary, secondary, danger, disabled, hover, focus-visible, and pressed states with brand-coherent wording and accessibility notes.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\artifact\\web-mobile-session-button-kit-v1.md",
+  "public_path": "/agent-army/website/artifact/web-mobile-session-button-kit-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.243Z",
+  "checksum": "15ec7f3e90c0882d6a9fe969fed4a4e132d0a52c",
+  "file_size": 863,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/artifact/web-mobile-session-button-kit-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Design button system blueprint for primary, secondary, danger, disabled, hover, focus-visible, and pressed states with brand-coherent wording and accessibility notes.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:12.199Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

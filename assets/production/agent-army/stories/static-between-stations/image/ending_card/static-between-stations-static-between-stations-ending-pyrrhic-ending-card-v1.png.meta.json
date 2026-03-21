@@ -1,39 +1,23 @@
 {
-  "id": "static-between-stations-static-between-stations-ending-pyrrhic-ending-card",
-  "title": "Static Between Stations - Compromised Truth Ending Card",
+  "story_id": "static-between-stations",
+  "asset_id": "static-between-stations-static-between-stations-ending-pyrrhic-ending-card",
+  "asset_type": "ending_card",
   "modality": "image",
-  "category": "ending_card",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You identify the culprit but lose the witness chain and public confidence.. Deliver emotional closure with sequel-hook tension.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You identify the culprit but lose the witness chain and public confidence.. Deliver emotional closure with sequel-hook tension.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.png",
+  "public_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:37:59.520Z",
+  "checksum": "8a0f894985c8e271303abff0dbe567af59dde9ac",
+  "file_size": 974724,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#74582c",
-    "accentColor": "#573628"
-  },
-  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You identify the culprit but lose the witness chain and public confidence.. Deliver emotional closure with sequel-hook tension.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:45.896Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

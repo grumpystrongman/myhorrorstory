@@ -1,27 +1,19 @@
 {
-  "id": "black-chapel-ledger-story-overview-page",
-  "title": "Black Chapel Ledger Story Overview Page",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-story-overview-page",
+  "asset_type": "story_overview_page",
   "modality": "web",
-  "category": "story_overview_page",
-  "scope": "story",
+  "prompt_used": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\web\\story_overview_page\\black-chapel-ledger-story-overview-page-v1.html",
+  "public_path": "/agent-army/stories/black-chapel-ledger/web/story_overview_page/black-chapel-ledger-story-overview-page-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.481Z",
+  "checksum": "6d178ff434cdb79e6baf08749f40d5c648c5942d",
+  "file_size": 1278,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/web/story_overview_page/black-chapel-ledger-story-overview-page-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:34.347Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

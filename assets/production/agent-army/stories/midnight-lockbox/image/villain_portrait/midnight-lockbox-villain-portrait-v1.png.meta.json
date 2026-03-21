@@ -1,39 +1,26 @@
 {
-  "id": "midnight-lockbox-villain-portrait",
-  "title": "Midnight Lockbox - Villain Portrait",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-villain-portrait",
+  "asset_type": "villain_portrait",
   "modality": "image",
-  "category": "villain_portrait",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Midnight Lockbox. Premise: A self-storage unit with no renter sends voice memos predicting what your team will do next.. Setting: Gallowglass 24-hour storage facility and storm-drain service tunnels. Threat presence: The Quartermaster. Recurring motifs: unit tags, bolt cutters, time-lock stickers. Design portrait of antagonist The Quartermaster with archetype CALM_GENIUS_MANIPULATOR, speech style \"Calm logistics language with personal, invasive detail.\", and motifs unit tags, bolt cutters, time-lock stickers.. Subgenre: supernatural mystery. Tone: GROUNDED. Immediate scene brief: Midnight Lockbox - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Design portrait of antagonist The Quartermaster with archetype CALM_GENIUS_MANIPULATOR, speech style \"Calm logistics language with personal, invasive detail.\", and motifs unit tags, bolt cutters, time-lock stickers.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\villain_portrait\\midnight-lockbox-villain-portrait-v1.png",
+  "public_path": "/agent-army/stories/midnight-lockbox/image/villain_portrait/midnight-lockbox-villain-portrait-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\villain_portrait\\midnight-lockbox-villain-portrait-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/image/villain_portrait/midnight-lockbox-villain-portrait-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:12:33.973Z",
+  "checksum": "4ca0f859759bfcb7a506b4c5e79073ec2f213d3a",
+  "file_size": 3076544,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/image/villain_portrait/midnight-lockbox-villain-portrait-v1.png",
-  "specs": {
-    "width": 1024,
-    "height": 1365,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 960,
-    "height": 1280,
-    "baseColor": "#377b8e",
-    "accentColor": "#727f3d"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Design portrait of antagonist The Quartermaster with archetype CALM_GENIUS_MANIPULATOR, speech style \"Calm logistics language with personal, invasive detail.\", and motifs unit tags, bolt cutters, time-lock stickers.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:31.172Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

@@ -1,39 +1,26 @@
 {
-  "id": "black-chapel-ledger-black-chapel-ledger-puzzle-shards-puzzle-board",
-  "title": "Black Chapel Ledger - Choir Interval Cipher Puzzle Board",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-black-chapel-ledger-puzzle-shards-puzzle-board",
+  "asset_type": "puzzle_board",
   "modality": "image",
-  "category": "puzzle_board",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Black Chapel Ledger. Premise: A cathedral ledger records debts paid in memory instead of money.. Setting: Cliffside cathedral archive district. Threat presence: The Creditor. Recurring motifs: ink-stained fingers, funeral bells, salt wax. Puzzle visual for \"Choir Interval Cipher\". Objective: Reassemble chant intervals across three players to decode debtor index.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: gothic horror. Tone: EERIE. Immediate scene brief: Black Chapel Ledger - Choir Interval Cipher Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "source_prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Puzzle visual for \"Choir Interval Cipher\". Objective: Reassemble chant intervals across three players to decode debtor index.. Build layered clue board where each shard can be solved collaboratively.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\puzzle_board\\black-chapel-ledger-black-chapel-ledger-puzzle-shards-puzzle-board-v1.png",
+  "public_path": "/agent-army/stories/black-chapel-ledger/image/puzzle_board/black-chapel-ledger-black-chapel-ledger-puzzle-shards-puzzle-board-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\puzzle_board\\black-chapel-ledger-black-chapel-ledger-puzzle-shards-puzzle-board-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/black-chapel-ledger/image/puzzle_board/black-chapel-ledger-black-chapel-ledger-puzzle-shards-puzzle-board-v1.thumb.jpg",
+  "created_at": "2026-03-21T16:55:22.441Z",
+  "checksum": "2c35cd9110e0b326a7cee38c605ef7426221ec57",
+  "file_size": 3558595,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/image/puzzle_board/black-chapel-ledger-black-chapel-ledger-puzzle-shards-puzzle-board-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#803d82",
-    "accentColor": "#325a37"
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Puzzle visual for \"Choir Interval Cipher\". Objective: Reassemble chant intervals across three players to decode debtor index.. Build layered clue board where each shard can be solved collaboratively.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:28.167Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

@@ -1,27 +1,19 @@
 {
-  "id": "signal-from-kharon-9-story-overview-page",
-  "title": "Signal From Kharon-9 Story Overview Page",
+  "story_id": "signal-from-kharon-9",
+  "asset_id": "signal-from-kharon-9-story-overview-page",
+  "asset_type": "story_overview_page",
   "modality": "web",
-  "category": "story_overview_page",
-  "scope": "story",
+  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\web\\story_overview_page\\signal-from-kharon-9-story-overview-page-v1.html",
+  "public_path": "/agent-army/stories/signal-from-kharon-9/web/story_overview_page/signal-from-kharon-9-story-overview-page-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.562Z",
+  "checksum": "6633c831c11fc018d01f6e5635179c7ec90c0fe1",
+  "file_size": 1322,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/web/story_overview_page/signal-from-kharon-9-story-overview-page-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:28.712Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

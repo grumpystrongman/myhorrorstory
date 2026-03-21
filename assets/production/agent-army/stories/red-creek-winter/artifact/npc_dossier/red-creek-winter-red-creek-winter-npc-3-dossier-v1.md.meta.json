@@ -1,28 +1,19 @@
 {
-  "id": "red-creek-winter-red-creek-winter-npc-3-dossier",
-  "title": "Red Creek Winter - Journalist Mara Finch Dossier",
+  "story_id": "red-creek-winter",
+  "asset_id": "red-creek-winter-red-creek-winter-npc-3-dossier",
+  "asset_type": "npc_dossier",
   "modality": "artifact",
-  "category": "npc_dossier",
-  "scope": "story",
+  "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Write in-world dossier for Journalist Mara Finch including known history, hidden motives, trust thresholds, and clue-link references for interactive evidence board.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\artifact\\npc_dossier\\red-creek-winter-red-creek-winter-npc-3-dossier-v1.md",
+  "public_path": "/agent-army/stories/red-creek-winter/artifact/npc_dossier/red-creek-winter-red-creek-winter-npc-3-dossier-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.487Z",
+  "checksum": "127ee5b33dd813f75b859e685395a8b079f66b19",
+  "file_size": 1173,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/artifact/npc_dossier/red-creek-winter-red-creek-winter-npc-3-dossier-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Write in-world dossier for Journalist Mara Finch including known history, hidden motives, trust thresholds, and clue-link references for interactive evidence board.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:54.536Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

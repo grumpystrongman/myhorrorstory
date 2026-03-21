@@ -1,39 +1,32 @@
-import { access, readFile, stat, writeFile } from 'node:fs/promises';
-import { constants } from 'node:fs';
-import { join, relative } from 'node:path';
-
-const repoRoot = process.cwd();
-const manifestPath = join(repoRoot, 'assets', 'manifests', 'commercial-agent-army-plan.json');
-const reportJsonPath = join(
+import { mkdir, writeFile } from 'node:fs/promises';
+import { dirname, relative } from 'node:path';
+import {
+  buildVerifiedCatalog,
+  filterPlanAssets,
+  loadPlanAssets,
+  planPath,
   repoRoot,
-  'docs',
-  'operations',
-  'openclaw-agent-army-output-verification.json'
-);
-const reportMdPath = join(repoRoot, 'docs', 'operations', 'openclaw-agent-army-output-verification.md');
+  statusLedgerPath
+} from './lib/agent-army-real-assets.mjs';
 
-const MIN_SIZE_BY_MODALITY = {
-  image: 3_000,
-  audio: 24_000,
-  video: 8_000,
-  artifact: 400,
-  web: 800
-};
+const reportJsonPath = `${repoRoot}/docs/operations/openclaw-agent-army-output-verification.json`;
+const reportMdPath = `${repoRoot}/docs/operations/openclaw-agent-army-output-verification.md`;
 
 function parseArgs() {
   const args = process.argv.slice(2);
-  return {
-    failOnInvalid: !args.includes('--allow-invalid')
-  };
-}
 
-async function exists(path) {
-  try {
-    await access(path, constants.F_OK);
-    return true;
-  } catch {
-    return false;
+  function valueOf(flag) {
+    const index = args.indexOf(flag);
+    return index >= 0 ? args[index + 1] : undefined;
   }
+
+  return {
+    storyId: valueOf('--story') ?? null,
+    assetId: valueOf('--asset-id') ?? null,
+    modality: valueOf('--modality') ?? null,
+    scope: valueOf('--scope') ?? null,
+    allowInvalid: args.includes('--allow-invalid')
+  };
 }
 
 function toMarkdownReport(report) {
@@ -42,117 +35,78 @@ function toMarkdownReport(report) {
   lines.push('');
   lines.push(`Generated: ${report.generatedAt}`);
   lines.push(`Plan path: ${report.planPath}`);
+  lines.push(`Status ledger: ${report.statusLedgerPath}`);
+  lines.push(`Story filter: ${report.filters.storyId ?? 'none'}`);
+  lines.push(`Asset filter: ${report.filters.assetId ?? 'none'}`);
+  lines.push(`Modality filter: ${report.filters.modality ?? 'none'}`);
+  lines.push(`Scope filter: ${report.filters.scope ?? 'none'}`);
   lines.push('');
   lines.push('## Totals');
   lines.push(`- Assets planned: ${report.totals.assets}`);
-  lines.push(`- Existing outputs: ${report.totals.existing}`);
-  lines.push(`- Missing outputs: ${report.totals.missing}`);
-  lines.push(`- Invalid outputs: ${report.totals.invalid}`);
+  lines.push(`- Complete assets: ${report.totals.complete}`);
+  lines.push(`- Missing assets: ${report.totals.missing}`);
+  lines.push(`- Invalid assets: ${report.totals.invalid}`);
+  lines.push(`- Failed assets: ${report.totals.failed}`);
+  lines.push(`- Unavailable assets: ${report.totals.unavailable}`);
   lines.push('');
-  lines.push('## By Modality');
-  for (const [modality, count] of Object.entries(report.byModality)) {
-    lines.push(`- ${modality}: ${count}`);
-  }
-  lines.push('');
-  lines.push('## Missing By Modality');
-  for (const [modality, count] of Object.entries(report.byModalityMissing)) {
-    lines.push(`- ${modality}: ${count}`);
-  }
-  lines.push('');
-  lines.push('## Invalid By Modality');
-  for (const [modality, count] of Object.entries(report.byModalityInvalid)) {
-    lines.push(`- ${modality}: ${count}`);
-  }
-  lines.push('');
-  lines.push('## Missing Sample');
-  if (report.missingSample.length === 0) {
+  lines.push('## Failure Sample');
+  if (report.failureSample.length === 0) {
     lines.push('- none');
   } else {
-    for (const item of report.missingSample) {
-      lines.push(`- ${item}`);
+    for (const item of report.failureSample) {
+      lines.push(
+        `- ${item.story_id} :: ${item.asset_id} (${item.modality}) -> ${item.generation_status} :: ${item.error}`
+      );
     }
   }
-  lines.push('');
-  lines.push('## Invalid Sample');
-  if (report.invalidSample.length === 0) {
-    lines.push('- none');
-  } else {
-    for (const item of report.invalidSample) {
-      lines.push(`- ${item.outputKey} :: ${item.reason}`);
-    }
-  }
-  lines.push('');
-  lines.push('## Status');
-  lines.push(report.totals.missing === 0 && report.totals.invalid === 0 ? '- PASS' : '- FAIL');
   lines.push('');
   return `${lines.join('\n')}\n`;
 }
 
 async function main() {
   const options = parseArgs();
+  const allAssets = await loadPlanAssets();
+  const selectedAssets = filterPlanAssets(allAssets, {
+    storyId: options.storyId,
+    assetId: options.assetId,
+    modality: options.modality,
+    scope: options.scope
+  });
+  const catalog = await buildVerifiedCatalog(allAssets);
 
-  const manifestRaw = await readFile(manifestPath, 'utf8');
-  const manifest = JSON.parse(manifestRaw);
-  const assets = Array.isArray(manifest.assets) ? manifest.assets : [];
+  const selectedIds = new Set(selectedAssets.map((asset) => asset.id));
+  const selectedStories = catalog.stories
+    .map((story) => ({
+      ...story,
+      assets: story.assets.filter((asset) => selectedIds.has(asset.asset_id)),
+      failures: story.failures.filter((asset) => selectedIds.has(asset.asset_id))
+    }))
+    .filter((story) => story.assets.length > 0 || story.failures.length > 0);
 
-  const byModality = {};
-  const byModalityMissing = {};
-  const byModalityInvalid = {};
-  const missing = [];
-  const invalid = [];
+  const completeCount = selectedStories.reduce((total, story) => total + story.assets.length, 0);
+  const failures = selectedStories.flatMap((story) => story.failures);
+  const missing = failures.filter((item) => item.generation_status === 'missing').length;
+  const invalid = failures.filter((item) => item.generation_status === 'invalid').length;
+  const failed = failures.filter((item) => item.generation_status === 'failed').length;
+  const unavailable = failures.filter((item) => item.generation_status === 'unavailable').length;
 
-  for (const asset of assets) {
-    byModality[asset.modality] = (byModality[asset.modality] ?? 0) + 1;
-
-    const outputPath = join(repoRoot, asset.outputKey);
-    const metadataPath = `${outputPath}.meta.json`;
-    const outputExists = await exists(outputPath);
-    const metadataExists = await exists(metadataPath);
-
-    if (!outputExists) {
-      byModalityMissing[asset.modality] = (byModalityMissing[asset.modality] ?? 0) + 1;
-      missing.push(asset.outputKey);
-      continue;
-    }
-
-    const outputStat = await stat(outputPath);
-    if (!metadataExists) {
-      byModalityInvalid[asset.modality] = (byModalityInvalid[asset.modality] ?? 0) + 1;
-      invalid.push({
-        outputKey: asset.outputKey,
-        reason: 'missing metadata sidecar'
-      });
-      continue;
-    }
-
-    const minimumSize = MIN_SIZE_BY_MODALITY[asset.modality] ?? 128;
-    if (outputStat.size < minimumSize) {
-      byModalityInvalid[asset.modality] = (byModalityInvalid[asset.modality] ?? 0) + 1;
-      invalid.push({
-        outputKey: asset.outputKey,
-        reason: `file too small (${outputStat.size} bytes, expected >= ${minimumSize})`
-      });
-      continue;
-    }
-  }
-
-  const existing = assets.length - missing.length;
   const report = {
     generatedAt: new Date().toISOString(),
-    planPath: relative(repoRoot, manifestPath).replaceAll('\\', '/'),
+    planPath: relative(repoRoot, planPath).replaceAll('\\', '/'),
+    statusLedgerPath: relative(repoRoot, statusLedgerPath).replaceAll('\\', '/'),
+    filters: options,
     totals: {
-      assets: assets.length,
-      existing,
-      missing: missing.length,
-      invalid: invalid.length
+      assets: selectedAssets.length,
+      complete: completeCount,
+      missing,
+      invalid,
+      failed,
+      unavailable
     },
-    byModality,
-    byModalityMissing,
-    byModalityInvalid,
-    missingSample: missing.slice(0, 120),
-    invalidSample: invalid.slice(0, 120)
+    failureSample: failures.slice(0, 200)
   };
 
+  await mkdir(dirname(reportJsonPath), { recursive: true });
   await Promise.all([
     writeFile(reportJsonPath, JSON.stringify(report, null, 2), 'utf8'),
     writeFile(reportMdPath, toMarkdownReport(report), 'utf8')
@@ -161,10 +115,10 @@ async function main() {
   console.log(`[agent-army:verify] ${reportJsonPath}`);
   console.log(`[agent-army:verify] ${reportMdPath}`);
   console.log(
-    `[agent-army:verify] existing=${existing} missing=${missing.length} invalid=${invalid.length}`
+    `[agent-army:verify] complete=${completeCount} missing=${missing} invalid=${invalid} failed=${failed} unavailable=${unavailable}`
   );
 
-  if (options.failOnInvalid && (missing.length > 0 || invalid.length > 0)) {
+  if (!options.allowInvalid && missing + invalid + failed > 0) {
     process.exit(1);
   }
 }

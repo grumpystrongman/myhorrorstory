@@ -1,39 +1,23 @@
 {
-  "id": "the-harvest-men-social-launch-vertical",
-  "title": "The Harvest Men Social Launch Vertical",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-social-launch-vertical",
+  "asset_type": "social_vertical",
   "modality": "image",
-  "category": "social_vertical",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
+  "source_prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\social_vertical\\the-harvest-men-social-launch-vertical-v1.png",
+  "public_path": "/agent-army/stories/the-harvest-men/image/social_vertical/the-harvest-men-social-launch-vertical-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\social_vertical\\the-harvest-men-social-launch-vertical-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/social_vertical/the-harvest-men-social-launch-vertical-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:39:25.987Z",
+  "checksum": "d3e682efaa768b11f95c992db84cc3462535247a",
+  "file_size": 760514,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/image/social_vertical/the-harvest-men-social-launch-vertical-v1.png",
-  "specs": {
-    "width": 1080,
-    "height": 1080,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1080,
-    "height": 1080,
-    "baseColor": "#626483",
-    "accentColor": "#786c81"
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:50.979Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

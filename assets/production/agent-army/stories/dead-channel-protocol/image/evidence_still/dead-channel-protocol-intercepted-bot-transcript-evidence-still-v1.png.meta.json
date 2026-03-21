@@ -1,39 +1,26 @@
 {
-  "id": "dead-channel-protocol-intercepted-bot-transcript-evidence-still",
-  "title": "Dead Channel Protocol - Evidence Still - Intercepted bot transcript",
+  "story_id": "dead-channel-protocol",
+  "asset_id": "dead-channel-protocol-intercepted-bot-transcript-evidence-still",
+  "asset_type": "evidence_still",
   "modality": "image",
-  "category": "evidence_still",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Intercepted bot transcript\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Intercepted bot transcript. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Intercepted bot transcript\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.png",
+  "public_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:06:45.338Z",
+  "checksum": "74e61971d8b786c904e9e2883863218632a81ca7",
+  "file_size": 3874241,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#9b2b84",
-    "accentColor": "#4d3369"
-  },
-  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Intercepted bot transcript\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:10.209Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

@@ -1,39 +1,26 @@
 {
-  "id": "black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art",
-  "title": "Black Chapel Ledger - Contact and Contradiction Arc Key Art",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art",
+  "asset_type": "arc_key_art",
   "modality": "image",
-  "category": "arc_key_art",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Black Chapel Ledger. Premise: A cathedral ledger records debts paid in memory instead of money.. Setting: Cliffside cathedral archive district. Threat presence: The Creditor. Recurring motifs: ink-stained fingers, funeral bells, salt wax. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: gothic horror. Tone: EERIE. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Black Chapel Ledger - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\arc_key_art\\black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art-v1.png",
+  "public_path": "/agent-army/stories/black-chapel-ledger/image/arc_key_art/black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\arc_key_art\\black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/black-chapel-ledger/image/arc_key_art/black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art-v1.thumb.jpg",
+  "created_at": "2026-03-21T16:51:59.747Z",
+  "checksum": "340f01cca22ad72af3762cd305ba1b63a2b20974",
+  "file_size": 3050603,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/image/arc_key_art/black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#6c8c3c",
-    "accentColor": "#752a5d"
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:12.751Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

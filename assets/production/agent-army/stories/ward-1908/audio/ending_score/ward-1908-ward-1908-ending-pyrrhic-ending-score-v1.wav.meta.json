@@ -1,40 +1,20 @@
 {
-  "id": "ward-1908-ward-1908-ending-pyrrhic-ending-score",
-  "title": "Ward 1908 - Compromised Truth Ending Score",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-ward-1908-ending-pyrrhic-ending-score",
+  "asset_type": "ending_score",
   "modality": "audio",
-  "category": "ending_score",
-  "scope": "story",
+  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose ending score cue for \"Compromised Truth\" that supports summary \"You reveal the abuse but trigger backlash against survivors' families.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-pyrrhic-ending-score-v1.wav",
+  "public_path": "/agent-army/stories/ward-1908/audio/ending_score/ward-1908-ward-1908-ending-pyrrhic-ending-score-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:01.750Z",
+  "checksum": "5ebf3dcc29c9c70cf7ee51d97ae649d5f69d53c6",
+  "file_size": 15698810,
+  "duration_seconds": 81.76,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/audio/ending_score/ward-1908-ward-1908-ending-pyrrhic-ending-score-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 179,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose ending score cue for \"Compromised Truth\" that supports summary \"You reveal the abuse but trigger backlash against survivors' families.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:33:08.151Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

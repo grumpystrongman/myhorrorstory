@@ -1,40 +1,20 @@
 {
-  "id": "static-between-stations-static-between-stations-arc-disruption-arc-ambience",
-  "title": "Static Between Stations - Interference and Doubt Arc Ambience",
+  "story_id": "static-between-stations",
+  "asset_id": "static-between-stations-static-between-stations-arc-disruption-arc-ambience",
+  "asset_type": "arc_ambience",
   "modality": "audio",
-  "category": "arc_ambience",
-  "scope": "story",
+  "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-disruption-arc-ambience-v1.wav",
+  "public_path": "/agent-army/stories/static-between-stations/audio/arc_ambience/static-between-stations-static-between-stations-arc-disruption-arc-ambience-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:13:10.281Z",
+  "checksum": "f84a46ad83f73b714820a4b667942d1946d9f417",
+  "file_size": 15699438,
+  "duration_seconds": 81.77,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/audio/arc_ambience/static-between-stations-static-between-stations-arc-disruption-arc-ambience-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 273,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:30.684Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

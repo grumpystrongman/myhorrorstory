@@ -1,39 +1,26 @@
 {
-  "id": "web-mobile-session-page-banner",
-  "title": "Mobile Session Page Banner",
+  "story_id": "website",
+  "asset_id": "web-mobile-session-page-banner",
+  "asset_type": "page_banner",
   "modality": "image",
-  "category": "page_banner",
-  "scope": "website",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: website banner artwork. Story world: Website Surface. Immediate scene brief: Mobile Session Page Banner. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "source_prompt": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Create cinematic horror-luxe page banner art with layered atmosphere and typography-safe focal zone. Style principles: cinematic contrast with restrained saturation; editorial typography hierarchy; texture-first backgrounds instead of flat fills; socially playable collaboration cues; high readability under low-light mood.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-session-page-banner-v1.png",
+  "public_path": "/agent-army/website/image/web-mobile-session-page-banner-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-session-page-banner-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/website/image/web-mobile-session-page-banner-v1.thumb.jpg",
+  "created_at": "2026-03-21T16:51:29.920Z",
+  "checksum": "890b6a6f48d598f2f10561778b06332cee0fe8a0",
+  "file_size": 2696470,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-mobile-session-page-banner-v1.png",
-  "specs": {
-    "width": 2048,
-    "height": 1152,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#665d87",
-    "accentColor": "#445c7a"
-  },
-  "prompt": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Create cinematic horror-luxe page banner art with layered atmosphere and typography-safe focal zone. Style principles: cinematic contrast with restrained saturation; editorial typography hierarchy; texture-first backgrounds instead of flat fills; socially playable collaboration cues; high readability under low-light mood.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:10.616Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

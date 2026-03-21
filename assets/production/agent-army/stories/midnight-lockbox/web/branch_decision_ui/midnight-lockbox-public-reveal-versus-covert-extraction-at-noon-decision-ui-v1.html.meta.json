@@ -1,27 +1,19 @@
 {
-  "id": "midnight-lockbox-public-reveal-versus-covert-extraction-at-noon-decision-ui",
-  "title": "Midnight Lockbox - Branch UI - Public reveal versus covert extraction at noon",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-public-reveal-versus-covert-extraction-at-noon-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Build interactive branch decision page for \"Public reveal versus covert extraction at noon\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\web\\branch_decision_ui\\midnight-lockbox-public-reveal-versus-covert-extraction-at-noon-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/midnight-lockbox/web/branch_decision_ui/midnight-lockbox-public-reveal-versus-covert-extraction-at-noon-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.523Z",
+  "checksum": "421ebdeab87d7b2cdb8f7de434bc41d6549c8cc4",
+  "file_size": 1482,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/web/branch_decision_ui/midnight-lockbox-public-reveal-versus-covert-extraction-at-noon-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Build interactive branch decision page for \"Public reveal versus covert extraction at noon\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:37.621Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

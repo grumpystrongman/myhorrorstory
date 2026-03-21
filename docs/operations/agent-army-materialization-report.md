@@ -1,28 +1,39 @@
-# Agent Army Materialization Report
+# Agent Army Real Asset Materialization Report
 
-Generated: 2026-03-20T19:33:11.721Z
-Manifest: assets\manifests\commercial-agent-army-plan.json
-FFmpeg: C:\Users\grump\MyHorrorStory\node_modules\.pnpm\ffmpeg-static@5.3.0\node_modules\ffmpeg-static\ffmpeg.exe
-Start index: 0
+Generated: 2026-03-21T17:44:51.216Z
+Plan: assets/manifests/commercial-agent-army-plan.json
+Status ledger: apps/web/public/agent-army/status/generation-status.json
+Story filter: none
+Asset filter: midnight-lockbox-drain-tunnel-pressure-map-evidence-still
+Modality filter: image
+Scope filter: none
+Image backend: local
+Start: 0
 Limit: none
-Modality filter: none
-Regenerate existing: true
+Regenerate: false
+Timeout: 45000ms
+Max retries: 1
+Concurrency: null
 
 ## Totals
 - Planned assets: 792
-- Selected assets: 792
-- Generated: 792
+- Selected assets: 1
+- Generated: 1
 - Skipped existing: 0
 - Failed: 0
-- Bytes generated: 926,823,004
+- Unavailable: 0
 
 ## By Modality
-- image: selected=323 generated=323 skipped=0 failed=0
-- video: selected=150 generated=150 skipped=0 failed=0
-- audio: selected=139 generated=139 skipped=0 failed=0
-- artifact: selected=140 generated=140 skipped=0 failed=0
-- web: selected=40 generated=40 skipped=0 failed=0
+- image: selected=1 generated=1 skipped=0 failed=0 unavailable=0
 
-## Failures
+## Issues
 - none
+
+## Catalog Totals
+- Stories: 12
+- Complete assets: 642
+- Missing assets: 0
+- Invalid assets: 0
+- Failed assets: 0
+- Unavailable assets: 150
 

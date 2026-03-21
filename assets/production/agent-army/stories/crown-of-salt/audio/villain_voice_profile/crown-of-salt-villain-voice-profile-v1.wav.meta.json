@@ -1,40 +1,20 @@
 {
-  "id": "crown-of-salt-villain-voice-profile",
-  "title": "Crown of Salt - Villain Voice Profile",
+  "story_id": "crown-of-salt",
+  "asset_id": "crown-of-salt-villain-voice-profile",
+  "asset_type": "villain_voice_profile",
   "modality": "audio",
-  "category": "villain_voice_profile",
-  "scope": "story",
+  "prompt_used": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Create villain voice profile for The Salt Regent. Worldview: Order comes from controlled sin, not clean law.. Manner: Polished cruelty with diplomatic tone.. Include escalation stage cues for stage 1-4 intimidation.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\audio\\villain_voice_profile\\crown-of-salt-villain-voice-profile-v1.wav",
+  "public_path": "/agent-army/stories/crown-of-salt/audio/villain_voice_profile/crown-of-salt-villain-voice-profile-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:12:15.089Z",
+  "checksum": "b098da37720d4b1aae6c15057897bf3f84c4a2b1",
+  "file_size": 2110374,
+  "duration_seconds": 21.98,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/audio/villain_voice_profile/crown-of-salt-villain-voice-profile-v1.wav",
-  "specs": {
-    "durationSeconds": 20,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 1
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 275,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Create villain voice profile for The Salt Regent. Worldview: Order comes from controlled sin, not clean law.. Manner: Polished cruelty with diplomatic tone.. Include escalation stage cues for stage 1-4 intimidation.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:48.245Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

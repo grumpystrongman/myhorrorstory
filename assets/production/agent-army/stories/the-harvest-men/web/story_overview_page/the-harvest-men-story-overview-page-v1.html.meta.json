@@ -1,27 +1,19 @@
 {
-  "id": "the-harvest-men-story-overview-page",
-  "title": "The Harvest Men Story Overview Page",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-story-overview-page",
+  "asset_type": "story_overview_page",
   "modality": "web",
-  "category": "story_overview_page",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\web\\story_overview_page\\the-harvest-men-story-overview-page-v1.html",
+  "public_path": "/agent-army/stories/the-harvest-men/web/story_overview_page/the-harvest-men-story-overview-page-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.624Z",
+  "checksum": "a4d8910b42c8f9ffbb7739ef2d5bd59db65d93f3",
+  "file_size": 1295,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/web/story_overview_page/the-harvest-men-story-overview-page-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:52.472Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

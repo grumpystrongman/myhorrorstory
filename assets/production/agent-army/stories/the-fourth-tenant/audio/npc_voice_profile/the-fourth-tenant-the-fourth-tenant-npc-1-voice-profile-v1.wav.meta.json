@@ -1,40 +1,20 @@
 {
-  "id": "the-fourth-tenant-the-fourth-tenant-npc-1-voice-profile",
-  "title": "The Fourth Tenant - Building Superintendent Leda Price Voice Profile",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-the-fourth-tenant-npc-1-voice-profile",
+  "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "category": "npc_voice_profile",
-  "scope": "story",
+  "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Building Superintendent Leda Price. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\npc_voice_profile\\the-fourth-tenant-the-fourth-tenant-npc-1-voice-profile-v1.wav",
+  "public_path": "/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-1-voice-profile-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:13:34.597Z",
+  "checksum": "90e6f399e30ba20c179c4b920d7dde1bb2eeb515",
+  "file_size": 2110456,
+  "duration_seconds": 21.98,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-1-voice-profile-v1.wav",
-  "specs": {
-    "durationSeconds": 20,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 1
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 252,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Building Superintendent Leda Price. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:24.527Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

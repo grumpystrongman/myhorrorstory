@@ -1,39 +1,23 @@
 {
-  "id": "ward-1908-ward-1908-npc-2-portrait",
-  "title": "Ward 1908 - Former Nurse Evan Mire Portrait",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-ward-1908-npc-2-portrait",
+  "asset_type": "character_portrait",
   "modality": "image",
-  "category": "character_portrait",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Former Nurse Evan Mire, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Former Nurse Evan Mire Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+  "source_prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Former Nurse Evan Mire, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-2-portrait-v1.png",
+  "public_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-2-portrait-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-2-portrait-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-2-portrait-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:39:40.437Z",
+  "checksum": "55d90e8c39fa25ea61684093f00d77a7d399cc79",
+  "file_size": 915917,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-2-portrait-v1.png",
-  "specs": {
-    "width": 1024,
-    "height": 1365,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 960,
-    "height": 1280,
-    "baseColor": "#8e6072",
-    "accentColor": "#5b449b"
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Former Nurse Evan Mire, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:33:04.225Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

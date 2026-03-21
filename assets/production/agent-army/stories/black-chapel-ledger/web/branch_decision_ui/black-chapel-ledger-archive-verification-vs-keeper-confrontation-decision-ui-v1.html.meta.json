@@ -1,27 +1,19 @@
 {
-  "id": "black-chapel-ledger-archive-verification-vs-keeper-confrontation-decision-ui",
-  "title": "Black Chapel Ledger - Branch UI - Archive verification vs keeper confrontation",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-archive-verification-vs-keeper-confrontation-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build interactive branch decision page for \"Archive verification vs keeper confrontation\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\web\\branch_decision_ui\\black-chapel-ledger-archive-verification-vs-keeper-confrontation-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/black-chapel-ledger/web/branch_decision_ui/black-chapel-ledger-archive-verification-vs-keeper-confrontation-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.469Z",
+  "checksum": "9eed683346496ffceb379b62a5992eeb6cc54254",
+  "file_size": 1399,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/web/branch_decision_ui/black-chapel-ledger-archive-verification-vs-keeper-confrontation-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build interactive branch decision page for \"Archive verification vs keeper confrontation\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:32.470Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

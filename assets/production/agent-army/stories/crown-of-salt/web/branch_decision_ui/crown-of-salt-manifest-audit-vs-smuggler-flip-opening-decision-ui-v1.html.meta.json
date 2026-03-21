@@ -1,27 +1,19 @@
 {
-  "id": "crown-of-salt-manifest-audit-vs-smuggler-flip-opening-decision-ui",
-  "title": "Crown of Salt - Branch UI - Manifest audit vs smuggler flip opening",
+  "story_id": "crown-of-salt",
+  "asset_id": "crown-of-salt-manifest-audit-vs-smuggler-flip-opening-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Build interactive branch decision page for \"Manifest audit vs smuggler flip opening\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\web\\branch_decision_ui\\crown-of-salt-manifest-audit-vs-smuggler-flip-opening-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/crown-of-salt/web/branch_decision_ui/crown-of-salt-manifest-audit-vs-smuggler-flip-opening-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.486Z",
+  "checksum": "0c7195f665fea0658c5e36e71a44fe5699e12d16",
+  "file_size": 1391,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/web/branch_decision_ui/crown-of-salt-manifest-audit-vs-smuggler-flip-opening-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Build interactive branch decision page for \"Manifest audit vs smuggler flip opening\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:54.189Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

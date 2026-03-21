@@ -1,40 +1,20 @@
 {
-  "id": "the-harvest-men-the-harvest-men-npc-1-voice-profile",
-  "title": "The Harvest Men - Visiting Agronomist Dina Crowe Voice Profile",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-the-harvest-men-npc-1-voice-profile",
+  "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "category": "npc_voice_profile",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Visiting Agronomist Dina Crowe. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\npc_voice_profile\\the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
+  "public_path": "/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:13:45.434Z",
+  "checksum": "aa974dc53f8eb10e8792de6e6e600f5f20419029",
+  "file_size": 2110384,
+  "duration_seconds": 21.98,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
-  "specs": {
-    "durationSeconds": 20,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 1
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 272,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Visiting Agronomist Dina Crowe. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:43.462Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

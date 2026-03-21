@@ -1,40 +1,20 @@
 {
-  "id": "red-creek-winter-red-creek-winter-ending-corruption-ending-score",
-  "title": "Red Creek Winter - Corruption Pact Ending Score",
+  "story_id": "red-creek-winter",
+  "asset_id": "red-creek-winter-red-creek-winter-ending-corruption-ending-score",
+  "asset_type": "ending_score",
   "modality": "audio",
-  "category": "ending_score",
-  "scope": "story",
+  "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept staged closure to keep panic and tourism revenue controlled.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
+  "public_path": "/agent-army/stories/red-creek-winter/audio/ending_score/red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:12:54.199Z",
+  "checksum": "0ea9242e17e64cd7b78554ae0c191c1b22b2dff4",
+  "file_size": 15699438,
+  "duration_seconds": 81.77,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/audio/ending_score/red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 296,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept staged closure to keep panic and tourism revenue controlled.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:03.609Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

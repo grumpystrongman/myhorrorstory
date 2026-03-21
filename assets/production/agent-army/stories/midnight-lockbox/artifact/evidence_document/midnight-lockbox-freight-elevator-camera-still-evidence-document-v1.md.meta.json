@@ -1,28 +1,19 @@
 {
-  "id": "midnight-lockbox-freight-elevator-camera-still-evidence-document",
-  "title": "Midnight Lockbox - Evidence Document - Freight elevator camera still",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-freight-elevator-camera-still-evidence-document",
+  "asset_type": "evidence_document",
   "modality": "artifact",
-  "category": "evidence_document",
-  "scope": "story",
+  "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Produce in-world evidence artifact for \"Freight elevator camera still\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\artifact\\evidence_document\\midnight-lockbox-freight-elevator-camera-still-evidence-document-v1.md",
+  "public_path": "/agent-army/stories/midnight-lockbox/artifact/evidence_document/midnight-lockbox-freight-elevator-camera-still-evidence-document-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.447Z",
+  "checksum": "237ecc1f5f439ef5128936904c58a4687016cc76",
+  "file_size": 1280,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/artifact/evidence_document/midnight-lockbox-freight-elevator-camera-still-evidence-document-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Produce in-world evidence artifact for \"Freight elevator camera still\" with metadata blocks, witness notes, and authenticity anomalies that invite player deduction.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:31.934Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

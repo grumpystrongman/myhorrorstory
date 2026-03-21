@@ -1,39 +1,26 @@
 {
-  "id": "crown-of-salt-crown-of-salt-arc-disruption-arc-key-art",
-  "title": "Crown of Salt - Interference and Doubt Arc Key Art",
+  "story_id": "crown-of-salt",
+  "asset_id": "crown-of-salt-crown-of-salt-arc-disruption-arc-key-art",
+  "asset_type": "arc_key_art",
   "modality": "image",
-  "category": "arc_key_art",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Crown of Salt. Premise: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.. Setting: Port authority archives and salt catacombs. Threat presence: The Salt Regent. Recurring motifs: salt crowns, wet ledgers, cargo seals. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: occult conspiracy. Tone: CINEMATIC. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Crown of Salt - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\arc_key_art\\crown-of-salt-crown-of-salt-arc-disruption-arc-key-art-v1.png",
+  "public_path": "/agent-army/stories/crown-of-salt/image/arc_key_art/crown-of-salt-crown-of-salt-arc-disruption-arc-key-art-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\arc_key_art\\crown-of-salt-crown-of-salt-arc-disruption-arc-key-art-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/crown-of-salt/image/arc_key_art/crown-of-salt-crown-of-salt-arc-disruption-arc-key-art-v1.thumb.jpg",
+  "created_at": "2026-03-21T16:57:50.169Z",
+  "checksum": "4f3e148fc2ca47568d862a6a95016fbf9d5b5f69",
+  "file_size": 3297296,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/image/arc_key_art/crown-of-salt-crown-of-salt-arc-disruption-arc-key-art-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#33683f",
-    "accentColor": "#443444"
-  },
-  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:36.231Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

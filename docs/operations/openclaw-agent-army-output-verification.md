@@ -1,31 +1,170 @@
 # OpenClaw Agent Army Output Verification
 
-Generated: 2026-03-20T19:33:17.486Z
+Generated: 2026-03-21T17:45:57.543Z
 Plan path: assets/manifests/commercial-agent-army-plan.json
+Status ledger: apps/web/public/agent-army/status/generation-status.json
+Story filter: none
+Asset filter: none
+Modality filter: none
+Scope filter: none
 
 ## Totals
 - Assets planned: 792
-- Existing outputs: 792
-- Missing outputs: 0
-- Invalid outputs: 0
+- Complete assets: 642
+- Missing assets: 0
+- Invalid assets: 0
+- Failed assets: 0
+- Unavailable assets: 150
 
-## By Modality
-- image: 323
-- video: 150
-- audio: 139
-- artifact: 140
-- web: 40
-
-## Missing By Modality
-
-## Invalid By Modality
-
-## Missing Sample
-- none
-
-## Invalid Sample
-- none
-
-## Status
-- PASS
+## Failure Sample
+- black-chapel-ledger :: black-chapel-ledger-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-black-chapel-ledger-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-black-chapel-ledger-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-black-chapel-ledger-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-black-chapel-ledger-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- black-chapel-ledger :: black-chapel-ledger-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-crown-of-salt-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-crown-of-salt-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-crown-of-salt-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-crown-of-salt-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-crown-of-salt-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- crown-of-salt :: crown-of-salt-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- dead-channel-protocol :: dead-channel-protocol-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-midnight-lockbox-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-midnight-lockbox-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-midnight-lockbox-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-midnight-lockbox-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-midnight-lockbox-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- midnight-lockbox :: midnight-lockbox-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-red-creek-winter-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- red-creek-winter :: red-creek-winter-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- signal-from-kharon-9 :: signal-from-kharon-9-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-static-between-stations-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-static-between-stations-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-static-between-stations-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-static-between-stations-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-static-between-stations-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- static-between-stations :: static-between-stations-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- tape-17-pinewatch :: tape-17-pinewatch-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-fourth-tenant :: the-fourth-tenant-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-the-harvest-men-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- the-harvest-men :: the-harvest-men-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-beat-1-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-beat-2-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-beat-3-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-beat-4-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-beat-5-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-beat-6-beat-transition (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-trailer-main (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-ward-1908-arc-contact-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-ward-1908-arc-disruption-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-ward-1908-arc-endgame-arc-teaser-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-ward-1908-ending-corruption-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-ward-1908-ending-justice-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- ward-1908 :: ward-1908-ward-1908-ending-pyrrhic-ending-recap-video (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- website :: web-codex-motion-teaser (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- website :: web-landing-motion-teaser (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- website :: web-library-motion-teaser (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- website :: web-mobile-home-motion-teaser (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- website :: web-mobile-session-motion-teaser (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- website :: web-onboarding-motion-teaser (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
+- website :: web-play-motion-teaser (video) -> unavailable :: video generation backend is not configured; proxy output excluded from gallery
 

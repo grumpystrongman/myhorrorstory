@@ -1,39 +1,23 @@
 {
-  "id": "midnight-lockbox-freight-elevator-camera-still-evidence-still",
-  "title": "Midnight Lockbox - Evidence Still - Freight elevator camera still",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-freight-elevator-camera-still-evidence-still",
+  "asset_type": "evidence_still",
   "modality": "image",
-  "category": "evidence_still",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Midnight Lockbox. Premise: A self-storage unit with no renter sends voice memos predicting what your team will do next.. Setting: Gallowglass 24-hour storage facility and storm-drain service tunnels. Threat presence: The Quartermaster. Recurring motifs: unit tags, bolt cutters, time-lock stickers. Render forensic evidence still for \"Freight elevator camera still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: GROUNDED. Immediate scene brief: Midnight Lockbox - Evidence Still - Freight elevator camera still. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Render forensic evidence still for \"Freight elevator camera still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\evidence_still\\midnight-lockbox-freight-elevator-camera-still-evidence-still-v1.png",
+  "public_path": "/agent-army/stories/midnight-lockbox/image/evidence_still/midnight-lockbox-freight-elevator-camera-still-evidence-still-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\evidence_still\\midnight-lockbox-freight-elevator-camera-still-evidence-still-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/image/evidence_still/midnight-lockbox-freight-elevator-camera-still-evidence-still-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:43:17.200Z",
+  "checksum": "41e3c277bb4b2b010db1dfc5511a4c1551506be8",
+  "file_size": 951420,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/image/evidence_still/midnight-lockbox-freight-elevator-camera-still-evidence-still-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#543e40",
-    "accentColor": "#49939b"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Render forensic evidence still for \"Freight elevator camera still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:31.923Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:43:12.620Z",
+  "extension": ".png"
 }

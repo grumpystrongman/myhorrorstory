@@ -1,39 +1,23 @@
 {
-  "id": "midnight-lockbox-midnight-lockbox-ending-corruption-ending-card",
-  "title": "Midnight Lockbox - Quartermaster Pact Ending Card",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-midnight-lockbox-ending-corruption-ending-card",
+  "asset_type": "ending_card",
   "modality": "image",
-  "category": "ending_card",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Midnight Lockbox. Premise: A self-storage unit with no renter sends voice memos predicting what your team will do next.. Setting: Gallowglass 24-hour storage facility and storm-drain service tunnels. Threat presence: The Quartermaster. Recurring motifs: unit tags, bolt cutters, time-lock stickers. Ending card for \"Quartermaster Pact\" (CORRUPTION). Summary: You trade transparency for operational control over future lockboxes.. Deliver emotional closure with sequel-hook tension.. Subgenre: supernatural mystery. Tone: GROUNDED. Immediate scene brief: Midnight Lockbox - Quartermaster Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Ending card for \"Quartermaster Pact\" (CORRUPTION). Summary: You trade transparency for operational control over future lockboxes.. Deliver emotional closure with sequel-hook tension.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\ending_card\\midnight-lockbox-midnight-lockbox-ending-corruption-ending-card-v1.png",
+  "public_path": "/agent-army/stories/midnight-lockbox/image/ending_card/midnight-lockbox-midnight-lockbox-ending-corruption-ending-card-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\ending_card\\midnight-lockbox-midnight-lockbox-ending-corruption-ending-card-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/image/ending_card/midnight-lockbox-midnight-lockbox-ending-corruption-ending-card-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:36:28.563Z",
+  "checksum": "a40dc7def0eabd6b8841c8351cd6a852607f25a2",
+  "file_size": 868477,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/image/ending_card/midnight-lockbox-midnight-lockbox-ending-corruption-ending-card-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#943d2e",
-    "accentColor": "#2e5c31"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Ending card for \"Quartermaster Pact\" (CORRUPTION). Summary: You trade transparency for operational control over future lockboxes.. Deliver emotional closure with sequel-hook tension.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:36.461Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

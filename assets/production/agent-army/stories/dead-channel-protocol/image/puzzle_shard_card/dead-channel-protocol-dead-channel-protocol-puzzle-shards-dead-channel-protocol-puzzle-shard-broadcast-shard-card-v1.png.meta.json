@@ -1,39 +1,26 @@
 {
-  "id": "dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card",
-  "title": "Dead Channel Protocol - Node Handshake Puzzle - GLOBAL_BROADCAST Shard Card",
+  "story_id": "dead-channel-protocol",
+  "asset_id": "dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card",
+  "asset_type": "puzzle_shard_card",
   "modality": "image",
-  "category": "puzzle_shard_card",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast node map reveals which nonce belongs to each substation.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast node map reveals which nonce belongs to each substation.. Ensure it can stand alone but becomes decisive when combined with other shards.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.png",
+  "public_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:07:28.568Z",
+  "checksum": "dadd2af08ac848cf1263a38ac88a2d81ac0e7751",
+  "file_size": 3626549,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#763a79",
-    "accentColor": "#928692"
-  },
-  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast node map reveals which nonce belongs to each substation.. Ensure it can stand alone but becomes decisive when combined with other shards.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:11.100Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

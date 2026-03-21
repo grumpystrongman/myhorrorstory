@@ -1,39 +1,23 @@
 {
-  "id": "the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card",
-  "title": "The Fourth Tenant - Lease Fragment Reconstruction - HOST Shard Card",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card",
+  "asset_type": "puzzle_shard_card",
   "modality": "image",
-  "category": "puzzle_shard_card",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder HOST. Content brief: Host receives a redacted PDF with clause numbering intact.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create shard card for holder HOST. Content brief: Host receives a redacted PDF with clause numbering intact.. Ensure it can stand alone but becomes decisive when combined with other shards.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.png",
+  "public_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:38:52.865Z",
+  "checksum": "1f844e11198545259f4fe44100e9ec3a6173ba3c",
+  "file_size": 976913,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#94388e",
-    "accentColor": "#49564c"
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create shard card for holder HOST. Content brief: Host receives a redacted PDF with clause numbering intact.. Ensure it can stand alone but becomes decisive when combined with other shards.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:27.486Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

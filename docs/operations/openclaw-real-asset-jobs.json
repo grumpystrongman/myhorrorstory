@@ -1,0 +1,906 @@
+{
+  "packageId": "real-asset-repair-2026-03-21",
+  "generatedAt": "2026-03-21T16:16:54.019Z",
+  "jobs": [
+    {
+      "id": "real-asset-black-chapel-ledger-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-black-chapel-ledger-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-black-chapel-ledger-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-black-chapel-ledger-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-black-chapel-ledger-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-black-chapel-ledger-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-black-chapel-ledger-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-black-chapel-ledger-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-black-chapel-ledger-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-black-chapel-ledger-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-black-chapel-ledger-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-black-chapel-ledger-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-black-chapel-ledger-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-black-chapel-ledger-trailer-main",
+      "taskTitle": "Real Asset Generation - black-chapel-ledger - black-chapel-ledger-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story black-chapel-ledger --asset-id black-chapel-ledger-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-crown-of-salt-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-crown-of-salt-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-crown-of-salt-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-crown-of-salt-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-crown-of-salt-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-crown-of-salt-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-crown-of-salt-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-crown-of-salt-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-crown-of-salt-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-crown-of-salt-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-crown-of-salt-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-crown-of-salt-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-crown-of-salt-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-crown-of-salt-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-crown-of-salt-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-crown-of-salt-trailer-main",
+      "taskTitle": "Real Asset Generation - crown-of-salt - crown-of-salt-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story crown-of-salt --asset-id crown-of-salt-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-dead-channel-protocol-trailer-main",
+      "taskTitle": "Real Asset Generation - dead-channel-protocol - dead-channel-protocol-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story dead-channel-protocol --asset-id dead-channel-protocol-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-midnight-lockbox-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-midnight-lockbox-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-midnight-lockbox-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-midnight-lockbox-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-midnight-lockbox-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-midnight-lockbox-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-midnight-lockbox-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-midnight-lockbox-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-midnight-lockbox-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-midnight-lockbox-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-midnight-lockbox-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-midnight-lockbox-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-midnight-lockbox-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-midnight-lockbox-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-midnight-lockbox-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-midnight-lockbox-trailer-main",
+      "taskTitle": "Real Asset Generation - midnight-lockbox - midnight-lockbox-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story midnight-lockbox --asset-id midnight-lockbox-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-red-creek-winter-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-red-creek-winter-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-red-creek-winter-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-red-creek-winter-trailer-main",
+      "taskTitle": "Real Asset Generation - red-creek-winter - red-creek-winter-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story red-creek-winter --asset-id red-creek-winter-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-signal-from-kharon-9-trailer-main",
+      "taskTitle": "Real Asset Generation - signal-from-kharon-9 - signal-from-kharon-9-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story signal-from-kharon-9 --asset-id signal-from-kharon-9-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-static-between-stations-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-static-between-stations-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-static-between-stations-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-static-between-stations-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-static-between-stations-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-static-between-stations-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-static-between-stations-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-static-between-stations-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-static-between-stations-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-static-between-stations-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-static-between-stations-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-static-between-stations-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-static-between-stations-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-static-between-stations-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-static-between-stations-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-static-between-stations-trailer-main",
+      "taskTitle": "Real Asset Generation - static-between-stations - static-between-stations-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story static-between-stations --asset-id static-between-stations-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-tape-17-pinewatch-trailer-main",
+      "taskTitle": "Real Asset Generation - tape-17-pinewatch - tape-17-pinewatch-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story tape-17-pinewatch --asset-id tape-17-pinewatch-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-fourth-tenant-trailer-main",
+      "taskTitle": "Real Asset Generation - the-fourth-tenant - the-fourth-tenant-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-fourth-tenant --asset-id the-fourth-tenant-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-the-harvest-men-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-the-harvest-men-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-the-harvest-men-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-the-harvest-men-trailer-main",
+      "taskTitle": "Real Asset Generation - the-harvest-men - the-harvest-men-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story the-harvest-men --asset-id the-harvest-men-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-beat-1-beat-transition",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-beat-1-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-beat-1-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-beat-2-beat-transition",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-beat-2-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-beat-2-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-beat-3-beat-transition",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-beat-3-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-beat-3-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-beat-4-beat-transition",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-beat-4-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-beat-4-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-beat-5-beat-transition",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-beat-5-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-beat-5-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-beat-6-beat-transition",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-beat-6-beat-transition",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-beat-6-beat-transition --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-trailer-main",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-trailer-main",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-trailer-main --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-ward-1908-arc-contact-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-ward-1908-arc-contact-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-ward-1908-arc-contact-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-ward-1908-arc-disruption-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-ward-1908-arc-disruption-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-ward-1908-arc-disruption-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-ward-1908-arc-endgame-arc-teaser-video",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-ward-1908-arc-endgame-arc-teaser-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-ward-1908-arc-endgame-arc-teaser-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-ward-1908-ending-corruption-ending-recap-video",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-ward-1908-ending-corruption-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-ward-1908-ending-corruption-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-ward-1908-ending-justice-ending-recap-video",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-ward-1908-ending-justice-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-ward-1908-ending-justice-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-ward-1908-ward-1908-ending-pyrrhic-ending-recap-video",
+      "taskTitle": "Real Asset Generation - ward-1908 - ward-1908-ward-1908-ending-pyrrhic-ending-recap-video",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story ward-1908 --asset-id ward-1908-ward-1908-ending-pyrrhic-ending-recap-video --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-web-codex-motion-teaser",
+      "taskTitle": "Real Asset Generation - website - web-codex-motion-teaser",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story website --asset-id web-codex-motion-teaser --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-web-landing-motion-teaser",
+      "taskTitle": "Real Asset Generation - website - web-landing-motion-teaser",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story website --asset-id web-landing-motion-teaser --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-web-library-motion-teaser",
+      "taskTitle": "Real Asset Generation - website - web-library-motion-teaser",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story website --asset-id web-library-motion-teaser --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-web-mobile-home-motion-teaser",
+      "taskTitle": "Real Asset Generation - website - web-mobile-home-motion-teaser",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story website --asset-id web-mobile-home-motion-teaser --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-web-mobile-session-motion-teaser",
+      "taskTitle": "Real Asset Generation - website - web-mobile-session-motion-teaser",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story website --asset-id web-mobile-session-motion-teaser --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-web-onboarding-motion-teaser",
+      "taskTitle": "Real Asset Generation - website - web-onboarding-motion-teaser",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story website --asset-id web-onboarding-motion-teaser --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    },
+    {
+      "id": "real-asset-web-play-motion-teaser",
+      "taskTitle": "Real Asset Generation - website - web-play-motion-teaser",
+      "botId": "AI-Media-Pipeline-Agent",
+      "prompt": "Run this command from the repository root and do not claim success unless the real file exists: node scripts/creative/materialize-agent-army-assets.mjs --story website --asset-id web-play-motion-teaser --regenerate\n\nAfter running it, verify the file exists on disk, has non-zero size, and is present in apps/web/public/agent-army/catalog.json.\n\nIf the command fails, report the exact stderr and the blocker. If the modality is video and generation is unavailable, report unavailable rather than success."
+    }
+  ]
+}

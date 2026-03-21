@@ -1,39 +1,26 @@
 {
-  "id": "crown-of-salt-beat-3-beat-scene",
-  "title": "Crown of Salt - Trust Fracture Beat Scene",
+  "story_id": "crown-of-salt",
+  "asset_id": "crown-of-salt-beat-3-beat-scene",
+  "asset_type": "beat_scene_art",
   "modality": "image",
-  "category": "beat_scene_art",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Crown of Salt. Premise: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.. Setting: Port authority archives and salt catacombs. Threat presence: The Salt Regent. Recurring motifs: salt crowns, wet ledgers, cargo seals. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: occult conspiracy. Tone: CINEMATIC. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "source_prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\beat_scene_art\\crown-of-salt-beat-3-beat-scene-v1.png",
+  "public_path": "/agent-army/stories/crown-of-salt/image/beat_scene_art/crown-of-salt-beat-3-beat-scene-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\beat_scene_art\\crown-of-salt-beat-3-beat-scene-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/crown-of-salt/image/beat_scene_art/crown-of-salt-beat-3-beat-scene-v1.thumb.jpg",
+  "created_at": "2026-03-21T16:58:39.042Z",
+  "checksum": "d2cf8cc9d50eded6d70236f13b1a6997082d4ba4",
+  "file_size": 3072082,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/image/beat_scene_art/crown-of-salt-beat-3-beat-scene-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#45949a",
-    "accentColor": "#544c31"
-  },
-  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:42.002Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

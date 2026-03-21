@@ -1,39 +1,23 @@
 {
-  "id": "the-harvest-men-story-key-art",
-  "title": "The Harvest Men Story Key Art",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-story-key-art",
+  "asset_type": "story_key_art",
   "modality": "image",
-  "category": "story_key_art",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png",
+  "public_path": "/agent-army/stories/the-harvest-men/image/story_key_art/the-harvest-men-story-key-art-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/story_key_art/the-harvest-men-story-key-art-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:39:01.953Z",
+  "checksum": "311a09389c18c2d6587ed314c40596e1978cf3a3",
+  "file_size": 869065,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/image/story_key_art/the-harvest-men-story-key-art-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#354b3e",
-    "accentColor": "#3f4835"
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:33.211Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

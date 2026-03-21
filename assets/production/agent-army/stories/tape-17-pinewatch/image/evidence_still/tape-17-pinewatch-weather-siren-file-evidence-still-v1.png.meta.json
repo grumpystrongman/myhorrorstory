@@ -1,39 +1,23 @@
 {
-  "id": "tape-17-pinewatch-weather-siren-file-evidence-still",
-  "title": "Tape 17: Pinewatch - Evidence Still - Weather siren file",
+  "story_id": "tape-17-pinewatch",
+  "asset_id": "tape-17-pinewatch-weather-siren-file-evidence-still",
+  "asset_type": "evidence_still",
   "modality": "image",
-  "category": "evidence_still",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Weather siren file\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Weather siren file. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Weather siren file\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-weather-siren-file-evidence-still-v1.png",
+  "public_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-weather-siren-file-evidence-still-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-weather-siren-file-evidence-still-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-weather-siren-file-evidence-still-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:38:21.272Z",
+  "checksum": "0130d92656e1e1414c4d63a93d5c5eb46f2b2d68",
+  "file_size": 1017441,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-weather-siren-file-evidence-still-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#5b7048",
-    "accentColor": "#5e6791"
-  },
-  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Weather siren file\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:05.239Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

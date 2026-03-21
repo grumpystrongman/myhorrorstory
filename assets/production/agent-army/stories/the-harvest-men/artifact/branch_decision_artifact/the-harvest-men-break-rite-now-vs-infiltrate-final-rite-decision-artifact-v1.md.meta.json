@@ -1,28 +1,19 @@
 {
-  "id": "the-harvest-men-break-rite-now-vs-infiltrate-final-rite-decision-artifact",
-  "title": "The Harvest Men - Branch Artifact - Break rite now vs infiltrate final rite",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-break-rite-now-vs-infiltrate-final-rite-decision-artifact",
+  "asset_type": "branch_decision_artifact",
   "modality": "artifact",
-  "category": "branch_decision_artifact",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Create in-world branching evidence note for \"Break rite now vs infiltrate final rite\" showing consequences of each path without explicit spoilers.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\artifact\\branch_decision_artifact\\the-harvest-men-break-rite-now-vs-infiltrate-final-rite-decision-artifact-v1.md",
+  "public_path": "/agent-army/stories/the-harvest-men/artifact/branch_decision_artifact/the-harvest-men-break-rite-now-vs-infiltrate-final-rite-decision-artifact-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.817Z",
+  "checksum": "8333129ecc01ee25a56bd41b3daa6004490f962a",
+  "file_size": 1226,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/artifact/branch_decision_artifact/the-harvest-men-break-rite-now-vs-infiltrate-final-rite-decision-artifact-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Create in-world branching evidence note for \"Break rite now vs infiltrate final rite\" showing consequences of each path without explicit spoilers.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:50.653Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

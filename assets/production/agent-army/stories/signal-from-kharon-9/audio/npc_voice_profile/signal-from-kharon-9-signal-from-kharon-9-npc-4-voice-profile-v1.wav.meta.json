@@ -1,40 +1,20 @@
 {
-  "id": "signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile",
-  "title": "Signal From Kharon-9 - Telemetry Broker Vale-9 Voice Profile",
+  "story_id": "signal-from-kharon-9",
+  "asset_id": "signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile",
+  "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "category": "npc_voice_profile",
-  "scope": "story",
+  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Telemetry Broker Vale-9. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
+  "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:13:01.494Z",
+  "checksum": "18d56e7558f2d2d49f9effdd11e7dcd3192578c3",
+  "file_size": 2111226,
+  "duration_seconds": 21.99,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
-  "specs": {
-    "durationSeconds": 20,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 1
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 236,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Telemetry Broker Vale-9. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:20.565Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

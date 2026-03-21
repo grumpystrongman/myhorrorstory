@@ -1,39 +1,26 @@
 {
-  "id": "dead-channel-protocol-social-launch-square",
-  "title": "Dead Channel Protocol Social Launch Square",
+  "story_id": "dead-channel-protocol",
+  "asset_id": "dead-channel-protocol-social-launch-square",
+  "asset_type": "social_square",
   "modality": "image",
-  "category": "social_square",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1024",
+    "quality": "medium"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\social_square\\dead-channel-protocol-social-launch-square-v1.png",
+  "public_path": "/agent-army/stories/dead-channel-protocol/image/social_square/dead-channel-protocol-social-launch-square-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\social_square\\dead-channel-protocol-social-launch-square-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/social_square/dead-channel-protocol-social-launch-square-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:08:51.259Z",
+  "checksum": "4df45a662a3a6390b0f2a5dbc8be30cb8d5ba71e",
+  "file_size": 1695942,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/social_square/dead-channel-protocol-social-launch-square-v1.png",
-  "specs": {
-    "width": 1080,
-    "height": 1080,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1080,
-    "height": 1080,
-    "baseColor": "#7e793c",
-    "accentColor": "#559a53"
-  },
-  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:16.766Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

@@ -1,27 +1,19 @@
 {
-  "id": "the-harvest-men-scientific-analysis-vs-witness-protection-opening-decision-ui",
-  "title": "The Harvest Men - Branch UI - Scientific analysis vs witness protection opening",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-scientific-analysis-vs-witness-protection-opening-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build interactive branch decision page for \"Scientific analysis vs witness protection opening\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\web\\branch_decision_ui\\the-harvest-men-scientific-analysis-vs-witness-protection-opening-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/the-harvest-men/web/branch_decision_ui/the-harvest-men-scientific-analysis-vs-witness-protection-opening-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.613Z",
+  "checksum": "0450bae73d2c8901d1d237877e11d144cc4d6cdc",
+  "file_size": 1431,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/web/branch_decision_ui/the-harvest-men-scientific-analysis-vs-witness-protection-opening-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build interactive branch decision page for \"Scientific analysis vs witness protection opening\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:50.630Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

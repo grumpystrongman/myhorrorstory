@@ -1,40 +1,20 @@
 {
-  "id": "black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-ambience",
-  "title": "Black Chapel Ledger - Interference and Doubt Arc Ambience",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-ambience",
+  "asset_type": "arc_ambience",
   "modality": "audio",
-  "category": "arc_ambience",
-  "scope": "story",
+  "prompt_used": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\audio\\arc_ambience\\black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-ambience-v1.wav",
+  "public_path": "/agent-army/stories/black-chapel-ledger/audio/arc_ambience/black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-ambience-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:12:00.034Z",
+  "checksum": "d40b1f2395632e8ddc427676570e735e83e92f17",
+  "file_size": 15698858,
+  "duration_seconds": 81.76,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/audio/arc_ambience/black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-ambience-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 346,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:14.601Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

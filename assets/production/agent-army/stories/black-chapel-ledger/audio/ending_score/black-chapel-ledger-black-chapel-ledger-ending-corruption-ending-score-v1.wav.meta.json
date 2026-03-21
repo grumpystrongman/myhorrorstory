@@ -1,40 +1,20 @@
 {
-  "id": "black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-score",
-  "title": "Black Chapel Ledger - Corruption Pact Ending Score",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-score",
+  "asset_type": "ending_score",
   "modality": "audio",
-  "category": "ending_score",
-  "scope": "story",
+  "prompt_used": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept selective erasures and become keeper of the ledger.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\audio\\ending_score\\black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-score-v1.wav",
+  "public_path": "/agent-army/stories/black-chapel-ledger/audio/ending_score/black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-score-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:12:06.919Z",
+  "checksum": "ce044f9354742ecad76f152cb76fdd2a97a51fd3",
+  "file_size": 15699254,
+  "duration_seconds": 81.77,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/audio/ending_score/black-chapel-ledger-black-chapel-ledger-ending-corruption-ending-score-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 175,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept selective erasures and become keeper of the ledger.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:31.356Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

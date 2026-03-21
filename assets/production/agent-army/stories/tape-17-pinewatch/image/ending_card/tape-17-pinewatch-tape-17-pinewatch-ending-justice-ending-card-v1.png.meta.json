@@ -1,39 +1,23 @@
 {
-  "id": "tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card",
-  "title": "Tape 17: Pinewatch - Clean Resolution Ending Card",
+  "story_id": "tape-17-pinewatch",
+  "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card",
+  "asset_type": "ending_card",
   "modality": "image",
-  "category": "ending_card",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You preserve the authentic footage chain and rescue the final survivor.. Deliver emotional closure with sequel-hook tension.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You preserve the authentic footage chain and rescue the final survivor.. Deliver emotional closure with sequel-hook tension.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.png",
+  "public_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:38:27.603Z",
+  "checksum": "b5bbf79704c2cbe08cca77921ed3d985023be894",
+  "file_size": 984789,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#897c83",
-    "accentColor": "#9b4a39"
-  },
-  "prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You preserve the authentic footage chain and rescue the final survivor.. Deliver emotional closure with sequel-hook tension.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:06.519Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

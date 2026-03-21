@@ -1,39 +1,26 @@
 {
-  "id": "midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art",
-  "title": "Midnight Lockbox - Leak and Fracture Arc Key Art",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art",
+  "asset_type": "arc_key_art",
   "modality": "image",
-  "category": "arc_key_art",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Midnight Lockbox. Premise: A self-storage unit with no renter sends voice memos predicting what your team will do next.. Setting: Gallowglass 24-hour storage facility and storm-drain service tunnels. Threat presence: The Quartermaster. Recurring motifs: unit tags, bolt cutters, time-lock stickers. Arc focus: Leak and Fracture (MIDDLE). Summary: Daylight leaks force trust decisions under public pressure.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: supernatural mystery. Tone: GROUNDED. Arc focus: Leak and Fracture (MIDDLE). Summary: Daylight leaks force trust decisions under public pressure.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Midnight Lockbox - Leak and Fracture Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Arc focus: Leak and Fracture (MIDDLE). Summary: Daylight leaks force trust decisions under public pressure.. Create cinematic key art with readable clue anchors and escalating threat language.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\arc_key_art\\midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art-v1.png",
+  "public_path": "/agent-army/stories/midnight-lockbox/image/arc_key_art/midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\arc_key_art\\midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/image/arc_key_art/midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:09:42.813Z",
+  "checksum": "238335c98f5b26152aeab7bb3d51431ec999c2e6",
+  "file_size": 3031859,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/image/arc_key_art/midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#897e71",
-    "accentColor": "#5b5495"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Arc focus: Leak and Fracture (MIDDLE). Summary: Daylight leaks force trust decisions under public pressure.. Create cinematic key art with readable clue anchors and escalating threat language.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:19.296Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

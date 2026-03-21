@@ -1,27 +1,19 @@
 {
-  "id": "ward-1908-archive-first-vs-nurse-first-opening-decision-ui",
-  "title": "Ward 1908 - Branch UI - Archive-first vs nurse-first opening",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-archive-first-vs-nurse-first-opening-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build interactive branch decision page for \"Archive-first vs nurse-first opening\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\web\\branch_decision_ui\\ward-1908-archive-first-vs-nurse-first-opening-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/ward-1908/web/branch_decision_ui/ward-1908-archive-first-vs-nurse-first-opening-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.629Z",
+  "checksum": "3d0bed9551f12c23f4f604b771965cf88daf1d4d",
+  "file_size": 1398,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/web/branch_decision_ui/ward-1908-archive-first-vs-nurse-first-opening-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build interactive branch decision page for \"Archive-first vs nurse-first opening\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:33:10.362Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

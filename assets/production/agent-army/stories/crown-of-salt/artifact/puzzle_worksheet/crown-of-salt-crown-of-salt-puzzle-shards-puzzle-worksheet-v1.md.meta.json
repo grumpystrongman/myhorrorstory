@@ -1,28 +1,19 @@
 {
-  "id": "crown-of-salt-crown-of-salt-puzzle-shards-puzzle-worksheet",
-  "title": "Crown of Salt - Manifest Matrix Puzzle Worksheet",
+  "story_id": "crown-of-salt",
+  "asset_id": "crown-of-salt-crown-of-salt-puzzle-shards-puzzle-worksheet",
+  "asset_type": "puzzle_worksheet",
   "modality": "artifact",
-  "category": "puzzle_worksheet",
-  "scope": "story",
+  "prompt_used": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Create puzzle worksheet for \"Manifest Matrix\" with clear player instructions, shard mapping, and anti-spoiler hint progression.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\artifact\\puzzle_worksheet\\crown-of-salt-crown-of-salt-puzzle-shards-puzzle-worksheet-v1.md",
+  "public_path": "/agent-army/stories/crown-of-salt/artifact/puzzle_worksheet/crown-of-salt-crown-of-salt-puzzle-shards-puzzle-worksheet-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.341Z",
+  "checksum": "c4bd28a2e257d7743cd8699ba1270635939e796f",
+  "file_size": 1149,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/artifact/puzzle_worksheet/crown-of-salt-crown-of-salt-puzzle-shards-puzzle-worksheet-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Create puzzle worksheet for \"Manifest Matrix\" with clear player instructions, shard mapping, and anti-spoiler hint progression.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:49.399Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

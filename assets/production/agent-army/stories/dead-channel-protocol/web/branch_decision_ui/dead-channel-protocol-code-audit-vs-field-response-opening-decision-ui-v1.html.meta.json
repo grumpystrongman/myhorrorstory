@@ -1,27 +1,19 @@
 {
-  "id": "dead-channel-protocol-code-audit-vs-field-response-opening-decision-ui",
-  "title": "Dead Channel Protocol - Branch UI - Code audit vs field response opening",
+  "story_id": "dead-channel-protocol",
+  "asset_id": "dead-channel-protocol-code-audit-vs-field-response-opening-decision-ui",
+  "asset_type": "branch_decision_ui",
   "modality": "web",
-  "category": "branch_decision_ui",
-  "scope": "story",
+  "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build interactive branch decision page for \"Code audit vs field response opening\" with tension-forward copy, clear options, and high-readability input controls.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\web\\branch_decision_ui\\dead-channel-protocol-code-audit-vs-field-response-opening-decision-ui-v1.html",
+  "public_path": "/agent-army/stories/dead-channel-protocol/web/branch_decision_ui/dead-channel-protocol-code-audit-vs-field-response-opening-decision-ui-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.500Z",
+  "checksum": "14ac6c35953878a8b87884f65027d2257be064ec",
+  "file_size": 1418,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/web/branch_decision_ui/dead-channel-protocol-code-audit-vs-field-response-opening-decision-ui-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build interactive branch decision page for \"Code audit vs field response opening\" with tension-forward copy, clear options, and high-readability input controls.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:16.192Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

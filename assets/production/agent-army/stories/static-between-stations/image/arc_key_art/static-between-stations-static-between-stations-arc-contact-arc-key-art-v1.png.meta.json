@@ -1,39 +1,23 @@
 {
-  "id": "static-between-stations-static-between-stations-arc-contact-arc-key-art",
-  "title": "Static Between Stations - Contact and Contradiction Arc Key Art",
+  "story_id": "static-between-stations",
+  "asset_id": "static-between-stations-static-between-stations-arc-contact-arc-key-art",
+  "asset_type": "arc_key_art",
   "modality": "image",
-  "category": "arc_key_art",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: psychological horror. Tone: CINEMATIC. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Static Between Stations - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.",
+  "tool_used": "local-playwright-art-director",
+  "provider_attempted": [],
+  "provider_error": "local renderer selected",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
+  "public_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:37:34.625Z",
+  "checksum": "b1b7acc7ace8000212bf2ec93c1d3761be4a25a4",
+  "file_size": 984454,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
-  "specs": {
-    "width": 1600,
-    "height": 900,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 1280,
-    "height": 720,
-    "baseColor": "#65372f",
-    "accentColor": "#615693"
-  },
-  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:29.157Z"
+  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "extension": ".png"
 }

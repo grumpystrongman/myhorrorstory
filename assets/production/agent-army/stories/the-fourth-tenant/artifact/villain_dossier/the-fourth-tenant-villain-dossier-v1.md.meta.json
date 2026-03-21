@@ -1,28 +1,19 @@
 {
-  "id": "the-fourth-tenant-villain-dossier",
-  "title": "The Fourth Tenant - Villain Dossier",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-villain-dossier",
+  "asset_type": "villain_dossier",
   "modality": "artifact",
-  "category": "villain_dossier",
-  "scope": "story",
+  "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build antagonist dossier covering motive, manipulation tactics (private memory references, ally impersonation, safe-choice traps), risk tolerance 0.59, and predicted pressure pathways.",
+  "tool_used": "local-markdown-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\artifact\\villain_dossier\\the-fourth-tenant-villain-dossier-v1.md",
+  "public_path": "/agent-army/stories/the-fourth-tenant/artifact/villain_dossier/the-fourth-tenant-villain-dossier-v1.md",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:14:55.724Z",
+  "checksum": "27b51b84f4071ba4f77a74281685112bee198825",
+  "file_size": 1178,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/artifact/villain_dossier/the-fourth-tenant-villain-dossier-v1.md",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "markdown-template"
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build antagonist dossier covering motive, manipulation tactics (private memory references, ally impersonation, safe-choice traps), risk tolerance 0.59, and predicted pressure pathways.",
-  "negativePrompt": "Avoid out-of-world slang, avoid anachronistic technology references, avoid contradictory chronology.",
-  "providerChain": [
-    "gpt-4.1",
-    "claude",
-    "manual-editorial"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:26.106Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:14:55.200Z"
 }

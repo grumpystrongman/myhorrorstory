@@ -1,39 +1,26 @@
 {
-  "id": "crown-of-salt-villain-portrait",
-  "title": "Crown of Salt - Villain Portrait",
+  "story_id": "crown-of-salt",
+  "asset_id": "crown-of-salt-villain-portrait",
+  "asset_type": "villain_portrait",
   "modality": "image",
-  "category": "villain_portrait",
-  "scope": "story",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Crown of Salt. Premise: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.. Setting: Port authority archives and salt catacombs. Threat presence: The Salt Regent. Recurring motifs: salt crowns, wet ledgers, cargo seals. Design portrait of antagonist The Salt Regent with archetype SEDUCTIVE_CORRUPTER, speech style \"Elegant, flattering, and predatory.\", and motifs salt crowns, wet ledgers, cargo seals.. Subgenre: occult conspiracy. Tone: CINEMATIC. Immediate scene brief: Crown of Salt - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+  "source_prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Design portrait of antagonist The Salt Regent with archetype SEDUCTIVE_CORRUPTER, speech style \"Elegant, flattering, and predatory.\", and motifs salt crowns, wet ledgers, cargo seals.",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "high"
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\villain_portrait\\crown-of-salt-villain-portrait-v1.png",
+  "public_path": "/agent-army/stories/crown-of-salt/image/villain_portrait/crown-of-salt-villain-portrait-v1.png",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\villain_portrait\\crown-of-salt-villain-portrait-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/crown-of-salt/image/villain_portrait/crown-of-salt-villain-portrait-v1.thumb.jpg",
+  "created_at": "2026-03-21T17:00:46.693Z",
+  "checksum": "e51bba2b79bd3da3c6177fca26d9396074c73f17",
+  "file_size": 2965710,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/image/villain_portrait/crown-of-salt-villain-portrait-v1.png",
-  "specs": {
-    "width": 1024,
-    "height": 1365,
-    "format": "png"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 960,
-    "height": 1280,
-    "baseColor": "#99673a",
-    "accentColor": "#61937f"
-  },
-  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Design portrait of antagonist The Salt Regent with archetype SEDUCTIVE_CORRUPTER, speech style \"Elegant, flattering, and predatory.\", and motifs salt crowns, wet ledgers, cargo seals.",
-  "negativePrompt": "No logos, no unreadable text overlays, no cartoon style, no low-resolution blur, no gore excess, no meme aesthetics.",
-  "providerChain": [
-    "openai-images",
-    "stability",
-    "ideogram",
-    "manual-art-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:48.150Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "extension": ".png"
 }

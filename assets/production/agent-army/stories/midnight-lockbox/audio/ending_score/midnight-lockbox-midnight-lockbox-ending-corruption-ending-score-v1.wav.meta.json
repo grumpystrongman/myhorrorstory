@@ -1,40 +1,20 @@
 {
-  "id": "midnight-lockbox-midnight-lockbox-ending-corruption-ending-score",
-  "title": "Midnight Lockbox - Quartermaster Pact Ending Score",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-midnight-lockbox-ending-corruption-ending-score",
+  "asset_type": "ending_score",
   "modality": "audio",
-  "category": "ending_score",
-  "scope": "story",
+  "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Quartermaster Pact\" that supports summary \"You trade transparency for operational control over future lockboxes.\" and epilogue \"You receive master access and the next target list at dawn.\".",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\ending_score\\midnight-lockbox-midnight-lockbox-ending-corruption-ending-score-v1.wav",
+  "public_path": "/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-corruption-ending-score-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:12:42.239Z",
+  "checksum": "824b3d19dea044a5cd735fc83f636158b59c3b67",
+  "file_size": 15701526,
+  "duration_seconds": 81.78,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-corruption-ending-score-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 159,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Quartermaster Pact\" that supports summary \"You trade transparency for operational control over future lockboxes.\" and epilogue \"You receive master access and the next target list at dawn.\".",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:36.635Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }

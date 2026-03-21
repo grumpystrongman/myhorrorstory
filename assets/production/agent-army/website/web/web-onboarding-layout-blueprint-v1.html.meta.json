@@ -1,27 +1,19 @@
 {
-  "id": "web-onboarding-layout-blueprint",
-  "title": "Onboarding Layout Blueprint",
+  "story_id": "website",
+  "asset_id": "web-onboarding-layout-blueprint",
+  "asset_type": "surface_layout_blueprint",
   "modality": "web",
-  "category": "surface_layout_blueprint",
-  "scope": "website",
+  "prompt_used": "Surface Onboarding (/onboarding) objective: Explain player role and set expectations with high trust.. Generate complete webpage blueprint including hero, supporting modules, CTA hierarchy, legal-safe copy placeholders, and responsive breakpoints for mobile/tablet/desktop.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\web\\web-onboarding-layout-blueprint-v1.html",
+  "public_path": "/agent-army/website/web/web-onboarding-layout-blueprint-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.444Z",
+  "checksum": "bcc1bc642187edf892b6041053e02a08516394a0",
+  "file_size": 1039,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/web/web-onboarding-layout-blueprint-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Surface Onboarding (/onboarding) objective: Explain player role and set expectations with high trust.. Generate complete webpage blueprint including hero, supporting modules, CTA hierarchy, legal-safe copy placeholders, and responsive breakpoints for mobile/tablet/desktop.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:06.116Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

@@ -1,27 +1,19 @@
 {
-  "id": "ward-1908-story-overview-page",
-  "title": "Ward 1908 Story Overview Page",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-story-overview-page",
+  "asset_type": "story_overview_page",
   "modality": "web",
-  "category": "story_overview_page",
-  "scope": "story",
+  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
+  "tool_used": "local-html-generator",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\web\\story_overview_page\\ward-1908-story-overview-page-v1.html",
+  "public_path": "/agent-army/stories/ward-1908/web/story_overview_page/ward-1908-story-overview-page-v1.html",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:15:49.640Z",
+  "checksum": "1d68c1160934d2473574b0507fdd3b5105d787f9",
+  "file_size": 1301,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/web/story_overview_page/ward-1908-story-overview-page-v1.html",
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "html-template"
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Design complete story overview webpage covering premise, cast cards, clue teaser, safety notes, and strong CTA to start case.",
-  "negativePrompt": "Avoid placeholder copy, avoid generic boilerplate UI, avoid inaccessible low-contrast controls, avoid inconsistent style language.",
-  "providerChain": [
-    "gpt-4.1",
-    "manual-design-review"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:33:11.718Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:15:49.415Z"
 }

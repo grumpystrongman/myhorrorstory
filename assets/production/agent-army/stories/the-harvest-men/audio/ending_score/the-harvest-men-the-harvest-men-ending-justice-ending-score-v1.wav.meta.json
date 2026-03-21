@@ -1,40 +1,20 @@
 {
-  "id": "the-harvest-men-the-harvest-men-ending-justice-ending-score",
-  "title": "The Harvest Men - Clean Resolution Ending Score",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-the-harvest-men-ending-justice-ending-score",
+  "asset_type": "ending_score",
   "modality": "audio",
-  "category": "ending_score",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose ending score cue for \"Clean Resolution\" that supports summary \"You dismantle the selection machine and evacuate vulnerable targets alive.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
+  "tool_used": "ffmpeg-horror-synth",
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\ending_score\\the-harvest-men-the-harvest-men-ending-justice-ending-score-v1.wav",
+  "public_path": "/agent-army/stories/the-harvest-men/audio/ending_score/the-harvest-men-the-harvest-men-ending-justice-ending-score-v1.wav",
+  "thumbnail_path": null,
+  "public_thumbnail_path": null,
+  "created_at": "2026-03-21T16:13:48.295Z",
+  "checksum": "a9ddb59ba01deef2b89aa2edc832180f58b66ec2",
+  "file_size": 15699150,
+  "duration_seconds": 81.77,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/audio/ending_score/the-harvest-men-the-harvest-men-ending-justice-ending-score-v1.wav",
-  "specs": {
-    "durationSeconds": 75,
-    "format": "wav",
-    "sampleRateHz": 48000,
-    "channels": 2
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-sine-noise",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "frequencyHz": 257,
-    "durationSeconds": 8,
-    "sampleRateHz": 48000
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose ending score cue for \"Clean Resolution\" that supports summary \"You dismantle the selection machine and evacuate vulnerable targets alive.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-  "negativePrompt": "Avoid clipping, avoid muddy low-end, avoid unintelligible dialogue, avoid abrupt loudness spikes, avoid copyrighted melodic references.",
-  "providerChain": [
-    "piper",
-    "elevenlabs",
-    "openai-tts",
-    "polly",
-    "manual-audio-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:46.717Z"
+  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
 }
