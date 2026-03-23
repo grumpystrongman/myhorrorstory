@@ -1,9 +1,10 @@
 import { createHash } from 'node:crypto';
 import { spawn } from 'node:child_process';
-import { access, copyFile, mkdir, readFile, rename, stat, unlink, writeFile } from 'node:fs/promises';
-import { constants } from 'node:fs';
+import { access, copyFile, mkdir, readFile, readdir, rename, stat, unlink, writeFile } from 'node:fs/promises';
+import { constants, readFileSync } from 'node:fs';
 import { dirname, extname, join, relative } from 'node:path';
 import ffmpegStatic from 'ffmpeg-static';
+import { scanImageForTextArtifacts } from './agent-army-image-qa.mjs';
 
 export const repoRoot = process.cwd();
 export const publicRoot = join(repoRoot, 'apps', 'web', 'public');
@@ -13,7 +14,27 @@ export const planPath = join(repoRoot, 'assets', 'manifests', 'commercial-agent-
 export const statusLedgerPath = join(publicAgentArmyRoot, 'status', 'generation-status.json');
 export const catalogPath = join(publicAgentArmyRoot, 'catalog.json');
 export const storyManifestRoot = join(publicAgentArmyRoot, 'manifests');
+const storyDocsRoot = join(repoRoot, 'docs', 'stories');
+const argContentRoot = join(repoRoot, 'apps', 'web', 'public', 'content', 'arg');
+const voiceDramaManifestPath = join(repoRoot, 'assets', 'manifests', 'voice-drama-manifest.json');
 export const imageBackends = ['openai-gpt-image-1', 'pollinations-free', 'local-playwright-art-director'];
+const LOCAL_FALLBACK_TOOL = 'local-playwright-art-director';
+const DEGRADED_FALLBACK_ERROR =
+  'degraded local fallback excluded from commercial gallery; rerun with a remote image backend';
+const VIDEO_TOOL = 'ffmpeg-cinematic-montage';
+const AUDIO_TOOL = 'ffmpeg-cinematic-horror-score';
+const VOICE_TOOL = 'openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab';
+
+const OPENAI_TTS_VOICE_POOL = ['alloy', 'ash', 'coral', 'echo', 'fable', 'nova', 'onyx', 'sage', 'shimmer'];
+const OPENAI_ROLE_VOICE_POOL = {
+  antagonist: ['onyx', 'fable', 'ash', 'sage', 'echo'],
+  witness: ['nova', 'coral', 'alloy', 'shimmer', 'echo'],
+  operator: ['sage', 'alloy', 'ash', 'shimmer', 'coral'],
+  investigator: ['echo', 'alloy', 'nova', 'sage', 'ash'],
+  narrator: ['alloy', 'sage', 'fable', 'echo', 'nova']
+};
+const VIDEO_DURATION_MIN_SECONDS = 5;
+const VIDEO_DURATION_MAX_SECONDS = 59;
 
 const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 const AUDIO_EXTENSIONS = new Set(['.wav', '.mp3', '.ogg', '.m4a']);
@@ -27,6 +48,52 @@ const MIN_SIZE_BY_MODALITY = {
 };
 
 let ffmpegBinary = process.env.FFMPEG_BIN ?? ffmpegStatic;
+let planAssetsPromise = null;
+const storyPackageCache = new Map();
+const npcProfileCache = new Map();
+let voiceDramaManifestPromise = null;
+
+function loadEnvLineIntoProcess(line) {
+  const trimmed = String(line).trim();
+  if (!trimmed || trimmed.startsWith('#')) {
+    return;
+  }
+
+  const separatorIndex = trimmed.indexOf('=');
+  if (separatorIndex <= 0) {
+    return;
+  }
+
+  const key = trimmed.slice(0, separatorIndex).trim();
+  if (!key || (process.env[key] ?? '').trim().length > 0) {
+    return;
+  }
+
+  let value = trimmed.slice(separatorIndex + 1).trim();
+  if (
+    (value.startsWith('"') && value.endsWith('"')) ||
+    (value.startsWith("'") && value.endsWith("'"))
+  ) {
+    value = value.slice(1, -1);
+  }
+
+  process.env[key] = value;
+}
+
+function loadRepoEnvFiles() {
+  for (const candidate of [join(repoRoot, '.env.local'), join(repoRoot, '.env')]) {
+    try {
+      const raw = readFileSync(candidate, 'utf8');
+      for (const line of raw.split(/\r?\n/g)) {
+        loadEnvLineIntoProcess(line);
+      }
+    } catch {
+      // Ignore absent or unreadable env files; scripts can still rely on inherited env vars.
+    }
+  }
+}
+
+loadRepoEnvFiles();
 
 function sha1Hex(value) {
   return createHash('sha1').update(value).digest('hex');
@@ -53,6 +120,62 @@ async function fileExists(path) {
 
 async function ensureDir(path) {
   await mkdir(path, { recursive: true });
+}
+
+async function readJsonIfExists(path) {
+  try {
+    return JSON.parse(await readFile(path, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+async function getPlanAssetsCached() {
+  if (!planAssetsPromise) {
+    planAssetsPromise = readFile(planPath, 'utf8').then((raw) => {
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed.assets) ? parsed.assets : [];
+    });
+  }
+
+  return planAssetsPromise;
+}
+
+async function loadStoryPackage(storyId) {
+  if (!storyId) {
+    return null;
+  }
+
+  if (!storyPackageCache.has(storyId)) {
+    storyPackageCache.set(storyId, readJsonIfExists(join(storyDocsRoot, `${storyId}.story.json`)));
+  }
+
+  return storyPackageCache.get(storyId);
+}
+
+async function loadNpcProfiles(storyId) {
+  if (!storyId) {
+    return [];
+  }
+
+  if (!npcProfileCache.has(storyId)) {
+    npcProfileCache.set(
+      storyId,
+      readJsonIfExists(join(argContentRoot, storyId, 'npc_profiles.json')).then((value) =>
+        Array.isArray(value) ? value : []
+      )
+    );
+  }
+
+  return npcProfileCache.get(storyId);
+}
+
+async function loadVoiceDramaManifest() {
+  if (!voiceDramaManifestPromise) {
+    voiceDramaManifestPromise = readJsonIfExists(voiceDramaManifestPath);
+  }
+
+  return voiceDramaManifestPromise;
 }
 
 function hashString(value) {
@@ -214,7 +337,7 @@ function buildHighFidelityImagePrompt(asset) {
     arcFocus ? `Arc focus: ${arcFocus}.` : null,
     narrative ? `Immediate scene brief: ${narrative}.` : null,
     'Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth.',
-    'No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text.'
+    'Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text.'
   ]
     .filter(Boolean)
     .join(' ');
@@ -228,11 +351,27 @@ function buildHighFidelityImagePrompt(asset) {
   }
 
   if (category === 'evidence_still') {
-    return `${sharedDirectives} Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.`;
+    const evidenceDirectives = [
+      'Create original premium horror artwork for a commercial alternate reality investigation game.',
+      `Subject: ${assetType}.`,
+      `Story world: ${storyTitle}.`,
+      location ? `Setting: ${location}.` : null,
+      motifs ? `Recurring motifs: ${motifs}.` : null,
+      subgenre ? `Subgenre: ${subgenre.replace(/slasher/gi, 'winter mystery')}.` : null,
+      tone ? `Tone: ${tone}.` : null,
+      narrative ? `Immediate scene brief: ${narrative}.` : null,
+      'Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath.',
+      'No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment.',
+      'Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth.',
+      'Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text.'
+    ]
+      .filter(Boolean)
+      .join(' ');
+    return `${evidenceDirectives} Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.`;
   }
 
   if (category === 'puzzle_board' || category === 'puzzle_shard_card') {
-    return `${sharedDirectives} Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.`;
+    return `${sharedDirectives} Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.`;
   }
 
   if (category === 'background_texture' || category === 'page_banner') {
@@ -260,6 +399,336 @@ function normalizeImageBackendChoice(value) {
     return 'openai';
   }
   return value;
+}
+
+function slugify(value) {
+  return String(value ?? '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function imageTextQaEnabled() {
+  return String(process.env.AGENT_ARMY_DISABLE_OCR_QA ?? '')
+    .trim()
+    .toLowerCase() !== 'true';
+}
+
+function shouldRunImageTextQa(asset) {
+  return asset.modality === 'image' && imageTextQaEnabled();
+}
+
+async function assertImageTextQa(asset, outputPath) {
+  if (!shouldRunImageTextQa(asset)) {
+    return null;
+  }
+
+  const scan = await scanImageForTextArtifacts(outputPath);
+  if (!scan.foundText) {
+    return scan;
+  }
+
+  const tokenPreview = scan.tokens
+    .slice(0, 6)
+    .map((token) => `${token.text} (${token.confidence.toFixed(0)})`)
+    .join(', ');
+  throw new Error(
+    `image text artifact detected; regenerate required${tokenPreview ? ` :: ${tokenPreview}` : ''}`
+  );
+}
+
+function normalizeRole(value) {
+  const normalized = String(value ?? '').trim().toLowerCase();
+  if (normalized.includes('antagonist') || normalized.includes('villain')) {
+    return 'antagonist';
+  }
+  if (normalized.includes('witness') || normalized.includes('suspect')) {
+    return 'witness';
+  }
+  if (normalized.includes('journalist') || normalized.includes('operator') || normalized.includes('handler')) {
+    return 'operator';
+  }
+  if (normalized.includes('detective') || normalized.includes('investigator') || normalized.includes('ally')) {
+    return 'investigator';
+  }
+  return 'narrator';
+}
+
+function guessSexFromDisplayName(displayName) {
+  const normalized = String(displayName ?? '').trim().toLowerCase();
+  const femaleMarkers = [
+    'elara',
+    'sera',
+    'veda',
+    'nia',
+    'mara',
+    'juno',
+    'priya',
+    'talia',
+    'sia',
+    'mina',
+    'nella',
+    'leda',
+    'maris',
+    'helene',
+    'amy',
+    'joanna',
+    'lin'
+  ];
+  const maleMarkers = [
+    'tomas',
+    'cal',
+    'bram',
+    'owen',
+    'eli',
+    'omar',
+    'micah',
+    'cade',
+    'ellis',
+    'hale',
+    'nico',
+    'evan',
+    'matthew',
+    'brian',
+    'felix',
+    'bram',
+    'dorian'
+  ];
+
+  if (femaleMarkers.some((marker) => normalized.includes(marker))) {
+    return 'female';
+  }
+  if (maleMarkers.some((marker) => normalized.includes(marker))) {
+    return 'male';
+  }
+  return 'unknown';
+}
+
+async function resolveVoiceProfileContext(storyId, displayName) {
+  const manifest = await loadVoiceDramaManifest();
+  const storyVoiceData = manifest?.stories?.find((story) => story.storyId === storyId) ?? null;
+  const voiceProfile =
+    storyVoiceData?.profiles?.find((profile) => profile.characterId === displayName) ?? null;
+  const npcProfiles = await loadNpcProfiles(storyId);
+  const npcProfile = npcProfiles.find((profile) => profile.displayName === displayName) ?? null;
+  const storyPackage = await loadStoryPackage(storyId);
+
+  return {
+    storyPackage,
+    npcProfile,
+    voiceProfile,
+    locale: voiceProfile?.locale ?? 'en-US',
+    region: voiceProfile?.region ?? 'global',
+    role:
+      normalizeRole(voiceProfile?.role ?? npcProfile?.role ?? (displayName === storyPackage?.villain?.displayName ? 'antagonist' : 'narrator')),
+    sex: guessSexFromDisplayName(displayName),
+    displayName
+  };
+}
+
+function uniqueItems(values) {
+  return Array.from(new Set(values.filter(Boolean)));
+}
+
+function findProviderConfig(profileContext, providerName) {
+  return (profileContext.voiceProfile?.providerChain ?? []).find(
+    (entry) => String(entry.provider ?? '').trim().toUpperCase() === providerName
+  );
+}
+
+function deterministicVoiceRanking(pool, seedKey) {
+  return [...pool]
+    .map((voiceId, index) => ({
+      voiceId,
+      rank: hashString(`${seedKey}:${voiceId}:${index}`)
+    }))
+    .sort((left, right) => left.rank - right.rank)
+    .map((entry) => entry.voiceId);
+}
+
+function pickOpenAiVoiceCandidates(profileContext, contextTag = 'profile') {
+  const providerVoice = String(findProviderConfig(profileContext, 'OPENAI')?.voiceId ?? '').trim().toLowerCase();
+  const rolePool = OPENAI_ROLE_VOICE_POOL[profileContext.role] ?? OPENAI_ROLE_VOICE_POOL.narrator;
+  const rankedRoleVoices = deterministicVoiceRanking(
+    rolePool,
+    `${profileContext.storyPackage?.id ?? profileContext.displayName}:${profileContext.displayName}:${contextTag}:role`
+  );
+  const rankedGlobalVoices = deterministicVoiceRanking(
+    OPENAI_TTS_VOICE_POOL,
+    `${profileContext.storyPackage?.id ?? profileContext.displayName}:${profileContext.displayName}:${contextTag}:global`
+  );
+
+  return uniqueItems([providerVoice, ...rankedRoleVoices, ...rankedGlobalVoices, ...OPENAI_TTS_VOICE_POOL]);
+}
+
+function inferEmotionAdjustments(profileContext) {
+  const baselineEmotion = String(profileContext.npcProfile?.baselineEmotion ?? '').toUpperCase();
+  const traits = Array.isArray(profileContext.npcProfile?.personalityTraits)
+    ? profileContext.npcProfile.personalityTraits.map((item) => String(item).toLowerCase())
+    : [];
+
+  let rateDelta = 0;
+  let pitchDelta = 0;
+  let grain = 0.35;
+
+  if (baselineEmotion.includes('ANXIOUS') || baselineEmotion.includes('PANIC')) {
+    rateDelta += 0.06;
+    pitchDelta += 0.4;
+    grain += 0.1;
+  } else if (baselineEmotion.includes('CALM')) {
+    rateDelta -= 0.03;
+    pitchDelta -= 0.15;
+  } else if (baselineEmotion.includes('DEFIANT')) {
+    rateDelta += 0.02;
+    pitchDelta -= 0.25;
+  } else if (baselineEmotion.includes('SUSPICIOUS')) {
+    rateDelta -= 0.01;
+    pitchDelta -= 0.2;
+    grain += 0.08;
+  }
+
+  if (traits.includes('guarded')) {
+    rateDelta -= 0.02;
+    pitchDelta -= 0.15;
+  }
+  if (traits.includes('reactive')) {
+    rateDelta += 0.04;
+  }
+  if (traits.includes('analytical')) {
+    rateDelta -= 0.01;
+  }
+  if (traits.includes('observant')) {
+    grain += 0.05;
+  }
+
+  return { rateDelta, pitchDelta, grain };
+}
+
+function buildVoiceDesign(profileContext, contextTag = 'profile') {
+  const storyId = profileContext.storyPackage?.id ?? 'global';
+  const seed = hashString(`${storyId}:${profileContext.displayName}:${profileContext.role}:${contextTag}`);
+  const expressionRate = Number(profileContext.voiceProfile?.expression?.rate ?? 1);
+  const expressionPitch = Number(profileContext.voiceProfile?.expression?.pitch ?? 0);
+  const expressionStyle = Number(profileContext.voiceProfile?.expression?.style ?? 0.5);
+  const roleRateDelta =
+    profileContext.role === 'antagonist'
+      ? -0.05
+      : profileContext.role === 'witness'
+        ? 0.04
+        : profileContext.role === 'operator'
+          ? -0.01
+          : 0;
+  const rolePitchDelta =
+    profileContext.role === 'antagonist'
+      ? -0.65
+      : profileContext.role === 'witness'
+        ? 0.35
+        : profileContext.role === 'operator'
+          ? -0.1
+          : 0;
+  const emotion = inferEmotionAdjustments(profileContext);
+  const microDrift = ((seed % 2000) / 1000 - 1) * 0.035;
+
+  const apiSpeed = clamp(expressionRate + roleRateDelta + emotion.rateDelta + microDrift, 0.84, 1.16);
+  const pitchSemitone = clamp(expressionPitch * 0.95 + rolePitchDelta + emotion.pitchDelta, -4.6, 4.2);
+
+  const baseHighpass =
+    profileContext.role === 'antagonist' ? 60 : profileContext.role === 'witness' ? 85 : 72;
+  const baseLowpass =
+    profileContext.role === 'antagonist' ? 5800 : profileContext.role === 'witness' ? 7600 : 7000;
+
+  return {
+    apiSpeed,
+    pitchSemitone,
+    textureAmount: clamp(emotion.grain + expressionStyle * 0.25, 0.25, 0.9),
+    highpassHz: clamp(baseHighpass + ((seed >>> 8) % 18), 52, 120),
+    lowpassHz: clamp(baseLowpass + ((seed >>> 12) % 460), 5200, 8200),
+    presenceGainDb: clamp((expressionStyle - 0.5) * 2.2 + (((seed >>> 4) % 12) - 6) * 0.08, -1.6, 2.4)
+  };
+}
+
+function buildAtempoChain(speedFactor) {
+  let remaining = Math.max(0.2, Number(speedFactor) || 1);
+  const nodes = [];
+  while (remaining > 2.0) {
+    nodes.push('atempo=2.0');
+    remaining /= 2.0;
+  }
+  while (remaining < 0.5) {
+    nodes.push('atempo=0.5');
+    remaining /= 0.5;
+  }
+  nodes.push(`atempo=${remaining.toFixed(4)}`);
+  return nodes.join(',');
+}
+
+function buildVoicePostProcessFilter(role, voiceDesign, sampleRate) {
+  const pitchFactor = Math.pow(2, Number(voiceDesign.pitchSemitone ?? 0) / 12);
+  const adjustedRate = Number(sampleRate) * pitchFactor;
+  const tempoCompensation = buildAtempoChain(1 / pitchFactor);
+  const texture = clamp(Number(voiceDesign.textureAmount ?? 0.42), 0.25, 0.9);
+  const roleEcho =
+    role === 'antagonist'
+      ? `aecho=0.82:0.42:${Math.round(42 + texture * 18)}:0.12`
+      : `aecho=0.72:0.36:${Math.round(26 + texture * 12)}:0.06`;
+
+  return [
+    `asetrate=${adjustedRate.toFixed(2)}`,
+    `aresample=${sampleRate}`,
+    tempoCompensation,
+    `highpass=f=${Math.round(Number(voiceDesign.highpassHz ?? 72))}`,
+    `lowpass=f=${Math.round(Number(voiceDesign.lowpassHz ?? 7000))}`,
+    'acompressor=threshold=-21dB:ratio=2.9:attack=14:release=180:makeup=3.5',
+    'dynaudnorm=f=140:g=9:m=14:s=8:p=0.9',
+    `equalizer=f=2950:t=q:w=1.0:g=${Number(voiceDesign.presenceGainDb ?? 0.8).toFixed(2)}`,
+    roleEcho,
+    'alimiter=limit=0.96'
+  ].join(',');
+}
+
+function buildVoicePreviewScript(asset, profileContext) {
+  const story = profileContext.storyPackage;
+  const hook = story?.hook ?? extractPromptSegment(asset.prompt, 'Hook') ?? 'Something is wrong with the case file.';
+  const location = story?.location ?? extractPromptSegment(asset.prompt, 'Location') ?? 'the scene';
+  const villain = story?.villain?.displayName ?? extractPromptSegment(asset.prompt, 'Villain') ?? 'the threat';
+  const motivations = Array.isArray(profileContext.npcProfile?.motivations)
+    ? profileContext.npcProfile.motivations.join(' ')
+    : extractPromptSegment(asset.prompt, 'Motivations') ?? '';
+  const clue = Array.isArray(story?.clueEvidenceList) ? story.clueEvidenceList[0] : 'the evidence drop';
+
+  if (profileContext.role === 'antagonist') {
+    return [
+      `You keep calling this an investigation, but ${hook.toLowerCase()}`,
+      `Stay with ${clue.toLowerCase()}, and decide how much of yourself you are willing to surrender before I reach you at ${location.toLowerCase()}.`,
+      `If you hesitate, I collect the debt anyway.`
+    ].join(' ');
+  }
+
+  if (profileContext.role === 'witness') {
+    return [
+      `This is ${profileContext.displayName}. I should not be leaving this message.`,
+      `Something about ${clue.toLowerCase()} is wrong, and ${villain} wants us to panic before anyone checks the chain of custody.`,
+      motivations ? `${motivations} Please move quietly when you come to ${location.toLowerCase()}.` : `Please move quietly when you come to ${location.toLowerCase()}.`
+    ].join(' ');
+  }
+
+  if (profileContext.role === 'operator') {
+    return [
+      `This is ${profileContext.displayName}. Keep your channel open and do not answer unknown callbacks.`,
+      `${hook} Start with ${clue.toLowerCase()}, then verify every timestamp against ${location.toLowerCase()}.`,
+      `If ${villain} contacts you directly, preserve the message before you react.`
+    ].join(' ');
+  }
+
+  return [
+    `This is ${profileContext.displayName}. ${hook}`,
+    `Work the case in order: secure ${clue.toLowerCase()}, confirm the scene at ${location.toLowerCase()}, and do not let ${villain} choose the pace.`,
+    motivations ? motivations : 'Trust the evidence before you trust the performance.'
+  ].join(' ');
+}
+
+function allowCommercialLocalFallback() {
+  return String(process.env.ALLOW_LOCAL_ARTWORK_FALLBACK ?? '').trim().toLowerCase() === 'true';
 }
 
 function renderArtDirectionHtml(asset, seed, width, height) {
@@ -1563,8 +2032,8 @@ async function normalizeDownloadedImage(tempInputPath, outputPath) {
 }
 
 async function generateImageWithOpenAI(asset, outputPath, seed, timeoutMs) {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
+  const apiKey = String(process.env.OPENAI_API_KEY ?? '').trim();
+  if (!apiKey || apiKey === 'sk_replace') {
     throw new Error('OPENAI_API_KEY is not configured');
   }
 
@@ -1775,12 +2244,24 @@ export async function validateFileForAsset(asset, outputPath) {
     }
     const probe = await probeWithFfmpeg(outputPath);
     const durationSeconds = durationToSeconds(probe.stderr);
+    const hasAudioTrack = /Audio:/i.test(probe.stderr);
     if (!probe.ok || !durationSeconds || durationSeconds <= 0) {
       throw new Error(`video validation failed: ${probe.stderr}`);
     }
+    if (durationSeconds <= 4 || durationSeconds >= 60) {
+      throw new Error(
+        `video duration out of production range (${durationSeconds.toFixed(
+          2
+        )}s). Expected >4s and <60s.`
+      );
+    }
+    if (!hasAudioTrack) {
+      throw new Error('video validation failed: missing audio track');
+    }
     return {
       fileSize: outputStat.size,
-      durationSeconds
+      durationSeconds,
+      hasAudioTrack
     };
   }
 
@@ -1798,9 +2279,7 @@ export async function validateFileForAsset(asset, outputPath) {
 }
 
 export async function loadPlanAssets() {
-  const raw = await readFile(planPath, 'utf8');
-  const plan = JSON.parse(raw);
-  return Array.isArray(plan.assets) ? plan.assets : [];
+  return getPlanAssetsCached();
 }
 
 export function filterPlanAssets(assets, filters) {
@@ -1827,18 +2306,629 @@ export function filterPlanAssets(assets, filters) {
   return selected.slice(start, limit ? start + limit : undefined);
 }
 
-function horrorAudioFilter(seed, durationSeconds) {
-  const low = 36 + (seed % 28);
-  const mid = 180 + (seed % 110);
-  const high = 900 + (seed % 900);
-  return [
-    `[0:a]volume=0.78,lowpass=f=220,highpass=f=18,aecho=0.8:0.88:120:0.18[n0]`,
-    `[1:a]volume=0.022,lowpass=f=120,highpass=f=22,atempo=0.92,aecho=0.8:0.92:260:0.22[s1]`,
-    `[2:a]volume=0.006,highpass=f=700,lowpass=f=2400,atrim=duration=${durationSeconds},aecho=0.7:0.85:80:0.16[s2]`,
-    `[3:a]volume=0.012,highpass=f=1400,lowpass=f=4200,atrim=duration=${durationSeconds},aecho=0.5:0.7:35:0.14[s3]`,
-    `[n0][s1][s2][s3]amix=inputs=4:weights=1 0.8 0.35 0.2,volume=0.92[outa]`,
-    { low, mid, high }
+function resolveAudioFlavor(asset, seed) {
+  const prompt = String(asset.prompt ?? '').toLowerCase();
+  const category = String(asset.category ?? '').toLowerCase();
+  const subgenre = String(extractPromptSegment(asset.prompt, 'Subgenre') ?? '').toLowerCase();
+  const tone = String(extractPromptSegment(asset.prompt, 'Tone') ?? '').toLowerCase();
+  const base = {
+    low: 38 + (seed % 19),
+    mid: 172 + (seed % 96),
+    high: 740 + (seed % 640),
+    shimmer: 2280 + (seed % 1800),
+    pulseHz: 1.05 + ((seed % 14) / 12),
+    whisperLow: 1700,
+    whisperHigh: 4200,
+    tension: 0.55,
+    wet: 0.22
+  };
+
+  if (subgenre.includes('gothic') || prompt.includes('cathedral') || prompt.includes('chapel')) {
+    return { ...base, low: 46, mid: 214, high: 702, shimmer: 1880, pulseHz: 0.72, wet: 0.28 };
+  }
+  if (subgenre.includes('folk') || prompt.includes('forest') || prompt.includes('harvest')) {
+    return { ...base, low: 42, mid: 192, high: 620, shimmer: 1760, pulseHz: 0.86, wet: 0.2 };
+  }
+  if (subgenre.includes('cosmic') || prompt.includes('signal') || prompt.includes('orbit')) {
+    return { ...base, low: 31, mid: 158, high: 1280, shimmer: 3420, pulseHz: 0.54, wet: 0.32 };
+  }
+  if (subgenre.includes('techno') || prompt.includes('grid') || prompt.includes('protocol')) {
+    return { ...base, low: 55, mid: 246, high: 1160, shimmer: 3100, pulseHz: 1.44, wet: 0.16 };
+  }
+  if (subgenre.includes('slasher') || prompt.includes('winter')) {
+    return { ...base, low: 48, mid: 206, high: 980, shimmer: 2560, pulseHz: 1.62, wet: 0.14 };
+  }
+  if (subgenre.includes('institution') || prompt.includes('hospital') || prompt.includes('ward')) {
+    return { ...base, low: 36, mid: 220, high: 860, shimmer: 2980, pulseHz: 0.94, wet: 0.24 };
+  }
+  if (tone.includes('intense')) {
+    return { ...base, pulseHz: 1.72, tension: 0.72, wet: 0.18 };
+  }
+  if (category.includes('ending')) {
+    return { ...base, mid: base.mid + 26, high: base.high + 120, pulseHz: Math.max(0.6, base.pulseHz - 0.18), wet: 0.28 };
+  }
+  return base;
+}
+
+function buildHorrorAudioRecipe(asset, seed, durationSeconds) {
+  const flavor = resolveAudioFlavor(asset, seed);
+  const channels = asset.specs?.channels === 1 ? 1 : 2;
+  const isVoice = String(asset.category ?? '').includes('voice');
+  const sources = [
+    `anoisesrc=color=brown:amplitude=0.26:duration=${durationSeconds}:sample_rate=48000`,
+    `anoisesrc=color=white:amplitude=0.08:duration=${durationSeconds}:sample_rate=48000`,
+    `sine=frequency=${flavor.low}:sample_rate=48000:duration=${durationSeconds}`,
+    `sine=frequency=${flavor.mid}:sample_rate=48000:duration=${durationSeconds}`,
+    `sine=frequency=${flavor.high}:sample_rate=48000:duration=${durationSeconds}`,
+    `sine=frequency=${flavor.shimmer}:sample_rate=48000:duration=${durationSeconds}`
   ];
+
+  const outputLabel = isVoice ? '[voiceout]' : '[outa]';
+  const filterComplex = [
+    `[0:a]volume=0.54,lowpass=f=240,highpass=f=18,aecho=0.8:0.92:${Math.round(300 + flavor.wet * 200)}:${(0.11 + flavor.wet).toFixed(2)}[bed]`,
+    `[1:a]volume=0.06,highpass=f=${flavor.whisperLow},lowpass=f=${flavor.whisperHigh},tremolo=f=${flavor.pulseHz.toFixed(2)}:d=0.72,aecho=0.6:0.8:90:0.12[whisper]`,
+    `[2:a]volume=0.04,lowpass=f=120,highpass=f=18,aecho=0.7:0.92:680:0.18[sub]`,
+    `[3:a]volume=0.018,highpass=f=160,lowpass=f=1300,vibrato=f=${(2.2 + flavor.tension * 2.2).toFixed(2)}:d=0.16,aecho=0.7:0.86:200:0.2[motif]`,
+    `[4:a]volume=0.013,highpass=f=820,lowpass=f=3300,tremolo=f=${(flavor.pulseHz * 1.35).toFixed(2)}:d=0.82,aecho=0.6:0.78:84:0.14[pulse]`,
+    `[5:a]volume=0.007,highpass=f=1700,lowpass=f=7000,vibrato=f=5.4:d=0.05,aecho=0.5:0.72:42:0.12[air]`,
+    `[bed][whisper][sub][motif][pulse][air]amix=inputs=6:weights=1 0.38 0.5 0.26 0.18 0.1,volume=0.96,alimiter=limit=0.92${channels === 1 ? ',pan=mono|c0=.5*c0+.5*c1' : ''}${outputLabel}`
+  ].join(';');
+
+  return {
+    sources,
+    filterComplex,
+    outputLabel,
+    flavor
+  };
+}
+
+async function loadGeneratedAssetsForStory(storyId, modality) {
+  const planAssets = await getPlanAssetsCached();
+  const matching = planAssets.filter((asset) => asset.storyId === storyId && asset.modality === modality);
+  const entries = [];
+
+  for (const asset of matching) {
+    const outputPath = outputPathForAsset(asset);
+    const metadataPath = `${outputPath}.meta.json`;
+    if (!(await fileExists(outputPath)) || !(await fileExists(metadataPath))) {
+      continue;
+    }
+
+    try {
+      const metadata = JSON.parse(await readFile(metadataPath, 'utf8'));
+      if (metadata.generatedProxy === true) {
+        continue;
+      }
+      if ((metadata.tool_used ?? metadata.toolUsed) === LOCAL_FALLBACK_TOOL) {
+        continue;
+      }
+      entries.push({ asset, outputPath, metadata });
+    } catch {
+      // Skip corrupt metadata and let the verifier report it elsewhere.
+    }
+  }
+
+  return entries;
+}
+
+function takeUniquePaths(entries, maximum) {
+  const seen = new Set();
+  const selected = [];
+
+  for (const entry of entries) {
+    if (!entry || seen.has(entry.outputPath)) {
+      continue;
+    }
+    seen.add(entry.outputPath);
+    selected.push(entry.outputPath);
+    if (selected.length >= maximum) {
+      break;
+    }
+  }
+
+  return selected;
+}
+
+async function pickVideoImageInputs(asset) {
+  const storyImages = await loadGeneratedAssetsForStory(asset.storyId, 'image');
+  const byId = new Map(storyImages.map((entry) => [entry.asset.id, entry]));
+  const category = String(asset.category ?? '').toLowerCase();
+
+  if (category === 'beat_transition_video') {
+    const sceneId = asset.id.replace(/beat-transition$/i, 'beat-scene');
+    return takeUniquePaths(
+      [
+        byId.get(sceneId),
+        storyImages.find((entry) => entry.asset.category === 'evidence_still'),
+        storyImages.find((entry) => entry.asset.category === 'story_key_art')
+      ],
+      3
+    );
+  }
+
+  if (category === 'arc_teaser_video') {
+    const arcSlugMatch = /-(arc-[a-z0-9-]+)-arc-teaser-video$/i.exec(asset.id);
+    const arcSlug = arcSlugMatch?.[1] ?? '';
+    return takeUniquePaths(
+      [
+        storyImages.find((entry) => entry.asset.category === 'arc_key_art' && entry.asset.id.includes(arcSlug)),
+        ...storyImages.filter((entry) => entry.asset.category === 'beat_scene_art').slice(0, 2),
+        storyImages.find((entry) => entry.asset.category === 'villain_portrait')
+      ],
+      4
+    );
+  }
+
+  if (category === 'ending_recap_video') {
+    const endingSlug = asset.id.replace(/-ending-recap-video$/i, '');
+    return takeUniquePaths(
+      [
+        storyImages.find((entry) => entry.asset.category === 'ending_card' && entry.asset.id.startsWith(endingSlug)),
+        storyImages.find((entry) => entry.asset.category === 'story_key_art'),
+        storyImages.find((entry) => entry.asset.category === 'villain_portrait'),
+        ...storyImages.filter((entry) => entry.asset.category === 'beat_scene_art').slice(-2)
+      ],
+      4
+    );
+  }
+
+  return takeUniquePaths(
+    [
+      storyImages.find((entry) => entry.asset.category === 'story_key_art'),
+      ...storyImages.filter((entry) => entry.asset.category === 'arc_key_art').slice(0, 2),
+      ...storyImages.filter((entry) => entry.asset.category === 'beat_scene_art').slice(0, 3),
+      storyImages.find((entry) => entry.asset.category === 'villain_portrait')
+    ],
+    6
+  );
+}
+
+async function pickStoryAmbientAudioPath(storyId, preferredAssetId = null) {
+  const storyAudio = await loadGeneratedAssetsForStory(storyId, 'audio');
+  if (preferredAssetId) {
+    const direct = storyAudio.find((entry) => entry.asset.id === preferredAssetId);
+    if (direct) {
+      return direct.outputPath;
+    }
+  }
+
+  return (
+    storyAudio.find((entry) => entry.asset.category === 'story_theme_loop')?.outputPath ??
+    storyAudio.find((entry) => entry.asset.category === 'arc_ambience')?.outputPath ??
+    storyAudio.find((entry) => entry.asset.category === 'ending_score')?.outputPath ??
+    null
+  );
+}
+
+async function pickVideoAudioInput(asset) {
+  const category = String(asset.category ?? '').toLowerCase();
+
+  if (category === 'arc_teaser_video') {
+    const targetId = asset.id.replace(/arc-teaser-video$/i, 'arc-ambience');
+    return pickStoryAmbientAudioPath(asset.storyId, targetId);
+  }
+
+  if (category === 'ending_recap_video') {
+    const targetId = asset.id.replace(/ending-recap-video$/i, 'ending-score');
+    return pickStoryAmbientAudioPath(asset.storyId, targetId);
+  }
+
+  return pickStoryAmbientAudioPath(asset.storyId);
+}
+
+function resolveVideoDuration(asset, imageCount) {
+  const category = String(asset.category ?? '').toLowerCase();
+  const planned = Number(asset.specs?.durationSeconds);
+  if (Number.isFinite(planned) && planned > 0 && category === 'story_trailer') {
+    return clamp(planned, 16, VIDEO_DURATION_MAX_SECONDS);
+  }
+  if (category === 'beat_transition_video') {
+    return 6;
+  }
+  if (category === 'arc_teaser_video') {
+    return 18;
+  }
+  if (category === 'ending_recap_video') {
+    return 24;
+  }
+  return clamp(Math.max(10, imageCount * 4), VIDEO_DURATION_MIN_SECONDS, 40);
+}
+
+async function generateVideoMontageAsset(asset, outputPath, timeoutMs) {
+  await ensureFfmpegBinary();
+  const imagePaths = await pickVideoImageInputs(asset);
+  if (imagePaths.length === 0) {
+    throw new Error('no verified image sources available for video montage');
+  }
+
+  const width = Number(asset.specs?.width) || 1920;
+  const height = Number(asset.specs?.height) || 1080;
+  const fps = Number(asset.specs?.fps) || 24;
+  const durationSeconds = resolveVideoDuration(asset, imagePaths.length);
+  const transitionSeconds = imagePaths.length > 1 ? 0.45 : 0;
+  const segmentSeconds =
+    imagePaths.length > 1
+      ? (durationSeconds + transitionSeconds * (imagePaths.length - 1)) / imagePaths.length
+      : durationSeconds;
+  const totalFrames = Math.max(1, Math.round(segmentSeconds * fps));
+  const audioPath = await pickVideoAudioInput(asset);
+  const videoVoicePath = `${outputPath}.voiceover.tmp.wav`;
+  let voiceover = null;
+
+  try {
+    voiceover = await generateVideoVoiceoverTrack(asset, videoVoicePath, Math.max(timeoutMs, 90_000));
+  } catch (error) {
+    throw new Error(
+      `video voiceover generation failed: ${error instanceof Error ? error.message : String(error)}`
+    );
+  }
+
+  const args = ['-hide_banner', '-loglevel', 'error'];
+  const filterParts = [];
+
+  for (const imagePath of imagePaths) {
+    args.push('-loop', '1', '-t', segmentSeconds.toFixed(3), '-i', imagePath);
+  }
+
+  if (audioPath) {
+    args.push('-stream_loop', '-1', '-i', audioPath);
+  }
+  if (voiceover?.outputPath) {
+    args.push('-i', voiceover.outputPath);
+  }
+
+  imagePaths.forEach((_, index) => {
+    filterParts.push(
+      `[${index}:v]scale=${width}:${height}:force_original_aspect_ratio=increase,crop=${width}:${height},zoompan=z='min(zoom+0.0009,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${totalFrames}:s=${width}x${height}:fps=${fps},trim=duration=${segmentSeconds.toFixed(3)},setpts=PTS-STARTPTS[v${index}]`
+    );
+  });
+
+  let currentLabel = '[v0]';
+  let transitionOffset = segmentSeconds - transitionSeconds;
+  for (let index = 1; index < imagePaths.length; index += 1) {
+    const nextLabel = `[v${index}]`;
+    const outputLabel = `[vx${index}]`;
+    filterParts.push(
+      `${currentLabel}${nextLabel}xfade=transition=fade:duration=${transitionSeconds.toFixed(3)}:offset=${transitionOffset.toFixed(3)}${outputLabel}`
+    );
+    currentLabel = outputLabel;
+    transitionOffset += segmentSeconds - transitionSeconds;
+  }
+
+  filterParts.push(
+    `${currentLabel}eq=saturation=0.92:contrast=1.05:brightness=-0.025,noise=alls=8:allf=t+u,vignette=PI/5,format=yuv420p[videoout]`
+  );
+
+  const ambientInputIndex = audioPath ? imagePaths.length : null;
+  const voiceInputIndex =
+    voiceover?.outputPath ? imagePaths.length + (audioPath ? 1 : 0) : null;
+
+  if (ambientInputIndex !== null) {
+    filterParts.push(
+      `[${ambientInputIndex}:a]atrim=duration=${durationSeconds.toFixed(3)},asetpts=PTS-STARTPTS,volume=0.24,afade=t=in:st=0:d=0.25,afade=t=out:st=${Math.max(
+        durationSeconds - 0.4,
+        0.1
+      ).toFixed(3)}:d=0.4[ambientbed]`
+    );
+  }
+
+  if (voiceInputIndex !== null) {
+    filterParts.push(
+      `[${voiceInputIndex}:a]atrim=duration=${durationSeconds.toFixed(3)},asetpts=PTS-STARTPTS,volume=1.0,acompressor=threshold=-20dB:ratio=2.8:attack=16:release=180,afade=t=in:st=0:d=0.18,afade=t=out:st=${Math.max(
+        durationSeconds - 0.32,
+        0.1
+      ).toFixed(3)}:d=0.32[voiceoverbed]`
+    );
+  }
+
+  if (ambientInputIndex !== null && voiceInputIndex !== null) {
+    filterParts.push(
+      `[ambientbed][voiceoverbed]amix=inputs=2:weights='0.30 1.0':normalize=0,alimiter=limit=0.97[audioout]`
+    );
+  } else if (voiceInputIndex !== null) {
+    filterParts.push('[voiceoverbed]anull[audioout]');
+  } else if (ambientInputIndex !== null) {
+    filterParts.push('[ambientbed]anull[audioout]');
+  }
+
+  args.push(
+    '-filter_complex',
+    filterParts.join(';'),
+    '-map',
+    '[videoout]'
+  );
+
+  if (audioPath || voiceover?.outputPath) {
+    args.push('-map', '[audioout]');
+  } else {
+    args.push('-an');
+  }
+
+  args.push(
+    '-r',
+    String(fps),
+    '-c:v',
+    'libx264',
+    '-preset',
+    'medium',
+    '-crf',
+    '20',
+    '-pix_fmt',
+    'yuv420p',
+    '-movflags',
+    '+faststart',
+    '-shortest',
+    '-y',
+    outputPath
+  );
+
+  try {
+    const result = await runProcess(ffmpegBinary, args, { timeoutMs: Math.max(timeoutMs, 180_000) });
+    if (!result.ok) {
+      throw new Error(`video montage render failed: ${result.stderr}`);
+    }
+
+    return {
+      toolUsed: VIDEO_TOOL,
+      sourceImages: imagePaths,
+      sourceAudio: audioPath,
+      durationSeconds,
+      voiceover: voiceover
+        ? {
+            enabled: true,
+            speaker: voiceover.narrator,
+            role: voiceover.role,
+            locale: voiceover.locale,
+            region: voiceover.region,
+            model: voiceover.model,
+            voice: voiceover.voice,
+            script: voiceover.script,
+            design: voiceover.voiceDesign
+          }
+        : {
+            enabled: false
+          }
+    };
+  } finally {
+    await unlink(videoVoicePath).catch(() => {});
+  }
+}
+
+async function postProcessVoiceTrack(rawInputPath, outputPath, asset, timeoutMs, voiceDesign = {}) {
+  await ensureFfmpegBinary();
+  const role = normalizeRole(asset.category);
+  const sampleRate = Number(asset.specs?.sampleRateHz) || 48000;
+  const channels = asset.specs?.channels === 1 ? 1 : 2;
+  const filter = buildVoicePostProcessFilter(role, voiceDesign, sampleRate);
+  const args = [
+    '-hide_banner',
+    '-loglevel',
+    'error',
+    '-i',
+    rawInputPath,
+    '-af',
+    filter,
+    '-ar',
+    String(sampleRate),
+    '-ac',
+    String(channels),
+    '-c:a',
+    'pcm_s16le',
+    '-y',
+    outputPath
+  ];
+
+  const result = await runProcess(ffmpegBinary, args, { timeoutMs: Math.max(timeoutMs, 120_000) });
+  if (!result.ok) {
+    throw new Error(`voice post-process failed: ${result.stderr}`);
+  }
+}
+
+async function requestOpenAiSpeech({ apiKey, model, voice, script, speed, timeoutMs }) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), Math.max(timeoutMs, 60_000));
+  try {
+    return fetch('https://api.openai.com/v1/audio/speech', {
+      method: 'POST',
+      signal: controller.signal,
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model,
+        voice,
+        input: script,
+        response_format: 'wav',
+        speed: Number(speed)
+      })
+    });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function synthesizeSpeechTrack(script, profileContext, outputPath, timeoutMs, contextTag = 'profile') {
+  const apiKey = String(process.env.OPENAI_API_KEY ?? '').trim();
+  if (!apiKey || apiKey === 'sk_replace') {
+    throw new Error('OPENAI_API_KEY is not configured for voice generation');
+  }
+
+  const model = process.env.OPENAI_TTS_MODEL ?? 'gpt-4o-mini-tts';
+  const voiceDesign = buildVoiceDesign(profileContext, contextTag);
+  const voiceCandidates = pickOpenAiVoiceCandidates(profileContext, contextTag);
+  const tempSource = `${outputPath}.tts-source.wav`;
+  const errors = [];
+
+  try {
+    for (const voice of voiceCandidates) {
+      const response = await requestOpenAiSpeech({
+        apiKey,
+        model,
+        voice,
+        script,
+        speed: voiceDesign.apiSpeed,
+        timeoutMs
+      });
+
+      if (!response.ok) {
+        const payload = await response.json().catch(() => null);
+        const message =
+          payload?.error?.message ??
+          payload?.message ??
+          `voice provider returned ${response.status}`;
+        errors.push(`${voice}: ${message}`);
+        continue;
+      }
+
+      await writeFile(tempSource, Buffer.from(await response.arrayBuffer()));
+      await postProcessVoiceTrack(
+        tempSource,
+        outputPath,
+        {
+          category: profileContext.role,
+          specs: {
+            sampleRateHz: 48_000,
+            channels: 1
+          }
+        },
+        timeoutMs,
+        voiceDesign
+      );
+
+      return {
+        model,
+        voice,
+        voiceDesign
+      };
+    }
+  } finally {
+    await unlink(tempSource).catch(() => {});
+  }
+
+  throw new Error(
+    `voice synthesis failed across candidates (${voiceCandidates.join(', ')}): ${errors.join(' | ')}`
+  );
+}
+
+function pickVideoNarratorName(storyPackage, asset) {
+  const characters = Array.isArray(storyPackage?.characters) ? storyPackage.characters : [];
+  const villain = String(storyPackage?.villain?.displayName ?? '').trim();
+  const category = String(asset.category ?? '').toLowerCase();
+  const id = String(asset.id ?? '').toLowerCase();
+
+  if (category === 'ending_recap_video') {
+    if (id.includes('corruption') && villain) {
+      return villain;
+    }
+    if (characters[0]) {
+      return characters[0];
+    }
+  }
+
+  if (category === 'arc_teaser_video') {
+    if (characters[1]) {
+      return characters[1];
+    }
+    if (characters[0]) {
+      return characters[0];
+    }
+  }
+
+  if (category === 'beat_transition_video') {
+    if (characters[0]) {
+      return characters[0];
+    }
+  }
+
+  return characters[0] || villain || 'Case Handler';
+}
+
+function buildVideoNarrationScript(asset, storyPackage, narratorName) {
+  const hook = storyPackage?.hook ?? extractPromptSegment(asset.prompt, 'Hook') ?? 'A case file breach has begun.';
+  const location = storyPackage?.location ?? extractPromptSegment(asset.prompt, 'Location') ?? 'the scene';
+  const villain = storyPackage?.villain?.displayName ?? extractPromptSegment(asset.prompt, 'Villain') ?? 'the threat';
+  const clue = Array.isArray(storyPackage?.clueEvidenceList)
+    ? storyPackage.clueEvidenceList[0]
+    : 'the primary evidence drop';
+  const title = String(asset.title ?? '').replace(`${storyPackage?.title ?? ''} - `, '').trim();
+  const category = String(asset.category ?? '').toLowerCase();
+
+  if (category === 'ending_recap_video') {
+    return [
+      `${narratorName} reporting. The case closes on ${title.toLowerCase()}.`,
+      `The evidence thread started with ${clue.toLowerCase()} and now points directly at ${villain}.`,
+      `Review the timeline at ${location.toLowerCase()} before the next transmission goes live.`
+    ].join(' ');
+  }
+
+  if (category === 'arc_teaser_video') {
+    return [
+      `${narratorName} to team. ${hook}`,
+      `This arc centers on ${title.toLowerCase()}, with pressure building around ${clue.toLowerCase()}.`,
+      `Move quietly through ${location.toLowerCase()} and keep your witness channel open.`
+    ].join(' ');
+  }
+
+  return [
+    `${narratorName} briefing. ${title || 'Transition beat'} is now active.`,
+    `Start with ${clue.toLowerCase()}, then compare every new message against ${hook.toLowerCase()}.`,
+    `If ${villain} reaches you first, archive the contact before you respond.`
+  ].join(' ');
+}
+
+async function generateVideoVoiceoverTrack(asset, outputPath, timeoutMs) {
+  const storyPackage = await loadStoryPackage(asset.storyId);
+  const narratorName = pickVideoNarratorName(storyPackage, asset);
+  const profileContext = await resolveVoiceProfileContext(asset.storyId, narratorName);
+  const script = buildVideoNarrationScript(asset, storyPackage, narratorName);
+  const synthesis = await synthesizeSpeechTrack(script, profileContext, outputPath, timeoutMs, `video:${asset.id}`);
+
+  return {
+    outputPath,
+    script,
+    narrator: narratorName,
+    role: profileContext.role,
+    locale: profileContext.locale,
+    region: profileContext.region,
+    model: synthesis.model,
+    voice: synthesis.voice,
+    voiceDesign: synthesis.voiceDesign
+  };
+}
+
+async function generateVoiceProfileAsset(asset, outputPath, timeoutMs) {
+  const storyId = asset.storyId ?? null;
+  const profileName =
+    asset.title
+      .replace(`${asset.storyTitle ?? ''} - `, '')
+      .replace(/\s+Voice Profile$/i, '')
+      .trim() || asset.title;
+  const profileContext = await resolveVoiceProfileContext(storyId, profileName);
+  const script = buildVoicePreviewScript(asset, profileContext);
+  const synthesis = await synthesizeSpeechTrack(
+    script,
+    profileContext,
+    outputPath,
+    timeoutMs,
+    `voice-profile:${asset.id}`
+  );
+
+  return {
+    toolUsed: VOICE_TOOL,
+    promptUsed: script,
+    providerMetadata: {
+      model: synthesis.model,
+      voice: synthesis.voice,
+      locale: profileContext.locale,
+      region: profileContext.region,
+      role: profileContext.role,
+      sex: profileContext.sex,
+      character: profileContext.name,
+      design: synthesis.voiceDesign,
+      voice_design: synthesis.voiceDesign
+    }
+  };
 }
 
 export async function generateRealAsset(asset, options = {}) {
@@ -1866,7 +2956,7 @@ export async function generateRealAsset(asset, options = {}) {
           status: 'skipped_existing',
           outputPath,
           thumbnailPath,
-          toolUsed: metadata.toolUsed ?? 'unknown',
+          toolUsed: metadata.tool_used ?? metadata.toolUsed ?? 'unknown',
           validation
         };
       }
@@ -1890,16 +2980,21 @@ export async function generateRealAsset(asset, options = {}) {
     const workingOutputPath = workingPathForFile(outputPath);
     const workingThumbnailPath = thumbnailPath ? workingPathForFile(thumbnailPath) : null;
     const normalizedBackend = normalizeImageBackendChoice(imageBackend);
-    const allowLocalFallback = normalizedBackend === 'auto' || normalizedBackend === 'local';
-    let providerOrder = ['openai', 'local'];
+    const allowLocalFallback =
+      normalizedBackend === 'local' || (normalizedBackend === 'auto' && allowCommercialLocalFallback());
+    let providerOrder = ['openai', 'pollinations'];
     if (normalizedBackend === 'openai') {
       providerOrder = ['openai'];
     } else if (normalizedBackend === 'pollinations') {
       providerOrder = ['pollinations'];
     } else if (normalizedBackend === 'local') {
-      providerOrder = ['local'];
+      providerOrder = [];
     }
-    let lastError = normalizedBackend === 'local' ? 'local renderer selected' : 'image generation failed';
+    let lastError =
+      normalizedBackend === 'local'
+        ? 'degraded local renderer selected explicitly'
+        : 'image generation failed';
+    const providerErrors = [];
 
     await unlink(workingOutputPath).catch(() => {});
     if (workingThumbnailPath) {
@@ -1908,10 +3003,6 @@ export async function generateRealAsset(asset, options = {}) {
     await unlink(metadataPath).catch(() => {});
 
     for (const provider of providerOrder) {
-      if (provider === 'local') {
-        break;
-      }
-
       for (let attempt = 1; attempt <= maxRetries; attempt += 1) {
         try {
           console.log(
@@ -1924,6 +3015,7 @@ export async function generateRealAsset(asset, options = {}) {
               : await generateImageWithPollinations(asset, workingOutputPath, seed, providerTimeoutMs, attempt);
 
           const validation = await validateFileForAsset(asset, workingOutputPath);
+          const imageQa = await assertImageTextQa(asset, workingOutputPath);
           let mirroredThumbnail = null;
           if (workingThumbnailPath && thumbnailPath) {
             await generateThumbnail(workingOutputPath, workingThumbnailPath);
@@ -1950,6 +3042,7 @@ export async function generateRealAsset(asset, options = {}) {
             source_prompt: asset.prompt,
             tool_used: providerResult.toolUsed,
             provider_metadata: providerResult.providerMetadata,
+            image_qa: imageQa,
             generation_status: 'complete',
             file_path: outputPath,
             public_path: publicPath,
@@ -1976,6 +3069,7 @@ export async function generateRealAsset(asset, options = {}) {
           };
         } catch (error) {
           lastError = error instanceof Error ? error.message : String(error);
+          providerErrors.push(`${provider}: ${lastError}`);
           await unlink(workingOutputPath).catch(() => {});
           if (workingThumbnailPath) {
             await unlink(workingThumbnailPath).catch(() => {});
@@ -1994,13 +3088,13 @@ export async function generateRealAsset(asset, options = {}) {
         status: 'failed',
         outputPath,
         thumbnailPath,
-        error: lastError
+        error: providerErrors.length > 0 ? providerErrors.join(' | ') : lastError
       };
     }
 
     try {
       console.log(
-        `[real-asset:image-fallback] ${JSON.stringify({ assetId: asset.id, tool: 'local-playwright-art-director', outputPath, width, height, lastError })}`
+        `[real-asset:image-fallback] ${JSON.stringify({ assetId: asset.id, tool: LOCAL_FALLBACK_TOOL, outputPath, width, height, lastError })}`
       );
       await renderLocalImageAsset(asset, workingOutputPath, seed);
       const validation = await validateFileForAsset(asset, workingOutputPath);
@@ -2031,10 +3125,10 @@ export async function generateRealAsset(asset, options = {}) {
             modality: asset.modality,
             prompt_used: buildHighFidelityImagePrompt(asset),
             source_prompt: asset.prompt,
-            tool_used: 'local-playwright-art-director',
+            tool_used: LOCAL_FALLBACK_TOOL,
             provider_attempted: providerOrder.filter((item) => item !== 'local'),
-            provider_error: lastError,
-            generation_status: 'complete',
+            provider_error: providerErrors.length > 0 ? providerErrors.join(' | ') : lastError,
+            generation_status: 'degraded',
             file_path: outputPath,
             public_path: publicPath,
             thumbnail_path: thumbnailPath,
@@ -2042,7 +3136,8 @@ export async function generateRealAsset(asset, options = {}) {
             created_at: new Date().toISOString(),
             checksum,
             file_size: validation.fileSize,
-            generatedProxy: false,
+            generatedProxy: true,
+            quality_tier: 'degraded-fallback',
             outputKey: asset.outputKey,
             runContext,
             extension: plannedExt
@@ -2056,11 +3151,12 @@ export async function generateRealAsset(asset, options = {}) {
         assetId: asset.id,
         storyId: asset.storyId ?? 'website',
         modality: asset.modality,
-        status: 'generated',
+        status: 'failed',
         outputPath,
         thumbnailPath,
-        toolUsed: 'local-playwright-art-director',
-        validation
+        toolUsed: LOCAL_FALLBACK_TOOL,
+        validation,
+        error: DEGRADED_FALLBACK_ERROR
       };
     } catch (fallbackError) {
       await unlink(workingOutputPath).catch(() => {});
@@ -2086,110 +3182,201 @@ export async function generateRealAsset(asset, options = {}) {
       4,
       75
     );
-    const sampleRate = 48_000;
-    const filters = horrorAudioFilter(seed, durationSeconds);
-    const { low, mid, high } = filters[filters.length - 1];
-    const filterComplex = filters
-      .slice(0, filters.length - 1)
-      .map((item) => String(item))
-      .join(';');
-    const args = [
-      '-hide_banner',
-      '-loglevel',
-      'error',
-      '-f',
-      'lavfi',
-      '-i',
-      `anoisesrc=color=brown:amplitude=0.34:duration=${durationSeconds}:sample_rate=${sampleRate}`,
-      '-f',
-      'lavfi',
-      '-i',
-      `sine=frequency=${low}:sample_rate=${sampleRate}:duration=${durationSeconds}`,
-      '-f',
-      'lavfi',
-      '-i',
-      `sine=frequency=${mid}:sample_rate=${sampleRate}:duration=${durationSeconds}`,
-      '-f',
-      'lavfi',
-      '-i',
-      `sine=frequency=${high}:sample_rate=${sampleRate}:duration=${durationSeconds}`,
-      '-filter_complex',
-      filterComplex,
-      '-map',
-      '[outa]',
-      '-ar',
-      String(sampleRate),
-      '-ac',
-      String(asset.specs?.channels === 1 ? 1 : 2),
-      '-c:a',
-      'pcm_s16le',
-      '-y',
-      outputPath
-    ];
-    const result = await runProcess(ffmpegBinary, args, { timeoutMs });
-    if (!result.ok) {
+    const isVoiceProfile = String(asset.category ?? '').toLowerCase().includes('voice_profile');
+
+    try {
+      let generationResult;
+      if (isVoiceProfile) {
+        generationResult = await generateVoiceProfileAsset(asset, outputPath, timeoutMs);
+      } else {
+        const sampleRate = Number(asset.specs?.sampleRateHz) || 48_000;
+        const channels = asset.specs?.channels === 1 ? 1 : 2;
+        const recipe = buildHorrorAudioRecipe(asset, seed, durationSeconds);
+        const args = ['-hide_banner', '-loglevel', 'error'];
+
+        for (const source of recipe.sources) {
+          args.push('-f', 'lavfi', '-i', source);
+        }
+
+        args.push(
+          '-filter_complex',
+          recipe.filterComplex,
+          '-map',
+          recipe.outputLabel,
+          '-ar',
+          String(sampleRate),
+          '-ac',
+          String(channels),
+          '-c:a',
+          'pcm_s16le',
+          '-y',
+          outputPath
+        );
+
+        const result = await runProcess(ffmpegBinary, args, { timeoutMs: Math.max(timeoutMs, 120_000) });
+        if (!result.ok) {
+          throw new Error(result.stderr || 'audio render failed');
+        }
+
+        generationResult = {
+          toolUsed: AUDIO_TOOL,
+          promptUsed: asset.prompt,
+          providerMetadata: {
+            flavor: recipe.flavor,
+            durationSeconds,
+            sampleRate,
+            channels
+          }
+        };
+      }
+
+      const validation = await validateFileForAsset(asset, outputPath);
+      const checksum = sha1Hex(await readFile(outputPath));
+      const mirroredOutput = await mirrorIntoPublic(outputPath);
+      const publicPath = mirroredOutput ? publicPathForFile(mirroredOutput) : null;
+      await writeFile(
+        metadataPath,
+        JSON.stringify(
+          {
+            story_id: asset.storyId ?? 'website',
+            asset_id: asset.id,
+            asset_type: asset.category,
+            modality: asset.modality,
+            prompt_used: generationResult.promptUsed,
+            source_prompt: asset.prompt,
+            tool_used: generationResult.toolUsed,
+            provider_metadata: generationResult.providerMetadata,
+            generation_status: 'complete',
+            file_path: outputPath,
+            public_path: publicPath,
+            thumbnail_path: null,
+            public_thumbnail_path: null,
+            created_at: new Date().toISOString(),
+            checksum,
+            file_size: validation.fileSize,
+            duration_seconds: validation.durationSeconds,
+            generatedProxy: false,
+            outputKey: asset.outputKey,
+            runContext
+          },
+          null,
+          2
+        ),
+        'utf8'
+      );
+      return {
+        assetId: asset.id,
+        storyId: asset.storyId ?? 'website',
+        modality: asset.modality,
+        status: 'generated',
+        outputPath,
+        toolUsed: generationResult.toolUsed,
+        validation
+      };
+    } catch (error) {
       return {
         assetId: asset.id,
         storyId: asset.storyId ?? 'website',
         modality: asset.modality,
         status: 'failed',
         outputPath,
-        error: result.stderr
+        error: error instanceof Error ? error.message : String(error)
       };
     }
-
-    const validation = await validateFileForAsset(asset, outputPath);
-    const checksum = sha1Hex(await readFile(outputPath));
-    const mirroredOutput = await mirrorIntoPublic(outputPath);
-    const publicPath = mirroredOutput ? publicPathForFile(mirroredOutput) : null;
-    await writeFile(
-      metadataPath,
-      JSON.stringify(
-        {
-          story_id: asset.storyId ?? 'website',
-          asset_id: asset.id,
-          asset_type: asset.category,
-          modality: asset.modality,
-          prompt_used: asset.prompt,
-          tool_used: 'ffmpeg-horror-synth',
-          generation_status: 'complete',
-          file_path: outputPath,
-          public_path: publicPath,
-          thumbnail_path: null,
-          public_thumbnail_path: null,
-          created_at: new Date().toISOString(),
-          checksum,
-          file_size: validation.fileSize,
-          duration_seconds: validation.durationSeconds,
-          generatedProxy: false,
-          outputKey: asset.outputKey,
-          runContext
-        },
-        null,
-        2
-      ),
-      'utf8'
-    );
-    return {
-      assetId: asset.id,
-      storyId: asset.storyId ?? 'website',
-      modality: asset.modality,
-      status: 'generated',
-      outputPath,
-      toolUsed: 'ffmpeg-horror-synth',
-      validation
-    };
   }
 
   if (asset.modality === 'video') {
-    return {
-      assetId: asset.id,
-      storyId: asset.storyId ?? 'website',
-      modality: asset.modality,
-      status: 'unavailable',
-      outputPath,
-      error: 'video generation backend is not configured; video cards remain disabled'
-    };
+    const workingOutputPath = workingPathForFile(outputPath);
+    const workingThumbnailPath = thumbnailPath ? workingPathForFile(thumbnailPath) : null;
+
+    await unlink(workingOutputPath).catch(() => {});
+    if (workingThumbnailPath) {
+      await unlink(workingThumbnailPath).catch(() => {});
+    }
+    await unlink(metadataPath).catch(() => {});
+
+    try {
+      const providerResult = await generateVideoMontageAsset(asset, workingOutputPath, timeoutMs);
+      const validation = await validateFileForAsset(asset, workingOutputPath);
+      let mirroredThumbnail = null;
+
+      if (workingThumbnailPath && thumbnailPath) {
+        await generateThumbnail(workingOutputPath, workingThumbnailPath);
+      }
+
+      await unlink(outputPath).catch(() => {});
+      await rename(workingOutputPath, outputPath);
+      if (workingThumbnailPath && thumbnailPath) {
+        await unlink(thumbnailPath).catch(() => {});
+        await rename(workingThumbnailPath, thumbnailPath);
+        mirroredThumbnail = await mirrorIntoPublic(thumbnailPath);
+      }
+
+      const checksum = sha1Hex(await readFile(outputPath));
+      const mirroredOutput = await mirrorIntoPublic(outputPath);
+      const publicPath = mirroredOutput ? publicPathForFile(mirroredOutput) : null;
+      const publicThumbnailPath = mirroredThumbnail ? publicPathForFile(mirroredThumbnail) : null;
+
+      await writeFile(
+        metadataPath,
+        JSON.stringify(
+          {
+            story_id: asset.storyId ?? 'website',
+            asset_id: asset.id,
+            asset_type: asset.category,
+            modality: asset.modality,
+            prompt_used: asset.prompt,
+            tool_used: providerResult.toolUsed,
+            provider_metadata: {
+              source_images: providerResult.sourceImages,
+              source_audio: providerResult.sourceAudio,
+              duration_seconds: providerResult.durationSeconds,
+              voiceover: providerResult.voiceover ?? { enabled: false }
+            },
+            generation_status: 'complete',
+            file_path: outputPath,
+            public_path: publicPath,
+            thumbnail_path: thumbnailPath,
+            public_thumbnail_path: publicThumbnailPath,
+            created_at: new Date().toISOString(),
+            checksum,
+            file_size: validation.fileSize,
+            duration_seconds: validation.durationSeconds,
+            generatedProxy: false,
+            outputKey: asset.outputKey,
+            runContext
+          },
+          null,
+          2
+        ),
+        'utf8'
+      );
+
+      return {
+        assetId: asset.id,
+        storyId: asset.storyId ?? 'website',
+        modality: asset.modality,
+        status: 'generated',
+        outputPath,
+        thumbnailPath,
+        toolUsed: providerResult.toolUsed,
+        validation
+      };
+    } catch (error) {
+      await unlink(workingOutputPath).catch(() => {});
+      if (workingThumbnailPath) {
+        await unlink(workingThumbnailPath).catch(() => {});
+      }
+      return {
+        assetId: asset.id,
+        storyId: asset.storyId ?? 'website',
+        modality: asset.modality,
+        status: 'failed',
+        outputPath,
+        thumbnailPath,
+        error: error instanceof Error ? error.message : String(error)
+      };
+    }
   }
 
   if (asset.modality === 'artifact') {
@@ -2393,19 +3580,14 @@ export async function buildVerifiedCatalog(planAssets) {
     };
 
     if (!(await fileExists(outputPath)) || !(await fileExists(metadataPath))) {
-      const inferredStatus =
-        statuses[asset.id]?.status ?? (asset.modality === 'video' ? 'unavailable' : 'missing');
+      const inferredStatus = statuses[asset.id]?.status ?? 'missing';
       const failure = {
         story_id: storyId,
         asset_id: asset.id,
         asset_type: asset.category,
         modality: asset.modality,
         generation_status: inferredStatus,
-        error:
-          statuses[asset.id]?.error ??
-          (asset.modality === 'video'
-            ? 'video generation backend is not configured; proxy output excluded from gallery'
-            : 'missing generated file'),
+        error: statuses[asset.id]?.error ?? 'missing generated file',
         planned_output_path: outputPath,
         last_attempt_at: statuses[asset.id]?.lastAttemptAt ?? null
       };
@@ -2441,11 +3623,25 @@ export async function buildVerifiedCatalog(planAssets) {
         asset_id: asset.id,
         asset_type: asset.category,
         modality: asset.modality,
-        generation_status: asset.modality === 'video' ? 'unavailable' : 'invalid',
-        error:
-          asset.modality === 'video'
-            ? 'video generation backend is not configured; proxy output excluded from gallery'
-            : 'proxy output excluded from gallery',
+        generation_status: 'invalid',
+        error: 'proxy output excluded from gallery',
+        planned_output_path: outputPath,
+        last_attempt_at: statuses[asset.id]?.lastAttemptAt ?? null
+      };
+      storyBucket.failures.push(failure);
+      catalogFailures.push(failure);
+      grouped.set(storyId, storyBucket);
+      continue;
+    }
+
+    if ((metadata.tool_used ?? metadata.toolUsed) === LOCAL_FALLBACK_TOOL) {
+      const failure = {
+        story_id: storyId,
+        asset_id: asset.id,
+        asset_type: asset.category,
+        modality: asset.modality,
+        generation_status: 'invalid',
+        error: DEGRADED_FALLBACK_ERROR,
         planned_output_path: outputPath,
         last_attempt_at: statuses[asset.id]?.lastAttemptAt ?? null
       };
@@ -2477,7 +3673,8 @@ export async function buildVerifiedCatalog(planAssets) {
         created_at: metadata.created_at ?? metadata.generatedAt ?? new Date(outputStat.mtimeMs).toISOString(),
         checksum,
         file_size: outputStat.size,
-        duration_seconds: validation.durationSeconds ?? null
+        duration_seconds: validation.durationSeconds ?? null,
+        provider_metadata: metadata.provider_metadata ?? metadata.providerMetadata ?? null
       };
       storyBucket.assets.push(entry);
       catalogAssets.push(entry);

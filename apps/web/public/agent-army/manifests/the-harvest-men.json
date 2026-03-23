@@ -9,16 +9,66 @@
       "modality": "image",
       "title": "The Harvest Men - Dusk Selection Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Dusk Selection (Contact). Narrative: Players receive synchronized SMS photos of the same ritual mask in three different houses.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: Players receive synchronized SMS photos of the same ritual mask in three different houses.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-1-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-1-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:04.802Z",
-      "checksum": "a75c8190fde49d7e95ad4a9ffb342d5b35308181",
-      "file_size": 885846,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:15:52.836Z",
+      "checksum": "98d37f84dab5b191606785cb375790ec45f95373",
+      "file_size": 2699275,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Harvest Men - Dusk Selection Beat Transition",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Dusk Selection. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:13:08.420Z",
+      "checksum": "0d3ce9d5fb202b922efd30acf63844b9aa484ed1",
+      "file_size": 4447212,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe briefing. Dusk Selection Beat Transition is now active. Start with blood-soil composition panel, then compare every new message against a ritual mask selects a new wearer every dusk, and refusals vanish overnight.. If The Reaper Steward reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.99673,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 73,
+            "lowpassHz": 7141,
+            "presenceGainDb": -0.15699999999999997
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -27,16 +77,66 @@
       "modality": "image",
       "title": "The Harvest Men - Escalation Signal Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Escalation Signal (Contact). Narrative: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-2-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-2-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:04.823Z",
-      "checksum": "ca74fbb15be4691a87d8c420f8ab4d2b45d308bd",
-      "file_size": 880802,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:09.400Z",
+      "checksum": "f28c56503e34d7969cee72831b23c946264ebd70",
+      "file_size": 2973567,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Harvest Men - Escalation Signal Beat Transition",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:13:25.159Z",
+      "checksum": "a39d53fff5a399399e1c94c721e77fc13dade5b1",
+      "file_size": 4359490,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe briefing. Escalation Signal Beat Transition is now active. Start with blood-soil composition panel, then compare every new message against a ritual mask selects a new wearer every dusk, and refusals vanish overnight.. If The Reaper Steward reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.009785,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 74,
+            "lowpassHz": 7421,
+            "presenceGainDb": -0.477
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -45,16 +145,66 @@
       "modality": "image",
       "title": "The Harvest Men - Trust Fracture Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-3-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-3-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-3-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:07.951Z",
-      "checksum": "fd9653389beed471226ebe73e5a222b62678f2a2",
-      "file_size": 880536,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:15.148Z",
+      "checksum": "e288ea8dcab2d193841293a25f161dcdae1fdc51",
+      "file_size": 3055890,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Harvest Men - Trust Fracture Beat Transition",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:13:31.910Z",
+      "checksum": "cf008f8f8dd10da6d6d24469b6d8343ab610401a",
+      "file_size": 4312275,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-3-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe briefing. Trust Fracture Beat Transition is now active. Start with blood-soil composition panel, then compare every new message against a ritual mask selects a new wearer every dusk, and refusals vanish overnight.. If The Reaper Steward reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.97202,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 77,
+            "lowpassHz": 7083,
+            "presenceGainDb": -0.31699999999999995
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -63,16 +213,66 @@
       "modality": "image",
       "title": "The Harvest Men - Ultimatum Window Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:07.922Z",
-      "checksum": "3f819836be894e4aef271596a4b14c7e87508d4c",
-      "file_size": 872846,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:26.139Z",
+      "checksum": "a1a3ae7f527613855732a1d357864d8f1527969e",
+      "file_size": 2958207,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Harvest Men - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:13:39.500Z",
+      "checksum": "bb0f64108ed1baa7fd1e0ca18618e11ab9c04327",
+      "file_size": 4358035,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe briefing. Ultimatum Window Beat Transition is now active. Start with blood-soil composition panel, then compare every new message against a ritual mask selects a new wearer every dusk, and refusals vanish overnight.. If The Reaper Steward reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.966595,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 89,
+            "lowpassHz": 7310,
+            "presenceGainDb": 0.08300000000000005
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -80,17 +280,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "The Harvest Men - Confrontation Protocol Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-5-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-5-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:07.951Z",
-      "checksum": "99d2bddef869db334a55a191f66378b6a7173d02",
-      "file_size": 977951,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:51:11.420Z",
+      "checksum": "19bb5b27720b8cae854bc2041b33241cc049c30b",
+      "file_size": 3054126,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Harvest Men - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:13:47.597Z",
+      "checksum": "45bfa5d28f1a895af53b29d1bdc2ebc4aab3e2bf",
+      "file_size": 4476414,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe briefing. Confrontation Protocol Beat Transition is now active. Start with blood-soil composition panel, then compare every new message against a ritual mask selects a new wearer every dusk, and refusals vanish overnight.. If The Reaper Steward reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.01843,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 84,
+            "lowpassHz": 7249,
+            "presenceGainDb": 0.24300000000000005
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -99,16 +349,66 @@
       "modality": "image",
       "title": "The Harvest Men - Case Debrief Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:10.979Z",
-      "checksum": "111725691b877492f089b7f1dab770178befffd9",
-      "file_size": 886132,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:37.093Z",
+      "checksum": "b7a969bd98c2cd0601fe2a2294f0ffc167f6839e",
+      "file_size": 3254442,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Harvest Men - Case Debrief Beat Transition",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/beat_transition_video/the-harvest-men-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:13:55.645Z",
+      "checksum": "3346976d09b1bef843b76de3b1312f3597749727",
+      "file_size": 4465874,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe briefing. Case Debrief Beat Transition is now active. Start with blood-soil composition panel, then compare every new message against a ritual mask selects a new wearer every dusk, and refusals vanish overnight.. If The Reaper Steward reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.973805,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 89,
+            "lowpassHz": 7049,
+            "presenceGainDb": 0.24300000000000005
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -126,7 +426,8 @@
       "created_at": "2026-03-21T16:14:55.786Z",
       "checksum": "8907bd999960df46f9ad5aec17b928135da3fc6c",
       "file_size": 1216,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -135,16 +436,21 @@
       "modality": "image",
       "title": "The Harvest Men - Evidence Still - Blood-soil composition panel",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Render forensic evidence still for \"Blood-soil composition panel\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Evidence Still - Blood-soil composition panel. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-blood-soil-composition-panel-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-blood-soil-composition-panel-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-blood-soil-composition-panel-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:16.923Z",
-      "checksum": "c3de48b70613a263c54dd063f336af14443473d8",
-      "file_size": 961639,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:51.161Z",
+      "checksum": "46e67bbd7578636adad93db68231ebb3b77f93a9",
+      "file_size": 3510719,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -162,7 +468,8 @@
       "created_at": "2026-03-21T16:14:55.817Z",
       "checksum": "8333129ecc01ee25a56bd41b3daa6004490f962a",
       "file_size": 1226,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -180,7 +487,8 @@
       "created_at": "2026-03-21T16:15:49.619Z",
       "checksum": "18c8cc736d0fb99f30076b33f502ffca956b66fb",
       "file_size": 1401,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -198,7 +506,8 @@
       "created_at": "2026-03-21T16:14:55.791Z",
       "checksum": "4c0d26fdc3e6862e774fc55f254cac368025c432",
       "file_size": 1210,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -207,16 +516,21 @@
       "modality": "image",
       "title": "The Harvest Men - Evidence Still - Festival lantern route map",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Render forensic evidence still for \"Festival lantern route map\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Evidence Still - Festival lantern route map. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-festival-lantern-route-map-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-festival-lantern-route-map-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-festival-lantern-route-map-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-festival-lantern-route-map-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:16.950Z",
-      "checksum": "fb404bc7ecbd2956578dc2748ad4d5dbf17f2ab4",
-      "file_size": 950205,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:54.923Z",
+      "checksum": "871c16e3db9881b4801bbcac3fcbc146a6580dc3",
+      "file_size": 3665677,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -234,7 +548,8 @@
       "created_at": "2026-03-21T16:14:55.800Z",
       "checksum": "e913432ef1db651ff9b172cabc5ee121cbfcda24",
       "file_size": 1198,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -243,16 +558,21 @@
       "modality": "image",
       "title": "The Harvest Men - Evidence Still - Mask stitch microscopy",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Render forensic evidence still for \"Mask stitch microscopy\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Evidence Still - Mask stitch microscopy. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-mask-stitch-microscopy-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-mask-stitch-microscopy-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-mask-stitch-microscopy-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-mask-stitch-microscopy-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:20.090Z",
-      "checksum": "8787f51149ebb467d07ccdcc8892b73b9cb29b4e",
-      "file_size": 956153,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:59.737Z",
+      "checksum": "7e21a49f8df49fb8c81130c8acc7e88e949e04f1",
+      "file_size": 3549597,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -270,7 +590,8 @@
       "created_at": "2026-03-21T16:14:55.795Z",
       "checksum": "b6891ad1377fd2a75b43b3e25afe38ec141c17b5",
       "file_size": 1186,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -279,16 +600,21 @@
       "modality": "image",
       "title": "The Harvest Men - Evidence Still - Runaway voice memo",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Render forensic evidence still for \"Runaway voice memo\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Evidence Still - Runaway voice memo. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-runaway-voice-memo-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-runaway-voice-memo-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\evidence_still\\the-harvest-men-runaway-voice-memo-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/evidence_still/the-harvest-men-runaway-voice-memo-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:16.923Z",
-      "checksum": "ebc1f3dd4e963222d1cdf1e56954004e3d6acaef",
-      "file_size": 956474,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:17:14.654Z",
+      "checksum": "6d003e226531d693cd4c32f0184e2ef5e9bebb53",
+      "file_size": 3391787,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -306,7 +632,8 @@
       "created_at": "2026-03-21T16:14:55.812Z",
       "checksum": "657d0c6ffdb0facb64b8db7b8cc85d94255b7652",
       "file_size": 1256,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -324,7 +651,8 @@
       "created_at": "2026-03-21T16:15:49.613Z",
       "checksum": "0450bae73d2c8901d1d237877e11d144cc4d6cdc",
       "file_size": 1431,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -333,16 +661,21 @@
       "modality": "image",
       "title": "The Harvest Men Social Launch Square",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\social_square\\the-harvest-men-social-launch-square-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/social_square/the-harvest-men-social-launch-square-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\social_square\\the-harvest-men-social-launch-square-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/social_square/the-harvest-men-social-launch-square-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:29.018Z",
-      "checksum": "baaebc68d6b5e450dcb5f86f90849bbaee47ff17",
-      "file_size": 762137,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:17:14.188Z",
+      "checksum": "936e44635783cb105d6e41093a84a8ade7653f2b",
+      "file_size": 1860253,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -351,16 +684,21 @@
       "modality": "image",
       "title": "The Harvest Men Social Launch Vertical",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\social_vertical\\the-harvest-men-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/social_vertical/the-harvest-men-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\social_vertical\\the-harvest-men-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/social_vertical/the-harvest-men-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:25.987Z",
-      "checksum": "d3e682efaa768b11f95c992db84cc3462535247a",
-      "file_size": 760514,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:17:18.848Z",
+      "checksum": "f9c47a8919ad99856a1aa33745564caeebbe99cc",
+      "file_size": 2019112,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -369,16 +707,21 @@
       "modality": "image",
       "title": "The Harvest Men Story Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/story_key_art/the-harvest-men-story-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/story_key_art/the-harvest-men-story-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:01.953Z",
-      "checksum": "311a09389c18c2d6587ed314c40596e1978cf3a3",
-      "file_size": 869065,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:18:07.171Z",
+      "checksum": "81dc28dbcbf9a2acca230f657438468decfb4f57",
+      "file_size": 3118681,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -396,7 +739,8 @@
       "created_at": "2026-03-21T16:15:49.624Z",
       "checksum": "a4d8910b42c8f9ffbb7739ef2d5bd59db65d93f3",
       "file_size": 1295,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -405,16 +749,32 @@
       "modality": "audio",
       "title": "The Harvest Men Story Theme Loop",
       "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/story_theme_loop/the-harvest-men-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:52.563Z",
-      "checksum": "f8bc39fdd4f6e21ed216fb83d096eef5f04ee288",
-      "file_size": 15699070,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:11.154Z",
+      "checksum": "49e2d2a2670100699b711fad1952cf307e2b0fe4",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -423,16 +783,32 @@
       "modality": "audio",
       "title": "The Harvest Men - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/arc_ambience/the-harvest-men-the-harvest-men-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:42.735Z",
-      "checksum": "fd8879733131910fc724a1a910c7aaef8ebaeae4",
-      "file_size": 15698858,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:10:44.041Z",
+      "checksum": "046f28758c152cf07386f6de8beb91c9a6448e76",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -441,16 +817,67 @@
       "modality": "image",
       "title": "The Harvest Men - Contact and Contradiction Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: folk horror. Tone: SLOW_BURN. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: The Harvest Men - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-contact-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/arc_key_art/the-harvest-men-the-harvest-men-arc-contact-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-contact-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/arc_key_art/the-harvest-men-the-harvest-men-arc-contact-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:01.995Z",
-      "checksum": "03c3e05ce2608f87ab9e1eb863d19aa59f781dd5",
-      "file_size": 879854,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:18:18.266Z",
+      "checksum": "ea5297ab6fcbfc216acb5bb217d1a0bf8f3d3d6a",
+      "file_size": 3270849,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "The Harvest Men - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:12:42.477Z",
+      "checksum": "5ce4c912d2b8c0caf7d3085d4b73a9b09f35ac1e",
+      "file_size": 12678016,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Village Elder Rowan Pike",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Village Elder Rowan Pike to team. A ritual mask selects a new wearer every dusk, and refusals vanish overnight. This arc centers on contact and contradiction arc teaser video, with pressure building around blood-soil composition panel. Move quietly through isolated valley communes and threshing grounds and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.377,
+            "textureAmount": 0.6399999999999999,
+            "highpassHz": 97,
+            "lowpassHz": 7653,
+            "presenceGainDb": 0.25200000000000006
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -459,16 +886,32 @@
       "modality": "audio",
       "title": "The Harvest Men - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/arc_ambience/the-harvest-men-the-harvest-men-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:43.891Z",
-      "checksum": "82b04cb0676bc38b731db62aa756a3278f6232be",
-      "file_size": 15699254,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:10:45.403Z",
+      "checksum": "051b0f85cddcf54bf98029eeefd2f4d315750f5f",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -477,16 +920,67 @@
       "modality": "image",
       "title": "The Harvest Men - Interference and Doubt Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: folk horror. Tone: SLOW_BURN. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: The Harvest Men - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-disruption-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/arc_key_art/the-harvest-men-the-harvest-men-arc-disruption-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-disruption-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/arc_key_art/the-harvest-men-the-harvest-men-arc-disruption-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:01.976Z",
-      "checksum": "9660d8cafd6678f320556ae3d0bc9a2ade0b8835",
-      "file_size": 881874,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:18:10.050Z",
+      "checksum": "06494cbb815f6ecc0cf7a5bb9b7b109e592e8b8d",
+      "file_size": 3208540,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "The Harvest Men - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:12:48.662Z",
+      "checksum": "b64e45709f3b71be5ce4b0b70946a73730166f9d",
+      "file_size": 12920877,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Village Elder Rowan Pike",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Village Elder Rowan Pike to team. A ritual mask selects a new wearer every dusk, and refusals vanish overnight. This arc centers on interference and doubt arc teaser video, with pressure building around blood-soil composition panel. Move quietly through isolated valley communes and threshing grounds and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.377,
+            "textureAmount": 0.6399999999999999,
+            "highpassHz": 100,
+            "lowpassHz": 7912,
+            "presenceGainDb": 0.9720000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -495,16 +989,32 @@
       "modality": "audio",
       "title": "The Harvest Men - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/arc_ambience/the-harvest-men-the-harvest-men-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:45.067Z",
-      "checksum": "5e81a7dfea89bd7b694b147798152fef686469cc",
-      "file_size": 15699326,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:10:46.609Z",
+      "checksum": "a19244de53be0858a3ad1fce916504f8eff4b3b4",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -513,16 +1023,67 @@
       "modality": "image",
       "title": "The Harvest Men - Confrontation and Reckoning Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: folk horror. Tone: SLOW_BURN. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: The Harvest Men - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/arc_key_art/the-harvest-men-the-harvest-men-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/arc_key_art/the-harvest-men-the-harvest-men-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:04.785Z",
-      "checksum": "ea0122c8552dce5413b2efcc99f487ecca7aac42",
-      "file_size": 877631,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:18:59.787Z",
+      "checksum": "8bc9ff7d7874c7ce303da747e953503bc4886a22",
+      "file_size": 3165407,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "The Harvest Men - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:13:15.875Z",
+      "checksum": "bd84e9f9b737167a76bb886844a87a9977318595",
+      "file_size": 12673448,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Village Elder Rowan Pike",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Village Elder Rowan Pike to team. A ritual mask selects a new wearer every dusk, and refusals vanish overnight. This arc centers on confrontation and reckoning arc teaser video, with pressure building around blood-soil composition panel. Move quietly through isolated valley communes and threshing grounds and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.377,
+            "textureAmount": 0.6399999999999999,
+            "highpassHz": 96,
+            "lowpassHz": 7771,
+            "presenceGainDb": 0.7320000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -531,16 +1092,67 @@
       "modality": "image",
       "title": "The Harvest Men - Corruption Pact Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You preserve the rite in exchange for selective immunity.. Deliver emotional closure with sequel-hook tension.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-corruption-ending-card-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/ending_card/the-harvest-men-the-harvest-men-ending-corruption-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-corruption-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/ending_card/the-harvest-men-the-harvest-men-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:26.006Z",
-      "checksum": "0ee13f63b432611036fb4abb7ffa65c52367fac5",
-      "file_size": 867314,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:18:59.088Z",
+      "checksum": "3795318e950558903ee9a2ca1e09148f91be191f",
+      "file_size": 3147584,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "The Harvest Men - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/ending_recap_video/the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/ending_recap_video/the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:15:20.610Z",
+      "checksum": "764a66135369bd690019ecafbe7510907198a948",
+      "file_size": 15340834,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-corruption-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\ending_score\\the-harvest-men-the-harvest-men-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "The Reaper Steward",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "The Reaper Steward reporting. The case closes on corruption pact ending recap video. The evidence thread started with blood-soil composition panel and now points directly at The Reaper Steward. Review the timeline at isolated valley communes and threshing grounds before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.878755,
+            "pitchSemitone": -2.113,
+            "textureAmount": 0.5275,
+            "highpassHz": 69,
+            "lowpassHz": 6083,
+            "presenceGainDb": 0.14199999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -549,16 +1161,32 @@
       "modality": "audio",
       "title": "The Harvest Men - Corruption Pact Ending Score",
       "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose ending score cue for \"Corruption Pact\" that supports summary \"You preserve the rite in exchange for selective immunity.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\ending_score\\the-harvest-men-the-harvest-men-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/ending_score/the-harvest-men-the-harvest-men-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:51.297Z",
-      "checksum": "a3446ab81992352e14823321bddf4b9bcf404872",
-      "file_size": 15700314,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:09.729Z",
+      "checksum": "7d1435eac7b2a7746f8a3db413a898bec075ed3b",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -567,16 +1195,67 @@
       "modality": "image",
       "title": "The Harvest Men - Clean Resolution Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You dismantle the selection machine and evacuate vulnerable targets alive.. Deliver emotional closure with sequel-hook tension.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-justice-ending-card-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/ending_card/the-harvest-men-the-harvest-men-ending-justice-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-justice-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/ending_card/the-harvest-men-the-harvest-men-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:23.205Z",
-      "checksum": "6923a32d7e2c51adc726add0bfdaa18e5c835c38",
-      "file_size": 874709,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:19:08.671Z",
+      "checksum": "8ce242481d38d078e88613fa24a3b1debcac4d3c",
+      "file_size": 3522450,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-the-harvest-men-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "The Harvest Men - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/ending_recap_video/the-harvest-men-the-harvest-men-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/ending_recap_video/the-harvest-men-the-harvest-men-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:14:33.442Z",
+      "checksum": "6fd66023097cb30125c3a6e496a6a5b8ff6fcddf",
+      "file_size": 15861713,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-justice-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\ending_score\\the-harvest-men-the-harvest-men-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe reporting. The case closes on clean resolution ending recap video. The evidence thread started with blood-soil composition panel and now points directly at The Reaper Steward. Review the timeline at isolated valley communes and threshing grounds before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 1.019795,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 80,
+            "lowpassHz": 7341,
+            "presenceGainDb": 0.24300000000000005
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -585,16 +1264,32 @@
       "modality": "audio",
       "title": "The Harvest Men - Clean Resolution Ending Score",
       "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose ending score cue for \"Clean Resolution\" that supports summary \"You dismantle the selection machine and evacuate vulnerable targets alive.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\ending_score\\the-harvest-men-the-harvest-men-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/ending_score/the-harvest-men-the-harvest-men-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:48.295Z",
-      "checksum": "a9ddb59ba01deef2b89aa2edc832180f58b66ec2",
-      "file_size": 15699150,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:07.074Z",
+      "checksum": "8198562ee80a470c903dd978b77161d093398efa",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -603,16 +1298,67 @@
       "modality": "image",
       "title": "The Harvest Men - Compromised Truth Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You halt tonight's rite but trigger retaliatory disappearances.. Deliver emotional closure with sequel-hook tension.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-card-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/ending_card/the-harvest-men-the-harvest-men-ending-pyrrhic-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/ending_card/the-harvest-men-the-harvest-men-ending-pyrrhic-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:25.959Z",
-      "checksum": "00962c7df11e307a447fbafec53489519e61aa6d",
-      "file_size": 884460,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:19:50.758Z",
+      "checksum": "a241dfd10da59448ae0c03ec8aa77ccdad063b6d",
+      "file_size": 3295545,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "The Harvest Men - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/ending_recap_video/the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/ending_recap_video/the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:14:41.949Z",
+      "checksum": "baebb4c506b1a16924716b7fda0b035fb06bba8d",
+      "file_size": 15357886,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\ending_card\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\ending_score\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe reporting. The case closes on compromised truth ending recap video. The evidence thread started with blood-soil composition panel and now points directly at The Reaper Steward. Review the timeline at isolated valley communes and threshing grounds before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 1.025815,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 86,
+            "lowpassHz": 7091,
+            "presenceGainDb": 0.16300000000000003
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -621,16 +1367,32 @@
       "modality": "audio",
       "title": "The Harvest Men - Compromised Truth Ending Score",
       "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose ending score cue for \"Compromised Truth\" that supports summary \"You halt tonight's rite but trigger retaliatory disappearances.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\ending_score\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/ending_score/the-harvest-men-the-harvest-men-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:49.828Z",
-      "checksum": "c79c64cd0405c052fbf72367e1ee69d5a620df3c",
-      "file_size": 15699438,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:08.416Z",
+      "checksum": "26bcfbfd0445c363aebde15f0c08761740de7703",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -648,7 +1410,8 @@
       "created_at": "2026-03-21T16:14:55.762Z",
       "checksum": "088501d270fdb81d992c3b40e702c1f2471c280f",
       "file_size": 1193,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -657,16 +1420,21 @@
       "modality": "image",
       "title": "The Harvest Men - Visiting Agronomist Dina Crowe Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Character portrait for Visiting Agronomist Dina Crowe, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Visiting Agronomist Dina Crowe Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-1-portrait-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-1-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-1-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-1-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:11.009Z",
-      "checksum": "deb457fabcba1945b6d49c873ffb4d5979f1c4c8",
-      "file_size": 907085,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:19:51.394Z",
+      "checksum": "69b90361f65cd93812d4400e72714822b2b9cc6a",
+      "file_size": 3069682,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -674,17 +1442,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Harvest Men - Visiting Agronomist Dina Crowe Voice Profile",
-      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Visiting Agronomist Dina Crowe. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Visiting Agronomist Dina Crowe. Keep your channel open and do not answer unknown callbacks. A ritual mask selects a new wearer every dusk, and refusals vanish overnight. Start with blood-soil composition panel, then verify every timestamp against isolated valley communes and threshing grounds. If The Reaper Steward contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\npc_voice_profile\\the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:45.434Z",
-      "checksum": "aa974dc53f8eb10e8792de6e6e600f5f20419029",
-      "file_size": 2110384,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:26.272Z",
+      "checksum": "96089eda6fc6a585a255cda58949efe2184bf535",
+      "file_size": 1411698,
+      "duration_seconds": 14.7,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 0.978425,
+          "pitchSemitone": 0.016000000000000014,
+          "textureAmount": 0.46625,
+          "highpassHz": 87,
+          "lowpassHz": 7459,
+          "presenceGainDb": 0.24300000000000005
+        },
+        "voice_design": {
+          "apiSpeed": 0.978425,
+          "pitchSemitone": 0.016000000000000014,
+          "textureAmount": 0.46625,
+          "highpassHz": 87,
+          "lowpassHz": 7459,
+          "presenceGainDb": 0.24300000000000005
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -702,7 +1494,8 @@
       "created_at": "2026-03-21T16:14:55.767Z",
       "checksum": "09779f66eafd9e2b8550822ff7df130211bfbc7d",
       "file_size": 1181,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -711,16 +1504,21 @@
       "modality": "image",
       "title": "The Harvest Men - Village Elder Rowan Pike Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Character portrait for Village Elder Rowan Pike, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Village Elder Rowan Pike Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-2-portrait-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-2-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-2-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-2-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:10.983Z",
-      "checksum": "599d0f559fdc617b6865b2e9d4cdf8d125fa0da2",
-      "file_size": 915632,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:20:01.185Z",
+      "checksum": "181bdbf2d7584d7cca7ab74592c5aa5479c2330f",
+      "file_size": 3134163,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -728,17 +1526,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Harvest Men - Village Elder Rowan Pike Voice Profile",
-      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Village Elder Rowan Pike. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Village Elder Rowan Pike. I should not be leaving this message. Something about blood-soil composition panel is wrong, and The Reaper Steward wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to isolated valley communes and threshing grounds.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\npc_voice_profile\\the-harvest-men-the-harvest-men-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:45.753Z",
-      "checksum": "d265d493ee5230992a23235b10b1d214cfff117e",
-      "file_size": 2110600,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:29.702Z",
+      "checksum": "8c3e8192aaa8f3b122e8e97aa497484d86e1f9f2",
+      "file_size": 839308,
+      "duration_seconds": 8.74,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.377,
+          "textureAmount": 0.6399999999999999,
+          "highpassHz": 91,
+          "lowpassHz": 7956,
+          "presenceGainDb": 0.25200000000000006
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.377,
+          "textureAmount": 0.6399999999999999,
+          "highpassHz": 91,
+          "lowpassHz": 7956,
+          "presenceGainDb": 0.25200000000000006
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -756,7 +1578,8 @@
       "created_at": "2026-03-21T16:14:55.772Z",
       "checksum": "68f35c6e6f866dd54b9bbce2999e8e70a4967c9b",
       "file_size": 1179,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -765,16 +1588,21 @@
       "modality": "image",
       "title": "The Harvest Men - Runaway Teen Lio Strand Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Character portrait for Runaway Teen Lio Strand, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Runaway Teen Lio Strand Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-3-portrait-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-3-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-3-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-3-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:14.008Z",
-      "checksum": "b27a962052e4982f7478cd1c6ea7352c1cd62a01",
-      "file_size": 918250,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:20:57.009Z",
+      "checksum": "ec30f38e9c6056a1c3b7fa8310adc30ed3f42c29",
+      "file_size": 3064445,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -782,17 +1610,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Harvest Men - Runaway Teen Lio Strand Voice Profile",
-      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Runaway Teen Lio Strand. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Runaway Teen Lio Strand. I should not be leaving this message. Something about blood-soil composition panel is wrong, and The Reaper Steward wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to isolated valley communes and threshing grounds.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\npc_voice_profile\\the-harvest-men-the-harvest-men-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:46.132Z",
-      "checksum": "6d5806037c761ae54a7bb869e1e0f95107e33ac9",
-      "file_size": 2110746,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:36:33.778Z",
+      "checksum": "d9d130411bab7c92c3f49ff3c706047596aa9077",
+      "file_size": 868500,
+      "duration_seconds": 9.05,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.139905,
+          "pitchSemitone": 0.37799999999999995,
+          "textureAmount": 0.61375,
+          "highpassHz": 92,
+          "lowpassHz": 8049,
+          "presenceGainDb": 0.03700000000000003
+        },
+        "voice_design": {
+          "apiSpeed": 1.139905,
+          "pitchSemitone": 0.37799999999999995,
+          "textureAmount": 0.61375,
+          "highpassHz": 92,
+          "lowpassHz": 8049,
+          "presenceGainDb": 0.03700000000000003
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -810,7 +1662,8 @@
       "created_at": "2026-03-21T16:14:55.776Z",
       "checksum": "9258cce7ae77b38cc59bc7829df34269112bebe5",
       "file_size": 1187,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -819,16 +1672,21 @@
       "modality": "image",
       "title": "The Harvest Men - Festival Marshal Jarek Holt Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Character portrait for Festival Marshal Jarek Holt, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Festival Marshal Jarek Holt Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-4-portrait-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-4-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\character_portrait\\the-harvest-men-the-harvest-men-npc-4-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/character_portrait/the-harvest-men-the-harvest-men-npc-4-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:13.956Z",
-      "checksum": "95f7d4db0df8fcb244a8f115aad204fe846f6020",
-      "file_size": 909689,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:20:49.861Z",
+      "checksum": "9e9ace9b46716031fb0bb0b9fd9ea8585a200a10",
+      "file_size": 3209703,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -836,17 +1694,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Harvest Men - Festival Marshal Jarek Holt Voice Profile",
-      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Festival Marshal Jarek Holt. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Festival Marshal Jarek Holt. I should not be leaving this message. Something about blood-soil composition panel is wrong, and The Reaper Steward wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to isolated valley communes and threshing grounds.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\npc_voice_profile\\the-harvest-men-the-harvest-men-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:46.595Z",
-      "checksum": "f31fb4f7f254a7fa75ca27255beb8bfba3fba48f",
-      "file_size": 2110456,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:37.409Z",
+      "checksum": "e3a1d418b903c9046e8fb040f825280f77a9a9dc",
+      "file_size": 903308,
+      "duration_seconds": 9.41,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 0.46099999999999997,
+          "textureAmount": 0.49624999999999997,
+          "highpassHz": 86,
+          "lowpassHz": 7784,
+          "presenceGainDb": 0.02699999999999994
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 0.46099999999999997,
+          "textureAmount": 0.49624999999999997,
+          "highpassHz": 86,
+          "lowpassHz": 7784,
+          "presenceGainDb": 0.02699999999999994
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -855,16 +1737,21 @@
       "modality": "image",
       "title": "The Harvest Men - Lantern Route Triangulation Puzzle Board",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Puzzle visual for \"Lantern Route Triangulation\". Objective: Merge three lantern route fragments to locate the hidden threshing pit.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Lantern Route Triangulation Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_board\\the-harvest-men-the-harvest-men-puzzle-shards-puzzle-board-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/puzzle_board/the-harvest-men-the-harvest-men-puzzle-shards-puzzle-board-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_board\\the-harvest-men-the-harvest-men-puzzle-shards-puzzle-board-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/puzzle_board/the-harvest-men-the-harvest-men-puzzle-shards-puzzle-board-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:20.067Z",
-      "checksum": "ccc824fd1f8d9f146909f4ae7693e4335d607b67",
-      "file_size": 961161,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:20:24.559Z",
+      "checksum": "dfe8490e54e116326f00db1dd447674c5846e2dd",
+      "file_size": 3505415,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -882,7 +1769,8 @@
       "created_at": "2026-03-21T16:14:55.806Z",
       "checksum": "034f53c15bf00da1d37c918adc5456a40ca50b60",
       "file_size": 1187,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -891,16 +1779,21 @@
       "modality": "image",
       "title": "The Harvest Men - Lantern Route Triangulation - ALLY_A Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Create shard card for holder ALLY_A. Content brief: Ally A gets old festival timestamps with off-by-one pattern.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Lantern Route Triangulation - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_shard_card\\the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/puzzle_shard_card/the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_shard_card\\the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/puzzle_shard_card/the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:23.221Z",
-      "checksum": "d518233bb09a94421d6d2ff29fd5960a5633aef3",
-      "file_size": 964412,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:20:47.046Z",
+      "checksum": "7fdac528a48dedf14706993f6f1e65fb94eb1b48",
+      "file_size": 3605953,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -909,16 +1802,21 @@
       "modality": "image",
       "title": "The Harvest Men - Lantern Route Triangulation - GLOBAL_BROADCAST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast weather radar exposes smoke columns only at key coordinates.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Lantern Route Triangulation - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_shard_card\\the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/puzzle_shard_card/the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_shard_card\\the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/puzzle_shard_card/the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:23.223Z",
-      "checksum": "dce1ddd4856807fd8826e0a0fa76220949f982bb",
-      "file_size": 958212,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:21:11.787Z",
+      "checksum": "0f2b0c009c2d66b15028c105c471e456d2c53118",
+      "file_size": 3645799,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -927,16 +1825,69 @@
       "modality": "image",
       "title": "The Harvest Men - Lantern Route Triangulation - HOST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Create shard card for holder HOST. Content brief: Host receives a hand-drawn route with one erased landmark.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Lantern Route Triangulation - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_shard_card\\the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/puzzle_shard_card/the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\puzzle_shard_card\\the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/puzzle_shard_card/the-harvest-men-the-harvest-men-puzzle-shards-the-harvest-men-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:20.086Z",
-      "checksum": "d498b9913e2845bbfbc94d2727b32fdc31fff330",
-      "file_size": 950316,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:21:13.938Z",
+      "checksum": "63623439761f37b835af23079cd34a522e3d4c64",
+      "file_size": 3678957,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-harvest-men",
+      "asset_id": "the-harvest-men-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "The Harvest Men Main Trailer",
+      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\story_trailer\\the-harvest-men-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/the-harvest-men/video/story_trailer/the-harvest-men-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\story_trailer\\the-harvest-men-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/story_trailer/the-harvest-men-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:15:24.210Z",
+      "checksum": "746897cc91d1a9fbf463fd2d93fb795a9ab990ae",
+      "file_size": 12736528,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-3-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Visiting Agronomist Dina Crowe",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Visiting Agronomist Dina Crowe briefing. The Harvest Men Main Trailer is now active. Start with blood-soil composition panel, then compare every new message against a ritual mask selects a new wearer every dusk, and refusals vanish overnight.. If The Reaper Steward reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.99575,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.46625,
+            "highpassHz": 89,
+            "lowpassHz": 7312,
+            "presenceGainDb": 0.08300000000000005
+          }
+        }
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -954,7 +1905,8 @@
       "created_at": "2026-03-21T16:14:55.781Z",
       "checksum": "a08ac644b03d58d1bdf3d1aec8ef7124b2067791",
       "file_size": 1167,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-harvest-men",
@@ -963,16 +1915,21 @@
       "modality": "image",
       "title": "The Harvest Men - Villain Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Design portrait of antagonist The Reaper Steward with archetype RIGHTEOUS_ZEALOT, speech style \"Rural parable mixed with legal command.\", and motifs corn husk knots, lantern smoke, harvest blades.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: The Harvest Men - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/the-harvest-men/image/villain_portrait/the-harvest-men-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/villain_portrait/the-harvest-men-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:14.007Z",
-      "checksum": "ad008bfdb358f754b2220ebe50d9aed97e9d8159",
-      "file_size": 913373,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:21:53.600Z",
+      "checksum": "a968bbe29acf72ceb223c934ba8a3137cac58049",
+      "file_size": 2972478,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-harvest-men",
@@ -980,149 +1937,42 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "The Harvest Men - Villain Voice Profile",
-      "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Create villain voice profile for The Reaper Steward. Worldview: Communities survive only through chosen sacrifice.. Manner: Severe moral mockery.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. A ritual mask selects a new wearer every dusk, and refusals vanish overnight. Work the case in order: secure blood-soil composition panel, confirm the scene at isolated valley communes and threshing grounds, and do not let The Reaper Steward choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\villain_voice_profile\\the-harvest-men-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-harvest-men/audio/villain_voice_profile/the-harvest-men-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:46.986Z",
-      "checksum": "13e2980b79933950a62da9422477a31f8631261c",
-      "file_size": 2110720,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:36:41.319Z",
+      "checksum": "38cc6c05a24295ceddcbd62b4f7b471aa7d0a0cc",
+      "file_size": 1003524,
+      "duration_seconds": 10.45,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "fable",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 0.99783,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 85,
+          "lowpassHz": 7368,
+          "presenceGainDb": -0.16
+        },
+        "voice_design": {
+          "apiSpeed": 0.99783,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 85,
+          "lowpassHz": 7368,
+          "presenceGainDb": -0.16
+        }
+      }
     }
   ],
-  "failures": [
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\beat_transition_video\\the-harvest-men-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-the-harvest-men-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\ending_recap_video\\the-harvest-men-the-harvest-men-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-harvest-men",
-      "asset_id": "the-harvest-men-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\story_trailer\\the-harvest-men-trailer-main-v1.mp4",
-      "last_attempt_at": null
-    }
-  ]
+  "failures": []
 }

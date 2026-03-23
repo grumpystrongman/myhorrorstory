@@ -10,15 +10,25 @@ import {
 } from './lib/agent-army-real-assets.mjs';
 
 function parseArgs() {
-  const args = process.argv.slice(2);
+  const args = process.argv.slice(2).filter((arg) => arg !== '--');
   const storyIndex = args.indexOf('--story');
   const storyId = storyIndex >= 0 ? args[storyIndex + 1] : 'static-between-stations';
+  const regenerate = args.includes('--regenerate');
   return {
-    storyId: storyId ?? 'static-between-stations'
+    storyId: storyId ?? 'static-between-stations',
+    regenerate
   };
 }
 
-function runMaterializer(storyId) {
+function runMaterializer(storyId, regenerate) {
+  if (!regenerate) {
+    return Promise.resolve({
+      command: `${process.execPath} scripts/creative/materialize-agent-army-assets.mjs --story ${storyId} --modality image --limit 3`,
+      stdout: '',
+      stderr: ''
+    });
+  }
+
   const commandArgs = [
     'scripts/creative/materialize-agent-army-assets.mjs',
     '--story',
@@ -30,9 +40,11 @@ function runMaterializer(storyId) {
     '--max-retries',
     '1',
     '--timeout-ms',
-    '45000',
-    '--regenerate'
+    '45000'
   ];
+  if (regenerate) {
+    commandArgs.push('--regenerate');
+  }
 
   return new Promise((resolve, reject) => {
     const child = spawn(process.execPath, commandArgs, {
@@ -68,14 +80,23 @@ function runMaterializer(storyId) {
 }
 
 async function main() {
-  const { storyId } = parseArgs();
-  const run = await runMaterializer(storyId);
-  const assets = filterPlanAssets(await loadPlanAssets(), {
-    storyId,
-    modality: 'image',
-    limit: 3,
-    start: 0
-  });
+  const { storyId, regenerate } = parseArgs();
+  const run = await runMaterializer(storyId, regenerate);
+  const manifestPath = join(
+    repoRoot,
+    'apps',
+    'web',
+    'public',
+    'agent-army',
+    'manifests',
+    `${storyId}.json`
+  );
+  const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+  const manifestImageAssets = manifest.assets.filter((asset) => asset.modality === 'image').slice(0, 3);
+  const planAssets = await loadPlanAssets();
+  const assets = manifestImageAssets
+    .map((manifestAsset) => planAssets.find((asset) => asset.id === manifestAsset.asset_id))
+    .filter(Boolean);
 
   const validations = [];
   for (const asset of assets) {
@@ -90,18 +111,8 @@ async function main() {
     });
   }
 
-  const manifestPath = join(
-    repoRoot,
-    'apps',
-    'web',
-    'public',
-    'agent-army',
-    'manifests',
-    `${storyId}.json`
-  );
-  const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
-
   console.log(`COMMAND=${run.command}`);
+  console.log(`MODE=${regenerate ? 'regenerate' : 'reuse-existing'}`);
   console.log(`OUTPUT_DIR=apps/web/public/agent-army/stories/${storyId}/image`);
   console.log(`FILENAMES=${validations.map((item) => item.file).join(', ')}`);
   console.log(`VALIDATION=${JSON.stringify(validations, null, 2)}`);

@@ -18,7 +18,8 @@
       "created_at": "2026-03-21T16:14:55.576Z",
       "checksum": "6149ccd5452f50946553a79e10738ad6d61ac303",
       "file_size": 1239,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -27,16 +28,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Evidence Still - Array maintenance gap log",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Array maintenance gap log\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Evidence Still - Array maintenance gap log. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-array-maintenance-gap-log-evidence-still-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-array-maintenance-gap-log-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-array-maintenance-gap-log-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-array-maintenance-gap-log-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:21.867Z",
-      "checksum": "ddab8a600f7d25d0bfc5826942fa32f7e84f1bdb",
-      "file_size": 944634,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:53:00.845Z",
+      "checksum": "2a930f61cfde42680aecf1b6537cb74ab34d1ba9",
+      "file_size": 3271409,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -45,16 +51,66 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Dormant Array Wake Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Beat: Dormant Array Wake (Contact). Narrative: A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-1-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-1-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:09.450Z",
-      "checksum": "c92ef9ba9a1ff0f6a0e511171d9b094ffdadb017",
-      "file_size": 849853,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:53:24.263Z",
+      "checksum": "5fa9b119771313bd36a2c291ff2b125ac7ee7c1a",
+      "file_size": 2427944,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Dormant Array Wake Beat Transition",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Dormant Array Wake. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:00:28.159Z",
+      "checksum": "c4154dbefb773242bcfcb94acbff1f976efb4397",
+      "file_size": 4246373,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance briefing. Dormant Array Wake Beat Transition is now active. Start with telemetry checksum drift, then compare every new message against telemetry returns from a decommissioned orbital array and predicts player replies.. If The Quiet Orbit reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.95512,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 73,
+            "lowpassHz": 7426,
+            "presenceGainDb": -0.5569999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -63,16 +119,66 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Escalation Signal Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Beat: Escalation Signal (Contact). Narrative: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-2-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-2-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:09.499Z",
-      "checksum": "56eae5c504f73399a4d335395c2ae794f799bfb1",
-      "file_size": 853142,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:53:37.817Z",
+      "checksum": "c14320e3d07a7dc2f0c1d9ea4a8115a47a9e66be",
+      "file_size": 2576118,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Escalation Signal Beat Transition",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:00:44.352Z",
+      "checksum": "c9694aa67b73688f8cad54a70460a6ef3b8f04e9",
+      "file_size": 4326197,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance briefing. Escalation Signal Beat Transition is now active. Start with telemetry checksum drift, then compare every new message against telemetry returns from a decommissioned orbital array and predicts player replies.. If The Quiet Orbit reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.014235,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 84,
+            "lowpassHz": 7175,
+            "presenceGainDb": -0.477
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -81,16 +187,66 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Trust Fracture Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-3-beat-scene-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-3-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-3-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:09.472Z",
-      "checksum": "13dcf513f35316f74df1a6c0ca76ce9c80cba7c6",
-      "file_size": 847377,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:53:43.187Z",
+      "checksum": "9a920dbe76bf084f7e5c295bac4b1ef52a74cd6d",
+      "file_size": 2929617,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Trust Fracture Beat Transition",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:00:53.029Z",
+      "checksum": "c59640a44f4f6d6d6d1744d34abfab548a602787",
+      "file_size": 4590690,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-3-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance briefing. Trust Fracture Beat Transition is now active. Start with telemetry checksum drift, then compare every new message against telemetry returns from a decommissioned orbital array and predicts player replies.. If The Quiet Orbit reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.00839,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 75,
+            "lowpassHz": 7417,
+            "presenceGainDb": -0.5569999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -99,16 +255,66 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Ultimatum Window Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:12.301Z",
-      "checksum": "cd31861bbcb022ee2d71c2fa821b78be4b21a172",
-      "file_size": 873598,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:53:47.161Z",
+      "checksum": "efce0270253e5fbf203e75b51ea9b39fb0e6ed5c",
+      "file_size": 2724268,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:01:00.241Z",
+      "checksum": "5fb530956313d5c507451ad06c4f25141ba235e8",
+      "file_size": 4369562,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance briefing. Ultimatum Window Beat Transition is now active. Start with telemetry checksum drift, then compare every new message against telemetry returns from a decommissioned orbital array and predicts player replies.. If The Quiet Orbit reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.949345,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 87,
+            "lowpassHz": 7019,
+            "presenceGainDb": -0.5569999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -117,16 +323,66 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Confrontation Protocol Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-5-beat-scene-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-5-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-5-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-5-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:12.326Z",
-      "checksum": "f9cc6caa4c420d19711cec5e2396ba22b0098ec0",
-      "file_size": 973735,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:54:01.060Z",
+      "checksum": "8991ceb4eabeee74a213ea6f48c8797df4ae8f9a",
+      "file_size": 2595286,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:01:07.825Z",
+      "checksum": "a633de4433116d7bea60e1ae47592dfa99af2a17",
+      "file_size": 4316497,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance briefing. Confrontation Protocol Beat Transition is now active. Start with telemetry checksum drift, then compare every new message against telemetry returns from a decommissioned orbital array and predicts player replies.. If The Quiet Orbit reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.99222,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 78,
+            "lowpassHz": 7249,
+            "presenceGainDb": -0.477
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -135,16 +391,66 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Case Debrief Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/beat_scene_art/signal-from-kharon-9-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:12.301Z",
-      "checksum": "171ca6449a57377c76dd44ae7ad6d43d08682ede",
-      "file_size": 857008,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:54:09.873Z",
+      "checksum": "8e43f4e8130745264209febdac40f41d34228146",
+      "file_size": 2421512,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Case Debrief Beat Transition",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:01:15.942Z",
+      "checksum": "b4476dd07d634ca2b3d5ebea26c113474d4303b7",
+      "file_size": 4296361,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance briefing. Case Debrief Beat Transition is now active. Start with telemetry checksum drift, then compare every new message against telemetry returns from a decommissioned orbital array and predicts player replies.. If The Quiet Orbit reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.007095,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 80,
+            "lowpassHz": 7336,
+            "presenceGainDb": -0.07699999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -162,7 +468,8 @@
       "created_at": "2026-03-21T16:14:55.580Z",
       "checksum": "6817068f360d33d5c745bf039b0de0408e4e1a15",
       "file_size": 1245,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -171,16 +478,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Evidence Still - Operator biometric mismatch",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Operator biometric mismatch\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Evidence Still - Operator biometric mismatch. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-operator-biometric-mismatch-evidence-still-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-operator-biometric-mismatch-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-operator-biometric-mismatch-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-operator-biometric-mismatch-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:21.879Z",
-      "checksum": "3b8cd1923ef1ff82cc541cee5c3151d5dd074496",
-      "file_size": 953422,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:54:10.019Z",
+      "checksum": "39abf311789fd2f562bc27e45d809aadcaddfd6d",
+      "file_size": 3424325,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -198,7 +510,8 @@
       "created_at": "2026-03-21T16:14:55.589Z",
       "checksum": "6a7a6235199ce93acd068dbb94bcb70b3cbe8002",
       "file_size": 1246,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -216,7 +529,8 @@
       "created_at": "2026-03-21T16:15:49.551Z",
       "checksum": "3ca4b36ff42405576a2bd94d292abc63e6a7f8c5",
       "file_size": 1416,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -234,7 +548,8 @@
       "created_at": "2026-03-21T16:14:55.593Z",
       "checksum": "2c1cbed15e201038ff038203873d261648582b79",
       "file_size": 1264,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -252,7 +567,8 @@
       "created_at": "2026-03-21T16:15:49.557Z",
       "checksum": "c349e9be9fc358a4890eb886ec57e0d2536f4414",
       "file_size": 1434,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -261,16 +577,32 @@
       "modality": "audio",
       "title": "Signal From Kharon-9 - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\arc_ambience\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/arc_ambience/signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:57.013Z",
-      "checksum": "fa93625be89d1b2c1274a889aa54e5fd7dbcbb90",
-      "file_size": 15698890,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:08:55.244Z",
+      "checksum": "5f28c2146e3e10dfc62287e1bd09d5a5517251c0",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 31,
+          "mid": 158,
+          "high": 1280,
+          "shimmer": 3420,
+          "pulseHz": 0.54,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.32
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -279,16 +611,67 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Contact and Contradiction Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: cosmic horror. Tone: INTENSE. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Signal From Kharon-9 - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/arc_key_art/signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/arc_key_art/signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:06.064Z",
-      "checksum": "ca9a81d96f01570594e8fc6a87c47833a63b1b74",
-      "file_size": 851135,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:54:49.163Z",
+      "checksum": "b6ca06108d5c7ce4d5c7266e09195f6108368fc6",
+      "file_size": 3006756,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:00:02.932Z",
+      "checksum": "53d2d0bfcfccf922da8db21abb4bc210fdaa7cd9",
+      "file_size": 12291087,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\arc_ambience\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Astrophysicist Dr. Helene Oru",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Astrophysicist Dr. Helene Oru to team. Telemetry returns from a decommissioned orbital array and predicts player replies. This arc centers on contact and contradiction arc teaser video, with pressure building around telemetry checksum drift. Move quietly through mountain observatory and subterranean receiver array and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.5099999999999998,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 93,
+            "lowpassHz": 7890,
+            "presenceGainDb": 0.597
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -297,16 +680,32 @@
       "modality": "audio",
       "title": "Signal From Kharon-9 - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\arc_ambience\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/arc_ambience/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:58.638Z",
-      "checksum": "bd3c4380731b7306d5245bacc9334c7bb0b09749",
-      "file_size": 15698970,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:08:56.655Z",
+      "checksum": "d6d9d3024fe9cb6f1d82db4cf87e2d24c9153f4f",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 31,
+          "mid": 158,
+          "high": 1280,
+          "shimmer": 3420,
+          "pulseHz": 0.54,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.32
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -315,16 +714,67 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Interference and Doubt Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: cosmic horror. Tone: INTENSE. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Signal From Kharon-9 - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/arc_key_art/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/arc_key_art/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:06.095Z",
-      "checksum": "a96900c4e54927c0e1d0541681d7d525c984ef62",
-      "file_size": 855176,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:54:59.193Z",
+      "checksum": "ba8f5e9403262297d4fac441af5af063408ca036",
+      "file_size": 2655601,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:00:08.047Z",
+      "checksum": "f83c4e170a1e0c3251b01e80b7d99dcdc0f1516a",
+      "file_size": 11655643,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\arc_ambience\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Astrophysicist Dr. Helene Oru",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Astrophysicist Dr. Helene Oru to team. Telemetry returns from a decommissioned orbital array and predicts player replies. This arc centers on interference and doubt arc teaser video, with pressure building around telemetry checksum drift. Move quietly through mountain observatory and subterranean receiver array and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.5099999999999998,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 98,
+            "lowpassHz": 7926,
+            "presenceGainDb": 0.597
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -333,16 +783,32 @@
       "modality": "audio",
       "title": "Signal From Kharon-9 - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\arc_ambience\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/arc_ambience/signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:59.969Z",
-      "checksum": "a6b146fbf25d55ad6f51117f1d5c135a6aefd4bf",
-      "file_size": 15698858,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:08:58.086Z",
+      "checksum": "e09c1bc4bc4a350726642f1b5b98e6e561d6c042",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 31,
+          "mid": 158,
+          "high": 1280,
+          "shimmer": 3420,
+          "pulseHz": 0.54,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.32
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -351,16 +817,67 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Confrontation and Reckoning Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: cosmic horror. Tone: INTENSE. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Signal From Kharon-9 - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/arc_key_art/signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/arc_key_art/signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:06.064Z",
-      "checksum": "f58e59c1cbd1f9258db7943cd0153c8b834a83bb",
-      "file_size": 864301,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:55:03.527Z",
+      "checksum": "0aa47dddc6569caf7eecd2163caa792cc6d28d3e",
+      "file_size": 2723969,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:00:36.631Z",
+      "checksum": "8041733163eef8185b8dd9057748af30f8dc8ad0",
+      "file_size": 11752503,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\arc_ambience\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Astrophysicist Dr. Helene Oru",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Astrophysicist Dr. Helene Oru to team. Telemetry returns from a decommissioned orbital array and predicts player replies. This arc centers on confrontation and reckoning arc teaser video, with pressure building around telemetry checksum drift. Move quietly through mountain observatory and subterranean receiver array and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.5099999999999998,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 98,
+            "lowpassHz": 7737,
+            "presenceGainDb": 0.837
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -369,16 +886,67 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Corruption Pact Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You feed selected data to the signal for strategic advantage.. Deliver emotional closure with sequel-hook tension.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-card-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/ending_card/signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/ending_card/signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:31.797Z",
-      "checksum": "fb66b890a465158174047fb2de341834a4e759a6",
-      "file_size": 865310,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:55:38.315Z",
+      "checksum": "8c675cc84c748ecdc8a82fe60553258bad773a87",
+      "file_size": 2883612,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:02:37.401Z",
+      "checksum": "49da86d77d9bdc140a9dbf493be34a22bcd28c8e",
+      "file_size": 14405327,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "The Quiet Orbit",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "The Quiet Orbit reporting. The case closes on corruption pact ending recap video. The evidence thread started with telemetry checksum drift and now points directly at The Quiet Orbit. Review the timeline at mountain observatory and subterranean receiver array before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.84,
+            "pitchSemitone": -2.379,
+            "textureAmount": 0.52125,
+            "highpassHz": 72,
+            "lowpassHz": 5972,
+            "presenceGainDb": 0.3270000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -387,16 +955,32 @@
       "modality": "audio",
       "title": "Signal From Kharon-9 - Corruption Pact Ending Score",
       "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Compose ending score cue for \"Corruption Pact\" that supports summary \"You feed selected data to the signal for strategic advantage.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/ending_score/signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:06.396Z",
-      "checksum": "67c01a7cd02b49d3975af59983d560ed77dba80a",
-      "file_size": 15698834,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:09:20.712Z",
+      "checksum": "ce5d66ba7e34cf62f03cf6e4e978616b39cb70c3",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 31,
+          "mid": 158,
+          "high": 1280,
+          "shimmer": 3420,
+          "pulseHz": 0.54,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.32
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -405,16 +989,67 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Clean Resolution Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You isolate the hostile signal and preserve proof without total blackout.. Deliver emotional closure with sequel-hook tension.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-card-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/ending_card/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/ending_card/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:28.423Z",
-      "checksum": "681b893916ea8595143aae28c1807df67b71eeda",
-      "file_size": 865951,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:55:49.589Z",
+      "checksum": "dd057894d79fa9691da5c43880fa3074ee55877d",
+      "file_size": 2863642,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:01:53.323Z",
+      "checksum": "9f751b676d0d00c9ed70db8b52e6ca1f7eb5a6ea",
+      "file_size": 14525501,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance reporting. The case closes on clean resolution ending recap video. The evidence thread started with telemetry checksum drift and now points directly at The Quiet Orbit. Review the timeline at mountain observatory and subterranean receiver array before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.96163,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 87,
+            "lowpassHz": 7048,
+            "presenceGainDb": 0.0030000000000000443
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -423,16 +1058,32 @@
       "modality": "audio",
       "title": "Signal From Kharon-9 - Clean Resolution Ending Score",
       "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Compose ending score cue for \"Clean Resolution\" that supports summary \"You isolate the hostile signal and preserve proof without total blackout.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/ending_score/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:03.263Z",
-      "checksum": "e8e112a605ee026d37303ede9db8613d3ad083a1",
-      "file_size": 15700290,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:09:17.913Z",
+      "checksum": "0912cf9baf8f8d98ea764629097cf10b086d6199",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 31,
+          "mid": 158,
+          "high": 1280,
+          "shimmer": 3420,
+          "pulseHz": 0.54,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.32
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -441,16 +1092,67 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Compromised Truth Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You stop the broadcast but lose the array team in shutdown.. Deliver emotional closure with sequel-hook tension.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-card-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/ending_card/signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/ending_card/signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:28.443Z",
-      "checksum": "a20433d7919c86f8e996da1bde3cf4c23d89d71f",
-      "file_size": 861729,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:55:54.696Z",
+      "checksum": "8869bf4f64f53c8eac842dc9273853695094b7b5",
+      "file_size": 2967398,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Signal From Kharon-9 - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:02:02.962Z",
+      "checksum": "e8c5f76da5e6360d820055f8cff53a215c09c46d",
+      "file_size": 14649353,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance reporting. The case closes on compromised truth ending recap video. The evidence thread started with telemetry checksum drift and now points directly at The Quiet Orbit. Review the timeline at mountain observatory and subterranean receiver array before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.94889,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 72,
+            "lowpassHz": 7040,
+            "presenceGainDb": -0.477
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -459,16 +1161,32 @@
       "modality": "audio",
       "title": "Signal From Kharon-9 - Compromised Truth Ending Score",
       "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Compose ending score cue for \"Compromised Truth\" that supports summary \"You stop the broadcast but lose the array team in shutdown.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/ending_score/signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:04.739Z",
-      "checksum": "4665521f49569c47e29741960a3daac3fe2e6974",
-      "file_size": 15700290,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:09:19.424Z",
+      "checksum": "fb576efdff472822699a997afdb0e810c188f0fc",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 31,
+          "mid": 158,
+          "high": 1280,
+          "shimmer": 3420,
+          "pulseHz": 0.54,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.32
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -486,7 +1204,8 @@
       "created_at": "2026-03-21T16:14:55.536Z",
       "checksum": "1302136861aa7e1068479a87632d556091049d19",
       "file_size": 1222,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -495,16 +1214,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Systems Engineer Ari Vance Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Character portrait for Systems Engineer Ari Vance, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Systems Engineer Ari Vance Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-1-portrait-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-1-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-1-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-1-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:15.399Z",
-      "checksum": "848ca3e16d69fbd1cc7eba5df26f8334ff5ddce3",
-      "file_size": 889400,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:56:30.433Z",
+      "checksum": "8ca2edf6ae03213e5819cc2159c72963b4da0a09",
+      "file_size": 2809853,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -512,17 +1236,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Signal From Kharon-9 - Systems Engineer Ari Vance Voice Profile",
-      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Systems Engineer Ari Vance. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Systems Engineer Ari Vance. Keep your channel open and do not answer unknown callbacks. Telemetry returns from a decommissioned orbital array and predicts player replies. Start with telemetry checksum drift, then verify every timestamp against mountain observatory and subterranean receiver array. If The Quiet Orbit contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:00.337Z",
-      "checksum": "437e4a0a30f82d72d0bf950d37b8ab4a0104d8f7",
-      "file_size": 2110720,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:07.414Z",
+      "checksum": "8e1488f97d8ed071948b824c58a643a22865f0b1",
+      "file_size": 1425032,
+      "duration_seconds": 14.84,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 0.98424,
+          "pitchSemitone": 0.14899999999999994,
+          "textureAmount": 0.46625,
+          "highpassHz": 74,
+          "lowpassHz": 7298,
+          "presenceGainDb": -0.5569999999999999
+        },
+        "voice_design": {
+          "apiSpeed": 0.98424,
+          "pitchSemitone": 0.14899999999999994,
+          "textureAmount": 0.46625,
+          "highpassHz": 74,
+          "lowpassHz": 7298,
+          "presenceGainDb": -0.5569999999999999
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -540,7 +1288,8 @@
       "created_at": "2026-03-21T16:14:55.541Z",
       "checksum": "ead9cf2501b9a21408c1662afcb016dc2fc54df3",
       "file_size": 1228,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -549,16 +1298,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Astrophysicist Dr. Helene Oru Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Character portrait for Astrophysicist Dr. Helene Oru, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Astrophysicist Dr. Helene Oru Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-2-portrait-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-2-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-2-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-2-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:15.397Z",
-      "checksum": "ca450ff460e761a6139951dd64adade94034c479",
-      "file_size": 890259,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:56:45.285Z",
+      "checksum": "1cdc5a47b2e85cc67bb23355cec4c3d444d598a7",
+      "file_size": 3165275,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -566,17 +1320,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Signal From Kharon-9 - Astrophysicist Dr. Helene Oru Voice Profile",
-      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Astrophysicist Dr. Helene Oru. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Astrophysicist Dr. Helene Oru. I should not be leaving this message. Something about telemetry checksum drift is wrong, and The Quiet Orbit wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain observatory and subterranean receiver array.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:00.716Z",
-      "checksum": "aa0d5938fe8ad276ed387d2e7144269e323a3404",
-      "file_size": 2110528,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:35:11.036Z",
+      "checksum": "833dc4726b9d3d2a17c197217859fbfbe78a2547",
+      "file_size": 806084,
+      "duration_seconds": 8.4,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.5099999999999998,
+          "textureAmount": 0.6337499999999999,
+          "highpassHz": 93,
+          "lowpassHz": 7612,
+          "presenceGainDb": 0.677
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.5099999999999998,
+          "textureAmount": 0.6337499999999999,
+          "highpassHz": 93,
+          "lowpassHz": 7612,
+          "presenceGainDb": 0.677
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -594,7 +1372,8 @@
       "created_at": "2026-03-21T16:14:55.548Z",
       "checksum": "39a4d38dcf6635dc0a751c59f13647c0fa64b8f1",
       "file_size": 1222,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -603,16 +1382,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Array Operator Micah Trent Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Character portrait for Array Operator Micah Trent, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Array Operator Micah Trent Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-3-portrait-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-3-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-3-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-3-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:15.347Z",
-      "checksum": "17d7c3621bdc062d23ae0c936801c9007dda34fc",
-      "file_size": 886307,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:56:49.451Z",
+      "checksum": "41bf0214178a88eee5eea9a5be8c69604c58f83b",
+      "file_size": 2977788,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -620,17 +1404,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Signal From Kharon-9 - Array Operator Micah Trent Voice Profile",
-      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Array Operator Micah Trent. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Array Operator Micah Trent. I should not be leaving this message. Something about telemetry checksum drift is wrong, and The Quiet Orbit wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain observatory and subterranean receiver array.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:01.082Z",
-      "checksum": "e09237766f1bfa336ee0508eab6e6ee623fdd737",
-      "file_size": 2110650,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:14.713Z",
+      "checksum": "e129f5c9545a6e84827c45eea7e7389dd986eb84",
+      "file_size": 887132,
+      "duration_seconds": 9.24,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.069905,
+          "pitchSemitone": 0.5109999999999999,
+          "textureAmount": 0.6074999999999999,
+          "highpassHz": 85,
+          "lowpassHz": 8023,
+          "presenceGainDb": 0.22199999999999998
+        },
+        "voice_design": {
+          "apiSpeed": 1.069905,
+          "pitchSemitone": 0.5109999999999999,
+          "textureAmount": 0.6074999999999999,
+          "highpassHz": 85,
+          "lowpassHz": 8023,
+          "presenceGainDb": 0.22199999999999998
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -648,7 +1456,8 @@
       "created_at": "2026-03-21T16:14:55.556Z",
       "checksum": "3a7fd4597631e973b93227258111398c93401702",
       "file_size": 1216,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -657,16 +1466,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Telemetry Broker Vale-9 Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Character portrait for Telemetry Broker Vale-9, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Telemetry Broker Vale-9 Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-4-portrait-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-4-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\character_portrait\\signal-from-kharon-9-signal-from-kharon-9-npc-4-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/character_portrait/signal-from-kharon-9-signal-from-kharon-9-npc-4-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:18.550Z",
-      "checksum": "f518ac1e75579b74bc5f6cdca84e65b13ecde57b",
-      "file_size": 895921,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:57:29.945Z",
+      "checksum": "5cf2864a408a843a8867e96d3f464cc460e1929a",
+      "file_size": 2838429,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -674,17 +1488,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Signal From Kharon-9 - Telemetry Broker Vale-9 Voice Profile",
-      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Telemetry Broker Vale-9. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Telemetry Broker Vale-9. I should not be leaving this message. Something about telemetry checksum drift is wrong, and The Quiet Orbit wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain observatory and subterranean receiver array.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:01.494Z",
-      "checksum": "18d56e7558f2d2d49f9effdd11e7dcd3192578c3",
-      "file_size": 2111226,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:18.175Z",
+      "checksum": "c9f274d3887c046a11af877175198c5fa5da184f",
+      "file_size": 841488,
+      "duration_seconds": 8.76,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.1365,
+          "pitchSemitone": 1.259,
+          "textureAmount": 0.515,
+          "highpassHz": 93,
+          "lowpassHz": 7838,
+          "presenceGainDb": 0.032000000000000084
+        },
+        "voice_design": {
+          "apiSpeed": 1.1365,
+          "pitchSemitone": 1.259,
+          "textureAmount": 0.515,
+          "highpassHz": 93,
+          "lowpassHz": 7838,
+          "presenceGainDb": 0.032000000000000084
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -693,16 +1531,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Tri-band Drift Lock Puzzle Board",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Puzzle visual for \"Tri-band Drift Lock\". Objective: Align three phase drifts shared across players to stabilize decryption.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Tri-band Drift Lock Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_board\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-puzzle-board-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_board/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-puzzle-board-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_board\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-puzzle-board-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_board/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-puzzle-board-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:25.080Z",
-      "checksum": "93ba89cf3f4a25c105b3bbcc1979479305cf05b0",
-      "file_size": 966238,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:57:09.679Z",
+      "checksum": "77ab7df7dd90c83a65830238d1ba87a35b0758d1",
+      "file_size": 3428364,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -720,7 +1563,8 @@
       "created_at": "2026-03-21T16:14:55.585Z",
       "checksum": "45efd65307c4f57d94a24ac97e7623fc21c1247c",
       "file_size": 1208,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -728,17 +1572,22 @@
       "asset_type": "puzzle_shard_card",
       "modality": "image",
       "title": "Signal From Kharon-9 - Tri-band Drift Lock - ALLY_A Shard Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create shard card for holder ALLY_A. Content brief: Ally A receives y-scale coefficients over SMS.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Tri-band Drift Lock - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create shard card for holder ALLY_A. Content brief: Ally A receives y-scale coefficients over SMS.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Tri-band Drift Lock - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:25.052Z",
-      "checksum": "9257c4e94da4cb0f5b375e51e010410bc0ece781",
-      "file_size": 964760,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:39:53.102Z",
+      "checksum": "222a1649a25dd1089fca1c60cd2cc4722b87827d",
+      "file_size": 3601442,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -747,16 +1596,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Tri-band Drift Lock - GLOBAL_BROADCAST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create shard card for holder GLOBAL_BROADCAST. Content brief: Public burst includes the final parity bit hidden in noise.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Tri-band Drift Lock - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:28.494Z",
-      "checksum": "365ebb1feafd2e85fbaa3a409e7bde8d6dee0e2e",
-      "file_size": 972431,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:57:36.038Z",
+      "checksum": "0ebdfc1be869d06b8dad5abbe90d790c6f992337",
+      "file_size": 3588014,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -765,16 +1619,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Tri-band Drift Lock - HOST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create shard card for holder HOST. Content brief: Host gets a raw phase graph with missing y-axis scale.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Tri-band Drift Lock - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:25.120Z",
-      "checksum": "e8124c53bd7dfc8c11b56dedc68a5dab046d3d66",
-      "file_size": 964945,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:57:42.715Z",
+      "checksum": "939fc7820ba48661deb967891e2175d346ccbcc6",
+      "file_size": 4055583,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -783,16 +1642,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 Social Launch Square",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\social_square\\signal-from-kharon-9-social-launch-square-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/social_square/signal-from-kharon-9-social-launch-square-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\social_square\\signal-from-kharon-9-social-launch-square-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/social_square/signal-from-kharon-9-social-launch-square-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:31.776Z",
-      "checksum": "824358e719d68db2dfce3b0c1ac9a53d4b0bd4cb",
-      "file_size": 719342,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:57:47.452Z",
+      "checksum": "a9c16014c0b4e435de6e1f379d966a0db594a8ac",
+      "file_size": 1584286,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -801,16 +1665,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 Social Launch Vertical",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\social_vertical\\signal-from-kharon-9-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/social_vertical/signal-from-kharon-9-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\social_vertical\\signal-from-kharon-9-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/social_vertical/signal-from-kharon-9-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:31.795Z",
-      "checksum": "4ffa1ea8bc3df7b29b29cbe51ae2931743f7bbe1",
-      "file_size": 745570,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:57:57.044Z",
+      "checksum": "54033125b5fe41ea97131be8a97842c9d8f018b0",
+      "file_size": 1699146,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -828,7 +1697,8 @@
       "created_at": "2026-03-21T16:14:55.571Z",
       "checksum": "9fe9c9ea9a8fe72ef107eb78f2a15babb1bf740b",
       "file_size": 1233,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -836,17 +1706,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Signal From Kharon-9 - Evidence Still - Starfield deviation map",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Starfield deviation map\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Evidence Still - Starfield deviation map. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Signal From Kharon-9. Setting: Mountain observatory and subterranean receiver array. Recurring motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Starfield deviation map\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Evidence Still - Starfield deviation map. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:21.851Z",
-      "checksum": "873624be0f01919004dcd686ed96f8e10cee0440",
-      "file_size": 968295,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:39:10.384Z",
+      "checksum": "24c10c490f8e8758c24911b3bdf145b344427f80",
+      "file_size": 3751660,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -854,17 +1729,22 @@
       "asset_type": "story_key_art",
       "modality": "image",
       "title": "Signal From Kharon-9 Story Key Art",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/story_key_art/signal-from-kharon-9-story-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/story_key_art/signal-from-kharon-9-story-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:02.815Z",
-      "checksum": "d1d618cdbca6a789704561ae5c7e64ff1dd76012",
-      "file_size": 857126,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:38:07.504Z",
+      "checksum": "a1cf482c75087440bfab74c678d3c9331a6c378d",
+      "file_size": 3089890,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -882,7 +1762,8 @@
       "created_at": "2026-03-21T16:15:49.562Z",
       "checksum": "6633c831c11fc018d01f6e5635179c7ec90c0fe1",
       "file_size": 1322,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -891,16 +1772,32 @@
       "modality": "audio",
       "title": "Signal From Kharon-9 Story Theme Loop",
       "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/story_theme_loop/signal-from-kharon-9-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:07.853Z",
-      "checksum": "68b22f4db0e531e70564006618e385c1be863c52",
-      "file_size": 15700290,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:09:21.905Z",
+      "checksum": "66c0cad82ed7d6a6d6c6f25fbdd520d18ee7f13c",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 31,
+          "mid": 158,
+          "high": 1280,
+          "shimmer": 3420,
+          "pulseHz": 0.54,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.32
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -918,7 +1815,8 @@
       "created_at": "2026-03-21T16:14:55.566Z",
       "checksum": "989afb7fb97cf0e4573d7c3297705930927957a1",
       "file_size": 1236,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -927,16 +1825,69 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Evidence Still - Telemetry checksum drift",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Telemetry checksum drift\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Evidence Still - Telemetry checksum drift. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:18.518Z",
-      "checksum": "9627ef12f5eea9b79107dc66bf783a5719dec627",
-      "file_size": 957119,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:58:17.508Z",
+      "checksum": "ae19bff0ae390ee44bd63eb24dce62d91d3d20c8",
+      "file_size": 2599307,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "signal-from-kharon-9",
+      "asset_id": "signal-from-kharon-9-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "Signal From Kharon-9 Main Trailer",
+      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\story_trailer\\signal-from-kharon-9-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/signal-from-kharon-9/video/story_trailer/signal-from-kharon-9-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\story_trailer\\signal-from-kharon-9-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/story_trailer/signal-from-kharon-9-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:02:42.933Z",
+      "checksum": "7c754d3201ff5147847516a3633bcb4e1c9543bf",
+      "file_size": 13432851,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-3-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Systems Engineer Ari Vance",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Systems Engineer Ari Vance briefing. Signal From Kharon-9 Main Trailer is now active. Start with telemetry checksum drift, then compare every new message against telemetry returns from a decommissioned orbital array and predicts player replies.. If The Quiet Orbit reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.00258,
+            "pitchSemitone": 0.14899999999999994,
+            "textureAmount": 0.46625,
+            "highpassHz": 86,
+            "lowpassHz": 7120,
+            "presenceGainDb": -0.5569999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -954,7 +1905,8 @@
       "created_at": "2026-03-21T16:14:55.561Z",
       "checksum": "528c04d42858c3f494acbd8667266ceedca2bb12",
       "file_size": 1188,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -963,16 +1915,21 @@
       "modality": "image",
       "title": "Signal From Kharon-9 - Villain Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Design portrait of antagonist The Quiet Orbit with archetype CALM_GENIUS_MANIPULATOR, speech style \"Sparse, mathematical, and eerily intimate.\", and motifs black stars, phase drift, echoing pings.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/signal-from-kharon-9/image/villain_portrait/signal-from-kharon-9-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/villain_portrait/signal-from-kharon-9-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:18.490Z",
-      "checksum": "8b93fb2e7f013b7140b3a54e43842693904e9bfc",
-      "file_size": 890642,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:58:58.081Z",
+      "checksum": "8ac055b77c3d9a3ad2e18a10b0823075183adfb0",
+      "file_size": 2782162,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "signal-from-kharon-9",
@@ -980,149 +1937,42 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "Signal From Kharon-9 - Villain Voice Profile",
-      "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Create villain voice profile for The Quiet Orbit. Worldview: Human choices are measurable noise in a larger equation.. Manner: Clinical amusement at human certainty.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. Telemetry returns from a decommissioned orbital array and predicts player replies. Work the case in order: secure telemetry checksum drift, confirm the scene at mountain observatory and subterranean receiver array, and do not let The Quiet Orbit choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\villain_voice_profile\\signal-from-kharon-9-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/signal-from-kharon-9/audio/villain_voice_profile/signal-from-kharon-9-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:01.861Z",
-      "checksum": "bdb77f43bebb4a95e4cccabfb3f31c2cc659a3e6",
-      "file_size": 2110374,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:35:21.575Z",
+      "checksum": "9dd0d6bb772549c1c550abb6821849f40ac91c48",
+      "file_size": 961884,
+      "duration_seconds": 10.02,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.03129,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 81,
+          "lowpassHz": 7320,
+          "presenceGainDb": 0.08
+        },
+        "voice_design": {
+          "apiSpeed": 1.03129,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 81,
+          "lowpassHz": 7320,
+          "presenceGainDb": 0.08
+        }
+      }
     }
   ],
-  "failures": [
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "signal-from-kharon-9",
-      "asset_id": "signal-from-kharon-9-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\story_trailer\\signal-from-kharon-9-trailer-main-v1.mp4",
-      "last_attempt_at": null
-    }
-  ]
+  "failures": []
 }

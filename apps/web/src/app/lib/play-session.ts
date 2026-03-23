@@ -63,6 +63,8 @@ export interface DramaCampaignWeek {
 
 export interface DramaCampaignPlan {
   totalDays: number;
+  recommendedDays?: number;
+  maxDays?: number;
   weeks: DramaCampaignWeek[];
 }
 
@@ -102,6 +104,24 @@ export interface DramaVisualAsset {
 export interface DramaVisualDeck {
   heroImage: string;
   assets: DramaVisualAsset[];
+}
+
+export interface DramaCaseFile {
+  objective: string;
+  primaryQuestion: string;
+  operationWindow: string;
+  successCriteria: string[];
+  failureConsequences: string[];
+}
+
+export interface DramaArtifactCard {
+  id: string;
+  title: string;
+  type: 'audio' | 'video' | 'document' | 'photo' | 'map' | 'forensic' | 'message';
+  source: string;
+  summary: string;
+  excerpt: string;
+  investigatorPrompt: string;
 }
 
 export interface DramaPackage {
@@ -155,6 +175,8 @@ export interface DramaPackage {
   npcDossiers?: DramaNpcDossier[];
   communityPuzzles?: DramaCommunityPuzzle[];
   visualDeck?: DramaVisualDeck;
+  caseFile?: DramaCaseFile;
+  artifactCards?: DramaArtifactCard[];
   replayHooks: string[];
   sequelHooks: string[];
   branchingMoments: string[];
@@ -291,6 +313,20 @@ export function resolveSessionEnding(pack: DramaPackage, state: SessionState): D
 
   if (reputation.deception >= 18 || reputation.morality <= -18) {
     return endingByType(pack, 'CORRUPTION') ?? endingByType(pack, 'TRAGIC') ?? pack.endings[0]!;
+  }
+
+  const unresolvedBand =
+    investigationProgress >= 82 &&
+    reputation.trustworthiness >= -4 &&
+    reputation.trustworthiness <= 34 &&
+    reputation.morality >= -10 &&
+    reputation.morality < 15 &&
+    reputation.deception >= 0 &&
+    reputation.deception <= 17 &&
+    reputation.aggression <= 16;
+
+  if (unresolvedBand) {
+    return endingByType(pack, 'UNRESOLVED') ?? endingByType(pack, 'PYRRHIC') ?? pack.endings[0]!;
   }
 
   if (reputation.aggression >= 22 && investigationProgress >= 65) {

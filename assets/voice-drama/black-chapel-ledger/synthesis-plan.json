@@ -1,15 +1,15 @@
 {
   "storyId": "black-chapel-ledger",
   "title": "Black Chapel Ledger",
-  "generatedAt": "2026-03-20T14:49:20.902Z",
+  "generatedAt": "2026-03-23T16:36:49.429Z",
   "clips": [
     {
       "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-1",
       "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
-      "beatId": "beat-1",
-      "beatTitle": "Ledger Breach",
-      "channel": "SMS",
-      "text": "A scanned ledger page appears in WhatsApp showing one player's childhood home as collateral. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SIGNAL",
+      "text": "Day 01 control: secure police report burned vellum fragment, validate ledger, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-1.wav",
       "providers": [
         {
@@ -26,13 +26,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -41,10 +41,10 @@
     {
       "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-2",
       "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
-      "text": "Cross-reference this before dawn: Ledger watermark scan.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "Day 02 control: secure handwritten note choir rehearsal wax recordin, validate chapel bell, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-2.wav",
       "providers": [
         {
@@ -61,13 +61,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -76,10 +76,10 @@
     {
       "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-3",
       "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "EMAIL",
-      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "Day 03 control: secure journal entry crypt key inventory, validate salt wax, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-3.wav",
       "providers": [
         {
@@ -96,13 +96,888 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-4",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "SMS",
+      "text": "Day 04 control: secure text message screenshot ledger watermark scan, validate choir loft, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-5",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "Day 05 control: secure call log burned vellum fragment, validate vellum, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-6",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "WHATSAPP",
+      "text": "Day 06 control: secure voicemail transcript choir rehearsal wax recordin, validate cathedral crypt, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-7",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "TELEGRAM",
+      "text": "Day 07 control: secure security footage still crypt key inventory, validate ledger, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-8",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "Day 08 control: secure crime scene photo ledger watermark scan, validate chapel bell, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-9",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "SIGNAL",
+      "text": "Day 09 control: secure marked map burned vellum fragment, validate salt wax, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-10",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "WHATSAPP",
+      "text": "Day 10 control: secure receipt choir rehearsal wax recordin, validate choir loft, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-11",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "TELEGRAM",
+      "text": "Day 11 control: secure medical record crypt key inventory, validate vellum, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-12",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "Day 12 control: secure shipping manifest ledger watermark scan, validate cathedral crypt, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-13",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "SIGNAL",
+      "text": "Day 13 control: secure police report burned vellum fragment, validate ledger, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-14",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "WHATSAPP",
+      "text": "Day 14 control: secure handwritten note choir rehearsal wax recordin, validate chapel bell, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-15",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "TELEGRAM",
+      "text": "Day 15 control: secure journal entry crypt key inventory, validate salt wax, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-16",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "Day 16 control: secure text message screenshot ledger watermark scan, validate choir loft, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-17",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "SIGNAL",
+      "text": "Day 17 control: secure call log burned vellum fragment, validate vellum, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-18",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "WHATSAPP",
+      "text": "Day 18 control: secure voicemail transcript choir rehearsal wax recordin, validate cathedral crypt, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-19",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "TELEGRAM",
+      "text": "Day 19 control: secure security footage still crypt key inventory, validate ledger, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-20",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "Day 20 control: secure crime scene photo ledger watermark scan, validate chapel bell, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-21",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SIGNAL",
+      "text": "Day 21 control: secure marked map burned vellum fragment, validate salt wax, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-22",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "WHATSAPP",
+      "text": "Day 22 control: secure receipt choir rehearsal wax recordin, validate choir loft, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-23",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "Day 23 control: secure medical record crypt key inventory, validate vellum, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-24",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Day 24 control: secure shipping manifest ledger watermark scan, validate cathedral crypt, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-25",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "Day 25 control: secure police report burned vellum fragment, validate ledger, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-26",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "WHATSAPP",
+      "text": "Day 26 control: secure handwritten note choir rehearsal wax recordin, validate chapel bell, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-27",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "TELEGRAM",
+      "text": "Day 27 control: secure journal entry crypt key inventory, validate salt wax, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.canon-archivist-elara-voss.clip-28",
+      "profileId": "voice.black-chapel-ledger.canon-archivist-elara-voss",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Day 28 control: secure text message screenshot ledger watermark scan, validate choir loft, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/canon-archivist-elara-voss-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-canon-archivist-elara-voss",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-canon-archivist-elara-voss",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -111,10 +986,10 @@
     {
       "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-1",
       "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
-      "beatId": "beat-1",
-      "beatTitle": "Ledger Breach",
-      "channel": "WHATSAPP",
-      "text": "Cross-reference this before dawn: Burned vellum fragment.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around ledger, but I need to know whether you trust this lead or think it is bait tied to police report burned vellum fragment.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-1.wav",
       "providers": [
         {
@@ -131,13 +1006,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -146,10 +1021,10 @@
     {
       "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-2",
       "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "WHATSAPP",
-      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around choir loft, but I need to know whether you trust this lead or think it is bait tied to text message screenshot ledger watermark scan.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-2.wav",
       "providers": [
         {
@@ -166,13 +1041,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -181,10 +1056,10 @@
     {
       "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-3",
       "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
-      "text": "Cross-reference this before dawn: Burned vellum fragment.",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around ledger, but I need to know whether you trust this lead or think it is bait tied to security footage still crypt key inventory.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-3.wav",
       "providers": [
         {
@@ -201,13 +1076,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -216,10 +1091,10 @@
     {
       "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-4",
       "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "VOICE_MESSAGE",
-      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around choir loft, but I need to know whether you trust this lead or think it is bait tied to receipt choir rehearsal wax recordin.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-4.wav",
       "providers": [
         {
@@ -236,176 +1111,246 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.black-chapel-ledger.the-creditor.clip-1",
-      "profileId": "voice.black-chapel-ledger.the-creditor",
-      "beatId": "beat-1",
-      "beatTitle": "Ledger Breach",
-      "channel": "SMS",
-      "text": "You opened the ledger; now it records you too. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-1.wav",
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-5",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around ledger, but I need to know whether you trust this lead or think it is bait tied to police report burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-5.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-creditor",
+          "voiceId": "piper-bell-keeper-tomas-grell",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-creditor",
+          "voiceId": "elv-bell-keeper-tomas-grell",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.black-chapel-ledger.the-creditor.clip-2",
-      "profileId": "voice.black-chapel-ledger.the-creditor",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-6",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
       "channel": "SMS",
-      "text": "You opened the ledger; now it records you too. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-2.wav",
+      "text": "I can confirm movement around choir loft, but I need to know whether you trust this lead or think it is bait tied to text message screenshot ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-6.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-creditor",
+          "voiceId": "piper-bell-keeper-tomas-grell",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-creditor",
+          "voiceId": "elv-bell-keeper-tomas-grell",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.black-chapel-ledger.the-creditor.clip-3",
-      "profileId": "voice.black-chapel-ledger.the-creditor",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-7",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around ledger, but I need to know whether you trust this lead or think it is bait tied to security footage still crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-bell-keeper-tomas-grell",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-bell-keeper-tomas-grell",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-8",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
       "channel": "WHATSAPP",
-      "text": "Don't trust the one who rings the bell after midnight. (Psychological Contact)",
-      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-3.wav",
+      "text": "I can confirm movement around choir loft, but I need to know whether you trust this lead or think it is bait tied to receipt choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-8.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-creditor",
+          "voiceId": "piper-bell-keeper-tomas-grell",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-creditor",
+          "voiceId": "elv-bell-keeper-tomas-grell",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.black-chapel-ledger.the-creditor.clip-4",
-      "profileId": "voice.black-chapel-ledger.the-creditor",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SMS",
-      "text": "Confess publicly, or the choir girl pays your debt first. (Active Interference)",
-      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-4.wav",
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-9",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around ledger, but I need to know whether you trust this lead or think it is bait tied to police report burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-9.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-creditor",
+          "voiceId": "piper-bell-keeper-tomas-grell",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-creditor",
+          "voiceId": "elv-bell-keeper-tomas-grell",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.black-chapel-ledger.the-creditor.clip-5",
-      "profileId": "voice.black-chapel-ledger.the-creditor",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
+      "clipId": "voice.black-chapel-ledger.bell-keeper-tomas-grell.clip-10",
+      "profileId": "voice.black-chapel-ledger.bell-keeper-tomas-grell",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around choir loft, but I need to know whether you trust this lead or think it is bait tied to text message screenshot ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/bell-keeper-tomas-grell-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-bell-keeper-tomas-grell",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-bell-keeper-tomas-grell",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-1",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-5.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-1.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-creditor",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-creditor",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -417,30 +1362,30 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.black-chapel-ledger.the-creditor.clip-6",
-      "profileId": "voice.black-chapel-ledger.the-creditor",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-2",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-6.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-2.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-creditor",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-creditor",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -452,7 +1397,917 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-3",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-4",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-5",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-6",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-7",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-8",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-9",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-10",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-11",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-12",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-13",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-14",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-15",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-16",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-17",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-18",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-19",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-20",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-21",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-22",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-23",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-24",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-25",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-26",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-27",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk.clip-28",
+      "profileId": "voice.black-chapel-ledger.black-chapel-ledger-field-desk",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/black-chapel-ledger-field-desk-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-black-chapel-ledger-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-black-chapel-ledger-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -461,10 +2316,10 @@
     {
       "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-1",
       "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "TELEGRAM",
-      "text": "Cross-reference this before dawn: Choir rehearsal wax recording.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around chapel bell, but I need to know whether you trust this lead or think it is bait tied to handwritten note choir rehearsal wax recordin.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-1.wav",
       "providers": [
         {
@@ -481,13 +2336,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -496,10 +2351,10 @@
     {
       "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-2",
       "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "TELEGRAM",
-      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around vellum, but I need to know whether you trust this lead or think it is bait tied to call log burned vellum fragment.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-2.wav",
       "providers": [
         {
@@ -516,13 +2371,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -531,10 +2386,10 @@
     {
       "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-3",
       "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
-      "text": "Cross-reference this before dawn: Choir rehearsal wax recording.",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around chapel bell, but I need to know whether you trust this lead or think it is bait tied to crime scene photo ledger watermark scan.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-3.wav",
       "providers": [
         {
@@ -551,13 +2406,223 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-4",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "SMS",
+      "text": "I can confirm movement around vellum, but I need to know whether you trust this lead or think it is bait tied to medical record crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-5",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around chapel bell, but I need to know whether you trust this lead or think it is bait tied to handwritten note choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-6",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around vellum, but I need to know whether you trust this lead or think it is bait tied to call log burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-7",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around chapel bell, but I need to know whether you trust this lead or think it is bait tied to crime scene photo ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-8",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around vellum, but I need to know whether you trust this lead or think it is bait tied to medical record crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.choir-witness-sera-march.clip-9",
+      "profileId": "voice.black-chapel-ledger.choir-witness-sera-march",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "I can confirm movement around chapel bell, but I need to know whether you trust this lead or think it is bait tied to handwritten note choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/choir-witness-sera-march-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-choir-witness-sera-march",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-choir-witness-sera-march",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -566,10 +2631,10 @@
     {
       "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-1",
       "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "SIGNAL",
-      "text": "Cross-reference this before dawn: Crypt key inventory.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around salt wax, but I need to know whether you trust this lead or think it is bait tied to journal entry crypt key inventory.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-1.wav",
       "providers": [
         {
@@ -586,13 +2651,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -601,10 +2666,10 @@
     {
       "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-2",
       "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SIGNAL",
-      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around cathedral crypt, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript choir rehearsal wax recordin.",
       "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-2.wav",
       "providers": [
         {
@@ -621,13 +2686,1063 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-3",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around salt wax, but I need to know whether you trust this lead or think it is bait tied to marked map burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-4",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around cathedral crypt, but I need to know whether you trust this lead or think it is bait tied to shipping manifest ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-5",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around salt wax, but I need to know whether you trust this lead or think it is bait tied to journal entry crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-6",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around cathedral crypt, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript choir rehearsal wax recordin.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-7",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SMS",
+      "text": "I can confirm movement around salt wax, but I need to know whether you trust this lead or think it is bait tied to marked map burned vellum fragment.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-8",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around cathedral crypt, but I need to know whether you trust this lead or think it is bait tied to shipping manifest ledger watermark scan.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.debt-broker-cal-dorn.clip-9",
+      "profileId": "voice.black-chapel-ledger.debt-broker-cal-dorn",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around salt wax, but I need to know whether you trust this lead or think it is bait tied to journal entry crypt key inventory.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/debt-broker-cal-dorn-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-debt-broker-cal-dorn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-debt-broker-cal-dorn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Arthur",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-1",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry crypt key inventory evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-2",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript choir rehearsal wax recordin evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-3",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo ledger watermark scan evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-4",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map burned vellum fragment evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-5",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SMS",
+      "text": "You keep calling receipt choir rehearsal wax recordin evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-6",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling medical record crypt key inventory evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-7",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "You keep calling shipping manifest ledger watermark scan evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-8",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling police report burned vellum fragment evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-9",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "SMS",
+      "text": "You keep calling handwritten note choir rehearsal wax recordin evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-10",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry crypt key inventory evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-11",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "You keep calling text message screenshot ledger watermark scan evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-12",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling call log burned vellum fragment evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-13",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript choir rehearsal wax recordin evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-14",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling security footage still crypt key inventory evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-15",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo ledger watermark scan evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-16",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map burned vellum fragment evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-17",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether choir loft becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-18",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether vellum becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-19",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether cathedral crypt becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-20",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether ledger becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-21",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether chapel bell becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-22",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether salt wax becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.black-chapel-ledger.the-creditor.clip-23",
+      "profileId": "voice.black-chapel-ledger.the-creditor",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether choir loft becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/black-chapel-ledger/the-creditor-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-creditor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-creditor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }

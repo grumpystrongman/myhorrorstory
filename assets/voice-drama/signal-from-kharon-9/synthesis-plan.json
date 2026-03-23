@@ -1,15 +1,15 @@
 {
   "storyId": "signal-from-kharon-9",
   "title": "Signal From Kharon-9",
-  "generatedAt": "2026-03-20T14:49:20.949Z",
+  "generatedAt": "2026-03-23T16:36:49.465Z",
   "clips": [
     {
       "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-1",
       "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
-      "beatId": "beat-1",
-      "beatTitle": "Dormant Array Wake",
-      "channel": "SMS",
-      "text": "A telemetry packet arrives in Telegram with tomorrow's timestamp and your exact opening message. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SIGNAL",
+      "text": "Day 01 control: secure police report telemetry checksum drift, validate array dish, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-1.wav",
       "providers": [
         {
@@ -26,7 +26,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -41,10 +41,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-2",
       "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
-      "text": "Cross-reference this before dawn: Operator biometric mismatch.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "Day 02 control: secure handwritten note starfield deviation map, validate telemetry burst, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-2.wav",
       "providers": [
         {
@@ -61,7 +61,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -76,10 +76,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-3",
       "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "EMAIL",
-      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "Day 03 control: secure journal entry array maintenance gap log, validate vacuum static, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-3.wav",
       "providers": [
         {
@@ -96,7 +96,882 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-4",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "SMS",
+      "text": "Day 04 control: secure text message screenshot operator biometric mismatch, validate sealed observatory, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-5",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "Day 05 control: secure call log telemetry checksum drift, validate signal index, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-6",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "WHATSAPP",
+      "text": "Day 06 control: secure voicemail transcript starfield deviation map, validate dark window, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-7",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "TELEGRAM",
+      "text": "Day 07 control: secure security footage still array maintenance gap log, validate array dish, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-8",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "Day 08 control: secure crime scene photo operator biometric mismatch, validate telemetry burst, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-9",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "SIGNAL",
+      "text": "Day 09 control: secure marked map telemetry checksum drift, validate vacuum static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-10",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "WHATSAPP",
+      "text": "Day 10 control: secure receipt starfield deviation map, validate sealed observatory, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-11",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "TELEGRAM",
+      "text": "Day 11 control: secure medical record array maintenance gap log, validate signal index, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-12",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "Day 12 control: secure shipping manifest operator biometric mismatch, validate dark window, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-13",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "SIGNAL",
+      "text": "Day 13 control: secure police report telemetry checksum drift, validate array dish, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-14",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "WHATSAPP",
+      "text": "Day 14 control: secure handwritten note starfield deviation map, validate telemetry burst, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-15",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "TELEGRAM",
+      "text": "Day 15 control: secure journal entry array maintenance gap log, validate vacuum static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-16",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "Day 16 control: secure text message screenshot operator biometric mismatch, validate sealed observatory, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-17",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "SIGNAL",
+      "text": "Day 17 control: secure call log telemetry checksum drift, validate signal index, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-18",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "WHATSAPP",
+      "text": "Day 18 control: secure voicemail transcript starfield deviation map, validate dark window, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-19",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "TELEGRAM",
+      "text": "Day 19 control: secure security footage still array maintenance gap log, validate array dish, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-20",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "Day 20 control: secure crime scene photo operator biometric mismatch, validate telemetry burst, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-21",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SIGNAL",
+      "text": "Day 21 control: secure marked map telemetry checksum drift, validate vacuum static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-22",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "WHATSAPP",
+      "text": "Day 22 control: secure receipt starfield deviation map, validate sealed observatory, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-23",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "Day 23 control: secure medical record array maintenance gap log, validate signal index, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-24",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Day 24 control: secure shipping manifest operator biometric mismatch, validate dark window, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-25",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "Day 25 control: secure police report telemetry checksum drift, validate array dish, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-26",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "WHATSAPP",
+      "text": "Day 26 control: secure handwritten note starfield deviation map, validate telemetry burst, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-27",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "TELEGRAM",
+      "text": "Day 27 control: secure journal entry array maintenance gap log, validate vacuum static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.systems-engineer-ari-vance.clip-28",
+      "profileId": "voice.signal-from-kharon-9.systems-engineer-ari-vance",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Day 28 control: secure text message screenshot operator biometric mismatch, validate sealed observatory, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/systems-engineer-ari-vance-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-systems-engineer-ari-vance",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-systems-engineer-ari-vance",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -111,10 +986,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-1",
       "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
-      "beatId": "beat-1",
-      "beatTitle": "Dormant Array Wake",
-      "channel": "WHATSAPP",
-      "text": "Cross-reference this before dawn: Telemetry checksum drift.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around array dish, but I need to know whether you trust this lead or think it is bait tied to police report telemetry checksum drift.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-1.wav",
       "providers": [
         {
@@ -131,13 +1006,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -146,10 +1021,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-2",
       "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "WHATSAPP",
-      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around sealed observatory, but I need to know whether you trust this lead or think it is bait tied to text message screenshot operator biometric mismatch.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-2.wav",
       "providers": [
         {
@@ -166,13 +1041,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -181,10 +1056,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-3",
       "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
-      "text": "Cross-reference this before dawn: Telemetry checksum drift.",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around array dish, but I need to know whether you trust this lead or think it is bait tied to security footage still array maintenance gap log.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-3.wav",
       "providers": [
         {
@@ -201,13 +1076,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -216,10 +1091,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-4",
       "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "VOICE_MESSAGE",
-      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around sealed observatory, but I need to know whether you trust this lead or think it is bait tied to receipt starfield deviation map.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-4.wav",
       "providers": [
         {
@@ -236,176 +1111,246 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-1",
-      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
-      "beatId": "beat-1",
-      "beatTitle": "Dormant Array Wake",
-      "channel": "SMS",
-      "text": "I know what you type next. Change it if you can. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-1.wav",
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-5",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around array dish, but I need to know whether you trust this lead or think it is bait tied to police report telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-5.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quiet-orbit",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quiet-orbit",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-2",
-      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-6",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
       "channel": "SMS",
-      "text": "I know what you type next. Change it if you can. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-2.wav",
+      "text": "I can confirm movement around sealed observatory, but I need to know whether you trust this lead or think it is bait tied to text message screenshot operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-6.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quiet-orbit",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quiet-orbit",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-3",
-      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-7",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around array dish, but I need to know whether you trust this lead or think it is bait tied to security footage still array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-8",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
       "channel": "WHATSAPP",
-      "text": "You trusted the wrong constant, detective. (Psychological Contact)",
-      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-3.wav",
+      "text": "I can confirm movement around sealed observatory, but I need to know whether you trust this lead or think it is bait tied to receipt starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-8.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quiet-orbit",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quiet-orbit",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-4",
-      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SMS",
-      "text": "Shut down the array and your operator dies in the dark. (Active Interference)",
-      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-4.wav",
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-9",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around array dish, but I need to know whether you trust this lead or think it is bait tied to police report telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-9.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quiet-orbit",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quiet-orbit",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-5",
-      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
+      "clipId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru.clip-10",
+      "profileId": "voice.signal-from-kharon-9.astrophysicist-dr-helene-oru",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around sealed observatory, but I need to know whether you trust this lead or think it is bait tied to text message screenshot operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/astrophysicist-dr-helene-oru-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-astrophysicist-dr-helene-oru",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-astrophysicist-dr-helene-oru",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-1",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-5.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-1.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quiet-orbit",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quiet-orbit",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -417,30 +1362,30 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-6",
-      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-2",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-6.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-2.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quiet-orbit",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quiet-orbit",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -452,7 +1397,917 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-3",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-4",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-5",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-6",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-7",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-8",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-9",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-10",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-11",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-12",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-13",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-14",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-15",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-16",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-17",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-18",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-19",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-20",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-21",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-22",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-23",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-24",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-25",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-26",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-27",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk.clip-28",
+      "profileId": "voice.signal-from-kharon-9.signal-from-kharon-9-field-desk",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/signal-from-kharon-9-field-desk-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-signal-from-kharon-9-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-signal-from-kharon-9-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -461,10 +2316,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-1",
       "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "TELEGRAM",
-      "text": "Cross-reference this before dawn: Starfield deviation map.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around telemetry burst, but I need to know whether you trust this lead or think it is bait tied to handwritten note starfield deviation map.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-1.wav",
       "providers": [
         {
@@ -481,7 +2336,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -496,10 +2351,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-2",
       "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "TELEGRAM",
-      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around signal index, but I need to know whether you trust this lead or think it is bait tied to call log telemetry checksum drift.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-2.wav",
       "providers": [
         {
@@ -516,7 +2371,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -531,10 +2386,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-3",
       "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
-      "text": "Cross-reference this before dawn: Starfield deviation map.",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around telemetry burst, but I need to know whether you trust this lead or think it is bait tied to crime scene photo operator biometric mismatch.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-3.wav",
       "providers": [
         {
@@ -551,7 +2406,217 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-4",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "SMS",
+      "text": "I can confirm movement around signal index, but I need to know whether you trust this lead or think it is bait tied to medical record array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-5",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around telemetry burst, but I need to know whether you trust this lead or think it is bait tied to handwritten note starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-6",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around signal index, but I need to know whether you trust this lead or think it is bait tied to call log telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-7",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around telemetry burst, but I need to know whether you trust this lead or think it is bait tied to crime scene photo operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-8",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around signal index, but I need to know whether you trust this lead or think it is bait tied to medical record array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.array-operator-micah-trent.clip-9",
+      "profileId": "voice.signal-from-kharon-9.array-operator-micah-trent",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "I can confirm movement around telemetry burst, but I need to know whether you trust this lead or think it is bait tied to handwritten note starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/array-operator-micah-trent-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-array-operator-micah-trent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-array-operator-micah-trent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -566,10 +2631,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-1",
       "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "SIGNAL",
-      "text": "Cross-reference this before dawn: Array maintenance gap log.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around vacuum static, but I need to know whether you trust this lead or think it is bait tied to journal entry array maintenance gap log.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-1.wav",
       "providers": [
         {
@@ -586,7 +2651,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -601,10 +2666,10 @@
     {
       "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-2",
       "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SIGNAL",
-      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around dark window, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript starfield deviation map.",
       "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-2.wav",
       "providers": [
         {
@@ -621,13 +2686,1063 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
           "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-3",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around vacuum static, but I need to know whether you trust this lead or think it is bait tied to marked map telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-4",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around dark window, but I need to know whether you trust this lead or think it is bait tied to shipping manifest operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-5",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around vacuum static, but I need to know whether you trust this lead or think it is bait tied to journal entry array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-6",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around dark window, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript starfield deviation map.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-7",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SMS",
+      "text": "I can confirm movement around vacuum static, but I need to know whether you trust this lead or think it is bait tied to marked map telemetry checksum drift.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-8",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around dark window, but I need to know whether you trust this lead or think it is bait tied to shipping manifest operator biometric mismatch.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.telemetry-broker-vale-9.clip-9",
+      "profileId": "voice.signal-from-kharon-9.telemetry-broker-vale-9",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around vacuum static, but I need to know whether you trust this lead or think it is bait tied to journal entry array maintenance gap log.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/telemetry-broker-vale-9-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-telemetry-broker-vale-9",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-telemetry-broker-vale-9",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-1",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry array maintenance gap log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-2",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript starfield deviation map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-3",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo operator biometric mismatch evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-4",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map telemetry checksum drift evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-5",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SMS",
+      "text": "You keep calling receipt starfield deviation map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-6",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling medical record array maintenance gap log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-7",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "You keep calling shipping manifest operator biometric mismatch evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-8",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling police report telemetry checksum drift evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-9",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "SMS",
+      "text": "You keep calling handwritten note starfield deviation map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-10",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry array maintenance gap log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-11",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "You keep calling text message screenshot operator biometric mismatch evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-12",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling call log telemetry checksum drift evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-13",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript starfield deviation map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-14",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling security footage still array maintenance gap log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-15",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo operator biometric mismatch evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-16",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map telemetry checksum drift evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-17",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether sealed observatory becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-18",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether signal index becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-19",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether dark window becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-20",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether array dish becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-21",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether telemetry burst becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-22",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether vacuum static becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.signal-from-kharon-9.the-quiet-orbit.clip-23",
+      "profileId": "voice.signal-from-kharon-9.the-quiet-orbit",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether sealed observatory becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/signal-from-kharon-9/the-quiet-orbit-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quiet-orbit",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quiet-orbit",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }

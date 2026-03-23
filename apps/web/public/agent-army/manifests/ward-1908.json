@@ -18,7 +18,8 @@
       "created_at": "2026-03-21T16:14:55.867Z",
       "checksum": "fd833f66ec54b3941475c1ad5e8927255980cbae",
       "file_size": 1217,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -36,7 +37,8 @@
       "created_at": "2026-03-21T16:15:49.629Z",
       "checksum": "3d0bed9551f12c23f4f604b771965cf88daf1d4d",
       "file_size": 1398,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -54,7 +56,8 @@
       "created_at": "2026-03-21T16:14:55.854Z",
       "checksum": "21e3ea251f85b01fbeea6d8154e0429eb30c1932",
       "file_size": 1204,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -63,16 +66,21 @@
       "modality": "image",
       "title": "Ward 1908 - Evidence Still - Basement access override",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Render forensic evidence still for \"Basement access override\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Evidence Still - Basement access override. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-basement-access-override-evidence-still-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-basement-access-override-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-basement-access-override-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-basement-access-override-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:46.868Z",
-      "checksum": "ad836f1bcf43b34f9fcfc5a6b46218f3106812ef",
-      "file_size": 961816,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:21:35.182Z",
+      "checksum": "82b4eea579c04e03254391226408a3fa5b419e94",
+      "file_size": 3336255,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -80,17 +88,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Ward 1908 - Night Update Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Night Update (Contact). Narrative: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Night Update (Contact). Narrative: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-1-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-1-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:32.093Z",
-      "checksum": "81454739c88b07357c01746aad0f16ef81c399fb",
-      "file_size": 884363,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:52:09.846Z",
+      "checksum": "2952fb5f6906ea0bb3e35ca1c966915a7059d0b4",
+      "file_size": 2712839,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Ward 1908 - Night Update Beat Transition",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Night Update. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:16:22.736Z",
+      "checksum": "7ae9ab02f946788613462388db1d253d0f9c2786",
+      "file_size": 4216860,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward briefing. Night Update Beat Transition is now active. Start with intake ledger photo, then compare every new message against a closed psychiatric hospital updates patient files every night at 1:08 a.m.. If The Record Keeper reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9499249999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 89,
+            "lowpassHz": 7247,
+            "presenceGainDb": -0.08199999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -99,16 +157,66 @@
       "modality": "image",
       "title": "Ward 1908 - Escalation Signal Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Escalation Signal (Contact). Narrative: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-2-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-2-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:34.350Z",
-      "checksum": "e2ebe6a82d55334ca989fcc2b37405405a3db362",
-      "file_size": 887987,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:21:57.983Z",
+      "checksum": "a8ec4749cb7e5f146a8c461bc0d526e444414c0e",
+      "file_size": 2829433,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Ward 1908 - Escalation Signal Beat Transition",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:16:37.669Z",
+      "checksum": "647c9705e121a868a47684209dae5247345164df",
+      "file_size": 4249018,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward briefing. Escalation Signal Beat Transition is now active. Start with intake ledger photo, then compare every new message against a closed psychiatric hospital updates patient files every night at 1:08 a.m.. If The Record Keeper reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.92455,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 88,
+            "lowpassHz": 7272,
+            "presenceGainDb": -0.08199999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -117,16 +225,66 @@
       "modality": "image",
       "title": "Ward 1908 - Trust Fracture Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-3-beat-scene-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-3-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-3-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:34.367Z",
-      "checksum": "f8feceab29d305bad2dda8b431fa7cc9b60ff8a9",
-      "file_size": 862585,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:22:01.830Z",
+      "checksum": "986eac0fc82d37b277f42580914bfe0b83721416",
+      "file_size": 2683278,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Ward 1908 - Trust Fracture Beat Transition",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:16:45.183Z",
+      "checksum": "53910ee9fa7fd85755c2a554cdc9964bf51f339b",
+      "file_size": 4301051,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-3-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward briefing. Trust Fracture Beat Transition is now active. Start with intake ledger photo, then compare every new message against a closed psychiatric hospital updates patient files every night at 1:08 a.m.. If The Record Keeper reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9371149999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 78,
+            "lowpassHz": 7165,
+            "presenceGainDb": -0.642
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -134,17 +292,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Ward 1908 - Ultimatum Window Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:34.335Z",
-      "checksum": "75e3fb318fe15fe1c6590bfe0af41fb6ec2e9d81",
-      "file_size": 882457,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:52:34.242Z",
+      "checksum": "be2af4a0a5c16681ea2b370313e0df6f05645c32",
+      "file_size": 2409258,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Ward 1908 - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:16:53.017Z",
+      "checksum": "c190c7e7587aa1cd5fc7b3dfb2397b606e248f24",
+      "file_size": 4197343,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward briefing. Ultimatum Window Beat Transition is now active. Start with intake ledger photo, then compare every new message against a closed psychiatric hospital updates patient files every night at 1:08 a.m.. If The Record Keeper reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9235,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 72,
+            "lowpassHz": 7339,
+            "presenceGainDb": -0.322
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -153,16 +361,66 @@
       "modality": "image",
       "title": "Ward 1908 - Confrontation Protocol Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-5-beat-scene-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-5-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-5-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-5-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:37.209Z",
-      "checksum": "ce72f04f62904fd13a757efbf6f422a401a2b173",
-      "file_size": 981486,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:22:27.174Z",
+      "checksum": "e6f3601cf4c2259f0c5eae6c8d23a39c5dceeb6e",
+      "file_size": 2770228,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Ward 1908 - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:17:01.542Z",
+      "checksum": "4b7e2a332510c0a4b99d3c2ed54e6889421e3945",
+      "file_size": 4015113,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward briefing. Confrontation Protocol Beat Transition is now active. Start with intake ledger photo, then compare every new message against a closed psychiatric hospital updates patient files every night at 1:08 a.m.. If The Record Keeper reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.902465,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 82,
+            "lowpassHz": 7105,
+            "presenceGainDb": -0.402
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -171,16 +429,66 @@
       "modality": "image",
       "title": "Ward 1908 - Case Debrief Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:37.211Z",
-      "checksum": "626fb078449a86a385379c5ccd2f94e8a0a09a47",
-      "file_size": 882636,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:22:24.228Z",
+      "checksum": "25d60ffd6df268576573c2e7f14e7f7ad06ed6c7",
+      "file_size": 2432833,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Ward 1908 - Case Debrief Beat Transition",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:17:08.892Z",
+      "checksum": "604dda164f3c44c8e51ab0502383eb909243e8f4",
+      "file_size": 4234550,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward briefing. Case Debrief Beat Transition is now active. Start with intake ledger photo, then compare every new message against a closed psychiatric hospital updates patient files every night at 1:08 a.m.. If The Record Keeper reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9414899999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 83,
+            "lowpassHz": 7319,
+            "presenceGainDb": -0.322
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -198,7 +506,8 @@
       "created_at": "2026-03-21T16:14:55.846Z",
       "checksum": "6dcad270f490862fdff4e7a7690ecad6b762d0f7",
       "file_size": 1189,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -207,16 +516,21 @@
       "modality": "image",
       "title": "Ward 1908 - Evidence Still - Intake ledger photo",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Render forensic evidence still for \"Intake ledger photo\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Evidence Still - Intake ledger photo. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-intake-ledger-photo-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-intake-ledger-photo-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:43.806Z",
-      "checksum": "c511ee3b73be5f8c0550a43ac31a3b3cc2b48bac",
-      "file_size": 956049,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:22:40.708Z",
+      "checksum": "069a79b560569b65c691b4463b1c4697ace04c59",
+      "file_size": 3099373,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -234,7 +548,8 @@
       "created_at": "2026-03-21T16:14:55.850Z",
       "checksum": "2023018c0e180749c4ef27dc4e2f0105d2dbd896",
       "file_size": 1201,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -243,16 +558,21 @@
       "modality": "image",
       "title": "Ward 1908 - Evidence Still - Orderly shift recording",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Render forensic evidence still for \"Orderly shift recording\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Evidence Still - Orderly shift recording. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-orderly-shift-recording-evidence-still-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-orderly-shift-recording-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-orderly-shift-recording-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-orderly-shift-recording-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:43.763Z",
-      "checksum": "1326c77ae61c79208cbafc476ee35331b43fca3c",
-      "file_size": 956380,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:22:47.606Z",
+      "checksum": "cc256935e2cf3564c7f834e90eb8dc6fc705bfae",
+      "file_size": 2821561,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -270,7 +590,8 @@
       "created_at": "2026-03-21T16:14:55.872Z",
       "checksum": "3534ba501b12b1c44328698f61eca854901209dd",
       "file_size": 1274,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -288,7 +609,8 @@
       "created_at": "2026-03-21T16:15:49.635Z",
       "checksum": "34699db9370465f03375759ab4e595885e2f6e6c",
       "file_size": 1455,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -297,16 +619,21 @@
       "modality": "image",
       "title": "Ward 1908 Social Launch Square",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\social_square\\ward-1908-social-launch-square-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/social_square/ward-1908-social-launch-square-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\social_square\\ward-1908-social-launch-square-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/social_square/ward-1908-social-launch-square-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:55.422Z",
-      "checksum": "5539cc5c5b48b10505880e8be0020bbf0cd99da6",
-      "file_size": 757256,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:22:45.463Z",
+      "checksum": "1195eabf1f8bd5ccebf855036caac0f2eb661393",
+      "file_size": 1824188,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -315,16 +642,21 @@
       "modality": "image",
       "title": "Ward 1908 Social Launch Vertical",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\social_vertical\\ward-1908-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/social_vertical/ward-1908-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\social_vertical\\ward-1908-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/social_vertical/ward-1908-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:55.390Z",
-      "checksum": "0517637ae0e15d655e5350b24c659b66b0066940",
-      "file_size": 774636,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:23:02.034Z",
+      "checksum": "e683d00c343f1009fe97d3dec073ddd3f9a7b298",
+      "file_size": 1874456,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -333,16 +665,21 @@
       "modality": "image",
       "title": "Ward 1908 Story Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/story_key_art/ward-1908-story-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/story_key_art/ward-1908-story-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:29.003Z",
-      "checksum": "4da7e2d84c1b4088186c9d2f2e30e4563c666e35",
-      "file_size": 867278,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:23:39.359Z",
+      "checksum": "569bff413f3098396e2f00be4cfdb4433ccf1be2",
+      "file_size": 2972099,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -360,7 +697,8 @@
       "created_at": "2026-03-21T16:15:49.640Z",
       "checksum": "1d68c1160934d2473574b0507fdd3b5105d787f9",
       "file_size": 1301,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -369,16 +707,80 @@
       "modality": "audio",
       "title": "Ward 1908 Story Theme Loop",
       "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/story_theme_loop/ward-1908-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:14:04.120Z",
-      "checksum": "2aaeaed0d0573fd1b0a46802d1e923bdc22a303b",
-      "file_size": 15698890,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:11:38.049Z",
+      "checksum": "b76b193eca3af84b23c917cacaf4addb3d4ec298",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 36,
+          "mid": 220,
+          "high": 860,
+          "shimmer": 2980,
+          "pulseHz": 0.94,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.24
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "Ward 1908 Main Trailer",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\story_trailer\\ward-1908-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/story_trailer/ward-1908-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\story_trailer\\ward-1908-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/story_trailer/ward-1908-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:18:35.680Z",
+      "checksum": "ccc2d34c9699c9a3c4105562f43965632aefba21",
+      "file_size": 12201721,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-3-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward briefing. Ward 1908 Main Trailer is now active. Start with intake ledger photo, then compare every new message against a closed psychiatric hospital updates patient files every night at 1:08 a.m.. If The Record Keeper reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9467049999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 72,
+            "lowpassHz": 7084,
+            "presenceGainDb": -0.722
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -396,7 +798,8 @@
       "created_at": "2026-03-21T16:14:55.859Z",
       "checksum": "6fcf798c16957507344260ca8ee12db99c00fb73",
       "file_size": 1204,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -405,16 +808,21 @@
       "modality": "image",
       "title": "Ward 1908 - Evidence Still - Treatment wing floorplan",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Render forensic evidence still for \"Treatment wing floorplan\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Evidence Still - Treatment wing floorplan. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-treatment-wing-floorplan-evidence-still-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-treatment-wing-floorplan-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-treatment-wing-floorplan-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/evidence_still/ward-1908-treatment-wing-floorplan-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:46.828Z",
-      "checksum": "5d47d373440bfa3091a7d49c9032d977d6d76ce1",
-      "file_size": 956641,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:23:10.851Z",
+      "checksum": "f51223fbea5338006eac30845bf92c2f36d04331",
+      "file_size": 3676917,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -432,7 +840,8 @@
       "created_at": "2026-03-21T16:14:55.841Z",
       "checksum": "794c0f164a3c6476e816913fb17102aac6f1a77b",
       "file_size": 1154,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -441,16 +850,21 @@
       "modality": "image",
       "title": "Ward 1908 - Villain Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Design portrait of antagonist The Record Keeper with archetype GRIEVING_AVENGER, speech style \"Measured grief with sudden rage spikes.\", and motifs patient tags, flicker lights, stairwell echoes.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/villain_portrait/ward-1908-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/villain_portrait/ward-1908-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:43.782Z",
-      "checksum": "c6b3963b03bbe70f8a373905500689a78f7ce2c2",
-      "file_size": 906705,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:24:00.228Z",
+      "checksum": "91acdf73a0d1f48cd68c85a6d2f6f3ff53b020b0",
+      "file_size": 3041941,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -458,17 +872,41 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "Ward 1908 - Villain Voice Profile",
-      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Create villain voice profile for The Record Keeper. Worldview: Unacknowledged harm repeats until the living pay attention.. Manner: None. Bitter sincerity only.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. A closed psychiatric hospital updates patient files every night at 1:08 a.m. Work the case in order: secure intake ledger photo, confirm the scene at decommissioned hilltop hospital and sub-basement records wing, and do not let The Record Keeper choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\villain_voice_profile\\ward-1908-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/villain_voice_profile/ward-1908-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:59.104Z",
-      "checksum": "79872f398420fe5eb73f89ea2e72db61d2fad3d1",
-      "file_size": 2110720,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:37:03.071Z",
+      "checksum": "f7361d45655d50f42a4ec39d3a6e1810712461e7",
+      "file_size": 1028748,
+      "duration_seconds": 10.72,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "echo",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.0126,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 82,
+          "lowpassHz": 7400,
+          "presenceGainDb": 0.08
+        },
+        "voice_design": {
+          "apiSpeed": 1.0126,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 82,
+          "lowpassHz": 7400,
+          "presenceGainDb": 0.08
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -477,16 +915,32 @@
       "modality": "audio",
       "title": "Ward 1908 - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\arc_ambience\\ward-1908-ward-1908-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/arc_ambience/ward-1908-ward-1908-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:53.757Z",
-      "checksum": "f3b13191cf75e3162e0c0eb41b8e6bcc91eec4ff",
-      "file_size": 15699186,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:12.390Z",
+      "checksum": "bda17bfb20c9346bcecd98e019fba61e5abea15f",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 36,
+          "mid": 220,
+          "high": 860,
+          "shimmer": 2980,
+          "pulseHz": 0.94,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.24
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "ward-1908",
@@ -495,16 +949,67 @@
       "modality": "image",
       "title": "Ward 1908 - Contact and Contradiction Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: haunted institution. Tone: SLOW_BURN. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Ward 1908 - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-contact-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/arc_key_art/ward-1908-ward-1908-arc-contact-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-contact-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/arc_key_art/ward-1908-ward-1908-arc-contact-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:28.988Z",
-      "checksum": "7f749881188c3ecd70ca0d05479673f4dc766dbc",
-      "file_size": 872799,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:24:03.224Z",
+      "checksum": "89e2372840aa703164fe51c7ee0a2babc77118f1",
+      "file_size": 2823229,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-ward-1908-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Ward 1908 - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/arc_teaser_video/ward-1908-ward-1908-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/arc_teaser_video/ward-1908-ward-1908-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:15:56.265Z",
+      "checksum": "3786f8fa34ad094db29b6980197fa567ab47923b",
+      "file_size": 10953926,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\arc_ambience\\ward-1908-ward-1908-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Former Nurse Evan Mire",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Former Nurse Evan Mire to team. A closed psychiatric hospital updates patient files every night at 1:08 a.m. This arc centers on contact and contradiction arc teaser video, with pressure building around intake ledger photo. Move quietly through decommissioned hilltop hospital and sub-basement records wing and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.14592,
+            "pitchSemitone": 2.175,
+            "textureAmount": 0.59,
+            "highpassHz": 92,
+            "lowpassHz": 7675,
+            "presenceGainDb": -0.1879999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -513,16 +1018,32 @@
       "modality": "audio",
       "title": "Ward 1908 - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\arc_ambience\\ward-1908-ward-1908-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/arc_ambience/ward-1908-ward-1908-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:55.116Z",
-      "checksum": "1b80550daccaa8c187e68401a4f1ff6eda745a76",
-      "file_size": 15699282,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:13.584Z",
+      "checksum": "b7566f180c4dc4d322a1cbdd4087631d5fbdbdd8",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 36,
+          "mid": 220,
+          "high": 860,
+          "shimmer": 2980,
+          "pulseHz": 0.94,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.24
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "ward-1908",
@@ -531,16 +1052,67 @@
       "modality": "image",
       "title": "Ward 1908 - Interference and Doubt Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: haunted institution. Tone: SLOW_BURN. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Ward 1908 - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-disruption-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/arc_key_art/ward-1908-ward-1908-arc-disruption-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-disruption-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/arc_key_art/ward-1908-ward-1908-arc-disruption-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:32.028Z",
-      "checksum": "cb4902af26baee37cdd7d8922486ea514edc02ed",
-      "file_size": 880859,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:24:30.784Z",
+      "checksum": "6060d8ebc15447236f48f20585c58f475076ec01",
+      "file_size": 2867512,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-ward-1908-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Ward 1908 - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/arc_teaser_video/ward-1908-ward-1908-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/arc_teaser_video/ward-1908-ward-1908-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:16:04.009Z",
+      "checksum": "3b92f4418324cbdb4aaae7f2f023a5e53d76f66b",
+      "file_size": 11212055,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\arc_ambience\\ward-1908-ward-1908-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Former Nurse Evan Mire",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Former Nurse Evan Mire to team. A closed psychiatric hospital updates patient files every night at 1:08 a.m. This arc centers on interference and doubt arc teaser video, with pressure building around intake ledger photo. Move quietly through decommissioned hilltop hospital and sub-basement records wing and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 2.175,
+            "textureAmount": 0.59,
+            "highpassHz": 89,
+            "lowpassHz": 7918,
+            "presenceGainDb": 0.5320000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -549,16 +1121,32 @@
       "modality": "audio",
       "title": "Ward 1908 - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\arc_ambience\\ward-1908-ward-1908-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/arc_ambience/ward-1908-ward-1908-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:56.698Z",
-      "checksum": "43e8a57e2757b0ba5d9d30ad406d93378d6e7c61",
-      "file_size": 15699546,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:14.860Z",
+      "checksum": "f0b76fc84190c826c7e7c78abb325b055293522c",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 36,
+          "mid": 220,
+          "high": 860,
+          "shimmer": 2980,
+          "pulseHz": 0.94,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.24
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "ward-1908",
@@ -567,16 +1155,67 @@
       "modality": "image",
       "title": "Ward 1908 - Confrontation and Reckoning Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: haunted institution. Tone: SLOW_BURN. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Ward 1908 - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/arc_key_art/ward-1908-ward-1908-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/arc_key_art/ward-1908-ward-1908-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:32.051Z",
-      "checksum": "37038070c8f203d9ab970c3de1cbe30af1a5346f",
-      "file_size": 875080,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:24:55.239Z",
+      "checksum": "0eec8693b88d9fa9dbea6d7e3208fe0e8f74af01",
+      "file_size": 2658744,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-ward-1908-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Ward 1908 - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/arc_teaser_video/ward-1908-ward-1908-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/arc_teaser_video/ward-1908-ward-1908-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:16:29.368Z",
+      "checksum": "9d0f2c6c7a7a3250ace2a4debf0eab4dbab7b1d2",
+      "file_size": 11256225,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\arc_key_art\\ward-1908-ward-1908-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\arc_ambience\\ward-1908-ward-1908-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Former Nurse Evan Mire",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Former Nurse Evan Mire to team. A closed psychiatric hospital updates patient files every night at 1:08 a.m. This arc centers on confrontation and reckoning arc teaser video, with pressure building around intake ledger photo. Move quietly through decommissioned hilltop hospital and sub-basement records wing and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.1269150000000001,
+            "pitchSemitone": 2.175,
+            "textureAmount": 0.59,
+            "highpassHz": 93,
+            "lowpassHz": 7709,
+            "presenceGainDb": 0.21200000000000013
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -585,16 +1224,67 @@
       "modality": "image",
       "title": "Ward 1908 - Corruption Pact Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You seal records permanently in exchange for temporary peace.. Deliver emotional closure with sequel-hook tension.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-corruption-ending-card-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/ending_card/ward-1908-ward-1908-ending-corruption-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-corruption-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/ending_card/ward-1908-ward-1908-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:52.693Z",
-      "checksum": "4635155f44b5c99ce411f53c499746952bcdd8be",
-      "file_size": 873733,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:24:55.846Z",
+      "checksum": "9638fa603698158897343692aeaa231c93853a34",
+      "file_size": 2840845,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-ward-1908-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Ward 1908 - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:18:31.461Z",
+      "checksum": "dbab288a9c383fbc6f8e1e8cfa68b7c505738727",
+      "file_size": 14161049,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-corruption-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "The Record Keeper",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "The Record Keeper reporting. The case closes on corruption pact ending recap video. The evidence thread started with intake ledger photo and now points directly at The Record Keeper. Review the timeline at decommissioned hilltop hospital and sub-basement records wing before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.84,
+            "pitchSemitone": -1.98,
+            "textureAmount": 0.53375,
+            "highpassHz": 67,
+            "lowpassHz": 5883,
+            "presenceGainDb": 0.357
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -603,16 +1293,32 @@
       "modality": "audio",
       "title": "Ward 1908 - Corruption Pact Ending Score",
       "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose ending score cue for \"Corruption Pact\" that supports summary \"You seal records permanently in exchange for temporary peace.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/ending_score/ward-1908-ward-1908-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:14:03.105Z",
-      "checksum": "747efca037ff8380ae9c35ee18c6f8a1cf1c75d7",
-      "file_size": 15699070,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:36.781Z",
+      "checksum": "7094b85f1758a3e7614b85548176826c5d3f25f3",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 36,
+          "mid": 220,
+          "high": 860,
+          "shimmer": 2980,
+          "pulseHz": 0.94,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.24
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "ward-1908",
@@ -621,16 +1327,67 @@
       "modality": "image",
       "title": "Ward 1908 - Clean Resolution Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You restore patient truth and secure legal action against surviving conspirators.. Deliver emotional closure with sequel-hook tension.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-justice-ending-card-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/ending_card/ward-1908-ward-1908-ending-justice-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-justice-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/ending_card/ward-1908-ward-1908-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:52.693Z",
-      "checksum": "dfcd64c86a0890bef9a19b17b57e0621731062c1",
-      "file_size": 878481,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:25:24.185Z",
+      "checksum": "d7c6f3213e9a04968eb6682cc091fe5f88ea4339",
+      "file_size": 3139759,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-ward-1908-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Ward 1908 - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:17:46.258Z",
+      "checksum": "c27a95c1a5dca1125fd2754e076a7946b0e0a8df",
+      "file_size": 14654091,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-justice-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward reporting. The case closes on clean resolution ending recap video. The evidence thread started with intake ledger photo and now points directly at The Record Keeper. Review the timeline at decommissioned hilltop hospital and sub-basement records wing before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9450249999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 74,
+            "lowpassHz": 7247,
+            "presenceGainDb": 0.07800000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -639,16 +1396,32 @@
       "modality": "audio",
       "title": "Ward 1908 - Clean Resolution Ending Score",
       "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose ending score cue for \"Clean Resolution\" that supports summary \"You restore patient truth and secure legal action against surviving conspirators.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/ending_score/ward-1908-ward-1908-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:14:00.391Z",
-      "checksum": "f5cafa230102249b84614bc0de4277cc760a9546",
-      "file_size": 15699398,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:11:33.893Z",
+      "checksum": "658cae1d0970abc76f8cf1f6ce4b3a4fc0d4c39a",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 36,
+          "mid": 220,
+          "high": 860,
+          "shimmer": 2980,
+          "pulseHz": 0.94,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.24
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "ward-1908",
@@ -657,16 +1430,67 @@
       "modality": "image",
       "title": "Ward 1908 - Compromised Truth Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You reveal the abuse but trigger backlash against survivors' families.. Deliver emotional closure with sequel-hook tension.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-pyrrhic-ending-card-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/ending_card/ward-1908-ward-1908-ending-pyrrhic-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-pyrrhic-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/ending_card/ward-1908-ward-1908-ending-pyrrhic-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:52.668Z",
-      "checksum": "21bdf1b862e368479705412852e30709e9d1ea7c",
-      "file_size": 880215,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:25:48.885Z",
+      "checksum": "9fde84f8866c249fc6217fd2d58e33ccd8176e2f",
+      "file_size": 2650733,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "ward-1908",
+      "asset_id": "ward-1908-ward-1908-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Ward 1908 - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:17:55.295Z",
+      "checksum": "64fb736eb4ae05091c6ecbce0c3b3622bdb56a93",
+      "file_size": 13957173,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Hospital Archivist Nella Ward",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Hospital Archivist Nella Ward reporting. The case closes on compromised truth ending recap video. The evidence thread started with intake ledger photo and now points directly at The Record Keeper. Review the timeline at decommissioned hilltop hospital and sub-basement records wing before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.960005,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.4475,
+            "highpassHz": 79,
+            "lowpassHz": 7022,
+            "presenceGainDb": -0.562
+          }
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -675,16 +1499,32 @@
       "modality": "audio",
       "title": "Ward 1908 - Compromised Truth Ending Score",
       "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose ending score cue for \"Compromised Truth\" that supports summary \"You reveal the abuse but trigger backlash against survivors' families.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/ending_score/ward-1908-ward-1908-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:14:01.750Z",
-      "checksum": "5ebf3dcc29c9c70cf7ee51d97ae649d5f69d53c6",
-      "file_size": 15698810,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:11:35.237Z",
+      "checksum": "417250d3dea33705632896f3420d16588e8b8b63",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 36,
+          "mid": 220,
+          "high": 860,
+          "shimmer": 2980,
+          "pulseHz": 0.94,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.24
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "ward-1908",
@@ -702,7 +1542,8 @@
       "created_at": "2026-03-21T16:14:55.823Z",
       "checksum": "0d1bb2fa773efe5dbbdf2aff3f7812f9a542c8e1",
       "file_size": 1185,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -711,16 +1552,21 @@
       "modality": "image",
       "title": "Ward 1908 - Hospital Archivist Nella Ward Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Hospital Archivist Nella Ward, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Hospital Archivist Nella Ward Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-1-portrait-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-1-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-1-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-1-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:37.237Z",
-      "checksum": "f879b5dbbcc1831ec3af6cbe069593b179d686a8",
-      "file_size": 897997,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:25:48.626Z",
+      "checksum": "7202ac80b6a276fb025f9ac26a91bfb7317e0d23",
+      "file_size": 3055017,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -728,17 +1574,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Ward 1908 - Hospital Archivist Nella Ward Voice Profile",
-      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build unique voice profile for Hospital Archivist Nella Ward. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Hospital Archivist Nella Ward. Keep your channel open and do not answer unknown callbacks. A closed psychiatric hospital updates patient files every night at 1:08 a.m. Start with intake ledger photo, then verify every timestamp against decommissioned hilltop hospital and sub-basement records wing. If The Record Keeper contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\npc_voice_profile\\ward-1908-ward-1908-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/npc_voice_profile/ward-1908-ward-1908-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:57.191Z",
-      "checksum": "b0e4573556f3bd5d5e8aa5f1808ac8964dcbe856",
-      "file_size": 2110398,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:46.706Z",
+      "checksum": "20061e2befe497ce9e808d1b318cf95e6fdf7eff",
+      "file_size": 1427814,
+      "duration_seconds": 14.87,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 0.9676349999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.4475,
+          "highpassHz": 73,
+          "lowpassHz": 7304,
+          "presenceGainDb": -0.322
+        },
+        "voice_design": {
+          "apiSpeed": 0.9676349999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.4475,
+          "highpassHz": 73,
+          "lowpassHz": 7304,
+          "presenceGainDb": -0.322
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -756,7 +1626,8 @@
       "created_at": "2026-03-21T16:14:55.828Z",
       "checksum": "34bad903b7c1fd4a761ae6f23fc48c589896df59",
       "file_size": 1171,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -765,16 +1636,21 @@
       "modality": "image",
       "title": "Ward 1908 - Former Nurse Evan Mire Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Former Nurse Evan Mire, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Former Nurse Evan Mire Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-2-portrait-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-2-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-2-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-2-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:40.437Z",
-      "checksum": "55d90e8c39fa25ea61684093f00d77a7d399cc79",
-      "file_size": 915917,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:26:16.887Z",
+      "checksum": "2c91b79570d1c6de25b4700b9fd9778e1fd59f26",
+      "file_size": 3623760,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -782,17 +1658,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Ward 1908 - Former Nurse Evan Mire Voice Profile",
-      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build unique voice profile for Former Nurse Evan Mire. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Former Nurse Evan Mire. I should not be leaving this message. Something about intake ledger photo is wrong, and The Record Keeper wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to decommissioned hilltop hospital and sub-basement records wing.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\npc_voice_profile\\ward-1908-ward-1908-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/npc_voice_profile/ward-1908-ward-1908-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:57.651Z",
-      "checksum": "8f516d137ca751108c7ea1fb26b6c3763c0c6e00",
-      "file_size": 2110356,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:50.126Z",
+      "checksum": "fca8a9a3f77accb172a7a16a59a418f41443d952",
+      "file_size": 821994,
+      "duration_seconds": 8.56,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.1431550000000001,
+          "pitchSemitone": 2.175,
+          "textureAmount": 0.59,
+          "highpassHz": 89,
+          "lowpassHz": 7980,
+          "presenceGainDb": 0.052000000000000116
+        },
+        "voice_design": {
+          "apiSpeed": 1.1431550000000001,
+          "pitchSemitone": 2.175,
+          "textureAmount": 0.59,
+          "highpassHz": 89,
+          "lowpassHz": 7980,
+          "presenceGainDb": 0.052000000000000116
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -810,7 +1710,8 @@
       "created_at": "2026-03-21T16:14:55.832Z",
       "checksum": "49b1b19aba85179a3f02aee37cd5004945ea496f",
       "file_size": 1185,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -819,16 +1720,21 @@
       "modality": "image",
       "title": "Ward 1908 - Renovation Contractor Jo Pike Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Renovation Contractor Jo Pike, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Renovation Contractor Jo Pike Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-3-portrait-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-3-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-3-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-3-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:40.409Z",
-      "checksum": "5c6f590332b05c1497106641f6d49ac13880e2a8",
-      "file_size": 911246,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:26:44.673Z",
+      "checksum": "f571daeb413ae992a604636400b3ed2bd71910ea",
+      "file_size": 3256794,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -836,17 +1742,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Ward 1908 - Renovation Contractor Jo Pike Voice Profile",
-      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build unique voice profile for Renovation Contractor Jo Pike. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Renovation Contractor Jo Pike. I should not be leaving this message. Something about intake ledger photo is wrong, and The Record Keeper wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to decommissioned hilltop hospital and sub-basement records wing.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\npc_voice_profile\\ward-1908-ward-1908-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/npc_voice_profile/ward-1908-ward-1908-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:58.111Z",
-      "checksum": "9c789ee7e4d1ae303a4be64583eb9e3491a0daa8",
-      "file_size": 2110456,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:54.914Z",
+      "checksum": "20de2771d6539159641d2fe062262384d850591e",
+      "file_size": 929758,
+      "duration_seconds": 9.68,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.139785,
+          "pitchSemitone": 1.176,
+          "textureAmount": 0.61375,
+          "highpassHz": 92,
+          "lowpassHz": 7899,
+          "presenceGainDb": 0.357
+        },
+        "voice_design": {
+          "apiSpeed": 1.139785,
+          "pitchSemitone": 1.176,
+          "textureAmount": 0.61375,
+          "highpassHz": 92,
+          "lowpassHz": 7899,
+          "presenceGainDb": 0.357
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -864,7 +1794,8 @@
       "created_at": "2026-03-21T16:14:55.837Z",
       "checksum": "bb20cda5abea3a7691c3b49ddaf2918cc64c8f99",
       "file_size": 1177,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -873,16 +1804,21 @@
       "modality": "image",
       "title": "Ward 1908 - Records Officer Hale Sorn Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Character portrait for Records Officer Hale Sorn, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Records Officer Hale Sorn Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-4-portrait-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-4-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\character_portrait\\ward-1908-ward-1908-npc-4-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/character_portrait/ward-1908-ward-1908-npc-4-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:40.347Z",
-      "checksum": "507bae2621f6101893ab4fee122686431d710f10",
-      "file_size": 921374,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:26:42.030Z",
+      "checksum": "c0f7cd83cf90c5836c303675c6f70ea1d0cace3a",
+      "file_size": 3244703,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -890,17 +1826,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Ward 1908 - Records Officer Hale Sorn Voice Profile",
-      "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build unique voice profile for Records Officer Hale Sorn. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Records Officer Hale Sorn. I should not be leaving this message. Something about intake ledger photo is wrong, and The Record Keeper wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to decommissioned hilltop hospital and sub-basement records wing.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\npc_voice_profile\\ward-1908-ward-1908-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/ward-1908/audio/npc_voice_profile/ward-1908-ward-1908-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:58.624Z",
-      "checksum": "ee048d8ccd0b26e67a381ffdab9b328e68917a59",
-      "file_size": 2110430,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:58.291Z",
+      "checksum": "e60d09d236f842b53dae0b17c8960375693f6577",
+      "file_size": 857930,
+      "duration_seconds": 8.94,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 0.19499999999999995,
+          "textureAmount": 0.515,
+          "highpassHz": 102,
+          "lowpassHz": 7788,
+          "presenceGainDb": 0.2720000000000001
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 0.19499999999999995,
+          "textureAmount": 0.515,
+          "highpassHz": 102,
+          "lowpassHz": 7788,
+          "presenceGainDb": 0.2720000000000001
+        }
+      }
     },
     {
       "story_id": "ward-1908",
@@ -909,16 +1869,21 @@
       "modality": "image",
       "title": "Ward 1908 - Intake Ledger Concordance Puzzle Board",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Puzzle visual for \"Intake Ledger Concordance\". Objective: Align patient IDs split across channels to reconstruct missing admissions.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Intake Ledger Concordance Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_board\\ward-1908-ward-1908-puzzle-shards-puzzle-board-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/puzzle_board/ward-1908-ward-1908-puzzle-shards-puzzle-board-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_board\\ward-1908-ward-1908-puzzle-shards-puzzle-board-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/puzzle_board/ward-1908-ward-1908-puzzle-shards-puzzle-board-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:46.806Z",
-      "checksum": "0f85c19c21f94378b70939de131dc7caa93771bb",
-      "file_size": 953629,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:26:40.916Z",
+      "checksum": "10ea5749012105412529d196455afa3d404ce7fe",
+      "file_size": 3421963,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -936,7 +1901,8 @@
       "created_at": "2026-03-21T16:14:55.863Z",
       "checksum": "d3435596baadd3a3b60bf4f7ba02edd31eed2590",
       "file_size": 1177,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "ward-1908",
@@ -945,16 +1911,21 @@
       "modality": "image",
       "title": "Ward 1908 - Intake Ledger Concordance - ALLY_A Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Create shard card for holder ALLY_A. Content brief: Ally A receives names without index order.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Intake Ledger Concordance - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_shard_card\\ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/puzzle_shard_card/ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_shard_card\\ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/puzzle_shard_card/ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:49.363Z",
-      "checksum": "5ef0ecd4c518a6173ac41bf229338ad48bdebd89",
-      "file_size": 967695,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:27:03.138Z",
+      "checksum": "feacc2f9a35e2138424e39268befe4c8448d610d",
+      "file_size": 3611337,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -963,16 +1934,21 @@
       "modality": "image",
       "title": "Ward 1908 - Intake Ledger Concordance - GLOBAL_BROADCAST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast includes admission dates needed to merge the two lists.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Intake Ledger Concordance - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_shard_card\\ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/puzzle_shard_card/ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_shard_card\\ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/puzzle_shard_card/ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:49.382Z",
-      "checksum": "0c6e7de9954eb1b00e65d74ff45758e8400d9d52",
-      "file_size": 939408,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:27:09.333Z",
+      "checksum": "bdb5ef9e09ffde80f66896d698307815d7a1fc03",
+      "file_size": 3444801,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "ward-1908",
@@ -981,148 +1957,22 @@
       "modality": "image",
       "title": "Ward 1908 - Intake Ledger Concordance - HOST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Create shard card for holder HOST. Content brief: Host receives ward index numbers without names.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: Ward 1908 - Intake Ledger Concordance - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_shard_card\\ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/ward-1908/image/puzzle_shard_card/ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\puzzle_shard_card\\ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/ward-1908/image/puzzle_shard_card/ward-1908-ward-1908-puzzle-shards-ward-1908-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:39:49.383Z",
-      "checksum": "5a647d0f31a7865a0e4b4e5ce7cabac3c1c43aa7",
-      "file_size": 959082,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:27:06.759Z",
+      "checksum": "577602d9dd9da682ab6e9747a4263b73da45d992",
+      "file_size": 3357350,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     }
   ],
-  "failures": [
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\story_trailer\\ward-1908-trailer-main-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-ward-1908-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-ward-1908-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-ward-1908-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\arc_teaser_video\\ward-1908-ward-1908-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-ward-1908-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-ward-1908-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "ward-1908",
-      "asset_id": "ward-1908-ward-1908-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    }
-  ]
+  "failures": []
 }

@@ -1,15 +1,15 @@
 {
   "storyId": "static-between-stations",
   "title": "Static Between Stations",
-  "generatedAt": "2026-03-20T14:49:20.957Z",
+  "generatedAt": "2026-03-23T16:36:49.472Z",
   "clips": [
     {
       "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-1",
       "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
-      "beatId": "beat-1",
-      "beatTitle": "Signal One",
-      "channel": "SMS",
-      "text": "A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SIGNAL",
+      "text": "Day 01 control: secure police report spectrogram of confession bu, validate relay room, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-1.wav",
       "providers": [
         {
@@ -26,13 +26,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -41,10 +41,10 @@
     {
       "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-2",
       "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
-      "text": "Cross-reference this before dawn: Relay room access hash.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "Day 02 control: secure handwritten note maintenance ledger anomaly, validate turnstile frame, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-2.wav",
       "providers": [
         {
@@ -61,13 +61,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -76,10 +76,10 @@
     {
       "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-3",
       "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "EMAIL",
-      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "Day 03 control: secure journal entry turnstile camera still, validate station static, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-3.wav",
       "providers": [
         {
@@ -96,13 +96,888 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-4",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "SMS",
+      "text": "Day 04 control: secure text message screenshot relay room access hash, validate platform zero, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-5",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "Day 05 control: secure call log spectrogram of confession bu, validate dispatch tape, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-6",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "WHATSAPP",
+      "text": "Day 06 control: secure voicemail transcript maintenance ledger anomaly, validate track signal, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-7",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "TELEGRAM",
+      "text": "Day 07 control: secure security footage still turnstile camera still, validate relay room, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-8",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "Day 08 control: secure crime scene photo relay room access hash, validate turnstile frame, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-9",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "SIGNAL",
+      "text": "Day 09 control: secure marked map spectrogram of confession bu, validate station static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-10",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "WHATSAPP",
+      "text": "Day 10 control: secure receipt maintenance ledger anomaly, validate platform zero, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-11",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "TELEGRAM",
+      "text": "Day 11 control: secure medical record turnstile camera still, validate dispatch tape, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-12",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "Day 12 control: secure shipping manifest relay room access hash, validate track signal, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-13",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "SIGNAL",
+      "text": "Day 13 control: secure police report spectrogram of confession bu, validate relay room, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-14",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "WHATSAPP",
+      "text": "Day 14 control: secure handwritten note maintenance ledger anomaly, validate turnstile frame, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-15",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "TELEGRAM",
+      "text": "Day 15 control: secure journal entry turnstile camera still, validate station static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-16",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "Day 16 control: secure text message screenshot relay room access hash, validate platform zero, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-17",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "SIGNAL",
+      "text": "Day 17 control: secure call log spectrogram of confession bu, validate dispatch tape, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-18",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "WHATSAPP",
+      "text": "Day 18 control: secure voicemail transcript maintenance ledger anomaly, validate track signal, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-19",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "TELEGRAM",
+      "text": "Day 19 control: secure security footage still turnstile camera still, validate relay room, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-20",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "Day 20 control: secure crime scene photo relay room access hash, validate turnstile frame, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-21",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SIGNAL",
+      "text": "Day 21 control: secure marked map spectrogram of confession bu, validate station static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-22",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "WHATSAPP",
+      "text": "Day 22 control: secure receipt maintenance ledger anomaly, validate platform zero, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-23",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "Day 23 control: secure medical record turnstile camera still, validate dispatch tape, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-24",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Day 24 control: secure shipping manifest relay room access hash, validate track signal, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-25",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "Day 25 control: secure police report spectrogram of confession bu, validate relay room, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-26",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "WHATSAPP",
+      "text": "Day 26 control: secure handwritten note maintenance ledger anomaly, validate turnstile frame, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-27",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "TELEGRAM",
+      "text": "Day 27 control: secure journal entry turnstile camera still, validate station static, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.lead-investigator-mara-quinn.clip-28",
+      "profileId": "voice.static-between-stations.lead-investigator-mara-quinn",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Day 28 control: secure text message screenshot relay room access hash, validate platform zero, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/static-between-stations/lead-investigator-mara-quinn-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-lead-investigator-mara-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-lead-investigator-mara-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -111,10 +986,10 @@
     {
       "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-1",
       "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
-      "beatId": "beat-1",
-      "beatTitle": "Signal One",
-      "channel": "WHATSAPP",
-      "text": "Cross-reference this before dawn: Spectrogram of confession burst.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around relay room, but I need to know whether you trust this lead or think it is bait tied to police report spectrogram of confession bu.",
       "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-1.wav",
       "providers": [
         {
@@ -131,7 +1006,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -146,10 +1021,10 @@
     {
       "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-2",
       "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "WHATSAPP",
-      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around platform zero, but I need to know whether you trust this lead or think it is bait tied to text message screenshot relay room access hash.",
       "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-2.wav",
       "providers": [
         {
@@ -166,7 +1041,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -181,10 +1056,10 @@
     {
       "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-3",
       "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
-      "text": "Cross-reference this before dawn: Spectrogram of confession burst.",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around relay room, but I need to know whether you trust this lead or think it is bait tied to security footage still turnstile camera still.",
       "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-3.wav",
       "providers": [
         {
@@ -201,7 +1076,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -216,10 +1091,10 @@
     {
       "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-4",
       "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "VOICE_MESSAGE",
-      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around platform zero, but I need to know whether you trust this lead or think it is bait tied to receipt maintenance ledger anomaly.",
       "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-4.wav",
       "providers": [
         {
@@ -236,7 +1111,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -249,29 +1124,29 @@
       ]
     },
     {
-      "clipId": "voice.static-between-stations.the-curator-of-static.clip-1",
-      "profileId": "voice.static-between-stations.the-curator-of-static",
-      "beatId": "beat-1",
-      "beatTitle": "Signal One",
-      "channel": "SMS",
-      "text": "You catalogued every signal except the one that was yours. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-1.wav",
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-5",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around relay room, but I need to know whether you trust this lead or think it is bait tied to police report spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-5.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-curator-of-static",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-curator-of-static",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -284,29 +1159,29 @@
       ]
     },
     {
-      "clipId": "voice.static-between-stations.the-curator-of-static.clip-2",
-      "profileId": "voice.static-between-stations.the-curator-of-static",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-6",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
       "channel": "SMS",
-      "text": "You catalogued every signal except the one that was yours. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-2.wav",
+      "text": "I can confirm movement around platform zero, but I need to know whether you trust this lead or think it is bait tied to text message screenshot relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-6.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-curator-of-static",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-curator-of-static",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -319,29 +1194,64 @@
       ]
     },
     {
-      "clipId": "voice.static-between-stations.the-curator-of-static.clip-3",
-      "profileId": "voice.static-between-stations.the-curator-of-static",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-7",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around relay room, but I need to know whether you trust this lead or think it is bait tied to security footage still turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-8",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
       "channel": "WHATSAPP",
-      "text": "You were sharper before you trusted the wrong voice. (Psychological Contact)",
-      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-3.wav",
+      "text": "I can confirm movement around platform zero, but I need to know whether you trust this lead or think it is bait tied to receipt maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-8.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-curator-of-static",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-curator-of-static",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -354,29 +1264,29 @@
       ]
     },
     {
-      "clipId": "voice.static-between-stations.the-curator-of-static.clip-4",
-      "profileId": "voice.static-between-stations.the-curator-of-static",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SMS",
-      "text": "If you call dispatch, she disappears before dawn. (Active Interference)",
-      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-4.wav",
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-9",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around relay room, but I need to know whether you trust this lead or think it is bait tied to police report spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-9.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-curator-of-static",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-curator-of-static",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -389,23 +1299,58 @@
       ]
     },
     {
-      "clipId": "voice.static-between-stations.the-curator-of-static.clip-5",
-      "profileId": "voice.static-between-stations.the-curator-of-static",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
+      "clipId": "voice.static-between-stations.dispatch-handler-ilya-ross.clip-10",
+      "profileId": "voice.static-between-stations.dispatch-handler-ilya-ross",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around platform zero, but I need to know whether you trust this lead or think it is bait tied to text message screenshot relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/dispatch-handler-ilya-ross-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-dispatch-handler-ilya-ross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-dispatch-handler-ilya-ross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-1",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-5.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-1.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-curator-of-static",
+          "voiceId": "piper-static-between-stations-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-curator-of-static",
+          "voiceId": "elv-static-between-stations-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -424,23 +1369,933 @@
       ]
     },
     {
-      "clipId": "voice.static-between-stations.the-curator-of-static.clip-6",
-      "profileId": "voice.static-between-stations.the-curator-of-static",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-2",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-6.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-2.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-curator-of-static",
+          "voiceId": "piper-static-between-stations-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-curator-of-static",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-3",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-4",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-5",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-6",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-7",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-8",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-9",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-10",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-11",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-12",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-13",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-14",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-15",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-16",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-17",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-18",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-19",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-20",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-21",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-22",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-23",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-24",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-25",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-26",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-27",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.static-between-stations-field-desk.clip-28",
+      "profileId": "voice.static-between-stations.static-between-stations-field-desk",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/static-between-stations-field-desk-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-static-between-stations-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-static-between-stations-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -461,10 +2316,10 @@
     {
       "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-1",
       "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "TELEGRAM",
-      "text": "Cross-reference this before dawn: Maintenance ledger anomaly.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around turnstile frame, but I need to know whether you trust this lead or think it is bait tied to handwritten note maintenance ledger anomaly.",
       "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-1.wav",
       "providers": [
         {
@@ -481,13 +2336,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -496,10 +2351,10 @@
     {
       "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-2",
       "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "TELEGRAM",
-      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around dispatch tape, but I need to know whether you trust this lead or think it is bait tied to call log spectrogram of confession bu.",
       "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-2.wav",
       "providers": [
         {
@@ -516,13 +2371,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -531,10 +2386,10 @@
     {
       "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-3",
       "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
-      "text": "Cross-reference this before dawn: Maintenance ledger anomaly.",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around turnstile frame, but I need to know whether you trust this lead or think it is bait tied to crime scene photo relay room access hash.",
       "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-3.wav",
       "providers": [
         {
@@ -551,13 +2406,223 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-4",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "SMS",
+      "text": "I can confirm movement around dispatch tape, but I need to know whether you trust this lead or think it is bait tied to medical record turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-5",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around turnstile frame, but I need to know whether you trust this lead or think it is bait tied to handwritten note maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-6",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around dispatch tape, but I need to know whether you trust this lead or think it is bait tied to call log spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-7",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around turnstile frame, but I need to know whether you trust this lead or think it is bait tied to crime scene photo relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-8",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around dispatch tape, but I need to know whether you trust this lead or think it is bait tied to medical record turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.commuter-witness-nia-vale.clip-9",
+      "profileId": "voice.static-between-stations.commuter-witness-nia-vale",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "I can confirm movement around turnstile frame, but I need to know whether you trust this lead or think it is bait tied to handwritten note maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/commuter-witness-nia-vale-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-commuter-witness-nia-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-commuter-witness-nia-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -566,10 +2631,10 @@
     {
       "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-1",
       "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "SIGNAL",
-      "text": "Cross-reference this before dawn: Turnstile camera still.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around station static, but I need to know whether you trust this lead or think it is bait tied to journal entry turnstile camera still.",
       "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-1.wav",
       "providers": [
         {
@@ -586,13 +2651,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joey",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -601,10 +2666,10 @@
     {
       "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-2",
       "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SIGNAL",
-      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around track signal, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript maintenance ledger anomaly.",
       "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-2.wav",
       "providers": [
         {
@@ -621,7 +2686,1057 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-3",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around station static, but I need to know whether you trust this lead or think it is bait tied to marked map spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-4",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around track signal, but I need to know whether you trust this lead or think it is bait tied to shipping manifest relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-5",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around station static, but I need to know whether you trust this lead or think it is bait tied to journal entry turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-6",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around track signal, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript maintenance ledger anomaly.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-7",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SMS",
+      "text": "I can confirm movement around station static, but I need to know whether you trust this lead or think it is bait tied to marked map spectrogram of confession bu.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-8",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around track signal, but I need to know whether you trust this lead or think it is bait tied to shipping manifest relay room access hash.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.transit-auditor-bram-keene.clip-9",
+      "profileId": "voice.static-between-stations.transit-auditor-bram-keene",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around station static, but I need to know whether you trust this lead or think it is bait tied to journal entry turnstile camera still.",
+      "targetPath": "assets/audio/voices/static-between-stations/transit-auditor-bram-keene-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-transit-auditor-bram-keene",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-transit-auditor-bram-keene",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-1",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry turnstile camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-2",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript maintenance ledger anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-3",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo relay room access hash evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-4",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map spectrogram of confession bu evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-5",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SMS",
+      "text": "You keep calling receipt maintenance ledger anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-6",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling medical record turnstile camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-7",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "You keep calling shipping manifest relay room access hash evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-8",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling police report spectrogram of confession bu evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-9",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "SMS",
+      "text": "You keep calling handwritten note maintenance ledger anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-10",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry turnstile camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-11",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "You keep calling text message screenshot relay room access hash evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-12",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling call log spectrogram of confession bu evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-13",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript maintenance ledger anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-14",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling security footage still turnstile camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-15",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo relay room access hash evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-16",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map spectrogram of confession bu evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-17",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether platform zero becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-18",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether dispatch tape becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-19",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether track signal becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-20",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether relay room becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-21",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether turnstile frame becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-22",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether station static becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.static-between-stations.the-curator-of-static.clip-23",
+      "profileId": "voice.static-between-stations.the-curator-of-static",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether platform zero becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/static-between-stations/the-curator-of-static-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-curator-of-static",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-curator-of-static",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },

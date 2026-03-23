@@ -1,15 +1,15 @@
 {
   "storyId": "tape-17-pinewatch",
   "title": "Tape 17: Pinewatch",
-  "generatedAt": "2026-03-20T14:49:20.965Z",
+  "generatedAt": "2026-03-23T16:36:49.479Z",
   "clips": [
     {
       "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-1",
       "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
-      "beatId": "beat-1",
-      "beatTitle": "Tape Reset",
-      "channel": "SMS",
-      "text": "The same footage frame arrives through Telegram with different timestamps for each player. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SIGNAL",
+      "text": "Day 01 control: secure police report frame glitch cluster, validate ranger tower, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-1.wav",
       "providers": [
         {
@@ -26,13 +26,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -41,10 +41,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-2",
       "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
-      "text": "Cross-reference this before dawn: Tripod footprint cast.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "Day 02 control: secure handwritten note ranger dispatch excerpt, validate pine trail, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-2.wav",
       "providers": [
         {
@@ -61,13 +61,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -76,10 +76,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-3",
       "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "EMAIL",
-      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "Day 03 control: secure journal entry weather siren file, validate found footage, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-3.wav",
       "providers": [
         {
@@ -96,13 +96,888 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-4",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "SMS",
+      "text": "Day 04 control: secure text message screenshot tripod footprint cast, validate watch log, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-5",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "Day 05 control: secure call log frame glitch cluster, validate forest relay, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-6",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "WHATSAPP",
+      "text": "Day 06 control: secure voicemail transcript ranger dispatch excerpt, validate ash marker, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-7",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "TELEGRAM",
+      "text": "Day 07 control: secure security footage still weather siren file, validate ranger tower, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-8",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "Day 08 control: secure crime scene photo tripod footprint cast, validate pine trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-9",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "SIGNAL",
+      "text": "Day 09 control: secure marked map frame glitch cluster, validate found footage, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-10",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "WHATSAPP",
+      "text": "Day 10 control: secure receipt ranger dispatch excerpt, validate watch log, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-11",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "TELEGRAM",
+      "text": "Day 11 control: secure medical record weather siren file, validate forest relay, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-12",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "Day 12 control: secure shipping manifest tripod footprint cast, validate ash marker, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-13",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "SIGNAL",
+      "text": "Day 13 control: secure police report frame glitch cluster, validate ranger tower, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-14",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "WHATSAPP",
+      "text": "Day 14 control: secure handwritten note ranger dispatch excerpt, validate pine trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-15",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "TELEGRAM",
+      "text": "Day 15 control: secure journal entry weather siren file, validate found footage, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-16",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "Day 16 control: secure text message screenshot tripod footprint cast, validate watch log, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-17",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "SIGNAL",
+      "text": "Day 17 control: secure call log frame glitch cluster, validate forest relay, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-18",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "WHATSAPP",
+      "text": "Day 18 control: secure voicemail transcript ranger dispatch excerpt, validate ash marker, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-19",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "TELEGRAM",
+      "text": "Day 19 control: secure security footage still weather siren file, validate ranger tower, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-20",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "Day 20 control: secure crime scene photo tripod footprint cast, validate pine trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-21",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SIGNAL",
+      "text": "Day 21 control: secure marked map frame glitch cluster, validate found footage, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-22",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "WHATSAPP",
+      "text": "Day 22 control: secure receipt ranger dispatch excerpt, validate watch log, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-23",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "Day 23 control: secure medical record weather siren file, validate forest relay, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-24",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Day 24 control: secure shipping manifest tripod footprint cast, validate ash marker, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-25",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "Day 25 control: secure police report frame glitch cluster, validate ranger tower, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-26",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "WHATSAPP",
+      "text": "Day 26 control: secure handwritten note ranger dispatch excerpt, validate pine trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-27",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "TELEGRAM",
+      "text": "Day 27 control: secure journal entry weather siren file, validate found footage, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.ranger-juno-hale.clip-28",
+      "profileId": "voice.tape-17-pinewatch.ranger-juno-hale",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Day 28 control: secure text message screenshot tripod footprint cast, validate watch log, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/ranger-juno-hale-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-ranger-juno-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-ranger-juno-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -111,10 +986,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-1",
       "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
-      "beatId": "beat-1",
-      "beatTitle": "Tape Reset",
-      "channel": "WHATSAPP",
-      "text": "Cross-reference this before dawn: Frame glitch cluster.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around ranger tower, but I need to know whether you trust this lead or think it is bait tied to police report frame glitch cluster.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-1.wav",
       "providers": [
         {
@@ -131,13 +1006,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -146,10 +1021,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-2",
       "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "WHATSAPP",
-      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around watch log, but I need to know whether you trust this lead or think it is bait tied to text message screenshot tripod footprint cast.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-2.wav",
       "providers": [
         {
@@ -166,13 +1041,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -181,10 +1056,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-3",
       "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
-      "text": "Cross-reference this before dawn: Frame glitch cluster.",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around ranger tower, but I need to know whether you trust this lead or think it is bait tied to security footage still weather siren file.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-3.wav",
       "providers": [
         {
@@ -201,13 +1076,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -216,10 +1091,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-4",
       "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "VOICE_MESSAGE",
-      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around watch log, but I need to know whether you trust this lead or think it is bait tied to receipt ranger dispatch excerpt.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-4.wav",
       "providers": [
         {
@@ -236,176 +1111,246 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.tape-17-pinewatch.the-editor.clip-1",
-      "profileId": "voice.tape-17-pinewatch.the-editor",
-      "beatId": "beat-1",
-      "beatTitle": "Tape Reset",
-      "channel": "SMS",
-      "text": "You watched the wrong frame twice. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-1.wav",
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-5",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around ranger tower, but I need to know whether you trust this lead or think it is bait tied to police report frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-5.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-editor",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-editor",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.tape-17-pinewatch.the-editor.clip-2",
-      "profileId": "voice.tape-17-pinewatch.the-editor",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-6",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
       "channel": "SMS",
-      "text": "You watched the wrong frame twice. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-2.wav",
+      "text": "I can confirm movement around watch log, but I need to know whether you trust this lead or think it is bait tied to text message screenshot tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-6.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-editor",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-editor",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.tape-17-pinewatch.the-editor.clip-3",
-      "profileId": "voice.tape-17-pinewatch.the-editor",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-7",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around ranger tower, but I need to know whether you trust this lead or think it is bait tied to security footage still weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-8",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
       "channel": "WHATSAPP",
-      "text": "You keep chasing ghosts because people are harder to blame. (Psychological Contact)",
-      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-3.wav",
+      "text": "I can confirm movement around watch log, but I need to know whether you trust this lead or think it is bait tied to receipt ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-8.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-editor",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-editor",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.tape-17-pinewatch.the-editor.clip-4",
-      "profileId": "voice.tape-17-pinewatch.the-editor",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SMS",
-      "text": "If you scrub the footage again, he dies in real time. (Active Interference)",
-      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-4.wav",
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-9",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around ranger tower, but I need to know whether you trust this lead or think it is bait tied to police report frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-9.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-editor",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-editor",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.tape-17-pinewatch.the-editor.clip-5",
-      "profileId": "voice.tape-17-pinewatch.the-editor",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
+      "clipId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen.clip-10",
+      "profileId": "voice.tape-17-pinewatch.media-forensics-analyst-priya-sen",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around watch log, but I need to know whether you trust this lead or think it is bait tied to text message screenshot tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/media-forensics-analyst-priya-sen-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-media-forensics-analyst-priya-sen",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-media-forensics-analyst-priya-sen",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-1",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-5.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-1.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-editor",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-editor",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -424,23 +1369,933 @@
       ]
     },
     {
-      "clipId": "voice.tape-17-pinewatch.the-editor.clip-6",
-      "profileId": "voice.tape-17-pinewatch.the-editor",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-2",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-6.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-2.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-editor",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-editor",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-3",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-4",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-5",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-6",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-7",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-8",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-9",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-10",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-11",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-12",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-13",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-14",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-15",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-16",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-17",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-18",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-19",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-20",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-21",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-22",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-23",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-24",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-25",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-26",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-27",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk.clip-28",
+      "profileId": "voice.tape-17-pinewatch.tape-17-pinewatch-field-desk",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/tape-17-pinewatch-field-desk-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-tape-17-pinewatch-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-tape-17-pinewatch-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -461,10 +2316,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-1",
       "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "TELEGRAM",
-      "text": "Cross-reference this before dawn: Ranger dispatch excerpt.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around pine trail, but I need to know whether you trust this lead or think it is bait tied to handwritten note ranger dispatch excerpt.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-1.wav",
       "providers": [
         {
@@ -481,7 +2336,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -496,10 +2351,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-2",
       "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "TELEGRAM",
-      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around forest relay, but I need to know whether you trust this lead or think it is bait tied to call log frame glitch cluster.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-2.wav",
       "providers": [
         {
@@ -516,7 +2371,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -531,10 +2386,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-3",
       "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
-      "text": "Cross-reference this before dawn: Ranger dispatch excerpt.",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around pine trail, but I need to know whether you trust this lead or think it is bait tied to crime scene photo tripod footprint cast.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-3.wav",
       "providers": [
         {
@@ -551,7 +2406,217 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-4",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "SMS",
+      "text": "I can confirm movement around forest relay, but I need to know whether you trust this lead or think it is bait tied to medical record weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-5",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around pine trail, but I need to know whether you trust this lead or think it is bait tied to handwritten note ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-6",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around forest relay, but I need to know whether you trust this lead or think it is bait tied to call log frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-7",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around pine trail, but I need to know whether you trust this lead or think it is bait tied to crime scene photo tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-8",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around forest relay, but I need to know whether you trust this lead or think it is bait tied to medical record weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.survivor-cade-rowan.clip-9",
+      "profileId": "voice.tape-17-pinewatch.survivor-cade-rowan",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "I can confirm movement around pine trail, but I need to know whether you trust this lead or think it is bait tied to handwritten note ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/survivor-cade-rowan-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-cade-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-cade-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -566,10 +2631,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-1",
       "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "SIGNAL",
-      "text": "Cross-reference this before dawn: Weather siren file.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around found footage, but I need to know whether you trust this lead or think it is bait tied to journal entry weather siren file.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-1.wav",
       "providers": [
         {
@@ -586,7 +2651,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -601,10 +2666,10 @@
     {
       "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-2",
       "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SIGNAL",
-      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around ash marker, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript ranger dispatch excerpt.",
       "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-2.wav",
       "providers": [
         {
@@ -621,7 +2686,1057 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-3",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around found footage, but I need to know whether you trust this lead or think it is bait tied to marked map frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-4",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around ash marker, but I need to know whether you trust this lead or think it is bait tied to shipping manifest tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-5",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around found footage, but I need to know whether you trust this lead or think it is bait tied to journal entry weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-6",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around ash marker, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript ranger dispatch excerpt.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-7",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SMS",
+      "text": "I can confirm movement around found footage, but I need to know whether you trust this lead or think it is bait tied to marked map frame glitch cluster.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-8",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around ash marker, but I need to know whether you trust this lead or think it is bait tied to shipping manifest tripod footprint cast.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann.clip-9",
+      "profileId": "voice.tape-17-pinewatch.volunteer-search-lead-ellis-vann",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around found footage, but I need to know whether you trust this lead or think it is bait tied to journal entry weather siren file.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/volunteer-search-lead-ellis-vann-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-volunteer-search-lead-ellis-vann",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-volunteer-search-lead-ellis-vann",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-1",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry weather siren file evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-2",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript ranger dispatch excerpt evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-3",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo tripod footprint cast evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-4",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map frame glitch cluster evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-5",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SMS",
+      "text": "You keep calling receipt ranger dispatch excerpt evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-6",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling medical record weather siren file evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-7",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "You keep calling shipping manifest tripod footprint cast evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-8",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling police report frame glitch cluster evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-9",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "SMS",
+      "text": "You keep calling handwritten note ranger dispatch excerpt evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-10",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry weather siren file evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-11",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "You keep calling text message screenshot tripod footprint cast evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-12",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling call log frame glitch cluster evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-13",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript ranger dispatch excerpt evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-14",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling security footage still weather siren file evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-15",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo tripod footprint cast evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-16",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map frame glitch cluster evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-17",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether watch log becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-18",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether forest relay becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-19",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether ash marker becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-20",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether ranger tower becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-21",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether pine trail becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-22",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether found footage becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.tape-17-pinewatch.the-editor.clip-23",
+      "profileId": "voice.tape-17-pinewatch.the-editor",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether watch log becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/tape-17-pinewatch/the-editor-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-editor",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-editor",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },

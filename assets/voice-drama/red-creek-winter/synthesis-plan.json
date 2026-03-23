@@ -1,15 +1,15 @@
 {
   "storyId": "red-creek-winter",
   "title": "Red Creek Winter",
-  "generatedAt": "2026-03-20T14:49:20.940Z",
+  "generatedAt": "2026-03-23T16:36:49.458Z",
   "clips": [
     {
       "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-1",
       "profileId": "voice.red-creek-winter.sheriff-dana-holt",
-      "beatId": "beat-1",
-      "beatTitle": "First Snow Body",
-      "channel": "SMS",
-      "text": "Dispatch pushes a crime scene map to SMS while social channels spread contradictory alibis. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SIGNAL",
+      "text": "Day 01 control: secure police report dispatch freeze frame, validate snow line, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-1.wav",
       "providers": [
         {
@@ -26,13 +26,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -41,10 +41,10 @@
     {
       "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-2",
       "profileId": "voice.red-creek-winter.sheriff-dana-holt",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
-      "text": "Cross-reference this before dawn: Anonymous tip voicemail.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "Day 02 control: secure handwritten note snow depth forensic note, validate hunting shack, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-2.wav",
       "providers": [
         {
@@ -61,13 +61,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -76,10 +76,10 @@
     {
       "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-3",
       "profileId": "voice.red-creek-winter.sheriff-dana-holt",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "EMAIL",
-      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "Day 03 control: secure journal entry ski lodge camera still, validate county dispatch, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-3.wav",
       "providers": [
         {
@@ -96,13 +96,888 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-4",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "SMS",
+      "text": "Day 04 control: secure text message screenshot anonymous tip voicemail, validate frozen bridge, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-5",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "Day 05 control: secure call log dispatch freeze frame, validate blood trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-6",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "WHATSAPP",
+      "text": "Day 06 control: secure voicemail transcript snow depth forensic note, validate winter siren, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-7",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "TELEGRAM",
+      "text": "Day 07 control: secure security footage still ski lodge camera still, validate snow line, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-8",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "Day 08 control: secure crime scene photo anonymous tip voicemail, validate hunting shack, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-9",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "SIGNAL",
+      "text": "Day 09 control: secure marked map dispatch freeze frame, validate county dispatch, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-10",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "WHATSAPP",
+      "text": "Day 10 control: secure receipt snow depth forensic note, validate frozen bridge, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-11",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "TELEGRAM",
+      "text": "Day 11 control: secure medical record ski lodge camera still, validate blood trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-12",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "Day 12 control: secure shipping manifest anonymous tip voicemail, validate winter siren, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-13",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "SIGNAL",
+      "text": "Day 13 control: secure police report dispatch freeze frame, validate snow line, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-14",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "WHATSAPP",
+      "text": "Day 14 control: secure handwritten note snow depth forensic note, validate hunting shack, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-15",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "TELEGRAM",
+      "text": "Day 15 control: secure journal entry ski lodge camera still, validate county dispatch, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-16",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "Day 16 control: secure text message screenshot anonymous tip voicemail, validate frozen bridge, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-17",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "SIGNAL",
+      "text": "Day 17 control: secure call log dispatch freeze frame, validate blood trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-18",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "WHATSAPP",
+      "text": "Day 18 control: secure voicemail transcript snow depth forensic note, validate winter siren, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-19",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "TELEGRAM",
+      "text": "Day 19 control: secure security footage still ski lodge camera still, validate snow line, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-20",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "Day 20 control: secure crime scene photo anonymous tip voicemail, validate hunting shack, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-21",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SIGNAL",
+      "text": "Day 21 control: secure marked map dispatch freeze frame, validate county dispatch, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-22",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "WHATSAPP",
+      "text": "Day 22 control: secure receipt snow depth forensic note, validate frozen bridge, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-23",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "Day 23 control: secure medical record ski lodge camera still, validate blood trail, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-24",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Day 24 control: secure shipping manifest anonymous tip voicemail, validate winter siren, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-25",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "Day 25 control: secure police report dispatch freeze frame, validate snow line, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-26",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "WHATSAPP",
+      "text": "Day 26 control: secure handwritten note snow depth forensic note, validate hunting shack, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-27",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "TELEGRAM",
+      "text": "Day 27 control: secure journal entry ski lodge camera still, validate county dispatch, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.sheriff-dana-holt.clip-28",
+      "profileId": "voice.red-creek-winter.sheriff-dana-holt",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Day 28 control: secure text message screenshot anonymous tip voicemail, validate frozen bridge, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/red-creek-winter/sheriff-dana-holt-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-sheriff-dana-holt",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-sheriff-dana-holt",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -111,10 +986,10 @@
     {
       "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-1",
       "profileId": "voice.red-creek-winter.deputy-nico-vale",
-      "beatId": "beat-1",
-      "beatTitle": "First Snow Body",
-      "channel": "WHATSAPP",
-      "text": "Cross-reference this before dawn: Dispatch freeze frame.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around snow line, but I need to know whether you trust this lead or think it is bait tied to police report dispatch freeze frame.",
       "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-1.wav",
       "providers": [
         {
@@ -131,13 +1006,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -146,10 +1021,10 @@
     {
       "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-2",
       "profileId": "voice.red-creek-winter.deputy-nico-vale",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "WHATSAPP",
-      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around frozen bridge, but I need to know whether you trust this lead or think it is bait tied to text message screenshot anonymous tip voicemail.",
       "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-2.wav",
       "providers": [
         {
@@ -166,13 +1041,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -181,10 +1056,10 @@
     {
       "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-3",
       "profileId": "voice.red-creek-winter.deputy-nico-vale",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
-      "text": "Cross-reference this before dawn: Dispatch freeze frame.",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around snow line, but I need to know whether you trust this lead or think it is bait tied to security footage still ski lodge camera still.",
       "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-3.wav",
       "providers": [
         {
@@ -201,13 +1076,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -216,10 +1091,10 @@
     {
       "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-4",
       "profileId": "voice.red-creek-winter.deputy-nico-vale",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "VOICE_MESSAGE",
-      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around frozen bridge, but I need to know whether you trust this lead or think it is bait tied to receipt snow depth forensic note.",
       "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-4.wav",
       "providers": [
         {
@@ -236,176 +1111,246 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.red-creek-winter.the-white-knife.clip-1",
-      "profileId": "voice.red-creek-winter.the-white-knife",
-      "beatId": "beat-1",
-      "beatTitle": "First Snow Body",
-      "channel": "SMS",
-      "text": "You found the body. You missed the pattern. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-1.wav",
+      "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-5",
+      "profileId": "voice.red-creek-winter.deputy-nico-vale",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around snow line, but I need to know whether you trust this lead or think it is bait tied to police report dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-5.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-white-knife",
+          "voiceId": "piper-deputy-nico-vale",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-white-knife",
+          "voiceId": "elv-deputy-nico-vale",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.red-creek-winter.the-white-knife.clip-2",
-      "profileId": "voice.red-creek-winter.the-white-knife",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
+      "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-6",
+      "profileId": "voice.red-creek-winter.deputy-nico-vale",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
       "channel": "SMS",
-      "text": "You found the body. You missed the pattern. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-2.wav",
+      "text": "I can confirm movement around frozen bridge, but I need to know whether you trust this lead or think it is bait tied to text message screenshot anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-6.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-white-knife",
+          "voiceId": "piper-deputy-nico-vale",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-white-knife",
+          "voiceId": "elv-deputy-nico-vale",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.red-creek-winter.the-white-knife.clip-3",
-      "profileId": "voice.red-creek-winter.the-white-knife",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
+      "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-7",
+      "profileId": "voice.red-creek-winter.deputy-nico-vale",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around snow line, but I need to know whether you trust this lead or think it is bait tied to security footage still ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-deputy-nico-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-deputy-nico-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-8",
+      "profileId": "voice.red-creek-winter.deputy-nico-vale",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
       "channel": "WHATSAPP",
-      "text": "Don't trust the deputy if you like breathing. (Psychological Contact)",
-      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-3.wav",
+      "text": "I can confirm movement around frozen bridge, but I need to know whether you trust this lead or think it is bait tied to receipt snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-8.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-white-knife",
+          "voiceId": "piper-deputy-nico-vale",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-white-knife",
+          "voiceId": "elv-deputy-nico-vale",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.red-creek-winter.the-white-knife.clip-4",
-      "profileId": "voice.red-creek-winter.the-white-knife",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SMS",
-      "text": "Tell the state police and she dies before sunrise. (Active Interference)",
-      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-4.wav",
+      "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-9",
+      "profileId": "voice.red-creek-winter.deputy-nico-vale",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around snow line, but I need to know whether you trust this lead or think it is bait tied to police report dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-9.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-white-knife",
+          "voiceId": "piper-deputy-nico-vale",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-white-knife",
+          "voiceId": "elv-deputy-nico-vale",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.red-creek-winter.the-white-knife.clip-5",
-      "profileId": "voice.red-creek-winter.the-white-knife",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
+      "clipId": "voice.red-creek-winter.deputy-nico-vale.clip-10",
+      "profileId": "voice.red-creek-winter.deputy-nico-vale",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around frozen bridge, but I need to know whether you trust this lead or think it is bait tied to text message screenshot anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/deputy-nico-vale-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-deputy-nico-vale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-deputy-nico-vale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-1",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-5.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-1.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-white-knife",
+          "voiceId": "piper-red-creek-winter-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-white-knife",
+          "voiceId": "elv-red-creek-winter-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -424,23 +1369,933 @@
       ]
     },
     {
-      "clipId": "voice.red-creek-winter.the-white-knife.clip-6",
-      "profileId": "voice.red-creek-winter.the-white-knife",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-2",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-6.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-2.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-white-knife",
+          "voiceId": "piper-red-creek-winter-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-white-knife",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-3",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-4",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-5",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-6",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-7",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-8",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-9",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-10",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-11",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-12",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-13",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-14",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-15",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-16",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-17",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-18",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-19",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-20",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-21",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-22",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-23",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-24",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-25",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-26",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-27",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.red-creek-winter-field-desk.clip-28",
+      "profileId": "voice.red-creek-winter.red-creek-winter-field-desk",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/red-creek-winter-field-desk-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-red-creek-winter-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-red-creek-winter-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -461,10 +2316,10 @@
     {
       "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-1",
       "profileId": "voice.red-creek-winter.journalist-mara-finch",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "TELEGRAM",
-      "text": "Cross-reference this before dawn: Snow-depth forensic note.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around hunting shack, but I need to know whether you trust this lead or think it is bait tied to handwritten note snow depth forensic note.",
       "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-1.wav",
       "providers": [
         {
@@ -481,13 +2336,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -496,10 +2351,10 @@
     {
       "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-2",
       "profileId": "voice.red-creek-winter.journalist-mara-finch",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "TELEGRAM",
-      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around blood trail, but I need to know whether you trust this lead or think it is bait tied to call log dispatch freeze frame.",
       "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-2.wav",
       "providers": [
         {
@@ -516,13 +2371,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -531,10 +2386,10 @@
     {
       "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-3",
       "profileId": "voice.red-creek-winter.journalist-mara-finch",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
-      "text": "Cross-reference this before dawn: Snow-depth forensic note.",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around hunting shack, but I need to know whether you trust this lead or think it is bait tied to crime scene photo anonymous tip voicemail.",
       "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-3.wav",
       "providers": [
         {
@@ -551,13 +2406,223 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-4",
+      "profileId": "voice.red-creek-winter.journalist-mara-finch",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "SMS",
+      "text": "I can confirm movement around blood trail, but I need to know whether you trust this lead or think it is bait tied to medical record ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-journalist-mara-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-journalist-mara-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-5",
+      "profileId": "voice.red-creek-winter.journalist-mara-finch",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around hunting shack, but I need to know whether you trust this lead or think it is bait tied to handwritten note snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-journalist-mara-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-journalist-mara-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-6",
+      "profileId": "voice.red-creek-winter.journalist-mara-finch",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around blood trail, but I need to know whether you trust this lead or think it is bait tied to call log dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-journalist-mara-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-journalist-mara-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-7",
+      "profileId": "voice.red-creek-winter.journalist-mara-finch",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around hunting shack, but I need to know whether you trust this lead or think it is bait tied to crime scene photo anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-journalist-mara-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-journalist-mara-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-8",
+      "profileId": "voice.red-creek-winter.journalist-mara-finch",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around blood trail, but I need to know whether you trust this lead or think it is bait tied to medical record ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-journalist-mara-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-journalist-mara-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.journalist-mara-finch.clip-9",
+      "profileId": "voice.red-creek-winter.journalist-mara-finch",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "I can confirm movement around hunting shack, but I need to know whether you trust this lead or think it is bait tied to handwritten note snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/journalist-mara-finch-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-journalist-mara-finch",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-journalist-mara-finch",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Kendra",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -566,10 +2631,10 @@
     {
       "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-1",
       "profileId": "voice.red-creek-winter.survivor-owen-pike",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "SIGNAL",
-      "text": "Cross-reference this before dawn: Ski lodge camera still.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around county dispatch, but I need to know whether you trust this lead or think it is bait tied to journal entry ski lodge camera still.",
       "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-1.wav",
       "providers": [
         {
@@ -586,13 +2651,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joey",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -601,10 +2666,10 @@
     {
       "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-2",
       "profileId": "voice.red-creek-winter.survivor-owen-pike",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SIGNAL",
-      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around winter siren, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript snow depth forensic note.",
       "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-2.wav",
       "providers": [
         {
@@ -621,7 +2686,1057 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-3",
+      "profileId": "voice.red-creek-winter.survivor-owen-pike",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around county dispatch, but I need to know whether you trust this lead or think it is bait tied to marked map dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-owen-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-owen-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-4",
+      "profileId": "voice.red-creek-winter.survivor-owen-pike",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around winter siren, but I need to know whether you trust this lead or think it is bait tied to shipping manifest anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-owen-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-owen-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-5",
+      "profileId": "voice.red-creek-winter.survivor-owen-pike",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around county dispatch, but I need to know whether you trust this lead or think it is bait tied to journal entry ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-owen-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-owen-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-6",
+      "profileId": "voice.red-creek-winter.survivor-owen-pike",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around winter siren, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript snow depth forensic note.",
+      "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-owen-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-owen-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-7",
+      "profileId": "voice.red-creek-winter.survivor-owen-pike",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SMS",
+      "text": "I can confirm movement around county dispatch, but I need to know whether you trust this lead or think it is bait tied to marked map dispatch freeze frame.",
+      "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-owen-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-owen-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-8",
+      "profileId": "voice.red-creek-winter.survivor-owen-pike",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around winter siren, but I need to know whether you trust this lead or think it is bait tied to shipping manifest anonymous tip voicemail.",
+      "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-owen-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-owen-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.survivor-owen-pike.clip-9",
+      "profileId": "voice.red-creek-winter.survivor-owen-pike",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around county dispatch, but I need to know whether you trust this lead or think it is bait tied to journal entry ski lodge camera still.",
+      "targetPath": "assets/audio/voices/red-creek-winter/survivor-owen-pike-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-survivor-owen-pike",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-survivor-owen-pike",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-1",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry ski lodge camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-2",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript snow depth forensic note evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-3",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo anonymous tip voicemail evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-4",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map dispatch freeze frame evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-5",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SMS",
+      "text": "You keep calling receipt snow depth forensic note evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-6",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling medical record ski lodge camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-7",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "You keep calling shipping manifest anonymous tip voicemail evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-8",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling police report dispatch freeze frame evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-9",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "SMS",
+      "text": "You keep calling handwritten note snow depth forensic note evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-10",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry ski lodge camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-11",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "You keep calling text message screenshot anonymous tip voicemail evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-12",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling call log dispatch freeze frame evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-13",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript snow depth forensic note evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-14",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling security footage still ski lodge camera still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-15",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo anonymous tip voicemail evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-16",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map dispatch freeze frame evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-17",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether frozen bridge becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-18",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether blood trail becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-19",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether winter siren becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-20",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether snow line becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-21",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether hunting shack becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-22",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether county dispatch becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.red-creek-winter.the-white-knife.clip-23",
+      "profileId": "voice.red-creek-winter.the-white-knife",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether frozen bridge becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/red-creek-winter/the-white-knife-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-white-knife",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-white-knife",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },

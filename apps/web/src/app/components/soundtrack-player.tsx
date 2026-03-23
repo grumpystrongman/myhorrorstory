@@ -68,6 +68,7 @@ export function SoundtrackPlayer(): JSX.Element {
   const [dynamicBandLabel, setDynamicBandLabel] = useState<string | null>(null);
   const [dynamicTension, setDynamicTension] = useState<number | null>(null);
   const [directorTelemetry, setDirectorTelemetry] = useState<SoundDirectorTelemetry | null>(null);
+  const [compactUi, setCompactUi] = useState(false);
   const activeSource = isPlayRoute && dynamicSrc ? dynamicSrc : track.src;
   const displayTrackLabel = isPlayRoute && dynamicBandLabel ? `${track.title} - ${dynamicBandLabel}` : track.title;
   const displayStatus =
@@ -117,6 +118,21 @@ export function SoundtrackPlayer(): JSX.Element {
   useEffect(() => {
     setDirectorTelemetry((current) => sanitizeTelemetry(current, track.mood));
   }, [track.mood]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+      return;
+    }
+
+    const mediaQuery = window.matchMedia('(max-width: 1024px), (pointer: coarse)');
+    const apply = (): void => setCompactUi(mediaQuery.matches);
+    apply();
+
+    mediaQuery.addEventListener('change', apply);
+    return () => {
+      mediaQuery.removeEventListener('change', apply);
+    };
+  }, []);
 
   useEffect(() => {
     const handler = (event: Event): void => {
@@ -223,15 +239,15 @@ export function SoundtrackPlayer(): JSX.Element {
       className="panel"
       style={{
         position: 'fixed',
-        right: 20,
-        bottom: 20,
-        width: 320,
+        right: compactUi ? 12 : 20,
+        bottom: compactUi ? 12 : 20,
+        width: compactUi ? 208 : 320,
         zIndex: 40,
         display: 'grid',
         gap: 8,
-        backdropFilter: 'blur(6px)',
         background: 'rgba(17, 24, 39, 0.92)',
-        border: '1px solid #3d2f1f'
+        border: '1px solid #3d2f1f',
+        padding: compactUi ? 10 : undefined
       }}
     >
       <audio
@@ -243,33 +259,40 @@ export function SoundtrackPlayer(): JSX.Element {
         onPause={() => setIsPlaying(false)}
       />
       <p style={{ margin: 0, letterSpacing: '0.12em', color: 'var(--muted)' }}>SOUNDTRACK</p>
-      <p data-testid="soundtrack-track" style={{ margin: 0, fontWeight: 600 }}>
+      <p
+        data-testid="soundtrack-track"
+        style={{ margin: 0, fontWeight: 600, fontSize: compactUi ? 13 : undefined, lineHeight: 1.2 }}
+      >
         {displayTrackLabel}
       </p>
-      <p data-testid="soundtrack-status" style={{ margin: 0, color: 'var(--muted)' }}>
+      <p data-testid="soundtrack-status" style={{ margin: 0, color: 'var(--muted)', fontSize: compactUi ? 12 : undefined }}>
         {displayStatus}
       </p>
-      {isPlayRoute ? (
+      {isPlayRoute && !compactUi ? (
         <p data-testid="soundtrack-director-tension" style={{ margin: 0, color: 'var(--muted)' }}>
           Tension: {dynamicTension ?? 0}
         </p>
       ) : null}
-      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: compactUi ? 'wrap' : undefined }}>
         <button type="button" data-testid="soundtrack-toggle" onClick={togglePlayback}>
           {enabled ? 'Mute Score' : 'Enable Score'}
         </button>
-        <label htmlFor="soundtrack-volume" style={{ fontSize: 13 }}>
-          Volume
-        </label>
-        <input
-          id="soundtrack-volume"
-          data-testid="soundtrack-volume"
-          type="range"
-          min={0}
-          max={100}
-          value={volume}
-          onChange={(event) => setVolume(Number(event.target.value))}
-        />
+        {!compactUi ? (
+          <>
+            <label htmlFor="soundtrack-volume" style={{ fontSize: 13 }}>
+              Volume
+            </label>
+            <input
+              id="soundtrack-volume"
+              data-testid="soundtrack-volume"
+              type="range"
+              min={0}
+              max={100}
+              value={volume}
+              onChange={(event) => setVolume(Number(event.target.value))}
+            />
+          </>
+        ) : null}
       </div>
     </div>
   );

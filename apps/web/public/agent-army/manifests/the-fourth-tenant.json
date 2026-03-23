@@ -9,16 +9,66 @@
       "modality": "image",
       "title": "The Fourth Tenant - Unlisted Unit Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Beat: Unlisted Unit (Contact). Narrative: An email receipt references Unit 4 despite floor plans showing only three apartments.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: An email receipt references Unit 4 despite floor plans showing only three apartments.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-1-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-1-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:37.158Z",
-      "checksum": "b4cdedfd2bfa9bf1dfac42ef9f41042a0b3a760b",
-      "file_size": 878037,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:10:21.686Z",
+      "checksum": "260ecacf19922dbc02c63fa05d960bc350b25fff",
+      "file_size": 3048646,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Unlisted Unit Beat Transition",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Beat: Unlisted Unit. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:09:56.428Z",
+      "checksum": "68470b5af37ae2c99d2a22c04834085217e5c200",
+      "file_size": 3979567,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price briefing. Unlisted Unit Beat Transition is now active. Start with lease chain checksum, then compare every new message against rent is collected from an apartment that appears on no official map.. If The Landlord of Rooms That Move reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9602849999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 79,
+            "lowpassHz": 7005,
+            "presenceGainDb": -0.3919999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -27,16 +77,66 @@
       "modality": "image",
       "title": "The Fourth Tenant - Escalation Signal Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Beat: Escalation Signal (Contact). Narrative: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-2-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-2-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:37.109Z",
-      "checksum": "6f28d333c109837741b1bb57d26500c6ec26eb19",
-      "file_size": 882637,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:10:36.491Z",
+      "checksum": "f686fed0a106b516ef41e8811727367d6e43df60",
+      "file_size": 2937897,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Escalation Signal Beat Transition",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:10:11.100Z",
+      "checksum": "16bd10f1250187ce660c84fb73095183d3c3258a",
+      "file_size": 3949808,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price briefing. Escalation Signal Beat Transition is now active. Start with lease chain checksum, then compare every new message against rent is collected from an apartment that appears on no official map.. If The Landlord of Rooms That Move reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.95451,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 77,
+            "lowpassHz": 7131,
+            "presenceGainDb": 0.2480000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -45,16 +145,66 @@
       "modality": "image",
       "title": "The Fourth Tenant - Trust Fracture Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-3-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-3-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-3-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:37.109Z",
-      "checksum": "8fdd1fcd8704a7f250dc62e3f8230b19e675bd39",
-      "file_size": 885891,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:10:48.568Z",
+      "checksum": "ddcbaea82b8200de66c67b57675265052fbc95d7",
+      "file_size": 2769327,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Trust Fracture Beat Transition",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:10:18.891Z",
+      "checksum": "1b70f486a5b7cadb961e5d557c1aea51375aed5f",
+      "file_size": 3877244,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-3-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price briefing. Trust Fracture Beat Transition is now active. Start with lease chain checksum, then compare every new message against rent is collected from an apartment that appears on no official map.. If The Landlord of Rooms That Move reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.911075,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 72,
+            "lowpassHz": 7448,
+            "presenceGainDb": -0.23199999999999993
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -63,16 +213,66 @@
       "modality": "image",
       "title": "The Fourth Tenant - Ultimatum Window Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:40.461Z",
-      "checksum": "306e7dbcee8fd4fa90d02f923e2aa94f74c9e20f",
-      "file_size": 877736,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:10:49.874Z",
+      "checksum": "e2810694e2dac0c228ccedd68812f9467d521774",
+      "file_size": 3123951,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:10:26.072Z",
+      "checksum": "6163568afdd1ac66ffce101acddd5805eabfc7a4",
+      "file_size": 4095257,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price briefing. Ultimatum Window Beat Transition is now active. Start with lease chain checksum, then compare every new message against rent is collected from an apartment that appears on no official map.. If The Landlord of Rooms That Move reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9417,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 89,
+            "lowpassHz": 7410,
+            "presenceGainDb": 0.00800000000000009
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -81,16 +281,66 @@
       "modality": "image",
       "title": "The Fourth Tenant - Confrontation Protocol Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-5-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-5-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-5-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-5-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:40.417Z",
-      "checksum": "b53e70bf9c95b33850954b34511c63860e89e20e",
-      "file_size": 983209,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:11:00.194Z",
+      "checksum": "7d1c9c0cdba126038fe8707896b7680941e3b780",
+      "file_size": 2939057,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:10:33.991Z",
+      "checksum": "7b186274ad9bc7c600e2c5db7d762cfd67b18d16",
+      "file_size": 3786390,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price briefing. Confrontation Protocol Beat Transition is now active. Start with lease chain checksum, then compare every new message against rent is collected from an apartment that appears on no official map.. If The Landlord of Rooms That Move reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9016249999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 81,
+            "lowpassHz": 7122,
+            "presenceGainDb": 0.1680000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -99,16 +349,66 @@
       "modality": "image",
       "title": "The Fourth Tenant - Case Debrief Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/beat_scene_art/the-fourth-tenant-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:40.462Z",
-      "checksum": "2ab6e64fb1536c64a8e3d07d4e63ec3c64aca7c2",
-      "file_size": 874165,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:11:11.642Z",
+      "checksum": "531e2feb0310e45d318bbc003a3e7dbae9f29b4c",
+      "file_size": 2868857,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Case Debrief Beat Transition",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/beat_transition_video/the-fourth-tenant-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:10:41.489Z",
+      "checksum": "2ec8d70ad070ff2649dc09fa29693c979b80f857",
+      "file_size": 3891858,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price briefing. Case Debrief Beat Transition is now active. Start with lease chain checksum, then compare every new message against rent is collected from an apartment that appears on no official map.. If The Landlord of Rooms That Move reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9468099999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 76,
+            "lowpassHz": 7315,
+            "presenceGainDb": 0.1680000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -126,7 +426,8 @@
       "created_at": "2026-03-21T16:14:55.756Z",
       "checksum": "d9ca723cfa1cfaf4e0b295450518348aaee29c0c",
       "file_size": 1245,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -144,7 +445,8 @@
       "created_at": "2026-03-21T16:15:49.605Z",
       "checksum": "56efd5f1c8f2c01f054be81642662b4642b7f800",
       "file_size": 1418,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -162,7 +464,8 @@
       "created_at": "2026-03-21T16:14:55.734Z",
       "checksum": "b61c52d35b8856e860b4332133cc3c56818cb134",
       "file_size": 1202,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -170,17 +473,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "The Fourth Tenant - Evidence Still - Hallway thermal still",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Hallway thermal still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Hallway thermal still. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Setting: Flood-district prewar apartment block. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Hallway thermal still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Hallway thermal still. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-hallway-thermal-still-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-hallway-thermal-still-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-hallway-thermal-still-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-hallway-thermal-still-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:49.849Z",
-      "checksum": "f275b2374f9eddc0da537036a883004abc6dea81",
-      "file_size": 963703,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:48:53.426Z",
+      "checksum": "4a64c40b7fed7302b392ca85367437142919749b",
+      "file_size": 3377588,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -198,7 +506,8 @@
       "created_at": "2026-03-21T16:14:55.729Z",
       "checksum": "7fbb4b3ce7078048c1af1ec3e175a9489d7abc2a",
       "file_size": 1199,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -207,16 +516,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Evidence Still - Lease chain checksum",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Lease chain checksum\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Lease chain checksum. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-lease-chain-checksum-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-lease-chain-checksum-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-lease-chain-checksum-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:46.610Z",
-      "checksum": "49d376e2f3bfb790f3e649f0a8e1197eb6498773",
-      "file_size": 961481,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:11:21.492Z",
+      "checksum": "eec2c65d639777d6c76841dacf7dde1a8c1ef6c0",
+      "file_size": 2849679,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -234,7 +548,8 @@
       "created_at": "2026-03-21T16:14:55.743Z",
       "checksum": "77f63c45bb0aa8ad5011b4bae526961534c79b5f",
       "file_size": 1199,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -243,16 +558,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Evidence Still - Night entry key hash",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Night entry key hash\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Night entry key hash. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-night-entry-key-hash-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-night-entry-key-hash-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-night-entry-key-hash-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-night-entry-key-hash-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:49.809Z",
-      "checksum": "46f7eb6a2a58a0e4c61a2ecfda8fe626050a21a5",
-      "file_size": 963199,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:11:32.603Z",
+      "checksum": "bdff9faa6fb0c7df90c5e56bf4207577247d600c",
+      "file_size": 3137897,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -270,7 +590,8 @@
       "created_at": "2026-03-21T16:14:55.751Z",
       "checksum": "fc192c4be61bad80fb24e0b32692367ea80204ca",
       "file_size": 1230,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -288,7 +609,8 @@
       "created_at": "2026-03-21T16:15:49.598Z",
       "checksum": "713f3a22e572c175d20b3e27e800d9ec12aab2fc",
       "file_size": 1403,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -297,16 +619,21 @@
       "modality": "image",
       "title": "The Fourth Tenant Social Launch Square",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\social_square\\the-fourth-tenant-social-launch-square-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/social_square/the-fourth-tenant-social-launch-square-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\social_square\\the-fourth-tenant-social-launch-square-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/social_square/the-fourth-tenant-social-launch-square-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:58.738Z",
-      "checksum": "b3c5c2501012fb0367d4a700962ca03d5b402553",
-      "file_size": 746608,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:11:33.625Z",
+      "checksum": "2c98d986eb3812048dd4a278ea4bf75a581670e9",
+      "file_size": 1940223,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -315,16 +642,21 @@
       "modality": "image",
       "title": "The Fourth Tenant Social Launch Vertical",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\social_vertical\\the-fourth-tenant-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/social_vertical/the-fourth-tenant-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\social_vertical\\the-fourth-tenant-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/social_vertical/the-fourth-tenant-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:58.787Z",
-      "checksum": "acb2426dcffe3a5fe66bdaedd7d1d91fbf68f2f2",
-      "file_size": 768533,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:11:39.035Z",
+      "checksum": "d57fcae67d742b7d7bb0b61f2deb5653b5c7c852",
+      "file_size": 1935964,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -333,16 +665,21 @@
       "modality": "image",
       "title": "The Fourth Tenant Story Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/story_key_art/the-fourth-tenant-story-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/story_key_art/the-fourth-tenant-story-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:30.766Z",
-      "checksum": "a7ee465b510fd79d231afbbd5b9c14c378ae34a7",
-      "file_size": 878928,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:12:24.114Z",
+      "checksum": "c308b70313a932bd3979bc82e172d200d1a6c42d",
+      "file_size": 2659476,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -360,7 +697,8 @@
       "created_at": "2026-03-21T16:15:49.610Z",
       "checksum": "b1b2a269f4792b789dce62479671e59c480aa2f2",
       "file_size": 1300,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -369,16 +707,32 @@
       "modality": "audio",
       "title": "The Fourth Tenant Story Theme Loop",
       "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/story_theme_loop/the-fourth-tenant-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:41.584Z",
-      "checksum": "65387f42f3d0d2a32ef14095481e913c501fb367",
-      "file_size": 15698890,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:10:42.558Z",
+      "checksum": "9aee3bdc4f98e8ee6eba736afc2a9f1deb693228",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 39,
+          "mid": 244,
+          "high": 1100,
+          "shimmer": 3600,
+          "pulseHz": 1.2166666666666668,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -387,16 +741,32 @@
       "modality": "audio",
       "title": "The Fourth Tenant - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/arc_ambience/the-fourth-tenant-the-fourth-tenant-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:32.088Z",
-      "checksum": "70f2fc40240a5c6ca61cffb53a94e07b566d6703",
-      "file_size": 15699586,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:10:16.423Z",
+      "checksum": "8f3df9941037f495de757f9adf9eeddb4ab13569",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 38,
+          "mid": 224,
+          "high": 856,
+          "shimmer": 3196,
+          "pulseHz": 1.05,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -405,16 +775,67 @@
       "modality": "image",
       "title": "The Fourth Tenant - Contact and Contradiction Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: supernatural mystery. Tone: EERIE. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: The Fourth Tenant - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/arc_key_art/the-fourth-tenant-the-fourth-tenant-arc-contact-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/arc_key_art/the-fourth-tenant-the-fourth-tenant-arc-contact-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:33.834Z",
-      "checksum": "5c1e0afbc616e716fc6e13ec44bac892e6907c86",
-      "file_size": 886992,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:12:20.612Z",
+      "checksum": "149e820c605649ce8c2ece9bd087a5c90fe37ae1",
+      "file_size": 3300870,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:09:30.929Z",
+      "checksum": "59bd9923d8a88598c9d7923b3098891a4bae70ad",
+      "file_size": 11962472,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lease Broker Owen Pike",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Lease Broker Owen Pike to team. Rent is collected from an apartment that appears on no official map. This arc centers on contact and contradiction arc teaser video, with pressure building around lease chain checksum. Move quietly through flood-district prewar apartment block and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.377,
+            "textureAmount": 0.6399999999999999,
+            "highpassHz": 91,
+            "lowpassHz": 7978,
+            "presenceGainDb": 0.812
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -423,16 +844,32 @@
       "modality": "audio",
       "title": "The Fourth Tenant - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/arc_ambience/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:33.086Z",
-      "checksum": "6446e95bef73064932007e557c5514f53652d72b",
-      "file_size": 15699218,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:10:17.731Z",
+      "checksum": "cc9d804102e209d1ebdd2ac342c9d7e7de1205a0",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 44,
+          "mid": 241,
+          "high": 1033,
+          "shimmer": 3813,
+          "pulseHz": 1.8,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -441,16 +878,67 @@
       "modality": "image",
       "title": "The Fourth Tenant - Interference and Doubt Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: supernatural mystery. Tone: EERIE. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: The Fourth Tenant - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/arc_key_art/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/arc_key_art/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:33.786Z",
-      "checksum": "3c6e74bd5e5bb58da6077fee6089a08f5788e65d",
-      "file_size": 865120,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:12:30.802Z",
+      "checksum": "7d7e9a552c09112a76987c642da6eb2a40a46b61",
+      "file_size": 3079447,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:09:37.005Z",
+      "checksum": "cf84f233aed6902cae6553e4674c3ab3480d8176",
+      "file_size": 11689942,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lease Broker Owen Pike",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Lease Broker Owen Pike to team. Rent is collected from an apartment that appears on no official map. This arc centers on interference and doubt arc teaser video, with pressure building around lease chain checksum. Move quietly through flood-district prewar apartment block and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.377,
+            "textureAmount": 0.6399999999999999,
+            "highpassHz": 89,
+            "lowpassHz": 7947,
+            "presenceGainDb": 0.5720000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -459,16 +947,32 @@
       "modality": "audio",
       "title": "The Fourth Tenant - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/arc_ambience/the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:34.195Z",
-      "checksum": "5a9c691730d2b37ecdcbe700554579f19aa4b139",
-      "file_size": 15700298,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:10:19.146Z",
+      "checksum": "25d3e2fefbcca3a7525d85a189c36aa1b5b706bb",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 56,
+          "mid": 195,
+          "high": 795,
+          "shimmer": 2615,
+          "pulseHz": 1.8,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -477,16 +981,67 @@
       "modality": "image",
       "title": "The Fourth Tenant - Confrontation and Reckoning Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: supernatural mystery. Tone: EERIE. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: The Fourth Tenant - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/arc_key_art/the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/arc_key_art/the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:33.853Z",
-      "checksum": "cfa2f168e91e6de6bb15fa014c15614b5ba93fbe",
-      "file_size": 885535,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:13:15.199Z",
+      "checksum": "c8f087d2bca9512d03212ddb70b6a1a5297527f4",
+      "file_size": 3231043,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:10:03.794Z",
+      "checksum": "48913a0207dca5a5f32a4d117827a4bc6077c683",
+      "file_size": 11819748,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lease Broker Owen Pike",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Lease Broker Owen Pike to team. Rent is collected from an apartment that appears on no official map. This arc centers on confrontation and reckoning arc teaser video, with pressure building around lease chain checksum. Move quietly through flood-district prewar apartment block and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.377,
+            "textureAmount": 0.6399999999999999,
+            "highpassHz": 86,
+            "lowpassHz": 7719,
+            "presenceGainDb": 0.652
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -495,16 +1050,67 @@
       "modality": "image",
       "title": "The Fourth Tenant - Corruption Pact Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You accept ownership of Unit 4 and rewrite occupancy history.. Deliver emotional closure with sequel-hook tension.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-card-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/ending_card/the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/ending_card/the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:58.803Z",
-      "checksum": "9ffbcadcbe57d9b376f93e5b5f8647d53d055908",
-      "file_size": 880771,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:13:13.370Z",
+      "checksum": "ab21c14e4ad923b4bff4ba9eb0e011a4208257cc",
+      "file_size": 3282801,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/ending_recap_video/the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/ending_recap_video/the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:12:06.805Z",
+      "checksum": "094e14ab4a892f049fd6bf9a25f856df75bd920b",
+      "file_size": 17349088,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\ending_score\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "The Landlord of Rooms That Move",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "The Landlord of Rooms That Move reporting. The case closes on corruption pact ending recap video. The evidence thread started with lease chain checksum and now points directly at The Landlord of Rooms That Move. Review the timeline at flood-district prewar apartment block before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.84,
+            "pitchSemitone": -2.113,
+            "textureAmount": 0.54625,
+            "highpassHz": 73,
+            "lowpassHz": 6177,
+            "presenceGainDb": 0.14700000000000013
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -513,16 +1119,32 @@
       "modality": "audio",
       "title": "The Fourth Tenant - Corruption Pact Ending Score",
       "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept ownership of Unit 4 and rewrite occupancy history.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\ending_score\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/ending_score/the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:40.280Z",
-      "checksum": "5e723f1c9a4c2018e202f287adad1ffbdacbcb24",
-      "file_size": 15698890,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:10:41.193Z",
+      "checksum": "47c443d5647acf82cc031cc568ae374db8290ee6",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 50,
+          "mid": 230,
+          "high": 860,
+          "shimmer": 3800,
+          "pulseHz": 1.0366666666666668,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.28
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -531,16 +1153,67 @@
       "modality": "image",
       "title": "The Fourth Tenant - Clean Resolution Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You prove the tenant scheme and secure testimony before records vanish.. Deliver emotional closure with sequel-hook tension.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-card-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/ending_card/the-fourth-tenant-the-fourth-tenant-ending-justice-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/ending_card/the-fourth-tenant-the-fourth-tenant-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:55.804Z",
-      "checksum": "645fccd7772cbdd9780492961d3696cc2e16258c",
-      "file_size": 880991,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:13:19.501Z",
+      "checksum": "35f01a39eda0491abb82f711028057ed4f3af25f",
+      "file_size": 3263910,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/ending_recap_video/the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/ending_recap_video/the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:11:20.944Z",
+      "checksum": "e7cfaa0fd2c121b0c9291443b62de766110e5bed",
+      "file_size": 16766267,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\ending_score\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price reporting. The case closes on clean resolution ending recap video. The evidence thread started with lease chain checksum and now points directly at The Landlord of Rooms That Move. Review the timeline at flood-district prewar apartment block before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.953915,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 75,
+            "lowpassHz": 7255,
+            "presenceGainDb": 0.1680000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -549,16 +1222,32 @@
       "modality": "audio",
       "title": "The Fourth Tenant - Clean Resolution Ending Score",
       "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Compose ending score cue for \"Clean Resolution\" that supports summary \"You prove the tenant scheme and secure testimony before records vanish.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\ending_score\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/ending_score/the-fourth-tenant-the-fourth-tenant-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:37.757Z",
-      "checksum": "74ea9cc778ce73f27f865dbdd50fe9ddfe908695",
-      "file_size": 15698834,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:10:38.793Z",
+      "checksum": "e220387300f5908f6a42a2a82f086efda2a58076",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 43,
+          "mid": 220,
+          "high": 1298,
+          "shimmer": 2638,
+          "pulseHz": 1.2033333333333334,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.28
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -567,16 +1256,67 @@
       "modality": "image",
       "title": "The Fourth Tenant - Compromised Truth Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You expose fraud, but a key tenant disappears from all records.. Deliver emotional closure with sequel-hook tension.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-card-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/ending_card/the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/ending_card/the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:55.826Z",
-      "checksum": "dca50f603a6eec759977ac44572633b5007f0065",
-      "file_size": 884603,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:14:05.089Z",
+      "checksum": "ae205fa5c681fee00c78e1b96ca7a57a7802f058",
+      "file_size": 3321563,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "The Fourth Tenant - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/ending_recap_video/the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/ending_recap_video/the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:11:28.630Z",
+      "checksum": "c73234d1fe05799b979c01dfcf682c3974773db7",
+      "file_size": 16926115,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\ending_card\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\ending_score\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price reporting. The case closes on compromised truth ending recap video. The evidence thread started with lease chain checksum and now points directly at The Landlord of Rooms That Move. Review the timeline at flood-district prewar apartment block before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.934735,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 74,
+            "lowpassHz": 7061,
+            "presenceGainDb": 0.4080000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -585,16 +1325,32 @@
       "modality": "audio",
       "title": "The Fourth Tenant - Compromised Truth Ending Score",
       "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Compose ending score cue for \"Compromised Truth\" that supports summary \"You expose fraud, but a key tenant disappears from all records.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\ending_score\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/ending_score/the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:39.027Z",
-      "checksum": "380bdac67a4e205175afeb0cfa6980f0f34dafa5",
-      "file_size": 15698834,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:10:39.971Z",
+      "checksum": "789e82c7bd3ac39fb20e3f4c46de1896f54c0d9b",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 50,
+          "mid": 264,
+          "high": 1182,
+          "shimmer": 3042,
+          "pulseHz": 1.2033333333333334,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.28
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -612,7 +1368,8 @@
       "created_at": "2026-03-21T16:14:55.703Z",
       "checksum": "58b8cdf30c3701064a3e70c4abaf4a593375f353",
       "file_size": 1210,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -621,16 +1378,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Building Superintendent Leda Price Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Character portrait for Building Superintendent Leda Price, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Building Superintendent Leda Price Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-1-portrait-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-1-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-1-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-1-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:43.520Z",
-      "checksum": "6abfebf2334e40e4fd81e0a589afae0f0f885b1e",
-      "file_size": 889142,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:14:19.508Z",
+      "checksum": "63bf12a68692fccdb7cfda015fa43842b8ba9f98",
+      "file_size": 3176922,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -638,17 +1400,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Fourth Tenant - Building Superintendent Leda Price Voice Profile",
-      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Building Superintendent Leda Price. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Building Superintendent Leda Price. Keep your channel open and do not answer unknown callbacks. Rent is collected from an apartment that appears on no official map. Start with lease chain checksum, then verify every timestamp against flood-district prewar apartment block. If The Landlord of Rooms That Move contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\npc_voice_profile\\the-fourth-tenant-the-fourth-tenant-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:34.597Z",
-      "checksum": "90e6f399e30ba20c179c4b920d7dde1bb2eeb515",
-      "file_size": 2110456,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:06.760Z",
+      "checksum": "1af3dcec258c95eb611695141caf8dec36fac9e1",
+      "file_size": 1321118,
+      "duration_seconds": 13.76,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 0.9189849999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.485,
+          "highpassHz": 84,
+          "lowpassHz": 7401,
+          "presenceGainDb": 0.00800000000000009
+        },
+        "voice_design": {
+          "apiSpeed": 0.9189849999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.485,
+          "highpassHz": 84,
+          "lowpassHz": 7401,
+          "presenceGainDb": 0.00800000000000009
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -666,7 +1452,8 @@
       "created_at": "2026-03-21T16:14:55.708Z",
       "checksum": "dfa9ef66a6ec00d09e010c4ae069a1706d10bedc",
       "file_size": 1186,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -675,16 +1462,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Lease Broker Owen Pike Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Character portrait for Lease Broker Owen Pike, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Broker Owen Pike Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-2-portrait-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-2-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-2-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-2-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:43.521Z",
-      "checksum": "5e3ead22dc82738267a75835cc7c43fdc8339cc9",
-      "file_size": 887203,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:14:12.511Z",
+      "checksum": "3a5d247a0629356be012b9727eb552e5f3f4a59b",
+      "file_size": 3363495,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -692,17 +1484,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Fourth Tenant - Lease Broker Owen Pike Voice Profile",
-      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Lease Broker Owen Pike. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Lease Broker Owen Pike. I should not be leaving this message. Something about lease chain checksum is wrong, and The Landlord of Rooms That Move wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to flood-district prewar apartment block.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\npc_voice_profile\\the-fourth-tenant-the-fourth-tenant-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:34.946Z",
-      "checksum": "847bf6d1b460d8f800afecc606e2fd6ccc25db24",
-      "file_size": 2110694,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:36:10.260Z",
+      "checksum": "5ceefa78b2fe792df7db6646756ecac4da034070",
+      "file_size": 801154,
+      "duration_seconds": 8.34,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.377,
+          "textureAmount": 0.6399999999999999,
+          "highpassHz": 88,
+          "lowpassHz": 8002,
+          "presenceGainDb": 0.3320000000000001
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.377,
+          "textureAmount": 0.6399999999999999,
+          "highpassHz": 88,
+          "lowpassHz": 8002,
+          "presenceGainDb": 0.3320000000000001
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -720,7 +1536,8 @@
       "created_at": "2026-03-21T16:14:55.714Z",
       "checksum": "91350f52e5399e921dea992baec4286f0b1f57bc",
       "file_size": 1188,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -729,16 +1546,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Night Tenant Maris Holt Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Character portrait for Night Tenant Maris Holt, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Night Tenant Maris Holt Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-3-portrait-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-3-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-3-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-3-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:43.549Z",
-      "checksum": "950a29b2af6a56f7a8a706f28e95be657f26cf1b",
-      "file_size": 914090,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:14:55.272Z",
+      "checksum": "ac967f13a515f35b050428348b82e403a6c43c45",
+      "file_size": 3145877,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -746,17 +1568,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Fourth Tenant - Night Tenant Maris Holt Voice Profile",
-      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Night Tenant Maris Holt. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Night Tenant Maris Holt. I should not be leaving this message. Something about lease chain checksum is wrong, and The Landlord of Rooms That Move wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to flood-district prewar apartment block.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\npc_voice_profile\\the-fourth-tenant-the-fourth-tenant-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:35.299Z",
-      "checksum": "f3a67daa87b5b4cfad5f0482b9590e0c41a6b84c",
-      "file_size": 2110720,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:36:14.403Z",
+      "checksum": "255a65df367221bacaef0204008eef7cad9172b0",
+      "file_size": 1043444,
+      "duration_seconds": 10.87,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 1.0823,
+          "pitchSemitone": 1.309,
+          "textureAmount": 0.62,
+          "highpassHz": 86,
+          "lowpassHz": 7768,
+          "presenceGainDb": 0.17200000000000004
+        },
+        "voice_design": {
+          "apiSpeed": 1.0823,
+          "pitchSemitone": 1.309,
+          "textureAmount": 0.62,
+          "highpassHz": 86,
+          "lowpassHz": 7768,
+          "presenceGainDb": 0.17200000000000004
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -774,7 +1620,8 @@
       "created_at": "2026-03-21T16:14:55.719Z",
       "checksum": "85a254c7fd095f910f5d8b13a39e25ebd508f856",
       "file_size": 1194,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -783,16 +1630,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Claims Adjuster Felix Noor Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Character portrait for Claims Adjuster Felix Noor, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Claims Adjuster Felix Noor Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-4-portrait-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-4-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\character_portrait\\the-fourth-tenant-the-fourth-tenant-npc-4-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/character_portrait/the-fourth-tenant-the-fourth-tenant-npc-4-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:46.596Z",
-      "checksum": "7a019781ff122c274fc9f139410a24201f2d3b74",
-      "file_size": 906195,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:15:07.767Z",
+      "checksum": "cef83435ca643275d6ee4816db28788c5ec1e39a",
+      "file_size": 3456075,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -800,17 +1652,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "The Fourth Tenant - Claims Adjuster Felix Noor Voice Profile",
-      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Claims Adjuster Felix Noor. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Claims Adjuster Felix Noor. I should not be leaving this message. Something about lease chain checksum is wrong, and The Landlord of Rooms That Move wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to flood-district prewar apartment block.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\npc_voice_profile\\the-fourth-tenant-the-fourth-tenant-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:35.727Z",
-      "checksum": "2ab3c4750f4bff4e6cdec7ab733459e734b3f404",
-      "file_size": 2110482,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:18.198Z",
+      "checksum": "e315901bee56a3ff258e081a09530bd4222ecc18",
+      "file_size": 930364,
+      "duration_seconds": 9.69,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 0.8599999999999999,
+          "textureAmount": 0.54,
+          "highpassHz": 86,
+          "lowpassHz": 7786,
+          "presenceGainDb": 0.41200000000000003
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 0.8599999999999999,
+          "textureAmount": 0.54,
+          "highpassHz": 86,
+          "lowpassHz": 7786,
+          "presenceGainDb": 0.41200000000000003
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -819,16 +1695,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Lease Fragment Reconstruction Puzzle Board",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Puzzle visual for \"Lease Fragment Reconstruction\". Objective: Assemble split lease clauses distributed by channel to locate Unit 4 entrance.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_board\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-puzzle-board-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_board/the-fourth-tenant-the-fourth-tenant-puzzle-shards-puzzle-board-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_board\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-puzzle-board-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_board/the-fourth-tenant-the-fourth-tenant-puzzle-shards-puzzle-board-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:52.820Z",
-      "checksum": "902cca8c2b422c87b1fce32cf9f3c39fd2091656",
-      "file_size": 975707,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:14:42.148Z",
+      "checksum": "0f8c9d7251ae483b4ea5f871875e3f6675f108f1",
+      "file_size": 3616854,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -846,7 +1727,8 @@
       "created_at": "2026-03-21T16:14:55.747Z",
       "checksum": "df620f8f892f0f5c6053fce0628aa4478ae76c32",
       "file_size": 1200,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -854,17 +1736,22 @@
       "asset_type": "puzzle_shard_card",
       "modality": "image",
       "title": "The Fourth Tenant - Lease Fragment Reconstruction - ALLY_A Shard Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder ALLY_A. Content brief: Ally A receives the missing clause text over WhatsApp.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder ALLY_A. Content brief: Ally A receives the missing clause text over WhatsApp.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:52.868Z",
-      "checksum": "2b6390b70e2895ac24b57aa3a66b555decb43f1b",
-      "file_size": 974784,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:49:50.790Z",
+      "checksum": "fe1c4c0392598d4817aa8f172016a95f7946326d",
+      "file_size": 3397138,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -872,17 +1759,22 @@
       "asset_type": "puzzle_shard_card",
       "modality": "image",
       "title": "The Fourth Tenant - Lease Fragment Reconstruction - GLOBAL_BROADCAST Shard Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder GLOBAL_BROADCAST. Content brief: Global drop contains watermark coordinates for the hidden hallway.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder GLOBAL_BROADCAST. Content brief: Global drop contains watermark coordinates for the hidden hallway.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:55.787Z",
-      "checksum": "0fb014a929b7f18a897f9e8a1e690b0887366759",
-      "file_size": 975334,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:50:19.801Z",
+      "checksum": "32957381519cab27846a1e42275103397ebf5ab4",
+      "file_size": 3618192,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -891,16 +1783,69 @@
       "modality": "image",
       "title": "The Fourth Tenant - Lease Fragment Reconstruction - HOST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder HOST. Content brief: Host receives a redacted PDF with clause numbering intact.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:52.865Z",
-      "checksum": "1f844e11198545259f4fe44100e9ec3a6173ba3c",
-      "file_size": 976913,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:15:29.558Z",
+      "checksum": "17c92083e171a0ff7353e28656edde53f68dce2c",
+      "file_size": 3706860,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "the-fourth-tenant",
+      "asset_id": "the-fourth-tenant-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "The Fourth Tenant Main Trailer",
+      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\story_trailer\\the-fourth-tenant-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/the-fourth-tenant/video/story_trailer/the-fourth-tenant-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\story_trailer\\the-fourth-tenant-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/story_trailer/the-fourth-tenant-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:12:10.366Z",
+      "checksum": "6d0f4c84058382e314bd0bfe9336425434f67a19",
+      "file_size": 12456271,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\story_key_art\\the-fourth-tenant-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-3-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\story_theme_loop\\the-fourth-tenant-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Building Superintendent Leda Price",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Building Superintendent Leda Price briefing. The Fourth Tenant Main Trailer is now active. Start with lease chain checksum, then compare every new message against rent is collected from an apartment that appears on no official map.. If The Landlord of Rooms That Move reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.946425,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.485,
+            "highpassHz": 76,
+            "lowpassHz": 7119,
+            "presenceGainDb": 0.32800000000000007
+          }
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -918,7 +1863,8 @@
       "created_at": "2026-03-21T16:14:55.724Z",
       "checksum": "27b51b84f4071ba4f77a74281685112bee198825",
       "file_size": 1178,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -927,16 +1873,21 @@
       "modality": "image",
       "title": "The Fourth Tenant - Villain Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Design portrait of antagonist The Landlord of Rooms That Move with archetype INTIMATE_WHISPERER, speech style \"Close, familiar, and unnervingly domestic.\", and motifs door chains, wet plaster, rent slips.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/villain_portrait/the-fourth-tenant-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/villain_portrait/the-fourth-tenant-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:46.578Z",
-      "checksum": "a10d3b38b769ea8d9e89d926a3b7ea81c2ad14fc",
-      "file_size": 913735,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:16:02.063Z",
+      "checksum": "3f4cf2a0539a1162c40563aa5f14a4742e3080b7",
+      "file_size": 3158384,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -944,17 +1895,41 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "The Fourth Tenant - Villain Voice Profile",
-      "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create villain voice profile for The Landlord of Rooms That Move. Worldview: People accept impossible rooms when paperwork feels safe.. Manner: Soft mockery that feels personal.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. Rent is collected from an apartment that appears on no official map. Work the case in order: secure lease chain checksum, confirm the scene at flood-district prewar apartment block, and do not let The Landlord of Rooms That Move choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\villain_voice_profile\\the-fourth-tenant-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/the-fourth-tenant/audio/villain_voice_profile/the-fourth-tenant-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:36.179Z",
-      "checksum": "e8f18199f2e35c3c999f08233eef2d6af1927c98",
-      "file_size": 2110506,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:36:21.665Z",
+      "checksum": "197c4c6cfabb3f44b86f2a6226cac31bd056c2ab",
+      "file_size": 867234,
+      "duration_seconds": 9.03,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "echo",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.03094,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 78,
+          "lowpassHz": 7386,
+          "presenceGainDb": -0.4
+        },
+        "voice_design": {
+          "apiSpeed": 1.03094,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 78,
+          "lowpassHz": 7386,
+          "presenceGainDb": -0.4
+        }
+      }
     },
     {
       "story_id": "the-fourth-tenant",
@@ -972,7 +1947,8 @@
       "created_at": "2026-03-21T16:14:55.738Z",
       "checksum": "1682d4eea2812a1912e2e3f8276b371d954d76a0",
       "file_size": 1235,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "the-fourth-tenant",
@@ -980,149 +1956,23 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "The Fourth Tenant - Evidence Still - Water-damage restoration invoice",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Water-damage restoration invoice. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Setting: Flood-district prewar apartment block. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Water-damage restoration invoice. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
       "public_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:49.828Z",
-      "checksum": "24e8c1f68727a569be7e9a389b22bc07c8e37faa",
-      "file_size": 967227,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:49:15.776Z",
+      "checksum": "c820dcd4f02d72a1914b95a127202f1f1d7ddae1",
+      "file_size": 3146760,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     }
   ],
-  "failures": [
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\beat_transition_video\\the-fourth-tenant-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\ending_recap_video\\the-fourth-tenant-the-fourth-tenant-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "the-fourth-tenant",
-      "asset_id": "the-fourth-tenant-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\story_trailer\\the-fourth-tenant-trailer-main-v1.mp4",
-      "last_attempt_at": null
-    }
-  ]
+  "failures": []
 }

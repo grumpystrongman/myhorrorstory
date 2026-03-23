@@ -14,7 +14,7 @@ import {
 interface LibraryPreviewStory {
   storyId: string;
   storyTitle: string;
-  coverImagePath: string;
+  coverImagePath: string | null;
   playPath: string;
 }
 
@@ -188,7 +188,29 @@ export function LibraryLivePreview({ stories }: LibraryLivePreviewProps): JSX.El
 
       <div className="library-preview-grid">
         <article className="library-preview-story panel">
-          <img src={selectedStory?.coverImagePath ?? '/visuals/surfaces/library.svg'} alt="Story cover" />
+          {selectedStory?.coverImagePath ? (
+            <img src={selectedStory.coverImagePath} alt="Story cover" />
+          ) : (
+            <div
+              style={{
+                minHeight: 260,
+                display: 'grid',
+                placeItems: 'center',
+                textAlign: 'center',
+                padding: 24,
+                border: '1px solid rgba(188, 84, 84, 0.35)',
+                background: 'rgba(36, 17, 17, 0.34)',
+                borderRadius: 18
+              }}
+            >
+              <div>
+                <strong>Verified artwork pending rerun</strong>
+                <p className="muted" style={{ marginBottom: 0 }}>
+                  This preview will display real case art after image generation succeeds.
+                </p>
+              </div>
+            </div>
+          )}
           <div>
             <p className="kicker">Active Transmission Beat</p>
             <h3>{currentBeat ? `${currentBeat.actTitle}: ${currentBeat.title}` : 'Loading Case Runtime'}</h3>

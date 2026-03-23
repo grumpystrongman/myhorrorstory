@@ -20,8 +20,13 @@ import {
 } from '../lib/play-session';
 import type { ArgCampaignManifest, ArgDayPackage } from '../lib/arg-campaign';
 import { adaptArgToDramaPackage, type ArgNpcProfile } from '../lib/arg-to-drama';
-import { getLaunchCaseById } from '../lib/launch-catalog';
 import {
+  selectStoryArtwork,
+  type AgentArmyStoryManifest,
+  type StoryArtworkSelection
+} from '../lib/agent-army-artwork';
+import {
+  useCallback,
   useEffect,
   useMemo,
   useRef,
@@ -36,10 +41,42 @@ const MAX_ZOOM = 200;
 const PAN_STEP = 24;
 const SOUND_DIRECTOR_EVENT = 'myhorrorstory:sound-director-telemetry';
 const AUDIO_CIPHER_CODE = '440';
-const DEFAULT_CAMPAIGN_DAYS = 28;
+const DEFAULT_CAMPAIGN_TARGET_DAYS = 28;
+const DEFAULT_CAMPAIGN_MAX_DAYS = 45;
 const MESSENGER_CHANNELS = ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL'] as const;
+const MAX_UI_MESSAGE_DELAY_MS = 45_000;
+const MIN_UI_MESSAGE_DELAY_MS = 1_200;
+const MIN_GAP_BETWEEN_MESSAGES_MS = 1_600;
 
 type MessengerChannel = (typeof MESSENGER_CHANNELS)[number];
+type HintLevel = 'approach' | 'thinking' | 'solve';
+
+interface StoryHintPenalty {
+  usageCount: number;
+  severity: 'low' | 'medium' | 'high';
+  progressGain: number;
+  dayAdvance: number;
+  dangerGain: number;
+  villainGain: number;
+  advantageGain: number;
+  trustPenalty: number;
+  moralityPenalty: number;
+  deceptionGain: number;
+}
+
+interface StoryHint {
+  level: HintLevel;
+  headline: string;
+  howToThink: string;
+  howToApproach: string;
+  howToSolve: string;
+  suggestedOptionId?: string;
+  suggestedOptionLabel?: string;
+  directAnswer?: string;
+  caution: string;
+  penalty: StoryHintPenalty;
+  source: 'openai' | 'fallback';
+}
 
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
@@ -90,6 +127,83 @@ function inferResponseOptionFromText(
   return bestOption;
 }
 
+function rankHintOption(options: DramaResponseOption[]): DramaResponseOption | null {
+  if (options.length === 0) {
+    return null;
+  }
+
+  let best: DramaResponseOption | null = options[0] ?? null;
+  let bestScore = Number.NEGATIVE_INFINITY;
+  for (const option of options) {
+    const supportScore =
+      option.reputationDelta.trustworthiness +
+      option.reputationDelta.curiosity +
+      option.reputationDelta.morality -
+      option.reputationDelta.aggression -
+      option.reputationDelta.deception +
+      option.progressDelta * 0.4;
+    const labelBonus = /protect|stabilize|cross|verify|truth|evidence|question/i.test(
+      `${option.label} ${option.summary}`
+    )
+      ? 2
+      : 0;
+    const total = supportScore + labelBonus;
+    if (total > bestScore) {
+      bestScore = total;
+      best = option;
+    }
+  }
+
+  return best;
+}
+
+function hintPenaltyProfile(level: HintLevel, usageCount: number): StoryHintPenalty {
+  const usageMultiplier = Math.max(1, Math.floor(usageCount / 2));
+
+  if (level === 'approach') {
+    return {
+      usageCount,
+      severity: usageCount >= 4 ? 'medium' : 'low',
+      progressGain: 1,
+      dayAdvance: 1,
+      dangerGain: 2 + usageMultiplier,
+      villainGain: 2 + usageMultiplier,
+      advantageGain: 4 + usageCount * 2,
+      trustPenalty: 1,
+      moralityPenalty: 1,
+      deceptionGain: 1
+    };
+  }
+
+  if (level === 'thinking') {
+    return {
+      usageCount,
+      severity: usageCount >= 3 ? 'high' : 'medium',
+      progressGain: 2,
+      dayAdvance: 1,
+      dangerGain: 3 + usageMultiplier,
+      villainGain: 4 + usageMultiplier,
+      advantageGain: 7 + usageCount * 2,
+      trustPenalty: 2,
+      moralityPenalty: 2,
+      deceptionGain: 2
+    };
+  }
+
+  return {
+    usageCount,
+    severity: 'high',
+    progressGain: 3,
+    dayAdvance: 2,
+    dangerGain: 5 + usageMultiplier,
+    villainGain: 6 + usageMultiplier,
+    advantageGain: 11 + usageCount * 3,
+    trustPenalty: 3,
+    moralityPenalty: 3,
+    deceptionGain: 3
+  };
+}
+
 async function fetchJson<T>(url: string): Promise<T> {
   const response = await fetch(url, { cache: 'no-store' });
   if (!response.ok) {
@@ -113,6 +227,23 @@ async function loadArgAsDramaPackage(storyId: string): Promise<DramaPackage | nu
     return adaptArgToDramaPackage(campaign, dayResults, npcProfiles);
   } catch {
     return null;
+  }
+}
+
+async function loadDramaPackageFile(storyId: string): Promise<DramaPackage | null> {
+  try {
+    return await fetchJson<DramaPackage>(`/content/drama/${storyId}.json`);
+  } catch {
+    return null;
+  }
+}
+
+async function loadVerifiedStoryArtwork(storyId: string): Promise<StoryArtworkSelection> {
+  try {
+    const manifest = await fetchJson<AgentArmyStoryManifest>(`/agent-army/manifests/${storyId}.json`);
+    return selectStoryArtwork(manifest);
+  } catch {
+    return selectStoryArtwork(null);
   }
 }
 
@@ -154,7 +285,6 @@ export default function PlayPage(): JSX.Element {
   const [storyId, setStoryId] = useState<string>('static-between-stations');
   const activeStoryTitle = getStoryTitle(storyId);
   const activeStoryTrack = getStoryTrack(storyId);
-  const activeLaunchCase = getLaunchCaseById(storyId);
   const [zoom, setZoom] = useState(100);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [playing, setPlaying] = useState(false);
@@ -180,6 +310,14 @@ export default function PlayPage(): JSX.Element {
   const [audioCipherStatus, setAudioCipherStatus] = useState<'idle' | 'failed' | 'solved'>('idle');
   const [audioCipherAttempts, setAudioCipherAttempts] = useState(0);
   const [campaignDay, setCampaignDay] = useState(1);
+  const [hintUses, setHintUses] = useState(0);
+  const [villainAdvantage, setVillainAdvantage] = useState(0);
+  const [hintLoading, setHintLoading] = useState(false);
+  const [hintError, setHintError] = useState<string | null>(null);
+  const [latestHint, setLatestHint] = useState<StoryHint | null>(null);
+  const [lastProgressAt, setLastProgressAt] = useState(() => Date.now());
+  const [lastNudgeAt, setLastNudgeAt] = useState(0);
+  const [nudgeCount, setNudgeCount] = useState(0);
   const [fieldActionHistory, setFieldActionHistory] = useState<Record<string, string[]>>({});
   const [fieldOpsLog, setFieldOpsLog] = useState<Array<{ id: string; day: number; title: string; detail: string }>>(
     []
@@ -191,6 +329,7 @@ export default function PlayPage(): JSX.Element {
   const [selectedMessengerChannel, setSelectedMessengerChannel] = useState<MessengerChannel>('SIGNAL');
   const [messageDraft, setMessageDraft] = useState('');
   const [missionReady, setMissionReady] = useState(false);
+  const [verifiedArtwork, setVerifiedArtwork] = useState<StoryArtworkSelection | null>(null);
 
   const dragAnchor = useRef<{ x: number; y: number } | null>(null);
   const soundDirector = useMemo(() => new AISoundDirector(), []);
@@ -218,10 +357,12 @@ export default function PlayPage(): JSX.Element {
   );
   const storyMediaPaths = useMemo(
     () => ({
-      hero: activeLaunchCase?.heroImagePath ?? `/visuals/stories/${storyId}.svg`,
-      cover: activeLaunchCase?.coverImagePath ?? `/visuals/stories/${storyId}.svg`
+      hero: verifiedArtwork?.hero?.public_path ?? null,
+      cover: verifiedArtwork?.cover?.public_path ?? null,
+      evidence: verifiedArtwork?.evidence ?? [],
+      gallery: verifiedArtwork?.gallery ?? []
     }),
-    [activeLaunchCase?.coverImagePath, activeLaunchCase?.heroImagePath, storyId]
+    [verifiedArtwork]
   );
   const currentBeat = useMemo(() => {
     if (!dramaPack || !sessionState) {
@@ -232,7 +373,7 @@ export default function PlayPage(): JSX.Element {
   const beatBackgroundImage =
     currentBeat?.backgroundVisual && !currentBeat.backgroundVisual.startsWith('/visuals/stories/')
       ? currentBeat.backgroundVisual
-      : storyMediaPaths.hero;
+      : storyMediaPaths.hero ?? undefined;
 
   const resolvedEnding = useMemo(() => {
     if (!sessionState?.complete || !dramaPack) {
@@ -270,32 +411,36 @@ export default function PlayPage(): JSX.Element {
     return timelineReference ? `${timelineReference} marker` : '9 second dead-air marker';
   }, [dramaPack]);
   const playerBriefing = dramaPack?.playerBriefing;
+  const caseFile = dramaPack?.caseFile;
+  const artifactCards = useMemo(() => dramaPack?.artifactCards ?? [], [dramaPack?.artifactCards]);
   const campaignPlan = useMemo(
     () =>
       dramaPack?.campaignPlan ?? {
-        totalDays: DEFAULT_CAMPAIGN_DAYS,
+        totalDays: DEFAULT_CAMPAIGN_MAX_DAYS,
+        recommendedDays: DEFAULT_CAMPAIGN_TARGET_DAYS,
+        maxDays: DEFAULT_CAMPAIGN_MAX_DAYS,
         weeks: [
           {
             week: 1,
-            label: 'Week 1 - Intake',
+            label: 'Phase 1 - Intake (Days 1-10)',
             objective: 'Establish baseline evidence chain and verify first contact.',
             keyMoments: ['Initial clue validation']
           },
           {
             week: 2,
-            label: 'Week 2 - Contradiction Mapping',
+            label: 'Phase 2 - Contradiction Mapping (Days 11-22)',
             objective: 'Cross-check witness statements and channel anomalies.',
             keyMoments: ['First branch fork']
           },
           {
             week: 3,
-            label: 'Week 3 - Escalation',
+            label: 'Phase 3 - Escalation (Days 23-34)',
             objective: 'Run live interventions while pressure increases.',
             keyMoments: ['Antagonist direct contact']
           },
           {
             week: 4,
-            label: 'Week 4 - Endgame',
+            label: 'Phase 4 - Endgame (Days 35-45)',
             objective: 'Resolve final branch and close evidence loop.',
             keyMoments: ['Debrief and sequel hook']
           }
@@ -303,21 +448,48 @@ export default function PlayPage(): JSX.Element {
       },
     [dramaPack?.campaignPlan]
   );
+  const campaignTargetDays = useMemo(
+    () => clamp(campaignPlan.recommendedDays ?? DEFAULT_CAMPAIGN_TARGET_DAYS, 10, DEFAULT_CAMPAIGN_MAX_DAYS),
+    [campaignPlan.recommendedDays]
+  );
+  const campaignMaxDays = useMemo(() => {
+    const baseMax = campaignPlan.maxDays ?? campaignPlan.totalDays ?? DEFAULT_CAMPAIGN_MAX_DAYS;
+    return clamp(baseMax, campaignTargetDays, DEFAULT_CAMPAIGN_MAX_DAYS);
+  }, [campaignPlan.maxDays, campaignPlan.totalDays, campaignTargetDays]);
   const activeCampaignWeek = useMemo(() => {
     const totalWeeks = Math.max(campaignPlan.weeks.length, 1);
-    const weekSize = Math.max(Math.ceil(campaignPlan.totalDays / totalWeeks), 1);
+    const weekSize = Math.max(Math.ceil(campaignMaxDays / totalWeeks), 1);
     const weekNumber = clamp(Math.ceil(campaignDay / weekSize), 1, totalWeeks);
     return campaignPlan.weeks[weekNumber - 1];
-  }, [campaignDay, campaignPlan.totalDays, campaignPlan.weeks]);
-  const visualDeck = dramaPack?.visualDeck;
-  const visualAssets = visualDeck?.assets ?? [];
-  const visualGallery = useMemo(
-    () => ({
-      scenes: visualAssets.filter((asset) => asset.category === 'scene').slice(0, 3),
-      evidence: visualAssets.filter((asset) => asset.category === 'evidence').slice(0, 4),
-      characters: visualAssets.filter((asset) => asset.category === 'character').slice(0, 4)
-    }),
-    [visualAssets]
+  }, [campaignDay, campaignMaxDays, campaignPlan.weeks]);
+  const verifiedEvidenceCards = useMemo(() => {
+    if (evidenceNodes.length > 0) {
+      return evidenceNodes.map((node, index) => ({
+        id: node.id,
+        title: node.label,
+        summary: node.summary,
+        imagePath: storyMediaPaths.evidence[index]?.public_path ?? null,
+        meta: storyMediaPaths.evidence[index]?.asset_type ?? null
+      }));
+    }
+
+    return storyMediaPaths.evidence.slice(0, 4).map((asset) => ({
+      id: asset.asset_id,
+      title: asset.title,
+      summary: `${asset.asset_type} · ${asset.tool_used ?? 'verified asset'}`,
+      imagePath: asset.public_path ?? null,
+      meta: asset.asset_type
+    }));
+  }, [evidenceNodes, storyMediaPaths.evidence]);
+  const resolvedVisualGallery = useMemo(
+    () =>
+      storyMediaPaths.gallery.slice(0, 9).map((asset) => ({
+        id: asset.asset_id,
+        path: asset.public_path ?? '',
+        title: asset.title,
+        promptHint: `${asset.asset_type} · ${asset.tool_used ?? 'verified asset'}`
+      })),
+    [storyMediaPaths.gallery]
   );
   const activePuzzle = dramaPack?.communityPuzzles?.[0];
   const activePuzzleSolution = useMemo(
@@ -369,9 +541,65 @@ export default function PlayPage(): JSX.Element {
         'At 02:17 local, all major channels delivered synchronized fragments from the same hostile source.',
       firstDirective:
         playerBriefing?.firstDirective ??
-        'Operate from a single secure thread, preserve witness trust, and isolate contradictions before escalation.'
+        'Operate from a single secure thread, preserve witness trust, and isolate contradictions before escalation.',
+      objective:
+        caseFile?.objective ??
+        'Reconstruct the exact sequence that turned the dead rail line into a live coercion channel.',
+      primaryQuestion:
+        caseFile?.primaryQuestion ??
+        'Who is feeding the confessions into the rail line, and what event are they trying to cover?',
+      operationWindow: caseFile?.operationWindow ?? 'First 48 hours determine survivor risk and evidence integrity.'
     };
-  }, [playerBriefing?.firstDirective, playerBriefing?.openingIncident, playerBriefing?.recruitmentReason]);
+  }, [
+    caseFile?.objective,
+    caseFile?.operationWindow,
+    caseFile?.primaryQuestion,
+    playerBriefing?.firstDirective,
+    playerBriefing?.openingIncident,
+    playerBriefing?.recruitmentReason
+  ]);
+  const paceGuidance = useMemo(() => {
+    const progress = sessionState?.investigationProgress ?? playerProgress;
+    const expectedProgress = Math.round((campaignDay / Math.max(campaignMaxDays, 1)) * 100);
+    const behind = progress + 10 < expectedProgress;
+    const nearLimit = campaignDay >= campaignMaxDays - 5;
+    const overTarget = campaignDay > campaignTargetDays;
+    const hintPressure = hintUses >= 3;
+
+    if (nearLimit && progress < 85) {
+      return {
+        severity: 'critical',
+        label: 'Critical Pace Risk',
+        guidance:
+          'You are near the maximum timeline. Prioritize one branch action, one field operation, then commit a decisive response to avoid unresolved collapse.'
+      };
+    }
+
+    if (behind || (overTarget && progress < 75)) {
+      return {
+        severity: 'warning',
+        label: 'Behind Recommended Pace',
+        guidance:
+          'Focus on contradiction resolution: review artifact prompts, execute one clue action, and reply through the option that advances evidence integrity.'
+      };
+    }
+
+    if (hintPressure) {
+      return {
+        severity: 'warning',
+        label: 'Villain Advantage Rising',
+        guidance:
+          'Reduce hint usage. Extra hints now strengthen antagonist interference and increase pressure events in later beats.'
+      };
+    }
+
+    return {
+      severity: 'normal',
+      label: 'Pace Stable',
+      guidance:
+        'You are moving at a healthy rhythm. Keep responses evidence-driven and use hints only when objectives remain blocked after field actions.'
+    };
+  }, [campaignDay, campaignMaxDays, campaignTargetDays, hintUses, playerProgress, sessionState?.investigationProgress]);
 
   function clearBeatTimers(): void {
     for (const timeout of messageTimeouts.current) {
@@ -380,16 +608,30 @@ export default function PlayPage(): JSX.Element {
     messageTimeouts.current = [];
   }
 
+  const emitRuntimeMessage = useCallback(
+    (message: DramaMessage): void => {
+      setMessageFeed((current) => [...current, message]);
+      setPopupQueue((current) => [...current, message]);
+      if (voiceDramaEnabled) {
+        speakVoiceLine(dramaPack, message);
+      }
+    },
+    [dramaPack, voiceDramaEnabled]
+  );
+
   async function loadDramaPackage(nextStoryId: string): Promise<void> {
     setLoading(true);
     setLoadingError(null);
     clearBeatTimers();
 
     try {
-      const argDerivedPackage = await loadArgAsDramaPackage(nextStoryId);
-      const parsed =
-        argDerivedPackage ??
-        (await fetchJson<DramaPackage>(`/content/drama/${nextStoryId}.json`));
+      const prefersDirectDrama = nextStoryId === 'static-between-stations';
+      const parsed = prefersDirectDrama
+        ? (await loadDramaPackageFile(nextStoryId)) ?? (await loadArgAsDramaPackage(nextStoryId))
+        : (await loadArgAsDramaPackage(nextStoryId)) ?? (await loadDramaPackageFile(nextStoryId));
+      if (!parsed) {
+        throw new Error(`Unable to load runtime package for ${nextStoryId}.`);
+      }
       const initialState = createInitialSessionState(parsed);
       setDramaPack(parsed);
       setSessionState(initialState);
@@ -405,6 +647,14 @@ export default function PlayPage(): JSX.Element {
       setAudioCipherStatus('idle');
       setAudioCipherAttempts(0);
       setCampaignDay(1);
+      setHintUses(0);
+      setVillainAdvantage(0);
+      setHintLoading(false);
+      setHintError(null);
+      setLatestHint(null);
+      setLastProgressAt(Date.now());
+      setLastNudgeAt(0);
+      setNudgeCount(0);
       setFieldActionHistory({});
       setFieldOpsLog([]);
       setPuzzleInput('');
@@ -428,8 +678,18 @@ export default function PlayPage(): JSX.Element {
     clearBeatTimers();
     setIsSimulatingBeat(messages.length > 0);
 
+    let previousDelayMs = 0;
     messages.forEach((message, index) => {
-      const delayMs = 400 + index * 1500;
+      const absoluteDelayMs = clamp(
+        Math.round(message.delaySeconds * 1000),
+        MIN_UI_MESSAGE_DELAY_MS,
+        MAX_UI_MESSAGE_DELAY_MS
+      );
+      const delayMs =
+        index === 0
+          ? absoluteDelayMs
+          : Math.max(absoluteDelayMs, previousDelayMs + MIN_GAP_BETWEEN_MESSAGES_MS);
+      previousDelayMs = delayMs;
       const timeoutId = window.setTimeout(() => {
         setMessageFeed((current) => [...current, message]);
         setPopupQueue((current) => [...current, message]);
@@ -466,13 +726,31 @@ export default function PlayPage(): JSX.Element {
     setMessageFeed((current) => [...current, outboundMessage]);
 
     const result = applyResponseChoice(dramaPack, sessionState, currentBeat, option);
+    const escalationBoost = Math.floor(villainAdvantage / 8);
     setSessionState(result.nextState);
     setPlayerProgress(result.nextState.investigationProgress);
-    setVillainProximity((current) => clamp(current + currentBeat.stage * 4 + option.reputationDelta.aggression, 0, 100));
-    setDangerLevel((current) => clamp(current + currentBeat.stage * 5 + Math.max(0, option.reputationDelta.aggression), 0, 100));
-    setCampaignDay((current) => clamp(current + (currentBeat.stage >= 3 ? 5 : 4), 1, campaignPlan.totalDays));
+    setVillainProximity((current) =>
+      clamp(current + currentBeat.stage * 3 + option.reputationDelta.aggression + escalationBoost, 0, 100)
+    );
+    setDangerLevel((current) =>
+      clamp(current + currentBeat.stage * 4 + Math.max(0, option.reputationDelta.aggression) + escalationBoost, 0, 100)
+    );
+    setCampaignDay((current) => clamp(current + (currentBeat.stage >= 3 ? 3 : 2), 1, campaignMaxDays));
+    setLastProgressAt(Date.now());
     setPopupQueue([]);
     setActivePopup(null);
+
+    if (villainAdvantage >= 15 && result.nextState.selectedResponses.length % 2 === 0) {
+      emitRuntimeMessage({
+        id: `villain-advantage-${Date.now()}`,
+        senderName: dramaPack.villain.displayName,
+        role: 'antagonist',
+        channel: 'SMS',
+        text: `You asked for guidance, so I rewrote your timing window. Keep leaning on hints and I will keep choosing who gets hurt first.`,
+        delaySeconds: 0,
+        intensity: 62
+      });
+    }
 
     if (result.nextState.complete) {
       const ending = resolveSessionEnding(dramaPack, result.nextState);
@@ -486,6 +764,7 @@ export default function PlayPage(): JSX.Element {
       return;
     }
     setMissionReady(true);
+    setLastProgressAt(Date.now());
 
     const dispatchMessage: DramaMessage = {
       id: `dispatch-${dramaPack.id}-${Date.now()}`,
@@ -496,11 +775,7 @@ export default function PlayPage(): JSX.Element {
       delaySeconds: 0,
       intensity: 34
     };
-    setMessageFeed((current) => [...current, dispatchMessage]);
-    setPopupQueue((current) => [...current, dispatchMessage]);
-    if (voiceDramaEnabled) {
-      speakVoiceLine(dramaPack, dispatchMessage);
-    }
+    emitRuntimeMessage(dispatchMessage);
   }
 
   function submitMessengerReply(event: FormEvent<HTMLFormElement>): void {
@@ -541,6 +816,14 @@ export default function PlayPage(): JSX.Element {
     setAudioCipherStatus('idle');
     setAudioCipherAttempts(0);
     setCampaignDay(1);
+    setHintUses(0);
+    setVillainAdvantage(0);
+    setHintLoading(false);
+    setHintError(null);
+    setLatestHint(null);
+    setLastProgressAt(Date.now());
+    setLastNudgeAt(0);
+    setNudgeCount(0);
     setFieldActionHistory({});
     setFieldOpsLog([]);
     setPuzzleInput('');
@@ -574,12 +857,9 @@ export default function PlayPage(): JSX.Element {
       setAudioCipherAttempts((current) => current + 1);
       setPlayerProgress((current) => clamp(current + 6, 0, 100));
       setDangerLevel((current) => clamp(current - 4, 0, 100));
-      setCampaignDay((current) => clamp(current + 1, 1, campaignPlan.totalDays));
-      setMessageFeed((current) => [...current, puzzleMessage]);
-      setPopupQueue((current) => [...current, puzzleMessage]);
-      if (voiceDramaEnabled) {
-        speakVoiceLine(dramaPack, puzzleMessage);
-      }
+      setCampaignDay((current) => clamp(current + 1, 1, campaignMaxDays));
+      setLastProgressAt(Date.now());
+      emitRuntimeMessage(puzzleMessage);
       return;
     }
 
@@ -647,9 +927,9 @@ export default function PlayPage(): JSX.Element {
     ]);
     setPlayerProgress((current) => clamp(current + 3, 0, 100));
     setDangerLevel((current) => clamp(current + 2, 0, 100));
-    setCampaignDay((current) => clamp(current + 1, 1, campaignPlan.totalDays));
-    setMessageFeed((current) => [...current, opsMessage]);
-    setPopupQueue((current) => [...current, opsMessage]);
+    setCampaignDay((current) => clamp(current + 1, 1, campaignMaxDays));
+    setLastProgressAt(Date.now());
+    emitRuntimeMessage(opsMessage);
 
     if (activePuzzle && unlockedShardIds.length < activePuzzle.shards.length) {
       const nextShard = activePuzzle.shards[unlockedShardIds.length];
@@ -685,14 +965,199 @@ export default function PlayPage(): JSX.Element {
       };
       setPuzzleStatus('solved');
       setPlayerProgress((current) => clamp(current + 8, 0, 100));
-      setCampaignDay((current) => clamp(current + 2, 1, campaignPlan.totalDays));
-      setMessageFeed((current) => [...current, solvedMessage]);
-      setPopupQueue((current) => [...current, solvedMessage]);
+      setCampaignDay((current) => clamp(current + 2, 1, campaignMaxDays));
+      setLastProgressAt(Date.now());
+      emitRuntimeMessage(solvedMessage);
       return;
     }
 
     setPuzzleStatus('failed');
     setDangerLevel((current) => clamp(current + 4, 0, 100));
+  }
+
+  async function requestHint(level: HintLevel): Promise<void> {
+    if (!currentBeat || !sessionState || !missionReady || sessionState.complete || hintLoading) {
+      return;
+    }
+
+    setHintLoading(true);
+    setHintError(null);
+    try {
+      const recommended = rankHintOption(currentBeat.responseOptions);
+      const response = await fetch('/api/hints', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          level,
+          story: {
+            id: storyId,
+            title: dramaPack?.title ?? activeStoryTitle,
+            hook: dramaPack?.hook ?? '',
+            tone: dramaPack?.tone ?? 'cinematic',
+            location: dramaPack?.location ?? location
+          },
+          beat: {
+            id: currentBeat.id,
+            title: currentBeat.title,
+            stage: currentBeat.stage,
+            narrative: currentBeat.narrative,
+            revealClueIds: currentBeat.revealClueIds,
+            responseOptions: currentBeat.responseOptions.map((option) => ({
+              id: option.id,
+              label: option.label,
+              summary: option.summary,
+              intent: option.intent,
+              progressDelta: option.progressDelta,
+              reputationDelta: option.reputationDelta
+            })),
+            incomingMessages: currentBeat.incomingMessages.map((message) => ({
+              senderName: message.senderName,
+              channel: message.channel,
+              role: message.role,
+              text: message.text
+            }))
+          },
+          mission: {
+            objective: missionContext.objective,
+            primaryQuestion: missionContext.primaryQuestion,
+            operationWindow: missionContext.operationWindow
+          },
+          campaign: {
+            day: campaignDay,
+            targetDays: campaignTargetDays,
+            maxDays: campaignMaxDays
+          },
+          player: {
+            progress: sessionState.investigationProgress,
+            hintUses,
+            villainAdvantage,
+            reputation: sessionState.reputation
+          },
+          objectives: unresolvedObjectives.map((objective) => ({
+            label: objective.label,
+            complete: objective.complete
+          })),
+          answerKeys:
+            level === 'solve'
+              ? {
+                  audioCipherCode: AUDIO_CIPHER_CODE,
+                  puzzleSolution: activePuzzleSolution,
+                  recommendedOptionId: recommended?.id,
+                  recommendedOptionLabel: recommended?.label
+                }
+              : {
+                  recommendedOptionId: recommended?.id,
+                  recommendedOptionLabel: recommended?.label
+                }
+        }),
+        cache: 'no-store'
+      });
+
+      let hint: StoryHint | null = null;
+      if (response.ok) {
+        hint = (await response.json()) as StoryHint;
+      } else {
+        setHintError('Hint assistant failed to respond. Try again.');
+      }
+
+      if (!hint) {
+        return;
+      }
+
+      setLatestHint(hint);
+
+      const nextHintUses = hintUses + 1;
+      const penalty = hint.penalty ?? hintPenaltyProfile(level, nextHintUses);
+      const nextVillainAdvantage = clamp(villainAdvantage + penalty.advantageGain, 0, 100);
+
+      setHintUses(nextHintUses);
+      setVillainAdvantage(nextVillainAdvantage);
+      setPlayerProgress((current) => clamp(current + penalty.progressGain, 0, 100));
+      setDangerLevel((current) => clamp(current + penalty.dangerGain, 0, 100));
+      setVillainProximity((current) => clamp(current + penalty.villainGain, 0, 100));
+      setCampaignDay((current) => clamp(current + penalty.dayAdvance, 1, campaignMaxDays));
+      setLastProgressAt(Date.now());
+      setSessionState((current) => {
+        if (!current) {
+          return current;
+        }
+        return {
+          ...current,
+          reputation: {
+            ...current.reputation,
+            trustworthiness: clamp(current.reputation.trustworthiness - penalty.trustPenalty, -100, 100),
+            morality: clamp(current.reputation.morality - penalty.moralityPenalty, -100, 100),
+            deception: clamp(current.reputation.deception + penalty.deceptionGain, -100, 100)
+          },
+          flags: {
+            ...current.flags,
+            hintUses: nextHintUses,
+            villainAdvantage: nextVillainAdvantage,
+            lastHintLevel: level
+          }
+        };
+      });
+
+      emitRuntimeMessage({
+        id: `hint-${currentBeat.id}-${Date.now()}`,
+        senderName: 'Case Handler',
+        role: 'operator',
+        channel: 'SIGNAL',
+        text: `${hint.headline}. Think: ${hint.howToThink} Approach: ${hint.howToApproach}`,
+        delaySeconds: 0,
+        intensity: 38
+      });
+
+      if (level === 'solve' && hint.directAnswer) {
+        emitRuntimeMessage({
+          id: `hint-answer-${currentBeat.id}-${Date.now()}`,
+          senderName: 'Case Handler',
+          role: 'operator',
+          channel: 'DOCUMENT_DROP',
+          text: `Direct solve guidance: ${hint.directAnswer}`,
+          delaySeconds: 0,
+          intensity: 44
+        });
+        if (hint.suggestedOptionLabel) {
+          setMessageDraft(hint.suggestedOptionLabel);
+        }
+      }
+
+      if (nextHintUses >= 2 || level === 'solve') {
+        emitRuntimeMessage({
+          id: `hint-penalty-${Date.now()}`,
+          senderName: dramaPack?.villain.displayName ?? 'Unknown Antagonist',
+          role: 'antagonist',
+          channel: 'VOICE_MESSAGE',
+          text:
+            hint.caution ||
+            'Every hint exposes your process. I now know where you hesitate, and I will weaponize it.',
+          delaySeconds: 0,
+          intensity: 62
+        });
+      }
+    } catch {
+      setHintError('Hint service unavailable. Retry in a moment.');
+    } finally {
+      setHintLoading(false);
+    }
+  }
+
+  function applyHintSuggestion(): void {
+    if (!latestHint || !currentBeat || !canReplyToBeat) {
+      return;
+    }
+
+    const option =
+      currentBeat.responseOptions.find((candidate) => candidate.id === latestHint.suggestedOptionId) ??
+      currentBeat.responseOptions.find((candidate) => candidate.label === latestHint.suggestedOptionLabel);
+    if (!option) {
+      return;
+    }
+
+    chooseResponse(option, option.label);
   }
 
   useEffect(() => {
@@ -711,6 +1176,21 @@ export default function PlayPage(): JSX.Element {
   }, [storyId]);
 
   useEffect(() => {
+    let cancelled = false;
+    setVerifiedArtwork(null);
+
+    void loadVerifiedStoryArtwork(storyId).then((selection) => {
+      if (!cancelled) {
+        setVerifiedArtwork(selection);
+      }
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [storyId]);
+
+  useEffect(() => {
     if (!missionReady || !currentBeat || !sessionState || sessionState.complete) {
       setIsSimulatingBeat(false);
       return;
@@ -721,6 +1201,52 @@ export default function PlayPage(): JSX.Element {
       clearBeatTimers();
     };
   }, [currentBeat?.id, missionReady, sessionState?.complete, voiceDramaEnabled]);
+
+  useEffect(() => {
+    if (!missionReady || sessionState?.complete) {
+      return;
+    }
+
+    const interval = window.setInterval(() => {
+      const now = Date.now();
+      const stalled = now - lastProgressAt >= 120_000;
+      const nudgeWindowOpen = now - lastNudgeAt >= 90_000;
+      if (!stalled || !nudgeWindowOpen || nudgeCount >= 6) {
+        return;
+      }
+
+      const behindPace = campaignDay > campaignTargetDays && (sessionState?.investigationProgress ?? 0) < 75;
+      const messageText = behindPace
+        ? 'Pace alert: you are drifting beyond the recommended timeline. Take one decisive branch now, then run one evidence action to recover momentum.'
+        : 'Operational nudge: if you are stuck, review the latest artifact prompt and select the response that clarifies motive plus timeline.';
+
+      emitRuntimeMessage({
+        id: `pace-nudge-${Date.now()}`,
+        senderName: 'Control',
+        role: 'operator',
+        channel: 'SIGNAL',
+        text: messageText,
+        delaySeconds: 0,
+        intensity: 33
+      });
+      setLastNudgeAt(now);
+      setNudgeCount((current) => current + 1);
+    }, 30_000);
+
+    return () => {
+      window.clearInterval(interval);
+    };
+  }, [
+    campaignDay,
+    campaignTargetDays,
+    emitRuntimeMessage,
+    lastNudgeAt,
+    lastProgressAt,
+    missionReady,
+    nudgeCount,
+    sessionState?.complete,
+    sessionState?.investigationProgress
+  ]);
 
   useEffect(() => {
     if (!activePopup && popupQueue.length > 0) {
@@ -798,7 +1324,7 @@ export default function PlayPage(): JSX.Element {
         <div
           className="play-session-hero-backdrop"
           style={{
-            backgroundImage: `url(${beatBackgroundImage})`
+            backgroundImage: beatBackgroundImage ? `url(${beatBackgroundImage})` : undefined
           }}
         />
         <div className="play-session-hero-content">
@@ -815,7 +1341,7 @@ export default function PlayPage(): JSX.Element {
             Score: {activeStoryTrack?.title ?? 'MHS Platform Overture'}
           </p>
           <p style={{ margin: 0, color: 'var(--muted)' }}>
-            Campaign Day: {campaignDay} / {campaignPlan.totalDays}
+            Campaign Day: {campaignDay} / {campaignMaxDays} (target {campaignTargetDays})
           </p>
           {playerBriefing ? (
             <p style={{ margin: 0, color: 'var(--muted)' }}>
@@ -843,6 +1369,12 @@ export default function PlayPage(): JSX.Element {
           </p>
           <p style={{ marginBottom: 10 }}>
             <strong>First Directive:</strong> {missionContext.firstDirective}
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Case Objective:</strong> {missionContext.objective}
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            <strong>Primary Question:</strong> {missionContext.primaryQuestion}
           </p>
           <div className="inline-links" style={{ marginTop: 0 }}>
             <button type="button" data-testid="mission-begin" onClick={startMissionThread} disabled={loading}>
@@ -925,7 +1457,7 @@ export default function PlayPage(): JSX.Element {
                         >
                           <strong>{outgoing ? 'You' : message.senderName}</strong>
                           <p>{message.text}</p>
-                          <span>{selectedMessengerChannel}</span>
+                          <span>{message.channel}</span>
                         </article>
                       );
                     })
@@ -1040,6 +1572,82 @@ export default function PlayPage(): JSX.Element {
             ))}
           </div>
 
+          <div className="play-response-list">
+            <h3 style={{ margin: '8px 0 4px' }}>Hint System (Costs Apply)</h3>
+            <p className="muted" style={{ marginTop: 0 }}>
+              Hints are LLM-guided and escalation-aware. Ask for approach, thinking, or full solve guidance. Each use gives the villain leverage.
+            </p>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 8 }}>
+              <button
+                type="button"
+                onClick={() => void requestHint('approach')}
+                disabled={!missionReady || !currentBeat || Boolean(sessionState?.complete) || hintLoading}
+              >
+                Approach Hint
+              </button>
+              <button
+                type="button"
+                onClick={() => void requestHint('thinking')}
+                disabled={!missionReady || !currentBeat || Boolean(sessionState?.complete) || hintLoading}
+              >
+                Thinking Hint
+              </button>
+              <button
+                type="button"
+                onClick={() => void requestHint('solve')}
+                disabled={!missionReady || !currentBeat || Boolean(sessionState?.complete) || hintLoading}
+              >
+                Solve Hint (High Penalty)
+              </button>
+              <button
+                type="button"
+                onClick={applyHintSuggestion}
+                disabled={(!latestHint?.suggestedOptionId && !latestHint?.suggestedOptionLabel) || !canReplyToBeat}
+              >
+                Use Suggested Response
+              </button>
+            </div>
+            <p className="muted" style={{ marginBottom: 0 }}>
+              Hint Uses: {hintUses} - Villain Advantage: {villainAdvantage}%
+            </p>
+            {hintLoading ? (
+              <p className="muted" style={{ marginBottom: 0 }}>
+                Generating hint...
+              </p>
+            ) : null}
+            {hintError ? (
+              <p className="form-error" style={{ marginBottom: 0 }}>
+                {hintError}
+              </p>
+            ) : null}
+            {latestHint ? (
+              <article className="panel" style={{ marginTop: 8, padding: 10 }}>
+                <p className="kicker" style={{ marginBottom: 6 }}>
+                  {latestHint.level.toUpperCase()} HINT - {latestHint.source.toUpperCase()}
+                </p>
+                <p style={{ margin: '0 0 6px' }}><strong>{latestHint.headline}</strong></p>
+                <p style={{ margin: '0 0 6px' }}><strong>How To Think:</strong> {latestHint.howToThink}</p>
+                <p style={{ margin: '0 0 6px' }}><strong>How To Approach:</strong> {latestHint.howToApproach}</p>
+                <p style={{ margin: '0 0 6px' }}><strong>How To Solve:</strong> {latestHint.howToSolve}</p>
+                {latestHint.directAnswer ? (
+                  <p style={{ margin: '0 0 6px' }}><strong>Direct Answer:</strong> {latestHint.directAnswer}</p>
+                ) : null}
+                {latestHint.suggestedOptionLabel ? (
+                  <p className="muted" style={{ margin: '0 0 6px' }}>
+                    Suggested response option: {latestHint.suggestedOptionLabel}
+                  </p>
+                ) : null}
+                <p className="muted" style={{ margin: '0 0 6px' }}>
+                  Penalty Applied: +{latestHint.penalty.advantageGain}% villain advantage, +{latestHint.penalty.dayAdvance} day
+                  ({latestHint.penalty.severity.toUpperCase()})
+                </p>
+                <p className="warning-line" style={{ marginBottom: 0 }}>
+                  Consequence: {latestHint.caution}
+                </p>
+              </article>
+            ) : null}
+          </div>
+
           {resolvedEnding ? (
             <article className="play-ending-card" data-testid="resolved-ending">
               <h3 style={{ margin: '0 0 6px' }}>{resolvedEnding.title}</h3>
@@ -1076,15 +1684,15 @@ export default function PlayPage(): JSX.Element {
           </p>
         </article>
         <article className="play-briefing-card">
-          <h2 style={{ marginTop: 0 }}>28-Day Campaign Tracker</h2>
+          <h2 style={{ marginTop: 0 }}>Flexible Campaign Tracker</h2>
           <p className="muted" style={{ marginTop: 0 }}>
-            This case is designed as a month-long progression with weekly escalation milestones.
+            The case adapts to player pace. Recommended completion is {campaignTargetDays} days, hard limit {campaignMaxDays} days.
           </p>
           <div className="campaign-week-list">
             {campaignPlan.weeks.map((week) => {
               const weekNumber = week.week;
               const totalWeeks = Math.max(campaignPlan.weeks.length, 1);
-              const weekSize = Math.max(Math.ceil(campaignPlan.totalDays / totalWeeks), 1);
+              const weekSize = Math.max(Math.ceil(campaignMaxDays / totalWeeks), 1);
               const currentWeek = clamp(Math.ceil(campaignDay / weekSize), 1, totalWeeks);
               const isActive = weekNumber === currentWeek;
               const isComplete = weekNumber < currentWeek;
@@ -1107,6 +1715,72 @@ export default function PlayPage(): JSX.Element {
           <p className="muted" style={{ marginBottom: 0 }}>
             Active focus: {activeCampaignWeek?.objective}
           </p>
+          <p
+            className={paceGuidance.severity === 'critical' ? 'form-error' : paceGuidance.severity === 'warning' ? 'warning-line' : 'muted'}
+            style={{ marginBottom: 0 }}
+          >
+            {paceGuidance.label}: {paceGuidance.guidance}
+          </p>
+        </article>
+      </div>
+
+      <div className="panel section-shell play-ops-grid">
+        <article className="play-ops-card">
+          <h2 style={{ marginTop: 0 }}>Case File</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            Human perspective first: mission scope, core question, and what failure costs.
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Operation Window:</strong> {missionContext.operationWindow}
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Primary Question:</strong> {missionContext.primaryQuestion}
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Objective:</strong> {missionContext.objective}
+          </p>
+          {caseFile?.successCriteria?.length ? (
+            <>
+              <p style={{ marginBottom: 4 }}><strong>Success Criteria</strong></p>
+              <ul className="plain-list">
+                {caseFile.successCriteria.map((criterion) => (
+                  <li key={criterion}>{criterion}</li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+          {caseFile?.failureConsequences?.length ? (
+            <>
+              <p style={{ marginBottom: 4 }}><strong>Failure Consequences</strong></p>
+              <ul className="plain-list">
+                {caseFile.failureConsequences.map((consequence) => (
+                  <li key={consequence}>{consequence}</li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+        </article>
+
+        <article className="play-ops-card">
+          <h2 style={{ marginTop: 0 }}>Artifact Reading Desk</h2>
+          <p className="muted" style={{ marginTop: 0 }}>
+            Read before you answer. Each artifact is written to push motive, contradiction, and risk.
+          </p>
+          <div className="play-ops-log">
+            {artifactCards.length === 0 ? (
+              <p className="muted" style={{ margin: 0 }}>No artifact cards are loaded for this story package.</p>
+            ) : (
+              artifactCards.map((artifact) => (
+                <article key={artifact.id} className="play-ops-log-item">
+                  <strong>{artifact.title} ({artifact.type})</strong>
+                  <span>{artifact.summary}</span>
+                  <span><strong>Source:</strong> {artifact.source}</span>
+                  <span><strong>Excerpt:</strong> {artifact.excerpt}</span>
+                  <span><strong>Investigator Prompt:</strong> {artifact.investigatorPrompt}</span>
+                </article>
+              ))
+            )}
+          </div>
         </article>
       </div>
 
@@ -1164,7 +1838,7 @@ export default function PlayPage(): JSX.Element {
         <article className="play-ops-card">
           <h2 style={{ marginTop: 0 }}>Mission Objectives</h2>
           <p className="muted" style={{ marginTop: 0 }}>
-            Resolve objectives to keep the month-long arc moving forward.
+            Resolve objectives to keep momentum inside the recommended pacing window.
           </p>
           <ul className="objective-list">
             {unresolvedObjectives.map((objective) => (
@@ -1183,7 +1857,26 @@ export default function PlayPage(): JSX.Element {
         </p>
         <div className="investigation-board-grid">
           <div className="investigation-cover-card">
-            <img src={storyMediaPaths.cover} alt={`${dramaPack?.title ?? activeStoryTitle} cover`} />
+            {storyMediaPaths.cover ? (
+              <img src={storyMediaPaths.cover} alt={`${dramaPack?.title ?? activeStoryTitle} cover`} />
+            ) : (
+              <div
+                className="evidence-pull-card"
+                style={{
+                  minHeight: 260,
+                  display: 'grid',
+                  placeItems: 'center',
+                  textAlign: 'center'
+                }}
+              >
+                <div>
+                  <strong>Verified cover art pending rerun</strong>
+                  <p style={{ marginBottom: 0 }}>
+                    This story currently has no catalog-approved hero or cover image.
+                  </p>
+                </div>
+              </div>
+            )}
             <div>
               <p className="kicker">Case File</p>
               <h3 style={{ margin: '8px 0 4px' }}>{dramaPack?.title ?? activeStoryTitle}</h3>
@@ -1207,16 +1900,35 @@ export default function PlayPage(): JSX.Element {
           <div>
             <h3 style={{ marginTop: 0 }}>Evidence Pulls</h3>
             <div className="evidence-thumb-grid">
-              {evidenceNodes.length === 0 ? (
+              {verifiedEvidenceCards.length === 0 ? (
                 <article className="evidence-pull-card">
                   <h4>No evidence unlocked yet</h4>
                   <p>Progress the current beat to surface the first pull.</p>
                 </article>
               ) : (
-                evidenceNodes.map((node) => (
-                  <article key={node.id} className="evidence-pull-card">
-                    <h4>{node.label}</h4>
-                    <p>{node.summary}</p>
+                verifiedEvidenceCards.map((card) => (
+                  <article key={card.id} className="evidence-pull-card">
+                    {card.imagePath ? (
+                      <img
+                        src={card.imagePath}
+                        alt={card.title}
+                        loading="lazy"
+                        style={{
+                          width: '100%',
+                          height: 140,
+                          objectFit: 'cover',
+                          borderRadius: 10,
+                          marginBottom: 10
+                        }}
+                      />
+                    ) : null}
+                    <h4>{card.title}</h4>
+                    <p>{card.summary}</p>
+                    {card.meta ? (
+                      <p className="muted" style={{ marginBottom: 0 }}>
+                        Source: {card.meta}
+                      </p>
+                    ) : null}
                   </article>
                 ))
               )}
@@ -1300,21 +2012,19 @@ export default function PlayPage(): JSX.Element {
             AI-generated story visuals are surfaced here for scene context, clues, and character recognition.
           </p>
           <div className="visual-gallery-grid">
-            {[...visualGallery.scenes, ...visualGallery.evidence, ...visualGallery.characters]
-              .slice(0, 9)
-              .map((asset) => (
-                <figure key={asset.id} className="visual-gallery-item">
-                  <img src={asset.path} alt={asset.title} loading="lazy" />
-                  <figcaption>
-                    <strong>{asset.title}</strong>
-                    <span>{asset.promptHint}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            {resolvedVisualGallery.map((asset) => (
+              <figure key={asset.id} className="visual-gallery-item">
+                <img src={asset.path} alt={asset.title} loading="lazy" />
+                <figcaption>
+                  <strong>{asset.title}</strong>
+                  <span>{asset.promptHint}</span>
+                </figcaption>
+              </figure>
+            ))}
           </div>
-          {visualAssets.length === 0 ? (
+          {resolvedVisualGallery.length === 0 ? (
             <p className="muted" style={{ marginBottom: 0 }}>
-              Visual deck unavailable for this package.
+              No verified visual assets are currently available for this story.
             </p>
           ) : null}
         </article>
@@ -1621,3 +2331,4 @@ export default function PlayPage(): JSX.Element {
     </main>
   );
 }
+

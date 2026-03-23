@@ -18,25 +18,8 @@
       "created_at": "2026-03-21T16:14:55.387Z",
       "checksum": "6a2b59e74c816dfe400b5ee7b3b5941a641296e2",
       "file_size": 1221,
-      "duration_seconds": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-abandoned-node-scan-evidence-still",
-      "asset_type": "evidence_still",
-      "modality": "image",
-      "title": "Dead Channel Protocol - Evidence Still - Abandoned node scan",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Abandoned node scan\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Abandoned node scan. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "openai:gpt-image-1",
-      "generation_status": "complete",
-      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-abandoned-node-scan-evidence-still-v1.png",
-      "public_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-abandoned-node-scan-evidence-still-v1.png",
-      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-abandoned-node-scan-evidence-still-v1.thumb.jpg",
-      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-abandoned-node-scan-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:07:01.966Z",
-      "checksum": "1af2a2db61a1055870954f90f5f2bff712ffc8f9",
-      "file_size": 3080804,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -54,7 +37,57 @@
       "created_at": "2026-03-21T17:04:05.030Z",
       "checksum": "e1443a0d3d12e8a10bd506fd596083aff7a0e093",
       "file_size": 2642355,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Protocol Wake Beat Transition",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Protocol Wake. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:50:37.474Z",
+      "checksum": "e389df27c12f0dca9c167e72cb1bf4a552bbb48d",
+      "file_size": 4026462,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren briefing. Protocol Wake Beat Transition is now active. Start with protocol signed payload, then compare every new message against a ghost app predicts outages, deaths, and your next move.. If Root Administrator reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.967135,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 76,
+            "lowpassHz": 7369,
+            "presenceGainDb": -0.372
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -72,7 +105,57 @@
       "created_at": "2026-03-21T17:04:22.568Z",
       "checksum": "8f6a79083d888ab34953496be6bfc45a6002e4db",
       "file_size": 2451583,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Escalation Signal Beat Transition",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:50:53.832Z",
+      "checksum": "c9e1bd4eb2f7ec03669e77d47b027e79a43b73d8",
+      "file_size": 4063567,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren briefing. Escalation Signal Beat Transition is now active. Start with protocol signed payload, then compare every new message against a ghost app predicts outages, deaths, and your next move.. If Root Administrator reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.97466,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 86,
+            "lowpassHz": 7404,
+            "presenceGainDb": 0.10799999999999998
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -80,17 +163,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Dead Channel Protocol - Trust Fracture Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-3-beat-scene-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-3-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-3-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:04:31.909Z",
-      "checksum": "82efcc9f02bc946e4e959b747ca2deeb1ed10b6d",
-      "file_size": 2970534,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:18:43.000Z",
+      "checksum": "dd201d7da4560ab326bd8bc43c9742163c697400",
+      "file_size": 2539848,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Trust Fracture Beat Transition",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:51:01.781Z",
+      "checksum": "98f243a384310c14f639a79d66edc190857974eb",
+      "file_size": 4225393,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-3-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren briefing. Trust Fracture Beat Transition is now active. Start with protocol signed payload, then compare every new message against a ghost app predicts outages, deaths, and your next move.. If Root Administrator reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.936265,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 73,
+            "lowpassHz": 7373,
+            "presenceGainDb": -0.372
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -98,17 +231,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Dead Channel Protocol - Ultimatum Window Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:04:37.536Z",
-      "checksum": "3add419e669d00b4c736f1d8fb9be0a333118d0f",
-      "file_size": 2320484,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:19:10.007Z",
+      "checksum": "5a7cad5868ef5b5ba1c7d59ffd03c478f3c1d48b",
+      "file_size": 2336364,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:51:08.993Z",
+      "checksum": "175cea358ab0b518b39e69397fe00e59194fa797",
+      "file_size": 3996450,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren briefing. Ultimatum Window Beat Transition is now active. Start with protocol signed payload, then compare every new message against a ghost app predicts outages, deaths, and your next move.. If Root Administrator reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.93931,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 78,
+            "lowpassHz": 7325,
+            "presenceGainDb": -0.612
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -126,7 +309,57 @@
       "created_at": "2026-03-21T17:04:50.592Z",
       "checksum": "c6eba7c370abe6eebdb20df6c298a7069cf79036",
       "file_size": 2455473,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:51:16.706Z",
+      "checksum": "dbca8d1df06a4a909adc0383046340cedc374fc6",
+      "file_size": 4059288,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren briefing. Confrontation Protocol Beat Transition is now active. Start with protocol signed payload, then compare every new message against a ghost app predicts outages, deaths, and your next move.. If Root Administrator reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9759549999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 85,
+            "lowpassHz": 7346,
+            "presenceGainDb": -0.132
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -134,17 +367,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Dead Channel Protocol - Case Debrief Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:04:54.255Z",
-      "checksum": "05b0aea2f454d3a537a178b55d7ecb6cd33f28ad",
-      "file_size": 2836027,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:19:37.631Z",
+      "checksum": "5e6b834040186af0abded4c895443185a669a260",
+      "file_size": 2837429,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Case Debrief Beat Transition",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/beat_transition_video/dead-channel-protocol-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:51:24.080Z",
+      "checksum": "e5af07f362a49c957018af274931eb14913db237",
+      "file_size": 4169021,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren briefing. Case Debrief Beat Transition is now active. Start with protocol signed payload, then compare every new message against a ghost app predicts outages, deaths, and your next move.. If Root Administrator reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.93924,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 88,
+            "lowpassHz": 7423,
+            "presenceGainDb": -0.132
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -162,7 +445,8 @@
       "created_at": "2026-03-21T16:14:55.398Z",
       "checksum": "b7cd74049e1ba07a83a412243e62d0eeba951ed8",
       "file_size": 1249,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -180,7 +464,8 @@
       "created_at": "2026-03-21T16:15:49.500Z",
       "checksum": "14ac6c35953878a8b87884f65027d2257be064ec",
       "file_size": 1418,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -189,16 +474,32 @@
       "modality": "audio",
       "title": "Dead Channel Protocol - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\arc_ambience\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/arc_ambience/dead-channel-protocol-dead-channel-protocol-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:22.789Z",
-      "checksum": "04cf1dd74201f91db0da80c41f907ddae7511f62",
-      "file_size": 15699186,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:07:29.905Z",
+      "checksum": "a974f635880e36dace4c2337edceb03b87feda6b",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 246,
+          "high": 1160,
+          "shimmer": 3100,
+          "pulseHz": 1.44,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.16
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -216,7 +517,58 @@
       "created_at": "2026-03-21T17:03:53.950Z",
       "checksum": "8c5a61af19904865aa4a17cb66688dc142431428",
       "file_size": 3129190,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/arc_teaser_video/dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/arc_teaser_video/dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:50:13.370Z",
+      "checksum": "b798d31037d68abc5d2cc191579c7625e49b1e18",
+      "file_size": 10987941,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\arc_key_art\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\arc_ambience\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Streamer Bo Finch",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Streamer Bo Finch to team. A ghost app predicts outages, deaths, and your next move. This arc centers on contact and contradiction arc teaser video, with pressure building around protocol signed payload. Move quietly through smart-city control grid and abandoned transit nodes and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 2.175,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 87,
+            "lowpassHz": 7610,
+            "presenceGainDb": 0.597
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -225,16 +577,32 @@
       "modality": "audio",
       "title": "Dead Channel Protocol - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\arc_ambience\\dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/arc_ambience/dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:24.184Z",
-      "checksum": "497b99b102598eb08e4561cebc3c6fc9cba21ef1",
-      "file_size": 15699282,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:07:31.405Z",
+      "checksum": "26dde9310ae497ab74b2396df39cef6db9bf809e",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 246,
+          "high": 1160,
+          "shimmer": 3100,
+          "pulseHz": 1.44,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.16
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -252,7 +620,58 @@
       "created_at": "2026-03-21T17:03:41.172Z",
       "checksum": "eca33f49b1aa077f3479ca056e5285945242e840",
       "file_size": 2850807,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/arc_teaser_video/dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/arc_teaser_video/dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:50:18.179Z",
+      "checksum": "764c79d0ad4f72ead404e3f0d0bea8cb588a7094",
+      "file_size": 11199925,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\arc_key_art\\dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\arc_ambience\\dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Streamer Bo Finch",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Streamer Bo Finch to team. A ghost app predicts outages, deaths, and your next move. This arc centers on interference and doubt arc teaser video, with pressure building around protocol signed payload. Move quietly through smart-city control grid and abandoned transit nodes and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 2.175,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 88,
+            "lowpassHz": 7938,
+            "presenceGainDb": 0.197
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -261,16 +680,32 @@
       "modality": "audio",
       "title": "Dead Channel Protocol - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\arc_ambience\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/arc_ambience/dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:25.589Z",
-      "checksum": "16078237c446ef7609da214841c13013fd9fbcf6",
-      "file_size": 15700314,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:07:32.735Z",
+      "checksum": "cae68371a2148bf42ce3a60b9184c5d460f901bb",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 246,
+          "high": 1160,
+          "shimmer": 3100,
+          "pulseHz": 1.44,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.16
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -278,17 +713,68 @@
       "asset_type": "arc_key_art",
       "modality": "image",
       "title": "Dead Channel Protocol - Confrontation and Reckoning Arc Key Art",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Dead Channel Protocol - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Dead Channel Protocol - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\arc_key_art\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/arc_key_art/dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\arc_key_art\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/arc_key_art/dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:04:13.419Z",
-      "checksum": "531e68fa7dec61c7a2deff2e34b647e712ce2cc1",
-      "file_size": 3284410,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:18:14.079Z",
+      "checksum": "51a3e98b194b11c1a5cc2af0f8484e9e994929c6",
+      "file_size": 2990966,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/arc_teaser_video/dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/arc_teaser_video/dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:50:47.416Z",
+      "checksum": "03fa323c1687dcbf517c21349406874f5d60f35a",
+      "file_size": 11128502,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\arc_key_art\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\arc_ambience\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Streamer Bo Finch",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Streamer Bo Finch to team. A ghost app predicts outages, deaths, and your next move. This arc centers on confrontation and reckoning arc teaser video, with pressure building around protocol signed payload. Move quietly through smart-city control grid and abandoned transit nodes and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 2.175,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 98,
+            "lowpassHz": 7810,
+            "presenceGainDb": 0.357
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -296,17 +782,68 @@
       "asset_type": "ending_card",
       "modality": "image",
       "title": "Dead Channel Protocol - Corruption Pact Ending Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You keep protocol access and become curator of selective outages.. Deliver emotional closure with sequel-hook tension.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You keep protocol access and become curator of selective outages.. Deliver emotional closure with sequel-hook tension.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\ending_card\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-card-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/ending_card/dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\ending_card\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/ending_card/dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:08:34.213Z",
-      "checksum": "61ea9a703656e92f8095b05114d006a7109123cf",
-      "file_size": 2823987,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:26:37.391Z",
+      "checksum": "752d08279c41ecb8ef08c8d4d20e273fd1ed3c17",
+      "file_size": 2961922,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:52:51.642Z",
+      "checksum": "4f6da36d2b6ced672894c6b6f8071bc86b340331",
+      "file_size": 16412413,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\ending_card\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Root Administrator",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "Root Administrator reporting. The case closes on corruption pact ending recap video. The evidence thread started with protocol signed payload and now points directly at Root Administrator. Review the timeline at smart-city control grid and abandoned transit nodes before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.84,
+            "pitchSemitone": -2.246,
+            "textureAmount": 0.515,
+            "highpassHz": 70,
+            "lowpassHz": 6181,
+            "presenceGainDb": 0.3520000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -315,34 +852,78 @@
       "modality": "audio",
       "title": "Dead Channel Protocol - Corruption Pact Ending Score",
       "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Compose ending score cue for \"Corruption Pact\" that supports summary \"You keep protocol access and become curator of selective outages.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/ending_score/dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:31.006Z",
-      "checksum": "7713b9e327df468e7060d10980592c57f5c4fee5",
-      "file_size": 15699186,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:07:56.864Z",
+      "checksum": "fc50c26b98ea14f686dc20c106cbb9fbcb3f9654",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 246,
+          "high": 1160,
+          "shimmer": 3100,
+          "pulseHz": 1.44,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.16
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-justice-ending-card",
-      "asset_type": "ending_card",
-      "modality": "image",
-      "title": "Dead Channel Protocol - Clean Resolution Ending Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You isolate protocol command and preserve chain-of-custody for prosecution.. Deliver emotional closure with sequel-hook tension.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "openai:gpt-image-1",
+      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
       "generation_status": "complete",
-      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\ending_card\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-card-v1.png",
-      "public_path": "/agent-army/stories/dead-channel-protocol/image/ending_card/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-card-v1.png",
-      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\ending_card\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-card-v1.thumb.jpg",
-      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/ending_card/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:08:23.036Z",
-      "checksum": "ab4712f01568d0f4793e9b7568da7f2da44be499",
-      "file_size": 3051511,
-      "duration_seconds": null
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:52:03.127Z",
+      "checksum": "187434fb9bd7d6b4507a498b13e574d69e2e8d38",
+      "file_size": 15428418,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-6-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren reporting. The case closes on clean resolution ending recap video. The evidence thread started with protocol signed payload and now points directly at Root Administrator. Review the timeline at smart-city control grid and abandoned transit nodes before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9910749999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 73,
+            "lowpassHz": 7092,
+            "presenceGainDb": -0.21200000000000002
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -351,16 +932,32 @@
       "modality": "audio",
       "title": "Dead Channel Protocol - Clean Resolution Ending Score",
       "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Compose ending score cue for \"Clean Resolution\" that supports summary \"You isolate protocol command and preserve chain-of-custody for prosecution.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/ending_score/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:28.588Z",
-      "checksum": "dedd9ab8b0b0bdd9097e81e346f1d1e2e0ce026d",
-      "file_size": 15699126,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:07:53.699Z",
+      "checksum": "0454cf429206ee8b1657a88af31b45a9c00b2e99",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 246,
+          "high": 1160,
+          "shimmer": 3100,
+          "pulseHz": 1.44,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.16
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -378,7 +975,58 @@
       "created_at": "2026-03-21T17:08:31.634Z",
       "checksum": "723fa80aec454d2cf575bbfe3ee4cc1e6ab9029f",
       "file_size": 2865916,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Dead Channel Protocol - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:52:13.051Z",
+      "checksum": "1253dfd05792625bc286af913f4cad132bf4a5d9",
+      "file_size": 16160921,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\ending_card\\dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren reporting. The case closes on compromised truth ending recap video. The evidence thread started with protocol signed payload and now points directly at Root Administrator. Review the timeline at smart-city control grid and abandoned transit nodes before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9819749999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 87,
+            "lowpassHz": 7102,
+            "presenceGainDb": -0.452
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -387,16 +1035,32 @@
       "modality": "audio",
       "title": "Dead Channel Protocol - Compromised Truth Ending Score",
       "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Compose ending score cue for \"Compromised Truth\" that supports summary \"You neutralize the app but trigger cascading outages and civic panic.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/ending_score/dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:29.750Z",
-      "checksum": "3405efe796652316c59a79124e0d7c31ee0a5e7f",
-      "file_size": 15699126,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:07:55.317Z",
+      "checksum": "5745862db9b99cc2efc15095f952f0039f8ea880",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 246,
+          "high": 1160,
+          "shimmer": 3100,
+          "pulseHz": 1.44,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.16
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -414,7 +1078,8 @@
       "created_at": "2026-03-21T16:14:55.353Z",
       "checksum": "39d68189303d4bfb3c2db8e80d64ce30ce313dc9",
       "file_size": 1225,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -432,7 +1097,12 @@
       "created_at": "2026-03-21T17:05:30.062Z",
       "checksum": "b3b850a08d9d9d21f4eb6f49bec2700952ce166b",
       "file_size": 2837316,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -440,17 +1110,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Dead Channel Protocol - Security Engineer Talia Ren Voice Profile",
-      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Security Engineer Talia Ren. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Security Engineer Talia Ren. Keep your channel open and do not answer unknown callbacks. A ghost app predicts outages, deaths, and your next move. Start with protocol signed payload, then verify every timestamp against smart-city control grid and abandoned transit nodes. If Root Administrator contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\npc_voice_profile\\dead-channel-protocol-dead-channel-protocol-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:25.975Z",
-      "checksum": "01fbb79506ba813ee65b0e47b2c8b07d4405ef30",
-      "file_size": 2110600,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:34:03.959Z",
+      "checksum": "b9c89c2e9badf657e72298e8aaee2b73b2cff0f9",
+      "file_size": 1348774,
+      "duration_seconds": 14.05,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 0.9723849999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.45999999999999996,
+          "highpassHz": 77,
+          "lowpassHz": 7067,
+          "presenceGainDb": -0.532
+        },
+        "voice_design": {
+          "apiSpeed": 0.9723849999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.45999999999999996,
+          "highpassHz": 77,
+          "lowpassHz": 7067,
+          "presenceGainDb": -0.532
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -468,7 +1162,8 @@
       "created_at": "2026-03-21T16:14:55.358Z",
       "checksum": "1d0409caa7f1cff96ecea11e7bcd756fee13cf63",
       "file_size": 1205,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -486,7 +1181,12 @@
       "created_at": "2026-03-21T17:05:43.921Z",
       "checksum": "f740a67243f52ce252d027f080b5d799ee4934fa",
       "file_size": 2952673,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -494,17 +1194,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Dead Channel Protocol - Streamer Bo Finch Voice Profile",
-      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Streamer Bo Finch. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Streamer Bo Finch. I should not be leaving this message. Something about protocol signed payload is wrong, and Root Administrator wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to smart-city control grid and abandoned transit nodes.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\npc_voice_profile\\dead-channel-protocol-dead-channel-protocol-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:26.291Z",
-      "checksum": "069fad5651c3c2a5d5796ef3da6ba569ae301d61",
-      "file_size": 2110356,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:34:07.875Z",
+      "checksum": "bba0f1536bf8144efa09f7585dac141cfe770304",
+      "file_size": 807942,
+      "duration_seconds": 8.42,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 2.175,
+          "textureAmount": 0.6337499999999999,
+          "highpassHz": 85,
+          "lowpassHz": 7891,
+          "presenceGainDb": 0.837
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 2.175,
+          "textureAmount": 0.6337499999999999,
+          "highpassHz": 85,
+          "lowpassHz": 7891,
+          "presenceGainDb": 0.837
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -522,7 +1246,8 @@
       "created_at": "2026-03-21T16:14:55.362Z",
       "checksum": "db18b8ad91ce845d7fa65246a6f1b8f1d4e46ec8",
       "file_size": 1217,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -540,7 +1265,12 @@
       "created_at": "2026-03-21T17:05:45.884Z",
       "checksum": "7f2f6e308fe6b802e8603fb6a60fece01064dc4d",
       "file_size": 2884399,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -548,17 +1278,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Dead Channel Protocol - Grid Operator Niko Saye Voice Profile",
-      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Grid Operator Niko Saye. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Grid Operator Niko Saye. I should not be leaving this message. Something about protocol signed payload is wrong, and Root Administrator wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to smart-city control grid and abandoned transit nodes.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\npc_voice_profile\\dead-channel-protocol-dead-channel-protocol-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:26.637Z",
-      "checksum": "94fc7e6775ccac0c1f5481a4babf66165664dd19",
-      "file_size": 2111212,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:34:11.949Z",
+      "checksum": "6ba1e2dd0f6fd6c53b1cd0ceeeaf308f7fee013d",
+      "file_size": 1018852,
+      "duration_seconds": 10.61,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.09677,
+          "pitchSemitone": 0.7769999999999999,
+          "textureAmount": 0.5825,
+          "highpassHz": 85,
+          "lowpassHz": 8005,
+          "presenceGainDb": 0.08199999999999999
+        },
+        "voice_design": {
+          "apiSpeed": 1.09677,
+          "pitchSemitone": 0.7769999999999999,
+          "textureAmount": 0.5825,
+          "highpassHz": 85,
+          "lowpassHz": 8005,
+          "presenceGainDb": 0.08199999999999999
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -576,7 +1330,8 @@
       "created_at": "2026-03-21T16:14:55.367Z",
       "checksum": "074dfe99c0f09764ab9118fc448c83df9671dd21",
       "file_size": 1221,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -594,7 +1349,12 @@
       "created_at": "2026-03-21T17:06:24.237Z",
       "checksum": "e0cac57a9d3dc6fd54280f51cbc707b4dc5f5da9",
       "file_size": 3072510,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -602,17 +1362,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Dead Channel Protocol - Incident Bot Liaison K-12 Voice Profile",
-      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Incident Bot Liaison K-12. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Incident Bot Liaison K-12. I should not be leaving this message. Something about protocol signed payload is wrong, and Root Administrator wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to smart-city control grid and abandoned transit nodes.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\npc_voice_profile\\dead-channel-protocol-dead-channel-protocol-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:27.093Z",
-      "checksum": "fa1c3d0b15dbc67c6e49897f7dcdbc4200670cf8",
-      "file_size": 2110746,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:34:16.984Z",
+      "checksum": "5a57bc5536b2eac3806686a49e3c23809834a19e",
+      "file_size": 933540,
+      "duration_seconds": 9.72,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.1277650000000001,
+          "pitchSemitone": 0.46099999999999997,
+          "textureAmount": 0.5275,
+          "highpassHz": 100,
+          "lowpassHz": 7708,
+          "presenceGainDb": 0.14199999999999996
+        },
+        "voice_design": {
+          "apiSpeed": 1.1277650000000001,
+          "pitchSemitone": 0.46099999999999997,
+          "textureAmount": 0.5275,
+          "highpassHz": 100,
+          "lowpassHz": 7708,
+          "presenceGainDb": 0.14199999999999996
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -620,17 +1404,22 @@
       "asset_type": "puzzle_shard_card",
       "modality": "image",
       "title": "Dead Channel Protocol - Node Handshake Puzzle - ALLY_A Shard Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder ALLY_A. Content brief: Ally A receives sequence hints in SMS emoji cadence.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder ALLY_A. Content brief: Ally A receives sequence hints in SMS emoji cadence.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:07:25.896Z",
-      "checksum": "af53acd52907bb5ea12e99efd411e7a872fb6aa1",
-      "file_size": 3407906,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:23:22.506Z",
+      "checksum": "fcde4e18db91b82fbdecfaccc34f55496708ccc2",
+      "file_size": 3440272,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -638,17 +1427,22 @@
       "asset_type": "puzzle_shard_card",
       "modality": "image",
       "title": "Dead Channel Protocol - Node Handshake Puzzle - GLOBAL_BROADCAST Shard Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast node map reveals which nonce belongs to each substation.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast node map reveals which nonce belongs to each substation.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:07:28.568Z",
-      "checksum": "dadd2af08ac848cf1263a38ac88a2d81ac0e7751",
-      "file_size": 3626549,
-      "duration_seconds": null
+      "created_at": "2026-03-23T17:28:47.509Z",
+      "checksum": "99ae05e6322dd5d0965f115b4f26aeb220d55f12",
+      "file_size": 2905880,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -656,17 +1450,22 @@
       "asset_type": "puzzle_shard_card",
       "modality": "image",
       "title": "Dead Channel Protocol - Node Handshake Puzzle - HOST Shard Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder HOST. Content brief: Host receives handshake nonce values without sequence.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder HOST. Content brief: Host receives handshake nonce values without sequence.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:07:12.848Z",
-      "checksum": "2ca5764b2e592b039260c12d4c35593c0a5d7720",
-      "file_size": 3527751,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:22:55.911Z",
+      "checksum": "fd433dd5777b7247a842cfa801ae7a75f2248d51",
+      "file_size": 3567246,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -684,7 +1483,12 @@
       "created_at": "2026-03-21T17:07:04.249Z",
       "checksum": "f526fd4e15b5ff19efc32b0afaf7086e4a5b8dcc",
       "file_size": 3143864,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -702,7 +1506,8 @@
       "created_at": "2026-03-21T16:14:55.392Z",
       "checksum": "32ef1a9f751ac4a0978c0e6a2ed9da55cb6bb11c",
       "file_size": 1213,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -720,7 +1525,8 @@
       "created_at": "2026-03-21T16:14:55.402Z",
       "checksum": "bf9f92918d75a8ec8d6ceda7595157e6c0d54a0d",
       "file_size": 1285,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -738,7 +1544,8 @@
       "created_at": "2026-03-21T16:15:49.505Z",
       "checksum": "496427af40a5eb654d92d684094c7f1f8239fd35",
       "file_size": 1454,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -756,7 +1563,8 @@
       "created_at": "2026-03-21T16:14:55.382Z",
       "checksum": "1bc96dec4c7a9f18517fc5bef23655f119b9ca0f",
       "file_size": 1242,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -764,17 +1572,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Dead Channel Protocol - Evidence Still - Intercepted bot transcript",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Intercepted bot transcript\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Intercepted bot transcript. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Setting: Smart-city control grid and abandoned transit nodes. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Intercepted bot transcript\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Intercepted bot transcript. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-intercepted-bot-transcript-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:06:45.338Z",
-      "checksum": "74e61971d8b786c904e9e2883863218632a81ca7",
-      "file_size": 3874241,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:21:45.639Z",
+      "checksum": "44df16e5f348e57a45e3277c82721ca9f9533269",
+      "file_size": 3199397,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -792,25 +1605,8 @@
       "created_at": "2026-03-21T16:14:55.375Z",
       "checksum": "dfd3cf22e694d24d84dec4704047cee325feba03",
       "file_size": 1233,
-      "duration_seconds": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-protocol-signed-payload-evidence-still",
-      "asset_type": "evidence_still",
-      "modality": "image",
-      "title": "Dead Channel Protocol - Evidence Still - Protocol signed payload",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Protocol signed payload\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Protocol signed payload. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "openai:gpt-image-1",
-      "generation_status": "complete",
-      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-protocol-signed-payload-evidence-still-v1.png",
-      "public_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-protocol-signed-payload-evidence-still-v1.png",
-      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-protocol-signed-payload-evidence-still-v1.thumb.jpg",
-      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-protocol-signed-payload-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:06:13.549Z",
-      "checksum": "181b1e689a8a0206f2c1d7c27827e9e9995336f0",
-      "file_size": 3201284,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -828,7 +1624,12 @@
       "created_at": "2026-03-21T17:08:51.259Z",
       "checksum": "4df45a662a3a6390b0f2a5dbc8be30cb8d5ba71e",
       "file_size": 1695942,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -836,17 +1637,22 @@
       "asset_type": "social_vertical",
       "modality": "image",
       "title": "Dead Channel Protocol Social Launch Vertical",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\social_vertical\\dead-channel-protocol-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/social_vertical/dead-channel-protocol-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\social_vertical\\dead-channel-protocol-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/social_vertical/dead-channel-protocol-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:08:41.816Z",
-      "checksum": "64eb34adf444860438a5fba3d3743fb268b2d7d0",
-      "file_size": 2095374,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:26:56.259Z",
+      "checksum": "f7e3cbe025598703d02bd6b827e1cbfb7fb4d57e",
+      "file_size": 1819832,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -864,7 +1670,12 @@
       "created_at": "2026-03-21T17:03:22.620Z",
       "checksum": "90c13fcc48bf52857b5dc1726d755d689efc9148",
       "file_size": 2714971,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -882,7 +1693,8 @@
       "created_at": "2026-03-21T16:15:49.511Z",
       "checksum": "7d731e4756afc8b02fe167c7570dcbd17b2271b8",
       "file_size": 1321,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -891,16 +1703,32 @@
       "modality": "audio",
       "title": "Dead Channel Protocol Story Theme Loop",
       "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/story_theme_loop/dead-channel-protocol-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:32.282Z",
-      "checksum": "5847198dfd8481cbe9db52e24f7847f3227ffe29",
-      "file_size": 15699398,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:07:58.258Z",
+      "checksum": "d487af47c70825b0800ddaa9ec65bb56e80910c6",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 246,
+          "high": 1160,
+          "shimmer": 3100,
+          "pulseHz": 1.44,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.16
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -918,7 +1746,8 @@
       "created_at": "2026-03-21T16:14:55.379Z",
       "checksum": "e2fe4a31bafecc8004601ca31730001705b73127",
       "file_size": 1233,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -926,17 +1755,70 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Dead Channel Protocol - Evidence Still - Substation outage trace",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Substation outage trace\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Substation outage trace. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Setting: Smart-city control grid and abandoned transit nodes. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Substation outage trace\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Substation outage trace. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-substation-outage-trace-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:06:35.884Z",
-      "checksum": "e597ecb20cdb29c28540a06d1559bd4ce25403af",
-      "file_size": 3160356,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:21:23.127Z",
+      "checksum": "122c9ed193bfbb50d63fe81855bad48bc4b36827",
+      "file_size": 3077133,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "dead-channel-protocol",
+      "asset_id": "dead-channel-protocol-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "Dead Channel Protocol Main Trailer",
+      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\story_trailer\\dead-channel-protocol-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/dead-channel-protocol/video/story_trailer/dead-channel-protocol-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\story_trailer\\dead-channel-protocol-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/story_trailer/dead-channel-protocol-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:52:54.678Z",
+      "checksum": "9fa17b83c384f215566d011f37754126a399a18b",
+      "file_size": 13098757,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\arc_key_art\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\arc_key_art\\dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-3-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\story_theme_loop\\dead-channel-protocol-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Security Engineer Talia Ren",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Security Engineer Talia Ren briefing. Dead Channel Protocol Main Trailer is now active. Start with protocol signed payload, then compare every new message against a ghost app predicts outages, deaths, and your next move.. If Root Administrator reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.960275,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.45999999999999996,
+            "highpassHz": 75,
+            "lowpassHz": 7038,
+            "presenceGainDb": -0.612
+          }
+        }
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -954,7 +1836,8 @@
       "created_at": "2026-03-21T16:14:55.371Z",
       "checksum": "129ae1caa0b0a8f967738127669a027d2d19e4f1",
       "file_size": 1194,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "dead-channel-protocol",
@@ -962,17 +1845,22 @@
       "asset_type": "villain_portrait",
       "modality": "image",
       "title": "Dead Channel Protocol - Villain Portrait",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Design portrait of antagonist Root Administrator with archetype CALM_GENIUS_MANIPULATOR, speech style \"Minimal technical precision with personal jabs.\", and motifs error beeps, node maps, black-screen prompts.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Design portrait of antagonist Root Administrator with archetype CALM_GENIUS_MANIPULATOR, speech style \"Minimal technical precision with personal jabs.\", and motifs error beeps, node maps, black-screen prompts.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
       "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/dead-channel-protocol/image/villain_portrait/dead-channel-protocol-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/villain_portrait/dead-channel-protocol-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:06:36.632Z",
-      "checksum": "4db539c3c362778cfedc91d9f40c7b0e26e0c7c6",
-      "file_size": 2782234,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:20:30.259Z",
+      "checksum": "b89c7f98c19888557dc37db77329b8e4efd8ec4f",
+      "file_size": 2908988,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "dead-channel-protocol",
@@ -980,149 +1868,73 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "Dead Channel Protocol - Villain Voice Profile",
-      "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Create villain voice profile for Root Administrator. Worldview: Systems only become honest when people fear the output.. Manner: Dry sarcasm about human latency.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. A ghost app predicts outages, deaths, and your next move. Work the case in order: secure protocol signed payload, confirm the scene at smart-city control grid and abandoned transit nodes, and do not let Root Administrator choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\villain_voice_profile\\dead-channel-protocol-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/dead-channel-protocol/audio/villain_voice_profile/dead-channel-protocol-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:27.484Z",
-      "checksum": "0eb4eeed66d72b1cef7dff2d9bf2165c73dabe8b",
-      "file_size": 2110398,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:34:20.037Z",
+      "checksum": "fe1f10494c1cbbbf13b53bcdffe55d279ee61939",
+      "file_size": 874766,
+      "duration_seconds": 9.11,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "fable",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 0.97466,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 72,
+          "lowpassHz": 7431,
+          "presenceGainDb": -0.32
+        },
+        "voice_design": {
+          "apiSpeed": 0.97466,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 72,
+          "lowpassHz": 7431,
+          "presenceGainDb": -0.32
+        }
+      }
     }
   ],
   "failures": [
     {
       "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
+      "asset_id": "dead-channel-protocol-abandoned-node-scan-evidence-still",
+      "asset_type": "evidence_still",
+      "modality": "image",
+      "generation_status": "failed",
+      "error": "openai: image text artifact detected; regenerate required :: DEAD (96), CHANNEL (96), PROTOCOL (95), EVIDENCE (96), STILL (95), ABANDONED (96) | pollinations: provider returned 500",
+      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-abandoned-node-scan-evidence-still-v1.png",
+      "last_attempt_at": "2026-03-22T21:53:03.346Z"
     },
     {
       "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
+      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-justice-ending-card",
+      "asset_type": "ending_card",
+      "modality": "image",
+      "generation_status": "failed",
+      "error": "openai: image text artifact detected; regenerate required :: NAF (65), ERRY (59) | pollinations: provider returned 500",
+      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\ending_card\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-card-v1.png",
+      "last_attempt_at": "2026-03-22T21:53:03.346Z"
     },
     {
       "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\beat_transition_video\\dead-channel-protocol-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\arc_teaser_video\\dead-channel-protocol-dead-channel-protocol-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "dead-channel-protocol",
-      "asset_id": "dead-channel-protocol-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\story_trailer\\dead-channel-protocol-trailer-main-v1.mp4",
-      "last_attempt_at": null
+      "asset_id": "dead-channel-protocol-protocol-signed-payload-evidence-still",
+      "asset_type": "evidence_still",
+      "modality": "image",
+      "generation_status": "failed",
+      "error": "openai: image text artifact detected; regenerate required :: PROTOCOL (94), Still (92), signed (93), paylcad (92) | pollinations: provider returned 500",
+      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-protocol-signed-payload-evidence-still-v1.png",
+      "last_attempt_at": "2026-03-22T21:53:03.346Z"
     }
   ]
 }

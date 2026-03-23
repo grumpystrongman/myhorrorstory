@@ -1,15 +1,15 @@
 {
   "storyId": "crown-of-salt",
   "title": "Crown of Salt",
-  "generatedAt": "2026-03-20T14:49:20.913Z",
+  "generatedAt": "2026-03-23T16:36:49.437Z",
   "clips": [
     {
       "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-1",
       "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
-      "beatId": "beat-1",
-      "beatTitle": "Manifest Drift",
-      "channel": "SMS",
-      "text": "Shipping manifests arrive by email and WhatsApp with contradictory destination ports. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SIGNAL",
+      "text": "Day 01 control: secure police report brine sealed manifest, validate harbor fog, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-1.wav",
       "providers": [
         {
@@ -26,13 +26,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Emma",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -41,10 +41,10 @@
     {
       "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-2",
       "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "EMAIL",
-      "text": "Cross-reference this before dawn: Customs API anomaly log.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "Day 02 control: secure handwritten note dockside cctv still, validate salt relic, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-2.wav",
       "providers": [
         {
@@ -61,13 +61,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Emma",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -76,10 +76,10 @@
     {
       "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-3",
       "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "EMAIL",
-      "text": "Players reconstruct motive and false trails before collapse. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "Day 03 control: secure journal entry catacomb symbol tracing, validate catacomb stair, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-3.wav",
       "providers": [
         {
@@ -96,13 +96,888 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-4",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "SMS",
+      "text": "Day 04 control: secure text message screenshot customs api anomaly log, validate port manifest, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-5",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "Day 05 control: secure call log brine sealed manifest, validate tide mark, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-6",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "WHATSAPP",
+      "text": "Day 06 control: secure voicemail transcript dockside cctv still, validate smuggler cache, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-7",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "TELEGRAM",
+      "text": "Day 07 control: secure security footage still catacomb symbol tracing, validate harbor fog, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-8",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "Day 08 control: secure crime scene photo customs api anomaly log, validate salt relic, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-9",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "SIGNAL",
+      "text": "Day 09 control: secure marked map brine sealed manifest, validate catacomb stair, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-10",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "WHATSAPP",
+      "text": "Day 10 control: secure receipt dockside cctv still, validate port manifest, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-11",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "TELEGRAM",
+      "text": "Day 11 control: secure medical record catacomb symbol tracing, validate tide mark, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-12",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "Day 12 control: secure shipping manifest customs api anomaly log, validate smuggler cache, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-13",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "SIGNAL",
+      "text": "Day 13 control: secure police report brine sealed manifest, validate harbor fog, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-14",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "WHATSAPP",
+      "text": "Day 14 control: secure handwritten note dockside cctv still, validate salt relic, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-15",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "TELEGRAM",
+      "text": "Day 15 control: secure journal entry catacomb symbol tracing, validate catacomb stair, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-16",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "Day 16 control: secure text message screenshot customs api anomaly log, validate port manifest, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-17",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "SIGNAL",
+      "text": "Day 17 control: secure call log brine sealed manifest, validate tide mark, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-18",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "WHATSAPP",
+      "text": "Day 18 control: secure voicemail transcript dockside cctv still, validate smuggler cache, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-19",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "TELEGRAM",
+      "text": "Day 19 control: secure security footage still catacomb symbol tracing, validate harbor fog, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-20",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "Day 20 control: secure crime scene photo customs api anomaly log, validate salt relic, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-21",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SIGNAL",
+      "text": "Day 21 control: secure marked map brine sealed manifest, validate catacomb stair, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-22",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "WHATSAPP",
+      "text": "Day 22 control: secure receipt dockside cctv still, validate port manifest, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-23",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "Day 23 control: secure medical record catacomb symbol tracing, validate tide mark, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-24",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Day 24 control: secure shipping manifest customs api anomaly log, validate smuggler cache, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-25",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "Day 25 control: secure police report brine sealed manifest, validate harbor fog, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-26",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "WHATSAPP",
+      "text": "Day 26 control: secure handwritten note dockside cctv still, validate salt relic, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-27",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "TELEGRAM",
+      "text": "Day 27 control: secure journal entry catacomb symbol tracing, validate catacomb stair, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.port-auditor-lin-ortega.clip-28",
+      "profileId": "voice.crown-of-salt.port-auditor-lin-ortega",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Day 28 control: secure text message screenshot customs api anomaly log, validate port manifest, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/crown-of-salt/port-auditor-lin-ortega-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-port-auditor-lin-ortega",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-port-auditor-lin-ortega",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Emma",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -111,10 +986,10 @@
     {
       "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-1",
       "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
-      "beatId": "beat-1",
-      "beatTitle": "Manifest Drift",
-      "channel": "WHATSAPP",
-      "text": "Cross-reference this before dawn: Brine-sealed manifest.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around harbor fog, but I need to know whether you trust this lead or think it is bait tied to police report brine sealed manifest.",
       "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-1.wav",
       "providers": [
         {
@@ -131,13 +1006,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -146,10 +1021,10 @@
     {
       "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-2",
       "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "WHATSAPP",
-      "text": "A contradictory channel drop appears within minutes and forces risk. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around port manifest, but I need to know whether you trust this lead or think it is bait tied to text message screenshot customs api anomaly log.",
       "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-2.wav",
       "providers": [
         {
@@ -166,13 +1041,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -181,10 +1056,10 @@
     {
       "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-3",
       "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
-      "channel": "VOICE_MESSAGE",
-      "text": "Cross-reference this before dawn: Brine-sealed manifest.",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around harbor fog, but I need to know whether you trust this lead or think it is bait tied to security footage still catacomb symbol tracing.",
       "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-3.wav",
       "providers": [
         {
@@ -201,13 +1076,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -216,10 +1091,10 @@
     {
       "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-4",
       "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "VOICE_MESSAGE",
-      "text": "Final scoring resolves ending branch and season continuity flags. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around port manifest, but I need to know whether you trust this lead or think it is bait tied to receipt dockside cctv still.",
       "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-4.wav",
       "providers": [
         {
@@ -236,176 +1111,246 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.crown-of-salt.the-salt-regent.clip-1",
-      "profileId": "voice.crown-of-salt.the-salt-regent",
-      "beatId": "beat-1",
-      "beatTitle": "Manifest Drift",
-      "channel": "SMS",
-      "text": "You traced the crate, not the oath that moved it. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-1.wav",
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-5",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around harbor fog, but I need to know whether you trust this lead or think it is bait tied to police report brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-5.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-salt-regent",
+          "voiceId": "piper-smuggler-rafe-quinn",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-salt-regent",
+          "voiceId": "elv-smuggler-rafe-quinn",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.crown-of-salt.the-salt-regent.clip-2",
-      "profileId": "voice.crown-of-salt.the-salt-regent",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-6",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
       "channel": "SMS",
-      "text": "You traced the crate, not the oath that moved it. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-2.wav",
+      "text": "I can confirm movement around port manifest, but I need to know whether you trust this lead or think it is bait tied to text message screenshot customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-6.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-salt-regent",
+          "voiceId": "piper-smuggler-rafe-quinn",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-salt-regent",
+          "voiceId": "elv-smuggler-rafe-quinn",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.crown-of-salt.the-salt-regent.clip-3",
-      "profileId": "voice.crown-of-salt.the-salt-regent",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-7",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around harbor fog, but I need to know whether you trust this lead or think it is bait tied to security footage still catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-smuggler-rafe-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-smuggler-rafe-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-8",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
       "channel": "WHATSAPP",
-      "text": "He smiles because you made his bargain for him. (Psychological Contact)",
-      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-3.wav",
+      "text": "I can confirm movement around port manifest, but I need to know whether you trust this lead or think it is bait tied to receipt dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-8.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-salt-regent",
+          "voiceId": "piper-smuggler-rafe-quinn",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-salt-regent",
+          "voiceId": "elv-smuggler-rafe-quinn",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.crown-of-salt.the-salt-regent.clip-4",
-      "profileId": "voice.crown-of-salt.the-salt-regent",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SMS",
-      "text": "Choose: the nun lives, or the port burns clean. (Active Interference)",
-      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-4.wav",
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-9",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around harbor fog, but I need to know whether you trust this lead or think it is bait tied to police report brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-9.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-salt-regent",
+          "voiceId": "piper-smuggler-rafe-quinn",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-salt-regent",
+          "voiceId": "elv-smuggler-rafe-quinn",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.crown-of-salt.the-salt-regent.clip-5",
-      "profileId": "voice.crown-of-salt.the-salt-regent",
-      "beatId": "beat-5",
-      "beatTitle": "Confrontation Protocol",
+      "clipId": "voice.crown-of-salt.smuggler-rafe-quinn.clip-10",
+      "profileId": "voice.crown-of-salt.smuggler-rafe-quinn",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around port manifest, but I need to know whether you trust this lead or think it is bait tied to text message screenshot customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/smuggler-rafe-quinn-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-smuggler-rafe-quinn",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-smuggler-rafe-quinn",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-1",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-5.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-1.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-salt-regent",
+          "voiceId": "piper-crown-of-salt-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-salt-regent",
+          "voiceId": "elv-crown-of-salt-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -417,30 +1362,30 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.crown-of-salt.the-salt-regent.clip-6",
-      "profileId": "voice.crown-of-salt.the-salt-regent",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-2",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
       "channel": "EMAIL",
-      "text": "Confess one lie and I return one life. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-6.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-2.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-salt-regent",
+          "voiceId": "piper-crown-of-salt-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-salt-regent",
+          "voiceId": "elv-crown-of-salt-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -452,7 +1397,917 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-3",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-4",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-5",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-6",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-7",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-8",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-9",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-10",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-11",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-12",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-13",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-14",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-15",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-16",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-17",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-18",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-19",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-20",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-21",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-22",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-23",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-24",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-25",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-26",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-27",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.crown-of-salt-field-desk.clip-28",
+      "profileId": "voice.crown-of-salt.crown-of-salt-field-desk",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/crown-of-salt-field-desk-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-crown-of-salt-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-crown-of-salt-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -461,10 +2316,10 @@
     {
       "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-1",
       "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
-      "beatId": "beat-2",
-      "beatTitle": "Escalation Signal",
-      "channel": "TELEGRAM",
-      "text": "Cross-reference this before dawn: Dockside CCTV still.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around salt relic, but I need to know whether you trust this lead or think it is bait tied to handwritten note dockside cctv still.",
       "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-1.wav",
       "providers": [
         {
@@ -481,13 +2336,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -496,10 +2351,10 @@
     {
       "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-2",
       "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "TELEGRAM",
-      "text": "The villain mixes real secrets with fabricated claims to split allies. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around tide mark, but I need to know whether you trust this lead or think it is bait tied to call log brine sealed manifest.",
       "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-2.wav",
       "providers": [
         {
@@ -516,13 +2371,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -531,10 +2386,10 @@
     {
       "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-3",
       "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
-      "beatId": "beat-6",
-      "beatTitle": "Case Debrief",
-      "channel": "DOCUMENT_DROP",
-      "text": "Cross-reference this before dawn: Dockside CCTV still.",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around salt relic, but I need to know whether you trust this lead or think it is bait tied to crime scene photo customs api anomaly log.",
       "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-3.wav",
       "providers": [
         {
@@ -551,13 +2406,223 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-4",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "SMS",
+      "text": "I can confirm movement around tide mark, but I need to know whether you trust this lead or think it is bait tied to medical record catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-5",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around salt relic, but I need to know whether you trust this lead or think it is bait tied to handwritten note dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-6",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around tide mark, but I need to know whether you trust this lead or think it is bait tied to call log brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-7",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around salt relic, but I need to know whether you trust this lead or think it is bait tied to crime scene photo customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-8",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around tide mark, but I need to know whether you trust this lead or think it is bait tied to medical record catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.archivist-nun-sister-mirel.clip-9",
+      "profileId": "voice.crown-of-salt.archivist-nun-sister-mirel",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "I can confirm movement around salt relic, but I need to know whether you trust this lead or think it is bait tied to handwritten note dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/archivist-nun-sister-mirel-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-archivist-nun-sister-mirel",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-archivist-nun-sister-mirel",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -566,10 +2631,10 @@
     {
       "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-1",
       "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
-      "beatId": "beat-3",
-      "beatTitle": "Trust Fracture",
-      "channel": "SIGNAL",
-      "text": "Cross-reference this before dawn: Catacomb symbol tracing.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around catacomb stair, but I need to know whether you trust this lead or think it is bait tied to journal entry catacomb symbol tracing.",
       "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-1.wav",
       "providers": [
         {
@@ -586,13 +2651,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -601,10 +2666,10 @@
     {
       "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-2",
       "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
-      "beatId": "beat-4",
-      "beatTitle": "Ultimatum Window",
-      "channel": "SIGNAL",
-      "text": "A timed message threatens collateral harm unless the party diverts. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around smuggler cache, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript dockside cctv still.",
       "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-2.wav",
       "providers": [
         {
@@ -621,13 +2686,1063 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-3",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around catacomb stair, but I need to know whether you trust this lead or think it is bait tied to marked map brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-4",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around smuggler cache, but I need to know whether you trust this lead or think it is bait tied to shipping manifest customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-5",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around catacomb stair, but I need to know whether you trust this lead or think it is bait tied to journal entry catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-6",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around smuggler cache, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript dockside cctv still.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-7",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SMS",
+      "text": "I can confirm movement around catacomb stair, but I need to know whether you trust this lead or think it is bait tied to marked map brine sealed manifest.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-8",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around smuggler cache, but I need to know whether you trust this lead or think it is bait tied to shipping manifest customs api anomaly log.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.customs-broker-dax-ren.clip-9",
+      "profileId": "voice.crown-of-salt.customs-broker-dax-ren",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around catacomb stair, but I need to know whether you trust this lead or think it is bait tied to journal entry catacomb symbol tracing.",
+      "targetPath": "assets/audio/voices/crown-of-salt/customs-broker-dax-ren-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-customs-broker-dax-ren",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-customs-broker-dax-ren",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Amy",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-1",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry catacomb symbol tracing evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-2",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript dockside cctv still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-3",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo customs api anomaly log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-4",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map brine sealed manifest evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-5",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SMS",
+      "text": "You keep calling receipt dockside cctv still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-6",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling medical record catacomb symbol tracing evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-7",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "You keep calling shipping manifest customs api anomaly log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-8",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling police report brine sealed manifest evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-9",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "SMS",
+      "text": "You keep calling handwritten note dockside cctv still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-10",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry catacomb symbol tracing evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-11",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "You keep calling text message screenshot customs api anomaly log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-12",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling call log brine sealed manifest evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-13",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript dockside cctv still evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-14",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling security footage still catacomb symbol tracing evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-15",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo customs api anomaly log evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-16",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map brine sealed manifest evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-17",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether port manifest becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-18",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether tide mark becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-19",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether smuggler cache becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-20",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether harbor fog becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-21",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether salt relic becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-22",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether catacomb stair becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.crown-of-salt.the-salt-regent.clip-23",
+      "profileId": "voice.crown-of-salt.the-salt-regent",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether port manifest becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/crown-of-salt/the-salt-regent-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-salt-regent",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-salt-regent",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Brian",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }

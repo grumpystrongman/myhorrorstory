@@ -1,15 +1,15 @@
 {
   "storyId": "midnight-lockbox",
   "title": "Midnight Lockbox",
-  "generatedAt": "2026-03-20T14:49:20.932Z",
+  "generatedAt": "2026-03-23T16:36:49.452Z",
   "clips": [
     {
       "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-1",
       "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
-      "beatId": "beat-1",
-      "beatTitle": "Unit 331 pings alive",
-      "channel": "SMS",
-      "text": "At 11:47 p.m., a voicemail from unit 331 predicts your next text message word for word. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SIGNAL",
+      "text": "Day 01 control: secure police report voicemail waveform anomaly, validate storage corridor, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-1.wav",
       "providers": [
         {
@@ -26,7 +26,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -41,10 +41,10 @@
     {
       "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-2",
       "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
-      "beatId": "beat-4",
-      "beatTitle": "Noon Ultimatum",
-      "channel": "VOICE_MESSAGE",
-      "text": "Cross-reference this before dawn: Drain tunnel pressure map.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "Day 02 control: secure handwritten note keypad access hash export, validate lock cylinder, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-2.wav",
       "providers": [
         {
@@ -61,7 +61,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -76,10 +76,10 @@
     {
       "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-3",
       "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
-      "beatId": "beat-5",
-      "beatTitle": "Drain Tunnel Run",
-      "channel": "VOICE_MESSAGE",
-      "text": "Twelve hours later, the tunnel route opens and you must choose recovery or confrontation. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "Day 03 control: secure journal entry freight elevator camera stil, validate drain tunnel, and keep evidence readable for first-time investigators under pressure.",
       "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-3.wav",
       "providers": [
         {
@@ -96,7 +96,882 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-4",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "SMS",
+      "text": "Day 04 control: secure text message screenshot drain tunnel pressure map, validate unit 331, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-5",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "Day 05 control: secure call log voicemail waveform anomaly, validate night memo, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-6",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "WHATSAPP",
+      "text": "Day 06 control: secure voicemail transcript keypad access hash export, validate key blank, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-7",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "TELEGRAM",
+      "text": "Day 07 control: secure security footage still freight elevator camera stil, validate storage corridor, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-8",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "Day 08 control: secure crime scene photo drain tunnel pressure map, validate lock cylinder, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-9",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "SIGNAL",
+      "text": "Day 09 control: secure marked map voicemail waveform anomaly, validate drain tunnel, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-10",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "WHATSAPP",
+      "text": "Day 10 control: secure receipt keypad access hash export, validate unit 331, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-11",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "TELEGRAM",
+      "text": "Day 11 control: secure medical record freight elevator camera stil, validate night memo, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-12",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "Day 12 control: secure shipping manifest drain tunnel pressure map, validate key blank, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-13",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "SIGNAL",
+      "text": "Day 13 control: secure police report voicemail waveform anomaly, validate storage corridor, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-14",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "WHATSAPP",
+      "text": "Day 14 control: secure handwritten note keypad access hash export, validate lock cylinder, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-15",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "TELEGRAM",
+      "text": "Day 15 control: secure journal entry freight elevator camera stil, validate drain tunnel, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-16",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "Day 16 control: secure text message screenshot drain tunnel pressure map, validate unit 331, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-17",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "SIGNAL",
+      "text": "Day 17 control: secure call log voicemail waveform anomaly, validate night memo, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-18",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "WHATSAPP",
+      "text": "Day 18 control: secure voicemail transcript keypad access hash export, validate key blank, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-19",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "TELEGRAM",
+      "text": "Day 19 control: secure security footage still freight elevator camera stil, validate storage corridor, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-20",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "Day 20 control: secure crime scene photo drain tunnel pressure map, validate lock cylinder, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-21",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SIGNAL",
+      "text": "Day 21 control: secure marked map voicemail waveform anomaly, validate drain tunnel, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-22",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "WHATSAPP",
+      "text": "Day 22 control: secure receipt keypad access hash export, validate unit 331, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-23",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "Day 23 control: secure medical record freight elevator camera stil, validate night memo, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-24",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Day 24 control: secure shipping manifest drain tunnel pressure map, validate key blank, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-25",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "Day 25 control: secure police report voicemail waveform anomaly, validate storage corridor, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-26",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "WHATSAPP",
+      "text": "Day 26 control: secure handwritten note keypad access hash export, validate lock cylinder, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-27",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "TELEGRAM",
+      "text": "Day 27 control: secure journal entry freight elevator camera stil, validate drain tunnel, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.case-lead-veda-cross.clip-28",
+      "profileId": "voice.midnight-lockbox.case-lead-veda-cross",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Day 28 control: secure text message screenshot drain tunnel pressure map, validate unit 331, and keep evidence readable for first-time investigators under pressure.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/case-lead-veda-cross-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-case-lead-veda-cross",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-case-lead-veda-cross",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "sage",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -111,10 +986,10 @@
     {
       "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-1",
       "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
-      "beatId": "beat-1",
-      "beatTitle": "Unit 331 pings alive",
-      "channel": "WHATSAPP",
-      "text": "Cross-reference this before dawn: Voicemail waveform anomaly.",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around storage corridor, but I need to know whether you trust this lead or think it is bait tied to police report voicemail waveform anomaly.",
       "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-1.wav",
       "providers": [
         {
@@ -131,13 +1006,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -146,10 +1021,10 @@
     {
       "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-2",
       "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
-      "beatId": "beat-2",
-      "beatTitle": "Lock Cylinder Swap",
-      "channel": "WHATSAPP",
-      "text": "You find a fresh lock core with a key that should not exist in facility inventory. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around unit 331, but I need to know whether you trust this lead or think it is bait tied to text message screenshot drain tunnel pressure map.",
       "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-2.wav",
       "providers": [
         {
@@ -166,13 +1041,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -181,10 +1056,10 @@
     {
       "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-3",
       "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
-      "beatId": "beat-5",
-      "beatTitle": "Drain Tunnel Run",
-      "channel": "DOCUMENT_DROP",
-      "text": "Cross-reference this before dawn: Voicemail waveform anomaly.",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around storage corridor, but I need to know whether you trust this lead or think it is bait tied to security footage still freight elevator camera stil.",
       "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-3.wav",
       "providers": [
         {
@@ -201,13 +1076,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -216,10 +1091,10 @@
     {
       "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-4",
       "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
-      "beatId": "beat-6",
-      "beatTitle": "Lockbox Debrief",
-      "channel": "DOCUMENT_DROP",
-      "text": "A final memo reveals whether your team solved the case or joined the cover-up. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around unit 331, but I need to know whether you trust this lead or think it is bait tied to receipt keypad access hash export.",
       "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-4.wav",
       "providers": [
         {
@@ -236,176 +1111,246 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-1",
-      "profileId": "voice.midnight-lockbox.the-quartermaster",
-      "beatId": "beat-1",
-      "beatTitle": "Unit 331 pings alive",
-      "channel": "SMS",
-      "text": "Unit 331 has your fingerprints now, not mine. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-1.wav",
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-5",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around storage corridor, but I need to know whether you trust this lead or think it is bait tied to police report voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-5.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quartermaster",
+          "voiceId": "piper-night-manager-eli-mercer",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quartermaster",
+          "voiceId": "elv-night-manager-eli-mercer",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-2",
-      "profileId": "voice.midnight-lockbox.the-quartermaster",
-      "beatId": "beat-2",
-      "beatTitle": "Lock Cylinder Swap",
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-6",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
       "channel": "SMS",
-      "text": "Unit 331 has your fingerprints now, not mine. (Peripheral Presence)",
-      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-2.wav",
+      "text": "I can confirm movement around unit 331, but I need to know whether you trust this lead or think it is bait tied to text message screenshot drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-6.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quartermaster",
+          "voiceId": "piper-night-manager-eli-mercer",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quartermaster",
+          "voiceId": "elv-night-manager-eli-mercer",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-3",
-      "profileId": "voice.midnight-lockbox.the-quartermaster",
-      "beatId": "beat-3",
-      "beatTitle": "Morning Leak",
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-7",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around storage corridor, but I need to know whether you trust this lead or think it is bait tied to security footage still freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-night-manager-eli-mercer",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-night-manager-eli-mercer",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-8",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
       "channel": "WHATSAPP",
-      "text": "You keep protecting the wrong employee. (Psychological Contact)",
-      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-3.wav",
+      "text": "I can confirm movement around unit 331, but I need to know whether you trust this lead or think it is bait tied to receipt keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-8.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quartermaster",
+          "voiceId": "piper-night-manager-eli-mercer",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quartermaster",
+          "voiceId": "elv-night-manager-eli-mercer",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-4",
-      "profileId": "voice.midnight-lockbox.the-quartermaster",
-      "beatId": "beat-4",
-      "beatTitle": "Noon Ultimatum",
-      "channel": "SMS",
-      "text": "If you open the box before noon, your witness walks. If not, count the sirens. (Active Interference)",
-      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-4.wav",
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-9",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around storage corridor, but I need to know whether you trust this lead or think it is bait tied to police report voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-9.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quartermaster",
+          "voiceId": "piper-night-manager-eli-mercer",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quartermaster",
+          "voiceId": "elv-night-manager-eli-mercer",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "nova",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-5",
-      "profileId": "voice.midnight-lockbox.the-quartermaster",
-      "beatId": "beat-5",
-      "beatTitle": "Drain Tunnel Run",
+      "clipId": "voice.midnight-lockbox.night-manager-eli-mercer.clip-10",
+      "profileId": "voice.midnight-lockbox.night-manager-eli-mercer",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around unit 331, but I need to know whether you trust this lead or think it is bait tied to text message screenshot drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/night-manager-eli-mercer-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-night-manager-eli-mercer",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-night-manager-eli-mercer",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "nova",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-1",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_01",
+      "beatTitle": "Day 01 - First Breach",
       "channel": "EMAIL",
-      "text": "Hand me the access list and I return everyone alive. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-5.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-1.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quartermaster",
+          "voiceId": "piper-midnight-lockbox-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quartermaster",
+          "voiceId": "elv-midnight-lockbox-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -417,30 +1362,30 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
       ]
     },
     {
-      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-6",
-      "profileId": "voice.midnight-lockbox.the-quartermaster",
-      "beatId": "beat-6",
-      "beatTitle": "Lockbox Debrief",
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-2",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
       "channel": "EMAIL",
-      "text": "Hand me the access list and I return everyone alive. (Personal Confrontation)",
-      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-6.wav",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-2.wav",
       "providers": [
         {
           "provider": "PIPER",
-          "voiceId": "piper-the-quartermaster",
+          "voiceId": "piper-midnight-lockbox-field-desk",
           "model": "en_US-lessac-high",
           "notes": "Primary local/offline synthesis path."
         },
         {
           "provider": "ELEVENLABS",
-          "voiceId": "elv-the-quartermaster",
+          "voiceId": "elv-midnight-lockbox-field-desk",
           "model": "eleven_multilingual_v2",
           "notes": "Premium high-fidelity fallback."
         },
@@ -452,7 +1397,917 @@
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-3",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-4",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_04",
+      "beatTitle": "Day 04 - Unscheduled Drop",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-5",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-6",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-7",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_07",
+      "beatTitle": "Day 07 - Trust Fork",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-8",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-9",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-10",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-11",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-12",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-13",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-14",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-15",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-16",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-17",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to call log voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-18",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to voicemail transcript keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-19",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to security footage still freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-20",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to crime scene photo drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-21",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to marked map voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-22",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to receipt keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-23",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to medical record freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-24",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to shipping manifest drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-24.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-25",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to police report voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-25.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-26",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to handwritten note keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-26.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-27",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to journal entry freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-27.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.midnight-lockbox-field-desk.clip-28",
+      "profileId": "voice.midnight-lockbox.midnight-lockbox-field-desk",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "EMAIL",
+      "text": "Public framing window is narrowing. If you want this to land as investigation instead of rumor, give one verifiable detail anchored to text message screenshot drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/midnight-lockbox-field-desk-28.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-midnight-lockbox-field-desk",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-midnight-lockbox-field-desk",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "alloy",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -461,10 +2316,10 @@
     {
       "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-1",
       "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
-      "beatId": "beat-2",
-      "beatTitle": "Lock Cylinder Swap",
-      "channel": "TELEGRAM",
-      "text": "Cross-reference this before dawn: Keypad access hash export.",
+      "beatId": "day_02",
+      "beatTitle": "Day 02 - Record Fracture",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around lock cylinder, but I need to know whether you trust this lead or think it is bait tied to handwritten note keypad access hash export.",
       "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-1.wav",
       "providers": [
         {
@@ -481,7 +2336,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -496,10 +2351,10 @@
     {
       "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-2",
       "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
-      "beatId": "beat-3",
-      "beatTitle": "Morning Leak",
-      "channel": "TELEGRAM",
-      "text": "By morning, cropped footage of your team appears online before your own upload completes. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_05",
+      "beatTitle": "Day 05 - Shadow Contact",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around night memo, but I need to know whether you trust this lead or think it is bait tied to call log voicemail waveform anomaly.",
       "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-2.wav",
       "providers": [
         {
@@ -516,7 +2371,7 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -531,10 +2386,10 @@
     {
       "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-3",
       "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
-      "beatId": "beat-6",
-      "beatTitle": "Lockbox Debrief",
-      "channel": "SIMULATED_SITE",
-      "text": "Cross-reference this before dawn: Keypad access hash export.",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around lock cylinder, but I need to know whether you trust this lead or think it is bait tied to crime scene photo drain tunnel pressure map.",
       "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-3.wav",
       "providers": [
         {
@@ -551,7 +2406,217 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-4",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "SMS",
+      "text": "I can confirm movement around night memo, but I need to know whether you trust this lead or think it is bait tied to medical record freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-5",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around lock cylinder, but I need to know whether you trust this lead or think it is bait tied to handwritten note keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-6",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around night memo, but I need to know whether you trust this lead or think it is bait tied to call log voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-7",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around lock cylinder, but I need to know whether you trust this lead or think it is bait tied to crime scene photo drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-8",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around night memo, but I need to know whether you trust this lead or think it is bait tied to medical record freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Matthew",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.courier-witness-sia-rowan.clip-9",
+      "profileId": "voice.midnight-lockbox.courier-witness-sia-rowan",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "I can confirm movement around lock cylinder, but I need to know whether you trust this lead or think it is bait tied to handwritten note keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/courier-witness-sia-rowan-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-courier-witness-sia-rowan",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-courier-witness-sia-rowan",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "coral",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
@@ -566,10 +2631,10 @@
     {
       "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-1",
       "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
-      "beatId": "beat-3",
-      "beatTitle": "Morning Leak",
-      "channel": "EMAIL",
-      "text": "Cross-reference this before dawn: Freight elevator camera still.",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around drain tunnel, but I need to know whether you trust this lead or think it is bait tied to journal entry freight elevator camera stil.",
       "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-1.wav",
       "providers": [
         {
@@ -586,13 +2651,13 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joey",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }
@@ -601,10 +2666,10 @@
     {
       "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-2",
       "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
-      "beatId": "beat-4",
-      "beatTitle": "Noon Ultimatum",
-      "channel": "EMAIL",
-      "text": "The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness. Maintain chain-of-custody and keep your channel open.",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "I can confirm movement around key blank, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript keypad access hash export.",
       "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-2.wav",
       "providers": [
         {
@@ -621,13 +2686,1063 @@
         },
         {
           "provider": "OPENAI",
-          "voiceId": "alloy",
+          "voiceId": "shimmer",
           "model": "gpt-4o-mini-tts",
           "notes": "Fast cloud fallback."
         },
         {
           "provider": "POLLY",
-          "voiceId": "Matthew",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-3",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around drain tunnel, but I need to know whether you trust this lead or think it is bait tied to marked map voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-4",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around key blank, but I need to know whether you trust this lead or think it is bait tied to shipping manifest drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-5",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "SIGNAL",
+      "text": "I can confirm movement around drain tunnel, but I need to know whether you trust this lead or think it is bait tied to journal entry freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-6",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "TELEGRAM",
+      "text": "I can confirm movement around key blank, but I need to know whether you trust this lead or think it is bait tied to voicemail transcript keypad access hash export.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-7",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "SMS",
+      "text": "I can confirm movement around drain tunnel, but I need to know whether you trust this lead or think it is bait tied to marked map voicemail waveform anomaly.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-8",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "VOICE_MESSAGE",
+      "text": "I can confirm movement around key blank, but I need to know whether you trust this lead or think it is bait tied to shipping manifest drain tunnel pressure map.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.locksmith-omar-hale.clip-9",
+      "profileId": "voice.midnight-lockbox.locksmith-omar-hale",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "WHATSAPP",
+      "text": "I can confirm movement around drain tunnel, but I need to know whether you trust this lead or think it is bait tied to journal entry freight elevator camera stil.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/locksmith-omar-hale-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-locksmith-omar-hale",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-locksmith-omar-hale",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "shimmer",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joey",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-1",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_03",
+      "beatTitle": "Day 03 - Witness Contradiction",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry freight elevator camera stil evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-1.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-2",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_06",
+      "beatTitle": "Day 06 - Archive Breach",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript keypad access hash export evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-2.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-3",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_08",
+      "beatTitle": "Day 08 - Signal Contamination",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo drain tunnel pressure map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-3.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-4",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_09",
+      "beatTitle": "Day 09 - Trap Site",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map voicemail waveform anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-4.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-5",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_10",
+      "beatTitle": "Day 10 - Protection Leak",
+      "channel": "SMS",
+      "text": "You keep calling receipt keypad access hash export evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-5.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-6",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_11",
+      "beatTitle": "Day 11 - Impersonation Window",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling medical record freight elevator camera stil evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-6.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-7",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_12",
+      "beatTitle": "Day 12 - Impossible Record",
+      "channel": "SMS",
+      "text": "You keep calling shipping manifest drain tunnel pressure map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-7.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-8",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_13",
+      "beatTitle": "Day 13 - Evidence Tamper",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling police report voicemail waveform anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-8.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-9",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_14",
+      "beatTitle": "Day 14 - Pressure Call",
+      "channel": "SMS",
+      "text": "You keep calling handwritten note keypad access hash export evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-9.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-10",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_15",
+      "beatTitle": "Day 15 - Recovered Tape",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling journal entry freight elevator camera stil evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-10.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-11",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_16",
+      "beatTitle": "Day 16 - Hidden Network",
+      "channel": "SMS",
+      "text": "You keep calling text message screenshot drain tunnel pressure map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-11.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-12",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_17",
+      "beatTitle": "Day 17 - Missing Minutes",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling call log voicemail waveform anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-12.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-13",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_18",
+      "beatTitle": "Day 18 - Panic Wave",
+      "channel": "SMS",
+      "text": "You keep calling voicemail transcript keypad access hash export evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-13.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-14",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_19",
+      "beatTitle": "Day 19 - Pattern Marks",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling security footage still freight elevator camera stil evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-14.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-15",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_20",
+      "beatTitle": "Day 20 - Reroute Trace",
+      "channel": "SMS",
+      "text": "You keep calling crime scene photo drain tunnel pressure map evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-15.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-16",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_21",
+      "beatTitle": "Day 21 - Collapsed Witness",
+      "channel": "VOICE_MESSAGE",
+      "text": "You keep calling marked map voicemail waveform anomaly evidence. I call it the first line of your eventual confession.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-16.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-17",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_22",
+      "beatTitle": "Day 22 - Ultimatum Night",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether unit 331 becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-17.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-18",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_23",
+      "beatTitle": "Day 23 - Identity Reveal",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether night memo becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-18.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-19",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_24",
+      "beatTitle": "Day 24 - Legacy File",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether key blank becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-19.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-20",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_25",
+      "beatTitle": "Day 25 - Chronology Hearing",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether storage corridor becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-20.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-21",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_26",
+      "beatTitle": "Day 26 - Compromise Offer",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether lock cylinder becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-21.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-22",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_27",
+      "beatTitle": "Day 27 - Countdown Board",
+      "channel": "VOICE_MESSAGE",
+      "text": "Final warning: the branch you choose now will decide whether drain tunnel becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-22.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
+          "model": "neural",
+          "notes": "Enterprise cloud fallback."
+        }
+      ]
+    },
+    {
+      "clipId": "voice.midnight-lockbox.the-quartermaster.clip-23",
+      "profileId": "voice.midnight-lockbox.the-quartermaster",
+      "beatId": "day_28",
+      "beatTitle": "Day 28 - Final Reckoning",
+      "channel": "SMS",
+      "text": "Final warning: the branch you choose now will decide whether unit 331 becomes truth, containment, or compromise.",
+      "targetPath": "assets/audio/voices/midnight-lockbox/the-quartermaster-23.wav",
+      "providers": [
+        {
+          "provider": "PIPER",
+          "voiceId": "piper-the-quartermaster",
+          "model": "en_US-lessac-high",
+          "notes": "Primary local/offline synthesis path."
+        },
+        {
+          "provider": "ELEVENLABS",
+          "voiceId": "elv-the-quartermaster",
+          "model": "eleven_multilingual_v2",
+          "notes": "Premium high-fidelity fallback."
+        },
+        {
+          "provider": "OPENAI",
+          "voiceId": "onyx",
+          "model": "gpt-4o-mini-tts",
+          "notes": "Fast cloud fallback."
+        },
+        {
+          "provider": "POLLY",
+          "voiceId": "Joanna",
           "model": "neural",
           "notes": "Enterprise cloud fallback."
         }

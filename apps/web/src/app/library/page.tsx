@@ -1,10 +1,18 @@
-﻿import { LeadCaptureForm } from '../components/lead-capture-form';
+import { LeadCaptureForm } from '../components/lead-capture-form';
 import { LibraryLivePreview } from '../components/library-live-preview';
+import { loadStoryArtworkSelection } from '../lib/agent-army-artwork.server';
 import { getLaunchCases } from '../lib/launch-catalog';
 
 const stories = getLaunchCases();
 
-export default function LibraryPage(): JSX.Element {
+export default async function LibraryPage(): Promise<JSX.Element> {
+  const storyCards = await Promise.all(
+    stories.map(async (story) => ({
+      story,
+      artwork: await loadStoryArtworkSelection(story.storyId)
+    }))
+  );
+
   return (
     <main className="container page-stack">
       <section className="panel section-shell library-hero">
@@ -36,9 +44,33 @@ export default function LibraryPage(): JSX.Element {
       </section>
 
       <section className="library-grid">
-        {stories.map((story) => (
+        {storyCards.map(({ story, artwork }) => (
           <article key={story.storyId} className="library-card">
-            <img src={story.coverImagePath} alt={`${story.storyTitle} card art`} loading="lazy" />
+            {artwork.cover?.public_path ? (
+              <img src={artwork.cover.public_path} alt={`${story.storyTitle} card art`} loading="lazy" />
+            ) : (
+              <div
+                className="panel"
+                style={{
+                  minHeight: 320,
+                  display: 'grid',
+                  placeItems: 'center',
+                  textAlign: 'center',
+                  padding: 24,
+                  background: 'rgba(36, 17, 17, 0.34)',
+                  border: '1px solid rgba(188, 84, 84, 0.35)'
+                }}
+              >
+                <div>
+                  <strong>Verified artwork pending rerun</strong>
+                  <p className="muted" style={{ marginBottom: 0 }}>
+                    {artwork.issueCount > 0
+                      ? `${artwork.issueCount} generation issues are queued for retry.`
+                      : 'No real image asset is currently available for this story.'}
+                  </p>
+                </div>
+              </div>
+            )}
             <div>
               <p className="story-subgenre">
                 {story.subgenre}
@@ -53,6 +85,10 @@ export default function LibraryPage(): JSX.Element {
                 {story.timelineLabel} - Target Session: {story.targetSessionMinutes} min
               </p>
               <p className="muted">Score: {story.track.title}</p>
+              <p className="muted">
+                Verified visuals: {artwork.verifiedImageCount}
+                {artwork.issueCount > 0 ? ` / Issues: ${artwork.issueCount}` : ''}
+              </p>
               <p className="warning-line">Warnings: {story.warnings.join(', ')}</p>
               <p className="muted">{story.spotlight}</p>
               <div className="inline-links">
@@ -65,10 +101,10 @@ export default function LibraryPage(): JSX.Element {
       </section>
 
       <LibraryLivePreview
-        stories={stories.map((story) => ({
+        stories={storyCards.map(({ story, artwork }) => ({
           storyId: story.storyId,
           storyTitle: story.storyTitle,
-          coverImagePath: story.coverImagePath,
+          coverImagePath: artwork.cover?.public_path ?? null,
           playPath: story.playPath
         }))}
       />

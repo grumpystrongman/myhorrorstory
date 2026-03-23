@@ -1,7 +1,8 @@
-﻿import { readFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { notFound } from 'next/navigation';
 import { getTrackById } from '@myhorrorstory/music';
+import { loadStoryArtworkSelection } from '../../../lib/agent-army-artwork.server';
 import type { DramaPackage } from '../../../lib/play-session';
 import { getLaunchCaseById } from '../../../lib/launch-catalog';
 
@@ -38,16 +39,40 @@ export default async function StoryIntroPage({ params }: StoryIntroPageProps): P
   }
 
   const dramaPackage = await loadDramaPackage(storyId);
+  const artwork = await loadStoryArtworkSelection(storyId);
   const globalTrack = getTrackById('platform-overture');
   const briefing = dramaPackage?.playerBriefing;
   const campaignWeeks = dramaPackage?.campaignPlan?.weeks ?? [];
   const npcDossiers = dramaPackage?.npcDossiers ?? [];
-  const visualDeck = dramaPackage?.visualDeck?.assets ?? [];
 
   return (
     <main className="container page-stack">
       <section className="panel intro-hero">
-        <img src={story.heroImagePath} alt={`${story.storyTitle} story key art`} />
+        {artwork.hero?.public_path ? (
+          <img src={artwork.hero.public_path} alt={`${story.storyTitle} story key art`} />
+        ) : (
+          <div
+            className="panel"
+            style={{
+              minHeight: 360,
+              display: 'grid',
+              placeItems: 'center',
+              textAlign: 'center',
+              padding: 24,
+              background: 'rgba(36, 17, 17, 0.34)',
+              border: '1px solid rgba(188, 84, 84, 0.35)'
+            }}
+          >
+            <div>
+              <strong>Verified artwork pending rerun</strong>
+              <p className="muted" style={{ marginBottom: 0 }}>
+                {artwork.issueCount > 0
+                  ? `${artwork.issueCount} generation issues are queued for retry.`
+                  : 'No real image asset is currently available for this story.'}
+              </p>
+            </div>
+          </div>
+        )}
         <div>
           <p className="kicker">Story Intro</p>
           <h1 className="section-title">{story.storyTitle}</h1>
@@ -87,6 +112,7 @@ export default async function StoryIntroPage({ params }: StoryIntroPageProps): P
           <p className="muted">Mood: {story.track.mood}</p>
           <p className="muted">BPM: {story.track.bpm}</p>
           <p className="muted">Global Theme: {globalTrack?.title ?? 'MHS Platform Overture'}</p>
+          <p className="muted">Verified visuals: {artwork.verifiedImageCount}</p>
           <p className="muted" style={{ marginBottom: 0 }}>
             Opening Incident: {briefing?.openingIncident ?? story.hook}
           </p>
@@ -168,26 +194,23 @@ export default async function StoryIntroPage({ params }: StoryIntroPageProps): P
         <span className="surface-tag">Visual Dossier</span>
         <h2 className="section-title">Scene And Evidence Frames</h2>
         <div className="visual-gallery-grid">
-          {(visualDeck.length > 0
-            ? visualDeck.slice(0, 9)
-            : [
-                {
-                  id: 'fallback-visual',
-                  path: story.coverImagePath,
-                  title: `${story.storyTitle} key art`,
-                  promptHint: 'Primary visual preview'
-                }
-              ]
-          ).map((asset) => (
-            <figure key={asset.id} className="visual-gallery-item">
-              <img src={asset.path} alt={asset.title} loading="lazy" />
+          {artwork.gallery.map((asset) => (
+            <figure key={asset.asset_id} className="visual-gallery-item">
+              <img src={asset.public_path ?? ''} alt={asset.title} loading="lazy" />
               <figcaption>
                 <strong>{asset.title}</strong>
-                <span>{asset.promptHint}</span>
+                <span>
+                  {asset.asset_type} · {asset.tool_used ?? 'verified asset'}
+                </span>
               </figcaption>
             </figure>
           ))}
         </div>
+        {artwork.gallery.length === 0 ? (
+          <p className="muted" style={{ marginBottom: 0 }}>
+            No verified visual assets are currently available for this story.
+          </p>
+        ) : null}
       </section>
 
       <section className="panel section-shell">

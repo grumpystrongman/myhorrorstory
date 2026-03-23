@@ -9,16 +9,32 @@
       "modality": "audio",
       "title": "Codex Control Room Ambient Loop",
       "prompt_used": "Surface Codex Control Room (/codex) objective: Provide credible live-ops control surface for deep play.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-codex-ambient-loop-v1.wav",
       "public_path": "/agent-army/website/audio/web-codex-ambient-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:11:54.721Z",
-      "checksum": "adb3f67811d7ce11cc5ceb72d587b2ef72acdea8",
-      "file_size": 15698858,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:06:27.065Z",
+      "checksum": "29e42eb6a29a86425e6eaa0fc1fb4eeeba85484c",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 265,
+          "high": 1377,
+          "shimmer": 2517,
+          "pulseHz": 1.3,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "website",
@@ -36,7 +52,12 @@
       "created_at": "2026-03-21T16:50:08.273Z",
       "checksum": "1c5b191d115a57598c87c0e877346b09b61388b1",
       "file_size": 2542516,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "website",
@@ -54,7 +75,8 @@
       "created_at": "2026-03-21T16:14:55.235Z",
       "checksum": "ddebe545ce79fbb0b55d7deeb7eb82705992e54f",
       "file_size": 854,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -72,7 +94,8 @@
       "created_at": "2026-03-21T16:15:49.454Z",
       "checksum": "4dc36082344019dc0e1497d5614c046a2514f610",
       "file_size": 1057,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -90,7 +113,12 @@
       "created_at": "2026-03-21T16:50:33.253Z",
       "checksum": "a14466e00d6859bd0f26170cbbb7aaf419a2bfdb",
       "file_size": 2830367,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "website",
@@ -99,16 +127,32 @@
       "modality": "audio",
       "title": "Landing Ambient Loop",
       "prompt_used": "Surface Landing (/) objective: Commercial first impression and conversion confidence.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-landing-ambient-loop-v1.wav",
       "public_path": "/agent-army/website/audio/web-landing-ambient-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:11:48.348Z",
-      "checksum": "d7e335fdb2e4cd3c1a31f34c0ffe575cf230cf51",
-      "file_size": 15698858,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:06:21.308Z",
+      "checksum": "99dd3fbfb8b3b6f7883d0ae7284e73bd1658a5ba",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 40,
+          "mid": 253,
+          "high": 1301,
+          "shimmer": 3801,
+          "pulseHz": 1.3,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "website",
@@ -126,7 +170,12 @@
       "created_at": "2026-03-21T16:48:20.225Z",
       "checksum": "cc331fb1187692a1b1b4a4a33ca00f2843cea4dd",
       "file_size": 2593755,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "website",
@@ -144,7 +193,8 @@
       "created_at": "2026-03-21T16:14:55.217Z",
       "checksum": "773e36318eac62a6f310bfc9fbb9112b0cda55d7",
       "file_size": 827,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -162,7 +212,8 @@
       "created_at": "2026-03-21T16:15:49.433Z",
       "checksum": "34bf9e9d8df903f72097804f52dc1e2bde5556ca",
       "file_size": 1017,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -180,7 +231,12 @@
       "created_at": "2026-03-21T16:48:52.151Z",
       "checksum": "f2c88f91dee776123333750e54750a75043e2484",
       "file_size": 2935699,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "website",
@@ -189,16 +245,32 @@
       "modality": "audio",
       "title": "Case Library Ambient Loop",
       "prompt_used": "Surface Case Library (/library) objective: Browse and select stories with premium visual hierarchy.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-library-ambient-loop-v1.wav",
       "public_path": "/agent-army/website/audio/web-library-ambient-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:11:50.123Z",
-      "checksum": "d16683c1c14527fbfc39182b8804ed564f2636a6",
-      "file_size": 15699378,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:06:22.922Z",
+      "checksum": "b533e7c1435be700f904f9f931a431473c75e177",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 46,
+          "mid": 253,
+          "high": 917,
+          "shimmer": 2697,
+          "pulseHz": 1.6333333333333333,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "website",
@@ -216,7 +288,12 @@
       "created_at": "2026-03-21T16:48:45.966Z",
       "checksum": "bca78066bb44863706cd9612dd34238d12a93e48",
       "file_size": 2577848,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "website",
@@ -234,7 +311,8 @@
       "created_at": "2026-03-21T16:14:55.223Z",
       "checksum": "d9776bbb5b2f0528cf1d25e919af263f877f0831",
       "file_size": 846,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -252,7 +330,8 @@
       "created_at": "2026-03-21T16:15:49.440Z",
       "checksum": "9ea5efc629813cb377041249f20f23408ed4097d",
       "file_size": 1041,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -270,7 +349,12 @@
       "created_at": "2026-03-21T16:48:52.655Z",
       "checksum": "365a584a9c7419ea27a27cdd7ac1ac1f0b1bdb70",
       "file_size": 2700878,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "website",
@@ -279,16 +363,32 @@
       "modality": "audio",
       "title": "Mobile Home Ambient Loop",
       "prompt_used": "Surface Mobile Home (mobile://home) objective: Mobile-first discovery and campaign continuity.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-mobile-home-ambient-loop-v1.wav",
       "public_path": "/agent-army/website/audio/web-mobile-home-ambient-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:11:56.135Z",
-      "checksum": "80015ace0edf7b3f56fcdefe4129bdb154e328ff",
-      "file_size": 15699398,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:06:28.579Z",
+      "checksum": "e716040988d4476f207556b32d12c5855fc154a7",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 46,
+          "mid": 200,
+          "high": 1248,
+          "shimmer": 3148,
+          "pulseHz": 1.3833333333333333,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "website",
@@ -306,7 +406,12 @@
       "created_at": "2026-03-21T16:50:30.040Z",
       "checksum": "4f7efdfe043b2d7b5fec44d481632020131a8e64",
       "file_size": 2657245,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "website",
@@ -324,7 +429,8 @@
       "created_at": "2026-03-21T16:14:55.239Z",
       "checksum": "a80af9485acce0da3a659a48b2881fee41eec107",
       "file_size": 844,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -342,7 +448,8 @@
       "created_at": "2026-03-21T16:15:49.460Z",
       "checksum": "6956e50961ba1ea3c73b75f4ff1ebd775600c0b4",
       "file_size": 1034,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -360,7 +467,12 @@
       "created_at": "2026-03-21T16:50:45.676Z",
       "checksum": "983fabfa9d13c5ca40afe07cbed3b41f6213bb89",
       "file_size": 2849727,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "website",
@@ -369,16 +481,32 @@
       "modality": "audio",
       "title": "Mobile Session Ambient Loop",
       "prompt_used": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-mobile-session-ambient-loop-v1.wav",
       "public_path": "/agent-army/website/audio/web-mobile-session-ambient-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:11:57.435Z",
-      "checksum": "9bb59e6030fd14702549236032a9df48fc7b8945",
-      "file_size": 15700314,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:06:30.073Z",
+      "checksum": "19ab49c16d6804003d807bf1bd5e481265207cf0",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 51,
+          "mid": 201,
+          "high": 929,
+          "shimmer": 2669,
+          "pulseHz": 1.9666666666666668,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "website",
@@ -396,7 +524,12 @@
       "created_at": "2026-03-21T16:50:53.397Z",
       "checksum": "9a1c7626fc63b2a22c9ae9b9316a807f0a71decb",
       "file_size": 2494681,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "website",
@@ -414,7 +547,8 @@
       "created_at": "2026-03-21T16:14:55.243Z",
       "checksum": "15ec7f3e90c0882d6a9fe969fed4a4e132d0a52c",
       "file_size": 863,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -432,7 +566,8 @@
       "created_at": "2026-03-21T16:15:49.465Z",
       "checksum": "3349f1a5ca13784f1b419fd98d8c2478bea2fba2",
       "file_size": 1053,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -450,7 +585,12 @@
       "created_at": "2026-03-21T16:51:29.920Z",
       "checksum": "890b6a6f48d598f2f10561778b06332cee0fe8a0",
       "file_size": 2696470,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "website",
@@ -459,16 +599,32 @@
       "modality": "audio",
       "title": "Onboarding Ambient Loop",
       "prompt_used": "Surface Onboarding (/onboarding) objective: Explain player role and set expectations with high trust.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-onboarding-ambient-loop-v1.wav",
       "public_path": "/agent-army/website/audio/web-onboarding-ambient-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:11:51.813Z",
-      "checksum": "4d36890250491ef121fa43e9cb4c718d9c289a0e",
-      "file_size": 15698806,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:06:24.397Z",
+      "checksum": "f5af4f22d00ddafdd8269903c0c705c88d2c120c",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 52,
+          "mid": 191,
+          "high": 1207,
+          "shimmer": 2947,
+          "pulseHz": 1.4666666666666668,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "website",
@@ -486,7 +642,12 @@
       "created_at": "2026-03-21T16:49:17.816Z",
       "checksum": "a49ad2a90dc879c027f305d194cb5ebeb364ffd7",
       "file_size": 2409775,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "website",
@@ -504,7 +665,8 @@
       "created_at": "2026-03-21T16:14:55.227Z",
       "checksum": "2e163301621db4bc2cd34be0e546c9f9376fa4c9",
       "file_size": 849,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -522,7 +684,8 @@
       "created_at": "2026-03-21T16:15:49.444Z",
       "checksum": "bcc1bc642187edf892b6041053e02a08516394a0",
       "file_size": 1039,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -540,7 +703,12 @@
       "created_at": "2026-03-21T16:49:45.199Z",
       "checksum": "96971b1f806af75451d7f1ec184427e8f2385ce2",
       "file_size": 2623716,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "website",
@@ -549,16 +717,32 @@
       "modality": "audio",
       "title": "Play Session Ambient Loop",
       "prompt_used": "Surface Play Session (/play) objective: Sustain long-form immersion while preserving readability.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-play-ambient-loop-v1.wav",
       "public_path": "/agent-army/website/audio/web-play-ambient-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:11:53.445Z",
-      "checksum": "9e3f0bcdc663adc63a9d8e653762bdc68806c494",
-      "file_size": 15699254,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:06:25.726Z",
+      "checksum": "cd95c6f94565098ae076f0a94d0361749098cd70",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 53,
+          "mid": 252,
+          "high": 1012,
+          "shimmer": 2792,
+          "pulseHz": 1.7166666666666668,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "website",
@@ -576,7 +760,12 @@
       "created_at": "2026-03-21T16:49:44.327Z",
       "checksum": "bcabcfd61156f1dcf70e11142d7d8f86d0f6edaf",
       "file_size": 2474510,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "website",
@@ -594,7 +783,8 @@
       "created_at": "2026-03-21T16:14:55.231Z",
       "checksum": "e5a9b04a4bbb4bf4118af24fa871296c71048317",
       "file_size": 841,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -612,7 +802,8 @@
       "created_at": "2026-03-21T16:15:49.449Z",
       "checksum": "5ccb4b2ca37e00696c5e21066d5cca8d2df2b410",
       "file_size": 1039,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "website",
@@ -630,7 +821,12 @@
       "created_at": "2026-03-21T16:49:40.399Z",
       "checksum": "09ad1ba972fa4808c0727ab59dbb6c2e8f3d3761",
       "file_size": 2431495,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     }
   ],
   "failures": [
@@ -639,70 +835,70 @@
       "asset_id": "web-codex-motion-teaser",
       "asset_type": "surface_motion_teaser",
       "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
+      "generation_status": "failed",
+      "error": "no verified image sources available for video montage",
       "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-codex-motion-teaser-v1.mp4",
-      "last_attempt_at": null
+      "last_attempt_at": "2026-03-23T17:18:35.686Z"
     },
     {
       "story_id": "website",
       "asset_id": "web-landing-motion-teaser",
       "asset_type": "surface_motion_teaser",
       "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
+      "generation_status": "failed",
+      "error": "no verified image sources available for video montage",
       "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-landing-motion-teaser-v1.mp4",
-      "last_attempt_at": null
+      "last_attempt_at": "2026-03-23T17:18:35.686Z"
     },
     {
       "story_id": "website",
       "asset_id": "web-library-motion-teaser",
       "asset_type": "surface_motion_teaser",
       "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
+      "generation_status": "failed",
+      "error": "no verified image sources available for video montage",
       "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-library-motion-teaser-v1.mp4",
-      "last_attempt_at": null
+      "last_attempt_at": "2026-03-23T17:18:35.686Z"
     },
     {
       "story_id": "website",
       "asset_id": "web-mobile-home-motion-teaser",
       "asset_type": "surface_motion_teaser",
       "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
+      "generation_status": "failed",
+      "error": "no verified image sources available for video montage",
       "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-mobile-home-motion-teaser-v1.mp4",
-      "last_attempt_at": null
+      "last_attempt_at": "2026-03-23T17:18:35.686Z"
     },
     {
       "story_id": "website",
       "asset_id": "web-mobile-session-motion-teaser",
       "asset_type": "surface_motion_teaser",
       "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
+      "generation_status": "failed",
+      "error": "no verified image sources available for video montage",
       "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-mobile-session-motion-teaser-v1.mp4",
-      "last_attempt_at": null
+      "last_attempt_at": "2026-03-23T17:18:35.686Z"
     },
     {
       "story_id": "website",
       "asset_id": "web-onboarding-motion-teaser",
       "asset_type": "surface_motion_teaser",
       "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
+      "generation_status": "failed",
+      "error": "no verified image sources available for video montage",
       "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-onboarding-motion-teaser-v1.mp4",
-      "last_attempt_at": null
+      "last_attempt_at": "2026-03-23T17:18:35.686Z"
     },
     {
       "story_id": "website",
       "asset_id": "web-play-motion-teaser",
       "asset_type": "surface_motion_teaser",
       "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
+      "generation_status": "failed",
+      "error": "no verified image sources available for video montage",
       "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-play-motion-teaser-v1.mp4",
-      "last_attempt_at": null
+      "last_attempt_at": "2026-03-23T17:18:35.686Z"
     }
   ]
 }

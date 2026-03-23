@@ -1,10 +1,18 @@
-﻿import { LeadCaptureForm } from './components/lead-capture-form';
+import { LeadCaptureForm } from './components/lead-capture-form';
+import { loadStoryArtworkSelection } from './lib/agent-army-artwork.server';
 import { getLaunchCases } from './lib/launch-catalog';
 
 const launchCases = getLaunchCases();
 const featuredCases = launchCases.slice(0, 3);
 
-export default function HomePage(): JSX.Element {
+export default async function HomePage(): Promise<JSX.Element> {
+  const featuredStories = await Promise.all(
+    featuredCases.map(async (story) => ({
+      story,
+      artwork: await loadStoryArtworkSelection(story.storyId)
+    }))
+  );
+
   return (
     <main className="container page-stack">
       <header className="hero-shell">
@@ -83,9 +91,33 @@ export default function HomePage(): JSX.Element {
         <span className="surface-tag">Featured Cases</span>
         <h2 className="section-title">Launch Spotlight</h2>
         <div className="featured-grid">
-          {featuredCases.map((story) => (
+          {featuredStories.map(({ story, artwork }) => (
             <article key={story.storyId} className="featured-card">
-              <img src={story.coverImagePath} alt={`${story.storyTitle} key art`} loading="lazy" />
+              {artwork.cover?.public_path ? (
+                <img src={artwork.cover.public_path} alt={`${story.storyTitle} key art`} loading="lazy" />
+              ) : (
+                <div
+                  className="panel"
+                  style={{
+                    minHeight: 260,
+                    display: 'grid',
+                    placeItems: 'center',
+                    textAlign: 'center',
+                    padding: 24,
+                    background: 'rgba(36, 17, 17, 0.34)',
+                    border: '1px solid rgba(188, 84, 84, 0.35)'
+                  }}
+                >
+                  <div>
+                    <strong>Verified artwork pending rerun</strong>
+                    <p className="muted" style={{ marginBottom: 0 }}>
+                      {artwork.issueCount > 0
+                        ? `${artwork.issueCount} generation issues are queued for retry.`
+                        : 'No real image asset is currently available for this story.'}
+                    </p>
+                  </div>
+                </div>
+              )}
               <div className="featured-copy">
                 <p className="story-subgenre">
                   {story.subgenre}
@@ -95,6 +127,10 @@ export default function HomePage(): JSX.Element {
                 <p>{story.hook}</p>
                 <p className="muted">
                   {story.timelineLabel} · {story.track.title}
+                </p>
+                <p className="muted">
+                  Verified visuals: {artwork.verifiedImageCount}
+                  {artwork.issueCount > 0 ? ` · Issues: ${artwork.issueCount}` : ''}
                 </p>
                 <div className="inline-links">
                   <a href={story.introPath}>Story Intro</a>
@@ -139,4 +175,3 @@ export default function HomePage(): JSX.Element {
     </main>
   );
 }
-

@@ -343,7 +343,7 @@ export default async function ArtworkPage(): Promise<JSX.Element> {
                       </form>
                     ) : (
                       <p className="muted" style={{ margin: 0 }}>
-                        Video generation is disabled until a real video backend is configured.
+                        This asset is unavailable or failed validation. Retry after fixing the generator or source inputs.
                       </p>
                     )}
                   </article>

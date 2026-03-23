@@ -9,16 +9,66 @@
       "modality": "image",
       "title": "Static Between Stations - Signal One Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Beat: Signal One (Contact). Narrative: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: A timestamped dispatch from a dead line arrives through SMS, email, and Telegram at once.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-1-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-1-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:38.042Z",
-      "checksum": "830d36ed531a378e121d653e1fe8b23cedb8ee8b",
-      "file_size": 982398,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:58:44.941Z",
+      "checksum": "4e2c8690e262625acc6d30938c35b5f941541cb8",
+      "file_size": 2947275,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Static Between Stations - Signal One Beat Transition",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Beat: Signal One. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:03:39.780Z",
+      "checksum": "1ee61b6205f32b2e14469da065f2ca855e2884b2",
+      "file_size": 4378450,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn briefing. Signal One Beat Transition is now active. Start with spectrogram of confession burst, then compare every new message against a dead rail line broadcasts private confessions in the players' own voices.. If The Curator of Static reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.982625,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 89,
+            "lowpassHz": 7101,
+            "presenceGainDb": -0.27199999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -27,16 +77,66 @@
       "modality": "image",
       "title": "Static Between Stations - Escalation Signal Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Beat: Escalation Signal (Contact). Narrative: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-2-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-2-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:38.071Z",
-      "checksum": "a4484729479ed2c453053882d9bf4e92d8f2aa62",
-      "file_size": 985358,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:58:59.691Z",
+      "checksum": "0ae1e3c852d1ebadb5e20dfe7cedeaa3614c0be5",
+      "file_size": 2534612,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Static Between Stations - Escalation Signal Beat Transition",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:03:55.807Z",
+      "checksum": "77b40d8cae0bda993695fbfa819387c4ee2e898d",
+      "file_size": 4419329,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn briefing. Escalation Signal Beat Transition is now active. Start with spectrogram of confession burst, then compare every new message against a dead rail line broadcasts private confessions in the players' own voices.. If The Curator of Static reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.00149,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 89,
+            "lowpassHz": 7064,
+            "presenceGainDb": -0.512
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -45,16 +145,66 @@
       "modality": "image",
       "title": "Static Between Stations - Trust Fracture Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-3-beat-scene-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-3-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-3-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:41.209Z",
-      "checksum": "57693c489056a38d9046c0c95e2cfa28ce430c84",
-      "file_size": 981714,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:59:08.557Z",
+      "checksum": "fd2c0792329f061b712fbe4009a5d3ee22b86d86",
+      "file_size": 2820599,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Static Between Stations - Trust Fracture Beat Transition",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:04:03.143Z",
+      "checksum": "9a135708e0163895a125c490c9123c3e359bf5e1",
+      "file_size": 4313780,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-3-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn briefing. Trust Fracture Beat Transition is now active. Start with spectrogram of confession burst, then compare every new message against a dead rail line broadcasts private confessions in the players' own voices.. If The Curator of Static reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 1.012935,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 78,
+            "lowpassHz": 7415,
+            "presenceGainDb": -0.432
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -63,16 +213,66 @@
       "modality": "image",
       "title": "Static Between Stations - Ultimatum Window Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:41.209Z",
-      "checksum": "5b0a34f85f69f67a7622e7a7f16be6c2ba4900e8",
-      "file_size": 984837,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:59:22.695Z",
+      "checksum": "9af2e4104d118a7778d55f65ec17f33b7d43606a",
+      "file_size": 2385212,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Static Between Stations - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:04:11.208Z",
+      "checksum": "02825bbf573e424e2ec40d79d494ef71d1917341",
+      "file_size": 4153129,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn briefing. Ultimatum Window Beat Transition is now active. Start with spectrogram of confession burst, then compare every new message against a dead rail line broadcasts private confessions in the players' own voices.. If The Curator of Static reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.96544,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 82,
+            "lowpassHz": 7058,
+            "presenceGainDb": 0.04800000000000004
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -81,16 +281,66 @@
       "modality": "image",
       "title": "Static Between Stations - Confrontation Protocol Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-5-beat-scene-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-5-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-5-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-5-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:41.253Z",
-      "checksum": "c5a08382a0dc148d4712abe54f170ff8e200495f",
-      "file_size": 990346,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:59:23.718Z",
+      "checksum": "a48997da4a8519dadbc82924ceb93b6dddaaeb50",
+      "file_size": 2676563,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Static Between Stations - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:04:18.619Z",
+      "checksum": "6584841d1f01ea51ee02685911f480493cb2d1ad",
+      "file_size": 4216120,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn briefing. Confrontation Protocol Beat Transition is now active. Start with spectrogram of confession burst, then compare every new message against a dead rail line broadcasts private confessions in the players' own voices.. If The Curator of Static reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.975765,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 78,
+            "lowpassHz": 7447,
+            "presenceGainDb": -0.27199999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -99,16 +349,66 @@
       "modality": "image",
       "title": "Static Between Stations - Case Debrief Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/beat_scene_art/static-between-stations-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:44.043Z",
-      "checksum": "47c36c569f603a4d5c77d388dc2e5bd50e1a9579",
-      "file_size": 990551,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:59:32.973Z",
+      "checksum": "ee1629d4c907f79517194a6439974f4a2a16420c",
+      "file_size": 2675858,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Static Between Stations - Case Debrief Beat Transition",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/beat_transition_video/static-between-stations-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:04:26.323Z",
+      "checksum": "4b0b60cf2713a43d787ef8c4f2512663a1f34af0",
+      "file_size": 4353547,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn briefing. Case Debrief Beat Transition is now active. Start with spectrogram of confession burst, then compare every new message against a dead rail line broadcasts private confessions in the players' own voices.. If The Curator of Static reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.99519,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 83,
+            "lowpassHz": 7133,
+            "presenceGainDb": 0.04800000000000004
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -126,7 +426,8 @@
       "created_at": "2026-03-21T16:14:55.623Z",
       "checksum": "90e79b98d745d36393c519ac55ca8d39fcc068bd",
       "file_size": 1243,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -134,17 +435,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Static Between Stations - Evidence Still - Maintenance ledger anomaly",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Maintenance ledger anomaly\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Evidence Still - Maintenance ledger anomaly. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Static Between Stations. Setting: Abandoned commuter rail control annex. Recurring motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Maintenance ledger anomaly\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Evidence Still - Maintenance ledger anomaly. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:50.291Z",
-      "checksum": "61b49553635546bd815fb11dccb3df11cc4f4698",
-      "file_size": 1008740,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:40:49.440Z",
+      "checksum": "34b0a4d3e133bd52a2f5ea8823ccd8f8d40cff70",
+      "file_size": 3297512,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -162,7 +468,8 @@
       "created_at": "2026-03-21T16:14:55.631Z",
       "checksum": "0549e52508f75149da5b1ac9cc5d6d9c4741f662",
       "file_size": 1231,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -171,16 +478,21 @@
       "modality": "image",
       "title": "Static Between Stations - Evidence Still - Relay room access hash",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Relay room access hash\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Evidence Still - Relay room access hash. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-relay-room-access-hash-evidence-still-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-relay-room-access-hash-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-relay-room-access-hash-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-relay-room-access-hash-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:53.454Z",
-      "checksum": "6dcbee04d0f56928f9243bca15cd83d4947b3f10",
-      "file_size": 1010299,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:59:47.535Z",
+      "checksum": "d200723c0b0010fdcc34bcc3c2dbdf155451b7c5",
+      "file_size": 3144689,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -198,7 +510,8 @@
       "created_at": "2026-03-21T16:14:55.646Z",
       "checksum": "976d3be791a646d1c1f930b3f82b80c66e53faa3",
       "file_size": 1280,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -216,7 +529,8 @@
       "created_at": "2026-03-21T16:15:49.574Z",
       "checksum": "ef4be99daa61cd2e006c3cc2e9fdb0a83c5a9c82",
       "file_size": 1447,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -225,16 +539,21 @@
       "modality": "image",
       "title": "Static Between Stations Social Launch Square",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\social_square\\static-between-stations-social-launch-square-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/social_square/static-between-stations-social-launch-square-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\social_square\\static-between-stations-social-launch-square-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/social_square/static-between-stations-social-launch-square-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:02.399Z",
-      "checksum": "8ab2203a92bdc06c1353e08e3eb8f8ebcaf2cbf0",
-      "file_size": 808722,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:59:50.638Z",
+      "checksum": "adc71528bae0b9a05680575c2e556f63584bf6cf",
+      "file_size": 1785488,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -243,16 +562,21 @@
       "modality": "image",
       "title": "Static Between Stations Social Launch Vertical",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\social_vertical\\static-between-stations-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/social_vertical/static-between-stations-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\social_vertical\\static-between-stations-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/social_vertical/static-between-stations-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:59.546Z",
-      "checksum": "f44e0895bcede563bc38eda2901b713ed84fb70b",
-      "file_size": 822027,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:00:08.444Z",
+      "checksum": "a578b6963621db680663ddab9d31f239c51a2549",
+      "file_size": 1814953,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -270,7 +594,8 @@
       "created_at": "2026-03-21T16:14:55.619Z",
       "checksum": "178519239c7cc9504ab4f831ef7656574be33285",
       "file_size": 1258,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -279,16 +604,21 @@
       "modality": "image",
       "title": "Static Between Stations - Evidence Still - Spectrogram of confession burst",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Spectrogram of confession burst\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Evidence Still - Spectrogram of confession burst. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-spectrogram-of-confession-burst-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:50.314Z",
-      "checksum": "4e09201f458c21aee986172eb25b3b7b4987996f",
-      "file_size": 996066,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:00:09.596Z",
+      "checksum": "6e3f7fe5057538629784ab6bd038e4797028b5de",
+      "file_size": 3463092,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -297,16 +627,32 @@
       "modality": "audio",
       "title": "Static Between Stations - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/arc_ambience/static-between-stations-static-between-stations-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:09.203Z",
-      "checksum": "e4c82b003061d5794d671ed21378ec646cb883da",
-      "file_size": 15698834,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-23T16:31:44.974Z",
+      "checksum": "21881d56a0a5ed689226db0ebbb0912724eb4b93",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 49,
+          "mid": 238,
+          "high": 1222,
+          "shimmer": 2562,
+          "pulseHz": 1.3833333333333333,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -315,16 +661,67 @@
       "modality": "image",
       "title": "Static Between Stations - Contact and Contradiction Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: psychological horror. Tone: CINEMATIC. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Static Between Stations - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:34.625Z",
-      "checksum": "b1b7acc7ace8000212bf2ec93c1d3761be4a25a4",
-      "file_size": 984454,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:00:42.373Z",
+      "checksum": "6d0e40d3eb115cdd4a40c1af2fa7ae9f6ec3e104",
+      "file_size": 2778090,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-static-between-stations-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Static Between Stations - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:03:14.587Z",
+      "checksum": "ad334e463efa9be4b5fec81e9005636d31685f54",
+      "file_size": 12612296,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Dispatch Handler Ilya Ross",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Dispatch Handler Ilya Ross to team. A dead rail line broadcasts private confessions in the players' own voices. This arc centers on contact and contradiction arc teaser video, with pressure building around spectrogram of confession burst. Move quietly through abandoned commuter rail control annex and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.1246850000000002,
+            "pitchSemitone": 0.845,
+            "textureAmount": 0.59625,
+            "highpassHz": 90,
+            "lowpassHz": 7792,
+            "presenceGainDb": 0.5069999999999999
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -333,16 +730,32 @@
       "modality": "audio",
       "title": "Static Between Stations - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/arc_ambience/static-between-stations-static-between-stations-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:10.281Z",
-      "checksum": "f84a46ad83f73b714820a4b667942d1946d9f417",
-      "file_size": 15699438,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-23T16:31:46.429Z",
+      "checksum": "904f38470b52fc461b7b83ed1613e82e07ad1a5b",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 41,
+          "mid": 215,
+          "high": 1359,
+          "shimmer": 2899,
+          "pulseHz": 1.3,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -351,16 +764,67 @@
       "modality": "image",
       "title": "Static Between Stations - Interference and Doubt Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: psychological horror. Tone: CINEMATIC. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Static Between Stations - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-disruption-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-disruption-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-disruption-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-disruption-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:34.611Z",
-      "checksum": "670af23c565dc18ffc13c175b5d7fbee605b7fee",
-      "file_size": 955511,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:01:12.043Z",
+      "checksum": "203776bbc664d25c69593e8f7d7cbd2d7815539e",
+      "file_size": 2969297,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-static-between-stations-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Static Between Stations - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:03:20.915Z",
+      "checksum": "33ff561adabd34918c092a7f985fd3ea567f8cd0",
+      "file_size": 11665077,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Dispatch Handler Ilya Ross",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Dispatch Handler Ilya Ross to team. A dead rail line broadcasts private confessions in the players' own voices. This arc centers on interference and doubt arc teaser video, with pressure building around spectrogram of confession burst. Move quietly through abandoned commuter rail control annex and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.10491,
+            "pitchSemitone": 0.845,
+            "textureAmount": 0.59625,
+            "highpassHz": 98,
+            "lowpassHz": 7823,
+            "presenceGainDb": 0.10699999999999994
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -369,16 +833,32 @@
       "modality": "audio",
       "title": "Static Between Stations - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/arc_ambience/static-between-stations-static-between-stations-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:11.389Z",
-      "checksum": "264de669646437ed97812051743c0430a2533223",
-      "file_size": 15699378,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-23T16:31:47.941Z",
+      "checksum": "622f6768ae2388260c3cbef531c9154ed15d98aa",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 39,
+          "mid": 249,
+          "high": 913,
+          "shimmer": 3293,
+          "pulseHz": 1.6333333333333333,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -387,16 +867,67 @@
       "modality": "image",
       "title": "Static Between Stations - Confrontation and Reckoning Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: psychological horror. Tone: CINEMATIC. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Static Between Stations - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/arc_key_art/static-between-stations-static-between-stations-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:38.089Z",
-      "checksum": "5a47dccba7f9ef359b76d08fd58dcde230a0d205",
-      "file_size": 980011,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:01:03.461Z",
+      "checksum": "efc3575da256c4cc146256de53f0b645bbc57d64",
+      "file_size": 2838930,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-static-between-stations-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Static Between Stations - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:03:47.753Z",
+      "checksum": "a0342eceb0e48af365ef0be070334561eb189e9d",
+      "file_size": 12398823,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Dispatch Handler Ilya Ross",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Dispatch Handler Ilya Ross to team. A dead rail line broadcasts private confessions in the players' own voices. This arc centers on confrontation and reckoning arc teaser video, with pressure building around spectrogram of confession burst. Move quietly through abandoned commuter rail control annex and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.15405,
+            "pitchSemitone": 0.845,
+            "textureAmount": 0.59625,
+            "highpassHz": 90,
+            "lowpassHz": 7639,
+            "presenceGainDb": -0.29300000000000004
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -405,16 +936,67 @@
       "modality": "image",
       "title": "Static Between Stations - Corruption Pact Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You accept the Curator's private channel and bury the official case.. Deliver emotional closure with sequel-hook tension.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-corruption-ending-card-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-corruption-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-corruption-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:59.521Z",
-      "checksum": "2cf21f56d7dbf5b06e39ca3610b6274cdbe8ce48",
-      "file_size": 975450,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:01:34.600Z",
+      "checksum": "ea8ae9adb26a54aa059bbac8d0c4eb363c29af28",
+      "file_size": 2678774,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-static-between-stations-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Static Between Stations - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/ending_recap_video/static-between-stations-static-between-stations-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/ending_recap_video/static-between-stations-static-between-stations-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:05:47.586Z",
+      "checksum": "96f2b5835db22bf23652074f5501af87aa0fcca4",
+      "file_size": 14157023,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-corruption-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "The Curator of Static",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "The Curator of Static reporting. The case closes on corruption pact ending recap video. The evidence thread started with spectrogram of confession burst and now points directly at The Curator of Static. Review the timeline at abandoned commuter rail control annex before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.84,
+            "pitchSemitone": -2.512,
+            "textureAmount": 0.515,
+            "highpassHz": 68,
+            "lowpassHz": 5941,
+            "presenceGainDb": 0.5120000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -423,16 +1005,32 @@
       "modality": "audio",
       "title": "Static Between Stations - Corruption Pact Ending Score",
       "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept the Curator's private channel and bury the official case.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/ending_score/static-between-stations-static-between-stations-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:18.285Z",
-      "checksum": "f7e8285c83b994e05dd100990d5071092ad6a513",
-      "file_size": 15699070,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-23T16:32:13.211Z",
+      "checksum": "9bba819a4c78ae96e386d25ed45c10993db0b705",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 44,
+          "mid": 276,
+          "high": 1002,
+          "shimmer": 2382,
+          "pulseHz": 0.8700000000000001,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.28
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -441,16 +1039,67 @@
       "modality": "image",
       "title": "Static Between Stations - Clean Resolution Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You expose the broadcast architecture and keep the last witness alive.. Deliver emotional closure with sequel-hook tension.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-justice-ending-card-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-justice-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-justice-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:56.386Z",
-      "checksum": "b00f0a632c31e1e0302474d3047ad3832cd297ca",
-      "file_size": 980433,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:01:58.975Z",
+      "checksum": "691a2373a2c99dda5532eef023da4f1619f1d1de",
+      "file_size": 3027834,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-static-between-stations-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Static Between Stations - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/ending_recap_video/static-between-stations-static-between-stations-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/ending_recap_video/static-between-stations-static-between-stations-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:05:03.635Z",
+      "checksum": "a0855153923dcca5261996853bda53d4f46fc838",
+      "file_size": 14248996,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-justice-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn reporting. The case closes on clean resolution ending recap video. The evidence thread started with spectrogram of confession burst and now points directly at The Curator of Static. Review the timeline at abandoned commuter rail control annex before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 1.000125,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 74,
+            "lowpassHz": 7457,
+            "presenceGainDb": -0.832
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -459,16 +1108,32 @@
       "modality": "audio",
       "title": "Static Between Stations - Clean Resolution Ending Score",
       "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose ending score cue for \"Clean Resolution\" that supports summary \"You expose the broadcast architecture and keep the last witness alive.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/ending_score/static-between-stations-static-between-stations-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:15.064Z",
-      "checksum": "68acdb23bb070ded12f93f23e0762bde74f14844",
-      "file_size": 15700290,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-23T16:32:10.352Z",
+      "checksum": "b32a762010789550ad52633121cf782b6ebf4ecd",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 242,
+          "high": 1288,
+          "shimmer": 2468,
+          "pulseHz": 1.7033333333333334,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.28
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -477,16 +1142,67 @@
       "modality": "image",
       "title": "Static Between Stations - Compromised Truth Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You identify the culprit but lose the witness chain and public confidence.. Deliver emotional closure with sequel-hook tension.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/ending_card/static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:59.520Z",
-      "checksum": "8a0f894985c8e271303abff0dbe567af59dde9ac",
-      "file_size": 974724,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:02:06.413Z",
+      "checksum": "a8e9471b1c3074bdbb42d75e18d7c3fcdec50376",
+      "file_size": 2990357,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Static Between Stations - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/ending_recap_video/static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/ending_recap_video/static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:05:12.326Z",
+      "checksum": "6bbac066b73db886f418f25ee73f2b2bc839ffbc",
+      "file_size": 14715202,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\ending_card\\static-between-stations-static-between-stations-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn reporting. The case closes on compromised truth ending recap video. The evidence thread started with spectrogram of confession burst and now points directly at The Curator of Static. Review the timeline at abandoned commuter rail control annex before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9857049999999999,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 74,
+            "lowpassHz": 7147,
+            "presenceGainDb": -0.512
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -495,16 +1211,32 @@
       "modality": "audio",
       "title": "Static Between Stations - Compromised Truth Ending Score",
       "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose ending score cue for \"Compromised Truth\" that supports summary \"You identify the culprit but lose the witness chain and public confidence.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/ending_score/static-between-stations-static-between-stations-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:16.575Z",
-      "checksum": "4b83fb97bdd1d29ccf2a7fd306ec041dfea24ff4",
-      "file_size": 15700290,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-23T16:32:11.644Z",
+      "checksum": "a1f6faa10f57fac5e676f1488c3a1e62fbad6c8f",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 50,
+          "mid": 262,
+          "high": 1404,
+          "shimmer": 2584,
+          "pulseHz": 1.7033333333333334,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.28
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -522,7 +1254,8 @@
       "created_at": "2026-03-21T16:14:55.598Z",
       "checksum": "f56ac342b2a539be1dd9e370ab3fb9e762069962",
       "file_size": 1230,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -531,16 +1264,21 @@
       "modality": "image",
       "title": "Static Between Stations - Lead Investigator Mara Quinn Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Character portrait for Lead Investigator Mara Quinn, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Lead Investigator Mara Quinn Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-1-portrait-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-1-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-1-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-1-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:44.043Z",
-      "checksum": "d0689f0022c0e8e6dd26fc8cc56712ede493bb46",
-      "file_size": 956486,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:02:38.545Z",
+      "checksum": "aaf045cb8abc71ee5a423ef875fccfbc35167675",
+      "file_size": 3143723,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -548,17 +1286,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Static Between Stations - Lead Investigator Mara Quinn Voice Profile",
-      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Build unique voice profile for Lead Investigator Mara Quinn. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Lead Investigator Mara Quinn. Keep your channel open and do not answer unknown callbacks. A dead rail line broadcasts private confessions in the players' own voices. Start with spectrogram of confession burst, then verify every timestamp against abandoned commuter rail control annex. If The Curator of Static contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\npc_voice_profile\\static-between-stations-static-between-stations-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/npc_voice_profile/static-between-stations-static-between-stations-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:11.757Z",
-      "checksum": "1224d50be465f5d7cf496b85de952d0332842edf",
-      "file_size": 2110374,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:35:25.811Z",
+      "checksum": "0bbee14f2d5a6c3b1cd24e7cc01e803c29adf50b",
+      "file_size": 1243560,
+      "duration_seconds": 12.95,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 1.019935,
+          "pitchSemitone": -0.383,
+          "textureAmount": 0.435,
+          "highpassHz": 78,
+          "lowpassHz": 7352,
+          "presenceGainDb": -0.592
+        },
+        "voice_design": {
+          "apiSpeed": 1.019935,
+          "pitchSemitone": -0.383,
+          "textureAmount": 0.435,
+          "highpassHz": 78,
+          "lowpassHz": 7352,
+          "presenceGainDb": -0.592
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -576,7 +1338,8 @@
       "created_at": "2026-03-21T16:14:55.602Z",
       "checksum": "aceb463e22079b1a5925ce4c1dae4dbb5e680ea4",
       "file_size": 1226,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -585,16 +1348,21 @@
       "modality": "image",
       "title": "Static Between Stations - Dispatch Handler Ilya Ross Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Character portrait for Dispatch Handler Ilya Ross, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Dispatch Handler Ilya Ross Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-2-portrait-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-2-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-2-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-2-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:44.047Z",
-      "checksum": "6f4d820effe6d77bd329a2738ec40ab9e1ec37b5",
-      "file_size": 955936,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:02:52.940Z",
+      "checksum": "d72afc003823ca096621fd453e2d13b0b1d99674",
+      "file_size": 3335444,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -602,17 +1370,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Static Between Stations - Dispatch Handler Ilya Ross Voice Profile",
-      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Build unique voice profile for Dispatch Handler Ilya Ross. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Dispatch Handler Ilya Ross. I should not be leaving this message. Something about spectrogram of confession burst is wrong, and The Curator of Static wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to abandoned commuter rail control annex.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\npc_voice_profile\\static-between-stations-static-between-stations-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/npc_voice_profile/static-between-stations-static-between-stations-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:12.158Z",
-      "checksum": "3efea0e944ad4a4ac0eea5e90d20b20dadb43f07",
-      "file_size": 2110578,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:35:29.509Z",
+      "checksum": "51df9ab4daa03ced939b25afe679c825713f31ae",
+      "file_size": 807900,
+      "duration_seconds": 8.41,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.15202,
+          "pitchSemitone": 0.845,
+          "textureAmount": 0.59625,
+          "highpassHz": 88,
+          "lowpassHz": 7714,
+          "presenceGainDb": -0.13300000000000006
+        },
+        "voice_design": {
+          "apiSpeed": 1.15202,
+          "pitchSemitone": 0.845,
+          "textureAmount": 0.59625,
+          "highpassHz": 88,
+          "lowpassHz": 7714,
+          "presenceGainDb": -0.13300000000000006
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -630,7 +1422,8 @@
       "created_at": "2026-03-21T16:14:55.607Z",
       "checksum": "65248836dcf817c7eca264e47313f5ef8522a34e",
       "file_size": 1224,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -639,16 +1432,21 @@
       "modality": "image",
       "title": "Static Between Stations - Commuter Witness Nia Vale Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Character portrait for Commuter Witness Nia Vale, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Commuter Witness Nia Vale Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-3-portrait-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-3-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-3-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-3-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:47.230Z",
-      "checksum": "faf1903f42eb08e92f4e7d5fa25d189c528444cf",
-      "file_size": 949320,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:02:59.789Z",
+      "checksum": "a79182b5f19f0b672494fb61a2aa9b7938a84902",
+      "file_size": 3572232,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -656,17 +1454,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Static Between Stations - Commuter Witness Nia Vale Voice Profile",
-      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Build unique voice profile for Commuter Witness Nia Vale. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Commuter Witness Nia Vale. I should not be leaving this message. Something about spectrogram of confession burst is wrong, and The Curator of Static wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to abandoned commuter rail control annex.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\npc_voice_profile\\static-between-stations-static-between-stations-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/npc_voice_profile/static-between-stations-static-between-stations-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:12.589Z",
-      "checksum": "f5eb3a5084daa7e712cec7b09a7280fea6a87d34",
-      "file_size": 2110340,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:35:34.141Z",
+      "checksum": "73adc242cc6091d655b7d9ddd552b96d89eee5b0",
+      "file_size": 1058644,
+      "duration_seconds": 11.03,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 1.09142,
+          "pitchSemitone": 0.9099999999999999,
+          "textureAmount": 0.62,
+          "highpassHz": 96,
+          "lowpassHz": 7623,
+          "presenceGainDb": 0.09200000000000008
+        },
+        "voice_design": {
+          "apiSpeed": 1.09142,
+          "pitchSemitone": 0.9099999999999999,
+          "textureAmount": 0.62,
+          "highpassHz": 96,
+          "lowpassHz": 7623,
+          "presenceGainDb": 0.09200000000000008
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -684,7 +1506,8 @@
       "created_at": "2026-03-21T16:14:55.610Z",
       "checksum": "1f1827aaa14cc156c33e4a8618dee7fd23a56caa",
       "file_size": 1226,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -693,16 +1516,21 @@
       "modality": "image",
       "title": "Static Between Stations - Transit Auditor Bram Keene Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Character portrait for Transit Auditor Bram Keene, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Transit Auditor Bram Keene Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-4-portrait-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-4-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\character_portrait\\static-between-stations-static-between-stations-npc-4-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/character_portrait/static-between-stations-static-between-stations-npc-4-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:47.194Z",
-      "checksum": "cc1e3d34d728bb8c859b62e9c7619f85557e3b20",
-      "file_size": 958076,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:03:49.022Z",
+      "checksum": "5ca235afbb3f1f4f33efdd9b1f8bc5175d4c8074",
+      "file_size": 3310610,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -710,17 +1538,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Static Between Stations - Transit Auditor Bram Keene Voice Profile",
-      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Build unique voice profile for Transit Auditor Bram Keene. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Transit Auditor Bram Keene. I should not be leaving this message. Something about spectrogram of confession burst is wrong, and The Curator of Static wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to abandoned commuter rail control annex.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\npc_voice_profile\\static-between-stations-static-between-stations-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/npc_voice_profile/static-between-stations-static-between-stations-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:13.019Z",
-      "checksum": "357c58d426f4d965fb309229f56b595ad59a1e6c",
-      "file_size": 2110624,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:35:37.737Z",
+      "checksum": "257edecf03801160bec68754acf2cdf0896774c5",
+      "file_size": 923004,
+      "duration_seconds": 9.61,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.1323050000000001,
+          "pitchSemitone": 0.594,
+          "textureAmount": 0.53375,
+          "highpassHz": 97,
+          "lowpassHz": 7709,
+          "presenceGainDb": 0.277
+        },
+        "voice_design": {
+          "apiSpeed": 1.1323050000000001,
+          "pitchSemitone": 0.594,
+          "textureAmount": 0.53375,
+          "highpassHz": 97,
+          "lowpassHz": 7709,
+          "presenceGainDb": 0.277
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -729,16 +1581,21 @@
       "modality": "image",
       "title": "Static Between Stations - Relay Cipher Split Puzzle Board",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Puzzle visual for \"Relay Cipher Split\". Objective: Combine three relay fragments distributed across party channels.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Relay Cipher Split Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_board\\static-between-stations-static-between-stations-puzzle-shards-puzzle-board-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/puzzle_board/static-between-stations-static-between-stations-puzzle-shards-puzzle-board-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_board\\static-between-stations-static-between-stations-puzzle-shards-puzzle-board-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/puzzle_board/static-between-stations-static-between-stations-puzzle-shards-puzzle-board-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:53.488Z",
-      "checksum": "6047fe502a12cade1820a9a0e0dbe5d5a48bd90a",
-      "file_size": 1015923,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:03:17.451Z",
+      "checksum": "dc60640b9a3b7098a2bf839c39a35630f9a2e48c",
+      "file_size": 3304743,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -756,7 +1613,8 @@
       "created_at": "2026-03-21T16:14:55.636Z",
       "checksum": "8a1a8d889a36521167477d4aed1f36b5751f3337",
       "file_size": 1210,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -765,16 +1623,21 @@
       "modality": "image",
       "title": "Static Between Stations - Relay Cipher Split - ALLY_A Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Create shard card for holder ALLY_A. Content brief: Ally A receives a Telegram sticker containing cipher coordinates.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Relay Cipher Split - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_shard_card\\static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/puzzle_shard_card/static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_shard_card\\static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/puzzle_shard_card/static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:56.386Z",
-      "checksum": "a722d995cc082c54ef01bd4a46eb1455ac8afdde",
-      "file_size": 1009048,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:03:23.217Z",
+      "checksum": "a464164f1fd01bcc20c02902241113729fb59bcf",
+      "file_size": 3483083,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -783,16 +1646,21 @@
       "modality": "image",
       "title": "Static Between Stations - Relay Cipher Split - GLOBAL_BROADCAST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast drop includes a map layer that aligns only with both clues.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Relay Cipher Split - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_shard_card\\static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/puzzle_shard_card/static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_shard_card\\static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/puzzle_shard_card/static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:56.417Z",
-      "checksum": "358e45908ba9b014d78a4986f04eb7c8e8678546",
-      "file_size": 1016697,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:03:40.298Z",
+      "checksum": "6eb8d2ce4dff2c6cc69005a4a687853b14cf0350",
+      "file_size": 3703328,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -801,16 +1669,21 @@
       "modality": "image",
       "title": "Static Between Stations - Relay Cipher Split - HOST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Create shard card for holder HOST. Content brief: Host receives a packet-latency table with one hidden timestamp.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Relay Cipher Split - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_shard_card\\static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/puzzle_shard_card/static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\puzzle_shard_card\\static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/puzzle_shard_card/static-between-stations-static-between-stations-puzzle-shards-static-between-stations-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:53.454Z",
-      "checksum": "ec191aa46c45c9e740a6804fdbea399c58cbd2fa",
-      "file_size": 1022440,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:03:47.065Z",
+      "checksum": "953129841ce7f05da5f327aacfc4b0bd3aae643a",
+      "file_size": 3792471,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -819,16 +1692,21 @@
       "modality": "image",
       "title": "Static Between Stations Story Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/story_key_art/static-between-stations-story-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/story_key_art/static-between-stations-story-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:34.651Z",
-      "checksum": "cb8a69f7795acb0d14fa8a2876229f075add4964",
-      "file_size": 983981,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:04:50.608Z",
+      "checksum": "cc3a75f5520ce279e195167daf24eb55dc88616b",
+      "file_size": 2670808,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -846,7 +1724,8 @@
       "created_at": "2026-03-21T16:15:49.579Z",
       "checksum": "54f4f85cf712b3796cf06d8cf6b65c68510c8a6f",
       "file_size": 1320,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -855,16 +1734,32 @@
       "modality": "audio",
       "title": "Static Between Stations Story Theme Loop",
       "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/story_theme_loop/static-between-stations-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:19.737Z",
-      "checksum": "b3210ef55805725638a5d4fb5e8026166e18e738",
-      "file_size": 15698810,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-23T16:32:14.733Z",
+      "checksum": "aedc0cb562cd1aa523ec83a198cf0aacee267868",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 55,
+          "mid": 200,
+          "high": 1056,
+          "shimmer": 2476,
+          "pulseHz": 1.55,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.22
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -882,7 +1777,8 @@
       "created_at": "2026-03-21T16:14:55.640Z",
       "checksum": "ac86ac0415f62258d6509807cc6e6c95c831105a",
       "file_size": 1256,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -900,7 +1796,56 @@
       "created_at": "2026-03-21T16:15:49.569Z",
       "checksum": "b6ca8e071ebc2c9b72b685cb6e6ed580a7e35822",
       "file_size": 1423,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
+    },
+    {
+      "story_id": "static-between-stations",
+      "asset_id": "static-between-stations-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "Static Between Stations Main Trailer",
+      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\story_trailer\\static-between-stations-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/static-between-stations/video/story_trailer/static-between-stations-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\story_trailer\\static-between-stations-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/story_trailer/static-between-stations-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:05:55.710Z",
+      "checksum": "319fe5e465404d40501c2271caa4f34d44a1b10f",
+      "file_size": 13412424,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\story_key_art\\static-between-stations-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-3-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\story_theme_loop\\static-between-stations-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Lead Investigator Mara Quinn",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Lead Investigator Mara Quinn briefing. Static Between Stations Main Trailer is now active. Start with spectrogram of confession burst, then compare every new message against a dead rail line broadcasts private confessions in the players' own voices.. If The Curator of Static reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.991725,
+            "pitchSemitone": -0.383,
+            "textureAmount": 0.435,
+            "highpassHz": 82,
+            "lowpassHz": 7433,
+            "presenceGainDb": -0.512
+          }
+        }
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -918,7 +1863,8 @@
       "created_at": "2026-03-21T16:14:55.627Z",
       "checksum": "8e1ce0e2d56a11c22070f353b46b413222542a54",
       "file_size": 1231,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -927,16 +1873,21 @@
       "modality": "image",
       "title": "Static Between Stations - Evidence Still - Turnstile camera still",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Turnstile camera still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Evidence Still - Turnstile camera still. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-turnstile-camera-still-evidence-still-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-turnstile-camera-still-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-turnstile-camera-still-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-turnstile-camera-still-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:50.266Z",
-      "checksum": "06a9cb4b62d49f08caaa4aa1fe934178a30aa635",
-      "file_size": 1017561,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:04:09.820Z",
+      "checksum": "be38776f4a68aa6ea0aa6fe616cc403462d6cf95",
+      "file_size": 2768066,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -954,7 +1905,8 @@
       "created_at": "2026-03-21T16:14:55.614Z",
       "checksum": "95afaa3d2d0c63ec02cc2e6b04e88c9773164a58",
       "file_size": 1188,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "static-between-stations",
@@ -963,16 +1915,21 @@
       "modality": "image",
       "title": "Static Between Stations - Villain Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Design portrait of antagonist The Curator of Static with archetype CALM_GENIUS_MANIPULATOR, speech style \"Quietly surgical and personal.\", and motifs radio hiss, clock hands, platform chimes.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/static-between-stations/image/villain_portrait/static-between-stations-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/villain_portrait/static-between-stations-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:47.172Z",
-      "checksum": "18b55edc4c3c32d4d34d52b78523aa51d47181a3",
-      "file_size": 952387,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:04:43.726Z",
+      "checksum": "6f95376c18b578b849b1e07f296e40a00ddac1b1",
+      "file_size": 2887443,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "static-between-stations",
@@ -980,149 +1937,42 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "Static Between Stations - Villain Voice Profile",
-      "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Create villain voice profile for The Curator of Static. Worldview: Truth is only what survives the loudest channel.. Manner: Dry contempt for procedural certainty.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. A dead rail line broadcasts private confessions in the players' own voices. Work the case in order: secure spectrogram of confession burst, confirm the scene at abandoned commuter rail control annex, and do not let The Curator of Static choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\villain_voice_profile\\static-between-stations-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/static-between-stations/audio/villain_voice_profile/static-between-stations-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:13.469Z",
-      "checksum": "4850e5fd10127f7ac8ddf46f941f258fc2aa8432",
-      "file_size": 2111252,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:42.450Z",
+      "checksum": "5827f31a9597be20a16c4fe92cf7e8c5f3f52d11",
+      "file_size": 959124,
+      "duration_seconds": 9.99,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.0105,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 78,
+          "lowpassHz": 7369,
+          "presenceGainDb": -0.4
+        },
+        "voice_design": {
+          "apiSpeed": 1.0105,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 78,
+          "lowpassHz": 7369,
+          "presenceGainDb": -0.4
+        }
+      }
     }
   ],
-  "failures": [
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\beat_transition_video\\static-between-stations-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-static-between-stations-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-static-between-stations-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-static-between-stations-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-static-between-stations-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-static-between-stations-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\ending_recap_video\\static-between-stations-static-between-stations-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "static-between-stations",
-      "asset_id": "static-between-stations-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\story_trailer\\static-between-stations-trailer-main-v1.mp4",
-      "last_attempt_at": null
-    }
-  ]
+  "failures": []
 }

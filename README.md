@@ -6,6 +6,7 @@ MyHorrorStory is a production-focused, cross-platform horror mystery platform fo
 
 - Web gameplay and marketing funnel.
 - In-browser immersive play simulation with channel popups and branching response flow.
+- LLM-powered hint system (approach/thinking/solve) with explicit gameplay penalties and villain advantage tradeoffs.
 - Mobile gameplay companion and progression continuity.
 - Backend API with auth, story discovery, party/session orchestration, support endpoints, and realtime gateway.
 - Admin console for operations, moderation, content, campaigns, support, and feature controls.
@@ -101,6 +102,21 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
    - `corepack pnpm simulations:build-playthrough`
    - `http://127.0.0.1:3100/simulations/index.html`
 
+## Owner QA Agent Dashboard
+
+Run automated branch-play simulations for every story and review private quality reports in the dashboard.
+
+1. Regenerate all director-cut story drama packages:
+   - `corepack pnpm stories:refine-director-cut`
+2. Generate QA simulation reports:
+   - `corepack pnpm qa:simulate-stories`
+3. Set an owner gate key in your env:
+   - `OWNER_DASHBOARD_KEY=replace_with_private_value`
+4. Open dashboard with key:
+   - `http://127.0.0.1:3100/dashboard?ownerKey=replace_with_private_value`
+5. Open full report list:
+   - `http://127.0.0.1:3100/dashboard/quality?ownerKey=replace_with_private_value`
+
 ## Core Commands
 
 - `corepack pnpm lint`
@@ -136,6 +152,8 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - `corepack pnpm creative:dispatch-openclaw-agent-army -- --limit 5`
 - `corepack pnpm creative:dispatch-openclaw-agent-army -- --limit 5 --max-retries 4`
 - `corepack pnpm simulations:build-playthrough`
+- `corepack pnpm stories:refine-director-cut`
+- `corepack pnpm qa:simulate-stories`
 - `corepack pnpm stories:generate`
 - `corepack pnpm stories:build-dossiers`
 - `corepack pnpm stories:build-compendium`
@@ -184,6 +202,7 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
 - Security model: `docs/security/security-model.md`
 - QA strategy: `docs/qa/test-strategy.md`
 - Commercial-grade test plan: `docs/qa/commercial-grade-test-plan.md`
+- Story quality agent pipeline: `docs/qa/story-quality-agent-pipeline.md`
 - Voice design spec: `docs/stories/voice-design-spec.md`
 - Voice casting manifest: `docs/stories/voice-casting-manifest.md`
 - Music score spec: `docs/stories/music-score-spec.md`

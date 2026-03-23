@@ -9,52 +9,154 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Tape Reset Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Tape Reset (Contact). Narrative: The same footage frame arrives through Telegram with different timestamps for each player.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: The same footage frame arrives through Telegram with different timestamps for each player.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-1-beat-scene-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-1-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-1-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-1-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:05.359Z",
-      "checksum": "cad0e5bda726db97d923dd3ccca8572956ce8b83",
-      "file_size": 970166,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:04:33.975Z",
+      "checksum": "8dd85b9f64170cc3c1199c0eab9be9a58a840d2d",
+      "file_size": 2825154,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-2-beat-scene",
-      "asset_type": "beat_scene_art",
-      "modality": "image",
-      "title": "Tape 17: Pinewatch - Escalation Signal Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Escalation Signal (Contact). Narrative: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "asset_id": "tape-17-pinewatch-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Tape Reset Beat Transition",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Tape Reset. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
       "generation_status": "complete",
-      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-2-beat-scene-v1.png",
-      "public_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-2-beat-scene-v1.png",
-      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-2-beat-scene-v1.thumb.jpg",
-      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-2-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:08.690Z",
-      "checksum": "b03375963e4549524c07a26ba06fdd980cbd4795",
-      "file_size": 968622,
-      "duration_seconds": null
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:06:49.821Z",
+      "checksum": "68dc8582fcd6de34f78799a0c218c5391b433214",
+      "file_size": 3989070,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale briefing. Tape Reset Beat Transition is now active. Start with frame glitch cluster, then compare every new message against a recovered camcorder tape rewrites itself every midnight.. If The Editor reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.914925,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 84,
+            "lowpassHz": 7351,
+            "presenceGainDb": -0.367
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-3-beat-scene",
-      "asset_type": "beat_scene_art",
-      "modality": "image",
-      "title": "Tape 17: Pinewatch - Trust Fracture Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "asset_id": "tape-17-pinewatch-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Escalation Signal Beat Transition",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
       "generation_status": "complete",
-      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-3-beat-scene-v1.png",
-      "public_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-3-beat-scene-v1.png",
-      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-3-beat-scene-v1.thumb.jpg",
-      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:08.654Z",
-      "checksum": "981abbb7999dfad5367c01354bab1df07c609cdb",
-      "file_size": 996845,
-      "duration_seconds": null
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:07:04.427Z",
+      "checksum": "dd838373b43d4cf0f118d5dba0caab50e36fa32a",
+      "file_size": 3953212,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale briefing. Escalation Signal Beat Transition is now active. Start with frame glitch cluster, then compare every new message against a recovered camcorder tape rewrites itself every midnight.. If The Editor reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9606699999999999,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 79,
+            "lowpassHz": 7060,
+            "presenceGainDb": 0.273
+          }
+        }
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Trust Fracture Beat Transition",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:07:11.508Z",
+      "checksum": "a4997dd568c70dd393b81f156644915082f58c24",
+      "file_size": 3953364,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale briefing. Trust Fracture Beat Transition is now active. Start with frame glitch cluster, then compare every new message against a recovered camcorder tape rewrites itself every midnight.. If The Editor reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9665149999999999,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 78,
+            "lowpassHz": 7219,
+            "presenceGainDb": -0.20699999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -62,17 +164,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Tape 17: Pinewatch - Ultimatum Window Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:08.654Z",
-      "checksum": "fc01142c7c99a55ee1c9c879e78d6700c114da64",
-      "file_size": 993912,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:43:24.239Z",
+      "checksum": "48641864bb38eae313f880bf71fd80e4430e2d7a",
+      "file_size": 2879540,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:07:18.525Z",
+      "checksum": "3d2f0a47a07293e1c4455d097a76fd12da95b7df",
+      "file_size": 4046059,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale briefing. Ultimatum Window Beat Transition is now active. Start with frame glitch cluster, then compare every new message against a recovered camcorder tape rewrites itself every midnight.. If The Editor reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.95458,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 82,
+            "lowpassHz": 7064,
+            "presenceGainDb": 0.35300000000000004
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -80,17 +232,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Tape 17: Pinewatch - Confrontation Protocol Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-5-beat-scene-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-5-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-5-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-5-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:11.796Z",
-      "checksum": "69c6657d0c1c79dc34d182344bd2481973c44c17",
-      "file_size": 988168,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:43:48.421Z",
+      "checksum": "84a8c95380550a818d3f71bb3f66a0e0bf3460a9",
+      "file_size": 3100379,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:07:25.932Z",
+      "checksum": "5e27fe2f1e0055317ca322cdf9f0d387ef9e7900",
+      "file_size": 4115403,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale briefing. Confrontation Protocol Beat Transition is now active. Start with frame glitch cluster, then compare every new message against a recovered camcorder tape rewrites itself every midnight.. If The Editor reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.899945,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 81,
+            "lowpassHz": 7197,
+            "presenceGainDb": -0.12699999999999997
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -99,16 +301,66 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Case Debrief Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:11.770Z",
-      "checksum": "5ae7b4190c954d41647ca61c0154900d3f77bd82",
-      "file_size": 987149,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:05:34.321Z",
+      "checksum": "a4a18570ed7bce88f2afb1c5aeee034c3773809c",
+      "file_size": 2719248,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Case Debrief Beat Transition",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/beat_transition_video/tape-17-pinewatch-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:07:33.085Z",
+      "checksum": "308edc3e2e9e9eae62554fb52583594ce2a64b9b",
+      "file_size": 4273855,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale briefing. Case Debrief Beat Transition is now active. Start with frame glitch cluster, then compare every new message against a recovered camcorder tape rewrites itself every midnight.. If The Editor reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9473699999999999,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 77,
+            "lowpassHz": 7289,
+            "presenceGainDb": 0.19300000000000003
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -126,7 +378,8 @@
       "created_at": "2026-03-21T16:14:55.699Z",
       "checksum": "9583dedb7d662be81d5ae6299a65c67519cfc19b",
       "file_size": 1238,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -144,7 +397,8 @@
       "created_at": "2026-03-21T16:15:49.589Z",
       "checksum": "bb08a2948c168555bf2c56ceeafa2f0c60a03e5b",
       "file_size": 1411,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -162,7 +416,8 @@
       "created_at": "2026-03-21T16:14:55.694Z",
       "checksum": "2b0df18a63e0dafd01b953b561e28b8acc70b30d",
       "file_size": 1232,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -180,7 +435,8 @@
       "created_at": "2026-03-21T16:15:49.584Z",
       "checksum": "39ae1da07063e22f0a5d0bc98256d200bc384aff",
       "file_size": 1405,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -198,7 +454,8 @@
       "created_at": "2026-03-21T16:14:55.673Z",
       "checksum": "49edbc8d28aa69bdc0802dd26983d307611f8a49",
       "file_size": 1195,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -206,17 +463,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Tape 17: Pinewatch - Evidence Still - Frame glitch cluster",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Frame glitch cluster\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Frame glitch cluster. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Setting: Closed wilderness watch station and ranger tunnels. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Frame glitch cluster\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Frame glitch cluster. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:17.971Z",
-      "checksum": "85e887697271f8417aacc760afe9f496ce836e0d",
-      "file_size": 1015360,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:45:10.556Z",
+      "checksum": "237d350e162b445fc1df69b9f17e34339875951b",
+      "file_size": 3342708,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -234,7 +496,8 @@
       "created_at": "2026-03-21T16:14:55.677Z",
       "checksum": "84bfa1759a833ce2eda10c303b15ea4da78a632b",
       "file_size": 1204,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -242,17 +505,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Tape 17: Pinewatch - Evidence Still - Ranger dispatch excerpt",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Ranger dispatch excerpt\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Ranger dispatch excerpt. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Setting: Closed wilderness watch station and ranger tunnels. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Ranger dispatch excerpt\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Ranger dispatch excerpt. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-ranger-dispatch-excerpt-evidence-still-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-ranger-dispatch-excerpt-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-ranger-dispatch-excerpt-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-ranger-dispatch-excerpt-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:17.969Z",
-      "checksum": "a2eb38139f8bf2d6cf47e12fe7009ec6a2e6ff58",
-      "file_size": 1016332,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:45:34.394Z",
+      "checksum": "25a1c320113ac597d6d04ccf33a9c83f1d51733c",
+      "file_size": 3161566,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -261,16 +529,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch Social Launch Square",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\social_square\\tape-17-pinewatch-social-launch-square-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/social_square/tape-17-pinewatch-social-launch-square-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\social_square\\tape-17-pinewatch-social-launch-square-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/social_square/tape-17-pinewatch-social-launch-square-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:30.726Z",
-      "checksum": "7b5d29c4e64b16c3369fc3f9184735c7ecd51ae2",
-      "file_size": 816559,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:05:52.515Z",
+      "checksum": "4ac0586ae065fead142cb2b6f49b84718d5cdb28",
+      "file_size": 1984040,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -279,16 +552,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch Social Launch Vertical",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\social_vertical\\tape-17-pinewatch-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/social_vertical/tape-17-pinewatch-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\social_vertical\\tape-17-pinewatch-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/social_vertical/tape-17-pinewatch-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:30.726Z",
-      "checksum": "db2930b17298c4c8869224614e53eb641d2945e6",
-      "file_size": 814218,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:05:54.733Z",
+      "checksum": "928426ab78fb710e8d35f35a9c9bb81c0aca7401",
+      "file_size": 1886456,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -297,16 +575,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch Story Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/story_key_art/tape-17-pinewatch-story-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/story_key_art/tape-17-pinewatch-story-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:02.368Z",
-      "checksum": "6494d465c66adb68afb8d01cd8310ce0cbf656ef",
-      "file_size": 972409,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:06:38.180Z",
+      "checksum": "8cecaa310ceda396d5cca512cf19cd68fe272fac",
+      "file_size": 2780763,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -324,7 +607,8 @@
       "created_at": "2026-03-21T16:15:49.593Z",
       "checksum": "dfe596ea780fbecb5aaa3a793ecb76f58a93611d",
       "file_size": 1296,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -333,16 +617,32 @@
       "modality": "audio",
       "title": "Tape 17: Pinewatch Story Theme Loop",
       "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/story_theme_loop/tape-17-pinewatch-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:30.953Z",
-      "checksum": "acd853f2e45d04584966f8cf47ed173553e7582e",
-      "file_size": 15698810,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:10:15.096Z",
+      "checksum": "6f1b94f74a6f096722acf855a5bcde2f7c28580e",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -351,16 +651,32 @@
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\arc_ambience\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/arc_ambience/tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:20.946Z",
-      "checksum": "c2385bb875d6034119dc5f81cba74d8b86c73e6e",
-      "file_size": 15699326,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:09:50.322Z",
+      "checksum": "eb6a7b86d18c746a084a1aebc093ba860b49a2c9",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -369,16 +685,67 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Contact and Contradiction Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: found-footage investigation. Tone: GROUNDED. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Tape 17: Pinewatch - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/arc_key_art/tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/arc_key_art/tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:02.369Z",
-      "checksum": "c8f12e96a460ff0cf4c0135ff965c20f12d3b69b",
-      "file_size": 988953,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:06:56.375Z",
+      "checksum": "906dd51734b195bd475b0dca6b4489d4f8b53423",
+      "file_size": 3114832,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/arc_teaser_video/tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/arc_teaser_video/tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:06:23.058Z",
+      "checksum": "5672eddb47f22b7717f9d870d01b3a2d11a0fb41",
+      "file_size": 12450996,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\arc_ambience\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Media Forensics Analyst Priya Sen",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Media Forensics Analyst Priya Sen to team. A recovered camcorder tape rewrites itself every midnight. This arc centers on contact and contradiction arc teaser video, with pressure building around frame glitch cluster. Move quietly through closed wilderness watch station and ranger tunnels and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.244,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 93,
+            "lowpassHz": 7605,
+            "presenceGainDb": 0.517
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -387,16 +754,32 @@
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\arc_ambience\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/arc_ambience/tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:22.033Z",
-      "checksum": "1aace676a4008f0b8ea11b50a73cc659849ee572",
-      "file_size": 15699150,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:09:51.715Z",
+      "checksum": "cc3687e231760b7e7603579e861bbf2cf2a2a6d0",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -405,16 +788,67 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Interference and Doubt Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: found-footage investigation. Tone: GROUNDED. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Tape 17: Pinewatch - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/arc_key_art/tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/arc_key_art/tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:05.334Z",
-      "checksum": "58cd01feb6001717386ce8c053df2605e33e3ee6",
-      "file_size": 968114,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:06:48.109Z",
+      "checksum": "1f2d47ecf8c2b0a72cfbe688bded64a1479c39d7",
+      "file_size": 2812692,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/arc_teaser_video/tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/arc_teaser_video/tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:06:30.979Z",
+      "checksum": "c24f801685aa168b1ea3fa6d033aca704d68f829",
+      "file_size": 11890896,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\arc_ambience\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Media Forensics Analyst Priya Sen",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Media Forensics Analyst Priya Sen to team. A recovered camcorder tape rewrites itself every midnight. This arc centers on interference and doubt arc teaser video, with pressure building around frame glitch cluster. Move quietly through closed wilderness watch station and ranger tunnels and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.244,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 97,
+            "lowpassHz": 7698,
+            "presenceGainDb": 0.437
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -423,16 +857,32 @@
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\arc_ambience\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/arc_ambience/tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:23.185Z",
-      "checksum": "b8d1cf3e99f9e67b9cbf8ff11c1fbc8c562413ed",
-      "file_size": 15699546,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:09:53.046Z",
+      "checksum": "97ffae351c41fd62a4619c5946fe3aa8e06ba1ef",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -441,34 +891,113 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Confrontation and Reckoning Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: found-footage investigation. Tone: GROUNDED. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Tape 17: Pinewatch - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/arc_key_art/tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/arc_key_art/tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:05.299Z",
-      "checksum": "1e3ab4debac80cf532f782a56e06d1a6d5b5769b",
-      "file_size": 980226,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:07:28.679Z",
+      "checksum": "04cbad751d47151652296b6dd3d7e7aa52fbacd8",
+      "file_size": 3244293,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-card",
-      "asset_type": "ending_card",
-      "modality": "image",
-      "title": "Tape 17: Pinewatch - Corruption Pact Ending Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You trade the original tape for influence over what the public sees.. Deliver emotional closure with sequel-hook tension.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
       "generation_status": "complete",
-      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-card-v1.png",
-      "public_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-card-v1.png",
-      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-card-v1.thumb.jpg",
-      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:27.563Z",
-      "checksum": "7ec861fbf63a076ddf1f05fa7dbfb4161d5758e0",
-      "file_size": 981647,
-      "duration_seconds": null
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/arc_teaser_video/tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/arc_teaser_video/tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:06:57.414Z",
+      "checksum": "a34cdd86100ddccef195d6db97bd994287a1d339",
+      "file_size": 12210901,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\arc_ambience\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Media Forensics Analyst Priya Sen",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Media Forensics Analyst Priya Sen to team. A recovered camcorder tape rewrites itself every midnight. This arc centers on confrontation and reckoning arc teaser video, with pressure building around frame glitch cluster. Move quietly through closed wilderness watch station and ranger tunnels and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.244,
+            "textureAmount": 0.6337499999999999,
+            "highpassHz": 95,
+            "lowpassHz": 7613,
+            "presenceGainDb": 0.917
+          }
+        }
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/ending_recap_video/tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/ending_recap_video/tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:08:56.303Z",
+      "checksum": "78170979324aadb0939157c4537f98c70a2d5b1c",
+      "file_size": 15480608,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-6-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "The Editor",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "The Editor reporting. The case closes on corruption pact ending recap video. The evidence thread started with frame glitch cluster and now points directly at The Editor. Review the timeline at closed wilderness watch station and ranger tunnels before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.84,
+            "pitchSemitone": -1.315,
+            "textureAmount": 0.55875,
+            "highpassHz": 77,
+            "lowpassHz": 6184,
+            "presenceGainDb": 1.137
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -477,16 +1006,32 @@
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Corruption Pact Ending Score",
       "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose ending score cue for \"Corruption Pact\" that supports summary \"You trade the original tape for influence over what the public sees.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/ending_score/tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:29.459Z",
-      "checksum": "b199a5ff6607a5d149fbf727a95c33dfefed4768",
-      "file_size": 15701526,
-      "duration_seconds": 81.78
+      "created_at": "2026-03-22T22:10:13.810Z",
+      "checksum": "96950af7806efd998e097144ca831d6aaf9cee9b",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -494,17 +1039,68 @@
       "asset_type": "ending_card",
       "modality": "image",
       "title": "Tape 17: Pinewatch - Clean Resolution Ending Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You preserve the authentic footage chain and rescue the final survivor.. Deliver emotional closure with sequel-hook tension.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You preserve the authentic footage chain and rescue the final survivor.. Deliver emotional closure with sequel-hook tension.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:27.603Z",
-      "checksum": "b5bbf79704c2cbe08cca77921ed3d985023be894",
-      "file_size": 984789,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:47:10.590Z",
+      "checksum": "c122acd99f6898ed724a09639bfcea283798e7b2",
+      "file_size": 2907356,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/ending_recap_video/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/ending_recap_video/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:08:10.993Z",
+      "checksum": "5ef380ba23d98b331624065e9bef446c91eb14ae",
+      "file_size": 15635464,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale reporting. The case closes on clean resolution ending recap video. The evidence thread started with frame glitch cluster and now points directly at The Editor. Review the timeline at closed wilderness watch station and ranger tunnels before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9574849999999999,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 75,
+            "lowpassHz": 7107,
+            "presenceGainDb": -0.44699999999999995
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -513,16 +1109,32 @@
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Clean Resolution Ending Score",
       "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose ending score cue for \"Clean Resolution\" that supports summary \"You preserve the authentic footage chain and rescue the final survivor.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/ending_score/tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:26.720Z",
-      "checksum": "4091dc11e3596ecf99cc6d18bf18b1458fdd18ec",
-      "file_size": 15698890,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:10:11.354Z",
+      "checksum": "bfa22990557d4374d193086120b3376a9d86e4bc",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -531,16 +1143,67 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Compromised Truth Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You identify the editor but lose crucial footage and one victim contact.. Deliver emotional closure with sequel-hook tension.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-card-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/ending_card/tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:27.586Z",
-      "checksum": "bfa84915da9993450661f5c9f9c6cd48758bfde4",
-      "file_size": 974185,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:08:20.216Z",
+      "checksum": "d9f182db7392a1f8dd0f520f895e578e95e4c762",
+      "file_size": 2485977,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/ending_recap_video/tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/ending_recap_video/tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:08:19.142Z",
+      "checksum": "fdb523a95878f880e49f7738cbcac6fb757aa9f7",
+      "file_size": 14512445,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale reporting. The case closes on compromised truth ending recap video. The evidence thread started with frame glitch cluster and now points directly at The Editor. Review the timeline at closed wilderness watch station and ranger tunnels before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9290649999999999,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 83,
+            "lowpassHz": 7423,
+            "presenceGainDb": -0.44699999999999995
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -549,16 +1212,32 @@
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Compromised Truth Ending Score",
       "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose ending score cue for \"Compromised Truth\" that supports summary \"You identify the editor but lose crucial footage and one victim contact.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/ending_score/tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:28.092Z",
-      "checksum": "52005d0e9cb5b2eb4a23a591ed0e393ebd1be5d3",
-      "file_size": 15699398,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:10:12.616Z",
+      "checksum": "24dca07dba967845f5c2943bd6da3638a8b2de50",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 42,
+          "mid": 192,
+          "high": 620,
+          "shimmer": 1760,
+          "pulseHz": 0.86,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.2
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -576,7 +1255,8 @@
       "created_at": "2026-03-21T16:14:55.650Z",
       "checksum": "cebcc7d90facf32231aedacdd32c41a1a9637628",
       "file_size": 1170,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -585,16 +1265,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Ranger Juno Hale Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Character portrait for Ranger Juno Hale, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Ranger Juno Hale Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-1-portrait-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-1-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-1-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-1-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:11.770Z",
-      "checksum": "2a668abe533f07af7d37282c11ecc5a92dd742d8",
-      "file_size": 955948,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:08:40.167Z",
+      "checksum": "b38f847ec2c676c76a2b0c7e4eb5d8f3e1d6aed6",
+      "file_size": 2988542,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -602,17 +1287,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Ranger Juno Hale Voice Profile",
-      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Ranger Juno Hale. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Ranger Juno Hale. Keep your channel open and do not answer unknown callbacks. A recovered camcorder tape rewrites itself every midnight. Start with frame glitch cluster, then verify every timestamp against closed wilderness watch station and ranger tunnels. If The Editor contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\npc_voice_profile\\tape-17-pinewatch-tape-17-pinewatch-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:23.595Z",
-      "checksum": "0717ec0bd6e0e6a7eacf8a9348324b1d41a2959e",
-      "file_size": 2111252,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:46.877Z",
+      "checksum": "9bca0823c6593a14de324d5728f7683c842848f8",
+      "file_size": 1225824,
+      "duration_seconds": 12.77,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 0.942295,
+          "pitchSemitone": 0.016000000000000014,
+          "textureAmount": 0.47875,
+          "highpassHz": 75,
+          "lowpassHz": 7000,
+          "presenceGainDb": 0.43300000000000005
+        },
+        "voice_design": {
+          "apiSpeed": 0.942295,
+          "pitchSemitone": 0.016000000000000014,
+          "textureAmount": 0.47875,
+          "highpassHz": 75,
+          "lowpassHz": 7000,
+          "presenceGainDb": 0.43300000000000005
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -630,7 +1339,8 @@
       "created_at": "2026-03-21T16:14:55.654Z",
       "checksum": "f46bcd507eecbac832deafeafc42f25e0067bb5e",
       "file_size": 1204,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -639,16 +1349,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Media Forensics Analyst Priya Sen Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Character portrait for Media Forensics Analyst Priya Sen, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Media Forensics Analyst Priya Sen Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-2-portrait-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-2-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-2-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-2-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:14.663Z",
-      "checksum": "67a56f165c87adab65b38ef78f50afefe86c1369",
-      "file_size": 949471,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:08:42.003Z",
+      "checksum": "75db0f8fe3d5d0ed7149eae954fc8006e7632aae",
+      "file_size": 3274547,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -656,17 +1371,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Media Forensics Analyst Priya Sen Voice Profile",
-      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Media Forensics Analyst Priya Sen. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Media Forensics Analyst Priya Sen. I should not be leaving this message. Something about frame glitch cluster is wrong, and The Editor wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to closed wilderness watch station and ranger tunnels.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\npc_voice_profile\\tape-17-pinewatch-tape-17-pinewatch-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:24.088Z",
-      "checksum": "743892b7d3ffe189ee13695f2a93f4c62a8f007e",
-      "file_size": 2111144,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:50.763Z",
+      "checksum": "1402f4a593f158fcb578b8a0e1c61a17b85af95b",
+      "file_size": 787438,
+      "duration_seconds": 8.2,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.244,
+          "textureAmount": 0.6337499999999999,
+          "highpassHz": 102,
+          "lowpassHz": 7672,
+          "presenceGainDb": 0.437
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.244,
+          "textureAmount": 0.6337499999999999,
+          "highpassHz": 102,
+          "lowpassHz": 7672,
+          "presenceGainDb": 0.437
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -684,7 +1423,8 @@
       "created_at": "2026-03-21T16:14:55.658Z",
       "checksum": "e6afaacc8952f8b7df64fcb76db47ebb04594961",
       "file_size": 1176,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -693,16 +1433,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Survivor Cade Rowan Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Character portrait for Survivor Cade Rowan, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Survivor Cade Rowan Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-3-portrait-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-3-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-3-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-3-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:14.678Z",
-      "checksum": "a325f2a9115b527ca85df2acfabac5fbed2aa745",
-      "file_size": 944548,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:09:11.466Z",
+      "checksum": "90d96d869a74b7e2637439a8b471929d2edbd148",
+      "file_size": 3425285,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -710,17 +1455,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Survivor Cade Rowan Voice Profile",
-      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Survivor Cade Rowan. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Survivor Cade Rowan. I should not be leaving this message. Something about frame glitch cluster is wrong, and The Editor wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to closed wilderness watch station and ranger tunnels.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\npc_voice_profile\\tape-17-pinewatch-tape-17-pinewatch-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:24.601Z",
-      "checksum": "514357cafd0b75a70ca07d605eea22bd86120a5b",
-      "file_size": 2110770,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:54.510Z",
+      "checksum": "afcfded7908517e88c5d5bfb781f32b314afd3fe",
+      "file_size": 865886,
+      "duration_seconds": 9.02,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.107005,
+          "pitchSemitone": 0.5109999999999999,
+          "textureAmount": 0.62,
+          "highpassHz": 101,
+          "lowpassHz": 7819,
+          "presenceGainDb": 0.8920000000000001
+        },
+        "voice_design": {
+          "apiSpeed": 1.107005,
+          "pitchSemitone": 0.5109999999999999,
+          "textureAmount": 0.62,
+          "highpassHz": 101,
+          "lowpassHz": 7819,
+          "presenceGainDb": 0.8920000000000001
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -738,7 +1507,8 @@
       "created_at": "2026-03-21T16:14:55.664Z",
       "checksum": "8c71032a83722721ac49177ef6771217c1b5d457",
       "file_size": 1202,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -747,16 +1517,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Volunteer Search Lead Ellis Vann Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Character portrait for Volunteer Search Lead Ellis Vann, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Volunteer Search Lead Ellis Vann Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-4-portrait-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-4-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\character_portrait\\tape-17-pinewatch-tape-17-pinewatch-npc-4-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/character_portrait/tape-17-pinewatch-tape-17-pinewatch-npc-4-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:14.681Z",
-      "checksum": "b3240514188d238dd4541c733ea02086b564f61d",
-      "file_size": 948667,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:09:33.128Z",
+      "checksum": "bdf25419dc30761c9eba7bcfff3141574dcf1487",
+      "file_size": 3431880,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -764,17 +1539,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Volunteer Search Lead Ellis Vann Voice Profile",
-      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Volunteer Search Lead Ellis Vann. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Volunteer Search Lead Ellis Vann. I should not be leaving this message. Something about frame glitch cluster is wrong, and The Editor wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to closed wilderness watch station and ranger tunnels.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\npc_voice_profile\\tape-17-pinewatch-tape-17-pinewatch-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:25.029Z",
-      "checksum": "8f5dc463848d892d56a59874ac899e54498b6144",
-      "file_size": 2110528,
-      "duration_seconds": 21.98
+      "created_at": "2026-03-23T17:35:58.420Z",
+      "checksum": "e719485fe92ccb7aaea6c19d3b3689a85914d46d",
+      "file_size": 888166,
+      "duration_seconds": 9.25,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.10924,
+          "pitchSemitone": 1.525,
+          "textureAmount": 0.5275,
+          "highpassHz": 96,
+          "lowpassHz": 7865,
+          "presenceGainDb": -0.018000000000000016
+        },
+        "voice_design": {
+          "apiSpeed": 1.10924,
+          "pitchSemitone": 1.525,
+          "textureAmount": 0.5275,
+          "highpassHz": 96,
+          "lowpassHz": 7865,
+          "presenceGainDb": -0.018000000000000016
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -783,16 +1582,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Timecode Relay Puzzle Board",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Puzzle visual for \"Timecode Relay\". Objective: Merge three timecode fragments to reconstruct the missing minute.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Timecode Relay Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_board\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-puzzle-board-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_board/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-puzzle-board-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_board\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-puzzle-board-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_board/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-puzzle-board-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:21.329Z",
-      "checksum": "1a4cb56dbdf45b6c464a6f4ea9aa913bf327cc32",
-      "file_size": 1011667,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:09:02.159Z",
+      "checksum": "9f3c0b1aa08242da8478893840e6b588db9ec6a4",
+      "file_size": 3386307,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -810,7 +1614,8 @@
       "created_at": "2026-03-21T16:14:55.690Z",
       "checksum": "95b05c77ecb1900b419d8b58a3dcbbd33d522ec1",
       "file_size": 1166,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -819,16 +1624,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Timecode Relay - ALLY_A Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Create shard card for holder ALLY_A. Content brief: Ally A receives audio waveform peaks via SMS.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Timecode Relay - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:24.608Z",
-      "checksum": "936aa27b5be9a3930f22df605bbe1510502de4c5",
-      "file_size": 998246,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:09:24.860Z",
+      "checksum": "d9439a323b0142561f553162285a27ca209c7c70",
+      "file_size": 3630314,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -836,17 +1646,22 @@
       "asset_type": "puzzle_shard_card",
       "modality": "image",
       "title": "Tape 17: Pinewatch - Timecode Relay - GLOBAL_BROADCAST Shard Card",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Create shard card for holder GLOBAL_BROADCAST. Content brief: Public drop includes lens calibration values required to sync both.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Timecode Relay - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Create shard card for holder GLOBAL_BROADCAST. Content brief: Public drop includes lens calibration values required to sync both.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Timecode Relay - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:24.607Z",
-      "checksum": "66367c750669060965dd3ef8410e43624534eecc",
-      "file_size": 1016279,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:46:19.480Z",
+      "checksum": "ba365e499ff09b6bfe8384ffdfb550113960f040",
+      "file_size": 3870983,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -855,16 +1670,69 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Timecode Relay - HOST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Create shard card for holder HOST. Content brief: Host receives frame numbers without audio.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Timecode Relay - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:24.608Z",
-      "checksum": "50d5c29135ed5a2d42c184f8418867a9d376f225",
-      "file_size": 1012947,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:09:48.041Z",
+      "checksum": "975d38b32a559cf6c8f3ab55f1cbea9831cb3e2d",
+      "file_size": 3586892,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "tape-17-pinewatch",
+      "asset_id": "tape-17-pinewatch-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "Tape 17: Pinewatch Main Trailer",
+      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\story_trailer\\tape-17-pinewatch-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/tape-17-pinewatch/video/story_trailer/tape-17-pinewatch-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\story_trailer\\tape-17-pinewatch-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/video/story_trailer/tape-17-pinewatch-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T17:08:59.719Z",
+      "checksum": "14b3399ca0236c12a9760c5936ca43df9edcbc1d",
+      "file_size": 13895628,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\story_key_art\\tape-17-pinewatch-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\arc_key_art\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\story_theme_loop\\tape-17-pinewatch-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Ranger Juno Hale",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Ranger Juno Hale briefing. Tape 17: Pinewatch Main Trailer is now active. Start with frame glitch cluster, then compare every new message against a recovered camcorder tape rewrites itself every midnight.. If The Editor reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.962665,
+            "pitchSemitone": 0.016000000000000014,
+            "textureAmount": 0.47875,
+            "highpassHz": 84,
+            "lowpassHz": 7001,
+            "presenceGainDb": -0.287
+          }
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -882,7 +1750,8 @@
       "created_at": "2026-03-21T16:14:55.686Z",
       "checksum": "e8e5141706b7bb690a4586bca765b817ca78cae1",
       "file_size": 1198,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -891,16 +1760,21 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Evidence Still - Tripod footprint cast",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Tripod footprint cast\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Tripod footprint cast. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-tripod-footprint-cast-evidence-still-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-tripod-footprint-cast-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-tripod-footprint-cast-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-tripod-footprint-cast-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:21.310Z",
-      "checksum": "d97f3cfe818fe0a3a73cdf8a3bbe893c7e4a35e7",
-      "file_size": 1011119,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:09:54.205Z",
+      "checksum": "3680a2dcfc6541607d0215d425162479bd2d2cc0",
+      "file_size": 3312909,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -918,7 +1792,8 @@
       "created_at": "2026-03-21T16:14:55.668Z",
       "checksum": "5d0d439625594ec2642961d5dcfafb1752aefc48",
       "file_size": 1158,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -926,17 +1801,22 @@
       "asset_type": "villain_portrait",
       "modality": "image",
       "title": "Tape 17: Pinewatch - Villain Portrait",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Design portrait of antagonist The Editor with archetype PLAYFUL_SOCIOPATH, speech style \"Conversational, playful, then abruptly cruel.\", and motifs timecode burn-ins, camera clicks, forest sirens.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Design portrait of antagonist The Editor with archetype PLAYFUL_SOCIOPATH, speech style \"Conversational, playful, then abruptly cruel.\", and motifs timecode burn-ins, camera clicks, forest sirens.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/villain_portrait/tape-17-pinewatch-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/villain_portrait/tape-17-pinewatch-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:18.011Z",
-      "checksum": "056094bd72012e15ae5de001753492783b164a24",
-      "file_size": 956949,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:44:47.011Z",
+      "checksum": "0960d64d73ce1bbfd7389bbfe75ccf724fb23e35",
+      "file_size": 3297004,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -944,17 +1824,41 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "Tape 17: Pinewatch - Villain Voice Profile",
-      "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Create villain voice profile for The Editor. Worldview: Reality is editable if fear is timed correctly.. Manner: Gallows humor about failed rescues.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. A recovered camcorder tape rewrites itself every midnight. Work the case in order: secure frame glitch cluster, confirm the scene at closed wilderness watch station and ranger tunnels, and do not let The Editor choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\villain_voice_profile\\tape-17-pinewatch-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/tape-17-pinewatch/audio/villain_voice_profile/tape-17-pinewatch-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:13:25.492Z",
-      "checksum": "2101fe79ca30a7f1e1b4fc22fd98c125cc3e693b",
-      "file_size": 2110806,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:36:02.253Z",
+      "checksum": "55ec72d598b0f0d1e7e3dad5edc9826ce1381219",
+      "file_size": 924150,
+      "duration_seconds": 9.63,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "echo",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 1.03262,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 79,
+          "lowpassHz": 7039,
+          "presenceGainDb": -0.08
+        },
+        "voice_design": {
+          "apiSpeed": 1.03262,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 79,
+          "lowpassHz": 7039,
+          "presenceGainDb": -0.08
+        }
+      }
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -972,7 +1876,8 @@
       "created_at": "2026-03-21T16:14:55.681Z",
       "checksum": "42b8d4c6661aa76bd5fd105b49ee7927897b6137",
       "file_size": 1189,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "tape-17-pinewatch",
@@ -981,148 +1886,53 @@
       "modality": "image",
       "title": "Tape 17: Pinewatch - Evidence Still - Weather siren file",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Weather siren file\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Weather siren file. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-weather-siren-file-evidence-still-v1.png",
       "public_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-weather-siren-file-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-weather-siren-file-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-weather-siren-file-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:38:21.272Z",
-      "checksum": "0130d92656e1e1414c4d63a93d5c5eb46f2b2d68",
-      "file_size": 1017441,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:10:09.957Z",
+      "checksum": "3c2fb3f954a6953327e01182c932e9a32140e80a",
+      "file_size": 2783708,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     }
   ],
   "failures": [
     {
       "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
+      "asset_id": "tape-17-pinewatch-beat-2-beat-scene",
+      "asset_type": "beat_scene_art",
+      "modality": "image",
+      "generation_status": "failed",
+      "error": "openai: image text artifact detected; regenerate required :: TAPE (95) | pollinations: provider returned 500",
+      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-2-beat-scene-v1.png",
+      "last_attempt_at": "2026-03-22T21:53:03.346Z"
     },
     {
       "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
+      "asset_id": "tape-17-pinewatch-beat-3-beat-scene",
+      "asset_type": "beat_scene_art",
+      "modality": "image",
+      "generation_status": "failed",
+      "error": "openai: image text artifact detected; regenerate required :: PINEWATCH (88) | pollinations: provider returned 500",
+      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-3-beat-scene-v1.png",
+      "last_attempt_at": "2026-03-22T21:53:03.346Z"
     },
     {
       "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\beat_transition_video\\tape-17-pinewatch-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\arc_teaser_video\\tape-17-pinewatch-tape-17-pinewatch-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\ending_recap_video\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "tape-17-pinewatch",
-      "asset_id": "tape-17-pinewatch-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\video\\story_trailer\\tape-17-pinewatch-trailer-main-v1.mp4",
-      "last_attempt_at": null
+      "asset_id": "tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-card",
+      "asset_type": "ending_card",
+      "modality": "image",
+      "generation_status": "failed",
+      "error": "openai: image text artifact detected; regenerate required :: TAPE (93), 17-PINEWATCH (84) | pollinations: provider returned 500",
+      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\ending_card\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-card-v1.png",
+      "last_attempt_at": "2026-03-22T21:53:03.346Z"
     }
   ]
 }

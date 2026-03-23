@@ -18,7 +18,8 @@
       "created_at": "2026-03-21T16:14:55.514Z",
       "checksum": "d621dc3a633f5131326f2c892f8868184197c2c5",
       "file_size": 1198,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -27,16 +28,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Evidence Still - Anonymous tip voicemail",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Render forensic evidence still for \"Anonymous tip voicemail\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Evidence Still - Anonymous tip voicemail. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-anonymous-tip-voicemail-evidence-still-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-anonymous-tip-voicemail-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-anonymous-tip-voicemail-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-anonymous-tip-voicemail-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:51.939Z",
-      "checksum": "dfc803a33125e3d3ba9a882fbd34354034574072",
-      "file_size": 964606,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:47:25.189Z",
+      "checksum": "4a4f2dc77fe123192727d4055b73f8379cf49df7",
+      "file_size": 3468937,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -45,16 +51,66 @@
       "modality": "image",
       "title": "Red Creek Winter - First Snow Body Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: First Snow Body (Contact). Narrative: Dispatch pushes a crime scene map to SMS while social channels spread contradictory alibis.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Dispatch pushes a crime scene map to SMS while social channels spread contradictory alibis.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-1-beat-scene-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-1-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-1-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-1-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:33.927Z",
-      "checksum": "54b45453d36c488ec3d1b966af187396ad0452b6",
-      "file_size": 916295,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:47:37.642Z",
+      "checksum": "238e0ab37709d168a355f5aea366dace97b4a1d2",
+      "file_size": 3227178,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-beat-1-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Red Creek Winter - First Snow Body Beat Transition",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Beat: First Snow Body. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-1-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-1-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-1-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-1-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:57:12.173Z",
+      "checksum": "86ceff68b47fbe4c6059ea316b6fb9c843a0e380",
+      "file_size": 4568404,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt briefing. First Snow Body Beat Transition is now active. Start with dispatch freeze frame, then compare every new message against each snowfall uncovers one body and one impossible alibi.. If The White Knife reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9263399999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 80,
+            "lowpassHz": 7257,
+            "presenceGainDb": -0.23699999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -63,16 +119,66 @@
       "modality": "image",
       "title": "Red Creek Winter - Escalation Signal Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Escalation Signal (Contact). Narrative: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: A contradictory channel drop appears within minutes and forces risk.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-2-beat-scene-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-2-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-2-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-2-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:37.297Z",
-      "checksum": "888523ec15588ab2e157b9b89fe98a8cfbc22e28",
-      "file_size": 929058,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:47:51.761Z",
+      "checksum": "ae24a4ab089d47484b99ea408bf0285a30994c33",
+      "file_size": 2894015,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-beat-2-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Escalation Signal Beat Transition",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-2-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-2-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-2-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-2-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:57:30.660Z",
+      "checksum": "eb6b01dba85da219e19ee86b421371bde6a2d99f",
+      "file_size": 4596267,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt briefing. Escalation Signal Beat Transition is now active. Start with dispatch freeze frame, then compare every new message against each snowfall uncovers one body and one impossible alibi.. If The White Knife reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9423349999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 75,
+            "lowpassHz": 7445,
+            "presenceGainDb": -0.39699999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -81,16 +187,66 @@
       "modality": "image",
       "title": "Red Creek Winter - Trust Fracture Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Trust Fracture (Interference). Narrative: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: The villain mixes real secrets with fabricated claims to split allies.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-3-beat-scene-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-3-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-3-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-3-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:37.298Z",
-      "checksum": "05f6553780768612112f2d0dd4f1d3595052577f",
-      "file_size": 921005,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:47:55.742Z",
+      "checksum": "cd09e0a03d1505312f587ad0081362ea5aefba6c",
+      "file_size": 3292507,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-beat-3-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Trust Fracture Beat Transition",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Beat: Trust Fracture. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-3-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-3-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-3-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-3-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:57:38.451Z",
+      "checksum": "d91298683f7774b29550a171fa65abca3feec259",
+      "file_size": 4507386,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-3-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt briefing. Trust Fracture Beat Transition is now active. Start with dispatch freeze frame, then compare every new message against each snowfall uncovers one body and one impossible alibi.. If The White Knife reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.89113,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 74,
+            "lowpassHz": 7108,
+            "presenceGainDb": 0.24300000000000005
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -98,17 +254,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Red Creek Winter - Ultimatum Window Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-4-beat-scene-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-4-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-4-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-4-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:37.326Z",
-      "checksum": "a4a868b55630e7311df5ccffdc1f5e7ad028d12e",
-      "file_size": 928315,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:34:33.066Z",
+      "checksum": "997f9aefefb9a3c974a732117078f046f8eb4776",
+      "file_size": 3426955,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-beat-4-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Ultimatum Window Beat Transition",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Beat: Ultimatum Window. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-4-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-4-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-4-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-4-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:57:46.469Z",
+      "checksum": "cf0484d21064f8ba5aedeff9a2b07174dfa882b5",
+      "file_size": 4780100,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-4-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt briefing. Ultimatum Window Beat Transition is now active. Start with dispatch freeze frame, then compare every new message against each snowfall uncovers one body and one impossible alibi.. If The White Knife reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9449249999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 80,
+            "lowpassHz": 7174,
+            "presenceGainDb": -0.31699999999999995
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -117,16 +323,66 @@
       "modality": "image",
       "title": "Red Creek Winter - Confrontation Protocol Beat Scene",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-5-beat-scene-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-5-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-5-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-5-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:40.818Z",
-      "checksum": "6ffedefd5cd4cc067043647b5fa88aafc94233c0",
-      "file_size": 964464,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:48:17.075Z",
+      "checksum": "d8d876e4b5e81859e646ea60ff0c79e439491cdd",
+      "file_size": 3258793,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-beat-5-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Confrontation Protocol Beat Transition",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Beat: Confrontation Protocol. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-5-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-5-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-5-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-5-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:57:54.548Z",
+      "checksum": "043deb45343526b54c78fafea237915b56dd8f3c",
+      "file_size": 4728873,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-5-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt briefing. Confrontation Protocol Beat Transition is now active. Start with dispatch freeze frame, then compare every new message against each snowfall uncovers one body and one impossible alibi.. If The White Knife reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9233999999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 76,
+            "lowpassHz": 7218,
+            "presenceGainDb": 0.16300000000000003
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -134,17 +390,67 @@
       "asset_type": "beat_scene_art",
       "modality": "image",
       "title": "Red Creek Winter - Case Debrief Beat Scene",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Case Debrief (Reckoning). Narrative: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Final scoring resolves ending branch and season continuity flags.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-6-beat-scene-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-6-beat-scene-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-6-beat-scene-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-6-beat-scene-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:40.951Z",
-      "checksum": "f0a82ad2a55bb5dee8ed30f851e7ad50e504d14d",
-      "file_size": 916185,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:34:59.470Z",
+      "checksum": "8112fb979fecd4aef5d4d9b97f684f2acc92aea5",
+      "file_size": 3284839,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-beat-6-beat-transition",
+      "asset_type": "beat_transition_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Case Debrief Beat Transition",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Beat: Case Debrief. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-6-beat-transition-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-6-beat-transition-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-6-beat-transition-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/beat_transition_video/red-creek-winter-beat-6-beat-transition-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:58:01.583Z",
+      "checksum": "9a6b6abd0e7287d16af9c8692c289aa531a0766a",
+      "file_size": 4553646,
+      "duration_seconds": 6,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-6-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
+        "duration_seconds": 6,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt briefing. Case Debrief Beat Transition is now active. Start with dispatch freeze frame, then compare every new message against each snowfall uncovers one body and one impossible alibi.. If The White Knife reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9281949999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 78,
+            "lowpassHz": 7119,
+            "presenceGainDb": 0.16300000000000003
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -162,7 +468,8 @@
       "created_at": "2026-03-21T16:14:55.500Z",
       "checksum": "48ed4dd89eaaff2aeff945cf6fe328f5cb3b7776",
       "file_size": 1192,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -170,17 +477,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Red Creek Winter - Evidence Still - Dispatch freeze frame",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Render forensic evidence still for \"Dispatch freeze frame\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Evidence Still - Dispatch freeze frame. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Red Creek Winter. Setting: Mountain logging town under blizzard lockdown. Recurring motifs: snow lines, hunting whistles, frosted glass. Render forensic evidence still for \"Dispatch freeze frame\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: small-town winter mystery mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Evidence Still - Dispatch freeze frame. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-dispatch-freeze-frame-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-dispatch-freeze-frame-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-dispatch-freeze-frame-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:48.652Z",
-      "checksum": "27c95ac4d4ec8bd77948b0d92cae6b43ebef5791",
-      "file_size": 967234,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:44:29.337Z",
+      "checksum": "8016e5e03e7e308f456e30b8c4575b0bfaaccef9",
+      "file_size": 3257191,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -198,7 +510,8 @@
       "created_at": "2026-03-21T16:14:55.525Z",
       "checksum": "4883b802e975bcd550e260aa629eb798520fc83c",
       "file_size": 1244,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -216,7 +529,8 @@
       "created_at": "2026-03-21T16:15:49.534Z",
       "checksum": "b9373401556bc9699ad13118f949040ab9a025ce",
       "file_size": 1418,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -234,7 +548,8 @@
       "created_at": "2026-03-21T16:14:55.530Z",
       "checksum": "6303ad5ed22f62401cd4ccc7642d9592a27020bb",
       "file_size": 1247,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -252,7 +567,8 @@
       "created_at": "2026-03-21T16:15:49.539Z",
       "checksum": "f6fa89b74eeaf72e4170480e430a0b17fc4d4c73",
       "file_size": 1421,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -261,16 +577,32 @@
       "modality": "audio",
       "title": "Red Creek Winter - Contact and Contradiction Arc Ambience",
       "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\arc_ambience\\red-creek-winter-red-creek-winter-arc-contact-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/arc_ambience/red-creek-winter-red-creek-winter-arc-contact-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:45.314Z",
-      "checksum": "dfffd75e7f66328aac58d9ab2e40fe7751912ef9",
-      "file_size": 15698858,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:08:28.653Z",
+      "checksum": "fdc99db50b533528d6fb01124061ae76b30982ad",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 48,
+          "mid": 206,
+          "high": 980,
+          "shimmer": 2560,
+          "pulseHz": 1.62,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.14
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -279,16 +611,67 @@
       "modality": "image",
       "title": "Red Creek Winter - Contact and Contradiction Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: small-town slasher mystery. Tone: INTENSE. Arc focus: Contact and Contradiction (OPENING). Summary: The case opens with impossible evidence and uncertain allies.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Red Creek Winter - Contact and Contradiction Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-contact-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/arc_key_art/red-creek-winter-red-creek-winter-arc-contact-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-contact-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/arc_key_art/red-creek-winter-red-creek-winter-arc-contact-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:31.272Z",
-      "checksum": "dcddb0845261700875d7de2c38e200115a4e9133",
-      "file_size": 928018,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:49:25.559Z",
+      "checksum": "679230f1a139ac9293e3246ba082e9d186906e5b",
+      "file_size": 3877756,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Contact and Contradiction Arc Teaser Video",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/arc_teaser_video/red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/arc_teaser_video/red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:56:52.613Z",
+      "checksum": "edc1c8ebc56830d9e591b9042803d041f646930f",
+      "file_size": 12538739,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\arc_ambience\\red-creek-winter-red-creek-winter-arc-contact-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Deputy Nico Vale",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Deputy Nico Vale to team. Each snowfall uncovers one body and one impossible alibi. This arc centers on contact and contradiction arc teaser video, with pressure building around dispatch freeze frame. Move quietly through mountain logging town under blizzard lockdown and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.111,
+            "textureAmount": 0.6275,
+            "highpassHz": 99,
+            "lowpassHz": 7987,
+            "presenceGainDb": 0.46199999999999997
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -297,16 +680,32 @@
       "modality": "audio",
       "title": "Red Creek Winter - Interference and Doubt Arc Ambience",
       "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Arc focus: Interference and Doubt. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\arc_ambience\\red-creek-winter-red-creek-winter-arc-disruption-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/arc_ambience/red-creek-winter-red-creek-winter-arc-disruption-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:47.001Z",
-      "checksum": "a4384da717072c885d26582a29ffbeaaacb00fad",
-      "file_size": 15699482,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:08:30.097Z",
+      "checksum": "3b22180b3357f50c49c2dae3c48822281b5892b9",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 48,
+          "mid": 206,
+          "high": 980,
+          "shimmer": 2560,
+          "pulseHz": 1.62,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.14
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -315,16 +714,67 @@
       "modality": "image",
       "title": "Red Creek Winter - Interference and Doubt Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: small-town slasher mystery. Tone: INTENSE. Arc focus: Interference and Doubt (MIDDLE). Summary: Villain contact escalates while ally trust becomes volatile.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Red Creek Winter - Interference and Doubt Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-disruption-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/arc_key_art/red-creek-winter-red-creek-winter-arc-disruption-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-disruption-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/arc_key_art/red-creek-winter-red-creek-winter-arc-disruption-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:33.944Z",
-      "checksum": "699d2aa94122b7dffef3d3ce67d1539869c1445a",
-      "file_size": 914922,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:49:12.550Z",
+      "checksum": "744c400fed934be6f0f479f5d465f66725e40a19",
+      "file_size": 3472596,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Interference and Doubt Arc Teaser Video",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/arc_teaser_video/red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/arc_teaser_video/red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:56:55.417Z",
+      "checksum": "a83aaec78ab2b5003184508212679e8da4b5f03d",
+      "file_size": 12335865,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\arc_ambience\\red-creek-winter-red-creek-winter-arc-disruption-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Deputy Nico Vale",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Deputy Nico Vale to team. Each snowfall uncovers one body and one impossible alibi. This arc centers on interference and doubt arc teaser video, with pressure building around dispatch freeze frame. Move quietly through mountain logging town under blizzard lockdown and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.111,
+            "textureAmount": 0.6275,
+            "highpassHz": 86,
+            "lowpassHz": 7955,
+            "presenceGainDb": 0.46199999999999997
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -333,16 +783,32 @@
       "modality": "audio",
       "title": "Red Creek Winter - Confrontation and Reckoning Arc Ambience",
       "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\arc_ambience\\red-creek-winter-red-creek-winter-arc-endgame-arc-ambience-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/arc_ambience/red-creek-winter-red-creek-winter-arc-endgame-arc-ambience-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:48.332Z",
-      "checksum": "38493f4a2d150ed290cb8bc773c5ac5502031c3a",
-      "file_size": 15699126,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:08:31.564Z",
+      "checksum": "186f592d88be413367b6e376d0016f942fcdc875",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 48,
+          "mid": 206,
+          "high": 980,
+          "shimmer": 2560,
+          "pulseHz": 1.62,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.14
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -351,16 +817,67 @@
       "modality": "image",
       "title": "Red Creek Winter - Confrontation and Reckoning Arc Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: chapter poster. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Subgenre: small-town slasher mystery. Tone: INTENSE. Arc focus: Confrontation and Reckoning (ENDGAME). Summary: The final branch depends on ethics, timing, and trust.. Create cinematic key art with readable clue anchors and escalating threat language.. Immediate scene brief: Red Creek Winter - Confrontation and Reckoning Arc Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-endgame-arc-key-art-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/arc_key_art/red-creek-winter-red-creek-winter-arc-endgame-arc-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-endgame-arc-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/arc_key_art/red-creek-winter-red-creek-winter-arc-endgame-arc-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:33.971Z",
-      "checksum": "557e8509d7169e7d2b66bfcf044067504cf6cf92",
-      "file_size": 925683,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:49:20.955Z",
+      "checksum": "76df269bd4c24aa2dde42f1ce851fcf250dc9382",
+      "file_size": 3668902,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video",
+      "asset_type": "arc_teaser_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Confrontation and Reckoning Arc Teaser Video",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/arc_teaser_video/red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/arc_teaser_video/red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:57:23.016Z",
+      "checksum": "4adbc4017e0c7b0da8e46c2ba89186581a6d0732",
+      "file_size": 12498933,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-endgame-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\arc_ambience\\red-creek-winter-red-creek-winter-arc-endgame-arc-ambience-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Deputy Nico Vale",
+          "role": "witness",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "nova",
+          "script": "Deputy Nico Vale to team. Each snowfall uncovers one body and one impossible alibi. This arc centers on confrontation and reckoning arc teaser video, with pressure building around dispatch freeze frame. Move quietly through mountain logging town under blizzard lockdown and keep your witness channel open.",
+          "design": {
+            "apiSpeed": 1.16,
+            "pitchSemitone": 1.111,
+            "textureAmount": 0.6275,
+            "highpassHz": 91,
+            "lowpassHz": 7720,
+            "presenceGainDb": 0.862
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -369,16 +886,67 @@
       "modality": "image",
       "title": "Red Creek Winter - Corruption Pact Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Ending card for \"Corruption Pact\" (CORRUPTION). Summary: You accept staged closure to keep panic and tourism revenue controlled.. Deliver emotional closure with sequel-hook tension.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Corruption Pact Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-corruption-ending-card-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/ending_card/red-creek-winter-red-creek-winter-ending-corruption-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-corruption-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/ending_card/red-creek-winter-red-creek-winter-ending-corruption-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:59.572Z",
-      "checksum": "9f2197001550d8f402f4ceec6ceb8538a8576a4a",
-      "file_size": 919737,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:50:12.682Z",
+      "checksum": "f20e46235f9d5b6914f1d74046b60d23dfb71747",
+      "file_size": 3373493,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Corruption Pact Ending Recap Video",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Produce ending recap video for \"Corruption Pact\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:59:25.327Z",
+      "checksum": "2ede526f0fcfa1959a91513e1b56d01be38a5927",
+      "file_size": 16290114,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-corruption-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "The White Knife",
+          "role": "antagonist",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "onyx",
+          "script": "The White Knife reporting. The case closes on corruption pact ending recap video. The evidence thread started with dispatch freeze frame and now points directly at The White Knife. Review the timeline at mountain logging town under blizzard lockdown before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.84,
+            "pitchSemitone": -1.448,
+            "textureAmount": 0.54625,
+            "highpassHz": 66,
+            "lowpassHz": 6253,
+            "presenceGainDb": 0.9470000000000001
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -387,16 +955,32 @@
       "modality": "audio",
       "title": "Red Creek Winter - Corruption Pact Ending Score",
       "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept staged closure to keep panic and tourism revenue controlled.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/ending_score/red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:54.199Z",
-      "checksum": "0ea9242e17e64cd7b78554ae0c191c1b22b2dff4",
-      "file_size": 15699438,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:08:52.412Z",
+      "checksum": "220336a10b2edf3a7e3605b2a6fcfdfa9e757234",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 48,
+          "mid": 206,
+          "high": 980,
+          "shimmer": 2560,
+          "pulseHz": 1.62,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.14
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -405,16 +989,67 @@
       "modality": "image",
       "title": "Red Creek Winter - Clean Resolution Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Ending card for \"Clean Resolution\" (JUSTICE). Summary: You secure both culprit and corroborated chain before storm lift.. Deliver emotional closure with sequel-hook tension.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Clean Resolution Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-justice-ending-card-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/ending_card/red-creek-winter-red-creek-winter-ending-justice-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-justice-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/ending_card/red-creek-winter-red-creek-winter-ending-justice-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:59.489Z",
-      "checksum": "5849834225ca35fb92fe4432ed3714b48655a4e1",
-      "file_size": 919932,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:50:14.531Z",
+      "checksum": "0586b2636c183393b92304eba9fcee91bdf52780",
+      "file_size": 3663148,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-red-creek-winter-ending-justice-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Clean Resolution Ending Recap Video",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-justice-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-justice-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-justice-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:58:39.582Z",
+      "checksum": "0df747a7b09345913aa415c96293fdb9aab58b9b",
+      "file_size": 16677984,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-justice-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-justice-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt reporting. The case closes on clean resolution ending recap video. The evidence thread started with dispatch freeze frame and now points directly at The White Knife. Review the timeline at mountain logging town under blizzard lockdown before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9230849999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 81,
+            "lowpassHz": 7076,
+            "presenceGainDb": 0.0030000000000000443
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -423,16 +1058,32 @@
       "modality": "audio",
       "title": "Red Creek Winter - Clean Resolution Ending Score",
       "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose ending score cue for \"Clean Resolution\" that supports summary \"You secure both culprit and corroborated chain before storm lift.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-justice-ending-score-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/ending_score/red-creek-winter-red-creek-winter-ending-justice-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:51.275Z",
-      "checksum": "667f38bbc046d9c6b59431be9b0c81352bb2257c",
-      "file_size": 15699378,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:08:49.711Z",
+      "checksum": "82d6d2909afbcb31bf85f50199eadcf0172928ab",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 48,
+          "mid": 206,
+          "high": 980,
+          "shimmer": 2560,
+          "pulseHz": 1.62,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.14
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -441,16 +1092,67 @@
       "modality": "image",
       "title": "Red Creek Winter - Compromised Truth Ending Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: ending illustration. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Ending card for \"Compromised Truth\" (PYRRHIC). Summary: You stop killings but ignite permanent distrust in local institutions.. Deliver emotional closure with sequel-hook tension.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Compromised Truth Ending Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-card-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/ending_card/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/ending_card/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:59.550Z",
-      "checksum": "6fdd52eff41ab2794f18b61840498aa1c7ad7529",
-      "file_size": 937588,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:50:17.353Z",
+      "checksum": "08de109e4da8e42f953dd6c0a0ce84b2511e1eb1",
+      "file_size": 3155128,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video",
+      "asset_type": "ending_recap_video",
+      "modality": "video",
+      "title": "Red Creek Winter - Compromised Truth Ending Recap Video",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:58:48.256Z",
+      "checksum": "529dbb39f711f04acf7e8a5e99fffa2eaa4b2f35",
+      "file_size": 15943345,
+      "duration_seconds": 24,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-card-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-5-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-score-v1.wav",
+        "duration_seconds": 24,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt reporting. The case closes on compromised truth ending recap video. The evidence thread started with dispatch freeze frame and now points directly at The White Knife. Review the timeline at mountain logging town under blizzard lockdown before the next transmission goes live.",
+          "design": {
+            "apiSpeed": 0.9282649999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 76,
+            "lowpassHz": 7292,
+            "presenceGainDb": -0.15699999999999997
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -459,16 +1161,32 @@
       "modality": "audio",
       "title": "Red Creek Winter - Compromised Truth Ending Score",
       "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose ending score cue for \"Compromised Truth\" that supports summary \"You stop killings but ignite permanent distrust in local institutions.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-score-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/ending_score/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-score-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:52.718Z",
-      "checksum": "6ee6f693de45a0c18abc4b1c9fe97e630983f9f3",
-      "file_size": 15699546,
-      "duration_seconds": 81.77
+      "created_at": "2026-03-22T22:08:51.071Z",
+      "checksum": "863b969c996cd7378a8b677785b5b8bdaadaa797",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 48,
+          "mid": 206,
+          "high": 980,
+          "shimmer": 2560,
+          "pulseHz": 1.62,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.14
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -486,7 +1204,8 @@
       "created_at": "2026-03-21T16:14:55.478Z",
       "checksum": "68b69a9e09d94869db08e23c3327d88a0df3a9e8",
       "file_size": 1165,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -495,16 +1214,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Sheriff Dana Holt Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Character portrait for Sheriff Dana Holt, role HANDLER. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Sheriff Dana Holt Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-1-portrait-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-1-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-1-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-1-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:41.015Z",
-      "checksum": "f67a1bb57c988e401bd7d1d0fbf941b99b12e714",
-      "file_size": 915807,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:51:04.477Z",
+      "checksum": "7f47dde583120b57f77443ce8fb649884fff07cb",
+      "file_size": 3633264,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -512,17 +1236,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Red Creek Winter - Sheriff Dana Holt Voice Profile",
-      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build unique voice profile for Sheriff Dana Holt. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Sheriff Dana Holt. Keep your channel open and do not answer unknown callbacks. Each snowfall uncovers one body and one impossible alibi. Start with dispatch freeze frame, then verify every timestamp against mountain logging town under blizzard lockdown. If The White Knife contacts you directly, preserve the message before you react.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\npc_voice_profile\\red-creek-winter-red-creek-winter-npc-1-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/npc_voice_profile/red-creek-winter-red-creek-winter-npc-1-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:48.702Z",
-      "checksum": "4861f7ac3daf8e8a2f096fcfe7c04b9560848282",
-      "file_size": 2110694,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:34:46.430Z",
+      "checksum": "7287edce582e4c405034dd4fca25e27374c3ce0d",
+      "file_size": 1368800,
+      "duration_seconds": 14.26,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "sage",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "operator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 0.9389749999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.46625,
+          "highpassHz": 82,
+          "lowpassHz": 7314,
+          "presenceGainDb": -0.5569999999999999
+        },
+        "voice_design": {
+          "apiSpeed": 0.9389749999999999,
+          "pitchSemitone": -0.782,
+          "textureAmount": 0.46625,
+          "highpassHz": 82,
+          "lowpassHz": 7314,
+          "presenceGainDb": -0.5569999999999999
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -540,7 +1288,8 @@
       "created_at": "2026-03-21T16:14:55.482Z",
       "checksum": "f0309c039daaa36b074fd0333d52e6e70f7f6c28",
       "file_size": 1163,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -549,16 +1298,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Deputy Nico Vale Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Character portrait for Deputy Nico Vale, role WITNESS. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Deputy Nico Vale Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-2-portrait-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-2-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-2-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-2-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:44.888Z",
-      "checksum": "0a0bd4853f4eff5b0b0c7cfc9bee4cdc0fe5f484",
-      "file_size": 923938,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:51:08.249Z",
+      "checksum": "79ad1ea647c2a69413dfb616cbba3156db0bb039",
+      "file_size": 3187119,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -566,17 +1320,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Red Creek Winter - Deputy Nico Vale Voice Profile",
-      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build unique voice profile for Deputy Nico Vale. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Deputy Nico Vale. I should not be leaving this message. Something about dispatch freeze frame is wrong, and The White Knife wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain logging town under blizzard lockdown.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\npc_voice_profile\\red-creek-winter-red-creek-winter-npc-2-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/npc_voice_profile/red-creek-winter-red-creek-winter-npc-2-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:49.082Z",
-      "checksum": "9c0d7ba1a7d720624ff59ee8fe607403011d1c69",
-      "file_size": 2110806,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:34:50.044Z",
+      "checksum": "bdbf9d359d82cb4abc67cbcec639b4ec419c80ea",
+      "file_size": 793628,
+      "duration_seconds": 8.27,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "nova",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.111,
+          "textureAmount": 0.6275,
+          "highpassHz": 94,
+          "lowpassHz": 7743,
+          "presenceGainDb": 0.46199999999999997
+        },
+        "voice_design": {
+          "apiSpeed": 1.16,
+          "pitchSemitone": 1.111,
+          "textureAmount": 0.6275,
+          "highpassHz": 94,
+          "lowpassHz": 7743,
+          "presenceGainDb": 0.46199999999999997
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -594,7 +1372,8 @@
       "created_at": "2026-03-21T16:14:55.487Z",
       "checksum": "127ee5b33dd813f75b859e685395a8b079f66b19",
       "file_size": 1173,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -602,17 +1381,22 @@
       "asset_type": "character_portrait",
       "modality": "image",
       "title": "Red Creek Winter - Journalist Mara Finch Portrait",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Character portrait for Journalist Mara Finch, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Journalist Mara Finch Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Character portrait for Journalist Mara Finch, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Journalist Mara Finch Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-3-portrait-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-3-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-3-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-3-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:44.940Z",
-      "checksum": "878d59e3a254e0ce090127463f8ca52ece39b327",
-      "file_size": 928582,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:36:08.335Z",
+      "checksum": "9e4c931b6b4033ce16e5b85ebf04325507bd755f",
+      "file_size": 3685329,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -620,17 +1404,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Red Creek Winter - Journalist Mara Finch Voice Profile",
-      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build unique voice profile for Journalist Mara Finch. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Journalist Mara Finch. I should not be leaving this message. Something about dispatch freeze frame is wrong, and The White Knife wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain logging town under blizzard lockdown.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\npc_voice_profile\\red-creek-winter-red-creek-winter-npc-3-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/npc_voice_profile/red-creek-winter-red-creek-winter-npc-3-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:49.461Z",
-      "checksum": "5ad6f9ea1a760920923697401660b62efd5f2c0a",
-      "file_size": 2111144,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:34:53.785Z",
+      "checksum": "a02e94918fb7ee7e39180e4ca3306094b13cad22",
+      "file_size": 865790,
+      "duration_seconds": 9.02,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "female",
+        "design": {
+          "apiSpeed": 1.09928,
+          "pitchSemitone": 0.9099999999999999,
+          "textureAmount": 0.595,
+          "highpassHz": 86,
+          "lowpassHz": 7780,
+          "presenceGainDb": 0.3520000000000001
+        },
+        "voice_design": {
+          "apiSpeed": 1.09928,
+          "pitchSemitone": 0.9099999999999999,
+          "textureAmount": 0.595,
+          "highpassHz": 86,
+          "lowpassHz": 7780,
+          "presenceGainDb": 0.3520000000000001
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -648,7 +1456,8 @@
       "created_at": "2026-03-21T16:14:55.491Z",
       "checksum": "74a93c3bb520e0547e9fb0c43c162bfa716c0d38",
       "file_size": 1167,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -657,16 +1466,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Survivor Owen Pike Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Character portrait for Survivor Owen Pike, role ALLY. Traits: reactive, observant. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Survivor Owen Pike Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-4-portrait-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-4-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-4-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-4-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:44.814Z",
-      "checksum": "5140c0d8678f1e41ccb7ef9b51930613b94ecc1b",
-      "file_size": 931312,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:51:59.805Z",
+      "checksum": "4b3ef7ab6eff912af99e6853df1ee24cddabe7f7",
+      "file_size": 3622786,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -674,17 +1488,41 @@
       "asset_type": "npc_voice_profile",
       "modality": "audio",
       "title": "Red Creek Winter - Survivor Owen Pike Voice Profile",
-      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build unique voice profile for Survivor Owen Pike. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Survivor Owen Pike. I should not be leaving this message. Something about dispatch freeze frame is wrong, and The White Knife wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain logging town under blizzard lockdown.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\npc_voice_profile\\red-creek-winter-red-creek-winter-npc-4-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/npc_voice_profile/red-creek-winter-red-creek-winter-npc-4-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:49.786Z",
-      "checksum": "110bdd2c39bb04745470b1c1a30051fcf9186155",
-      "file_size": 2111212,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:34:57.486Z",
+      "checksum": "f46cfba18cee622ca76c4772e7886714dd0852eb",
+      "file_size": 862592,
+      "duration_seconds": 8.98,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "shimmer",
+        "locale": "en-US",
+        "region": "north_america",
+        "role": "witness",
+        "sex": "male",
+        "design": {
+          "apiSpeed": 1.1032250000000001,
+          "pitchSemitone": 1.126,
+          "textureAmount": 0.515,
+          "highpassHz": 102,
+          "lowpassHz": 7945,
+          "presenceGainDb": 0.7520000000000001
+        },
+        "voice_design": {
+          "apiSpeed": 1.1032250000000001,
+          "pitchSemitone": 1.126,
+          "textureAmount": 0.515,
+          "highpassHz": 102,
+          "lowpassHz": 7945,
+          "presenceGainDb": 0.7520000000000001
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -693,16 +1531,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Blizzard Alibi Grid Puzzle Board",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Puzzle visual for \"Blizzard Alibi Grid\". Objective: Merge weather and movement shards to break impossible alibis.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Blizzard Alibi Grid Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_board\\red-creek-winter-red-creek-winter-puzzle-shards-puzzle-board-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/puzzle_board/red-creek-winter-red-creek-winter-puzzle-shards-puzzle-board-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_board\\red-creek-winter-red-creek-winter-puzzle-shards-puzzle-board-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/puzzle_board/red-creek-winter-red-creek-winter-puzzle-shards-puzzle-board-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:51.881Z",
-      "checksum": "d59b8fa349e44f66fecd0f2204b604a8ed64b3b6",
-      "file_size": 980469,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:51:31.972Z",
+      "checksum": "852daa78a6c20df301d2910d0183fa2b2b76750b",
+      "file_size": 3714600,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -720,7 +1563,8 @@
       "created_at": "2026-03-21T16:14:55.519Z",
       "checksum": "014ef95de86bedf32514708140633b648487e8c3",
       "file_size": 1169,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -729,16 +1573,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Blizzard Alibi Grid - ALLY_A Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Create shard card for holder ALLY_A. Content brief: Ally A receives GPS drift deltas from a seized phone.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Blizzard Alibi Grid - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_shard_card\\red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-ally-a-shard-card-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/puzzle_shard_card/red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-ally-a-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_shard_card\\red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/puzzle_shard_card/red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:55.495Z",
-      "checksum": "87fb5e45e7bf6f999ab2e39664c559a24af5780f",
-      "file_size": 978753,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:51:48.904Z",
+      "checksum": "61458646005a4a9ff13e016e41fb5d9a5a2dec02",
+      "file_size": 3875745,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -747,16 +1596,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Blizzard Alibi Grid - GLOBAL_BROADCAST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Create shard card for holder GLOBAL_BROADCAST. Content brief: Broadcast radar reveals travel impossibilities for one suspect window.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Blizzard Alibi Grid - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_shard_card\\red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-broadcast-shard-card-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/puzzle_shard_card/red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-broadcast-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_shard_card\\red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/puzzle_shard_card/red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:55.579Z",
-      "checksum": "4a8c0f105b0f89a51b01317784b93f81a34fdca6",
-      "file_size": 983626,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:51:58.150Z",
+      "checksum": "a71eea6b6953e6f23e3df19de3240a4e048997a9",
+      "file_size": 3852769,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -765,16 +1619,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Blizzard Alibi Grid - HOST Shard Card",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Create shard card for holder HOST. Content brief: Host receives patrol timestamps with one missing route leg.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Blizzard Alibi Grid - HOST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_shard_card\\red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-host-shard-card-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/puzzle_shard_card/red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-host-shard-card-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\puzzle_shard_card\\red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-host-shard-card-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/puzzle_shard_card/red-creek-winter-red-creek-winter-puzzle-shards-red-creek-winter-puzzle-shard-host-shard-card-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:55.577Z",
-      "checksum": "a517c46d802d772625f9934c5b5a59c8a89ef483",
-      "file_size": 978159,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:52:12.260Z",
+      "checksum": "1e5f9295ea0d800f8cfd2efc37e398e15fc4c0f0",
+      "file_size": 3698981,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -792,7 +1651,8 @@
       "created_at": "2026-03-21T16:14:55.510Z",
       "checksum": "3d809f59d760651a49d4e647169f299db018aa3f",
       "file_size": 1195,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -800,17 +1660,22 @@
       "asset_type": "evidence_still",
       "modality": "image",
       "title": "Red Creek Winter - Evidence Still - Ski lodge camera still",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Render forensic evidence still for \"Ski lodge camera still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Evidence Still - Ski lodge camera still. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Red Creek Winter. Setting: Mountain logging town under blizzard lockdown. Recurring motifs: snow lines, hunting whistles, frosted glass. Render forensic evidence still for \"Ski lodge camera still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: small-town winter mystery mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Evidence Still - Ski lodge camera still. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-ski-lodge-camera-still-evidence-still-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-ski-lodge-camera-still-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-ski-lodge-camera-still-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-ski-lodge-camera-still-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:51.903Z",
-      "checksum": "63dab432f8d80e843e2af01c0c5d2c52f0000b67",
-      "file_size": 964905,
-      "duration_seconds": null
+      "created_at": "2026-03-22T20:45:00.899Z",
+      "checksum": "330018091172f944de679f18c7a21142f4fab080",
+      "file_size": 3350953,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -828,7 +1693,8 @@
       "created_at": "2026-03-21T16:14:55.504Z",
       "checksum": "bea787e0a6561633a8bb9f632b6b83aa1c235ee6",
       "file_size": 1201,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -837,16 +1703,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Evidence Still - Snow-depth forensic note",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Render forensic evidence still for \"Snow-depth forensic note\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Evidence Still - Snow-depth forensic note. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-snow-depth-forensic-note-evidence-still-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-snow-depth-forensic-note-evidence-still-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\evidence_still\\red-creek-winter-snow-depth-forensic-note-evidence-still-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/evidence_still/red-creek-winter-snow-depth-forensic-note-evidence-still-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:48.686Z",
-      "checksum": "ffea1c45614d56c21d3be6cf073b74da259cdbf1",
-      "file_size": 978166,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:52:21.702Z",
+      "checksum": "236964114780b18e20c4cb8640c57b5c40a64a4f",
+      "file_size": 3536168,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -855,16 +1726,21 @@
       "modality": "image",
       "title": "Red Creek Winter Social Launch Square",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Design square social creative for paid and organic campaigns with campaign-safe contrast and suspense focus.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter Social Launch Square. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\social_square\\red-creek-winter-social-launch-square-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/social_square/red-creek-winter-social-launch-square-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\social_square\\red-creek-winter-social-launch-square-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/social_square/red-creek-winter-social-launch-square-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:02.832Z",
-      "checksum": "a0d0a7f8d866ac7009fd6cf29efad845e91137bd",
-      "file_size": 790008,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:52:29.141Z",
+      "checksum": "ce04f4dadcfa05d51eb34c66cbfe95d44c60baf7",
+      "file_size": 2224380,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -872,17 +1748,22 @@
       "asset_type": "social_vertical",
       "modality": "image",
       "title": "Red Creek Winter Social Launch Vertical",
-      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
-      "tool_used": "local-playwright-art-director",
+      "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\social_vertical\\red-creek-winter-social-launch-vertical-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/social_vertical/red-creek-winter-social-launch-vertical-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\social_vertical\\red-creek-winter-social-launch-vertical-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/social_vertical/red-creek-winter-social-launch-vertical-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:37:02.796Z",
-      "checksum": "e259ea7a1af82fe77d09f1d6700ab82d398653a9",
-      "file_size": 767468,
-      "duration_seconds": null
+      "created_at": "2026-03-22T21:37:06.184Z",
+      "checksum": "07b175d2cc7d9cfc60e21d2d5f7603167eed0b0d",
+      "file_size": 2545891,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1024",
+        "quality": "medium"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -891,16 +1772,21 @@
       "modality": "image",
       "title": "Red Creek Winter Story Key Art",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/story_key_art/red-creek-winter-story-key-art-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/story_key_art/red-creek-winter-story-key-art-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:31.372Z",
-      "checksum": "eb624f8bab852ce4a83a210e07999f55775df2cb",
-      "file_size": 908898,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:53:13.842Z",
+      "checksum": "c19f24c6c670856670f08bb53dac2d06c97f1f40",
+      "file_size": 3486848,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1536x1024",
+        "quality": "high"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -918,7 +1804,8 @@
       "created_at": "2026-03-21T16:15:49.545Z",
       "checksum": "7bd97d881d1752f181de7ea0f73400b6c1e536b7",
       "file_size": 1291,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -927,16 +1814,80 @@
       "modality": "audio",
       "title": "Red Creek Winter Story Theme Loop",
       "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-      "tool_used": "ffmpeg-horror-synth",
+      "tool_used": "ffmpeg-cinematic-horror-score",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/story_theme_loop/red-creek-winter-story-theme-loop-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:55.576Z",
-      "checksum": "431d6833646070f7e02618872af18c1594610435",
-      "file_size": 15698810,
-      "duration_seconds": 81.76
+      "created_at": "2026-03-22T22:08:53.735Z",
+      "checksum": "01d51ed0b86fefd3e5fa5f65b041b6f89ba801f0",
+      "file_size": 14530638,
+      "duration_seconds": 75.68,
+      "provider_metadata": {
+        "flavor": {
+          "low": 48,
+          "mid": 206,
+          "high": 980,
+          "shimmer": 2560,
+          "pulseHz": 1.62,
+          "whisperLow": 1700,
+          "whisperHigh": 4200,
+          "tension": 0.55,
+          "wet": 0.14
+        },
+        "durationSeconds": 75,
+        "sampleRate": 48000,
+        "channels": 2
+      }
+    },
+    {
+      "story_id": "red-creek-winter",
+      "asset_id": "red-creek-winter-trailer-main",
+      "asset_type": "story_trailer",
+      "modality": "video",
+      "title": "Red Creek Winter Main Trailer",
+      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+      "tool_used": "ffmpeg-cinematic-montage",
+      "generation_status": "complete",
+      "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\story_trailer\\red-creek-winter-trailer-main-v1.mp4",
+      "public_path": "/agent-army/stories/red-creek-winter/video/story_trailer/red-creek-winter-trailer-main-v1.mp4",
+      "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\story_trailer\\red-creek-winter-trailer-main-v1.thumb.jpg",
+      "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/story_trailer/red-creek-winter-trailer-main-v1.thumb.jpg",
+      "created_at": "2026-03-23T16:59:27.469Z",
+      "checksum": "a1619968206552d8852000e0686a5586416babfe",
+      "file_size": 13821797,
+      "duration_seconds": 18,
+      "provider_metadata": {
+        "source_images": [
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-contact-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\arc_key_art\\red-creek-winter-red-creek-winter-arc-disruption-arc-key-art-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-1-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-2-beat-scene-v1.png",
+          "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-3-beat-scene-v1.png"
+        ],
+        "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\story_theme_loop\\red-creek-winter-story-theme-loop-v1.wav",
+        "duration_seconds": 18,
+        "voiceover": {
+          "enabled": true,
+          "speaker": "Sheriff Dana Holt",
+          "role": "operator",
+          "locale": "en-US",
+          "region": "north_america",
+          "model": "gpt-4o-mini-tts",
+          "voice": "sage",
+          "script": "Sheriff Dana Holt briefing. Red Creek Winter Main Trailer is now active. Start with dispatch freeze frame, then compare every new message against each snowfall uncovers one body and one impossible alibi.. If The White Knife reaches you first, archive the contact before you respond.",
+          "design": {
+            "apiSpeed": 0.9373999999999999,
+            "pitchSemitone": -0.782,
+            "textureAmount": 0.46625,
+            "highpassHz": 77,
+            "lowpassHz": 7347,
+            "presenceGainDb": -0.23699999999999996
+          }
+        }
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -954,7 +1905,8 @@
       "created_at": "2026-03-21T16:14:55.496Z",
       "checksum": "b4fead08c53c004407b5db628cc56ac5d6cdfdfd",
       "file_size": 1151,
-      "duration_seconds": null
+      "duration_seconds": null,
+      "provider_metadata": null
     },
     {
       "story_id": "red-creek-winter",
@@ -963,16 +1915,21 @@
       "modality": "image",
       "title": "Red Creek Winter - Villain Portrait",
       "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Design portrait of antagonist The White Knife with archetype PLAYFUL_SOCIOPATH, speech style \"Taunting, colloquial, and cruelly familiar.\", and motifs snow lines, hunting whistles, frosted glass.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
-      "tool_used": "local-playwright-art-director",
+      "tool_used": "openai:gpt-image-1",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png",
       "public_path": "/agent-army/stories/red-creek-winter/image/villain_portrait/red-creek-winter-villain-portrait-v1.png",
       "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.thumb.jpg",
       "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/villain_portrait/red-creek-winter-villain-portrait-v1.thumb.jpg",
-      "created_at": "2026-03-21T17:36:48.706Z",
-      "checksum": "18a4430069422a7001ba580623a284a1103de232",
-      "file_size": 931089,
-      "duration_seconds": null
+      "created_at": "2026-03-22T19:53:20.188Z",
+      "checksum": "921f8db76eca18713ff84ccf086cd4f65378bd87",
+      "file_size": 3371370,
+      "duration_seconds": null,
+      "provider_metadata": {
+        "model": "gpt-image-1",
+        "size": "1024x1536",
+        "quality": "high"
+      }
     },
     {
       "story_id": "red-creek-winter",
@@ -980,149 +1937,42 @@
       "asset_type": "villain_voice_profile",
       "modality": "audio",
       "title": "Red Creek Winter - Villain Voice Profile",
-      "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Create villain voice profile for The White Knife. Worldview: Fear is the only honest truth in a town built on denial.. Manner: Mocking one-liners after mistakes.. Include escalation stage cues for stage 1-4 intimidation.",
-      "tool_used": "ffmpeg-horror-synth",
+      "prompt_used": "This is Villain. Each snowfall uncovers one body and one impossible alibi. Work the case in order: secure dispatch freeze frame, confirm the scene at mountain logging town under blizzard lockdown, and do not let The White Knife choose the pace. Trust the evidence before you trust the performance.",
+      "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
       "generation_status": "complete",
       "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\villain_voice_profile\\red-creek-winter-villain-voice-profile-v1.wav",
       "public_path": "/agent-army/stories/red-creek-winter/audio/villain_voice_profile/red-creek-winter-villain-voice-profile-v1.wav",
       "thumbnail_path": null,
       "public_thumbnail_path": null,
-      "created_at": "2026-03-21T16:12:50.129Z",
-      "checksum": "28d9dc9bfe9a4676bc1a4f17807edb1aa140c5c9",
-      "file_size": 2110650,
-      "duration_seconds": 21.99
+      "created_at": "2026-03-23T17:35:01.056Z",
+      "checksum": "e16ded9de473422f704a17c2dcaac2fc66dd2216",
+      "file_size": 988136,
+      "duration_seconds": 10.29,
+      "provider_metadata": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "locale": "en-US",
+        "region": "global",
+        "role": "narrator",
+        "sex": "unknown",
+        "design": {
+          "apiSpeed": 0.96787,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 80,
+          "lowpassHz": 7005,
+          "presenceGainDb": -0.24
+        },
+        "voice_design": {
+          "apiSpeed": 0.96787,
+          "pitchSemitone": 0,
+          "textureAmount": 0.475,
+          "highpassHz": 80,
+          "lowpassHz": 7005,
+          "presenceGainDb": -0.24
+        }
+      }
     }
   ],
-  "failures": [
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-beat-1-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-1-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-beat-2-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-2-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-beat-3-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-3-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-beat-4-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-4-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-beat-5-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-5-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-beat-6-beat-transition",
-      "asset_type": "beat_transition_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\beat_transition_video\\red-creek-winter-beat-6-beat-transition-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-contact-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-disruption-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video",
-      "asset_type": "arc_teaser_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\arc_teaser_video\\red-creek-winter-red-creek-winter-arc-endgame-arc-teaser-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-corruption-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-red-creek-winter-ending-justice-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-justice-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video",
-      "asset_type": "ending_recap_video",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.mp4",
-      "last_attempt_at": null
-    },
-    {
-      "story_id": "red-creek-winter",
-      "asset_id": "red-creek-winter-trailer-main",
-      "asset_type": "story_trailer",
-      "modality": "video",
-      "generation_status": "unavailable",
-      "error": "video generation backend is not configured; proxy output excluded from gallery",
-      "planned_output_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\story_trailer\\red-creek-winter-trailer-main-v1.mp4",
-      "last_attempt_at": null
-    }
-  ]
+  "failures": []
 }

@@ -174,6 +174,20 @@ describe('play session runtime', () => {
       }
     });
     expect(corruption.type).toBe('CORRUPTION');
+
+    const unresolved = resolveSessionEnding(samplePackage, {
+      ...createInitialSessionState(samplePackage),
+      complete: true,
+      investigationProgress: 92,
+      reputation: {
+        trustworthiness: 18,
+        aggression: 10,
+        curiosity: 9,
+        deception: 12,
+        morality: 6
+      }
+    });
+    expect(unresolved.type).toBe('UNRESOLVED');
   });
 
   it('sorts messages by delay for feed ordering', () => {
