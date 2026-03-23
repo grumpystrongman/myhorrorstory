@@ -10,6 +10,10 @@ import {
   type NormalizedInboundMessage
 } from '@myhorrorstory/messaging';
 import { RuntimeService } from '../runtime/runtime.service.js';
+import {
+  ChannelEnrollmentStore,
+  type StoredChannelEnrollment
+} from './channel-enrollment.store.js';
 import type {
   SendChannelMessageInput,
   SendSetupTestInput,
@@ -60,13 +64,20 @@ export class ChannelsService {
   private readonly router = new MessagingRouter(createDefaultMessagingProviders());
   private readonly enrollments = new Map<string, ChannelEnrollment>();
   private readonly inboundRouteIndex = new Map<string, RoutedPlayer>();
+  private readonly enrollmentStore = new ChannelEnrollmentStore();
 
-  constructor(@Inject(RuntimeService) private readonly runtimeService: RuntimeService) {}
+  constructor(@Inject(RuntimeService) private readonly runtimeService: RuntimeService) {
+    for (const enrollment of this.enrollmentStore.load()) {
+      this.enrollments.set(this.enrollmentKey(enrollment.caseId, enrollment.playerId), enrollment);
+      this.addRoutes(enrollment);
+    }
+  }
 
   getSetupStatus(publicBaseUrl?: string): {
     baseUrl: string;
     providers: string[];
     channels: SetupStatusChannel[];
+    enrollmentStorePath: string | null;
   } {
     const baseUrl = this.resolvePublicBaseUrl(publicBaseUrl);
     const providers = this.router.listProviderIds();
@@ -107,7 +118,8 @@ export class ChannelsService {
           webhookUrl: `${baseUrl}/api/v1/webhooks/signal`,
           missingEnv: this.missingSignalEnv()
         }
-      ]
+      ],
+      enrollmentStorePath: this.enrollmentStore.getStorePath()
     };
   }
 
@@ -149,6 +161,7 @@ export class ChannelsService {
 
     this.enrollments.set(key, enrollment);
     this.addRoutes(enrollment);
+    this.persistEnrollments();
 
     return {
       updated: true,
@@ -351,34 +364,40 @@ export class ChannelsService {
   }
 
   private hasTwilioBase(): boolean {
-    return Boolean(process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN);
+    return (
+      this.isConfiguredValue(process.env.TWILIO_ACCOUNT_SID) &&
+      this.isConfiguredValue(process.env.TWILIO_AUTH_TOKEN)
+    );
   }
 
   private hasTwilioSms(): boolean {
-    return this.hasTwilioBase() && Boolean(process.env.TWILIO_SMS_FROM);
+    return this.hasTwilioBase() && this.isConfiguredValue(process.env.TWILIO_SMS_FROM);
   }
 
   private hasTwilioWhatsapp(): boolean {
-    return this.hasTwilioBase() && Boolean(process.env.TWILIO_WHATSAPP_FROM);
+    return this.hasTwilioBase() && this.isConfiguredValue(process.env.TWILIO_WHATSAPP_FROM);
   }
 
   private hasTelegram(): boolean {
-    return Boolean(process.env.TELEGRAM_BOT_TOKEN);
+    return this.isConfiguredValue(process.env.TELEGRAM_BOT_TOKEN);
   }
 
   private hasSignal(): boolean {
-    return Boolean(process.env.SIGNAL_GATEWAY_URL && process.env.SIGNAL_ACCOUNT);
+    return (
+      this.isConfiguredValue(process.env.SIGNAL_GATEWAY_URL) &&
+      this.isConfiguredValue(process.env.SIGNAL_ACCOUNT)
+    );
   }
 
   private missingSmsEnv(): string[] {
     const missing = [];
-    if (!process.env.TWILIO_ACCOUNT_SID) {
+    if (!this.isConfiguredValue(process.env.TWILIO_ACCOUNT_SID)) {
       missing.push('TWILIO_ACCOUNT_SID');
     }
-    if (!process.env.TWILIO_AUTH_TOKEN) {
+    if (!this.isConfiguredValue(process.env.TWILIO_AUTH_TOKEN)) {
       missing.push('TWILIO_AUTH_TOKEN');
     }
-    if (!process.env.TWILIO_SMS_FROM) {
+    if (!this.isConfiguredValue(process.env.TWILIO_SMS_FROM)) {
       missing.push('TWILIO_SMS_FROM');
     }
     return missing;
@@ -386,13 +405,13 @@ export class ChannelsService {
 
   private missingWhatsappEnv(): string[] {
     const missing = [];
-    if (!process.env.TWILIO_ACCOUNT_SID) {
+    if (!this.isConfiguredValue(process.env.TWILIO_ACCOUNT_SID)) {
       missing.push('TWILIO_ACCOUNT_SID');
     }
-    if (!process.env.TWILIO_AUTH_TOKEN) {
+    if (!this.isConfiguredValue(process.env.TWILIO_AUTH_TOKEN)) {
       missing.push('TWILIO_AUTH_TOKEN');
     }
-    if (!process.env.TWILIO_WHATSAPP_FROM) {
+    if (!this.isConfiguredValue(process.env.TWILIO_WHATSAPP_FROM)) {
       missing.push('TWILIO_WHATSAPP_FROM');
     }
     return missing;
@@ -400,18 +419,21 @@ export class ChannelsService {
 
   private missingTelegramEnv(): string[] {
     const missing = [];
-    if (!process.env.TELEGRAM_BOT_TOKEN) {
+    if (!this.isConfiguredValue(process.env.TELEGRAM_BOT_TOKEN)) {
       missing.push('TELEGRAM_BOT_TOKEN');
+    }
+    if (!this.isConfiguredValue(process.env.TELEGRAM_WEBHOOK_SECRET)) {
+      missing.push('TELEGRAM_WEBHOOK_SECRET');
     }
     return missing;
   }
 
   private missingSignalEnv(): string[] {
     const missing = [];
-    if (!process.env.SIGNAL_GATEWAY_URL) {
+    if (!this.isConfiguredValue(process.env.SIGNAL_GATEWAY_URL)) {
       missing.push('SIGNAL_GATEWAY_URL');
     }
-    if (!process.env.SIGNAL_ACCOUNT) {
+    if (!this.isConfiguredValue(process.env.SIGNAL_ACCOUNT)) {
       missing.push('SIGNAL_ACCOUNT');
     }
     return missing;
@@ -450,5 +472,42 @@ export class ChannelsService {
     }
 
     return compact.replace(/^sms:/i, '').toLowerCase();
+  }
+
+  private persistEnrollments(): void {
+    const payload: StoredChannelEnrollment[] = [];
+    for (const enrollment of this.enrollments.values()) {
+      payload.push({
+        caseId: enrollment.caseId,
+        playerId: enrollment.playerId,
+        contacts: enrollment.contacts,
+        updatedAt: enrollment.updatedAt
+      });
+    }
+    this.enrollmentStore.save(payload);
+  }
+
+  private isConfiguredValue(value: string | undefined): boolean {
+    if (!value) {
+      return false;
+    }
+
+    const normalized = value.trim().toLowerCase();
+    if (!normalized) {
+      return false;
+    }
+
+    if (
+      normalized.startsWith('replace') ||
+      normalized.startsWith('your_') ||
+      normalized.includes('replace') ||
+      normalized.includes('changeme') ||
+      normalized.includes('example') ||
+      normalized.includes('placeholder')
+    ) {
+      return false;
+    }
+
+    return true;
   }
 }

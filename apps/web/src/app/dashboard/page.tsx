@@ -87,6 +87,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <div>
           <h2 className="section-title">Profile Controls</h2>
           <div className="inline-links">
+            <a href="/dashboard/channels">Messaging Channels</a>
             <a href="/support">Support Portal</a>
             <a href="/referrals">Referral Hub</a>
             <a href="/billing">Billing + Plans</a>

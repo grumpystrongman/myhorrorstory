@@ -1,6 +1,66 @@
 #!/usr/bin/env node
 
+import { existsSync, readFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
 import { env } from 'node:process';
+import { fileURLToPath } from 'node:url';
+
+const scriptDir = dirname(fileURLToPath(import.meta.url));
+const repoRoot = resolve(scriptDir, '..', '..');
+
+function loadEnvFile(relativePath) {
+  const filePath = resolve(repoRoot, relativePath);
+  if (!existsSync(filePath)) {
+    return;
+  }
+
+  for (const line of readFileSync(filePath, 'utf8').split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#') || !trimmed.includes('=')) {
+      continue;
+    }
+
+    const separatorIndex = trimmed.indexOf('=');
+    const key = trimmed.slice(0, separatorIndex).trim();
+    const value = trimmed.slice(separatorIndex + 1).trim();
+    if (!key || env[key]) {
+      continue;
+    }
+
+    env[key] = value;
+  }
+}
+
+function loadDefaultEnv() {
+  loadEnvFile('.env.local');
+  loadEnvFile('.env');
+}
+
+function isConfigured(value) {
+  if (!value) {
+    return false;
+  }
+
+  const normalized = value.trim().toLowerCase();
+  if (!normalized) {
+    return false;
+  }
+
+  if (
+    normalized.startsWith('replace') ||
+    normalized.startsWith('your_') ||
+    normalized.includes('replace') ||
+    normalized.includes('changeme') ||
+    normalized.includes('example') ||
+    normalized.includes('placeholder')
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
+loadDefaultEnv();
 
 function parseArg(flag) {
   const index = process.argv.findIndex((item) => item === flag);
@@ -35,50 +95,50 @@ const publicBaseUrl =
 
 const apiBaseUrl = `${normalizeBaseUrl(publicBaseUrl)}/api/v1`;
 
-const hasTwilioBase = Boolean(env.TWILIO_ACCOUNT_SID && env.TWILIO_AUTH_TOKEN);
-const smsConfigured = hasTwilioBase && Boolean(env.TWILIO_SMS_FROM);
-const whatsappConfigured = hasTwilioBase && Boolean(env.TWILIO_WHATSAPP_FROM);
-const telegramConfigured = Boolean(env.TELEGRAM_BOT_TOKEN);
-const signalConfigured = Boolean(env.SIGNAL_GATEWAY_URL && env.SIGNAL_ACCOUNT);
+const hasTwilioBase = isConfigured(env.TWILIO_ACCOUNT_SID) && isConfigured(env.TWILIO_AUTH_TOKEN);
+const smsConfigured = hasTwilioBase && isConfigured(env.TWILIO_SMS_FROM);
+const whatsappConfigured = hasTwilioBase && isConfigured(env.TWILIO_WHATSAPP_FROM);
+const telegramConfigured = isConfigured(env.TELEGRAM_BOT_TOKEN);
+const signalConfigured = isConfigured(env.SIGNAL_GATEWAY_URL) && isConfigured(env.SIGNAL_ACCOUNT);
 
 const smsMissing = [];
-if (!env.TWILIO_ACCOUNT_SID) {
+if (!isConfigured(env.TWILIO_ACCOUNT_SID)) {
   smsMissing.push('TWILIO_ACCOUNT_SID');
 }
-if (!env.TWILIO_AUTH_TOKEN) {
+if (!isConfigured(env.TWILIO_AUTH_TOKEN)) {
   smsMissing.push('TWILIO_AUTH_TOKEN');
 }
-if (!env.TWILIO_SMS_FROM) {
+if (!isConfigured(env.TWILIO_SMS_FROM)) {
   smsMissing.push('TWILIO_SMS_FROM');
 }
 
 const whatsappMissing = [];
-if (!env.TWILIO_ACCOUNT_SID) {
+if (!isConfigured(env.TWILIO_ACCOUNT_SID)) {
   whatsappMissing.push('TWILIO_ACCOUNT_SID');
 }
-if (!env.TWILIO_AUTH_TOKEN) {
+if (!isConfigured(env.TWILIO_AUTH_TOKEN)) {
   whatsappMissing.push('TWILIO_AUTH_TOKEN');
 }
-if (!env.TWILIO_WHATSAPP_FROM) {
+if (!isConfigured(env.TWILIO_WHATSAPP_FROM)) {
   whatsappMissing.push('TWILIO_WHATSAPP_FROM');
 }
 
 const telegramMissing = [];
-if (!env.TELEGRAM_BOT_TOKEN) {
+if (!isConfigured(env.TELEGRAM_BOT_TOKEN)) {
   telegramMissing.push('TELEGRAM_BOT_TOKEN');
 }
-if (!env.TELEGRAM_WEBHOOK_SECRET) {
+if (!isConfigured(env.TELEGRAM_WEBHOOK_SECRET)) {
   telegramMissing.push('TELEGRAM_WEBHOOK_SECRET');
 }
 
 const signalMissing = [];
-if (!env.SIGNAL_GATEWAY_URL) {
+if (!isConfigured(env.SIGNAL_GATEWAY_URL)) {
   signalMissing.push('SIGNAL_GATEWAY_URL');
 }
-if (!env.SIGNAL_ACCOUNT) {
+if (!isConfigured(env.SIGNAL_ACCOUNT)) {
   signalMissing.push('SIGNAL_ACCOUNT');
 }
-if (!env.SIGNAL_WEBHOOK_SECRET) {
+if (!isConfigured(env.SIGNAL_WEBHOOK_SECRET)) {
   signalMissing.push('SIGNAL_WEBHOOK_SECRET');
 }
 
@@ -103,3 +163,7 @@ console.log(
   `   curl -X POST "${apiBaseUrl}/channels/setup/test" -H "content-type: application/json" -d "{\\"caseId\\":\\"midnight-lockbox\\",\\"playerId\\":\\"player-1\\"}"`
 );
 console.log('4. Confirm inbound webhook delivery in API logs and runtime responses.');
+console.log('5. For one-command local onboarding, run:');
+console.log(
+  `   corepack pnpm messaging:connect -- --case-id static-between-stations --player-id owner-local --phone 8127810028 --public-url ${publicBaseUrl}`
+);

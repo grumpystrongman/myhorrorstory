@@ -18,6 +18,11 @@ describe('API integration', () => {
   let app: INestApplication;
 
   beforeAll(async () => {
+    process.env.CHANNEL_ENROLLMENTS_PERSIST = 'false';
+    process.env.TWILIO_VALIDATE_SIGNATURES = 'false';
+    process.env.TELEGRAM_WEBHOOK_SECRET = '';
+    process.env.SIGNAL_WEBHOOK_SECRET = '';
+
     const moduleRef = await Test.createTestingModule({
       imports: [AppModule]
     }).compile();

@@ -102,6 +102,20 @@ The web play route now simulates live player delivery across SMS/WhatsApp/Telegr
    - `corepack pnpm simulations:build-playthrough`
    - `http://127.0.0.1:3100/simulations/index.html`
 
+## Player Messaging Connection Test (SMS / WhatsApp / Telegram)
+
+Use the channel setup console for account-specific routing:
+
+- `http://127.0.0.1:3100/dashboard/channels`
+
+Or run one-command owner setup from CLI:
+
+- `corepack pnpm messaging:connect:owner -- --public-url https://<your-public-api-url>`
+
+Generic CLI flow (any player):
+
+- `corepack pnpm messaging:connect -- --case-id <story-id> --player-id <player-id> --phone <e164-or-10-digit> --telegram-chat-id <chat-id> --public-url https://<your-public-api-url>`
+
 ## Owner QA Agent Dashboard
 
 Run automated branch-play simulations for every story and review private quality reports in the dashboard.
@@ -128,6 +142,8 @@ Run automated branch-play simulations for every story and review private quality
 - `corepack pnpm test:commercial`
 - `corepack pnpm build`
 - `corepack pnpm messaging:setup -- --public-url https://your-api.example.com`
+- `corepack pnpm messaging:connect:owner -- --public-url https://your-api.example.com`
+- `corepack pnpm messaging:connect -- --case-id static-between-stations --player-id player-1 --phone 8127810028 --telegram-chat-id 123456789 --public-url https://your-api.example.com`
 - `corepack pnpm linear:bots:plan`
 - `corepack pnpm linear:bots:apply`
 - `corepack pnpm linear:bots:autorun`

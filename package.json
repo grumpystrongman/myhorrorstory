@@ -24,6 +24,8 @@
     "remote:test:stop": "node scripts/remote-test/stop.mjs",
     "remote:test:status": "node scripts/remote-test/status.mjs",
     "messaging:setup": "node scripts/messaging/setup.mjs",
+    "messaging:connect": "node scripts/messaging/connect.mjs",
+    "messaging:connect:owner": "node scripts/messaging/connect.mjs --import-myaika --phone 8127810028 --case-id static-between-stations --player-id owner-local",
     "linear:bots:plan": "node scripts/linear-bots/control.mjs --dry-run",
     "linear:bots:apply": "node scripts/linear-bots/control.mjs --apply",
     "linear:bots:autorun": "node scripts/linear-bots/autorun.mjs",

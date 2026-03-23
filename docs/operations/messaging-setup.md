@@ -2,6 +2,24 @@
 
 Use this runbook to configure outbound and inbound player messaging channels.
 
+## Quick Start (Owner Local Test)
+
+For your local owner test account (phone `8127810028`) with Telegram credentials imported from MyAika:
+
+```bash
+corepack pnpm messaging:connect:owner -- --public-url https://<your-public-api-url>
+```
+
+What this does:
+
+- Loads `.env` from repo root.
+- Imports Telegram bot token/chat ID from MyAika `.env` when local values are missing.
+- Registers SMS/WhatsApp/Telegram contacts for `caseId=static-between-stations`, `playerId=owner-local`.
+- Sends setup validation messages on configured channels.
+- Prints delivery receipts and failures.
+
+If you want imported Telegram values persisted to `.env`, add `--write-env`.
+
 ## 1) Configure Environment
 
 Set these variables in `.env`:
@@ -29,6 +47,8 @@ corepack pnpm messaging:setup -- --public-url https://your-public-api.example.co
 
 This prints required webhook URLs and missing env vars.
 
+Important: placeholder values (e.g. `replace_me`, `your_token`, `example`) are treated as missing.
+
 ## 2) Provider Dashboard Setup
 
 ### Twilio (SMS + WhatsApp)
@@ -37,12 +57,14 @@ This prints required webhook URLs and missing env vars.
   - `https://<api-origin>/api/v1/webhooks/twilio`
 - Use `HTTP POST`.
 - If signature validation is enabled, keep Twilio request signing enabled.
+- For WhatsApp sandbox testing, enroll the destination number in the Twilio sandbox first (Twilio console provides the join code).
 
 ### Telegram Bot
 
 - Set webhook URL:
   - `https://<api-origin>/api/v1/webhooks/telegram`
 - Set secret token equal to `TELEGRAM_WEBHOOK_SECRET`.
+- Bot must have an active chat with the player before sends to that chat ID will succeed.
 
 ## 3) Map Player Contacts To Case Runtime
 
@@ -60,6 +82,17 @@ curl -X POST "https://<api-origin>/api/v1/channels/setup/user" \
       {"channel":"TELEGRAM","address":"123456789","optIn":true}
     ]
   }'
+```
+
+Alternative (single command):
+
+```bash
+corepack pnpm messaging:connect -- \
+  --case-id midnight-lockbox \
+  --player-id player-1 \
+  --phone +18127810028 \
+  --telegram-chat-id 123456789 \
+  --public-url https://<api-origin>
 ```
 
 ## 4) Send Setup Validation Messages
@@ -104,3 +137,10 @@ curl -X POST "https://<api-origin>/api/v1/channels/send" \
 - Keep `TWILIO_VALIDATE_SIGNATURES=true` in staging/production.
 - Always set `TELEGRAM_WEBHOOK_SECRET` and enforce HTTPS webhook URLs.
 - Rotate provider keys on a schedule and after suspected exposure.
+
+## Troubleshooting
+
+- `No channels are ready for setup`: required provider env vars are missing or still placeholders.
+- Telegram webhook skipped: Telegram requires HTTPS webhook URLs.
+- SMS/WhatsApp skipped: Twilio credentials are required for real phone delivery.
+- `contact_not_registered` on inbound webhook: run `POST /channels/setup/user` again for that `caseId` + `playerId`.
