@@ -21,12 +21,22 @@ export interface DramaResponseOption {
   flagUpdates: Record<string, string | number | boolean>;
 }
 
+export interface DramaBeatNarrativeDepth {
+  background: string;
+  continuity: string;
+  objective: string;
+  stakes: string;
+  roleplayPrompt: string;
+  artifactFocus: string[];
+}
+
 export interface DramaBeat {
   id: string;
   actId: string;
   actTitle: string;
   title: string;
   narrative: string;
+  narrativeDepth?: DramaBeatNarrativeDepth;
   stage: 1 | 2 | 3 | 4;
   unlockAfterSeconds: number;
   revealClueIds: string[];
@@ -307,33 +317,58 @@ function endingByType(pack: DramaPackage, type: DramaEnding['type']): DramaEndin
 export function resolveSessionEnding(pack: DramaPackage, state: SessionState): DramaEnding {
   const { reputation, investigationProgress } = state;
 
+  if (reputation.aggression >= 30 && (investigationProgress >= 55 || reputation.morality <= -10)) {
+    return endingByType(pack, 'TRAGIC') ?? endingByType(pack, 'CORRUPTION') ?? pack.endings[0]!;
+  }
+
+  if (reputation.trustworthiness <= -22 && reputation.deception >= 20) {
+    return endingByType(pack, 'CORRUPTION') ?? endingByType(pack, 'TRAGIC') ?? pack.endings[0]!;
+  }
+
   if (reputation.morality >= 15 && reputation.trustworthiness >= 5 && investigationProgress >= 80) {
     return endingByType(pack, 'JUSTICE') ?? pack.endings[0]!;
   }
 
-  if (reputation.deception >= 18 || reputation.morality <= -18) {
+  if (reputation.deception >= 22 || reputation.morality <= -22) {
     return endingByType(pack, 'CORRUPTION') ?? endingByType(pack, 'TRAGIC') ?? pack.endings[0]!;
+  }
+
+  if (
+    investigationProgress >= 75 &&
+    reputation.aggression >= 12 &&
+    reputation.aggression < 24 &&
+    reputation.trustworthiness > -16 &&
+    reputation.deception < 22 &&
+    reputation.morality > -18 &&
+    reputation.morality < 10
+  ) {
+    return endingByType(pack, 'PYRRHIC') ?? pack.endings[0]!;
   }
 
   const unresolvedBand =
     investigationProgress >= 82 &&
-    reputation.trustworthiness >= -4 &&
-    reputation.trustworthiness <= 34 &&
-    reputation.morality >= -10 &&
-    reputation.morality < 15 &&
-    reputation.deception >= 0 &&
-    reputation.deception <= 17 &&
-    reputation.aggression <= 16;
+    reputation.trustworthiness >= -12 &&
+    reputation.trustworthiness <= 18 &&
+    reputation.morality >= -14 &&
+    reputation.morality < 8 &&
+    reputation.deception >= 6 &&
+    reputation.deception <= 22 &&
+    reputation.aggression <= 22;
 
   if (unresolvedBand) {
     return endingByType(pack, 'UNRESOLVED') ?? endingByType(pack, 'PYRRHIC') ?? pack.endings[0]!;
   }
 
-  if (reputation.aggression >= 22 && investigationProgress >= 65) {
+  if (reputation.aggression >= 24 && investigationProgress >= 60) {
     return endingByType(pack, 'TRAGIC') ?? endingByType(pack, 'PYRRHIC') ?? pack.endings[0]!;
   }
 
-  if (investigationProgress >= 70) {
+  if (
+    investigationProgress >= 70 &&
+    reputation.morality > -22 &&
+    reputation.deception < 26 &&
+    reputation.aggression < 26
+  ) {
     return endingByType(pack, 'PYRRHIC') ?? pack.endings[0]!;
   }
 

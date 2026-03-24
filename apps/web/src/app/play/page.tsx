@@ -44,11 +44,15 @@ const AUDIO_CIPHER_CODE = '440';
 const DEFAULT_CAMPAIGN_TARGET_DAYS = 28;
 const DEFAULT_CAMPAIGN_MAX_DAYS = 45;
 const MESSENGER_CHANNELS = ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL'] as const;
+const EXTERNAL_RELAY_CHANNELS = ['SMS', 'WHATSAPP', 'TELEGRAM'] as const;
 const MAX_UI_MESSAGE_DELAY_MS = 45_000;
 const MIN_UI_MESSAGE_DELAY_MS = 1_200;
 const MIN_GAP_BETWEEN_MESSAGES_MS = 1_600;
+const CHANNEL_CASE_ID_STORAGE_KEY = 'myhorrorstory.channel.caseId';
+const CHANNEL_PLAYER_ID_STORAGE_KEY = 'myhorrorstory.channel.playerId';
 
 type MessengerChannel = (typeof MESSENGER_CHANNELS)[number];
+type ExternalRelayChannel = (typeof EXTERNAL_RELAY_CHANNELS)[number];
 type HintLevel = 'approach' | 'thinking' | 'solve';
 
 interface StoryHintPenalty {
@@ -78,6 +82,15 @@ interface StoryHint {
   source: 'openai' | 'fallback';
 }
 
+interface LiveFailureOutcome {
+  id: string;
+  type: 'TRAGIC' | 'CORRUPTION' | 'UNRESOLVED';
+  title: string;
+  summary: string;
+  epilogue: string;
+  sequelHook: string;
+}
+
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
 }
@@ -88,6 +101,13 @@ function normalizeMessageInput(value: string): string {
     .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function asExternalRelayChannel(channel: string): ExternalRelayChannel | null {
+  if (EXTERNAL_RELAY_CHANNELS.includes(channel as ExternalRelayChannel)) {
+    return channel as ExternalRelayChannel;
+  }
+  return null;
 }
 
 function inferResponseOptionFromText(
@@ -204,6 +224,29 @@ function hintPenaltyProfile(level: HintLevel, usageCount: number): StoryHintPena
   };
 }
 
+function beatStageLabel(stage: number): string {
+  if (stage === 1) {
+    return 'Discovery';
+  }
+  if (stage === 2) {
+    return 'Escalation';
+  }
+  if (stage === 3) {
+    return 'Danger';
+  }
+  return 'Endgame';
+}
+
+function narrativeParagraphs(narrative: string | undefined): string[] {
+  if (!narrative) {
+    return [];
+  }
+  return narrative
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+}
+
 async function fetchJson<T>(url: string): Promise<T> {
   const response = await fetch(url, { cache: 'no-store' });
   if (!response.ok) {
@@ -299,6 +342,7 @@ export default function PlayPage(): JSX.Element {
   const [dramaPack, setDramaPack] = useState<DramaPackage | null>(null);
   const [sessionState, setSessionState] = useState<SessionState | null>(null);
   const [sessionEndingId, setSessionEndingId] = useState<string | null>(null);
+  const [liveFailure, setLiveFailure] = useState<LiveFailureOutcome | null>(null);
   const [messageFeed, setMessageFeed] = useState<DramaMessage[]>([]);
   const [popupQueue, setPopupQueue] = useState<DramaMessage[]>([]);
   const [activePopup, setActivePopup] = useState<DramaMessage | null>(null);
@@ -330,10 +374,14 @@ export default function PlayPage(): JSX.Element {
   const [messageDraft, setMessageDraft] = useState('');
   const [missionReady, setMissionReady] = useState(false);
   const [verifiedArtwork, setVerifiedArtwork] = useState<StoryArtworkSelection | null>(null);
+  const [messagingPlayerId, setMessagingPlayerId] = useState('owner-local');
+  const [relayStatus, setRelayStatus] = useState<'idle' | 'ok' | 'error'>('idle');
+  const [relayError, setRelayError] = useState<string | null>(null);
 
   const dragAnchor = useRef<{ x: number; y: number } | null>(null);
   const soundDirector = useMemo(() => new AISoundDirector(), []);
   const messageTimeouts = useRef<number[]>([]);
+  const sentRelayMessageIds = useRef(new Set<string>());
   const storyMood = activeStoryTrack?.mood ?? 'cinematic_dread';
 
   const directorTelemetry = useMemo<SoundDirectorTelemetry>(
@@ -385,6 +433,7 @@ export default function PlayPage(): JSX.Element {
     }
     return dramaPack.endings.find((ending) => ending.id === sessionEndingId) ?? resolved;
   }, [dramaPack, sessionEndingId, sessionState]);
+  const displayedOutcome = liveFailure ?? resolvedEnding;
   const evidenceNodes = useMemo(
     () =>
       (dramaPack?.investigationBoard.nodes ?? [])
@@ -392,9 +441,41 @@ export default function PlayPage(): JSX.Element {
         .slice(0, 4),
     [dramaPack]
   );
+  const investigationProgress = sessionState?.investigationProgress ?? playerProgress;
+  const resolvedResponseCount = sessionState?.selectedResponses.length ?? 0;
+  const totalEvidenceSlots = useMemo(
+    () => (evidenceNodes.length > 0 ? evidenceNodes.length : Math.min(storyMediaPaths.evidence.length, 4)),
+    [evidenceNodes.length, storyMediaPaths.evidence.length]
+  );
+  const evidenceUnlockCount = useMemo(() => {
+    if (totalEvidenceSlots === 0) {
+      return 0;
+    }
+    if (sessionState?.complete) {
+      return totalEvidenceSlots;
+    }
+    const beatSignal = resolvedResponseCount;
+    const progressSignal = Math.floor(investigationProgress / 30);
+    return clamp(1 + beatSignal + progressSignal, 1, totalEvidenceSlots);
+  }, [investigationProgress, resolvedResponseCount, sessionState?.complete, totalEvidenceSlots]);
+  const revealedEvidenceNodes = useMemo(
+    () => evidenceNodes.slice(0, evidenceUnlockCount),
+    [evidenceNodes, evidenceUnlockCount]
+  );
+  const investigationNodesForDisplay = useMemo(() => {
+    const nodes = dramaPack?.investigationBoard.nodes ?? [];
+    let evidenceIndex = 0;
+    return nodes.map((node) => {
+      if (node.type.toLowerCase() !== 'evidence') {
+        return { node, locked: false };
+      }
+      evidenceIndex += 1;
+      return { node, locked: evidenceIndex > evidenceUnlockCount };
+    });
+  }, [dramaPack?.investigationBoard.nodes, evidenceUnlockCount]);
   const boardClusterItems = useMemo(() => {
-    if (evidenceNodes.length > 0) {
-      return evidenceNodes.map((node) => ({
+    if (revealedEvidenceNodes.length > 0) {
+      return revealedEvidenceNodes.map((node) => ({
         id: node.id,
         title: node.label,
         detail: node.summary
@@ -405,7 +486,7 @@ export default function PlayPage(): JSX.Element {
       title: item.timeLabel,
       detail: item.summary
     }));
-  }, [dramaPack, evidenceNodes]);
+  }, [dramaPack, revealedEvidenceNodes]);
   const cipherReference = useMemo(() => {
     const timelineReference = dramaPack?.investigationBoard.timeline[0]?.timeLabel;
     return timelineReference ? `${timelineReference} marker` : '9 second dead-air marker';
@@ -463,8 +544,8 @@ export default function PlayPage(): JSX.Element {
     return campaignPlan.weeks[weekNumber - 1];
   }, [campaignDay, campaignMaxDays, campaignPlan.weeks]);
   const verifiedEvidenceCards = useMemo(() => {
-    if (evidenceNodes.length > 0) {
-      return evidenceNodes.map((node, index) => ({
+    if (revealedEvidenceNodes.length > 0) {
+      return revealedEvidenceNodes.map((node, index) => ({
         id: node.id,
         title: node.label,
         summary: node.summary,
@@ -473,23 +554,42 @@ export default function PlayPage(): JSX.Element {
       }));
     }
 
-    return storyMediaPaths.evidence.slice(0, 4).map((asset) => ({
+    return storyMediaPaths.evidence.slice(0, evidenceUnlockCount).map((asset) => ({
       id: asset.asset_id,
       title: asset.title,
       summary: `${asset.asset_type} · ${asset.tool_used ?? 'verified asset'}`,
       imagePath: asset.public_path ?? null,
       meta: asset.asset_type
     }));
-  }, [evidenceNodes, storyMediaPaths.evidence]);
+  }, [evidenceUnlockCount, revealedEvidenceNodes, storyMediaPaths.evidence]);
+  const visualUnlockCount = useMemo(() => {
+    const total = storyMediaPaths.gallery.length;
+    if (total === 0) {
+      return 0;
+    }
+    if (sessionState?.complete) {
+      return total;
+    }
+    const beatSignal = Math.floor(resolvedResponseCount / 2);
+    const progressSignal = Math.floor(investigationProgress / 20);
+    const daySignal = Math.floor((campaignDay - 1) / 5);
+    return clamp(2 + beatSignal + progressSignal + daySignal, 1, total);
+  }, [
+    campaignDay,
+    investigationProgress,
+    resolvedResponseCount,
+    sessionState?.complete,
+    storyMediaPaths.gallery.length
+  ]);
   const resolvedVisualGallery = useMemo(
     () =>
-      storyMediaPaths.gallery.slice(0, 9).map((asset) => ({
+      storyMediaPaths.gallery.slice(0, visualUnlockCount).map((asset) => ({
         id: asset.asset_id,
         path: asset.public_path ?? '',
         title: asset.title,
         promptHint: `${asset.asset_type} · ${asset.tool_used ?? 'verified asset'}`
       })),
-    [storyMediaPaths.gallery]
+    [storyMediaPaths.gallery, visualUnlockCount]
   );
   const activePuzzle = dramaPack?.communityPuzzles?.[0];
   const activePuzzleSolution = useMemo(
@@ -529,8 +629,11 @@ export default function PlayPage(): JSX.Element {
       (channel) => packChannels.includes(channel) || channel === selectedMessengerChannel
     );
   }, [dramaPack?.channels, selectedMessengerChannel]);
-  const canReplyToBeat =
-    !loading && !isSimulatingBeat && missionReady && Boolean(currentBeat) && !sessionState?.complete;
+  const selectedExternalRelayChannel = useMemo(
+    () => asExternalRelayChannel(selectedMessengerChannel),
+    [selectedMessengerChannel]
+  );
+  const canReplyToBeat = !loading && Boolean(currentBeat) && !sessionState?.complete;
   const missionContext = useMemo(() => {
     return {
       recruitmentReason:
@@ -600,6 +703,47 @@ export default function PlayPage(): JSX.Element {
         'You are moving at a healthy rhythm. Keep responses evidence-driven and use hints only when objectives remain blocked after field actions.'
     };
   }, [campaignDay, campaignMaxDays, campaignTargetDays, hintUses, playerProgress, sessionState?.investigationProgress]);
+  const beatNarrativeView = useMemo(() => {
+    if (!currentBeat || !dramaPack) {
+      return null;
+    }
+
+    const beatIndex = dramaPack.beats.findIndex((beat) => beat.id === currentBeat.id);
+    const previousBeat = beatIndex > 0 ? dramaPack.beats[beatIndex - 1] : null;
+    const nextBeat = beatIndex >= 0 ? dramaPack.beats[beatIndex + 1] ?? null : null;
+    const fallbackContinuity = previousBeat
+      ? `Continuity anchor: ${previousBeat.title} established the pressure profile that carries into this moment.`
+      : 'Continuity anchor: this is first contact, so your initial reads become the baseline for the entire case.';
+    const fallbackObjective =
+      caseFile?.objective ??
+      'Document a verifiable sequence from anomaly to actor and keep evidence admissible through escalation.';
+    const fallbackStakes =
+      caseFile?.failureConsequences?.[0] ??
+      `Failure here gives ${dramaPack.villain.displayName} room to rewrite the investigation timeline.`;
+    const depth = currentBeat.narrativeDepth;
+    const paragraphs = narrativeParagraphs(currentBeat.narrative);
+    const background = depth?.background ?? paragraphs[0] ?? currentBeat.narrative;
+    const continuity = depth?.continuity ?? fallbackContinuity;
+    const objective = depth?.objective ?? fallbackObjective;
+    const stakes = depth?.stakes ?? fallbackStakes;
+    const roleplayPrompt =
+      depth?.roleplayPrompt ??
+      'Roleplay as a grounded investigator: state what is known, what is inferred, and what must be proven next.';
+    const artifactFocus = depth?.artifactFocus ?? [];
+
+    return {
+      stageLabel: beatStageLabel(currentBeat.stage),
+      paragraphs: paragraphs.length > 0 ? paragraphs : [currentBeat.narrative],
+      background,
+      continuity,
+      objective,
+      stakes,
+      roleplayPrompt,
+      artifactFocus,
+      previousBeatTitle: previousBeat?.title ?? null,
+      nextBeatTitle: nextBeat?.title ?? null
+    };
+  }, [caseFile?.failureConsequences, caseFile?.objective, currentBeat, dramaPack]);
 
   function clearBeatTimers(): void {
     for (const timeout of messageTimeouts.current) {
@@ -608,15 +752,83 @@ export default function PlayPage(): JSX.Element {
     messageTimeouts.current = [];
   }
 
+  const relayRuntimeMessage = useCallback(
+    async (message: DramaMessage): Promise<void> => {
+      if (!selectedExternalRelayChannel || message.role === 'investigator') {
+        return;
+      }
+      if (sentRelayMessageIds.current.has(message.id)) {
+        return;
+      }
+      sentRelayMessageIds.current.add(message.id);
+
+      try {
+        const response = await fetch('/api/channels/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          cache: 'no-store',
+          body: JSON.stringify({
+            caseId: storyId,
+            playerId: messagingPlayerId,
+            channels: [selectedExternalRelayChannel],
+            message: `[${message.channel}] ${message.senderName}: ${message.text}`
+          })
+        });
+        const payload = (await response.json().catch(() => null)) as { message?: string } | null;
+        if (!response.ok) {
+          const detail = payload?.message ?? `External relay failed (${response.status})`;
+          throw new Error(detail);
+        }
+        setRelayStatus('ok');
+        setRelayError(null);
+      } catch (error) {
+        setRelayStatus('error');
+        setRelayError(error instanceof Error ? error.message : 'Unable to relay runtime messages.');
+      }
+    },
+    [messagingPlayerId, selectedExternalRelayChannel, storyId]
+  );
+
   const emitRuntimeMessage = useCallback(
     (message: DramaMessage): void => {
       setMessageFeed((current) => [...current, message]);
       setPopupQueue((current) => [...current, message]);
+      void relayRuntimeMessage(message);
       if (voiceDramaEnabled) {
         speakVoiceLine(dramaPack, message);
       }
     },
-    [dramaPack, voiceDramaEnabled]
+    [dramaPack, relayRuntimeMessage, voiceDramaEnabled]
+  );
+
+  const triggerLiveFailure = useCallback(
+    (outcome: LiveFailureOutcome): void => {
+      if (liveFailure) {
+        return;
+      }
+
+      for (const timeout of messageTimeouts.current) {
+        window.clearTimeout(timeout);
+      }
+      messageTimeouts.current = [];
+
+      setLiveFailure(outcome);
+      setSessionEndingId(null);
+      setIsSimulatingBeat(false);
+      setSessionState((current) => (current ? { ...current, complete: true } : current));
+      emitRuntimeMessage({
+        id: `failure-${Date.now()}`,
+        senderName: dramaPack?.villain.displayName ?? 'Unknown Antagonist',
+        role: 'antagonist',
+        channel: 'VOICE_MESSAGE',
+        text: `${outcome.title}: ${outcome.summary} ${outcome.epilogue}`,
+        delaySeconds: 0,
+        intensity: 90
+      });
+    },
+    [dramaPack?.villain.displayName, emitRuntimeMessage, liveFailure]
   );
 
   async function loadDramaPackage(nextStoryId: string): Promise<void> {
@@ -625,10 +837,8 @@ export default function PlayPage(): JSX.Element {
     clearBeatTimers();
 
     try {
-      const prefersDirectDrama = nextStoryId === 'static-between-stations';
-      const parsed = prefersDirectDrama
-        ? (await loadDramaPackageFile(nextStoryId)) ?? (await loadArgAsDramaPackage(nextStoryId))
-        : (await loadArgAsDramaPackage(nextStoryId)) ?? (await loadDramaPackageFile(nextStoryId));
+      const parsed =
+        (await loadDramaPackageFile(nextStoryId)) ?? (await loadArgAsDramaPackage(nextStoryId));
       if (!parsed) {
         throw new Error(`Unable to load runtime package for ${nextStoryId}.`);
       }
@@ -636,6 +846,7 @@ export default function PlayPage(): JSX.Element {
       setDramaPack(parsed);
       setSessionState(initialState);
       setSessionEndingId(null);
+      setLiveFailure(null);
       setMessageFeed([]);
       setPopupQueue([]);
       setActivePopup(null);
@@ -663,6 +874,9 @@ export default function PlayPage(): JSX.Element {
       setUnlockedShardIds([]);
       setMissionReady(false);
       setMessageDraft('');
+      setRelayStatus('idle');
+      setRelayError(null);
+      sentRelayMessageIds.current.clear();
       const firstSupportedChannel = MESSENGER_CHANNELS.find((channel) =>
         parsed.channels.includes(channel)
       );
@@ -691,11 +905,7 @@ export default function PlayPage(): JSX.Element {
           : Math.max(absoluteDelayMs, previousDelayMs + MIN_GAP_BETWEEN_MESSAGES_MS);
       previousDelayMs = delayMs;
       const timeoutId = window.setTimeout(() => {
-        setMessageFeed((current) => [...current, message]);
-        setPopupQueue((current) => [...current, message]);
-        if (voiceDramaEnabled) {
-          speakVoiceLine(dramaPack, message);
-        }
+        emitRuntimeMessage(message);
         if (index === messages.length - 1) {
           setIsSimulatingBeat(false);
         }
@@ -709,9 +919,13 @@ export default function PlayPage(): JSX.Element {
     setActivePopup(null);
   }
 
-  function chooseResponse(option: DramaResponseOption, customMessage?: string): void {
-    if (!dramaPack || !sessionState || !currentBeat || !missionReady) {
-      return;
+  function chooseResponse(option: DramaResponseOption, customMessage?: string): boolean {
+    if (!dramaPack || !sessionState || !currentBeat) {
+      return false;
+    }
+    if (!missionReady) {
+      startMissionThread();
+      return false;
     }
 
     const outboundMessage: DramaMessage = {
@@ -723,24 +937,93 @@ export default function PlayPage(): JSX.Element {
       delaySeconds: 0,
       intensity: 28
     };
-    setMessageFeed((current) => [...current, outboundMessage]);
+    emitRuntimeMessage(outboundMessage);
 
     const result = applyResponseChoice(dramaPack, sessionState, currentBeat, option);
     const escalationBoost = Math.floor(villainAdvantage / 8);
-    setSessionState(result.nextState);
-    setPlayerProgress(result.nextState.investigationProgress);
+    const highRiskIntents = new Set(['THREAT', 'DECEPTION', 'ACCUSATION', 'DEFIANCE', 'SILENCE']);
+    const intentRisk = highRiskIntents.has(option.intent) ? 3 : 0;
+    const decisionRisk =
+      Math.max(0, option.reputationDelta.aggression) * 2 +
+      Math.max(0, option.reputationDelta.deception) +
+      Math.max(0, -option.reputationDelta.morality) +
+      intentRisk +
+      currentBeat.stage;
+    const stabilityGain =
+      Math.max(0, option.reputationDelta.trustworthiness) + Math.max(0, option.reputationDelta.morality);
+    const nextVillainAdvantage = clamp(villainAdvantage + decisionRisk - stabilityGain, 0, 100);
+    const consequencePenalty = decisionRisk >= 9 ? 8 : decisionRisk >= 6 ? 4 : 0;
+    const adjustedProgress = clamp(result.nextState.investigationProgress - consequencePenalty, 0, 100);
+    const adjustedState: SessionState = {
+      ...result.nextState,
+      investigationProgress: adjustedProgress,
+      flags: {
+        ...result.nextState.flags,
+        villainAdvantage: nextVillainAdvantage,
+        lastDecisionRisk: decisionRisk,
+        lastConsequencePenalty: consequencePenalty
+      }
+    };
+
+    setSessionState(adjustedState);
+    setPlayerProgress(adjustedProgress);
+    setVillainAdvantage(nextVillainAdvantage);
     setVillainProximity((current) =>
-      clamp(current + currentBeat.stage * 3 + option.reputationDelta.aggression + escalationBoost, 0, 100)
+      clamp(
+        current +
+          currentBeat.stage * 3 +
+          option.reputationDelta.aggression +
+          escalationBoost +
+          Math.max(0, decisionRisk - stabilityGain),
+        0,
+        100
+      )
     );
     setDangerLevel((current) =>
-      clamp(current + currentBeat.stage * 4 + Math.max(0, option.reputationDelta.aggression) + escalationBoost, 0, 100)
+      clamp(
+        current +
+          currentBeat.stage * 4 +
+          Math.max(0, option.reputationDelta.aggression) +
+          escalationBoost +
+          Math.max(0, decisionRisk),
+        0,
+        100
+      )
     );
     setCampaignDay((current) => clamp(current + (currentBeat.stage >= 3 ? 3 : 2), 1, campaignMaxDays));
     setLastProgressAt(Date.now());
     setPopupQueue([]);
     setActivePopup(null);
 
-    if (villainAdvantage >= 15 && result.nextState.selectedResponses.length % 2 === 0) {
+    if (consequencePenalty > 0) {
+      emitRuntimeMessage({
+        id: `consequence-${Date.now()}`,
+        senderName: 'Field Operations Desk',
+        role: 'operator',
+        channel: 'DOCUMENT_DROP',
+        text:
+          consequencePenalty >= 8
+            ? 'Consequence event: hostile interference escalated. A witness route was burned and one evidence chain is now degraded.'
+            : 'Consequence event: antagonist pressure increased. You lost momentum while stabilizing fallout.',
+        delaySeconds: 0,
+        intensity: 61
+      });
+    }
+
+    if (decisionRisk >= 7) {
+      emitRuntimeMessage({
+        id: `villain-push-${Date.now()}`,
+        senderName: dramaPack.villain.displayName,
+        role: 'antagonist',
+        channel: 'SMS',
+        text:
+          'That choice opened the door. Keep forcing, threatening, or bluffing and I will decide who disappears before dawn.',
+        delaySeconds: 0,
+        intensity: 70
+      });
+    }
+
+    if (nextVillainAdvantage >= 15 && adjustedState.selectedResponses.length % 2 === 0) {
       emitRuntimeMessage({
         id: `villain-advantage-${Date.now()}`,
         senderName: dramaPack.villain.displayName,
@@ -752,11 +1035,12 @@ export default function PlayPage(): JSX.Element {
       });
     }
 
-    if (result.nextState.complete) {
-      const ending = resolveSessionEnding(dramaPack, result.nextState);
+    if (adjustedState.complete) {
+      const ending = resolveSessionEnding(dramaPack, adjustedState);
       setSessionEndingId(ending.id);
       setIsSimulatingBeat(false);
     }
+    return true;
   }
 
   function startMissionThread(): void {
@@ -766,16 +1050,15 @@ export default function PlayPage(): JSX.Element {
     setMissionReady(true);
     setLastProgressAt(Date.now());
 
-    const dispatchMessage: DramaMessage = {
-      id: `dispatch-${dramaPack.id}-${Date.now()}`,
+    emitRuntimeMessage({
+      id: `dispatch-opening-${dramaPack.id}-${Date.now()}`,
       senderName: 'Control',
       role: 'operator',
       channel: selectedMessengerChannel,
-      text: `${missionContext.openingIncident} Directive: ${missionContext.firstDirective}`,
+      text: `${missionContext.openingIncident} Objective: ${missionContext.objective} Primary question: ${missionContext.primaryQuestion}.`,
       delaySeconds: 0,
-      intensity: 34
-    };
-    emitRuntimeMessage(dispatchMessage);
+      intensity: 36
+    });
   }
 
   function submitMessengerReply(event: FormEvent<HTMLFormElement>): void {
@@ -794,8 +1077,10 @@ export default function PlayPage(): JSX.Element {
       return;
     }
 
-    chooseResponse(matchedOption, normalizedDraft);
-    setMessageDraft('');
+    const applied = chooseResponse(matchedOption, normalizedDraft);
+    if (applied) {
+      setMessageDraft('');
+    }
   }
 
   function restartSession(): void {
@@ -806,6 +1091,7 @@ export default function PlayPage(): JSX.Element {
     clearBeatTimers();
     setSessionState(initial);
     setSessionEndingId(null);
+    setLiveFailure(null);
     setMessageFeed([]);
     setPopupQueue([]);
     setActivePopup(null);
@@ -832,6 +1118,9 @@ export default function PlayPage(): JSX.Element {
     setUnlockedShardIds([]);
     setMissionReady(false);
     setMessageDraft('');
+    setRelayStatus('idle');
+    setRelayError(null);
+    sentRelayMessageIds.current.clear();
   }
 
   function submitAudioCipher(event: FormEvent<HTMLFormElement>): void {
@@ -1163,10 +1452,26 @@ export default function PlayPage(): JSX.Element {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const queryStoryId = params.get('storyId');
+    const queryPlayerId = params.get('playerId');
+    const storedCaseId = window.localStorage.getItem(CHANNEL_CASE_ID_STORAGE_KEY);
+    const storedPlayerId = window.localStorage.getItem(CHANNEL_PLAYER_ID_STORAGE_KEY);
     if (queryStoryId) {
       setStoryId(queryStoryId);
+    } else if (storedCaseId?.trim()) {
+      setStoryId(storedCaseId.trim());
+    }
+    if (queryPlayerId?.trim()) {
+      const normalized = queryPlayerId.trim();
+      setMessagingPlayerId(normalized);
+      window.localStorage.setItem(CHANNEL_PLAYER_ID_STORAGE_KEY, normalized);
+    } else if (storedPlayerId?.trim()) {
+      setMessagingPlayerId(storedPlayerId.trim());
     }
   }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem(CHANNEL_CASE_ID_STORAGE_KEY, storyId);
+  }, [storyId]);
 
   useEffect(() => {
     void loadDramaPackage(storyId);
@@ -1229,6 +1534,9 @@ export default function PlayPage(): JSX.Element {
         delaySeconds: 0,
         intensity: 33
       });
+      setDangerLevel((current) => clamp(current + (behindPace ? 3 : 2), 0, 100));
+      setVillainProximity((current) => clamp(current + 2, 0, 100));
+      setVillainAdvantage((current) => clamp(current + (behindPace ? 4 : 2), 0, 100));
       setLastNudgeAt(now);
       setNudgeCount((current) => current + 1);
     }, 30_000);
@@ -1246,6 +1554,75 @@ export default function PlayPage(): JSX.Element {
     nudgeCount,
     sessionState?.complete,
     sessionState?.investigationProgress
+  ]);
+
+  useEffect(() => {
+    if (!missionReady || !sessionState || sessionState.complete || liveFailure || !dramaPack) {
+      return;
+    }
+
+    const progress = sessionState.investigationProgress;
+    const reputation = sessionState.reputation;
+    const villainName = dramaPack.villain.displayName;
+
+    if (villainAdvantage >= 88 || (hintUses >= 6 && villainAdvantage >= 72)) {
+      triggerLiveFailure({
+        id: `${storyId}-failure-possession-${Date.now()}`,
+        type: 'CORRUPTION',
+        title: 'Possession Protocol',
+        summary: `${villainName} has mapped your behavior and hijacked the operation through your own responses.`,
+        epilogue: 'You are no longer running the case. You are part of the threat.',
+        sequelHook: 'Run failed. Restart from Day 1 to break the possession chain.'
+      });
+      return;
+    }
+
+    if (dangerLevel >= 96 || (reputation.aggression >= 28 && dangerLevel >= 88)) {
+      triggerLiveFailure({
+        id: `${storyId}-failure-terminal-${Date.now()}`,
+        type: 'TRAGIC',
+        title: 'Terminal Outcome',
+        summary: 'Escalation crossed the fatal line. A protected contact was lost and the operation imploded.',
+        epilogue: 'This branch ends in death and missing persons before extraction could begin.',
+        sequelHook: 'Run failed. Restart from Day 1 and reduce escalation risk.'
+      });
+      return;
+    }
+
+    if (campaignDay >= campaignMaxDays && progress < 82) {
+      triggerLiveFailure({
+        id: `${storyId}-failure-collapse-${Date.now()}`,
+        type: 'UNRESOLVED',
+        title: 'Case Collapse',
+        summary: 'You ran out the timeline before proving the chain of events.',
+        epilogue: 'Witnesses scattered, evidence degraded, and the antagonist narrative became public truth.',
+        sequelHook: 'Run failed. Restart from Day 1 and stay ahead of pace pressure.'
+      });
+      return;
+    }
+
+    if (reputation.deception >= 24 && reputation.trustworthiness <= -16 && progress >= 55) {
+      triggerLiveFailure({
+        id: `${storyId}-failure-framed-${Date.now()}`,
+        type: 'CORRUPTION',
+        title: 'Compromised Truth',
+        summary: 'Your deception trail made you easy to frame. Authentic clues were replaced with forged evidence.',
+        epilogue: 'The antagonist closes the file under your credentials while survivors lose legal protection.',
+        sequelHook: 'Run failed. Restart from Day 1 and preserve trust before deception spikes.'
+      });
+    }
+  }, [
+    campaignDay,
+    campaignMaxDays,
+    dangerLevel,
+    dramaPack,
+    hintUses,
+    liveFailure,
+    missionReady,
+    sessionState,
+    storyId,
+    triggerLiveFailure,
+    villainAdvantage
   ]);
 
   useEffect(() => {
@@ -1370,8 +1747,16 @@ export default function PlayPage(): JSX.Element {
           <p style={{ marginBottom: 10 }}>
             <strong>First Directive:</strong> {missionContext.firstDirective}
           </p>
+          {playerBriefing?.personalStakes ? (
+            <p style={{ marginBottom: 10 }}>
+              <strong>Personal Stakes:</strong> {playerBriefing.personalStakes}
+            </p>
+          ) : null}
           <p style={{ marginBottom: 6 }}>
             <strong>Case Objective:</strong> {missionContext.objective}
+          </p>
+          <p style={{ marginBottom: 6 }}>
+            <strong>Operation Window:</strong> {missionContext.operationWindow}
           </p>
           <p style={{ marginBottom: 0 }}>
             <strong>Primary Question:</strong> {missionContext.primaryQuestion}
@@ -1408,6 +1793,16 @@ export default function PlayPage(): JSX.Element {
                 </option>
               ))}
             </select>
+            <span className="muted" style={{ display: 'block', marginTop: 6 }}>
+              External relay:{' '}
+              {selectedExternalRelayChannel
+                ? `${selectedExternalRelayChannel} mapped to ${messagingPlayerId}`
+                : 'disabled (pick SMS/WhatsApp/Telegram)'}{' '}
+              {relayStatus === 'ok' ? '· live' : relayStatus === 'error' ? '· error' : ''}
+            </span>
+            {relayError ? (
+              <span style={{ display: 'block', marginTop: 4, color: '#ef9a9a' }}>{relayError}</span>
+            ) : null}
           </label>
         </div>
 
@@ -1485,11 +1880,15 @@ export default function PlayPage(): JSX.Element {
                     data-testid="phone-input"
                     value={messageDraft}
                     onChange={(event) => setMessageDraft(event.target.value)}
-                    placeholder={missionReady ? 'Type your response...' : 'Start mission to unlock chat input'}
+                    placeholder={
+                      missionReady
+                        ? 'Type your response...'
+                        : 'Type your response and press Send to start mission thread'
+                    }
                     disabled={!canReplyToBeat}
                   />
                   <button type="submit" data-testid="phone-send" disabled={!canReplyToBeat}>
-                    Send
+                    {missionReady ? 'Send' : 'Start & Send'}
                   </button>
                 </form>
               </div>
@@ -1539,7 +1938,61 @@ export default function PlayPage(): JSX.Element {
           <p data-testid="current-beat" className="surface-tag">
             {currentBeat ? `${currentBeat.actTitle} - ${currentBeat.title}` : 'No beat loaded'}
           </p>
-          <p className="muted">{currentBeat?.narrative ?? 'Select a story to initialize runtime.'}</p>
+          {beatNarrativeView ? (
+            <article className="play-beat-storyline">
+              <p className="kicker" style={{ marginBottom: 8 }}>
+                {beatNarrativeView.stageLabel} Playback
+              </p>
+              <div className="play-beat-narrative">
+                {beatNarrativeView.paragraphs.map((paragraph, index) => (
+                  <p
+                    key={`${currentBeat?.id ?? 'beat'}-paragraph-${index + 1}`}
+                    className={index === 0 ? undefined : 'muted'}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+              <div className="play-beat-depth-grid">
+                <article className="play-beat-depth-card">
+                  <strong>Background</strong>
+                  <span>{beatNarrativeView.background}</span>
+                </article>
+                <article className="play-beat-depth-card">
+                  <strong>Continuity</strong>
+                  <span>{beatNarrativeView.continuity}</span>
+                </article>
+                <article className="play-beat-depth-card">
+                  <strong>Objective</strong>
+                  <span>{beatNarrativeView.objective}</span>
+                </article>
+                <article className="play-beat-depth-card">
+                  <strong>Consequence Stakes</strong>
+                  <span>{beatNarrativeView.stakes}</span>
+                </article>
+              </div>
+              <p className="warning-line" style={{ marginTop: 6, marginBottom: 6 }}>
+                Roleplay Prompt: {beatNarrativeView.roleplayPrompt}
+              </p>
+              {beatNarrativeView.artifactFocus.length > 0 ? (
+                <p className="muted" style={{ marginTop: 0, marginBottom: 0 }}>
+                  Artifact Focus: {beatNarrativeView.artifactFocus.join(' • ')}
+                </p>
+              ) : null}
+              {beatNarrativeView.previousBeatTitle || beatNarrativeView.nextBeatTitle ? (
+                <p className="muted" style={{ marginTop: 6, marginBottom: 0 }}>
+                  {beatNarrativeView.previousBeatTitle
+                    ? `Previous: ${beatNarrativeView.previousBeatTitle}. `
+                    : ''}
+                  {beatNarrativeView.nextBeatTitle
+                    ? `Next pressure point: ${beatNarrativeView.nextBeatTitle}.`
+                    : 'Next pressure point: final resolution window.'}
+                </p>
+              ) : null}
+            </article>
+          ) : (
+            <p className="muted">Select a story to initialize runtime.</p>
+          )}
 
           <div className="play-metrics-grid">
             <div className="metric">
@@ -1564,7 +2017,7 @@ export default function PlayPage(): JSX.Element {
                 key={option.id}
                 data-testid={`response-option-${option.id}`}
                 onClick={() => chooseResponse(option)}
-                disabled={loading || isSimulatingBeat || !missionReady || Boolean(sessionState?.complete)}
+                disabled={!canReplyToBeat}
               >
                 <strong>{option.label}</strong>
                 <small>{option.summary}</small>
@@ -1648,16 +2101,31 @@ export default function PlayPage(): JSX.Element {
             ) : null}
           </div>
 
-          {resolvedEnding ? (
-            <article className="play-ending-card" data-testid="resolved-ending">
-              <h3 style={{ margin: '0 0 6px' }}>{resolvedEnding.title}</h3>
+          {displayedOutcome ? (
+            <article
+              className={`play-ending-card ${liveFailure ? 'is-failed' : ''}`}
+              data-testid="resolved-ending"
+            >
+              <h3 style={{ margin: '0 0 6px' }}>{displayedOutcome.title}</h3>
+              {liveFailure ? (
+                <p className="warning-line" style={{ marginTop: 0 }}>
+                  Mission failed. This run is lost and must be restarted from Day 1.
+                </p>
+              ) : null}
               <p className="muted" style={{ marginTop: 0 }}>
-                {resolvedEnding.summary}
+                {displayedOutcome.summary}
               </p>
-              <p style={{ marginBottom: 4 }}>{resolvedEnding.epilogue}</p>
+              <p style={{ marginBottom: 4 }}>{displayedOutcome.epilogue}</p>
               <p className="muted" style={{ margin: 0 }}>
-                Sequel Hook: {resolvedEnding.sequelHook}
+                Sequel Hook: {displayedOutcome.sequelHook}
               </p>
+              {liveFailure ? (
+                <div className="inline-links" style={{ marginTop: 8 }}>
+                  <button type="button" onClick={restartSession}>
+                    Restart From Day 1
+                  </button>
+                </div>
+              ) : null}
             </article>
           ) : null}
         </section>
@@ -1889,16 +2357,24 @@ export default function PlayPage(): JSX.Element {
           <div>
             <h3 style={{ marginTop: 0 }}>Nodes</h3>
             <ul className="plain-list">
-              {(dramaPack?.investigationBoard.nodes ?? []).map((node) => (
+              {investigationNodesForDisplay.map(({ node, locked }, index) => (
                 <li key={node.id}>
-                  <strong>{node.label}</strong>
-                  <span>{node.type.toLowerCase()} - {node.summary}</span>
+                  <strong>{locked ? `Locked Evidence ${index + 1}` : node.label}</strong>
+                  <span>
+                    {locked
+                      ? 'evidence - Progress the mission thread to reveal this chain-of-custody item.'
+                      : `${node.type.toLowerCase()} - ${node.summary}`}
+                  </span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
             <h3 style={{ marginTop: 0 }}>Evidence Pulls</h3>
+            <p className="muted" style={{ marginTop: 0 }}>
+              Revealed {verifiedEvidenceCards.length} / {Math.max(totalEvidenceSlots, verifiedEvidenceCards.length)}.
+              Advance beats and field actions to unlock additional pulls.
+            </p>
             <div className="evidence-thumb-grid">
               {verifiedEvidenceCards.length === 0 ? (
                 <article className="evidence-pull-card">
@@ -2009,7 +2485,10 @@ export default function PlayPage(): JSX.Element {
         <article className="play-puzzle-card">
           <h2 style={{ marginTop: 0 }}>Visual Evidence Gallery</h2>
           <p className="muted" style={{ marginTop: 0 }}>
-            AI-generated story visuals are surfaced here for scene context, clues, and character recognition.
+            AI-generated story visuals unlock in sequence for scene context, clue escalation, and character recognition.
+          </p>
+          <p className="muted" style={{ marginTop: 0 }}>
+            Revealed {resolvedVisualGallery.length} / {storyMediaPaths.gallery.length || 0}.
           </p>
           <div className="visual-gallery-grid">
             {resolvedVisualGallery.map((asset) => (
