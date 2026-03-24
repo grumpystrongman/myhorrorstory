@@ -3,7 +3,7 @@
   "asset_id": "web-library-background-texture",
   "asset_type": "background_texture",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Case Library Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Case Library Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Case Library (/library) objective: Browse and select stories with premium visual hierarchy.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 25,
+    "rawText": "HL |\nBIE ERR i a\nEE Ie LT.\n§ 0 nan pT |\nSe i il Ci .\ntl IRIE ge |W\n> | { a # y = i ar Hie e",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-library-background-texture-v1.png",
   "public_path": "/agent-army/website/image/web-library-background-texture-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-library-background-texture-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-library-background-texture-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:48:45.966Z",
-  "checksum": "bca78066bb44863706cd9612dd34238d12a93e48",
-  "file_size": 2577848,
+  "created_at": "2026-03-24T14:06:36.714Z",
+  "checksum": "c25622b2baff3e021a5c59f6695d92ba98e38f8d",
+  "file_size": 2388343,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-library-background-texture-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T14:05:22.841Z",
   "extension": ".png"
 }

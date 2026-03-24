@@ -629,8 +629,8 @@ function buildVoiceDesign(profileContext, contextTag = 'profile') {
   const emotion = inferEmotionAdjustments(profileContext);
   const microDrift = ((seed % 2000) / 1000 - 1) * 0.035;
 
-  const apiSpeed = clamp(expressionRate + roleRateDelta + emotion.rateDelta + microDrift, 0.84, 1.16);
-  const pitchSemitone = clamp(expressionPitch * 0.95 + rolePitchDelta + emotion.pitchDelta, -4.6, 4.2);
+  const apiSpeed = clamp(expressionRate + roleRateDelta + emotion.rateDelta + microDrift, 0.9, 1.08);
+  const pitchSemitone = clamp(expressionPitch * 0.95 + rolePitchDelta + emotion.pitchDelta, -3.2, 2.0);
 
   const baseHighpass =
     profileContext.role === 'antagonist' ? 60 : profileContext.role === 'witness' ? 85 : 72;
@@ -662,9 +662,11 @@ function buildAtempoChain(speedFactor) {
   return nodes.join(',');
 }
 
-function buildVoicePostProcessFilter(role, voiceDesign, sampleRate) {
+function buildVoicePostProcessFilter(role, voiceDesign, sourceSampleRate, targetSampleRate) {
+  const inputRate = clamp(Math.round(Number(sourceSampleRate) || 48_000), 8_000, 96_000);
+  const outputRate = clamp(Math.round(Number(targetSampleRate) || inputRate), 16_000, 96_000);
   const pitchFactor = Math.pow(2, Number(voiceDesign.pitchSemitone ?? 0) / 12);
-  const adjustedRate = Number(sampleRate) * pitchFactor;
+  const adjustedRate = Number(inputRate) * pitchFactor;
   const tempoCompensation = buildAtempoChain(1 / pitchFactor);
   const texture = clamp(Number(voiceDesign.textureAmount ?? 0.42), 0.25, 0.9);
   const roleEcho =
@@ -674,7 +676,7 @@ function buildVoicePostProcessFilter(role, voiceDesign, sampleRate) {
 
   return [
     `asetrate=${adjustedRate.toFixed(2)}`,
-    `aresample=${sampleRate}`,
+    `aresample=${outputRate}`,
     tempoCompensation,
     `highpass=f=${Math.round(Number(voiceDesign.highpassHz ?? 72))}`,
     `lowpass=f=${Math.round(Number(voiceDesign.lowpassHz ?? 7000))}`,
@@ -684,6 +686,43 @@ function buildVoicePostProcessFilter(role, voiceDesign, sampleRate) {
     roleEcho,
     'alimiter=limit=0.96'
   ].join(',');
+}
+
+function parseAudioSampleRateFromProbe(probeOutput) {
+  if (!probeOutput) {
+    return null;
+  }
+
+  const lines = String(probeOutput).split('\n');
+  for (const line of lines) {
+    if (!/Audio:/i.test(line)) {
+      continue;
+    }
+    const match = /,\s*(\d{4,6})\s*Hz\b/i.exec(line);
+    if (!match) {
+      continue;
+    }
+    const sampleRate = Number(match[1]);
+    if (Number.isFinite(sampleRate) && sampleRate >= 8_000 && sampleRate <= 192_000) {
+      return sampleRate;
+    }
+  }
+
+  return null;
+}
+
+async function probeAudioSampleRate(path) {
+  const probe = await probeWithFfmpeg(path);
+  const sampleRate = parseAudioSampleRateFromProbe(
+    [probe.stdout, probe.stderr].filter(Boolean).join('\n')
+  );
+  if (sampleRate) {
+    return sampleRate;
+  }
+  if (!probe.ok) {
+    throw new Error(`audio sample rate probe failed: ${probe.stderr}`);
+  }
+  return null;
 }
 
 function buildVoicePreviewScript(asset, profileContext) {
@@ -2411,6 +2450,38 @@ async function loadGeneratedAssetsForStory(storyId, modality) {
   return entries;
 }
 
+async function loadGeneratedAssetsForScope(scope, modality) {
+  const normalizedScope = String(scope ?? '').toLowerCase();
+  const planAssets = await getPlanAssetsCached();
+  const matching = planAssets.filter(
+    (asset) => String(asset.scope ?? '').toLowerCase() === normalizedScope && asset.modality === modality
+  );
+  const entries = [];
+
+  for (const asset of matching) {
+    const outputPath = outputPathForAsset(asset);
+    const metadataPath = `${outputPath}.meta.json`;
+    if (!(await fileExists(outputPath)) || !(await fileExists(metadataPath))) {
+      continue;
+    }
+
+    try {
+      const metadata = JSON.parse(await readFile(metadataPath, 'utf8'));
+      if (metadata.generatedProxy === true) {
+        continue;
+      }
+      if ((metadata.tool_used ?? metadata.toolUsed) === LOCAL_FALLBACK_TOOL) {
+        continue;
+      }
+      entries.push({ asset, outputPath, metadata });
+    } catch {
+      // Skip corrupt metadata and let the verifier report it elsewhere.
+    }
+  }
+
+  return entries;
+}
+
 function takeUniquePaths(entries, maximum) {
   const seen = new Set();
   const selected = [];
@@ -2430,9 +2501,49 @@ function takeUniquePaths(entries, maximum) {
 }
 
 async function pickVideoImageInputs(asset) {
-  const storyImages = await loadGeneratedAssetsForStory(asset.storyId, 'image');
+  let storyImages = await loadGeneratedAssetsForStory(asset.storyId, 'image');
   const byId = new Map(storyImages.map((entry) => [entry.asset.id, entry]));
   const category = String(asset.category ?? '').toLowerCase();
+  const scope = String(asset.scope ?? '').toLowerCase();
+
+  if (scope === 'website') {
+    const pagePrefix = asset.id.replace(/-motion-teaser$/i, '');
+    const pageScoped = storyImages.filter((entry) => entry.asset.id.startsWith(pagePrefix));
+    if (pageScoped.length > 0) {
+      return takeUniquePaths(pageScoped, 6);
+    }
+
+    const pageCategoryScoped = storyImages.filter((entry) =>
+      ['page_banner', 'background_texture', 'hero_panel'].includes(String(entry.asset.category ?? ''))
+    );
+    if (pageCategoryScoped.length > 0) {
+      return takeUniquePaths(pageCategoryScoped, 6);
+    }
+  }
+
+  if (storyImages.length === 0 && scope === 'website') {
+    const websiteImages = await loadGeneratedAssetsForScope('website', 'image');
+    const pagePrefix = asset.id.replace(/-motion-teaser$/i, '');
+    const pageScoped = websiteImages.filter((entry) => entry.asset.id.startsWith(pagePrefix));
+    if (pageScoped.length > 0) {
+      return takeUniquePaths(pageScoped, 6);
+    }
+
+    if (websiteImages.length > 0) {
+      return takeUniquePaths(websiteImages, 6);
+    }
+
+    const storyFallbackImages = await loadGeneratedAssetsForScope('story', 'image');
+    return takeUniquePaths(
+      [
+        ...storyFallbackImages.filter((entry) => entry.asset.category === 'story_key_art').slice(0, 3),
+        ...storyFallbackImages.filter((entry) => entry.asset.category === 'arc_key_art').slice(0, 2),
+        ...storyFallbackImages.filter((entry) => entry.asset.category === 'beat_scene_art').slice(0, 2),
+        ...storyFallbackImages.filter((entry) => entry.asset.category === 'villain_portrait').slice(0, 1)
+      ],
+      6
+    );
+  }
 
   if (category === 'beat_transition_video') {
     const sceneId = asset.id.replace(/beat-transition$/i, 'beat-scene');
@@ -2697,9 +2808,15 @@ async function generateVideoMontageAsset(asset, outputPath, timeoutMs) {
 async function postProcessVoiceTrack(rawInputPath, outputPath, asset, timeoutMs, voiceDesign = {}) {
   await ensureFfmpegBinary();
   const role = normalizeRole(asset.category);
-  const sampleRate = Number(asset.specs?.sampleRateHz) || 48000;
+  const targetSampleRate = Number(asset.specs?.sampleRateHz) || 48_000;
+  const sourceSampleRate = (await probeAudioSampleRate(rawInputPath)) ?? targetSampleRate;
   const channels = asset.specs?.channels === 1 ? 1 : 2;
-  const filter = buildVoicePostProcessFilter(role, voiceDesign, sampleRate);
+  const filter = buildVoicePostProcessFilter(
+    role,
+    voiceDesign,
+    sourceSampleRate,
+    targetSampleRate
+  );
   const args = [
     '-hide_banner',
     '-loglevel',
@@ -2709,7 +2826,7 @@ async function postProcessVoiceTrack(rawInputPath, outputPath, asset, timeoutMs,
     '-af',
     filter,
     '-ar',
-    String(sampleRate),
+    String(targetSampleRate),
     '-ac',
     String(channels),
     '-c:a',

@@ -3,7 +3,7 @@
   "asset_id": "web-codex-background-texture",
   "asset_type": "background_texture",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Codex Control Room Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Codex Control Room Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Codex Control Room (/codex) objective: Provide credible live-ops control surface for deep play.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 24,
+    "rawText": "4 toes aE TL ee LE\nL- & 2 iad Seti Casa BE FIIPE TE j\n3 A © CARRE soi | LE a\ni TONG EE dd ist }\n) Swe Sab CEE FE [1\nBe Wa NE = Eo : pe be | dt (Pa\n» a \\ ar je sg en a A tr) HEL See\nSP a EH EE Gin ta { 1 Jk AR Ee\noY Rey FEI Dg it : Eo k- ne Eo OH a\n3 Be BERG Cs Vo RR iio ul pb & 4 a :\nfr 5 A SR 8 ‘ WBE] NE\nda a 7 [EN CLR\n6) -. Ehiatl Haas 0 00s [Bess Ea\n3 Be a Br TN Cw $20 5. ae\nFf Ley - lo [2H Nf\n. TE Laie gi\nele Lagi Se H 9 La fF Fr i je Fe ——— Bras 7\nah em [UL Es ee ee\nbi wie, = ip JERE CY Rw Ol [3 3\n— vn RELL Ere | NH BER ee {FEES sett\n: = ” Se Re OT oiler danas\n; TE EER | he fog Te\n] Bren Por EE Tere lle St oo al\n; he = Erol!’ Lo SEE Ny er\n: ; -- RE Ce eg fer\nEee) & a a = =\ni > ee = = 7h =i\n= =",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-codex-background-texture-v1.png",
   "public_path": "/agent-army/website/image/web-codex-background-texture-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-codex-background-texture-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-codex-background-texture-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:50:08.273Z",
-  "checksum": "1c5b191d115a57598c87c0e877346b09b61388b1",
-  "file_size": 2542516,
+  "created_at": "2026-03-24T14:08:37.968Z",
+  "checksum": "59fa4c82a63c94d1a6ca04a51baf80922c7c0189",
+  "file_size": 2488977,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-codex-background-texture-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T14:05:22.841Z",
   "extension": ".png"
 }

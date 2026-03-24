@@ -1,92 +1,42 @@
 {
-  "generatedAt": "2026-03-23T17:21:33.763Z",
+  "generatedAt": "2026-03-24T15:22:09.495Z",
   "planPath": "assets/manifests/commercial-agent-army-plan.json",
   "statusLedgerPath": "apps/web/public/agent-army/status/generation-status.json",
   "filters": {
     "storyId": null,
     "assetId": null,
     "modality": "video",
-    "scope": null,
+    "scope": "website",
     "imageBackend": "auto",
     "regenerate": true,
     "start": 0,
     "limit": null,
     "timeoutMs": 180000,
-    "maxRetries": 1,
-    "concurrency": 2
+    "maxRetries": 2,
+    "concurrency": 1
   },
   "planned": 792,
-  "selected": 150,
-  "generated": 143,
+  "selected": 7,
+  "generated": 7,
   "skippedExisting": 0,
-  "failed": 7,
+  "failed": 0,
   "unavailable": 0,
   "byModality": {
     "video": {
-      "selected": 150,
-      "generated": 143,
+      "selected": 7,
+      "generated": 7,
       "skipped": 0,
-      "failed": 7,
+      "failed": 0,
       "unavailable": 0
     }
   },
-  "issues": [
-    {
-      "assetId": "web-landing-motion-teaser",
-      "modality": "video",
-      "status": "failed",
-      "outputPathRelative": "assets/production/agent-army/website/video/web-landing-motion-teaser-v1.mp4",
-      "error": "no verified image sources available for video montage"
-    },
-    {
-      "assetId": "web-library-motion-teaser",
-      "modality": "video",
-      "status": "failed",
-      "outputPathRelative": "assets/production/agent-army/website/video/web-library-motion-teaser-v1.mp4",
-      "error": "no verified image sources available for video montage"
-    },
-    {
-      "assetId": "web-onboarding-motion-teaser",
-      "modality": "video",
-      "status": "failed",
-      "outputPathRelative": "assets/production/agent-army/website/video/web-onboarding-motion-teaser-v1.mp4",
-      "error": "no verified image sources available for video montage"
-    },
-    {
-      "assetId": "web-play-motion-teaser",
-      "modality": "video",
-      "status": "failed",
-      "outputPathRelative": "assets/production/agent-army/website/video/web-play-motion-teaser-v1.mp4",
-      "error": "no verified image sources available for video montage"
-    },
-    {
-      "assetId": "web-codex-motion-teaser",
-      "modality": "video",
-      "status": "failed",
-      "outputPathRelative": "assets/production/agent-army/website/video/web-codex-motion-teaser-v1.mp4",
-      "error": "no verified image sources available for video montage"
-    },
-    {
-      "assetId": "web-mobile-home-motion-teaser",
-      "modality": "video",
-      "status": "failed",
-      "outputPathRelative": "assets/production/agent-army/website/video/web-mobile-home-motion-teaser-v1.mp4",
-      "error": "no verified image sources available for video montage"
-    },
-    {
-      "assetId": "web-mobile-session-motion-teaser",
-      "modality": "video",
-      "status": "failed",
-      "outputPathRelative": "assets/production/agent-army/website/video/web-mobile-session-motion-teaser-v1.mp4",
-      "error": "no verified image sources available for video montage"
-    }
-  ],
+  "issues": [],
   "catalog": {
-    "generatedAt": "2026-03-23T17:21:33.729Z",
+    "generatedAt": "2026-03-24T15:22:09.439Z",
     "totals": {
       "stories": 12,
-      "completeAssets": 775,
-      "failedAssets": 17,
+      "completeAssets": 783,
+      "failedAssets": 9,
       "unavailableAssets": 0,
       "invalidAssets": 0,
       "missingAssets": 0

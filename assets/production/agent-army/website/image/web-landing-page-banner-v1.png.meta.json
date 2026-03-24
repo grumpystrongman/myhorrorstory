@@ -3,7 +3,7 @@
   "asset_id": "web-landing-page-banner",
   "asset_type": "page_banner",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: website banner artwork. Story world: Website Surface. Immediate scene brief: Landing Page Banner. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: website banner artwork. Story world: Website Surface. Immediate scene brief: Landing Page Banner. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Landing (/) objective: Commercial first impression and conversion confidence.. Create cinematic horror-luxe page banner art with layered atmosphere and typography-safe focal zone. Style principles: cinematic contrast with restrained saturation; editorial typography hierarchy; texture-first backgrounds instead of flat fills; socially playable collaboration cues; high readability under low-light mood.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "high"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 22,
+    "rawText": "g Sane Ae Rl\n: Eo\nSE $ Lo\n; ¥ in 4g Lae ¢ Hi EE g\n(eat ee LE GR See\nbia a aiden a\nTE es om\nSET hE ok\n3 2 Wel ee Ts\na ore EE :\nTmt :\ni ia he A wi\n5 ho ; jf | aE Ey :\n: yi } do\nUT i 5 CN ee RE 7\nfd —_ Ra 3 i i\n[eee Gi Po Ey i\nTEE a les oe ed\npase “EE\nke a 1 !\n— p ¢\nGs | emEES EES i A\nse ln — mm RI hl :\nas ea sR Eos 0 et re",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-landing-page-banner-v1.png",
   "public_path": "/agent-army/website/image/web-landing-page-banner-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-landing-page-banner-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-landing-page-banner-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:48:52.151Z",
-  "checksum": "f2c88f91dee776123333750e54750a75043e2484",
-  "file_size": 2935699,
+  "created_at": "2026-03-24T15:06:44.886Z",
+  "checksum": "136ab0f8d04adeb5fefef0835e0667d77d4c2971",
+  "file_size": 2742131,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-landing-page-banner-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T15:05:52.408Z",
   "extension": ".png"
 }

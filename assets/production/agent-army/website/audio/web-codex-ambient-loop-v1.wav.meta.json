@@ -4,17 +4,34 @@
   "asset_type": "surface_ambient_loop",
   "modality": "audio",
   "prompt_used": "Surface Codex Control Room (/codex) objective: Provide credible live-ops control surface for deep play.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Surface Codex Control Room (/codex) objective: Provide credible live-ops control surface for deep play.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 55,
+      "mid": 265,
+      "high": 1377,
+      "shimmer": 2517,
+      "pulseHz": 1.3,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.22
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-codex-ambient-loop-v1.wav",
   "public_path": "/agent-army/website/audio/web-codex-ambient-loop-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:11:54.721Z",
-  "checksum": "adb3f67811d7ce11cc5ceb72d587b2ef72acdea8",
-  "file_size": 15698858,
-  "duration_seconds": 81.76,
+  "created_at": "2026-03-22T22:06:27.065Z",
+  "checksum": "29e42eb6a29a86425e6eaa0fc1fb4eeeba85484c",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/audio/web-codex-ambient-loop-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

@@ -1,44 +1,46 @@
 {
-  "id": "web-play-motion-teaser",
-  "title": "Play Session Motion Teaser",
+  "story_id": "website",
+  "asset_id": "web-play-motion-teaser",
+  "asset_type": "surface_motion_teaser",
   "modality": "video",
-  "category": "surface_motion_teaser",
-  "scope": "website",
+  "prompt_used": "Surface Play Session (/play) objective: Sustain long-form immersion while preserving readability.. Produce a loop-ready motion teaser with subtle camera drift, practical light flicker, and safe pacing for homepage or section transitions.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-play-page-banner-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-play-background-texture-v1.png"
+    ],
+    "source_audio": null,
+    "duration_seconds": 10,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Case Handler",
+      "role": "narrator",
+      "locale": "en-US",
+      "region": "global",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Case Handler briefing. Play Session Motion Teaser is now active. Start with the primary evidence drop, then compare every new message against a case file breach has begun.. If the threat reaches you first, archive the contact before you respond.",
+      "design": {
+        "apiSpeed": 0.966365,
+        "pitchSemitone": 0,
+        "textureAmount": 0.475,
+        "highpassHz": 80,
+        "lowpassHz": 7248,
+        "presenceGainDb": 0.24
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-play-motion-teaser-v1.mp4",
+  "public_path": "/agent-army/website/video/web-play-motion-teaser-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\video\\web-play-motion-teaser-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/website/video/web-play-motion-teaser-v1.thumb.jpg",
+  "created_at": "2026-03-24T15:18:17.603Z",
+  "checksum": "aaf715d257bede7f5e471b48398e051972716090",
+  "file_size": 7185001,
+  "duration_seconds": 10,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/video/web-play-motion-teaser-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#4a8f34",
-    "accentColor": "#473c8b"
-  },
-  "prompt": "Surface Play Session (/play) objective: Sustain long-form immersion while preserving readability.. Produce a loop-ready motion teaser with subtle camera drift, practical light flicker, and safe pacing for homepage or section transitions.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:07.167Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:17:04.232Z"
 }

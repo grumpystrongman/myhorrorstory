@@ -3,7 +3,7 @@
   "asset_id": "web-codex-page-banner",
   "asset_type": "page_banner",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: website banner artwork. Story world: Website Surface. Immediate scene brief: Codex Control Room Page Banner. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: website banner artwork. Story world: Website Surface. Immediate scene brief: Codex Control Room Page Banner. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Codex Control Room (/codex) objective: Provide credible live-ops control surface for deep play.. Create cinematic horror-luxe page banner art with layered atmosphere and typography-safe focal zone. Style principles: cinematic contrast with restrained saturation; editorial typography hierarchy; texture-first backgrounds instead of flat fills; socially playable collaboration cues; high readability under low-light mood.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "high"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 23,
+    "rawText": "fel\nA : eee /\naw SRT a Ee | :\nGd 1 i Nie a vel : > eles i -\nLe a oe oe y os i\ni A flr SHE fe CLs nee Ra © oo i iE we\n-_— a... Tm r= as aE =\n(8 a CER Pe a Ta Saka\nComme SER ia LT fae lei he 0 Et |\na = nd a = | pr\na a te Ta . i “| re -\nL a wn a = ee Ea es I.\nONL | br Re 2 a een eh | ie | T\nme a eee = RE I. ee I\nTodeat = loam i E i | =\n: FE FE ae od\n| be a EE a [t | = Fi\n# | Ene Se gle ei] Lae i 4 —\n[| bel hE jen\nog come he an ies | ye Her\nTT me Yee iE =\nma TT. 7 ve vila a\nGer he— FY la\noo fee. YB\nE casEdiecns a “ere Tee 4 pa\nF Bie i me\n: | I. fen\nTg ee",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-codex-page-banner-v1.png",
   "public_path": "/agent-army/website/image/web-codex-page-banner-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-codex-page-banner-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-codex-page-banner-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:50:33.253Z",
-  "checksum": "a14466e00d6859bd0f26170cbbb7aaf419a2bfdb",
-  "file_size": 2830367,
+  "created_at": "2026-03-24T14:08:46.846Z",
+  "checksum": "3ab075cd18d1b31b33b356b8ce6c99579636d44c",
+  "file_size": 2577441,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-codex-page-banner-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T14:05:22.841Z",
   "extension": ".png"
 }

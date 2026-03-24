@@ -3,7 +3,7 @@
   "asset_id": "web-mobile-home-background-texture",
   "asset_type": "background_texture",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Mobile Home Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Mobile Home Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Mobile Home (mobile://home) objective: Mobile-first discovery and campaign continuity.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 24,
+    "rawText": "pr ERE &7 § Rk BEC CLs i\ney TIRE\ni & Za i : fs Wo E -\nrT E\nBE go 57 GE\nHe tg Ld > J\naan ie SNE oR ier\nCL i] gE LE Le.\nZe Sal 5 ¥ [an\nSH ba. A Foe\n450% GE ee Wg Ae\noo Tai re LE\n5 SoA ST §\nJ EGE TAT 35 id ea,\nA the VR a gE\nTTA KEE ea 1\nCA el Fie CAL\nALG RE EA ShACR\nPa EE REE En\nea a\nAEE RRR oR ree BR SRE SR SER em me Ax es\nsn a ree EN 1 Sal le il ih § i a\nEe eh ety = if TRE Sb i\nEe | = I= = =\nnl al LE = a\nEr, Es | a —.\nBoi carmen Ee | EES ee— | ao a\nEll | e—————— =\nEme—— || = | SER\nEm | eee——— | Trees\n=] (| emee——————— | Ee\nmm | S| | =\n= ee—— ———\nmy TIE TED ie SRR So i TE it\nCasha t eed es BS LET :\ni oe os = — oe\nsay ea. 3\n= ap Sie re APE",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-home-background-texture-v1.png",
   "public_path": "/agent-army/website/image/web-mobile-home-background-texture-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-home-background-texture-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-mobile-home-background-texture-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:50:30.040Z",
-  "checksum": "4f7efdfe043b2d7b5fec44d481632020131a8e64",
-  "file_size": 2657245,
+  "created_at": "2026-03-24T14:09:14.818Z",
+  "checksum": "21ed128dffec3277c05e7a703bcb7ee7d4580581",
+  "file_size": 2519709,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-mobile-home-background-texture-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T14:05:22.841Z",
   "extension": ".png"
 }

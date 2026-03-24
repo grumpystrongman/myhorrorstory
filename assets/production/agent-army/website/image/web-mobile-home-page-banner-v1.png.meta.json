@@ -3,7 +3,7 @@
   "asset_id": "web-mobile-home-page-banner",
   "asset_type": "page_banner",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: website banner artwork. Story world: Website Surface. Immediate scene brief: Mobile Home Page Banner. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: website banner artwork. Story world: Website Surface. Immediate scene brief: Mobile Home Page Banner. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Mobile Home (mobile://home) objective: Mobile-first discovery and campaign continuity.. Create cinematic horror-luxe page banner art with layered atmosphere and typography-safe focal zone. Style principles: cinematic contrast with restrained saturation; editorial typography hierarchy; texture-first backgrounds instead of flat fills; socially playable collaboration cues; high readability under low-light mood.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "high"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 23,
+    "rawText": "] Fi",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-home-page-banner-v1.png",
   "public_path": "/agent-army/website/image/web-mobile-home-page-banner-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-home-page-banner-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-mobile-home-page-banner-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:50:45.676Z",
-  "checksum": "983fabfa9d13c5ca40afe07cbed3b41f6213bb89",
-  "file_size": 2849727,
+  "created_at": "2026-03-24T14:09:28.654Z",
+  "checksum": "732d24534697026526172d3e91cbb25baea7efec",
+  "file_size": 2705990,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-mobile-home-page-banner-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T14:05:22.841Z",
   "extension": ".png"
 }

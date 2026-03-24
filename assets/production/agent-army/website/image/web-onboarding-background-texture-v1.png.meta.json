@@ -3,7 +3,7 @@
   "asset_id": "web-onboarding-background-texture",
   "asset_type": "background_texture",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Onboarding Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Onboarding Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Onboarding (/onboarding) objective: Explain player role and set expectations with high trust.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 21,
+    "rawText": ": Be Cn el : ; :\nEC LE i\nEr Co ; og v\n5 = ha a e\ni He Su ol :\nfi 7 SE A hd ake\nfate le 4 GEHL iE\na 7 A ah BE i\nCe BE | oe\nLa EH L Ha ee :\na HA Ti Shean Jr 3\nSCREEN TE Fi io JAF elon\nLee Be Ihe ahah [i] al he 2\noh ¥ a Preis] diag PRGA GRR\nCL ke AER ak 2 FL GERRI fl, Cl a\nEER gd = SR 5: a En SRE TC .\neos 9 pil 1 SE gr od HERR pg\nEe La oi 3 i iq hot 4 An ve cd\nae 3 So fy d hl fae Sa ME CRE Nee\nGRUERS 3 Rid HRC Ae EERE Ha Fis oil CREE Neah\noe Ey i oy\nan Be : B31 Bs . EL Se A TR 4\ncs » wi . arial] — 7 Re | fi Rg 5\nEan fed 8 bo REE ll g\nle oh ENR Eo Fe She ol E ly oo A be\na it CRA $3 SEG Z logan\na bor Tam 80 be :\nAi a v = a\nva : es om )\nmeme ae re\ni 5% eri ons SUSE = Eee es E\nsen Li EEE a Tn gee SS EE ce\nEe Cee he eels Reg a SEY Yd\n8 ee me Er MRR : :\nSm RL Ce Se cS a ess De, AS 3\nnT hes ae Bp es Fe\nER eR rears a APE re i 5\n3 g Rs : = : ’",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-onboarding-background-texture-v1.png",
   "public_path": "/agent-army/website/image/web-onboarding-background-texture-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-onboarding-background-texture-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-onboarding-background-texture-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:49:17.816Z",
-  "checksum": "a49ad2a90dc879c027f305d194cb5ebeb364ffd7",
-  "file_size": 2409775,
+  "created_at": "2026-03-24T14:07:10.042Z",
+  "checksum": "6ea0dcdb151a9a9821be44d3af3cc87e5989a95a",
+  "file_size": 2254793,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-onboarding-background-texture-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T14:05:22.841Z",
   "extension": ".png"
 }

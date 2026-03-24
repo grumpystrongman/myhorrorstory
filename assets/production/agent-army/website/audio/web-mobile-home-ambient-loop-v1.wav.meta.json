@@ -4,17 +4,34 @@
   "asset_type": "surface_ambient_loop",
   "modality": "audio",
   "prompt_used": "Surface Mobile Home (mobile://home) objective: Mobile-first discovery and campaign continuity.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Surface Mobile Home (mobile://home) objective: Mobile-first discovery and campaign continuity.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 46,
+      "mid": 200,
+      "high": 1248,
+      "shimmer": 3148,
+      "pulseHz": 1.3833333333333333,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.22
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-mobile-home-ambient-loop-v1.wav",
   "public_path": "/agent-army/website/audio/web-mobile-home-ambient-loop-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:11:56.135Z",
-  "checksum": "80015ace0edf7b3f56fcdefe4129bdb154e328ff",
-  "file_size": 15699398,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:06:28.579Z",
+  "checksum": "e716040988d4476f207556b32d12c5855fc154a7",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/audio/web-mobile-home-ambient-loop-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

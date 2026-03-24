@@ -844,16 +844,38 @@ function hasNaturalVoiceDesign(design) {
     return false;
   }
 
-  const numericFields = [
-    'apiSpeed',
-    'pitchSemitone',
-    'textureAmount',
-    'highpassHz',
-    'lowpassHz',
-    'presenceGainDb'
-  ];
+  const apiSpeed = Number(design.apiSpeed);
+  const pitchSemitone = Number(design.pitchSemitone);
+  const textureAmount = Number(design.textureAmount);
+  const highpassHz = Number(design.highpassHz);
+  const lowpassHz = Number(design.lowpassHz);
+  const presenceGainDb = Number(design.presenceGainDb);
 
-  return numericFields.every((field) => Number.isFinite(Number(design[field])));
+  if (
+    !Number.isFinite(apiSpeed) ||
+    !Number.isFinite(pitchSemitone) ||
+    !Number.isFinite(textureAmount) ||
+    !Number.isFinite(highpassHz) ||
+    !Number.isFinite(lowpassHz) ||
+    !Number.isFinite(presenceGainDb)
+  ) {
+    return false;
+  }
+
+  return (
+    apiSpeed >= 0.9 &&
+    apiSpeed <= 1.08 &&
+    pitchSemitone >= -3.2 &&
+    pitchSemitone <= 2.0 &&
+    textureAmount >= 0.25 &&
+    textureAmount <= 0.9 &&
+    highpassHz >= 50 &&
+    highpassHz <= 160 &&
+    lowpassHz >= 5000 &&
+    lowpassHz <= 9000 &&
+    presenceGainDb >= -2.4 &&
+    presenceGainDb <= 2.6
+  );
 }
 
 function computeMediaQuality(pack) {

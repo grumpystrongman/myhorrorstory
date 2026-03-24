@@ -4,17 +4,34 @@
   "asset_type": "surface_ambient_loop",
   "modality": "audio",
   "prompt_used": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Compose an original ambient loop using restrained analog textures, distant field recordings, and tension pulses that remain unobtrusive under dialogue.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 51,
+      "mid": 201,
+      "high": 929,
+      "shimmer": 2669,
+      "pulseHz": 1.9666666666666668,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.22
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\audio\\web-mobile-session-ambient-loop-v1.wav",
   "public_path": "/agent-army/website/audio/web-mobile-session-ambient-loop-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:11:57.435Z",
-  "checksum": "9bb59e6030fd14702549236032a9df48fc7b8945",
-  "file_size": 15700314,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:06:30.073Z",
+  "checksum": "19ab49c16d6804003d807bf1bd5e481265207cf0",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/audio/web-mobile-session-ambient-loop-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

@@ -3,7 +3,7 @@
   "asset_id": "web-mobile-session-background-texture",
   "asset_type": "background_texture",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Mobile Session Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: atmospheric background plate. Story world: Website Surface. Immediate scene brief: Mobile Session Background Texture. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Build a polished environmental plate for web presentation with strong negative space, atmospheric depth, and clear thematic identity for the story world.",
   "source_prompt": "Surface Mobile Session (mobile://session) objective: Responsive companion play and async decision handling.. Build high-detail background texture that supports readable overlays and rich depth without visual noise.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 22,
+    "rawText": "En\nhy oR Mase se vn\nBa = pe a\nERR tn a ea\nWl =\nSo Temes Sia\nPAE (Lhupadl or REA pl Ae ee\n(HE Ee\na WB\n5 ARAN Hil Sh TR\naR a flo a\n© MERE EN ah Fr i\nCoie . |\neg NRE iE FE | i\na E FE |\nERE io 4 i i\nBR ha $i FE | mn\nTE i] g ol i\nPe Tf i 0 2\nSOR EL E 4\nT0 A aa { EE ba 4\nCoat EEE {i LE LE\nSOT A | i Ei: | J)\n[ E hs AEA EEE\nLi TER\nEE te\nfs DE br ji Ey or A\nRE EE\nge\nae ne ad\ntroy a\nly\nPhagiy' &' 051\nTok\na\n¥\nee a Re\nEET Se SER\n3 Ce SE eee\nBe ee. Se\naa\nRe Or SR ENE A\n2 i Tei Po i ENS A",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-session-background-texture-v1.png",
   "public_path": "/agent-army/website/image/web-mobile-session-background-texture-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\website\\image\\web-mobile-session-background-texture-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/website/image/web-mobile-session-background-texture-v1.thumb.jpg",
-  "created_at": "2026-03-21T16:50:53.397Z",
-  "checksum": "9a1c7626fc63b2a22c9ae9b9316a807f0a71decb",
-  "file_size": 2494681,
+  "created_at": "2026-03-24T14:09:53.712Z",
+  "checksum": "907a7b0bdce8849149671584bdf1641dd45dde3a",
+  "file_size": 2583496,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/website/image/web-mobile-session-background-texture-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "materialize-real-assets:2026-03-24T14:05:22.841Z",
   "extension": ".png"
 }
