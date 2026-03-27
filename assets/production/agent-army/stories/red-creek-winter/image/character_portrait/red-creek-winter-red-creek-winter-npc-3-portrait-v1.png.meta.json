@@ -3,21 +3,30 @@
   "asset_id": "red-creek-winter-red-creek-winter-npc-3-portrait",
   "asset_type": "character_portrait",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Character portrait for Journalist Mara Finch, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Journalist Mara Finch Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: character portrait. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Character portrait for Journalist Mara Finch, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first... Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter - Journalist Mara Finch Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
   "source_prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Character portrait for Journalist Mara Finch, role SUSPECT. Traits: guarded, analytical. Response style: accusation=Defensive and selective.; threat=Withdraws and delays.; questioning=Provides partial truths first..",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "high"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 32,
+    "rawText": "§ HY 1\n$ Ev\nZ “N 1\n/ ’ 3 ie\nVy EY i\nV 4 E - , $ i\n/ A < 4 :\nRT yy\nVV, Tr uy. 2 :\nA IN N\nA 5 A 8 #\n(% ) pe % od FN\n: (ign HA\n| Be\n) £4 \\ & i Se x\nLl sae\n& i",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-3-portrait-v1.png",
   "public_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-3-portrait-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\character_portrait\\red-creek-winter-red-creek-winter-npc-3-portrait-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-3-portrait-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:36:44.940Z",
-  "checksum": "878d59e3a254e0ce090127463f8ca52ece39b327",
-  "file_size": 928582,
+  "created_at": "2026-03-22T21:36:08.335Z",
+  "checksum": "9e4c931b6b4033ce16e5b85ebf04325507bd755f",
+  "file_size": 3685329,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/image/character_portrait/red-creek-winter-red-creek-winter-npc-3-portrait-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:35:02.276Z",
   "extension": ".png"
 }

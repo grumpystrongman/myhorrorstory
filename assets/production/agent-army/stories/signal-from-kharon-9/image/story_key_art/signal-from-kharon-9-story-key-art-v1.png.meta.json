@@ -3,21 +3,36 @@
   "asset_id": "signal-from-kharon-9-story-key-art",
   "asset_type": "story_key_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: hero poster. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 Story Key Art. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-end key art image with a dominant focal threat, layered foreground and background storytelling, a strong silhouette, and clear thematic clues embedded in the environment. Keep it elegant, unsettling, and market-ready.",
   "source_prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Create premium launch key art that introduces player mission stakes and iconic environmental cues with poster-level composition.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "high"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 21,
+    "rawText": "he Ss . 3 a aad . hs : &\noe \" : F las ae Sa E\n2 BE - 3 . ASRS i A rE ¥ 28 < . ;\n. ald Ey\n: . 3 SB Le aX F Ek « + \\ .\ng Ss ; EE dee ' 7 8 be |\n: . ; > Ee na a i“ : + on a Sd .\nha oi Tolle on A SE ; Ee iis a BL\n“ gi = We adie Touiaiaim de Ba :\noa sen oh Sl Yel ¢ ; ome el .\nih fee... 8&0 Naot 4 RE ee 0\nWl lags BE AN a + a\nhs. fo We i & : i + ss\n. : in NN a a og g\nVER gee Ee\nre A . 2 CL\n\\ Ss a Lh os\n| & i\nae :\n\\ = Seedices 0\n8 5 C ca . are\n— nu | a\nBe os La £\nEe Eo\nal Te : :\neo",
+    "tokens": [
+      {
+        "text": "Tolle",
+        "normalized": "tolle",
+        "confidence": 58
+      }
+    ]
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png",
   "public_path": "/agent-army/stories/signal-from-kharon-9/image/story_key_art/signal-from-kharon-9-story-key-art-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/story_key_art/signal-from-kharon-9-story-key-art-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:37:02.815Z",
-  "checksum": "d1d618cdbca6a789704561ae5c7e64ff1dd76012",
-  "file_size": 857126,
+  "created_at": "2026-03-22T21:38:07.504Z",
+  "checksum": "a1cf482c75087440bfab74c678d3c9331a6c378d",
+  "file_size": 3089890,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/image/story_key_art/signal-from-kharon-9-story-key-art-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:37:12.611Z",
   "extension": ".png"
 }

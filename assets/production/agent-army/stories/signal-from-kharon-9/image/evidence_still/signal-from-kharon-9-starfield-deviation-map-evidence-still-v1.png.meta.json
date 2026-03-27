@@ -3,21 +3,30 @@
   "asset_id": "signal-from-kharon-9-starfield-deviation-map-evidence-still",
   "asset_type": "evidence_still",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Starfield deviation map\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Evidence Still - Starfield deviation map. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Signal From Kharon-9. Setting: Mountain observatory and subterranean receiver array. Recurring motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Starfield deviation map\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Evidence Still - Starfield deviation map. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
   "source_prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Render forensic evidence still for \"Starfield deviation map\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 26,
+    "rawText": "wa\nLL .\n| - = EES. Ba, i Sl LS s\n| g % ~\n* F.C TN av\nad Cos TURES i GR SE h\niB Lhe SRS EER 2\nBd LEI mae.\nfd ow ES NNN LW «\ni Lay iy = Ea \\\noo Re EZ = \\\\ | wh EEE\noo FEU He 9 \\\\ RAG hm,\n© EE NINERS ©\nGo an SEE (ll wi \"oa\n5) a fi HE p i) li ¥ JE Las\nwl ON LN ls. \\&\nfilo EY N= 4] 2g Lay \\ “\nie BE ONE Ue Ts a A\nLE a AN =) RY \\\nba CO aaNRSSE Egle.\n2: Co aN RS ae To Ng\np A J —— pS Hs I 3 ~\n2 a Sag CME\n- an CL . LOR\nEe a Porm, TR\nBe A 5 2 4\ngo BF\nit -\na p\n_ A",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.png",
   "public_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:37:21.851Z",
-  "checksum": "873624be0f01919004dcd686ed96f8e10cee0440",
-  "file_size": 968295,
+  "created_at": "2026-03-22T21:39:10.384Z",
+  "checksum": "24c10c490f8e8758c24911b3bdf145b344427f80",
+  "file_size": 3751660,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/image/evidence_still/signal-from-kharon-9-starfield-deviation-map-evidence-still-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:38:39.595Z",
   "extension": ".png"
 }

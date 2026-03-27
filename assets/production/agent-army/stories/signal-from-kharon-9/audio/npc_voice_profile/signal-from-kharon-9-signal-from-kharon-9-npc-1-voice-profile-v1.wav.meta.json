@@ -3,18 +3,43 @@
   "asset_id": "signal-from-kharon-9-signal-from-kharon-9-npc-1-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Systems Engineer Ari Vance. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Systems Engineer Ari Vance. Keep your channel open and do not answer unknown callbacks. Telemetry returns from a decommissioned orbital array and predicts player replies. Start with telemetry checksum drift, then verify every timestamp against mountain observatory and subterranean receiver array. If The Quiet Orbit contacts you directly, preserve the message before you react.",
+  "source_prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Systems Engineer Ari Vance. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "sage",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "operator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 0.98424,
+      "pitchSemitone": 0.14899999999999994,
+      "textureAmount": 0.46625,
+      "highpassHz": 74,
+      "lowpassHz": 7298,
+      "presenceGainDb": -0.5569999999999999
+    },
+    "voice_design": {
+      "apiSpeed": 0.98424,
+      "pitchSemitone": 0.14899999999999994,
+      "textureAmount": 0.46625,
+      "highpassHz": 74,
+      "lowpassHz": 7298,
+      "presenceGainDb": -0.5569999999999999
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-1-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-1-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:00.337Z",
-  "checksum": "437e4a0a30f82d72d0bf950d37b8ab4a0104d8f7",
-  "file_size": 2110720,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:35:07.414Z",
+  "checksum": "8e1488f97d8ed071948b824c58a643a22865f0b1",
+  "file_size": 1425032,
+  "duration_seconds": 14.84,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-1-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

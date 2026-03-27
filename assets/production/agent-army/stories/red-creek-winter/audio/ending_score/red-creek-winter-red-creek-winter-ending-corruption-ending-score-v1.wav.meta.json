@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept staged closure to keep panic and tourism revenue controlled.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept staged closure to keep panic and tourism revenue controlled.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 48,
+      "mid": 206,
+      "high": 980,
+      "shimmer": 2560,
+      "pulseHz": 1.62,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.14
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
   "public_path": "/agent-army/stories/red-creek-winter/audio/ending_score/red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:54.199Z",
-  "checksum": "0ea9242e17e64cd7b78554ae0c191c1b22b2dff4",
-  "file_size": 15699438,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:08:52.412Z",
+  "checksum": "220336a10b2edf3a7e3605b2a6fcfdfa9e757234",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/audio/ending_score/red-creek-winter-red-creek-winter-ending-corruption-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

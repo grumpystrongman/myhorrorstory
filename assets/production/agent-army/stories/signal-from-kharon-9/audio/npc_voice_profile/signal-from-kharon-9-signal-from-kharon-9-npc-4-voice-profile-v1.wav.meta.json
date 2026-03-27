@@ -3,18 +3,43 @@
   "asset_id": "signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Telemetry Broker Vale-9. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Telemetry Broker Vale-9. I should not be leaving this message. Something about telemetry checksum drift is wrong, and The Quiet Orbit wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain observatory and subterranean receiver array.",
+  "source_prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Telemetry Broker Vale-9. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "shimmer",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 1.1365,
+      "pitchSemitone": 1.259,
+      "textureAmount": 0.515,
+      "highpassHz": 93,
+      "lowpassHz": 7838,
+      "presenceGainDb": 0.032000000000000084
+    },
+    "voice_design": {
+      "apiSpeed": 1.1365,
+      "pitchSemitone": 1.259,
+      "textureAmount": 0.515,
+      "highpassHz": 93,
+      "lowpassHz": 7838,
+      "presenceGainDb": 0.032000000000000084
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:01.494Z",
-  "checksum": "18d56e7558f2d2d49f9effdd11e7dcd3192578c3",
-  "file_size": 2111226,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:35:18.175Z",
+  "checksum": "c9f274d3887c046a11af877175198c5fa5da184f",
+  "file_size": 841488,
+  "duration_seconds": 8.76,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-4-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

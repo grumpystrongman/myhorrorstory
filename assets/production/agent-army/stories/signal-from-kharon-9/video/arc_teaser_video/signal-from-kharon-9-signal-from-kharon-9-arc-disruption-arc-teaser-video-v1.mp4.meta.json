@@ -1,44 +1,48 @@
 {
-  "id": "signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video",
-  "title": "Signal From Kharon-9 - Interference and Doubt Arc Teaser Video",
+  "story_id": "signal-from-kharon-9",
+  "asset_id": "signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video",
+  "asset_type": "arc_teaser_video",
   "modality": "video",
-  "category": "arc_teaser_video",
-  "scope": "story",
+  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\arc_key_art\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\arc_ambience\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-ambience-v1.wav",
+    "duration_seconds": 30,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Astrophysicist Dr. Helene Oru",
+      "role": "witness",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "nova",
+      "script": "Astrophysicist Dr. Helene Oru to team. Telemetry returns from a decommissioned orbital array and predicts player replies. This chapter centers on interference and doubt arc teaser video, and your objective is to establish a defensible timeline, pressure test witness statements, and isolate deliberate manipulation. Start with telemetry checksum drift, map every contradiction to clock time, and keep one witness stable while you escalate. If The Quiet Orbit makes direct contact, preserve the message first, then respond with evidence-led questions only.",
+      "design": {
+        "apiSpeed": 1.08,
+        "pitchSemitone": 1.5099999999999998,
+        "textureAmount": 0.6337499999999999,
+        "highpassHz": 98,
+        "lowpassHz": 7926,
+        "presenceGainDb": 0.597
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.mp4",
+  "public_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\arc_teaser_video\\signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:18:12.716Z",
+  "checksum": "63bcf9939ec1ed0967b37f3f86ecae32d8ba1b86",
+  "file_size": 18257006,
+  "duration_seconds": 30,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/video/arc_teaser_video/signal-from-kharon-9-signal-from-kharon-9-arc-disruption-arc-teaser-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#715871",
-    "accentColor": "#297769"
-  },
-  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:10.595Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

@@ -3,18 +3,43 @@
   "asset_id": "signal-from-kharon-9-signal-from-kharon-9-npc-2-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Astrophysicist Dr. Helene Oru. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Astrophysicist Dr. Helene Oru. I should not be leaving this message. Something about telemetry checksum drift is wrong, and The Quiet Orbit wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain observatory and subterranean receiver array.",
+  "source_prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Build unique voice profile for Astrophysicist Dr. Helene Oru. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "nova",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "female",
+    "design": {
+      "apiSpeed": 1.16,
+      "pitchSemitone": 1.5099999999999998,
+      "textureAmount": 0.6337499999999999,
+      "highpassHz": 93,
+      "lowpassHz": 7612,
+      "presenceGainDb": 0.677
+    },
+    "voice_design": {
+      "apiSpeed": 1.16,
+      "pitchSemitone": 1.5099999999999998,
+      "textureAmount": 0.6337499999999999,
+      "highpassHz": 93,
+      "lowpassHz": 7612,
+      "presenceGainDb": 0.677
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\npc_voice_profile\\signal-from-kharon-9-signal-from-kharon-9-npc-2-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-2-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:00.716Z",
-  "checksum": "aa0d5938fe8ad276ed387d2e7144269e323a3404",
-  "file_size": 2110528,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:35:11.036Z",
+  "checksum": "833dc4726b9d3d2a17c197217859fbfbe78a2547",
+  "file_size": 806084,
+  "duration_seconds": 8.4,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/audio/npc_voice_profile/signal-from-kharon-9-signal-from-kharon-9-npc-2-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

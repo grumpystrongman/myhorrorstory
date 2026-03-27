@@ -1,44 +1,48 @@
 {
-  "id": "red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video",
-  "title": "Red Creek Winter - Compromised Truth Ending Recap Video",
+  "story_id": "red-creek-winter",
+  "asset_id": "red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video",
+  "asset_type": "ending_recap_video",
   "modality": "video",
-  "category": "ending_recap_video",
-  "scope": "story",
+  "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\ending_card\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-card-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\story_key_art\\red-creek-winter-story-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\villain_portrait\\red-creek-winter-villain-portrait-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-5-beat-scene-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\ending_score\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-score-v1.wav",
+    "duration_seconds": 40,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Sheriff Dana Holt",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Sheriff Dana Holt reporting. compromised truth ending recap video is the final pressure point, and the board is now complete enough to choose your ending with intent rather than panic. The trail began with dispatch freeze frame, but the real shift came when the timeline around mountain logging town under blizzard lockdown stopped matching witness memory in small, strategic places. Your last review should answer one question in plain language: who is reshaping the evidence chain and why The White Knife benefits from confusion.. Choose your closeout path only after you can state the motive, method, and consequence in one consistent chain.",
+      "design": {
+        "apiSpeed": 0.9282649999999999,
+        "pitchSemitone": -0.782,
+        "textureAmount": 0.46625,
+        "highpassHz": 76,
+        "lowpassHz": 7292,
+        "presenceGainDb": -0.15699999999999997
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.mp4",
+  "public_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\video\\ending_recap_video\\red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:14:59.278Z",
+  "checksum": "5266bb54250cce83e77a22d69f3d10510489732b",
+  "file_size": 24228241,
+  "duration_seconds": 40,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/video/ending_recap_video/red-creek-winter-red-creek-winter-ending-pyrrhic-ending-recap-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#6d948b",
-    "accentColor": "#566961"
-  },
-  "prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:03.214Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

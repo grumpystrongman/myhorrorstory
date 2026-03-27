@@ -1,44 +1,48 @@
 {
-  "id": "signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video",
-  "title": "Signal From Kharon-9 - Clean Resolution Ending Recap Video",
+  "story_id": "signal-from-kharon-9",
+  "asset_id": "signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video",
+  "asset_type": "ending_recap_video",
   "modality": "video",
-  "category": "ending_recap_video",
-  "scope": "story",
+  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\ending_card\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-card-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\villain_portrait\\signal-from-kharon-9-villain-portrait-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-5-beat-scene-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-score-v1.wav",
+    "duration_seconds": 40,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Systems Engineer Ari Vance",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Systems Engineer Ari Vance reporting. clean resolution ending recap video is the final pressure point, and the board is now complete enough to choose your ending with intent rather than panic. The trail began with telemetry checksum drift, but the real shift came when the timeline around mountain observatory and subterranean receiver array stopped matching witness memory in small, strategic places. Your last review should answer one question in plain language: who is reshaping the evidence chain and why The Quiet Orbit benefits from confusion.. Choose your closeout path only after you can state the motive, method, and consequence in one consistent chain.",
+      "design": {
+        "apiSpeed": 0.96163,
+        "pitchSemitone": 0.14899999999999994,
+        "textureAmount": 0.46625,
+        "highpassHz": 87,
+        "lowpassHz": 7048,
+        "presenceGainDb": 0.0030000000000000443
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.mp4",
+  "public_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\ending_recap_video\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:22:05.649Z",
+  "checksum": "0607b9af8054a90d99941105cc5e7f461414cef1",
+  "file_size": 24534450,
+  "duration_seconds": 40,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/video/ending_recap_video/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-recap-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#635295",
-    "accentColor": "#2e4235"
-  },
-  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:24.406Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

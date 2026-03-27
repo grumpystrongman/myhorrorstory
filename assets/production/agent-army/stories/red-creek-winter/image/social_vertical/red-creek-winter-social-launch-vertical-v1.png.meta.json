@@ -3,21 +3,30 @@
   "asset_id": "red-creek-winter-social-launch-vertical",
   "asset_type": "social_vertical",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: marketing still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: Red Creek Winter Social Launch Vertical. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Compose a high-contrast marketing still with a clean focal read, premium horror mood, and room for external campaign copy to be added later.",
   "source_prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Design vertical social launch creative with hook-forward typography zone and one undeniable clue motif.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 30,
+    "rawText": "fo\nhs i\nBo i\nLRA ’\nRR le Ge rr\n75 Fe hata y\ndh » Ct i\n— \\ fe. pn\n; ON fT RE |\noi : ; ly. i BE Shas\n’ pe 1 8%\nER AY ea © fe) A\nEC ea & - Fe\nSe, a Mg\n~ —\nZ\nLo 3 he Yi Ea id\n; < 2 Nee a 7",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\social_vertical\\red-creek-winter-social-launch-vertical-v1.png",
   "public_path": "/agent-army/stories/red-creek-winter/image/social_vertical/red-creek-winter-social-launch-vertical-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\social_vertical\\red-creek-winter-social-launch-vertical-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/social_vertical/red-creek-winter-social-launch-vertical-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:37:02.796Z",
-  "checksum": "e259ea7a1af82fe77d09f1d6700ab82d398653a9",
-  "file_size": 767468,
+  "created_at": "2026-03-22T21:37:06.184Z",
+  "checksum": "07b175d2cc7d9cfc60e21d2d5f7603167eed0b0d",
+  "file_size": 2545891,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/image/social_vertical/red-creek-winter-social-launch-vertical-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:36:47.855Z",
   "extension": ".png"
 }

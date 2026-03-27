@@ -3,21 +3,30 @@
   "asset_id": "signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card",
   "asset_type": "puzzle_shard_card",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create shard card for holder ALLY_A. Content brief: Ally A receives y-scale coefficients over SMS.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Tri-band Drift Lock - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Signal From Kharon-9. Premise: Telemetry returns from a decommissioned orbital array and predicts player replies.. Setting: Mountain observatory and subterranean receiver array. Threat presence: The Quiet Orbit. Recurring motifs: black stars, phase drift, echoing pings. Create shard card for holder ALLY_A. Content brief: Ally A receives y-scale coefficients over SMS.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: cosmic horror. Tone: INTENSE. Immediate scene brief: Signal From Kharon-9 - Tri-band Drift Lock - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
   "source_prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Create shard card for holder ALLY_A. Content brief: Ally A receives y-scale coefficients over SMS.. Ensure it can stand alone but becomes decisive when combined with other shards.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 27,
+    "rawText": "LG < & 3\n[ Sian £ + \\ Bd\n| E TUT om ETO, = be. 3\nCHEE TE TERN if *\n\n1 wd “ WY a e 5. 1 | IRR N\\ Re\nSEC a i i Eo) \\ i\nFTE AR EN TEV\n\nEn BE ow 3 PEI hi eh, AE\n\n0 ® N= : Ee dar Re\n\ni = | + — E\\ J\n\na a—— ERR EE  #\na = aa]\nBi - ha Oda RC Som, ABB = NW A\n8 ww Ll ies TN S| TT [SPAN\nFE a Eu RS | iting, pris\n= ERR CAINE RHA TR gn A |\n: 0 h) EE NS Than (es wr | BETTE P\npan MERON Sheet a vio\n§ TE - A Brg | EE\n{GY NC Ea ihe .\n$0 SE 4 BE\n= % Pay ~ 9",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.png",
   "public_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\puzzle_shard_card\\signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:37:25.052Z",
-  "checksum": "9257c4e94da4cb0f5b375e51e010410bc0ece781",
-  "file_size": 964760,
+  "created_at": "2026-03-22T21:39:53.102Z",
+  "checksum": "222a1649a25dd1089fca1c60cd2cc4722b87827d",
+  "file_size": 3601442,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/image/puzzle_shard_card/signal-from-kharon-9-signal-from-kharon-9-puzzle-shards-signal-from-kharon-9-puzzle-shard-ally-a-shard-card-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:39:23.692Z",
   "extension": ".png"
 }

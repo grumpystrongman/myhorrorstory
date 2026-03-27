@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Compose ending score cue for \"Clean Resolution\" that supports summary \"You isolate the hostile signal and preserve proof without total blackout.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Compose ending score cue for \"Clean Resolution\" that supports summary \"You isolate the hostile signal and preserve proof without total blackout.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 31,
+      "mid": 158,
+      "high": 1280,
+      "shimmer": 3420,
+      "pulseHz": 0.54,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.32
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\ending_score\\signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-score-v1.wav",
   "public_path": "/agent-army/stories/signal-from-kharon-9/audio/ending_score/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:03.263Z",
-  "checksum": "e8e112a605ee026d37303ede9db8613d3ad083a1",
-  "file_size": 15700290,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:09:17.913Z",
+  "checksum": "0912cf9baf8f8d98ea764629097cf10b086d6199",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/audio/ending_score/signal-from-kharon-9-signal-from-kharon-9-ending-justice-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

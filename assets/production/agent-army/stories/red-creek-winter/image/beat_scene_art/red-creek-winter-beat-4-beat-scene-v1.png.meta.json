@@ -3,21 +3,36 @@
   "asset_id": "red-creek-winter-beat-4-beat-scene",
   "asset_type": "beat_scene_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Red Creek Winter. Premise: Each snowfall uncovers one body and one impossible alibi.. Setting: Mountain logging town under blizzard lockdown. Threat presence: The White Knife. Recurring motifs: snow lines, hunting whistles, frosted glass. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: small-town slasher mystery. Tone: INTENSE. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
   "source_prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 24,
+    "rawText": "Ee iy 7\n% . i DE ——— SO] PIRES\nee oT Th\ni Eke 4 fi 4 )\n: | ml\n4) j hy\n0 ah PE\n: fl. iE EY I\ncoabea | Eh\ngla p p ERR b | {ar ib\n] a8 i - REPRO ARE NR oS | f\nec 4 ig | RREERENPEE RE IT {\n$y F. ENE. (RT\n3 ; oF \\ SLE Rea 1 1 y\nj §' SARIN TRE (oe |\ni Moy CARNES. 00 { f\nFES RY OREN SR be b {\nit 28 FY cotREbE\n5 LF NER\n&- a5 GERRRNE 8\n% a\na EAR SR AF ie oad >\n\\ ARE REN BE a\n~ FRY ate il io\n: q : fil fii\npb «rr Se ha 0\netn ah\nZod te : go) <7 %\nre > re ~\npaa—— a - <\nCe Eo iE a\nREE — — SC",
+    "tokens": [
+      {
+        "text": "FES",
+        "normalized": "fes",
+        "confidence": 58
+      }
+    ]
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-4-beat-scene-v1.png",
   "public_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-4-beat-scene-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\image\\beat_scene_art\\red-creek-winter-beat-4-beat-scene-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-4-beat-scene-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:36:37.326Z",
-  "checksum": "a4a868b55630e7311df5ccffdc1f5e7ad028d12e",
-  "file_size": 928315,
+  "created_at": "2026-03-22T21:34:33.066Z",
+  "checksum": "997f9aefefb9a3c974a732117078f046f8eb4776",
+  "file_size": 3426955,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/image/beat_scene_art/red-creek-winter-beat-4-beat-scene-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:34:03.533Z",
   "extension": ".png"
 }

@@ -1,44 +1,47 @@
 {
-  "id": "signal-from-kharon-9-beat-2-beat-transition",
-  "title": "Signal From Kharon-9 - Escalation Signal Beat Transition",
+  "story_id": "signal-from-kharon-9",
+  "asset_id": "signal-from-kharon-9-beat-2-beat-transition",
+  "asset_type": "beat_transition_video",
   "modality": "video",
-  "category": "beat_transition_video",
-  "scope": "story",
+  "prompt_used": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\beat_scene_art\\signal-from-kharon-9-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\evidence_still\\signal-from-kharon-9-telemetry-checksum-drift-evidence-still-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\image\\story_key_art\\signal-from-kharon-9-story-key-art-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\audio\\story_theme_loop\\signal-from-kharon-9-story-theme-loop-v1.wav",
+    "duration_seconds": 12,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Systems Engineer Ari Vance",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Systems Engineer Ari Vance briefing. Escalation Signal Beat Transition is now active and represents a mid-case movement, not a complete narrative payload. Use this transition to update your timeline, re-score suspect credibility, and verify whether telemetry checksum drift still supports your current theory. Anchor your next move to the central question: who is reshaping the evidence chain and why The Quiet Orbit benefits from confusion.. If The Quiet Orbit reaches you first, archive the contact before you respond, then challenge the claim against the board.",
+      "design": {
+        "apiSpeed": 1.014235,
+        "pitchSemitone": 0.14899999999999994,
+        "textureAmount": 0.46625,
+        "highpassHz": 84,
+        "lowpassHz": 7175,
+        "presenceGainDb": -0.477
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-2-beat-transition-v1.mp4",
+  "public_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-2-beat-transition-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\signal-from-kharon-9\\video\\beat_transition_video\\signal-from-kharon-9-beat-2-beat-transition-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-2-beat-transition-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:19:40.818Z",
+  "checksum": "840c5187cc4931f0d346091f64eceeea3e318c52",
+  "file_size": 8177664,
+  "duration_seconds": 12,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/signal-from-kharon-9/video/beat_transition_video/signal-from-kharon-9-beat-2-beat-transition-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#6d429d",
-    "accentColor": "#7d465b"
-  },
-  "prompt": "Story: Signal From Kharon-9 (signal-from-kharon-9) | Hook: Telemetry returns from a decommissioned orbital array and predicts player replies. | Subgenre: cosmic horror | Tone: INTENSE | Location: Mountain observatory and subterranean receiver array | Villain: The Quiet Orbit | Villain worldview: Human choices are measurable noise in a larger equation. | Motifs: black stars, phase drift, echoing pings. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:14.393Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

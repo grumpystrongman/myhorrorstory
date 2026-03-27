@@ -3,18 +3,43 @@
   "asset_id": "red-creek-winter-red-creek-winter-npc-3-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build unique voice profile for Journalist Mara Finch. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Journalist Mara Finch. I should not be leaving this message. Something about dispatch freeze frame is wrong, and The White Knife wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to mountain logging town under blizzard lockdown.",
+  "source_prompt": "Story: Red Creek Winter (red-creek-winter) | Hook: Each snowfall uncovers one body and one impossible alibi. | Subgenre: small-town slasher mystery | Tone: INTENSE | Location: Mountain logging town under blizzard lockdown | Villain: The White Knife | Villain worldview: Fear is the only honest truth in a town built on denial. | Motifs: snow lines, hunting whistles, frosted glass. Build unique voice profile for Journalist Mara Finch. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "coral",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "female",
+    "design": {
+      "apiSpeed": 1.09928,
+      "pitchSemitone": 0.9099999999999999,
+      "textureAmount": 0.595,
+      "highpassHz": 86,
+      "lowpassHz": 7780,
+      "presenceGainDb": 0.3520000000000001
+    },
+    "voice_design": {
+      "apiSpeed": 1.09928,
+      "pitchSemitone": 0.9099999999999999,
+      "textureAmount": 0.595,
+      "highpassHz": 86,
+      "lowpassHz": 7780,
+      "presenceGainDb": 0.3520000000000001
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\red-creek-winter\\audio\\npc_voice_profile\\red-creek-winter-red-creek-winter-npc-3-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/red-creek-winter/audio/npc_voice_profile/red-creek-winter-red-creek-winter-npc-3-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:49.461Z",
-  "checksum": "5ad6f9ea1a760920923697401660b62efd5f2c0a",
-  "file_size": 2111144,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:34:53.785Z",
+  "checksum": "a02e94918fb7ee7e39180e4ca3306094b13cad22",
+  "file_size": 865790,
+  "duration_seconds": 9.02,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/red-creek-winter/audio/npc_voice_profile/red-creek-winter-red-creek-winter-npc-3-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }
