@@ -3,7 +3,7 @@
   "asset_id": "crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board",
   "asset_type": "puzzle_board",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Crown of Salt. Premise: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.. Setting: Port authority archives and salt catacombs. Threat presence: The Salt Regent. Recurring motifs: salt crowns, wet ledgers, cargo seals. Puzzle visual for \"Manifest Matrix\". Objective: Cross-reference distributed manifest shards to locate the true relic route.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: occult conspiracy. Tone: CINEMATIC. Immediate scene brief: Crown of Salt - Manifest Matrix Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: investigation board. Story world: Crown of Salt. Premise: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.. Setting: Port authority archives and salt catacombs. Threat presence: The Salt Regent. Recurring motifs: salt crowns, wet ledgers, cargo seals. Puzzle visual for \"Manifest Matrix\". Objective: Cross-reference distributed manifest shards to locate the true relic route.. Build layered clue board where each shard can be solved collaboratively.. Subgenre: occult conspiracy. Tone: CINEMATIC. Immediate scene brief: Crown of Salt - Manifest Matrix Puzzle Board. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
   "source_prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Puzzle visual for \"Manifest Matrix\". Objective: Cross-reference distributed manifest shards to locate the true relic route.. Build layered clue board where each shard can be solved collaboratively.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 28,
+    "rawText": "ee ET\nNT AG ;\n\n«3 kal ET h 65 \\ 1 25 prs ..\n\nFs & 3 1 BE Aur prague £8 3\ni = |e RE & aa 7 Bi Fr\na y BE Ree ne es) 2 i 4\n\nFammai® “a LAN ge AE Saki % = el 4 le\n= 9 NEN Saas — TATE a. F\nER Ii it a es ee NET Ee 1 / 4\n\nBen S| = J pos de NY Be\nbe iE i p-R Ee ya %\n\nTTA SRE NOs es oT | \\\n\nA \\_ OB £ £3 Fe “p SW We |]\n: Op a. A A oR ES mea oH\n| a al ihe & 5) = ® pa ks 4 i 3 Pt sr\naC — Boia\nfog EF a. — FF BA\nyy A AA 8 2 ’ i] + NEY |\nRa ~ LES A B.S — Se\n2 | 1 Mei! SRE Cy P< EE\n” _ a gar I a\"\n- vidh a E TINA £ ga EL 5 EEE\nREEL TY AR LR w NE ha > = HE 3 oi\nI mat. IE i’ ! Bp A | [x ~SE— i EE\n[4 me BE ee Jl —— = Eom\n) [Bl Aa Po i\n= x FE: of ~~ %\n© TREY pS pe\ny Cy",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\puzzle_board\\crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board-v1.png",
   "public_path": "/agent-army/stories/crown-of-salt/image/puzzle_board/crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\puzzle_board\\crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/crown-of-salt/image/puzzle_board/crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:01:12.164Z",
-  "checksum": "1e13f275f2532eef4d66d38be3414cd247499651",
-  "file_size": 3413870,
+  "created_at": "2026-03-22T21:16:18.476Z",
+  "checksum": "ec745dbea1f053270ad4692394a81a46706fc593",
+  "file_size": 3606990,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/image/puzzle_board/crown-of-salt-crown-of-salt-puzzle-shards-puzzle-board-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:15:52.005Z",
   "extension": ".png"
 }

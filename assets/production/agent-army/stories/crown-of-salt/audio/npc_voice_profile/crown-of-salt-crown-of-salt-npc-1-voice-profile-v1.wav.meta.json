@@ -3,18 +3,43 @@
   "asset_id": "crown-of-salt-crown-of-salt-npc-1-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Build unique voice profile for Port Auditor Lin Ortega. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Port Auditor Lin Ortega. Keep your channel open and do not answer unknown callbacks. A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. Start with brine-sealed manifest, then verify every timestamp against port authority archives and salt catacombs. If The Salt Regent contacts you directly, preserve the message before you react.",
+  "source_prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Build unique voice profile for Port Auditor Lin Ortega. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "sage",
+    "locale": "en-GB",
+    "region": "uk_atlantic",
+    "role": "operator",
+    "sex": "female",
+    "design": {
+      "apiSpeed": 0.993965,
+      "pitchSemitone": -0.9149999999999999,
+      "textureAmount": 0.435,
+      "highpassHz": 80,
+      "lowpassHz": 7167,
+      "presenceGainDb": -0.19199999999999998
+    },
+    "voice_design": {
+      "apiSpeed": 0.993965,
+      "pitchSemitone": -0.9149999999999999,
+      "textureAmount": 0.435,
+      "highpassHz": 80,
+      "lowpassHz": 7167,
+      "presenceGainDb": -0.19199999999999998
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\audio\\npc_voice_profile\\crown-of-salt-crown-of-salt-npc-1-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/crown-of-salt/audio/npc_voice_profile/crown-of-salt-crown-of-salt-npc-1-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:12.926Z",
-  "checksum": "96a0b8d74d5402959ddb8d8f095be11e44ecd1da",
-  "file_size": 2110578,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:33:42.478Z",
+  "checksum": "4eae0939b6b1c88ef60067c4f1eb6b758a20e152",
+  "file_size": 1374488,
+  "duration_seconds": 14.32,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/audio/npc_voice_profile/crown-of-salt-crown-of-salt-npc-1-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

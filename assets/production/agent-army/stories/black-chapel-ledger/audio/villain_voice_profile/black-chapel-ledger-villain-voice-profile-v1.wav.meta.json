@@ -3,18 +3,43 @@
   "asset_id": "black-chapel-ledger-villain-voice-profile",
   "asset_type": "villain_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Create villain voice profile for The Creditor. Worldview: Every truth must be paid for, and mercy is fraud.. Manner: Cold piety and punitive irony.. Include escalation stage cues for stage 1-4 intimidation.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Villain. A cathedral ledger records debts paid in memory instead of money. Work the case in order: secure burned vellum fragment, confirm the scene at cliffside cathedral archive district, and do not let The Creditor choose the pace. Trust the evidence before you trust the performance.",
+  "source_prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Create villain voice profile for The Creditor. Worldview: Every truth must be paid for, and mercy is fraud.. Manner: Cold piety and punitive irony.. Include escalation stage cues for stage 1-4 intimidation.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "alloy",
+    "locale": "en-US",
+    "region": "global",
+    "role": "narrator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 0.98054,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 72,
+      "lowpassHz": 7249,
+      "presenceGainDb": 0
+    },
+    "voice_design": {
+      "apiSpeed": 0.98054,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 72,
+      "lowpassHz": 7249,
+      "presenceGainDb": 0
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\audio\\villain_voice_profile\\black-chapel-ledger-villain-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/black-chapel-ledger/audio/villain_voice_profile/black-chapel-ledger-villain-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:03.570Z",
-  "checksum": "f7ad97eb65fdbef48cd09468f31e1276c1e9ece1",
-  "file_size": 2110506,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:33:37.668Z",
+  "checksum": "835e8a83bd47853f0a6bf7127432307313f75b0c",
+  "file_size": 896590,
+  "duration_seconds": 9.34,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/audio/villain_voice_profile/black-chapel-ledger-villain-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

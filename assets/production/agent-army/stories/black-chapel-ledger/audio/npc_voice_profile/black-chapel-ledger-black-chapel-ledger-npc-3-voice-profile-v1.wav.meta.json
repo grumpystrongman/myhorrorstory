@@ -3,18 +3,43 @@
   "asset_id": "black-chapel-ledger-black-chapel-ledger-npc-3-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build unique voice profile for Choir Witness Sera March. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Choir Witness Sera March. I should not be leaving this message. Something about burned vellum fragment is wrong, and The Creditor wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to cliffside cathedral archive district.",
+  "source_prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build unique voice profile for Choir Witness Sera March. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "coral",
+    "locale": "en-GB",
+    "region": "uk_atlantic",
+    "role": "witness",
+    "sex": "female",
+    "design": {
+      "apiSpeed": 1.067075,
+      "pitchSemitone": 0.6439999999999999,
+      "textureAmount": 0.62,
+      "highpassHz": 94,
+      "lowpassHz": 7737,
+      "presenceGainDb": 0.9720000000000001
+    },
+    "voice_design": {
+      "apiSpeed": 1.067075,
+      "pitchSemitone": 0.6439999999999999,
+      "textureAmount": 0.62,
+      "highpassHz": 94,
+      "lowpassHz": 7737,
+      "presenceGainDb": 0.9720000000000001
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\audio\\npc_voice_profile\\black-chapel-ledger-black-chapel-ledger-npc-3-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/black-chapel-ledger/audio/npc_voice_profile/black-chapel-ledger-black-chapel-ledger-npc-3-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:02.755Z",
-  "checksum": "5a08aa112131b0c3d3d61fe147a359334de41143",
-  "file_size": 2110806,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:33:30.197Z",
+  "checksum": "9f3c0df719b6a54e54575da2beaedbbd4d6a0779",
+  "file_size": 927756,
+  "duration_seconds": 9.66,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/audio/npc_voice_profile/black-chapel-ledger-black-chapel-ledger-npc-3-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

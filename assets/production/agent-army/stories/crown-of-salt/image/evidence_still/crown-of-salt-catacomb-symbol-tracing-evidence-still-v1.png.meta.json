@@ -3,7 +3,7 @@
   "asset_id": "crown-of-salt-catacomb-symbol-tracing-evidence-still",
   "asset_type": "evidence_still",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Crown of Salt. Premise: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide.. Setting: Port authority archives and salt catacombs. Threat presence: The Salt Regent. Recurring motifs: salt crowns, wet ledgers, cargo seals. Render forensic evidence still for \"Catacomb symbol tracing\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: occult conspiracy. Tone: CINEMATIC. Immediate scene brief: Crown of Salt - Evidence Still - Catacomb symbol tracing. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Crown of Salt. Setting: Port authority archives and salt catacombs. Recurring motifs: salt crowns, wet ledgers, cargo seals. Render forensic evidence still for \"Catacomb symbol tracing\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: occult conspiracy. Tone: CINEMATIC. Immediate scene brief: Crown of Salt - Evidence Still - Catacomb symbol tracing. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
   "source_prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Render forensic evidence still for \"Catacomb symbol tracing\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 26,
+    "rawText": "4 v.\nwg\" er «\nv Fi\n7 &\n& gS\n{ \\ .\n: ”\n3\n3 4 2\n5 wr RT 3] !\nJ be\nNa i J |\n: — -- AAA 4 #\ncy § Badd 4 £ 7 < .\n. 29 «, BAP Ll J . 2\n-— a a yo oO\nSs — ae PS he Yak -\nATE / A\nEE ( id\ng SLE a Aare Lt Y dg\n®. A e et BY. = :\nTL, a a A TE ee SW BL\nSea CL a / NON\nFE CE Z Lr gE rs Ee H i &\n0 “Ye gh rg TTR re SR AE Ee) SH ap S - Ren\na a5 eo TH Ee Fac, MEY AoE :\n, A P heat Fe Set\n; pfs GAN a aR SEER > ;\nAV 2 A THERE ye Smid INE 28 2002\ns , JL >) “-. 1% J 0% 2s - a\nB 8 ~~ =\n: pL eels s",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\evidence_still\\crown-of-salt-catacomb-symbol-tracing-evidence-still-v1.png",
   "public_path": "/agent-army/stories/crown-of-salt/image/evidence_still/crown-of-salt-catacomb-symbol-tracing-evidence-still-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\evidence_still\\crown-of-salt-catacomb-symbol-tracing-evidence-still-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/crown-of-salt/image/evidence_still/crown-of-salt-catacomb-symbol-tracing-evidence-still-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:01:11.389Z",
-  "checksum": "65316f7908974229195ba152c3c6b0ef6348960f",
-  "file_size": 3504278,
+  "created_at": "2026-03-22T21:15:45.521Z",
+  "checksum": "a1b08b89cd7469498617cda0b0dc0594015c43ae",
+  "file_size": 3317536,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/image/evidence_still/crown-of-salt-catacomb-symbol-tracing-evidence-still-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:15:21.387Z",
   "extension": ".png"
 }

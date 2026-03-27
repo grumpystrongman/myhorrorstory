@@ -1,44 +1,50 @@
 {
-  "id": "black-chapel-ledger-trailer-main",
-  "title": "Black Chapel Ledger Main Trailer",
+  "story_id": "black-chapel-ledger",
+  "asset_id": "black-chapel-ledger-trailer-main",
+  "asset_type": "story_trailer",
   "modality": "video",
-  "category": "story_trailer",
-  "scope": "story",
+  "prompt_used": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\story_key_art\\black-chapel-ledger-story-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\arc_key_art\\black-chapel-ledger-black-chapel-ledger-arc-contact-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\arc_key_art\\black-chapel-ledger-black-chapel-ledger-arc-disruption-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\beat_scene_art\\black-chapel-ledger-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\beat_scene_art\\black-chapel-ledger-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\image\\beat_scene_art\\black-chapel-ledger-beat-3-beat-scene-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\audio\\story_theme_loop\\black-chapel-ledger-story-theme-loop-v1.wav",
+    "duration_seconds": 36,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Canon Archivist Elara Voss",
+      "role": "operator",
+      "locale": "en-GB",
+      "region": "uk_atlantic",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Canon Archivist Elara Voss briefing. Black Chapel Ledger Main Trailer is now active and represents a mid-case movement, not a complete narrative payload. Use this transition to update your timeline, re-score suspect credibility, and verify whether burned vellum fragment still supports your current theory. Anchor your next move to the central question: who is reshaping the evidence chain and why The Creditor benefits from confusion.. If The Creditor reaches you first, archive the contact before you respond, then challenge the claim against the board.",
+      "design": {
+        "apiSpeed": 0.99704,
+        "pitchSemitone": -0.649,
+        "textureAmount": 0.44125,
+        "highpassHz": 76,
+        "lowpassHz": 7376,
+        "presenceGainDb": -0.4570000000000001
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\video\\story_trailer\\black-chapel-ledger-trailer-main-v1.mp4",
+  "public_path": "/agent-army/stories/black-chapel-ledger/video/story_trailer/black-chapel-ledger-trailer-main-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\black-chapel-ledger\\video\\story_trailer\\black-chapel-ledger-trailer-main-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/black-chapel-ledger/video/story_trailer/black-chapel-ledger-trailer-main-v1.thumb.jpg",
+  "created_at": "2026-03-24T15:44:14.057Z",
+  "checksum": "5a64482fc89fecde7461f5ef307307547a3bc29c",
+  "file_size": 22980948,
+  "duration_seconds": 36,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/black-chapel-ledger/video/story_trailer/black-chapel-ledger-trailer-main-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#6b6a91",
-    "accentColor": "#283c4b"
-  },
-  "prompt": "Story: Black Chapel Ledger (black-chapel-ledger) | Hook: A cathedral ledger records debts paid in memory instead of money. | Subgenre: gothic horror | Tone: EERIE | Location: Cliffside cathedral archive district | Villain: The Creditor | Villain worldview: Every truth must be paid for, and mercy is fraud. | Motifs: ink-stained fingers, funeral bells, salt wax. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:34.216Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

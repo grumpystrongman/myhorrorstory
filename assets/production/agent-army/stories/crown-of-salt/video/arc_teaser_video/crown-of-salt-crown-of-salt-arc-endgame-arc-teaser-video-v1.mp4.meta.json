@@ -1,44 +1,48 @@
 {
-  "id": "crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video",
-  "title": "Crown of Salt - Confrontation and Reckoning Arc Teaser Video",
+  "story_id": "crown-of-salt",
+  "asset_id": "crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video",
+  "asset_type": "arc_teaser_video",
   "modality": "video",
-  "category": "arc_teaser_video",
-  "scope": "story",
+  "prompt_used": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\arc_key_art\\crown-of-salt-crown-of-salt-arc-endgame-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\beat_scene_art\\crown-of-salt-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\beat_scene_art\\crown-of-salt-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\image\\villain_portrait\\crown-of-salt-villain-portrait-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\audio\\arc_ambience\\crown-of-salt-crown-of-salt-arc-endgame-arc-ambience-v1.wav",
+    "duration_seconds": 30,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Smuggler Rafe Quinn",
+      "role": "witness",
+      "locale": "en-GB",
+      "region": "uk_atlantic",
+      "model": "gpt-4o-mini-tts",
+      "voice": "nova",
+      "script": "Smuggler Rafe Quinn to team. A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. This chapter centers on confrontation and reckoning arc teaser video, and your objective is to establish a defensible timeline, pressure test witness statements, and isolate deliberate manipulation. Start with brine-sealed manifest, map every contradiction to clock time, and keep one witness stable while you escalate. If The Salt Regent makes direct contact, preserve the message first, then respond with evidence-led questions only.",
+      "design": {
+        "apiSpeed": 1.08,
+        "pitchSemitone": 2,
+        "textureAmount": 0.6275,
+        "highpassHz": 89,
+        "lowpassHz": 7845,
+        "presenceGainDb": 0.46199999999999997
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\video\\arc_teaser_video\\crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video-v1.mp4",
+  "public_path": "/agent-army/stories/crown-of-salt/video/arc_teaser_video/crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\crown-of-salt\\video\\arc_teaser_video\\crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/crown-of-salt/video/arc_teaser_video/crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T15:46:27.271Z",
+  "checksum": "f9ee7d54cc529ffc01753fd941c36c3dd2303836",
+  "file_size": 18135525,
+  "duration_seconds": 30,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/crown-of-salt/video/arc_teaser_video/crown-of-salt-crown-of-salt-arc-endgame-arc-teaser-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#5a8b94",
-    "accentColor": "#477f73"
-  },
-  "prompt": "Story: Crown of Salt (crown-of-salt) | Hook: A relic-smuggling cartel launders artifacts through a city that disappears at dawn tide. | Subgenre: occult conspiracy | Tone: CINEMATIC | Location: Port authority archives and salt catacombs | Villain: The Salt Regent | Villain worldview: Order comes from controlled sin, not clean law. | Motifs: salt crowns, wet ledgers, cargo seals. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:29:38.810Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }
