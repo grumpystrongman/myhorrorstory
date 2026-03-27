@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose ending score cue for \"Compromised Truth\" that supports summary \"You identify the editor but lose crucial footage and one victim contact.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose ending score cue for \"Compromised Truth\" that supports summary \"You identify the editor but lose crucial footage and one victim contact.\" and epilogue \"The culprit is exposed, but allies and witnesses are fractured.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 42,
+      "mid": 192,
+      "high": 620,
+      "shimmer": 1760,
+      "pulseHz": 0.86,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.2
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-score-v1.wav",
   "public_path": "/agent-army/stories/tape-17-pinewatch/audio/ending_score/tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:28.092Z",
-  "checksum": "52005d0e9cb5b2eb4a23a591ed0e393ebd1be5d3",
-  "file_size": 15699398,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:10:12.616Z",
+  "checksum": "24dca07dba967845f5c2943bd6da3638a8b2de50",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/audio/ending_score/tape-17-pinewatch-tape-17-pinewatch-ending-pyrrhic-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

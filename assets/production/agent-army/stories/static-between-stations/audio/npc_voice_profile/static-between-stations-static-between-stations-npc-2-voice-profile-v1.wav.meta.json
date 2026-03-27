@@ -3,18 +3,43 @@
   "asset_id": "static-between-stations-static-between-stations-npc-2-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Build unique voice profile for Dispatch Handler Ilya Ross. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Dispatch Handler Ilya Ross. I should not be leaving this message. Something about spectrogram of confession burst is wrong, and The Curator of Static wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to abandoned commuter rail control annex.",
+  "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Build unique voice profile for Dispatch Handler Ilya Ross. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "nova",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 1.15202,
+      "pitchSemitone": 0.845,
+      "textureAmount": 0.59625,
+      "highpassHz": 88,
+      "lowpassHz": 7714,
+      "presenceGainDb": -0.13300000000000006
+    },
+    "voice_design": {
+      "apiSpeed": 1.15202,
+      "pitchSemitone": 0.845,
+      "textureAmount": 0.59625,
+      "highpassHz": 88,
+      "lowpassHz": 7714,
+      "presenceGainDb": -0.13300000000000006
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\npc_voice_profile\\static-between-stations-static-between-stations-npc-2-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/static-between-stations/audio/npc_voice_profile/static-between-stations-static-between-stations-npc-2-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:12.158Z",
-  "checksum": "3efea0e944ad4a4ac0eea5e90d20b20dadb43f07",
-  "file_size": 2110578,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:35:29.509Z",
+  "checksum": "51df9ab4daa03ced939b25afe679c825713f31ae",
+  "file_size": 807900,
+  "duration_seconds": 8.41,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/audio/npc_voice_profile/static-between-stations-static-between-stations-npc-2-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

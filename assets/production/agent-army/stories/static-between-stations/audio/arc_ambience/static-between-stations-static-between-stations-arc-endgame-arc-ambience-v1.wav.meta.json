@@ -4,17 +4,34 @@
   "asset_type": "arc_ambience",
   "modality": "audio",
   "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Confrontation and Reckoning. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 39,
+      "mid": 249,
+      "high": 913,
+      "shimmer": 3293,
+      "pulseHz": 1.6333333333333333,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.22
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-endgame-arc-ambience-v1.wav",
   "public_path": "/agent-army/stories/static-between-stations/audio/arc_ambience/static-between-stations-static-between-stations-arc-endgame-arc-ambience-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:11.389Z",
-  "checksum": "264de669646437ed97812051743c0430a2533223",
-  "file_size": 15699378,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-23T16:31:47.941Z",
+  "checksum": "622f6768ae2388260c3cbef531c9154ed15d98aa",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/audio/arc_ambience/static-between-stations-static-between-stations-arc-endgame-arc-ambience-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-23T16:31:43.612Z"
 }

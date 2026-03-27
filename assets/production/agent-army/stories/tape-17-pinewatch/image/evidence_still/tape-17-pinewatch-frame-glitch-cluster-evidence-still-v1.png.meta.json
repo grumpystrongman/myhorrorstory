@@ -3,21 +3,36 @@
   "asset_id": "tape-17-pinewatch-frame-glitch-cluster-evidence-still",
   "asset_type": "evidence_still",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Frame glitch cluster\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Frame glitch cluster. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Tape 17: Pinewatch. Setting: Closed wilderness watch station and ranger tunnels. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Frame glitch cluster\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Evidence Still - Frame glitch cluster. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
   "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Render forensic evidence still for \"Frame glitch cluster\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 26,
+    "rawText": "gp A\n% hy\nBE i % FE h\nTp 3 g 1 !\n= EE fou POP\nSR vm\nae pag\nBs ie Oc gr oe cosa Rs i. Ze\nrr we ao SE oe ME, or\not A og “Ed ’\ni PRE = ig - aR a\n. oe Te Ch ZR\n. Be AE BE i i EE Regn\nA Me 3 . ee HE eal\na ye BE ma a A a Fd\n> > Ph Sl A —= a Tek SES ET gE\na NE re = sl Ee\nTo, pe SET SS ae He\na aC Tae a ano \"mtr sever\na Smet Ts TE ae ee =\na Be mp ge SE 5\n—— BTR Rm a\nEe Ch pe\n. SEE r ar oie 2\nZac a Ee asd oF oy\nmp pa wasp EE Res mead Fr :\n> ; os mE TR 5 5 Moy She id\ni : . PINELIA a = Hs 27 ri or 35 a BN\n. i: TIncwHR Ion Noe ay BE\n: ENE ME es SER) TP nl\nSod a ee Za Fone ll :\n5 = g aM ARE Ee a ee J \\\n> :50 Er ie NR le Po J N\\\n< > = gms A 4 ¥\nPg Ne",
+    "tokens": [
+      {
+        "text": "PINELIA",
+        "normalized": "pinelia",
+        "confidence": 75
+      }
+    ]
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
   "public_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\evidence_still\\tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:38:17.971Z",
-  "checksum": "85e887697271f8417aacc760afe9f496ce836e0d",
-  "file_size": 1015360,
+  "created_at": "2026-03-22T21:45:10.556Z",
+  "checksum": "237d350e162b445fc1df69b9f17e34339875951b",
+  "file_size": 3342708,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/evidence_still/tape-17-pinewatch-frame-glitch-cluster-evidence-still-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:44:47.637Z",
   "extension": ".png"
 }

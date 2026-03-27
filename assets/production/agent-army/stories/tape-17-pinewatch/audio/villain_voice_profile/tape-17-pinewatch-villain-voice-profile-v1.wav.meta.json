@@ -3,18 +3,43 @@
   "asset_id": "tape-17-pinewatch-villain-voice-profile",
   "asset_type": "villain_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Create villain voice profile for The Editor. Worldview: Reality is editable if fear is timed correctly.. Manner: Gallows humor about failed rescues.. Include escalation stage cues for stage 1-4 intimidation.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Villain. A recovered camcorder tape rewrites itself every midnight. Work the case in order: secure frame glitch cluster, confirm the scene at closed wilderness watch station and ranger tunnels, and do not let The Editor choose the pace. Trust the evidence before you trust the performance.",
+  "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Create villain voice profile for The Editor. Worldview: Reality is editable if fear is timed correctly.. Manner: Gallows humor about failed rescues.. Include escalation stage cues for stage 1-4 intimidation.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "echo",
+    "locale": "en-US",
+    "region": "global",
+    "role": "narrator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 1.03262,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 79,
+      "lowpassHz": 7039,
+      "presenceGainDb": -0.08
+    },
+    "voice_design": {
+      "apiSpeed": 1.03262,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 79,
+      "lowpassHz": 7039,
+      "presenceGainDb": -0.08
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\villain_voice_profile\\tape-17-pinewatch-villain-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/tape-17-pinewatch/audio/villain_voice_profile/tape-17-pinewatch-villain-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:25.492Z",
-  "checksum": "2101fe79ca30a7f1e1b4fc22fd98c125cc3e693b",
-  "file_size": 2110806,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:36:02.253Z",
+  "checksum": "55ec72d598b0f0d1e7e3dad5edc9826ce1381219",
+  "file_size": 924150,
+  "duration_seconds": 9.63,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/audio/villain_voice_profile/tape-17-pinewatch-villain-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

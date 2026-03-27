@@ -3,18 +3,43 @@
   "asset_id": "static-between-stations-villain-voice-profile",
   "asset_type": "villain_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Create villain voice profile for The Curator of Static. Worldview: Truth is only what survives the loudest channel.. Manner: Dry contempt for procedural certainty.. Include escalation stage cues for stage 1-4 intimidation.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Villain. A dead rail line broadcasts private confessions in the players' own voices. Work the case in order: secure spectrogram of confession burst, confirm the scene at abandoned commuter rail control annex, and do not let The Curator of Static choose the pace. Trust the evidence before you trust the performance.",
+  "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Create villain voice profile for The Curator of Static. Worldview: Truth is only what survives the loudest channel.. Manner: Dry contempt for procedural certainty.. Include escalation stage cues for stage 1-4 intimidation.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "alloy",
+    "locale": "en-US",
+    "region": "global",
+    "role": "narrator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 1.0105,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 78,
+      "lowpassHz": 7369,
+      "presenceGainDb": -0.4
+    },
+    "voice_design": {
+      "apiSpeed": 1.0105,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 78,
+      "lowpassHz": 7369,
+      "presenceGainDb": -0.4
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\villain_voice_profile\\static-between-stations-villain-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/static-between-stations/audio/villain_voice_profile/static-between-stations-villain-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:13.469Z",
-  "checksum": "4850e5fd10127f7ac8ddf46f941f258fc2aa8432",
-  "file_size": 2111252,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:35:42.450Z",
+  "checksum": "5827f31a9597be20a16c4fe92cf7e8c5f3f52d11",
+  "file_size": 959124,
+  "duration_seconds": 9.99,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/audio/villain_voice_profile/static-between-stations-villain-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

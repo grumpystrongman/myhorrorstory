@@ -3,18 +3,43 @@
   "asset_id": "tape-17-pinewatch-tape-17-pinewatch-npc-4-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Volunteer Search Lead Ellis Vann. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Volunteer Search Lead Ellis Vann. I should not be leaving this message. Something about frame glitch cluster is wrong, and The Editor wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to closed wilderness watch station and ranger tunnels.",
+  "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Volunteer Search Lead Ellis Vann. Baseline emotion=DEFIANT. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "shimmer",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "male",
+    "design": {
+      "apiSpeed": 1.10924,
+      "pitchSemitone": 1.525,
+      "textureAmount": 0.5275,
+      "highpassHz": 96,
+      "lowpassHz": 7865,
+      "presenceGainDb": -0.018000000000000016
+    },
+    "voice_design": {
+      "apiSpeed": 1.10924,
+      "pitchSemitone": 1.525,
+      "textureAmount": 0.5275,
+      "highpassHz": 96,
+      "lowpassHz": 7865,
+      "presenceGainDb": -0.018000000000000016
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\npc_voice_profile\\tape-17-pinewatch-tape-17-pinewatch-npc-4-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-4-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:25.029Z",
-  "checksum": "8f5dc463848d892d56a59874ac899e54498b6144",
-  "file_size": 2110528,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:35:58.420Z",
+  "checksum": "e719485fe92ccb7aaea6c19d3b3689a85914d46d",
+  "file_size": 888166,
+  "duration_seconds": 9.25,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-4-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

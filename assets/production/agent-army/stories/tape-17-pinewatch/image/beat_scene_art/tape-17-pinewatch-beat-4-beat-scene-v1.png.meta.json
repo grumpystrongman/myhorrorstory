@@ -3,21 +3,30 @@
   "asset_id": "tape-17-pinewatch-beat-4-beat-scene",
   "asset_type": "beat_scene_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
   "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 32,
+    "rawText": "Sher | ss Le ani o\nEro EE = io | 41 ARS \\ i\nSEs Oo | a 3 BE % J &\nGEER a gm i\" | 4 Xa L\nae f : A To\noan a BER i LA 2 Wr\nli stor a LE POR | hi a\nBol eli SE sad cid i]\n— 0 | i i\npr Weg A | | i | il Se |\nT Eo ‘ i ; i\nBE. Fo : :\nHig af eet il TE\nA FEA =\nua Eg b&\n: Eo ad\n3 Eo i;\n8 angles Ek -\nRE\nions LAE ~\n: 2 = | - - 07\noF Teme Eo Pa ” = - -",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.png",
   "public_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-4-beat-scene-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\beat_scene_art\\tape-17-pinewatch-beat-4-beat-scene-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-4-beat-scene-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:38:08.654Z",
-  "checksum": "fc01142c7c99a55ee1c9c879e78d6700c114da64",
-  "file_size": 993912,
+  "created_at": "2026-03-22T21:43:24.239Z",
+  "checksum": "48641864bb38eae313f880bf71fd80e4430e2d7a",
+  "file_size": 2879540,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/beat_scene_art/tape-17-pinewatch-beat-4-beat-scene-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:42:59.863Z",
   "extension": ".png"
 }

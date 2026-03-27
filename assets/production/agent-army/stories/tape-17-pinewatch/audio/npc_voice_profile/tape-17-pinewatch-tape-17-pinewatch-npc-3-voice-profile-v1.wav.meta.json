@@ -3,18 +3,43 @@
   "asset_id": "tape-17-pinewatch-tape-17-pinewatch-npc-3-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Survivor Cade Rowan. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Survivor Cade Rowan. I should not be leaving this message. Something about frame glitch cluster is wrong, and The Editor wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to closed wilderness watch station and ranger tunnels.",
+  "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Build unique voice profile for Survivor Cade Rowan. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "coral",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "male",
+    "design": {
+      "apiSpeed": 1.107005,
+      "pitchSemitone": 0.5109999999999999,
+      "textureAmount": 0.62,
+      "highpassHz": 101,
+      "lowpassHz": 7819,
+      "presenceGainDb": 0.8920000000000001
+    },
+    "voice_design": {
+      "apiSpeed": 1.107005,
+      "pitchSemitone": 0.5109999999999999,
+      "textureAmount": 0.62,
+      "highpassHz": 101,
+      "lowpassHz": 7819,
+      "presenceGainDb": 0.8920000000000001
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\npc_voice_profile\\tape-17-pinewatch-tape-17-pinewatch-npc-3-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-3-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:24.601Z",
-  "checksum": "514357cafd0b75a70ca07d605eea22bd86120a5b",
-  "file_size": 2110770,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:35:54.510Z",
+  "checksum": "afcfded7908517e88c5d5bfb781f32b314afd3fe",
+  "file_size": 865886,
+  "duration_seconds": 9.02,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/audio/npc_voice_profile/tape-17-pinewatch-tape-17-pinewatch-npc-3-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose ending score cue for \"Clean Resolution\" that supports summary \"You expose the broadcast architecture and keep the last witness alive.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose ending score cue for \"Clean Resolution\" that supports summary \"You expose the broadcast architecture and keep the last witness alive.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 55,
+      "mid": 242,
+      "high": 1288,
+      "shimmer": 2468,
+      "pulseHz": 1.7033333333333334,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.28
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-justice-ending-score-v1.wav",
   "public_path": "/agent-army/stories/static-between-stations/audio/ending_score/static-between-stations-static-between-stations-ending-justice-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:15.064Z",
-  "checksum": "68acdb23bb070ded12f93f23e0762bde74f14844",
-  "file_size": 15700290,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-23T16:32:10.352Z",
+  "checksum": "b32a762010789550ad52633121cf782b6ebf4ecd",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/audio/ending_score/static-between-stations-static-between-stations-ending-justice-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-23T16:31:43.612Z"
 }

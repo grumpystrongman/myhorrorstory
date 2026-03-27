@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose ending score cue for \"Corruption Pact\" that supports summary \"You trade the original tape for influence over what the public sees.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Compose ending score cue for \"Corruption Pact\" that supports summary \"You trade the original tape for influence over what the public sees.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 42,
+      "mid": 192,
+      "high": 620,
+      "shimmer": 1760,
+      "pulseHz": 0.86,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.2
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\audio\\ending_score\\tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-score-v1.wav",
   "public_path": "/agent-army/stories/tape-17-pinewatch/audio/ending_score/tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:29.459Z",
-  "checksum": "b199a5ff6607a5d149fbf727a95c33dfefed4768",
-  "file_size": 15701526,
-  "duration_seconds": 81.78,
+  "created_at": "2026-03-22T22:10:13.810Z",
+  "checksum": "96950af7806efd998e097144ca831d6aaf9cee9b",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/audio/ending_score/tape-17-pinewatch-tape-17-pinewatch-ending-corruption-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

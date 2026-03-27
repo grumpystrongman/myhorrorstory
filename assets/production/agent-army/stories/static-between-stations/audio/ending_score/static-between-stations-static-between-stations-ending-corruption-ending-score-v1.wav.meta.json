@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept the Curator's private channel and bury the official case.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Compose ending score cue for \"Corruption Pact\" that supports summary \"You accept the Curator's private channel and bury the official case.\" and epilogue \"You keep control of the case, and the villain keeps control of you.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 44,
+      "mid": 276,
+      "high": 1002,
+      "shimmer": 2382,
+      "pulseHz": 0.8700000000000001,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.28
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\ending_score\\static-between-stations-static-between-stations-ending-corruption-ending-score-v1.wav",
   "public_path": "/agent-army/stories/static-between-stations/audio/ending_score/static-between-stations-static-between-stations-ending-corruption-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:18.285Z",
-  "checksum": "f7e8285c83b994e05dd100990d5071092ad6a513",
-  "file_size": 15699070,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-23T16:32:13.211Z",
+  "checksum": "9bba819a4c78ae96e386d25ed45c10993db0b705",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/audio/ending_score/static-between-stations-static-between-stations-ending-corruption-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-23T16:31:43.612Z"
 }

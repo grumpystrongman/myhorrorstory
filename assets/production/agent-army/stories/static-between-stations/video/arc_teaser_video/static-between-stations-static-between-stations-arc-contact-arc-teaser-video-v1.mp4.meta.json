@@ -1,44 +1,48 @@
 {
-  "id": "static-between-stations-static-between-stations-arc-contact-arc-teaser-video",
-  "title": "Static Between Stations - Contact and Contradiction Arc Teaser Video",
+  "story_id": "static-between-stations",
+  "asset_id": "static-between-stations-static-between-stations-arc-contact-arc-teaser-video",
+  "asset_type": "arc_teaser_video",
   "modality": "video",
-  "category": "arc_teaser_video",
-  "scope": "story",
+  "prompt_used": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\arc_key_art\\static-between-stations-static-between-stations-arc-contact-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\beat_scene_art\\static-between-stations-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\villain_portrait\\static-between-stations-villain-portrait-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\audio\\arc_ambience\\static-between-stations-static-between-stations-arc-contact-arc-ambience-v1.wav",
+    "duration_seconds": 30,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Dispatch Handler Ilya Ross",
+      "role": "witness",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "nova",
+      "script": "Dispatch Handler Ilya Ross to team. A dead rail line broadcasts private confessions in the players' own voices. This chapter centers on contact and contradiction arc teaser video, and your objective is to establish a defensible timeline, pressure test witness statements, and isolate deliberate manipulation. Start with spectrogram of confession burst, map every contradiction to clock time, and keep one witness stable while you escalate. If The Curator of Static makes direct contact, preserve the message first, then respond with evidence-led questions only.",
+      "design": {
+        "apiSpeed": 1.08,
+        "pitchSemitone": 0.845,
+        "textureAmount": 0.59625,
+        "highpassHz": 90,
+        "lowpassHz": 7792,
+        "presenceGainDb": 0.5069999999999999
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.mp4",
+  "public_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\video\\arc_teaser_video\\static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:25:27.790Z",
+  "checksum": "a7c5d0bb9791f56132063aa88df9e0499df54701",
+  "file_size": 17758242,
+  "duration_seconds": 30,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/video/arc_teaser_video/static-between-stations-static-between-stations-arc-contact-arc-teaser-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#887976",
-    "accentColor": "#69734e"
-  },
-  "prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Arc focus: Contact and Contradiction. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:31:30.336Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

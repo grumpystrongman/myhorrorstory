@@ -3,21 +3,30 @@
   "asset_id": "tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card",
   "asset_type": "puzzle_shard_card",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Create shard card for holder GLOBAL_BROADCAST. Content brief: Public drop includes lens calibration values required to sync both.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Timecode Relay - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Create shard card for holder GLOBAL_BROADCAST. Content brief: Public drop includes lens calibration values required to sync both.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Timecode Relay - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
   "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Create shard card for holder GLOBAL_BROADCAST. Content brief: Public drop includes lens calibration values required to sync both.. Ensure it can stand alone but becomes decisive when combined with other shards.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 27,
+    "rawText": "—~ gE Hs Jo Ab Tas TEE :\n| Tide de ae pr —\n| Fae — Qo Ue ; & CL — F.4\nFe oaml™ 8. =\n| We hain Pct ata EE Bail gh\n| = | N « '§ is\neZ Bx —5 a = 5 |\n\\\\ ; ; Ee WRC | | § 4 ER 4\n — . - CU ER Gi 71 §% .\nas a it 8 | Ea\n= 3 = bi © 8 oR sue . i\nair 3 Whe CAG. Cit Lb a\nrs | . sl La\"T Ted) bw ki oy\n| CHEE SB RENEE EE |\n| View |; Re a = be BENG oh EERE\n| 4 1 Ll Rs roa —— BE\n7 Pele A | BN i vs\nTo : (Sg a\n63 He i a ele a A\nomen com 8 CRORE Gi Ble Lee\nBL « od Ba REN AE Ga\nBlo. So Ce de Ne p ig 2 3 Sha SL\nfo | ra Ce ied\ni Ari > wri\nLy Th EE",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.png",
   "public_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\puzzle_shard_card\\tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:38:24.607Z",
-  "checksum": "66367c750669060965dd3ef8410e43624534eecc",
-  "file_size": 1016279,
+  "created_at": "2026-03-22T21:46:19.480Z",
+  "checksum": "ba365e499ff09b6bfe8384ffdfb550113960f040",
+  "file_size": 3870983,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/puzzle_shard_card/tape-17-pinewatch-tape-17-pinewatch-puzzle-shards-tape-17-pinewatch-puzzle-shard-broadcast-shard-card-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:45:47.850Z",
   "extension": ".png"
 }

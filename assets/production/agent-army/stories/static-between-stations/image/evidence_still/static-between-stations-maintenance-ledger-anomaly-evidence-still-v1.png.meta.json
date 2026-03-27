@@ -3,21 +3,30 @@
   "asset_id": "static-between-stations-maintenance-ledger-anomaly-evidence-still",
   "asset_type": "evidence_still",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Static Between Stations. Premise: A dead rail line broadcasts private confessions in the players' own voices.. Setting: Abandoned commuter rail control annex. Threat presence: The Curator of Static. Recurring motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Maintenance ledger anomaly\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Evidence Still - Maintenance ledger anomaly. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Static Between Stations. Setting: Abandoned commuter rail control annex. Recurring motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Maintenance ledger anomaly\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: psychological horror. Tone: CINEMATIC. Immediate scene brief: Static Between Stations - Evidence Still - Maintenance ledger anomaly. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
   "source_prompt": "Story: Static Between Stations (static-between-stations) | Hook: A dead rail line broadcasts private confessions in the players' own voices. | Subgenre: psychological horror | Tone: CINEMATIC | Location: Abandoned commuter rail control annex | Villain: The Curator of Static | Villain worldview: Truth is only what survives the loudest channel. | Motifs: radio hiss, clock hands, platform chimes. Render forensic evidence still for \"Maintenance ledger anomaly\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 32,
+    "rawText": "=r 0\"\n» . - a y = S S==\n= 2 = SE ST\n= ——— = EE —i\n= - CHS ——\ny nea Sa a\nape",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.png",
   "public_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\static-between-stations\\image\\evidence_still\\static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:37:50.291Z",
-  "checksum": "61b49553635546bd815fb11dccb3df11cc4f4698",
-  "file_size": 1008740,
+  "created_at": "2026-03-22T21:40:49.440Z",
+  "checksum": "34b0a4d3e133bd52a2f5ea8823ccd8f8d40cff70",
+  "file_size": 3297512,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/static-between-stations/image/evidence_still/static-between-stations-maintenance-ledger-anomaly-evidence-still-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:40:27.128Z",
   "extension": ".png"
 }

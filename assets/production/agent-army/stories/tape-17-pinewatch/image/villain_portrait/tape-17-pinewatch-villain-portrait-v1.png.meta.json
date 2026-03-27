@@ -3,21 +3,36 @@
   "asset_id": "tape-17-pinewatch-villain-portrait",
   "asset_type": "villain_portrait",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Design portrait of antagonist The Editor with archetype PLAYFUL_SOCIOPATH, speech style \"Conversational, playful, then abruptly cruel.\", and motifs timecode burn-ins, camera clicks, forest sirens.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: villain portrait. Story world: Tape 17: Pinewatch. Premise: A recovered camcorder tape rewrites itself every midnight.. Setting: Closed wilderness watch station and ranger tunnels. Threat presence: The Editor. Recurring motifs: timecode burn-ins, camera clicks, forest sirens. Design portrait of antagonist The Editor with archetype PLAYFUL_SOCIOPATH, speech style \"Conversational, playful, then abruptly cruel.\", and motifs timecode burn-ins, camera clicks, forest sirens.. Subgenre: found-footage investigation. Tone: GROUNDED. Immediate scene brief: Tape 17: Pinewatch - Villain Portrait. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a realistic portrait with wardrobe, posture, facial tension, and environmental context that reveal personality and danger. Avoid floating-head composition. Frame as a prestige horror still, not concept art.",
   "source_prompt": "Story: Tape 17: Pinewatch (tape-17-pinewatch) | Hook: A recovered camcorder tape rewrites itself every midnight. | Subgenre: found-footage investigation | Tone: GROUNDED | Location: Closed wilderness watch station and ranger tunnels | Villain: The Editor | Villain worldview: Reality is editable if fear is timed correctly. | Motifs: timecode burn-ins, camera clicks, forest sirens. Design portrait of antagonist The Editor with archetype PLAYFUL_SOCIOPATH, speech style \"Conversational, playful, then abruptly cruel.\", and motifs timecode burn-ins, camera clicks, forest sirens.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "high"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 37,
+    "rawText": "PLAY E\n-\nVX 4 ot =\n2)\n7\n7.\n00:12:03:13",
+    "tokens": [
+      {
+        "text": "PLAY",
+        "normalized": "play",
+        "confidence": 96
+      }
+    ]
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.png",
   "public_path": "/agent-army/stories/tape-17-pinewatch/image/villain_portrait/tape-17-pinewatch-villain-portrait-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\tape-17-pinewatch\\image\\villain_portrait\\tape-17-pinewatch-villain-portrait-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/tape-17-pinewatch/image/villain_portrait/tape-17-pinewatch-villain-portrait-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:38:18.011Z",
-  "checksum": "056094bd72012e15ae5de001753492783b164a24",
-  "file_size": 956949,
+  "created_at": "2026-03-22T21:44:47.011Z",
+  "checksum": "0960d64d73ce1bbfd7389bbfe75ccf724fb23e35",
+  "file_size": 3297004,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/tape-17-pinewatch/image/villain_portrait/tape-17-pinewatch-villain-portrait-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:43:52.863Z",
   "extension": ".png"
 }
