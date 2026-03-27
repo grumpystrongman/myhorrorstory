@@ -1,44 +1,48 @@
 {
-  "id": "the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video",
-  "title": "The Fourth Tenant - Interference and Doubt Arc Teaser Video",
+  "story_id": "the-fourth-tenant",
+  "asset_id": "the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video",
+  "asset_type": "arc_teaser_video",
   "modality": "video",
-  "category": "arc_teaser_video",
-  "scope": "story",
+  "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\arc_key_art\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\beat_scene_art\\the-fourth-tenant-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\villain_portrait\\the-fourth-tenant-villain-portrait-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-ambience-v1.wav",
+    "duration_seconds": 30,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Lease Broker Owen Pike",
+      "role": "witness",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "nova",
+      "script": "Lease Broker Owen Pike to team. Rent is collected from an apartment that appears on no official map. This chapter centers on interference and doubt arc teaser video, and your objective is to establish a defensible timeline, pressure test witness statements, and isolate deliberate manipulation. Start with lease chain checksum, map every contradiction to clock time, and keep one witness stable while you escalate. If The Landlord of Rooms That Move makes direct contact, preserve the message first, then respond with evidence-led questions only.",
+      "design": {
+        "apiSpeed": 1.08,
+        "pitchSemitone": 1.377,
+        "textureAmount": 0.6399999999999999,
+        "highpassHz": 89,
+        "lowpassHz": 7947,
+        "presenceGainDb": 0.5720000000000001
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.mp4",
+  "public_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\video\\arc_teaser_video\\the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:42:00.260Z",
+  "checksum": "846f0a98ac2693b93e7275315b730cb1ea7ea1ec",
+  "file_size": 17720697,
+  "duration_seconds": 30,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/video/arc_teaser_video/the-fourth-tenant-the-fourth-tenant-arc-disruption-arc-teaser-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#339c65",
-    "accentColor": "#585148"
-  },
-  "prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Interference and Doubt. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:15.287Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

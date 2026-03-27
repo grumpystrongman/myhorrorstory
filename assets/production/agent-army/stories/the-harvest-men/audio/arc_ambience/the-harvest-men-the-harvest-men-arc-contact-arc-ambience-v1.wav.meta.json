@@ -4,17 +4,34 @@
   "asset_type": "arc_ambience",
   "modality": "audio",
   "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 42,
+      "mid": 192,
+      "high": 620,
+      "shimmer": 1760,
+      "pulseHz": 0.86,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.2
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-contact-arc-ambience-v1.wav",
   "public_path": "/agent-army/stories/the-harvest-men/audio/arc_ambience/the-harvest-men-the-harvest-men-arc-contact-arc-ambience-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:42.735Z",
-  "checksum": "fd8879733131910fc724a1a910c7aaef8ebaeae4",
-  "file_size": 15698858,
-  "duration_seconds": 81.76,
+  "created_at": "2026-03-22T22:10:44.041Z",
+  "checksum": "046f28758c152cf07386f6de8beb91c9a6448e76",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/audio/arc_ambience/the-harvest-men-the-harvest-men-arc-contact-arc-ambience-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

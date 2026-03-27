@@ -3,18 +3,43 @@
   "asset_id": "the-fourth-tenant-villain-voice-profile",
   "asset_type": "villain_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create villain voice profile for The Landlord of Rooms That Move. Worldview: People accept impossible rooms when paperwork feels safe.. Manner: Soft mockery that feels personal.. Include escalation stage cues for stage 1-4 intimidation.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Villain. Rent is collected from an apartment that appears on no official map. Work the case in order: secure lease chain checksum, confirm the scene at flood-district prewar apartment block, and do not let The Landlord of Rooms That Move choose the pace. Trust the evidence before you trust the performance.",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create villain voice profile for The Landlord of Rooms That Move. Worldview: People accept impossible rooms when paperwork feels safe.. Manner: Soft mockery that feels personal.. Include escalation stage cues for stage 1-4 intimidation.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "echo",
+    "locale": "en-US",
+    "region": "global",
+    "role": "narrator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 1.03094,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 78,
+      "lowpassHz": 7386,
+      "presenceGainDb": -0.4
+    },
+    "voice_design": {
+      "apiSpeed": 1.03094,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 78,
+      "lowpassHz": 7386,
+      "presenceGainDb": -0.4
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\villain_voice_profile\\the-fourth-tenant-villain-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/the-fourth-tenant/audio/villain_voice_profile/the-fourth-tenant-villain-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:36.179Z",
-  "checksum": "e8f18199f2e35c3c999f08233eef2d6af1927c98",
-  "file_size": 2110506,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:36:21.665Z",
+  "checksum": "197c4c6cfabb3f44b86f2a6226cac31bd056c2ab",
+  "file_size": 867234,
+  "duration_seconds": 9.03,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/audio/villain_voice_profile/the-fourth-tenant-villain-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

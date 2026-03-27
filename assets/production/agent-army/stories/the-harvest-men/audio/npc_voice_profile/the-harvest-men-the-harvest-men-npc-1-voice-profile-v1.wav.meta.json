@@ -3,18 +3,43 @@
   "asset_id": "the-harvest-men-the-harvest-men-npc-1-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Visiting Agronomist Dina Crowe. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Visiting Agronomist Dina Crowe. Keep your channel open and do not answer unknown callbacks. A ritual mask selects a new wearer every dusk, and refusals vanish overnight. Start with blood-soil composition panel, then verify every timestamp against isolated valley communes and threshing grounds. If The Reaper Steward contacts you directly, preserve the message before you react.",
+  "source_prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build unique voice profile for Visiting Agronomist Dina Crowe. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "sage",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "operator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 0.978425,
+      "pitchSemitone": 0.016000000000000014,
+      "textureAmount": 0.46625,
+      "highpassHz": 87,
+      "lowpassHz": 7459,
+      "presenceGainDb": 0.24300000000000005
+    },
+    "voice_design": {
+      "apiSpeed": 0.978425,
+      "pitchSemitone": 0.016000000000000014,
+      "textureAmount": 0.46625,
+      "highpassHz": 87,
+      "lowpassHz": 7459,
+      "presenceGainDb": 0.24300000000000005
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\npc_voice_profile\\the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:45.434Z",
-  "checksum": "aa974dc53f8eb10e8792de6e6e600f5f20419029",
-  "file_size": 2110384,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:36:26.272Z",
+  "checksum": "96089eda6fc6a585a255cda58949efe2184bf535",
+  "file_size": 1411698,
+  "duration_seconds": 14.7,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/audio/npc_voice_profile/the-harvest-men-the-harvest-men-npc-1-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

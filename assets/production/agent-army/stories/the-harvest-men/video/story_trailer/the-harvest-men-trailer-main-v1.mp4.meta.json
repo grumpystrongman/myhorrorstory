@@ -1,44 +1,50 @@
 {
-  "id": "the-harvest-men-trailer-main",
-  "title": "The Harvest Men Main Trailer",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-trailer-main",
+  "asset_type": "story_trailer",
   "modality": "video",
-  "category": "story_trailer",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\story_key_art\\the-harvest-men-story-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-contact-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-disruption-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-3-beat-scene-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
+    "duration_seconds": 36,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Visiting Agronomist Dina Crowe",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Visiting Agronomist Dina Crowe briefing. The Harvest Men Main Trailer is now active and represents a mid-case movement, not a complete narrative payload. Use this transition to update your timeline, re-score suspect credibility, and verify whether blood-soil composition panel still supports your current theory. Anchor your next move to the central question: who is reshaping the evidence chain and why The Reaper Steward benefits from confusion.. If The Reaper Steward reaches you first, archive the contact before you respond, then challenge the claim against the board.",
+      "design": {
+        "apiSpeed": 0.99575,
+        "pitchSemitone": 0.016000000000000014,
+        "textureAmount": 0.46625,
+        "highpassHz": 89,
+        "lowpassHz": 7312,
+        "presenceGainDb": 0.08300000000000005
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\story_trailer\\the-harvest-men-trailer-main-v1.mp4",
+  "public_path": "/agent-army/stories/the-harvest-men/video/story_trailer/the-harvest-men-trailer-main-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\story_trailer\\the-harvest-men-trailer-main-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/story_trailer/the-harvest-men-trailer-main-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:56:38.259Z",
+  "checksum": "875aa584a17281086786cd286f401cb63ffbefdc",
+  "file_size": 25010701,
+  "duration_seconds": 36,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/video/story_trailer/the-harvest-men-trailer-main-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#2e6a4d",
-    "accentColor": "#86562a"
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Build 18-second story trailer with hook in first 3 seconds, middle clue escalation, and final unresolved threat card.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:52.363Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

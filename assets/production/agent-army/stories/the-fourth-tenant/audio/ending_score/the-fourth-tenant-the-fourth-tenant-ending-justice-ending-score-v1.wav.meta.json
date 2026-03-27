@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Compose ending score cue for \"Clean Resolution\" that supports summary \"You prove the tenant scheme and secure testimony before records vanish.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Compose ending score cue for \"Clean Resolution\" that supports summary \"You prove the tenant scheme and secure testimony before records vanish.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 43,
+      "mid": 220,
+      "high": 1298,
+      "shimmer": 2638,
+      "pulseHz": 1.2033333333333334,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.28
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\ending_score\\the-fourth-tenant-the-fourth-tenant-ending-justice-ending-score-v1.wav",
   "public_path": "/agent-army/stories/the-fourth-tenant/audio/ending_score/the-fourth-tenant-the-fourth-tenant-ending-justice-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:37.757Z",
-  "checksum": "74ea9cc778ce73f27f865dbdd50fe9ddfe908695",
-  "file_size": 15698834,
-  "duration_seconds": 81.76,
+  "created_at": "2026-03-22T22:10:38.793Z",
+  "checksum": "e220387300f5908f6a42a2a82f086efda2a58076",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/audio/ending_score/the-fourth-tenant-the-fourth-tenant-ending-justice-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

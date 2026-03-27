@@ -4,17 +4,34 @@
   "asset_type": "arc_ambience",
   "modality": "audio",
   "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 38,
+      "mid": 224,
+      "high": 856,
+      "shimmer": 3196,
+      "pulseHz": 1.05,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.22
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\arc_ambience\\the-fourth-tenant-the-fourth-tenant-arc-contact-arc-ambience-v1.wav",
   "public_path": "/agent-army/stories/the-fourth-tenant/audio/arc_ambience/the-fourth-tenant-the-fourth-tenant-arc-contact-arc-ambience-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:32.088Z",
-  "checksum": "70f2fc40240a5c6ca61cffb53a94e07b566d6703",
-  "file_size": 15699586,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:10:16.423Z",
+  "checksum": "8f3df9941037f495de757f9adf9eeddb4ab13569",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/audio/arc_ambience/the-fourth-tenant-the-fourth-tenant-arc-contact-arc-ambience-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

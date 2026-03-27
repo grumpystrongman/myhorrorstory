@@ -3,21 +3,30 @@
   "asset_id": "the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card",
   "asset_type": "puzzle_shard_card",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder GLOBAL_BROADCAST. Content brief: Global drop contains watermark coordinates for the hidden hallway.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Create shard card for holder GLOBAL_BROADCAST. Content brief: Global drop contains watermark coordinates for the hidden hallway.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Lease Fragment Reconstruction - GLOBAL_BROADCAST Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
   "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Create shard card for holder GLOBAL_BROADCAST. Content brief: Global drop contains watermark coordinates for the hidden hallway.. Ensure it can stand alone but becomes decisive when combined with other shards.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 25,
+    "rawText": "PRE = S hE LL GRD ate\nRRR ag No 7 [ETA PAR B\nCE aE Ts LE Bi ae. oR\nLoe Sa NEETE ENTE Se i%% THEE (>\nee ES—— A fl RRS 82° SS) 11\npe RE Raat [5 Nash ae EEE andy al\nHf | EN 3 REA) VA\" sr 35 2 Ea\n? i I |: ion Ro a SRL |\n- y | [iE vo Ee Las ! gE 8 ale\n~~. ae | aa at a No a] SL LR\ngp es a mame\ni = NEL — oo Bas Ee\n> Be NE PEE Eo SF\nSRR \\ EL dE RE ad SE\nI SS ! FF aa Fag Sis\nCRRERE |) | - Bat aaa, | y wR = Ry\nrel PE Ene Biwene a :\nEp ETH xX ae be Red aval El Ee SO SR\nF \\ DS Ba ed i Eo at :\n§ : to ow | | sy WW\ni a 4d on Te aii\n— mE TENE\nEe a) = TRS a x\now RE art Ta WN \\ = hy Bo z feyil }\nBE rs Taleo EC Na \\ = | PE FR\nBie Tas Ry NON Ie 8 ee =\ni AR ser TR SU SRR. Ne Ras 3 ES\nCRE Sham aR i ) 5 Ad\nEen Ei yf SRE TET waa SETAE HT,\nHd SSE RR RE [TT\na em ; Ga a\n. ENE a ie Base Na a\ni TE A TEEN = ARE \\\nBit, Emme SORE dg Te El\nP TT Te\nRE Ae",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.png",
   "public_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\puzzle_shard_card\\the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:38:55.787Z",
-  "checksum": "0fb014a929b7f18a897f9e8a1e690b0887366759",
-  "file_size": 975334,
+  "created_at": "2026-03-22T21:50:19.801Z",
+  "checksum": "32957381519cab27846a1e42275103397ebf5ab4",
+  "file_size": 3618192,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/image/puzzle_shard_card/the-fourth-tenant-the-fourth-tenant-puzzle-shards-the-fourth-tenant-puzzle-shard-broadcast-shard-card-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:49:53.377Z",
   "extension": ".png"
 }

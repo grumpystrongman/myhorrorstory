@@ -3,18 +3,43 @@
   "asset_id": "the-fourth-tenant-the-fourth-tenant-npc-2-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Lease Broker Owen Pike. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Lease Broker Owen Pike. I should not be leaving this message. Something about lease chain checksum is wrong, and The Landlord of Rooms That Move wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to flood-district prewar apartment block.",
+  "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Build unique voice profile for Lease Broker Owen Pike. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "nova",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "male",
+    "design": {
+      "apiSpeed": 1.16,
+      "pitchSemitone": 1.377,
+      "textureAmount": 0.6399999999999999,
+      "highpassHz": 88,
+      "lowpassHz": 8002,
+      "presenceGainDb": 0.3320000000000001
+    },
+    "voice_design": {
+      "apiSpeed": 1.16,
+      "pitchSemitone": 1.377,
+      "textureAmount": 0.6399999999999999,
+      "highpassHz": 88,
+      "lowpassHz": 8002,
+      "presenceGainDb": 0.3320000000000001
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\audio\\npc_voice_profile\\the-fourth-tenant-the-fourth-tenant-npc-2-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-2-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:34.946Z",
-  "checksum": "847bf6d1b460d8f800afecc606e2fd6ccc25db24",
-  "file_size": 2110694,
-  "duration_seconds": 21.99,
+  "created_at": "2026-03-23T17:36:10.260Z",
+  "checksum": "5ceefa78b2fe792df7db6646756ecac4da034070",
+  "file_size": 801154,
+  "duration_seconds": 8.34,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/audio/npc_voice_profile/the-fourth-tenant-the-fourth-tenant-npc-2-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

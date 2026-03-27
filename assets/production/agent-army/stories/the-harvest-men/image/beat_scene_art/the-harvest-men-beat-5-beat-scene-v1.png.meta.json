@@ -3,21 +3,30 @@
   "asset_id": "the-harvest-men-beat-5-beat-scene",
   "asset_type": "beat_scene_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: The Harvest Men. Premise: A ritual mask selects a new wearer every dusk, and refusals vanish overnight.. Setting: Isolated valley communes and threshing grounds. Threat presence: The Reaper Steward. Recurring motifs: corn husk knots, lantern smoke, harvest blades. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: folk horror. Tone: SLOW_BURN. Immediate scene brief: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
   "source_prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Beat: Confrontation Protocol (Reckoning). Narrative: Players reconstruct motive and false trails before collapse.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 32,
+    "rawText": "Ek\nbg\nan r& <0 J\na i = 4 Eo N7/\n4 i ) ] a DN ) sy nL \\ 7A\n7 7 5 AS &\na UA 2h i \\\n. i 5 is Ee 8 : \\\nA ey | Ged\nCoane EE 1 | |\n5 a = -»\nAE a. Sa Ii",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.png",
   "public_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-5-beat-scene-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-5-beat-scene-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-5-beat-scene-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:39:07.951Z",
-  "checksum": "99d2bddef869db334a55a191f66378b6a7173d02",
-  "file_size": 977951,
+  "created_at": "2026-03-22T21:51:11.420Z",
+  "checksum": "19bb5b27720b8cae854bc2041b33241cc049c30b",
+  "file_size": 3054126,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/image/beat_scene_art/the-harvest-men-beat-5-beat-scene-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:50:48.943Z",
   "extension": ".png"
 }

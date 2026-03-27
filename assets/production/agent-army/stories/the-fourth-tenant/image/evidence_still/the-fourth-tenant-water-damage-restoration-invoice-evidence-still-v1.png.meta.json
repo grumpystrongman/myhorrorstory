@@ -3,21 +3,30 @@
   "asset_id": "the-fourth-tenant-water-damage-restoration-invoice-evidence-still",
   "asset_type": "evidence_still",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Water-damage restoration invoice. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Setting: Flood-district prewar apartment block. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Water-damage restoration invoice. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
   "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Water-damage restoration invoice\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 94,
+    "rawText": "4-23-88 10:17 AM",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
   "public_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:38:49.828Z",
-  "checksum": "24e8c1f68727a569be7e9a389b22bc07c8e37faa",
-  "file_size": 967227,
+  "created_at": "2026-03-22T21:49:15.776Z",
+  "checksum": "c820dcd4f02d72a1914b95a127202f1f1d7ddae1",
+  "file_size": 3146760,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-water-damage-restoration-invoice-evidence-still-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:48:54.402Z",
   "extension": ".png"
 }

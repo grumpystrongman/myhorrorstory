@@ -1,44 +1,48 @@
 {
-  "id": "the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video",
-  "title": "The Harvest Men - Confrontation and Reckoning Arc Teaser Video",
+  "story_id": "the-harvest-men",
+  "asset_id": "the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video",
+  "asset_type": "arc_teaser_video",
   "modality": "video",
-  "category": "arc_teaser_video",
-  "scope": "story",
+  "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\arc_key_art\\the-harvest-men-the-harvest-men-arc-endgame-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\beat_scene_art\\the-harvest-men-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\image\\villain_portrait\\the-harvest-men-villain-portrait-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\arc_ambience\\the-harvest-men-the-harvest-men-arc-endgame-arc-ambience-v1.wav",
+    "duration_seconds": 30,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Village Elder Rowan Pike",
+      "role": "witness",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "nova",
+      "script": "Village Elder Rowan Pike to team. A ritual mask selects a new wearer every dusk, and refusals vanish overnight. This chapter centers on confrontation and reckoning arc teaser video, and your objective is to establish a defensible timeline, pressure test witness statements, and isolate deliberate manipulation. Start with blood-soil composition panel, map every contradiction to clock time, and keep one witness stable while you escalate. If The Reaper Steward makes direct contact, preserve the message first, then respond with evidence-led questions only.",
+      "design": {
+        "apiSpeed": 1.08,
+        "pitchSemitone": 1.377,
+        "textureAmount": 0.6399999999999999,
+        "highpassHz": 96,
+        "lowpassHz": 7771,
+        "presenceGainDb": 0.7320000000000001
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.mp4",
+  "public_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\video\\arc_teaser_video\\the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:50:47.154Z",
+  "checksum": "136a113bdac4c403ed4aedbb2f77001ed2aef82d",
+  "file_size": 17969996,
+  "duration_seconds": 30,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/video/arc_teaser_video/the-harvest-men-the-harvest-men-arc-endgame-arc-teaser-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#7b8050",
-    "accentColor": "#573954"
-  },
-  "prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Arc focus: Confrontation and Reckoning. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:36.796Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

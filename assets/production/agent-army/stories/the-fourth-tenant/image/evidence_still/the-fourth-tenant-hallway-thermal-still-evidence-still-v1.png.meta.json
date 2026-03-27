@@ -3,21 +3,30 @@
   "asset_id": "the-fourth-tenant-hallway-thermal-still-evidence-still",
   "asset_type": "evidence_still",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Premise: Rent is collected from an apartment that appears on no official map.. Setting: Flood-district prewar apartment block. Threat presence: The Landlord of Rooms That Move. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Hallway thermal still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Hallway thermal still. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: The Fourth Tenant. Setting: Flood-district prewar apartment block. Recurring motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Hallway thermal still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: supernatural mystery. Tone: EERIE. Immediate scene brief: The Fourth Tenant - Evidence Still - Hallway thermal still. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
   "source_prompt": "Story: The Fourth Tenant (the-fourth-tenant) | Hook: Rent is collected from an apartment that appears on no official map. | Subgenre: supernatural mystery | Tone: EERIE | Location: Flood-district prewar apartment block | Villain: The Landlord of Rooms That Move | Villain worldview: People accept impossible rooms when paperwork feels safe. | Motifs: door chains, wet plaster, rent slips. Render forensic evidence still for \"Hallway thermal still\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 27,
+    "rawText": "> os BR  — :\nMy\n1 - 5 5 pv: Se\nic 20248 : pr [fi\n~~ 2 ARE i E\n05 1S 44a - E :\nER ks a\n| b 5 3: k i a\nBE iy (a) < § thir\nGi iF Shes =—l a cE\ni EE {1 th. ig\ni oH i > ba\ni Gene\n[os 5\nSa\nbe BY RE",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-hallway-thermal-still-evidence-still-v1.png",
   "public_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-hallway-thermal-still-evidence-still-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-fourth-tenant\\image\\evidence_still\\the-fourth-tenant-hallway-thermal-still-evidence-still-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-hallway-thermal-still-evidence-still-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:38:49.849Z",
-  "checksum": "f275b2374f9eddc0da537036a883004abc6dea81",
-  "file_size": 963703,
+  "created_at": "2026-03-22T21:48:53.426Z",
+  "checksum": "4a64c40b7fed7302b392ca85367437142919749b",
+  "file_size": 3377588,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-fourth-tenant/image/evidence_still/the-fourth-tenant-hallway-thermal-still-evidence-still-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:48:31.870Z",
   "extension": ".png"
 }

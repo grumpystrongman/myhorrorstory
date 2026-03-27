@@ -4,17 +4,34 @@
   "asset_type": "story_theme_loop",
   "modality": "audio",
   "prompt_used": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: The Harvest Men (the-harvest-men) | Hook: A ritual mask selects a new wearer every dusk, and refusals vanish overnight. | Subgenre: folk horror | Tone: SLOW_BURN | Location: Isolated valley communes and threshing grounds | Villain: The Reaper Steward | Villain worldview: Communities survive only through chosen sacrifice. | Motifs: corn husk knots, lantern smoke, harvest blades. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 42,
+      "mid": 192,
+      "high": 620,
+      "shimmer": 1760,
+      "pulseHz": 0.86,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.2
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\the-harvest-men\\audio\\story_theme_loop\\the-harvest-men-story-theme-loop-v1.wav",
   "public_path": "/agent-army/stories/the-harvest-men/audio/story_theme_loop/the-harvest-men-story-theme-loop-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:52.563Z",
-  "checksum": "f8bc39fdd4f6e21ed216fb83d096eef5f04ee288",
-  "file_size": 15699070,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:11:11.154Z",
+  "checksum": "49e2d2a2670100699b711fad1952cf307e2b0fe4",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/the-harvest-men/audio/story_theme_loop/the-harvest-men-story-theme-loop-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }
