@@ -2,7 +2,6 @@
 
 import {
   AISoundDirector,
-  createSoundDirectorLoop,
   resolveScoreTrack,
   type HorrorMusicLocation,
   type SoundDirectorTelemetry
@@ -51,15 +50,47 @@ function sanitizeTelemetry(
   };
 }
 
+function sanitizeStoryId(value: string | null | undefined): string | null {
+  const normalized = value?.trim().toLowerCase();
+  return normalized && normalized.length > 0 ? normalized : null;
+}
+
+function storyThemeLoopPath(storyId: string): string {
+  return `/agent-army/stories/${storyId}/audio/story_theme_loop/${storyId}-story-theme-loop-v1.wav`;
+}
+
+function storyArcAmbiencePath(storyId: string, arc: 'contact' | 'disruption' | 'endgame'): string {
+  return `/agent-army/stories/${storyId}/audio/arc_ambience/${storyId}-${storyId}-arc-${arc}-arc-ambience-v1.wav`;
+}
+
+function resolveDirectedScoreSource(
+  storyId: string | null,
+  band: 'calm_ambience' | 'suspense_drones' | 'heartbeat_percussion',
+  fallbackSrc: string
+): string {
+  if (!storyId) {
+    return fallbackSrc;
+  }
+
+  if (band === 'heartbeat_percussion') {
+    return storyArcAmbiencePath(storyId, 'endgame');
+  }
+  if (band === 'suspense_drones') {
+    return storyArcAmbiencePath(storyId, 'disruption');
+  }
+
+  return storyThemeLoopPath(storyId);
+}
+
 export function SoundtrackPlayer(): JSX.Element {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const storyId = searchParams.get('storyId');
   const track = useMemo(() => resolveScoreTrack({ pathname, storyId }), [pathname, storyId]);
   const isPlayRoute = pathname.startsWith('/play');
+  const effectiveStoryId = sanitizeStoryId(storyId ?? track.storyId ?? null);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const dynamicUrlRef = useRef<string | null>(null);
   const directorRef = useRef(new AISoundDirector());
   const [enabled, setEnabled] = useState(true);
   const [volume, setVolume] = useState(46);
@@ -69,7 +100,8 @@ export function SoundtrackPlayer(): JSX.Element {
   const [dynamicTension, setDynamicTension] = useState<number | null>(null);
   const [directorTelemetry, setDirectorTelemetry] = useState<SoundDirectorTelemetry | null>(null);
   const [compactUi, setCompactUi] = useState(false);
-  const activeSource = isPlayRoute && dynamicSrc ? dynamicSrc : track.src;
+  const storyLoopSource = effectiveStoryId ? storyThemeLoopPath(effectiveStoryId) : null;
+  const activeSource = isPlayRoute && dynamicSrc ? dynamicSrc : storyLoopSource ?? track.src;
   const displayTrackLabel = isPlayRoute && dynamicBandLabel ? `${track.title} - ${dynamicBandLabel}` : track.title;
   const displayStatus =
     enabled && isPlayRoute && dynamicBandLabel
@@ -153,55 +185,15 @@ export function SoundtrackPlayer(): JSX.Element {
       setDynamicBandLabel(null);
       setDynamicTension(null);
       setDynamicSrc(null);
-      if (dynamicUrlRef.current) {
-        URL.revokeObjectURL(dynamicUrlRef.current);
-        dynamicUrlRef.current = null;
-      }
       return;
     }
 
-    const progressBucket = Math.round(directorTelemetry.playerProgress / 10) * 10;
-    const proximityBucket = Math.round(directorTelemetry.villainProximity / 10) * 10;
-    const dangerBucket = Math.round(directorTelemetry.dangerLevel / 10) * 10;
-    const hourBucket = Math.floor(directorTelemetry.timeOfNightHour);
-    const seed = [
-      storyId ?? 'freeplay',
-      directorTelemetry.storyMood,
-      directorTelemetry.location,
-      progressBucket,
-      proximityBucket,
-      dangerBucket,
-      hourBucket
-    ].join(':');
-
-    const output = createSoundDirectorLoop(directorTelemetry, {
-      sampleRate: 12000,
-      seed,
-      director: directorRef.current
-    });
-
-    const blobBytes = new Uint8Array(output.loop.wavBytes.length);
-    blobBytes.set(output.loop.wavBytes);
-    const blob = new Blob([blobBytes], { type: 'audio/wav' });
-    const nextUrl = URL.createObjectURL(blob);
-
-    if (dynamicUrlRef.current) {
-      URL.revokeObjectURL(dynamicUrlRef.current);
-    }
-    dynamicUrlRef.current = nextUrl;
-    setDynamicSrc(nextUrl);
-    setDynamicBandLabel(output.decision.bandLabel);
-    setDynamicTension(output.decision.tension);
-  }, [directorTelemetry, isPlayRoute, storyId]);
-
-  useEffect(() => {
-    return () => {
-      if (dynamicUrlRef.current) {
-        URL.revokeObjectURL(dynamicUrlRef.current);
-        dynamicUrlRef.current = null;
-      }
-    };
-  }, []);
+    const decision = directorRef.current.evaluate(directorTelemetry);
+    const directedSource = resolveDirectedScoreSource(effectiveStoryId, decision.band, track.src);
+    setDynamicSrc(directedSource);
+    setDynamicBandLabel(decision.bandLabel);
+    setDynamicTension(decision.tension);
+  }, [directorTelemetry, effectiveStoryId, isPlayRoute, track.src]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -234,22 +226,15 @@ export function SoundtrackPlayer(): JSX.Element {
     setEnabled((current) => !current);
   }
 
+  function handleAudioError(): void {
+    if (isPlayRoute && dynamicSrc && dynamicSrc !== track.src) {
+      setDynamicSrc(track.src);
+      setDynamicBandLabel('Fallback Story Mix');
+    }
+  }
+
   return (
-    <div
-      className="panel"
-      style={{
-        position: 'fixed',
-        right: compactUi ? 12 : 20,
-        bottom: compactUi ? 12 : 20,
-        width: compactUi ? 208 : 320,
-        zIndex: 40,
-        display: 'grid',
-        gap: 8,
-        background: 'rgba(17, 24, 39, 0.92)',
-        border: '1px solid #3d2f1f',
-        padding: compactUi ? 10 : undefined
-      }}
-    >
+    <div className="soundtrack-top-control" data-testid="soundtrack-control">
       <audio
         ref={audioRef}
         src={activeSource}
@@ -257,34 +242,35 @@ export function SoundtrackPlayer(): JSX.Element {
         data-testid="soundtrack-audio"
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
+        onError={handleAudioError}
       />
-      <p style={{ margin: 0, letterSpacing: '0.12em', color: 'var(--muted)' }}>SOUNDTRACK</p>
-      <p
-        data-testid="soundtrack-track"
-        style={{ margin: 0, fontWeight: 600, fontSize: compactUi ? 13 : undefined, lineHeight: 1.2 }}
-      >
+      <div className="soundtrack-header-row">
+        <p className="soundtrack-label">SOUNDTRACK</p>
+        {isPlayRoute && !compactUi ? (
+          <p data-testid="soundtrack-director-tension" className="soundtrack-meta">
+            Tension: {dynamicTension ?? 0}
+          </p>
+        ) : null}
+      </div>
+      <p data-testid="soundtrack-track" className="soundtrack-track">
         {displayTrackLabel}
       </p>
-      <p data-testid="soundtrack-status" style={{ margin: 0, color: 'var(--muted)', fontSize: compactUi ? 12 : undefined }}>
+      <p data-testid="soundtrack-status" className="soundtrack-meta">
         {displayStatus}
       </p>
-      {isPlayRoute && !compactUi ? (
-        <p data-testid="soundtrack-director-tension" style={{ margin: 0, color: 'var(--muted)' }}>
-          Tension: {dynamicTension ?? 0}
-        </p>
-      ) : null}
-      <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: compactUi ? 'wrap' : undefined }}>
+      <div className="soundtrack-controls-row">
         <button type="button" data-testid="soundtrack-toggle" onClick={togglePlayback}>
           {enabled ? 'Mute Score' : 'Enable Score'}
         </button>
         {!compactUi ? (
           <>
-            <label htmlFor="soundtrack-volume" style={{ fontSize: 13 }}>
+            <label htmlFor="soundtrack-volume" className="soundtrack-volume-label">
               Volume
             </label>
             <input
               id="soundtrack-volume"
               data-testid="soundtrack-volume"
+              className="soundtrack-volume-input"
               type="range"
               min={0}
               max={100}

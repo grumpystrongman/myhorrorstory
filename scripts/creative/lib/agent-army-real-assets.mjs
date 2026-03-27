@@ -2631,18 +2631,21 @@ function resolveVideoDuration(asset, imageCount) {
   const category = String(asset.category ?? '').toLowerCase();
   const planned = Number(asset.specs?.durationSeconds);
   if (Number.isFinite(planned) && planned > 0 && category === 'story_trailer') {
-    return clamp(planned, 16, VIDEO_DURATION_MAX_SECONDS);
+    return clamp(Math.max(planned, 36), 30, 54);
   }
   if (category === 'beat_transition_video') {
-    return 6;
+    return 12;
   }
   if (category === 'arc_teaser_video') {
-    return 18;
+    return 30;
   }
   if (category === 'ending_recap_video') {
-    return 24;
+    return 40;
   }
-  return clamp(Math.max(10, imageCount * 4), VIDEO_DURATION_MIN_SECONDS, 40);
+  if (category === 'surface_motion_teaser') {
+    return 16;
+  }
+  return clamp(Math.max(14, imageCount * 5), VIDEO_DURATION_MIN_SECONDS, 48);
 }
 
 async function generateVideoMontageAsset(asset, outputPath, timeoutMs) {
@@ -2970,27 +2973,48 @@ function buildVideoNarrationScript(asset, storyPackage, narratorName) {
     : 'the primary evidence drop';
   const title = String(asset.title ?? '').replace(`${storyPackage?.title ?? ''} - `, '').trim();
   const category = String(asset.category ?? '').toLowerCase();
+  const objective =
+    storyPackage?.caseFile?.objective ??
+    'establish a defensible timeline, pressure test witness statements, and isolate deliberate manipulation.';
+  const firstQuestion =
+    storyPackage?.caseFile?.primaryQuestion ??
+    `who is reshaping the evidence chain and why ${villain} benefits from confusion.`;
+  const firstSuccess = Array.isArray(storyPackage?.caseFile?.successCriteria)
+    ? storyPackage.caseFile.successCriteria[0]
+    : 'deliver findings that a first-time investigator can understand and verify.';
 
   if (category === 'ending_recap_video') {
     return [
-      `${narratorName} reporting. The case closes on ${title.toLowerCase()}.`,
-      `The evidence thread started with ${clue.toLowerCase()} and now points directly at ${villain}.`,
-      `Review the timeline at ${location.toLowerCase()} before the next transmission goes live.`
+      `${narratorName} reporting. ${title.toLowerCase()} is the final pressure point, and the board is now complete enough to choose your ending with intent rather than panic.`,
+      `The trail began with ${clue.toLowerCase()}, but the real shift came when the timeline around ${location.toLowerCase()} stopped matching witness memory in small, strategic places.`,
+      `Your last review should answer one question in plain language: ${firstQuestion}.`,
+      `Choose your closeout path only after you can state the motive, method, and consequence in one consistent chain.`
     ].join(' ');
   }
 
   if (category === 'arc_teaser_video') {
     return [
       `${narratorName} to team. ${hook}`,
-      `This arc centers on ${title.toLowerCase()}, with pressure building around ${clue.toLowerCase()}.`,
-      `Move quietly through ${location.toLowerCase()} and keep your witness channel open.`
+      `This chapter centers on ${title.toLowerCase()}, and your objective is to ${objective.toLowerCase()}`,
+      `Start with ${clue.toLowerCase()}, map every contradiction to clock time, and keep one witness stable while you escalate.`,
+      `If ${villain} makes direct contact, preserve the message first, then respond with evidence-led questions only.`
+    ].join(' ');
+  }
+
+  if (category === 'surface_motion_teaser') {
+    return [
+      `${narratorName} briefing. This surface preview is not a trailer cut, it is an operations snapshot of how the case unfolds for players in real time.`,
+      `You begin with ${clue.toLowerCase()}, then move through escalating transmissions, evidence drops, and live branch decisions that alter suspect trust and outcome risk.`,
+      `The primary setting is ${location.toLowerCase()}, but the core mystery is whether ${villain} is creating the story or merely exploiting it.`,
+      `Player success means ${firstSuccess.toLowerCase()}`
     ].join(' ');
   }
 
   return [
-    `${narratorName} briefing. ${title || 'Transition beat'} is now active.`,
-    `Start with ${clue.toLowerCase()}, then compare every new message against ${hook.toLowerCase()}.`,
-    `If ${villain} reaches you first, archive the contact before you respond.`
+    `${narratorName} briefing. ${title || 'Transition beat'} is now active and represents a mid-case movement, not a complete narrative payload.`,
+    `Use this transition to update your timeline, re-score suspect credibility, and verify whether ${clue.toLowerCase()} still supports your current theory.`,
+    `Anchor your next move to the central question: ${firstQuestion}.`,
+    `If ${villain} reaches you first, archive the contact before you respond, then challenge the claim against the board.`
   ].join(' ');
 }
 

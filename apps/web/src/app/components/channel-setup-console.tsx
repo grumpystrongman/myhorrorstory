@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useState } from 'react';
 
 type SetupChannel = 'SMS' | 'WHATSAPP' | 'TELEGRAM';
+const CHANNEL_CASE_ID_STORAGE_KEY = 'myhorrorstory.channel.caseId';
+const CHANNEL_PLAYER_ID_STORAGE_KEY = 'myhorrorstory.channel.playerId';
 
 type SetupStatusChannel = {
   channel: SetupChannel | 'SIGNAL';
@@ -87,6 +89,7 @@ export function ChannelSetupConsole(): JSX.Element {
     }
     return channels;
   }, [enableSms, enableWhatsapp, enableTelegram]);
+  const playTestUrl = `/play?storyId=${encodeURIComponent(caseId)}&playerId=${encodeURIComponent(playerId)}`;
 
   async function fetchStatus(): Promise<void> {
     setLoadingStatus(true);
@@ -117,8 +120,24 @@ export function ChannelSetupConsole(): JSX.Element {
   }
 
   useEffect(() => {
+    const storedCaseId = window.localStorage.getItem(CHANNEL_CASE_ID_STORAGE_KEY)?.trim();
+    const storedPlayerId = window.localStorage.getItem(CHANNEL_PLAYER_ID_STORAGE_KEY)?.trim();
+    if (storedCaseId) {
+      setCaseId(storedCaseId);
+    }
+    if (storedPlayerId) {
+      setPlayerId(storedPlayerId);
+    }
     void fetchStatus();
   }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem(CHANNEL_CASE_ID_STORAGE_KEY, caseId);
+  }, [caseId]);
+
+  useEffect(() => {
+    window.localStorage.setItem(CHANNEL_PLAYER_ID_STORAGE_KEY, playerId);
+  }, [playerId]);
 
   async function onSave(): Promise<void> {
     setSaving(true);
@@ -303,6 +322,9 @@ export function ChannelSetupConsole(): JSX.Element {
           <button type="button" onClick={() => void fetchMappedChannels(caseId, playerId)}>
             Refresh Mapping
           </button>
+          <a href={playTestUrl} style={{ display: 'inline-flex', alignItems: 'center' }}>
+            Open Play Session With This Mapping
+          </a>
         </div>
       </div>
 

@@ -1,80 +1,62 @@
 {
-  "generatedAt": "2026-03-21T14:11:25.183Z",
-  "mode": "execute",
+  "generatedAt": "2026-03-24T21:51:54.841Z",
+  "mode": "dry-run",
   "jobsPath": "C:\\Users\\grump\\MyHorrorStory\\docs\\operations\\openclaw-arg-reframe-jobs.json",
-  "strictStructuredOutput": false,
+  "strictStructuredOutput": true,
   "maxRetries": 2,
   "jobsConsidered": 6,
   "jobsSelected": 6,
-  "executed": 6,
-  "succeeded": 6,
+  "executed": 0,
+  "succeeded": 0,
   "failed": 0,
   "results": [
     {
       "id": "arg-reframe-job-1",
       "taskTitle": "ARG Architecture Validation",
       "botId": "AI-Executive-Orchestrator",
-      "status": "success",
-      "attempts": 1,
-      "exitCode": 0,
-      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected token 's', ...\"skTitle\": string,\n  \"... is not valid JSON).",
-      "assistantMessage": "The given text appears to be a collection of functions from the Maturity Report or another application that seems to be used in an architecture review context. I will attempt to break down and analyze this code snippet.\n\nHere's a simplified, structured overview:\n\n### Functions\n\n1. **`gateway`**: Not described in detail but could involve restarting the application, reloading configuration, etc.\n2. **`agents_list`**: List of OpenClaw agent ids that have been spawned by `sessions_spawn`.\n3. **`subagents`**: List of spawns made via `subagents`, including options like targeting specific agents or subprocesses.\n4. **`session_status`**: Displays a status card for the session being monitored, including time spent and cost incurred.\n5. **`web_search`**: A function to search the web using Brave Search API, specifically looking into the current region and language.\n\n### Functions with specific inputs/output information\n\n1. `tts`: Converts text to speech.\n2. `memory_get`: Safely reads a part of an archived data (`MEMORY.md`) for certain lines or words at specific path lengths if needed.\n3. `web_fetch`: Retrieves readable content from the provided URL, possibly extracting markdown from it (although detailed parsing is left out).\n4. `session_spawn`: Spawns an isolated session and allows you to target that session using a label.\n\n### Output format\n\nAll of these functions seem to return JSON, which fits in with a standard output for applications dealing with information processing or output analysis:\n\n```json\n{\n  \"taskTitle\": string,\n  \"generatedCount\": number,\n  \"failedCount\": number,\n  \"skippedCount\": number,\n  \"blockers\": string[],\n  \"notes\": string[]\n}\n```\n\nThe task title could be described as follows: an overview of tasks that need to ensure ARG campaign outputs match the applications, schema integrity, completeness (28-day), and continuity across apps/web/public/content/arg/*.\n\nIn terms of specific code snippet interpretation, it's hard without a complete analysis of the context in which these functions were written.",
-      "summary": null
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
     },
     {
       "id": "arg-reframe-job-2",
       "taskTitle": "Narrative Continuity Pass",
       "botId": "AI-Story-Engine-Agent",
-      "status": "success",
-      "attempts": 1,
-      "exitCode": 0,
-      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected token 'p', \"python\n# .\"... is not valid JSON).",
-      "assistantMessage": "It seems like you've provided a massive chunk of code, and I'll try to summarize what appears to be relevant information for me:\n\n\nYou had several tasks or functions execute in the background:\n\n1. `memory_search` function: A mandatory recall step that searches MEMORY.md + memory/*.md files for snippets related to prior work, decisions, dates, people, preferences, or todos.\n2. `web_fetch` and `web_search` functions: Used for web-related tasks, such as searching the web using Brave Search API and fetching content from URLs.\n\nAdditionally, there were more functions that don't seem to be directly executable by me but might belong to other parts of your AI system or codebase:\n\n\n```python\n# ... other unnamed functions ...\n\nsubagents_list = {}  # This might represent a list of sub-agents spawned for the requester session.\n... \nsession_status = {}   # This could be part of some session-related management or reporting process.\n```",
-      "summary": null
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
     },
     {
       "id": "arg-reframe-job-3",
       "taskTitle": "Artifact Prompt Quality Pass",
       "botId": "AI-Media-Pipeline-Agent",
-      "status": "success",
-      "attempts": 1,
-      "exitCode": 0,
-      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected token 'T', \"The provid\"... is not valid JSON).",
-      "assistantMessage": "The provided text appears to be a long piece of code from an AI-Powered Media Pipeline. It contains various functions and variables related to content creation, processing, caching, security, user management, audio and video manipulation, and workflow optimization.\n\nHere's a breakdown of some specific features I found:\n\n- Functions:\n  - `web_fetch`: A function used for fetching data from web pages.\n  - `memory_search`: A function that searches through memory documents for snippets related to a query.\n  - `session_status`: A function that shows the session status card, including time and cost.\n  - `tts_convert`: A function that converts text to speech or vice versa.\n\n- Functions:\n\n  | Function Name    | Description                        |\n  | :--------------  | :--------------------------------  |\n  | web_fetch        | Fetches and extracts readable content|\n  | memory_search   | Mandates recall step, semantically searches |\n  | memory_get     | Safely reads snippets from memory documents.\n\nLet me know if you'd like more information about specific functions or if you have any questions about the code.",
-      "summary": null
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
     },
     {
       "id": "arg-reframe-job-4",
       "taskTitle": "NPC Dialogue Immersion Pass",
       "botId": "AI-Story-Engine-Agent",
-      "status": "success",
-      "attempts": 1,
-      "exitCode": 0,
-      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected token 's', ...\"skTitle\": string, \"g\"... is not valid JSON).",
-      "assistantMessage": "Based on the log message, it appears that a system is being used to validate dialogue prompts for an NPC (Non-Player Character) in a game or simulation. Here's a breakdown of what each part might be doing:\n\n* `[Sat 2026-03-21 14:08 UTC]`: This is a timestamp indicating the date and time when something occurred.\n* `You are AI-Story-Engine-Agent`: This is a notification message being sent to you, the AI system. \"Validating\" suggests that another entity (likely a human game developer or simulator) is interacting with your system.\n\nNow, let's dive into what each part of the message might be describing:\n\n1. `Validate npc_dialogue_system_prompts.json files`: This suggests that an action is being taken to examine and review dialogue prompts defined in a file named `npc_dialogue_system_prompts.json`. This file likely contains information about how NPCs are programmed, including parameters for fidelity, deception, awareness of players, and immersion.\n2. `{ \"taskTitle\": string, \"generatedCount\": number, \"failedCount\": number, \"skippedCount\": number, \"blockers\": string[], \"notes\": string[] }`: This is a JSON object describing the outcome of this action. The keys indicate what might be happening:\n\t* `taskTitle`: The title assigned to this task.\n\t* `generatedCount`: The total count of tasks that were completed successfully (i.e., with no blockers or notes).\n\t* `failedCount`: The number of tasks that were attempted but did not complete correctly due to blockers (e.g., invalid arguments, incorrect parameters).\n\t* `skippedCount`: The number of tasks that were skipped (i.e., failed) because they encountered blocking issues.\n\t* `blockers`: A list of errors or failures that occurred during task attempts. These might include syntax or logical errors, missing required data, etc.\n\t* `notes`: Any additional descriptive text related to the outcome.\n\nIf the goal is to ensure the dialogue system's NPC prompts are valid and functioning correctly, this message would likely provide insights into where issues arose (blockers) and what caused them.",
-      "summary": null
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
     },
     {
       "id": "arg-reframe-job-5",
       "taskTitle": "Web Runtime Compatibility Pass",
       "botId": "AI-Web-App-Agent",
-      "status": "success",
-      "attempts": 1,
-      "exitCode": 0,
-      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected token 'I', \"It seems l\"... is not valid JSON).",
-      "assistantMessage": "It seems like you've provided a long text that appears to be some kind of output from an application or service. The content is mostly technical in nature, with various functions and features explained.\n\nHere's a breakdown of the different parts:\n\n**Functions**\n\n* `tts`: Converts text to speech\n* `session_status`: Shows a `/status-equivalent session status card`, but this seems to be related to verifying /play runtime against compatibility packages.\n* `web_fetch`: Fetches and extracts readable content from a URL, possible for web page scraping or research.\n\n**Session Status**\n\nThis section appears to be a confirmation of the verification result for `/play runtime` against generated compatibility packages. It specifically mentions:\n\n* Confirming the storyline has 28 beats (one per day)\n* Verifying message interactions are rendered with options\n\n**Miscellaneous**\n\nThe rest of the text seems to be a series of API calls and responses from various services or tools, likely related to development, testing, or debugging.\n\nIf you're looking for specific information or details about this output, I'd suggest breaking it down into sections or components that are relevant to your query.",
-      "summary": null
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
     },
     {
       "id": "arg-reframe-job-6",
       "taskTitle": "ARG End-to-End QA Smoke",
       "botId": "AI-Quality-Agent",
-      "status": "success",
-      "attempts": 1,
-      "exitCode": 0,
-      "errorSummary": "Assistant message did not contain parseable JSON summary (Unexpected token 'B', \"Based on t\"... is not valid JSON).",
-      "assistantMessage": "Based on the text you provided, it appears to be a large, unformatted block of code snippets. To provide an answer that makes sense of it, I'll try to break down some specific parts and identify what you're asking for.\n\nThe text seems to contain various functions, variables, and commands related to:\n\n1. **API Integration**: It mentions API calls, such as `tts`, `sessions_send`, `web_fetch`, and possibly `session_status`.\n2. **Session Management**: There are references to sessions, agents, subagents, and session keys.\n3. **Web Search**: The text includes web search functions like `web_search` and `web_fetch`.\n\nTo give you a specific answer related to one of these topics:\n\n* **API Integration**: If you're looking for help with integrating an API or making API calls programmatically in your AI-Quality-Agent setup, I'd be happy to assist with code snippets that demonstrate how to use libraries like `tts`, `web_fetch`, etc. However, the provided snippet does not seem to provide direct context.\n\n* **Session Management**: If you're trying to manage sessions or interact with agents, particularly under a subagent framework, I can offer guidance on relevant commands and functions in AI-Quality-Agent scripting languages like Python or C++.\n\n* **Web Search**: This topic has multiple aspects. For web searching within your AI-Quality-Agent environment, please refer directly to the specified API interfaces or script snippets provided by the integration tools for more detailed information.\n\nWithout further specifics on what you're looking for, it's challenging to provide a precise answer. If I had to choose one aspect that seems most relevant based on your initial query and context, it would be:\n\nHow do I integrate an API (like `tts`, `web_fetch`) in my AI-Quality-Agent setup into specific scenarios or functions?",
-      "summary": null
+      "status": "queued",
+      "errorSummary": null,
+      "assistantMessage": null
     }
   ]
 }

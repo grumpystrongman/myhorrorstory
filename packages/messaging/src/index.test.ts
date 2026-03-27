@@ -6,7 +6,9 @@ import {
   normalizeSignalInbound,
   normalizeTelegramInbound,
   normalizeTwilioInbound,
+  normalizeWahaInbound,
   verifySignalWebhookSecret,
+  verifyWahaWebhookSecret,
   verifyTelegramSecretToken,
   verifyTwilioSignature,
   type DeliveryReceipt,
@@ -115,6 +117,22 @@ describe('webhook normalization', () => {
     expect(normalized.from).toBe('+15550009999');
     expect(normalized.text).toContain('tunnel');
   });
+
+  it('normalizes waha whatsapp payload', () => {
+    const normalized = normalizeWahaInbound({
+      event: 'message',
+      payload: {
+        id: 'wa_1',
+        from: '18127810028@c.us',
+        body: 'Y',
+        timestamp: 1710000200
+      }
+    });
+
+    expect(normalized.channel).toBe('WHATSAPP');
+    expect(normalized.from).toBe('whatsapp:18127810028@c.us');
+    expect(normalized.text).toBe('Y');
+  });
 });
 
 describe('signature verification', () => {
@@ -163,6 +181,21 @@ describe('signature verification', () => {
     expect(
       verifySignalWebhookSecret({
         expectedSecret: 'signal-secret',
+        receivedSecret: 'wrong-secret'
+      })
+    ).toBe(false);
+  });
+
+  it('verifies waha webhook secret', () => {
+    expect(
+      verifyWahaWebhookSecret({
+        expectedSecret: 'waha-secret',
+        receivedSecret: 'waha-secret'
+      })
+    ).toBe(true);
+    expect(
+      verifyWahaWebhookSecret({
+        expectedSecret: 'waha-secret',
         receivedSecret: 'wrong-secret'
       })
     ).toBe(false);

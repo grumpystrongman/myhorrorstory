@@ -16,17 +16,22 @@ export default function RootLayout({ children }: { children: ReactNode }): JSX.E
         <div className="site-shell">
           <header className="site-header">
             <div className="container site-header-inner">
-              <a className="brand-mark" href="/">
-                MyHorrorStory
-              </a>
-              <nav className="site-nav" aria-label="Primary">
-                <a href="/onboarding">Onboarding Funnel</a>
-                <a href="/library">Case Library</a>
-                <a href="/play">Play Session UI</a>
-                <a href="/artwork">Artwork Gallery</a>
-                <a href="/dashboard">User Dashboard</a>
-                <a href="/codex">Codex Control Room</a>
-              </nav>
+              <div className="site-header-main">
+                <a className="brand-mark" href="/">
+                  MyHorrorStory
+                </a>
+                <nav className="site-nav" aria-label="Primary">
+                  <a href="/onboarding">Onboarding Funnel</a>
+                  <a href="/library">Case Library</a>
+                  <a href="/play">Play Session UI</a>
+                  <a href="/artwork">Artwork Gallery</a>
+                  <a href="/dashboard">User Dashboard</a>
+                  <a href="/codex">Codex Control Room</a>
+                </nav>
+              </div>
+              <Suspense fallback={null}>
+                <SoundtrackPlayer />
+              </Suspense>
             </div>
           </header>
 
@@ -44,9 +49,6 @@ export default function RootLayout({ children }: { children: ReactNode }): JSX.E
             </div>
           </footer>
         </div>
-        <Suspense fallback={null}>
-          <SoundtrackPlayer />
-        </Suspense>
       </body>
     </html>
   );

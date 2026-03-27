@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-24T15:22:09.495Z",
+  "generatedAt": "2026-03-24T17:08:42.128Z",
   "planPath": "assets/manifests/commercial-agent-army-plan.json",
   "statusLedgerPath": "apps/web/public/agent-army/status/generation-status.json",
   "filters": {
     "storyId": null,
     "assetId": null,
     "modality": "video",
-    "scope": "website",
+    "scope": null,
     "imageBackend": "auto",
     "regenerate": true,
     "start": 0,
@@ -16,15 +16,15 @@
     "concurrency": 1
   },
   "planned": 792,
-  "selected": 7,
-  "generated": 7,
+  "selected": 150,
+  "generated": 150,
   "skippedExisting": 0,
   "failed": 0,
   "unavailable": 0,
   "byModality": {
     "video": {
-      "selected": 7,
-      "generated": 7,
+      "selected": 150,
+      "generated": 150,
       "skipped": 0,
       "failed": 0,
       "unavailable": 0
@@ -32,7 +32,7 @@
   },
   "issues": [],
   "catalog": {
-    "generatedAt": "2026-03-24T15:22:09.439Z",
+    "generatedAt": "2026-03-24T17:08:42.093Z",
     "totals": {
       "stories": 12,
       "completeAssets": 783,

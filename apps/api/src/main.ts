@@ -1,8 +1,10 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { AppModule } from './app.module.js';
+import { loadRuntimeEnv } from './common/load-runtime-env.js';
 
 async function bootstrap(): Promise<void> {
+  loadRuntimeEnv();
   const app = await NestFactory.create(AppModule);
 
   app.useGlobalPipes(

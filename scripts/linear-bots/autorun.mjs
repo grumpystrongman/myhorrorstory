@@ -1,5 +1,5 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
-import { createWriteStream } from 'node:fs';
+import { createWriteStream, existsSync, readFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
@@ -34,6 +34,35 @@ const DEFAULT_PIPELINE = ['corepack pnpm linear:bots:apply'];
 const AUTO_REPORT_PATH = join('docs', 'operations', 'linear-autorun-report.md');
 const AUTO_STATE_PATH = join('docs', 'operations', 'linear-autorun-state.json');
 const AUTO_LOG_DIR = join('logs', 'linear-autorun');
+
+function loadEnvFile(path) {
+  if (!existsSync(path)) {
+    return;
+  }
+  const raw = readFileSync(path, 'utf8').replace(/^\uFEFF/, '');
+  for (const line of raw.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) {
+      continue;
+    }
+    const equalsIndex = trimmed.indexOf('=');
+    if (equalsIndex <= 0) {
+      continue;
+    }
+    const key = trimmed.slice(0, equalsIndex).trim();
+    if (!key || process.env[key]) {
+      continue;
+    }
+    let value = trimmed.slice(equalsIndex + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    process.env[key] = value;
+  }
+}
+
+loadEnvFile('.env');
+loadEnvFile('.env.local');
 
 function parseInteger(input, fallback) {
   const parsed = Number.parseInt(String(input), 10);

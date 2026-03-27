@@ -237,6 +237,7 @@ async function discoverTelegramChatId() {
 }
 
 function loadDefaultEnv() {
+  loadEnvFile(resolve(repoRoot, '.secrets', 'communications.env'));
   loadEnvFile(resolve(repoRoot, '.env.local'));
   loadEnvFile(resolve(repoRoot, '.env'));
 }
@@ -340,6 +341,8 @@ async function main() {
     isConfigured(env.TWILIO_AUTH_TOKEN) &&
     isConfigured(env.TWILIO_SMS_FROM) &&
     isConfigured(env.TWILIO_WHATSAPP_FROM);
+  const smsGatewayReady = isConfigured(env.SMS_GATEWAY_URL);
+  const wahaReady = isConfigured(env.WHATSAPP_WAHA_URL);
   const telegramReady = isConfigured(env.TELEGRAM_BOT_TOKEN) && isConfigured(telegramChatId);
 
   printSection('MyHorrorStory Messaging Connect');
@@ -349,6 +352,8 @@ async function main() {
   console.log(`Target phone:         ${phone}`);
   console.log(`Requested channels:   ${requestedChannels.join(', ')}`);
   console.log(`Twilio configured:    ${twilioReady ? 'yes' : 'no'}`);
+  console.log(`SMS gateway:          ${smsGatewayReady ? 'yes' : 'no'}`);
+  console.log(`WAHA gateway:         ${wahaReady ? 'yes' : 'no'}`);
   console.log(`Telegram configured:  ${telegramReady ? 'yes' : 'no'}`);
   console.log(`Telegram bot token:   ${maskToken(env.TELEGRAM_BOT_TOKEN)}`);
   console.log(`Telegram chat id:     ${telegramChatId ? telegramChatId : '<missing>'}`);
@@ -358,8 +363,8 @@ async function main() {
 
   for (const channel of requestedChannels) {
     if (channel === 'SMS') {
-      if (!twilioReady) {
-        skipped.push('SMS (Twilio env not configured)');
+      if (!twilioReady && !smsGatewayReady) {
+        skipped.push('SMS (Twilio or SMS gateway env not configured)');
         continue;
       }
       contacts.push({ channel, address: phone, optIn: true });
@@ -367,8 +372,8 @@ async function main() {
     }
 
     if (channel === 'WHATSAPP') {
-      if (!twilioReady) {
-        skipped.push('WHATSAPP (Twilio env not configured)');
+      if (!twilioReady && !wahaReady) {
+        skipped.push('WHATSAPP (Twilio or WAHA env not configured)');
         continue;
       }
       contacts.push({ channel, address: `whatsapp:${phone}`, optIn: true });

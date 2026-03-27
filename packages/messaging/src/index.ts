@@ -307,6 +307,169 @@ export class SignalMessagingProvider implements MessagingProvider {
   }
 }
 
+export interface SmsGatewayProviderOptions {
+  endpoint: string;
+  bearerToken?: string;
+  apiKey?: string;
+  timeoutMs?: number;
+}
+
+interface SmsGatewayResponse {
+  id?: string;
+  messageId?: string;
+  sid?: string;
+  acceptedAt?: string;
+}
+
+export class SmsGatewayProvider implements MessagingProvider {
+  readonly id = 'sms-gateway';
+
+  constructor(private readonly options: SmsGatewayProviderOptions) {}
+
+  supports(channel: SupportedMessagingChannel): boolean {
+    return channel === 'SMS';
+  }
+
+  async send(payload: MessagingPayload): Promise<DeliveryReceipt> {
+    if (!this.supports(payload.channel)) {
+      throw new Error(`SMS gateway provider does not support channel ${payload.channel}`);
+    }
+
+    const endpoint = this.options.endpoint.replace(/\/$/, '');
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json'
+    };
+    if (this.options.bearerToken) {
+      headers.Authorization = `Bearer ${this.options.bearerToken}`;
+    }
+    if (this.options.apiKey) {
+      headers['x-api-key'] = this.options.apiKey;
+    }
+
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        to: payload.to,
+        text: payload.text,
+        mediaUrls: payload.mediaUrls ?? [],
+        metadata: payload.metadata ?? {}
+      }),
+      signal: AbortSignal.timeout(this.options.timeoutMs ?? 20_000)
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`SMS gateway send failed (${response.status}): ${errorText}`);
+    }
+
+    let data: SmsGatewayResponse = {};
+    try {
+      data = (await response.json()) as SmsGatewayResponse;
+    } catch {
+      data = {};
+    }
+
+    return {
+      provider: this.id,
+      channel: payload.channel,
+      to: payload.to,
+      externalMessageId: data.messageId ?? data.id ?? data.sid ?? `sms-gateway-${Date.now()}`,
+      acceptedAt: data.acceptedAt ?? new Date().toISOString()
+    };
+  }
+}
+
+export interface WahaWhatsAppProviderOptions {
+  baseUrl: string;
+  session: string;
+  apiKey?: string;
+  bearerToken?: string;
+  timeoutMs?: number;
+}
+
+interface WahaSendResponse {
+  id?: string;
+  messageId?: string;
+}
+
+function toWhatsAppChatId(address: string): string {
+  const withoutPrefix = address.replace(/^whatsapp:/i, '').trim();
+  if (!withoutPrefix) {
+    throw new Error('WAHA destination is missing.');
+  }
+  if (withoutPrefix.endsWith('@c.us') || withoutPrefix.endsWith('@s.whatsapp.net')) {
+    return withoutPrefix;
+  }
+  const digits = withoutPrefix.replace(/[^\d]/g, '');
+  if (!digits) {
+    throw new Error(`Unable to normalize WhatsApp destination "${address}"`);
+  }
+  return `${digits}@c.us`;
+}
+
+export class WahaWhatsAppProvider implements MessagingProvider {
+  readonly id = 'waha';
+
+  constructor(private readonly options: WahaWhatsAppProviderOptions) {}
+
+  supports(channel: SupportedMessagingChannel): boolean {
+    return channel === 'WHATSAPP';
+  }
+
+  async send(payload: MessagingPayload): Promise<DeliveryReceipt> {
+    if (!this.supports(payload.channel)) {
+      throw new Error(`WAHA provider does not support channel ${payload.channel}`);
+    }
+
+    const endpoint = `${this.options.baseUrl.replace(/\/$/, '')}/api/sendText`;
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json'
+    };
+    if (this.options.apiKey) {
+      headers['x-api-key'] = this.options.apiKey;
+    }
+    if (this.options.bearerToken) {
+      headers.Authorization = `Bearer ${this.options.bearerToken}`;
+    }
+
+    const mediaSuffix =
+      payload.mediaUrls && payload.mediaUrls.length > 0
+        ? `\n\nMedia:\n${payload.mediaUrls.join('\n')}`
+        : '';
+    const response = await fetch(endpoint, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        session: this.options.session,
+        chatId: toWhatsAppChatId(payload.to),
+        text: `${payload.text}${mediaSuffix}`
+      }),
+      signal: AbortSignal.timeout(this.options.timeoutMs ?? 20_000)
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`WAHA send failed (${response.status}): ${errorText}`);
+    }
+
+    let data: WahaSendResponse = {};
+    try {
+      data = (await response.json()) as WahaSendResponse;
+    } catch {
+      data = {};
+    }
+
+    return {
+      provider: this.id,
+      channel: payload.channel,
+      to: payload.to,
+      externalMessageId: data.messageId ?? data.id ?? `waha-${Date.now()}`,
+      acceptedAt: new Date().toISOString()
+    };
+  }
+}
+
 export class MessagingRouter {
   constructor(private readonly providers: MessagingProvider[]) {}
 
@@ -345,6 +508,34 @@ export interface MessagingEnvironment {
   SIGNAL_GATEWAY_URL?: string;
   SIGNAL_ACCOUNT?: string;
   SIGNAL_BEARER_TOKEN?: string;
+  SMS_GATEWAY_URL?: string;
+  SMS_GATEWAY_BEARER_TOKEN?: string;
+  SMS_GATEWAY_API_KEY?: string;
+  WHATSAPP_WAHA_URL?: string;
+  WHATSAPP_WAHA_SESSION?: string;
+  WHATSAPP_WAHA_API_KEY?: string;
+  WHATSAPP_WAHA_BEARER_TOKEN?: string;
+  MESSAGING_ENABLE_CONSOLE_FALLBACK?: string;
+}
+
+function isConfiguredCredential(value: string | undefined): boolean {
+  if (!value) {
+    return false;
+  }
+
+  const normalized = value.trim().toLowerCase();
+  if (!normalized) {
+    return false;
+  }
+
+  return !(
+    normalized.startsWith('replace') ||
+    normalized.startsWith('your_') ||
+    normalized.includes('replace') ||
+    normalized.includes('changeme') ||
+    normalized.includes('example') ||
+    normalized.includes('placeholder')
+  );
 }
 
 export function createDefaultMessagingProviders(
@@ -352,11 +543,14 @@ export function createDefaultMessagingProviders(
 ): MessagingProvider[] {
   const providers: MessagingProvider[] = [];
 
-  if (env.TWILIO_ACCOUNT_SID && env.TWILIO_AUTH_TOKEN) {
+  if (
+    isConfiguredCredential(env.TWILIO_ACCOUNT_SID) &&
+    isConfiguredCredential(env.TWILIO_AUTH_TOKEN)
+  ) {
     providers.push(
       new TwilioMessagingProvider({
-        accountSid: env.TWILIO_ACCOUNT_SID,
-        authToken: env.TWILIO_AUTH_TOKEN,
+        accountSid: env.TWILIO_ACCOUNT_SID!,
+        authToken: env.TWILIO_AUTH_TOKEN!,
         smsFrom: env.TWILIO_SMS_FROM,
         whatsappFrom: env.TWILIO_WHATSAPP_FROM,
         statusCallbackUrl: env.TWILIO_STATUS_CALLBACK_URL
@@ -364,27 +558,54 @@ export function createDefaultMessagingProviders(
     );
   }
 
-  if (env.TELEGRAM_BOT_TOKEN) {
+  if (isConfiguredCredential(env.WHATSAPP_WAHA_URL)) {
+    providers.push(
+      new WahaWhatsAppProvider({
+        baseUrl: env.WHATSAPP_WAHA_URL!,
+        session: env.WHATSAPP_WAHA_SESSION ?? 'default',
+        apiKey: env.WHATSAPP_WAHA_API_KEY,
+        bearerToken: env.WHATSAPP_WAHA_BEARER_TOKEN
+      })
+    );
+  }
+
+  if (isConfiguredCredential(env.TELEGRAM_BOT_TOKEN)) {
     providers.push(
       new TelegramMessagingProvider({
-        botToken: env.TELEGRAM_BOT_TOKEN,
+        botToken: env.TELEGRAM_BOT_TOKEN!,
         parseMode: env.TELEGRAM_PARSE_MODE,
         disableNotification: env.TELEGRAM_DISABLE_NOTIFICATION === 'true'
       })
     );
   }
 
-  if (env.SIGNAL_GATEWAY_URL && env.SIGNAL_ACCOUNT) {
+  if (
+    isConfiguredCredential(env.SIGNAL_GATEWAY_URL) &&
+    isConfiguredCredential(env.SIGNAL_ACCOUNT)
+  ) {
     providers.push(
       new SignalMessagingProvider({
-        gatewayUrl: env.SIGNAL_GATEWAY_URL,
-        account: env.SIGNAL_ACCOUNT,
+        gatewayUrl: env.SIGNAL_GATEWAY_URL!,
+        account: env.SIGNAL_ACCOUNT!,
         bearerToken: env.SIGNAL_BEARER_TOKEN
       })
     );
   }
 
-  providers.push(new ConsoleMessagingProvider());
+  if (isConfiguredCredential(env.SMS_GATEWAY_URL)) {
+    providers.push(
+      new SmsGatewayProvider({
+        endpoint: env.SMS_GATEWAY_URL!,
+        bearerToken: env.SMS_GATEWAY_BEARER_TOKEN,
+        apiKey: env.SMS_GATEWAY_API_KEY
+      })
+    );
+  }
+
+  if (env.MESSAGING_ENABLE_CONSOLE_FALLBACK?.trim().toLowerCase() === 'true') {
+    providers.push(new ConsoleMessagingProvider());
+  }
+
   return providers;
 }
 
@@ -470,6 +691,19 @@ export function verifyTelegramSecretToken(input: {
 }
 
 export function verifySignalWebhookSecret(input: {
+  expectedSecret?: string;
+  receivedSecret?: string | null;
+}): boolean {
+  if (!input.expectedSecret) {
+    return true;
+  }
+  if (!input.receivedSecret) {
+    return false;
+  }
+  return safeCompareString(input.expectedSecret, input.receivedSecret);
+}
+
+export function verifyWahaWebhookSecret(input: {
   expectedSecret?: string;
   receivedSecret?: string | null;
 }): boolean {
@@ -600,6 +834,54 @@ export function normalizeSignalInbound(payload: SignalInboundEnvelope): Normaliz
     receivedAt: typeof timestamp === 'number' ? toIsoFromTimestampMaybeSeconds(timestamp) : new Date().toISOString(),
     metadata: {
       groupId: groupId ?? ''
+    },
+    raw: payload
+  };
+}
+
+interface WahaInboundEnvelope {
+  id?: string;
+  from?: string;
+  body?: string;
+  text?: string;
+  timestamp?: number;
+  event?: string;
+  message?: {
+    id?: string;
+    from?: string;
+    body?: string;
+    text?: string;
+    timestamp?: number;
+  };
+  payload?: {
+    id?: string;
+    from?: string;
+    body?: string;
+    text?: string;
+    timestamp?: number;
+  };
+}
+
+export function normalizeWahaInbound(payload: WahaInboundEnvelope): NormalizedInboundMessage {
+  const source = payload.message ?? payload.payload ?? payload;
+  const from = source.from ?? payload.from ?? '';
+  const text = source.body ?? source.text ?? payload.body ?? payload.text ?? '';
+  const timestamp = source.timestamp ?? payload.timestamp;
+
+  if (!from || !text) {
+    throw new Error('waha_payload_invalid');
+  }
+
+  const normalizedFrom = from.startsWith('whatsapp:') ? from : `whatsapp:${from}`;
+
+  return {
+    channel: 'WHATSAPP',
+    from: normalizedFrom,
+    text,
+    externalMessageId: source.id ?? payload.id,
+    receivedAt: typeof timestamp === 'number' ? toIsoFromTimestampMaybeSeconds(timestamp) : new Date().toISOString(),
+    metadata: {
+      event: payload.event ?? ''
     },
     raw: payload
   };

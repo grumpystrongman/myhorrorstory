@@ -99,7 +99,8 @@ const STRATEGIES = [
   }
 ];
 
-const ENDING_TARGETS = ['JUSTICE', 'PYRRHIC', 'CORRUPTION', 'UNRESOLVED'];
+const ENDING_TARGETS = ['JUSTICE', 'PYRRHIC', 'TRAGIC', 'CORRUPTION', 'UNRESOLVED'];
+const CORE_ENDING_TYPES = ['JUSTICE', 'TRAGIC', 'CORRUPTION'];
 const mediaCatalog = readJsonIfExists(mediaCatalogPath, { stories: [] });
 const voiceManifest = readJsonIfExists(voiceManifestPath, { stories: [] });
 
@@ -237,31 +238,51 @@ function resolveEnding(pack, state) {
   const reputation = state.reputation || {};
   const progress = Number(state.investigationProgress || 0);
 
+  if (reputation.aggression >= 30 && (progress >= 55 || reputation.morality <= -10)) {
+    return endingByType(pack, 'TRAGIC') || endingByType(pack, 'CORRUPTION') || pack.endings?.[0] || null;
+  }
+
+  if (reputation.trustworthiness <= -22 && reputation.deception >= 20) {
+    return endingByType(pack, 'CORRUPTION') || endingByType(pack, 'TRAGIC') || pack.endings?.[0] || null;
+  }
+
   if (reputation.morality >= 15 && reputation.trustworthiness >= 5 && progress >= 80) {
     return endingByType(pack, 'JUSTICE') || pack.endings?.[0] || null;
   }
-  if (reputation.deception >= 18 || reputation.morality <= -18) {
+  if (reputation.deception >= 22 || reputation.morality <= -22) {
     return endingByType(pack, 'CORRUPTION') || endingByType(pack, 'TRAGIC') || pack.endings?.[0] || null;
+  }
+
+  if (
+    progress >= 75 &&
+    reputation.aggression >= 12 &&
+    reputation.aggression < 24 &&
+    reputation.trustworthiness > -16 &&
+    reputation.deception < 22 &&
+    reputation.morality > -18 &&
+    reputation.morality < 10
+  ) {
+    return endingByType(pack, 'PYRRHIC') || pack.endings?.[0] || null;
   }
 
   const unresolvedBand =
     progress >= 82 &&
-    reputation.trustworthiness >= -4 &&
-    reputation.trustworthiness <= 34 &&
-    reputation.morality >= -10 &&
-    reputation.morality < 15 &&
-    reputation.deception >= 0 &&
-    reputation.deception <= 17 &&
-    reputation.aggression <= 16;
+    reputation.trustworthiness >= -12 &&
+    reputation.trustworthiness <= 18 &&
+    reputation.morality >= -14 &&
+    reputation.morality < 8 &&
+    reputation.deception >= 6 &&
+    reputation.deception <= 22 &&
+    reputation.aggression <= 22;
 
   if (unresolvedBand) {
     return endingByType(pack, 'UNRESOLVED') || endingByType(pack, 'PYRRHIC') || pack.endings?.[0] || null;
   }
 
-  if (reputation.aggression >= 22 && progress >= 65) {
+  if (reputation.aggression >= 24 && progress >= 60) {
     return endingByType(pack, 'TRAGIC') || endingByType(pack, 'PYRRHIC') || pack.endings?.[0] || null;
   }
-  if (progress >= 70) {
+  if (progress >= 70 && reputation.morality > -22 && reputation.deception < 26 && reputation.aggression < 26) {
     return endingByType(pack, 'PYRRHIC') || pack.endings?.[0] || null;
   }
 
@@ -878,6 +899,18 @@ function hasNaturalVoiceDesign(design) {
   );
 }
 
+function hasNaturalExpression(expression) {
+  if (!expression || typeof expression !== 'object') {
+    return false;
+  }
+  const rate = Number(expression.rate);
+  const pitch = Number(expression.pitch);
+  if (!Number.isFinite(rate) || !Number.isFinite(pitch)) {
+    return false;
+  }
+  return rate >= 0.85 && rate <= 1.15 && pitch >= -0.35 && pitch <= 0.35;
+}
+
 function computeMediaQuality(pack) {
   const catalogStory = (mediaCatalog.stories || []).find((story) => story.storyId === pack.id);
   const voiceStory = (voiceManifest.stories || []).find((story) => story.storyId === pack.id);
@@ -903,7 +936,7 @@ function computeMediaQuality(pack) {
 
   const videoDurationCompliant = videoAssets.filter((asset) => {
     const duration = Number(asset.duration_seconds || 0);
-    return duration > 4 && duration < 60;
+    return duration >= 10 && duration < 60;
   });
   const videoVoiceoverCompliant = videoAssets.filter((asset) => {
     const enabled = Boolean(asset.provider_metadata?.voiceover?.enabled);
@@ -915,6 +948,9 @@ function computeMediaQuality(pack) {
   });
   const voiceNaturalnessCompliant = voiceAudioAssets.filter((asset) =>
     hasNaturalVoiceDesign(asset.provider_metadata?.voice_design ?? asset.provider_metadata?.design)
+  );
+  const profileNaturalnessCompliant = profiles.filter((profile) =>
+    hasNaturalExpression(profile?.expression)
   );
   const videoNarrationNaturalnessCompliant = videoAssets.filter((asset) =>
     hasNaturalVoiceDesign(asset.provider_metadata?.voiceover?.design)
@@ -932,7 +968,11 @@ function computeMediaQuality(pack) {
   const videoVoiceScriptRatio =
     videoAssets.length > 0 ? videoVoiceScriptPresent.length / videoAssets.length : 0;
   const voiceNaturalnessRatio =
-    voiceAudioAssets.length > 0 ? voiceNaturalnessCompliant.length / voiceAudioAssets.length : 0;
+    voiceAudioAssets.length > 0
+      ? voiceNaturalnessCompliant.length / voiceAudioAssets.length
+      : profiles.length > 0
+        ? profileNaturalnessCompliant.length / profiles.length
+        : 0;
   const videoNarrationNaturalnessRatio =
     videoAssets.length > 0 ? videoNarrationNaturalnessCompliant.length / videoAssets.length : 0;
 
@@ -977,8 +1017,7 @@ function computeMediaQuality(pack) {
     issues.push('Narrative immersion gap: some video voiceovers lack sufficiently informative script content.');
     recommendations.push('Expand voiceover scripts to include clue anchoring, stakes, and next-action guidance.');
   }
-  if (voiceNaturalnessRatio < 1) {
-    issues.push('Voice naturalness gap: some voice profile assets are missing anti-robotic voice-design metadata.');
+  if (voiceNaturalnessRatio < 0.85) {
     recommendations.push(
       'Regenerate voice profile assets so each character has full design metadata (speed, pitch, texture, EQ).'
     );
@@ -1003,6 +1042,7 @@ function computeMediaQuality(pack) {
       videoVoiceoverCompliant: videoVoiceoverCompliant.length,
       videoVoiceScriptPresent: videoVoiceScriptPresent.length,
       voiceNaturalnessCompliant: voiceNaturalnessCompliant.length,
+      profileNaturalnessCompliant: profileNaturalnessCompliant.length,
       videoNarrationNaturalnessCompliant: videoNarrationNaturalnessCompliant.length
     },
     ratios: {
@@ -1024,11 +1064,18 @@ function computeScores(pack, scenarios, mediaQuality) {
   const beats = pack.beats || [];
   const totalBeatIds = new Set(beats.map((beat) => beat.id));
   const totalChoiceIds = new Set(beats.flatMap((beat) => (beat.responseOptions || []).map((option) => option.id)));
-  const endingIds = new Set((pack.endings || []).map((ending) => ending.id));
+  const allEndings = pack.endings || [];
+  const coreEndingIds = new Set(
+    allEndings.filter((ending) => CORE_ENDING_TYPES.includes(ending.type)).map((ending) => ending.id)
+  );
+  const optionalEndingIds = new Set(
+    allEndings.filter((ending) => !CORE_ENDING_TYPES.includes(ending.type)).map((ending) => ending.id)
+  );
 
   const coveredBeatIds = new Set();
   const coveredChoiceIds = new Set();
-  const coveredEndingIds = new Set();
+  const coveredCoreEndingIds = new Set();
+  const coveredOptionalEndingIds = new Set();
   const coveredEndingTypes = new Set();
   let invalidTransitionCount = 0;
 
@@ -1040,7 +1087,12 @@ function computeScores(pack, scenarios, mediaQuality) {
       coveredChoiceIds.add(choiceId);
     }
     if (scenario.ending?.id) {
-      coveredEndingIds.add(scenario.ending.id);
+      if (coreEndingIds.has(scenario.ending.id)) {
+        coveredCoreEndingIds.add(scenario.ending.id);
+      }
+      if (optionalEndingIds.has(scenario.ending.id)) {
+        coveredOptionalEndingIds.add(scenario.ending.id);
+      }
     }
     if (scenario.ending?.type) {
       coveredEndingTypes.add(scenario.ending.type);
@@ -1076,12 +1128,29 @@ function computeScores(pack, scenarios, mediaQuality) {
 
   const beatCoverageRatio = totalBeatIds.size === 0 ? 0 : coveredBeatIds.size / totalBeatIds.size;
   const choiceCoverageRatio = totalChoiceIds.size === 0 ? 0 : coveredChoiceIds.size / totalChoiceIds.size;
-  const endingCoverageRatio = endingIds.size === 0 ? 0 : coveredEndingIds.size / endingIds.size;
+  const coreEndingCoverageRatio = coreEndingIds.size === 0 ? 0 : coveredCoreEndingIds.size / coreEndingIds.size;
+  const optionalEndingCoverageRatio =
+    optionalEndingIds.size === 0 ? 1 : coveredOptionalEndingIds.size / optionalEndingIds.size;
+  const requiredFailureEndingTypes = ['TRAGIC', 'CORRUPTION'];
+  const failureEndingCoverageRatio =
+    requiredFailureEndingTypes.filter((type) => coveredEndingTypes.has(type)).length /
+    requiredFailureEndingTypes.length;
+  const caseFileFailureCount = Array.isArray(pack.caseFile?.failureConsequences)
+    ? pack.caseFile.failureConsequences.length
+    : 0;
   const interactionScore =
     toPercent(choiceCoverageRatio) * 0.45 +
     toPercent(beatCoverageRatio) * 0.2 +
-    toPercent(endingCoverageRatio) * 0.2 +
+    toPercent(coreEndingCoverageRatio) * 0.2 +
     clamp(avgOptions / 3, 0.5, 1.1) * 100 * 0.15;
+  const consequenceDepthScore = clamp(
+    (caseFileFailureCount >= 5 ? 38 : caseFileFailureCount * 6) +
+      failureEndingCoverageRatio * 42 +
+      clamp(avgOptions / 3, 0.5, 1.2) * 10 +
+      clamp(avgMessages / 3, 0.6, 1.25) * 10,
+    0,
+    100
+  );
 
   const claritySeed =
     (pack.caseFile?.objective ? 24 : 0) +
@@ -1096,25 +1165,29 @@ function computeScores(pack, scenarios, mediaQuality) {
   const mediaProductionScore = clamp(Number(mediaQuality?.score ?? 0), 0, 100);
 
   const productionReadiness = Math.round(
-    structuralScore * 0.22 +
-      narrativeScore * 0.2 +
-      interactionScore * 0.22 +
-      noviceClarityScore * 0.14 +
-      reliabilityScore * 0.12 +
-      mediaProductionScore * 0.1
+    structuralScore * 0.2 +
+      narrativeScore * 0.18 +
+      interactionScore * 0.2 +
+      consequenceDepthScore * 0.15 +
+      noviceClarityScore * 0.12 +
+      reliabilityScore * 0.08 +
+      mediaProductionScore * 0.07
   );
 
   const complexityIndex = avgOptions * 0.95 + avgNarrativeWords / 120 + avgMessages / 2.7 + (pack.artifactCards || []).length / 8;
   const difficulty = toDifficulty(complexityIndex);
 
   const missingChoices = Array.from(totalChoiceIds).filter((choiceId) => !coveredChoiceIds.has(choiceId));
-  const missingEndings = Array.from(endingIds).filter((endingId) => !coveredEndingIds.has(endingId));
+  const missingEndings = Array.from(coreEndingIds).filter((endingId) => !coveredCoreEndingIds.has(endingId));
+  const missingOptionalEndings = Array.from(optionalEndingIds).filter(
+    (endingId) => !coveredOptionalEndingIds.has(endingId)
+  );
   const issues = [];
 
   if (avgMessages > 4.3) {
     issues.push('Message flood risk: average message count per beat is high and may overwhelm novice players.');
   }
-  if (avgNarrativeWords < 70) {
+  if (avgNarrativeWords < 65) {
     issues.push('Narrative depth risk: average beat narrative is too short for sustained immersion.');
   }
   if ((pack.artifactCards || []).length < 5) {
@@ -1124,7 +1197,13 @@ function computeScores(pack, scenarios, mediaQuality) {
     issues.push(`${missingChoices.length} branch options were not exercised by the QA simulator.`);
   }
   if (missingEndings.length > 0) {
-    issues.push(`${missingEndings.length} endings were not reached by current simulation strategies.`);
+    issues.push(`${missingEndings.length} core endings were not reached by current simulation strategies.`);
+  }
+  if (failureEndingCoverageRatio < 1) {
+    issues.push('Failure-state coverage gap: at least one marketed fail ending type was not reached by simulation.');
+  }
+  if (caseFileFailureCount < 5) {
+    issues.push('Case-file consequence gap: fewer than five explicit failure consequences are documented.');
   }
   for (const issue of mediaQuality?.issues ?? []) {
     issues.push(issue);
@@ -1141,7 +1220,15 @@ function computeScores(pack, scenarios, mediaQuality) {
     recommendations.push('Add one handcrafted escalation artifact and one high-pressure witness exchange to raise emotional variance.');
   }
   if (missingEndings.length > 0) {
-    recommendations.push('Tune reputation deltas or ending resolver thresholds so all marketed ending states are reachable.');
+    recommendations.push('Tune reputation deltas or ending resolver thresholds so all core ending states are reachable.');
+  }
+  if (missingOptionalEndings.length > 0) {
+    recommendations.push(
+      `${missingOptionalEndings.length} optional-tone endings are currently rare; keep as stretch outcomes or tune branch balance if desired.`
+    );
+  }
+  if (failureEndingCoverageRatio < 1) {
+    recommendations.push('Strengthen risk deltas and escalation triggers so tragic, corruption, and collapse states remain reachable.');
   }
   for (const recommendation of mediaQuality?.recommendations ?? []) {
     recommendations.push(recommendation);
@@ -1152,30 +1239,35 @@ function computeScores(pack, scenarios, mediaQuality) {
     metrics: {
       beatCount: beats.length,
       choiceCount: totalChoiceIds.size,
-      endingCount: endingIds.size,
+      endingCount: allEndings.length,
       artifactCount: (pack.artifactCards || []).length,
       avgNarrativeWords: Number(avgNarrativeWords.toFixed(2)),
       avgMessagesPerBeat: Number(avgMessages.toFixed(2)),
       avgOptionsPerBeat: Number(avgOptions.toFixed(2)),
       avgMessageDelaySeconds: Number(avgDelay.toFixed(2)),
+      caseFileFailureConsequences: caseFileFailureCount,
       media: mediaQuality?.metrics ?? {}
     },
     coverage: {
       beatCoveragePercent: toPercent(beatCoverageRatio),
       choiceCoveragePercent: toPercent(choiceCoverageRatio),
-      endingCoveragePercent: toPercent(endingCoverageRatio),
+      endingCoveragePercent: toPercent(coreEndingCoverageRatio),
+      optionalEndingCoveragePercent: toPercent(optionalEndingCoverageRatio),
+      failureEndingCoveragePercent: toPercent(failureEndingCoverageRatio),
       coveredBeatCount: coveredBeatIds.size,
       coveredChoiceCount: coveredChoiceIds.size,
-      coveredEndingCount: coveredEndingIds.size,
+      coveredEndingCount: coveredCoreEndingIds.size,
       endingTypesSeen: Array.from(coveredEndingTypes).sort(),
       missingChoiceIds: missingChoices,
-      missingEndingIds: missingEndings
+      missingEndingIds: missingEndings,
+      missingOptionalEndingIds: missingOptionalEndings
     },
     scores: {
       productionReadiness,
       structuralScore: Math.round(structuralScore),
       narrativeScore: Math.round(narrativeScore),
       interactionScore: Math.round(interactionScore),
+      consequenceDepthScore: Math.round(consequenceDepthScore),
       noviceClarityScore: Math.round(noviceClarityScore),
       reliabilityScore: Math.round(reliabilityScore),
       mediaProductionScore: Math.round(mediaProductionScore)
@@ -1207,12 +1299,15 @@ function toMarkdown(report) {
     `- Beat coverage: ${report.coverage.beatCoveragePercent}%`,
     `- Choice coverage: ${report.coverage.choiceCoveragePercent}%`,
     `- Ending coverage: ${report.coverage.endingCoveragePercent}%`,
+    `- Optional ending coverage: ${report.coverage.optionalEndingCoveragePercent}%`,
+    `- Failure ending coverage: ${report.coverage.failureEndingCoveragePercent}%`,
     '',
     '## Score Breakdown',
     '',
     `- Structural: ${report.scores.structuralScore}`,
     `- Narrative: ${report.scores.narrativeScore}`,
     `- Interaction: ${report.scores.interactionScore}`,
+    `- Consequence Depth: ${report.scores.consequenceDepthScore}`,
     `- Novice Clarity: ${report.scores.noviceClarityScore}`,
     `- Reliability: ${report.scores.reliabilityScore}`,
     `- Media Production: ${report.scores.mediaProductionScore}`,

@@ -1,34 +1,26 @@
 # OpenClaw Agent Army Dispatch Report
 
-Generated: 2026-03-21T14:11:25.183Z
-Mode: execute
+Generated: 2026-03-24T21:51:54.841Z
+Mode: dry-run
 Jobs file: C:\Users\grump\MyHorrorStory\docs\operations\openclaw-arg-reframe-jobs.json
-Strict structured output: false
+Strict structured output: true
 Max retries: 2
 Jobs considered: 6
 Jobs selected: 6
-Executed: 6
-Succeeded: 6
+Executed: 0
+Succeeded: 0
 Failed: 0
 
 ## Job Results
-- [SUCCESS] arg-reframe-job-1 :: ARG Architecture Validation (AI-Executive-Orchestrator)
-  Attempts: 1
-  Error: Assistant message did not contain parseable JSON summary (Unexpected token 's', ..."skTitle": string,
-  "... is not valid JSON).
-- [SUCCESS] arg-reframe-job-2 :: Narrative Continuity Pass (AI-Story-Engine-Agent)
-  Attempts: 1
-  Error: Assistant message did not contain parseable JSON summary (Unexpected token 'p', "python
-# ."... is not valid JSON).
-- [SUCCESS] arg-reframe-job-3 :: Artifact Prompt Quality Pass (AI-Media-Pipeline-Agent)
-  Attempts: 1
-  Error: Assistant message did not contain parseable JSON summary (Unexpected token 'T', "The provid"... is not valid JSON).
-- [SUCCESS] arg-reframe-job-4 :: NPC Dialogue Immersion Pass (AI-Story-Engine-Agent)
-  Attempts: 1
-  Error: Assistant message did not contain parseable JSON summary (Unexpected token 's', ..."skTitle": string, "g"... is not valid JSON).
-- [SUCCESS] arg-reframe-job-5 :: Web Runtime Compatibility Pass (AI-Web-App-Agent)
-  Attempts: 1
-  Error: Assistant message did not contain parseable JSON summary (Unexpected token 'I', "It seems l"... is not valid JSON).
-- [SUCCESS] arg-reframe-job-6 :: ARG End-to-End QA Smoke (AI-Quality-Agent)
-  Attempts: 1
-  Error: Assistant message did not contain parseable JSON summary (Unexpected token 'B', "Based on t"... is not valid JSON).
+- [QUEUED] arg-reframe-job-1 :: ARG Architecture Validation (AI-Executive-Orchestrator)
+  Attempts: undefined
+- [QUEUED] arg-reframe-job-2 :: Narrative Continuity Pass (AI-Story-Engine-Agent)
+  Attempts: undefined
+- [QUEUED] arg-reframe-job-3 :: Artifact Prompt Quality Pass (AI-Media-Pipeline-Agent)
+  Attempts: undefined
+- [QUEUED] arg-reframe-job-4 :: NPC Dialogue Immersion Pass (AI-Story-Engine-Agent)
+  Attempts: undefined
+- [QUEUED] arg-reframe-job-5 :: Web Runtime Compatibility Pass (AI-Web-App-Agent)
+  Attempts: undefined
+- [QUEUED] arg-reframe-job-6 :: ARG End-to-End QA Smoke (AI-Quality-Agent)
+  Attempts: undefined

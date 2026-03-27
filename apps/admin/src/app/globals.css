@@ -1,21 +1,358 @@
+:root {
+  --bg-0: #05080e;
+  --bg-1: #0d1420;
+  --panel: rgba(12, 20, 33, 0.9);
+  --panel-strong: rgba(16, 27, 43, 0.96);
+  --line: #2b3d54;
+  --text: #f3efe7;
+  --muted: #b7c2ce;
+  --accent: #dd9a5a;
+  --accent-2: #65c6d9;
+  --live: #43c68f;
+  --progress: #e0b25a;
+  --planned: #8ba3bb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Source Sans 3', sans-serif;
-  background: #101521;
-  color: #f4f0e6;
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 18% -8%, rgba(221, 154, 90, 0.28), transparent 40%),
+    radial-gradient(circle at 84% 2%, rgba(101, 198, 217, 0.22), transparent 36%),
+    linear-gradient(165deg, var(--bg-0) 0%, var(--bg-1) 64%, #09121e 100%);
 }
 
-.shell {
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.admin-root {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
   display: grid;
-  grid-template-columns: 280px 1fr;
-  min-height: 100vh;
+  gap: 16px;
 }
 
-.nav {
-  border-right: 1px solid #2f374a;
+.admin-header {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.25fr 1fr;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
   padding: 20px;
 }
 
-.main {
-  padding: 24px;
+.kicker {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 11px;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+  font-size: clamp(2rem, 4.8vw, 3rem);
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+  font-size: clamp(1.4rem, 3.2vw, 2rem);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.subtitle,
+.muted {
+  color: var(--muted);
+}
+
+.subtitle {
+  margin: 8px 0 0;
+}
+
+.header-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.header-metrics article {
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  display: grid;
+  gap: 4px;
+}
+
+.header-metrics strong {
+  font-size: 1.6rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.header-metrics span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.admin-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.module-list {
+  display: grid;
+  gap: 10px;
+}
+
+.module-card {
+  background: rgba(9, 16, 27, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.module-card p {
+  margin: 6px 0;
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.status-chip {
+  border-radius: 999px;
+  border: 1px solid;
+  padding: 2px 10px;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.status-live {
+  color: var(--live);
+  border-color: color-mix(in srgb, var(--live) 70%, #000 30%);
+  background: color-mix(in srgb, var(--live) 15%, transparent 85%);
+}
+
+.status-progress {
+  color: var(--progress);
+  border-color: color-mix(in srgb, var(--progress) 70%, #000 30%);
+  background: color-mix(in srgb, var(--progress) 14%, transparent 86%);
+}
+
+.status-planned {
+  color: var(--planned);
+  border-color: color-mix(in srgb, var(--planned) 70%, #000 30%);
+  background: color-mix(in srgb, var(--planned) 14%, transparent 86%);
+}
+
+.playback-video {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #000;
+  max-height: 480px;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.snapshot-grid div {
+  background: rgba(9, 16, 27, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  display: grid;
+  gap: 5px;
+}
+
+.snapshot-grid strong {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.snapshot-grid span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.decision-log {
+  display: grid;
+  gap: 8px;
+  max-height: 400px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.decision-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(10, 17, 28, 0.92);
+  display: grid;
+  gap: 4px;
+}
+
+.decision-item span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.decision-item p {
+  margin: 0;
+}
+
+.admin-grid-single {
+  display: grid;
+  gap: 16px;
+}
+
+.crud-create-row {
+  display: grid;
+  gap: 8px;
+}
+
+.crud-create-row input,
+.crud-create-row select,
+.crud-create-row textarea,
+.crud-row input,
+.crud-row select,
+.crud-row textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(8, 14, 24, 0.88);
+  color: var(--text);
+  padding: 9px 10px;
+  font: inherit;
+}
+
+.crud-create-row textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.crud-create-row button,
+.row-actions button,
+.quick-links button {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(13, 24, 38, 0.94);
+  color: var(--text);
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.crud-create-row button:hover,
+.row-actions button:hover,
+.quick-links button:hover {
+  border-color: color-mix(in srgb, var(--accent-2) 62%, #000 38%);
+}
+
+.row-actions button.danger {
+  border-color: color-mix(in srgb, #c66767 60%, #000 40%);
+  color: #f1b0b0;
+}
+
+.crud-table {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.crud-row {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(9, 16, 27, 0.9);
+  display: grid;
+  gap: 8px;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.checkbox-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.checkbox-row label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.error-line {
+  color: #f3a6a6;
+  margin: 6px 0 0;
+}
+
+.success-line {
+  color: #9bddb2;
+  margin: 6px 0 0;
+}
+
+@media (max-width: 1100px) {
+  .admin-header,
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-root {
+    padding: 14px;
+  }
+
+  .header-metrics,
+  .snapshot-grid {
+    grid-template-columns: 1fr;
+  }
 }

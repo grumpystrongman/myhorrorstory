@@ -116,6 +116,30 @@ Generic CLI flow (any player):
 
 - `corepack pnpm messaging:connect -- --case-id <story-id> --player-id <player-id> --phone <e164-or-10-digit> --telegram-chat-id <chat-id> --public-url https://<your-public-api-url>`
 
+### Self-Hosted Communications (Open-Source)
+
+Use open-source local providers instead of Twilio/Resend:
+
+1. Initialize gitignored secrets:
+   - `corepack pnpm comm:selfhosted:init`
+2. Start Mailpit + WAHA:
+   - `corepack pnpm comm:selfhosted:up`
+   - Optional local SMS gateway: `corepack pnpm comm:selfhosted:sms:start`
+3. Verify stack:
+   - `corepack pnpm comm:selfhosted:status`
+4. Run delivery diagnostics:
+   - `corepack pnpm messaging:doctor`
+5. If WAHA is waiting for pair, generate/open QR:
+   - `corepack pnpm messaging:waha:qr`
+6. Stop stack:
+   - `corepack pnpm comm:selfhosted:down`
+
+Notes:
+- Local secrets are stored in `.secrets/communications.env` (gitignored).
+- SMTP (`SMTP_*`) is used for outbound email when configured.
+- WhatsApp can run through WAHA (`WHATSAPP_WAHA_*`).
+- SMS can run through any HTTP SMS gateway (`SMS_GATEWAY_URL`).
+
 ## Owner QA Agent Dashboard
 
 Run automated branch-play simulations for every story and review private quality reports in the dashboard.
@@ -195,6 +219,7 @@ Run automated branch-play simulations for every story and review private quality
 - `POST /api/v1/channels/send`
 - `POST /api/v1/webhooks/twilio`
 - `POST /api/v1/webhooks/telegram`
+- `POST /api/v1/webhooks/whatsapp/waha`
 - `POST /api/v1/support/tickets`
 - `GET /api/v1/support/tickets`
 - `POST /api/v1/growth/lead-capture`
@@ -227,6 +252,7 @@ Run automated branch-play simulations for every story and review private quality
 - Email marketing system: `docs/growth/email-marketing-system.md`
 - Remote testing runbook: `docs/operations/remote-testing-anywhere.md`
 - Messaging setup runbook: `docs/operations/messaging-setup.md`
+- Self-hosted comm stack runbook: `docs/operations/self-hosted-communications.md`
 - Linear bot suite runbook: `docs/operations/linear-bot-suite.md`
 - Linear auto-run runbook: `docs/operations/linear-autorun.md`
 - Commercial benchmark research: `docs/design/commercial-benchmark-research.md`

@@ -22,12 +22,22 @@ If you want imported Telegram values persisted to `.env`, add `--write-env`.
 
 ## 1) Configure Environment
 
-Set these variables in `.env`:
+Set these variables in `.env` or `.secrets/communications.env`:
 
-- `TWILIO_ACCOUNT_SID`
-- `TWILIO_AUTH_TOKEN`
-- `TWILIO_SMS_FROM`
-- `TWILIO_WHATSAPP_FROM`
+- Twilio path:
+  - `TWILIO_ACCOUNT_SID`
+  - `TWILIO_AUTH_TOKEN`
+  - `TWILIO_SMS_FROM`
+  - `TWILIO_WHATSAPP_FROM`
+- Self-hosted SMS path:
+  - `SMS_GATEWAY_URL`
+  - `SMS_GATEWAY_API_KEY` or `SMS_GATEWAY_BEARER_TOKEN` (optional)
+- Self-hosted WhatsApp path (WAHA):
+  - `WHATSAPP_WAHA_URL`
+  - `WHATSAPP_WAHA_SESSION`
+  - `WHATSAPP_WAHA_API_KEY` (optional)
+  - `WHATSAPP_WAHA_BEARER_TOKEN` (optional)
+  - `WHATSAPP_WAHA_WEBHOOK_SECRET`
 - `TWILIO_VALIDATE_SIGNATURES=true` (recommended)
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_WEBHOOK_SECRET`
@@ -58,6 +68,13 @@ Important: placeholder values (e.g. `replace_me`, `your_token`, `example`) are t
 - Use `HTTP POST`.
 - If signature validation is enabled, keep Twilio request signing enabled.
 - For WhatsApp sandbox testing, enroll the destination number in the Twilio sandbox first (Twilio console provides the join code).
+
+### WAHA (Self-hosted WhatsApp)
+
+- Incoming webhook URL:
+  - `https://<api-origin>/api/v1/webhooks/whatsapp/waha`
+- Set WAHA webhook secret header to `WHATSAPP_WAHA_WEBHOOK_SECRET` (`x-waha-webhook-secret`).
+- Ensure WAHA session is paired (QR scan) before sending.
 
 ### Telegram Bot
 
@@ -142,5 +159,6 @@ curl -X POST "https://<api-origin>/api/v1/channels/send" \
 
 - `No channels are ready for setup`: required provider env vars are missing or still placeholders.
 - Telegram webhook skipped: Telegram requires HTTPS webhook URLs.
-- SMS/WhatsApp skipped: Twilio credentials are required for real phone delivery.
+- SMS skipped: configure either Twilio or `SMS_GATEWAY_URL`.
+- WhatsApp skipped: configure either Twilio or WAHA (`WHATSAPP_WAHA_URL`).
 - `contact_not_registered` on inbound webhook: run `POST /channels/setup/user` again for that `caseId` + `playerId`.

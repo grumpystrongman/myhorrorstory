@@ -75,6 +75,88 @@ export class ResendEmailProvider implements EmailProvider {
   }
 }
 
+export interface SmtpEmailProviderConfig {
+  host: string;
+  port: number;
+  secure?: boolean;
+  user?: string;
+  pass?: string;
+  from: string;
+  rejectUnauthorized?: boolean;
+}
+
+export class SmtpEmailProvider implements EmailProvider {
+  readonly id = 'smtp';
+  private transporterPromise: Promise<{
+    sendMail: (input: {
+      from: string;
+      to: string;
+      subject: string;
+      html: string;
+      text?: string;
+      headers?: Record<string, string>;
+    }) => Promise<{ messageId?: string }>;
+  }> | null = null;
+
+  constructor(private readonly config: SmtpEmailProviderConfig) {}
+
+  async send(message: EmailMessage): Promise<EmailDeliveryReceipt> {
+    const transporter = await this.getTransporter();
+    const info = await transporter.sendMail({
+      from: this.config.from,
+      to: message.to,
+      subject: message.subject,
+      html: message.html,
+      text: message.text,
+      headers: message.metadata
+    });
+
+    return {
+      providerId: this.id,
+      messageId: info.messageId ?? `smtp_${Date.now()}`,
+      acceptedAt: new Date().toISOString()
+    };
+  }
+
+  private async getTransporter(): Promise<{
+    sendMail: (input: {
+      from: string;
+      to: string;
+      subject: string;
+      html: string;
+      text?: string;
+      headers?: Record<string, string>;
+    }) => Promise<{ messageId?: string }>;
+  }> {
+    if (!this.transporterPromise) {
+      this.transporterPromise = (async () => {
+        const nodemailer = await import('nodemailer');
+        const auth =
+          this.config.user && this.config.pass
+            ? {
+                user: this.config.user,
+                pass: this.config.pass
+              }
+            : undefined;
+        return nodemailer.createTransport({
+          host: this.config.host,
+          port: this.config.port,
+          secure: this.config.secure ?? this.config.port === 465,
+          auth,
+          tls:
+            this.config.rejectUnauthorized === false
+              ? {
+                  rejectUnauthorized: false
+                }
+              : undefined
+        });
+      })();
+    }
+
+    return this.transporterPromise;
+  }
+}
+
 export class FailoverEmailProvider implements EmailProvider {
   readonly id = 'failover';
 

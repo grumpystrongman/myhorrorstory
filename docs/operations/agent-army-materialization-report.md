@@ -1,12 +1,12 @@
 # Agent Army Real Asset Materialization Report
 
-Generated: 2026-03-24T15:22:09.495Z
+Generated: 2026-03-24T17:08:42.128Z
 Plan: assets/manifests/commercial-agent-army-plan.json
 Status ledger: apps/web/public/agent-army/status/generation-status.json
 Story filter: none
 Asset filter: none
 Modality filter: video
-Scope filter: website
+Scope filter: none
 Image backend: auto
 Start: 0
 Limit: none
@@ -17,14 +17,14 @@ Concurrency: 1
 
 ## Totals
 - Planned assets: 792
-- Selected assets: 7
-- Generated: 7
+- Selected assets: 150
+- Generated: 150
 - Skipped existing: 0
 - Failed: 0
 - Unavailable: 0
 
 ## By Modality
-- video: selected=7 generated=7 skipped=0 failed=0 unavailable=0
+- video: selected=150 generated=150 skipped=0 failed=0 unavailable=0
 
 ## Issues
 - none

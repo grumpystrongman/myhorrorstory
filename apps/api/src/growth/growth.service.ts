@@ -4,9 +4,11 @@ import { AnalyticsService, InMemoryAnalyticsProvider } from '@myhorrorstory/anal
 import { CrmService, InMemoryCrmProvider } from '@myhorrorstory/crm';
 import {
   ConsoleEmailProvider,
+  type EmailDeliveryReceipt,
   EmailService,
   FailoverEmailProvider,
   ResendEmailProvider,
+  SmtpEmailProvider,
   type LifecycleTemplateId
 } from '@myhorrorstory/email';
 import {
@@ -22,8 +24,9 @@ import {
   type GrowthLifecycleEventResponse,
   type LifecycleEventType
 } from '@myhorrorstory/contracts';
+import { GrowthStore } from './growth.store.js';
 
-const lifecycleCampaigns = growthCampaignSummarySchema
+const defaultLifecycleCampaigns = growthCampaignSummarySchema
   .array()
   .parse([
     {
@@ -87,9 +90,23 @@ const templateByEvent: Record<LifecycleEventType, LifecycleTemplateId> = {
   launch_announcement: 'launch_announcement'
 };
 
-function campaignForEvent(eventType: LifecycleEventType): GrowthCampaignSummary {
-  return (
-    lifecycleCampaigns.find((campaign) => campaign.triggerEvent === eventType) ?? lifecycleCampaigns[0]!
+function isConfiguredCredential(value: string | undefined): boolean {
+  if (!value) {
+    return false;
+  }
+
+  const normalized = value.trim().toLowerCase();
+  if (!normalized) {
+    return false;
+  }
+
+  return !(
+    normalized.startsWith('replace') ||
+    normalized.startsWith('your_') ||
+    normalized.includes('replace') ||
+    normalized.includes('changeme') ||
+    normalized.includes('example') ||
+    normalized.includes('placeholder')
   );
 }
 
@@ -98,22 +115,89 @@ export class GrowthService {
   private readonly analytics = new AnalyticsService(new InMemoryAnalyticsProvider());
   private readonly crm = new CrmService(new InMemoryCrmProvider());
   private readonly leadStore = new Map<string, GrowthLeadRecord>();
+  private readonly growthStore = new GrowthStore();
+  private readonly campaignStore = new Map<string, GrowthCampaignSummary>(
+    defaultLifecycleCampaigns.map((campaign) => [campaign.id, campaign])
+  );
   private readonly emailService: EmailService;
+  private readonly emailProviderId: 'console' | 'resend' | 'smtp' | 'failover';
 
   constructor() {
     const consoleProvider = new ConsoleEmailProvider();
+    const smtpHost = process.env.SMTP_HOST?.trim();
+    const smtpPortRaw = process.env.SMTP_PORT?.trim();
+    const smtpFrom = process.env.SMTP_FROM_EMAIL?.trim();
+    const smtpPort = smtpPortRaw ? Number(smtpPortRaw) : undefined;
+    const smtpConfigured =
+      isConfiguredCredential(smtpHost) &&
+      smtpPort !== undefined &&
+      Number.isFinite(smtpPort) &&
+      smtpPort > 0 &&
+      isConfiguredCredential(smtpFrom);
     const resendApiKey = process.env.RESEND_API_KEY?.trim();
-    if (resendApiKey) {
+    const resendConfigured = isConfiguredCredential(resendApiKey);
+
+    if (smtpConfigured) {
+      const smtpProvider = new SmtpEmailProvider({
+        host: smtpHost!,
+        port: smtpPort!,
+        from: smtpFrom!,
+        secure: process.env.SMTP_SECURE?.trim().toLowerCase() === 'true',
+        user: process.env.SMTP_USER?.trim() || undefined,
+        pass: process.env.SMTP_PASS?.trim() || undefined,
+        rejectUnauthorized:
+          process.env.SMTP_TLS_REJECT_UNAUTHORIZED?.trim().toLowerCase() !== 'false'
+      });
+      this.emailService = new EmailService(
+        resendConfigured
+          ? new FailoverEmailProvider([
+              smtpProvider,
+              new ResendEmailProvider({
+                apiKey: resendApiKey!,
+                from:
+                  process.env.RESEND_FROM_EMAIL?.trim() || 'MyHorrorStory <briefing@myhorrorstory.com>'
+              }),
+              consoleProvider
+            ])
+          : new FailoverEmailProvider([smtpProvider, consoleProvider])
+      );
+      this.emailProviderId = 'smtp';
+    } else if (resendConfigured) {
       const resendProvider = new ResendEmailProvider({
-        apiKey: resendApiKey,
+        apiKey: resendApiKey!,
         from: process.env.RESEND_FROM_EMAIL?.trim() || 'MyHorrorStory <briefing@myhorrorstory.com>'
       });
       this.emailService = new EmailService(
         new FailoverEmailProvider([resendProvider, consoleProvider])
       );
+      this.emailProviderId = 'resend';
     } else {
       this.emailService = new EmailService(consoleProvider);
+      this.emailProviderId = 'console';
     }
+
+    const persisted = this.growthStore.load();
+    for (const campaign of persisted.campaigns) {
+      this.campaignStore.set(campaign.id, campaign);
+    }
+    for (const lead of persisted.leads) {
+      this.leadStore.set(lead.email, lead);
+    }
+  }
+
+  getEmailProviderStatus(): {
+    provider: 'console' | 'resend' | 'smtp' | 'failover';
+    smtpConfigured: boolean;
+    resendConfigured: boolean;
+  } {
+    return {
+      provider: this.emailProviderId,
+      smtpConfigured:
+        isConfiguredCredential(process.env.SMTP_HOST?.trim()) &&
+        isConfiguredCredential(process.env.SMTP_FROM_EMAIL?.trim()) &&
+        Number.isFinite(Number(process.env.SMTP_PORT?.trim() ?? '')),
+      resendConfigured: isConfiguredCredential(process.env.RESEND_API_KEY?.trim())
+    };
   }
 
   async captureLead(input: unknown): Promise<GrowthLeadCaptureResponse> {
@@ -136,6 +220,7 @@ export class GrowthService {
     });
 
     this.leadStore.set(lead.email, lead);
+    this.persistGrowthData();
 
     await this.crm.syncLead({
       email: parsed.email,
@@ -193,9 +278,10 @@ export class GrowthService {
         updatedAt: now,
         lastLifecycleEvent: parsed.eventType
       });
+      this.persistGrowthData();
     }
 
-    const campaign = campaignForEvent(parsed.eventType);
+    const campaign = this.campaignForEvent(parsed.eventType);
     const templateId = templateByEvent[parsed.eventType];
 
     await this.crm.syncLead({
@@ -263,6 +349,126 @@ export class GrowthService {
   }
 
   listCampaigns(): GrowthCampaignSummary[] {
-    return lifecycleCampaigns;
+    return [...this.campaignStore.values()].sort((left, right) => left.label.localeCompare(right.label));
+  }
+
+  createCampaign(input: {
+    label: string;
+    triggerEvent: LifecycleEventType;
+    segment: string;
+    sendDelayMinutes: number;
+  }): GrowthCampaignSummary {
+    const campaign = growthCampaignSummarySchema.parse({
+      id: `campaign-${randomUUID().slice(0, 8)}`,
+      label: input.label,
+      triggerEvent: input.triggerEvent,
+      segment: input.segment,
+      sendDelayMinutes: input.sendDelayMinutes
+    });
+    this.campaignStore.set(campaign.id, campaign);
+    this.persistGrowthData();
+    return campaign;
+  }
+
+  updateCampaign(
+    campaignId: string,
+    input: Partial<{
+      label: string;
+      triggerEvent: LifecycleEventType;
+      segment: string;
+      sendDelayMinutes: number;
+    }>
+  ): GrowthCampaignSummary {
+    const existing = this.campaignStore.get(campaignId);
+    if (!existing) {
+      throw new Error('campaign_not_found');
+    }
+
+    const updated = growthCampaignSummarySchema.parse({
+      id: existing.id,
+      label: input.label ?? existing.label,
+      triggerEvent: input.triggerEvent ?? existing.triggerEvent,
+      segment: input.segment ?? existing.segment,
+      sendDelayMinutes: input.sendDelayMinutes ?? existing.sendDelayMinutes
+    });
+    this.campaignStore.set(campaignId, updated);
+    this.persistGrowthData();
+    return updated;
+  }
+
+  deleteCampaign(campaignId: string): { deleted: true; campaignId: string } {
+    const removed = this.campaignStore.delete(campaignId);
+    if (!removed) {
+      throw new Error('campaign_not_found');
+    }
+    this.persistGrowthData();
+    return { deleted: true, campaignId };
+  }
+
+  async sendCustomCampaign(input: {
+    campaignLabel: string;
+    subject: string;
+    html: string;
+    text?: string;
+    emails: string[];
+    tags?: string[];
+    metadata?: Record<string, string | number | boolean>;
+  }): Promise<{
+    campaignLabel: string;
+    attempted: number;
+    sent: number;
+    receipts: EmailDeliveryReceipt[];
+    failed: Array<{ email: string; reason: string }>;
+  }> {
+    const metadata = Object.fromEntries(
+      Object.entries(input.metadata ?? {}).map(([key, value]) => [key, String(value)])
+    );
+
+    const receipts: EmailDeliveryReceipt[] = [];
+    const failed: Array<{ email: string; reason: string }> = [];
+    for (const email of input.emails) {
+      try {
+        const receipt = await this.emailService.sendLifecycleEmail({
+          to: email,
+          subject: input.subject,
+          html: input.html,
+          text: input.text,
+          tags: input.tags,
+          metadata: {
+            campaignLabel: input.campaignLabel,
+            ...metadata
+          }
+        });
+        receipts.push(receipt);
+      } catch (error) {
+        failed.push({
+          email,
+          reason: error instanceof Error ? error.message : 'send_failed'
+        });
+      }
+    }
+
+    return {
+      campaignLabel: input.campaignLabel,
+      attempted: input.emails.length,
+      sent: receipts.length,
+      receipts,
+      failed
+    };
+  }
+
+  private campaignForEvent(eventType: LifecycleEventType): GrowthCampaignSummary {
+    const match = [...this.campaignStore.values()].find((campaign) => campaign.triggerEvent === eventType);
+    if (match) {
+      return match;
+    }
+    return [...this.campaignStore.values()][0] ?? defaultLifecycleCampaigns[0]!;
+  }
+
+  private persistGrowthData(): void {
+    this.growthStore.save({
+      campaigns: [...this.campaignStore.values()],
+      leads: [...this.leadStore.values()]
+    });
   }
 }

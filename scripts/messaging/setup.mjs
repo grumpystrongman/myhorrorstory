@@ -32,6 +32,7 @@ function loadEnvFile(relativePath) {
 }
 
 function loadDefaultEnv() {
+  loadEnvFile('.secrets/communications.env');
   loadEnvFile('.env.local');
   loadEnvFile('.env');
 }
@@ -96,31 +97,42 @@ const publicBaseUrl =
 const apiBaseUrl = `${normalizeBaseUrl(publicBaseUrl)}/api/v1`;
 
 const hasTwilioBase = isConfigured(env.TWILIO_ACCOUNT_SID) && isConfigured(env.TWILIO_AUTH_TOKEN);
-const smsConfigured = hasTwilioBase && isConfigured(env.TWILIO_SMS_FROM);
-const whatsappConfigured = hasTwilioBase && isConfigured(env.TWILIO_WHATSAPP_FROM);
+const hasSmsGateway = isConfigured(env.SMS_GATEWAY_URL);
+const hasWaha = isConfigured(env.WHATSAPP_WAHA_URL);
+const smsConfigured = (hasTwilioBase && isConfigured(env.TWILIO_SMS_FROM)) || hasSmsGateway;
+const whatsappConfigured = (hasTwilioBase && isConfigured(env.TWILIO_WHATSAPP_FROM)) || hasWaha;
 const telegramConfigured = isConfigured(env.TELEGRAM_BOT_TOKEN);
 const signalConfigured = isConfigured(env.SIGNAL_GATEWAY_URL) && isConfigured(env.SIGNAL_ACCOUNT);
 
 const smsMissing = [];
-if (!isConfigured(env.TWILIO_ACCOUNT_SID)) {
+if (!hasSmsGateway && !isConfigured(env.TWILIO_ACCOUNT_SID)) {
   smsMissing.push('TWILIO_ACCOUNT_SID');
 }
-if (!isConfigured(env.TWILIO_AUTH_TOKEN)) {
+if (!hasSmsGateway && !isConfigured(env.TWILIO_AUTH_TOKEN)) {
   smsMissing.push('TWILIO_AUTH_TOKEN');
 }
-if (!isConfigured(env.TWILIO_SMS_FROM)) {
+if (!hasSmsGateway && !isConfigured(env.TWILIO_SMS_FROM)) {
   smsMissing.push('TWILIO_SMS_FROM');
+}
+if (!isConfigured(env.SMS_GATEWAY_URL) && !hasTwilioBase) {
+  smsMissing.push('SMS_GATEWAY_URL');
 }
 
 const whatsappMissing = [];
-if (!isConfigured(env.TWILIO_ACCOUNT_SID)) {
+if (!hasWaha && !isConfigured(env.TWILIO_ACCOUNT_SID)) {
   whatsappMissing.push('TWILIO_ACCOUNT_SID');
 }
-if (!isConfigured(env.TWILIO_AUTH_TOKEN)) {
+if (!hasWaha && !isConfigured(env.TWILIO_AUTH_TOKEN)) {
   whatsappMissing.push('TWILIO_AUTH_TOKEN');
 }
-if (!isConfigured(env.TWILIO_WHATSAPP_FROM)) {
+if (!hasWaha && !isConfigured(env.TWILIO_WHATSAPP_FROM)) {
   whatsappMissing.push('TWILIO_WHATSAPP_FROM');
+}
+if (!isConfigured(env.WHATSAPP_WAHA_URL) && !hasTwilioBase) {
+  whatsappMissing.push('WHATSAPP_WAHA_URL');
+}
+if (isConfigured(env.WHATSAPP_WAHA_URL) && !isConfigured(env.WHATSAPP_WAHA_WEBHOOK_SECRET)) {
+  whatsappMissing.push('WHATSAPP_WAHA_WEBHOOK_SECRET');
 }
 
 const telegramMissing = [];
@@ -148,7 +160,12 @@ console.log(`API base URL: ${apiBaseUrl}`);
 console.log(`Twilio signature validation: ${bool(env.TWILIO_VALIDATE_SIGNATURES) ? 'enabled' : 'disabled'}`);
 
 printChannelStatus('SMS', smsConfigured, smsMissing, `${apiBaseUrl}/webhooks/twilio`);
-printChannelStatus('WHATSAPP', whatsappConfigured, whatsappMissing, `${apiBaseUrl}/webhooks/twilio`);
+printChannelStatus(
+  'WHATSAPP',
+  whatsappConfigured,
+  whatsappMissing,
+  hasWaha ? `${apiBaseUrl}/webhooks/whatsapp/waha` : `${apiBaseUrl}/webhooks/twilio`
+);
 printChannelStatus('TELEGRAM', telegramConfigured, telegramMissing, `${apiBaseUrl}/webhooks/telegram`);
 printChannelStatus('SIGNAL', signalConfigured, signalMissing, `${apiBaseUrl}/webhooks/signal`);
 
@@ -167,3 +184,6 @@ console.log('5. For one-command local onboarding, run:');
 console.log(
   `   corepack pnpm messaging:connect -- --case-id static-between-stations --player-id owner-local --phone 8127810028 --public-url ${publicBaseUrl}`
 );
+console.log('6. For self-hosted comm stack (Mailpit + WAHA), run:');
+console.log('   corepack pnpm comm:selfhosted:init');
+console.log('   corepack pnpm comm:selfhosted:up');

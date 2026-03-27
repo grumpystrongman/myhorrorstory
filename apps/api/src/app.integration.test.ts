@@ -22,6 +22,8 @@ describe('API integration', () => {
     process.env.TWILIO_VALIDATE_SIGNATURES = 'false';
     process.env.TELEGRAM_WEBHOOK_SECRET = '';
     process.env.SIGNAL_WEBHOOK_SECRET = '';
+    process.env.WHATSAPP_WAHA_WEBHOOK_SECRET = '';
+    process.env.MESSAGING_ENABLE_CONSOLE_FALLBACK = 'true';
 
     const moduleRef = await Test.createTestingModule({
       imports: [AppModule]
@@ -338,6 +340,69 @@ describe('API integration', () => {
     expect(signalInbound.body.recognizedIntent).toBe('QUESTION');
     expect(signalInbound.body.caseId).toBe(storyId);
     expect(signalInbound.body.playerId).toBe(playerId);
+
+    const wahaInbound = await request(app.getHttpServer())
+      .post('/api/v1/webhooks/whatsapp/waha')
+      .send({
+        event: 'message',
+        payload: {
+          id: 'waha-integration-1',
+          from: '15550002222@c.us',
+          body: 'I accuse the broker'
+        }
+      })
+      .expect(200);
+
+    expect(wahaInbound.body.accepted).toBe(true);
+    expect(wahaInbound.body.channel).toBe('WHATSAPP');
+    expect(wahaInbound.body.caseId).toBe(storyId);
+    expect(wahaInbound.body.playerId).toBe(playerId);
+
+    const optOutInbound = await request(app.getHttpServer())
+      .post('/api/v1/webhooks/twilio')
+      .type('form')
+      .send({
+        From: '+15550001111',
+        To: '+15550009999',
+        Body: 'STOP',
+        MessageSid: 'SM-integration-stop'
+      })
+      .expect(200);
+    expect(optOutInbound.body.accepted).toBe(true);
+    expect(optOutInbound.body.reason).toBe('contact_opted_out');
+
+    await request(app.getHttpServer())
+      .post('/api/v1/channels/send')
+      .send({
+        caseId: storyId,
+        playerId,
+        channels: ['SMS'],
+        message: 'Should not deliver to opted-out sms'
+      })
+      .expect(400);
+
+    const optInInbound = await request(app.getHttpServer())
+      .post('/api/v1/webhooks/twilio')
+      .type('form')
+      .send({
+        From: '+15550001111',
+        To: '+15550009999',
+        Body: 'Y',
+        MessageSid: 'SM-integration-start'
+      })
+      .expect(200);
+    expect(optInInbound.body.accepted).toBe(true);
+    expect(optInInbound.body.reason).toBe('contact_opted_in');
+
+    await request(app.getHttpServer())
+      .post('/api/v1/channels/send')
+      .send({
+        caseId: storyId,
+        playerId,
+        channels: ['SMS'],
+        message: 'SMS restored after Y consent'
+      })
+      .expect(201);
   });
 
   it('processes inbound channel messages, evaluates rules, and saves investigation boards', async () => {
@@ -461,6 +526,139 @@ describe('API integration', () => {
     expect(narrative.body.event.hiddenClues.length).toBeGreaterThan(0);
     expect(narrative.body.event.possiblePlayerResponses.length).toBeGreaterThanOrEqual(2);
     expect(narrative.body.event.storyConsequences.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('supports admin CRUD for users/settings/campaigns and admin broadcasts', async () => {
+    const createdUser = await request(app.getHttpServer())
+      .post('/api/v1/admin/users')
+      .send({
+        email: 'admin-crud-user@example.com',
+        displayName: 'Admin Crud User',
+        password: 'StrongPassword123!',
+        roles: ['PLAYER', 'MARKETING_MANAGER'],
+        tier: 'TRIAL'
+      })
+      .expect(201);
+
+    expect(createdUser.body.email).toBe('admin-crud-user@example.com');
+    const userId = createdUser.body.id as string;
+
+    const users = await request(app.getHttpServer()).get('/api/v1/admin/users').expect(200);
+    expect(Array.isArray(users.body)).toBe(true);
+    expect(users.body.some((candidate: { id: string }) => candidate.id === userId)).toBe(true);
+
+    const updatedUser = await request(app.getHttpServer())
+      .patch(`/api/v1/admin/users/${encodeURIComponent(userId)}`)
+      .send({
+        displayName: 'Updated Admin Crud User',
+        roles: ['ADMIN'],
+        tier: 'PREMIUM'
+      })
+      .expect(200);
+
+    expect(updatedUser.body.displayName).toBe('Updated Admin Crud User');
+    expect(updatedUser.body.roles).toContain('ADMIN');
+    expect(updatedUser.body.tier).toBe('PREMIUM');
+
+    const savedSetting = await request(app.getHttpServer())
+      .put('/api/v1/admin/settings/platform.test_flag')
+      .send({
+        value: true,
+        description: 'integration setting write'
+      })
+      .expect(200);
+    expect(savedSetting.body.key).toBe('platform.test_flag');
+    expect(savedSetting.body.value).toBe(true);
+
+    const settings = await request(app.getHttpServer()).get('/api/v1/admin/settings').expect(200);
+    expect(Array.isArray(settings.body)).toBe(true);
+    expect(settings.body.some((setting: { key: string }) => setting.key === 'platform.test_flag')).toBe(true);
+
+    await request(app.getHttpServer()).delete('/api/v1/admin/settings/platform.test_flag').expect(200);
+
+    const createdCampaign = await request(app.getHttpServer())
+      .post('/api/v1/admin/campaigns')
+      .send({
+        label: 'Integration Blast',
+        triggerEvent: 'launch_announcement',
+        segment: 'integration_segment',
+        sendDelayMinutes: 5
+      })
+      .expect(201);
+    expect(createdCampaign.body.label).toBe('Integration Blast');
+    const campaignId = createdCampaign.body.id as string;
+
+    const updatedCampaign = await request(app.getHttpServer())
+      .patch(`/api/v1/admin/campaigns/${encodeURIComponent(campaignId)}`)
+      .send({
+        sendDelayMinutes: 15
+      })
+      .expect(200);
+    expect(updatedCampaign.body.sendDelayMinutes).toBe(15);
+
+    const emailBlast = await request(app.getHttpServer())
+      .post('/api/v1/admin/campaigns/send-email')
+      .send({
+        eventType: 'launch_announcement',
+        emails: ['admin-crud-user@example.com'],
+        storyId: 'static-between-stations',
+        metadata: {
+          source: 'integration'
+        }
+      })
+      .expect(201);
+    expect(emailBlast.body.sent).toBe(1);
+
+    const customEmailBlast = await request(app.getHttpServer())
+      .post('/api/v1/admin/campaigns/send-custom-email')
+      .send({
+        campaignLabel: 'Integration Custom Campaign',
+        subject: 'Custom campaign message',
+        html: '<p>Integration custom email body</p>',
+        text: 'Integration custom email body',
+        emails: ['admin-crud-user@example.com'],
+        tags: ['integration', 'custom'],
+        metadata: { source: 'integration' }
+      })
+      .expect(201);
+    expect(customEmailBlast.body.sent).toBe(1);
+
+    const stories = await request(app.getHttpServer()).get('/api/v1/stories').expect(200);
+    const storyId = stories.body[0].id as string;
+    const playerId = 'admin-broadcast-player';
+
+    await request(app.getHttpServer())
+      .post('/api/v1/channels/setup/user')
+      .send({
+        caseId: storyId,
+        playerId,
+        contacts: [
+          { channel: 'SMS', address: '+15550001111', optIn: true },
+          { channel: 'WHATSAPP', address: 'whatsapp:+15550002222', optIn: true },
+          { channel: 'TELEGRAM', address: '987654321', optIn: true },
+          { channel: 'SIGNAL', address: '+15550003333', optIn: true }
+        ]
+      })
+      .expect(201);
+
+    const broadcast = await request(app.getHttpServer())
+      .post('/api/v1/admin/broadcasts/channels')
+      .send({
+        caseId: storyId,
+        playerId,
+        channels: ['SMS', 'WHATSAPP', 'TELEGRAM', 'SIGNAL'],
+        message: 'Admin broadcast integration test.'
+      })
+      .expect(201);
+    expect(broadcast.body.sentCount).toBe(4);
+    expect(Array.isArray(broadcast.body.receipts)).toBe(true);
+
+    await request(app.getHttpServer())
+      .delete(`/api/v1/admin/campaigns/${encodeURIComponent(campaignId)}`)
+      .expect(200);
+    await request(app.getHttpServer())
+      .delete(`/api/v1/admin/users/${encodeURIComponent(userId)}`)
+      .expect(200);
   });
 });
 

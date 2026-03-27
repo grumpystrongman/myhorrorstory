@@ -114,6 +114,56 @@ function withVersion(path: string | null, checksum: string): string | undefined 
   return `${path}${separator}v=${version}`;
 }
 
+function isTransitionVideo(asset: CatalogAsset): boolean {
+  if (asset.modality !== 'video') {
+    return false;
+  }
+  const type = String(asset.asset_type ?? '').toLowerCase();
+  if (type === 'beat_transition_video') {
+    return true;
+  }
+  return false;
+}
+
+function isRichVideo(asset: CatalogAsset): boolean {
+  if (asset.modality !== 'video') {
+    return false;
+  }
+  if (isTransitionVideo(asset)) {
+    return false;
+  }
+  return Number(asset.duration_seconds ?? 0) >= 10;
+}
+
+function sortAssetsForPresentation(assets: CatalogAsset[]): CatalogAsset[] {
+  const modalityRank: Record<CatalogAsset['modality'], number> = {
+    video: 0,
+    image: 1,
+    audio: 2,
+    artifact: 3,
+    web: 4
+  };
+
+  return [...assets].sort((a, b) => {
+    if (isRichVideo(a) && !isRichVideo(b)) {
+      return -1;
+    }
+    if (!isRichVideo(a) && isRichVideo(b)) {
+      return 1;
+    }
+    const modalityDelta = modalityRank[a.modality] - modalityRank[b.modality];
+    if (modalityDelta !== 0) {
+      return modalityDelta;
+    }
+    const durationA = Number(a.duration_seconds ?? 0);
+    const durationB = Number(b.duration_seconds ?? 0);
+    if (durationA !== durationB) {
+      return durationB - durationA;
+    }
+    return a.title.localeCompare(b.title);
+  });
+}
+
 function mediaPreview(asset: CatalogAsset): JSX.Element {
   if (asset.modality === 'image') {
     return (
@@ -221,14 +271,26 @@ export default async function ArtworkPage(): Promise<JSX.Element> {
 
       {catalog.stories.map((story) => (
         <section key={story.storyId} className="panel section-shell">
+          {(() => {
+            const orderedAssets = sortAssetsForPresentation(story.assets);
+            const transitionVideos = orderedAssets.filter((asset) => isTransitionVideo(asset));
+            const primaryAssets = orderedAssets.filter((asset) => !isTransitionVideo(asset));
+
+            return (
+              <>
           <h2 style={{ marginTop: 0 }}>{story.title}</h2>
           <p className="muted" style={{ marginTop: 0 }}>
             {story.assets.length} verified assets, {story.failures.length} generation issues
           </p>
+          {primaryAssets.some((asset) => isRichVideo(asset)) ? (
+            <p className="muted" style={{ marginTop: 0 }}>
+              Cinematic reels are shown first. Short beat-transition clips are grouped separately below.
+            </p>
+          ) : null}
 
-          {story.assets.length > 0 ? (
+          {primaryAssets.length > 0 ? (
             <div className="library-grid">
-              {story.assets.map((asset) => (
+              {primaryAssets.map((asset) => (
                 <article key={asset.asset_id} className="library-card">
                   {mediaPreview(asset)}
                   <div>
@@ -266,6 +328,50 @@ export default async function ArtworkPage(): Promise<JSX.Element> {
           ) : (
             <p className="muted">No verified assets for this story yet.</p>
           )}
+
+          {transitionVideos.length > 0 ? (
+            <details style={{ marginTop: 20 }}>
+              <summary style={{ cursor: 'pointer', fontWeight: 600 }}>
+                Show Transition Clips ({transitionVideos.length})
+              </summary>
+              <p className="muted" style={{ marginTop: 12 }}>
+                These are short connective videos used between major story beats.
+              </p>
+              <div className="library-grid">
+                {transitionVideos.map((asset) => (
+                  <article key={asset.asset_id} className="library-card">
+                    {mediaPreview(asset)}
+                    <div>
+                      <h2 style={{ fontSize: '1.05rem' }}>{asset.title}</h2>
+                      <p className="story-subgenre" style={{ marginBottom: 6 }}>
+                        {asset.modality} / {asset.asset_type}
+                      </p>
+                      <p className="muted" style={{ margin: '0 0 6px' }}>
+                        Tool: <code>{asset.tool_used}</code>
+                      </p>
+                      <p className="muted" style={{ margin: '0 0 6px' }}>
+                        Size: <code>{formatBytes(asset.file_size)}</code>
+                        {asset.duration_seconds ? <> / <code>{asset.duration_seconds.toFixed(2)}s</code></> : null}
+                      </p>
+                      <p className="muted" style={{ margin: 0 }}>
+                        {asset.public_path ? (
+                          <a
+                            href={withVersion(asset.public_path, asset.checksum)}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Open generated file
+                          </a>
+                        ) : (
+                          'Public file path unavailable'
+                        )}
+                      </p>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </details>
+          ) : null}
 
           {story.failures.length > 0 ? (
             <div style={{ marginTop: 24 }}>
@@ -351,6 +457,9 @@ export default async function ArtworkPage(): Promise<JSX.Element> {
               </div>
             </div>
           ) : null}
+              </>
+            );
+          })()}
         </section>
       ))}
     </main>

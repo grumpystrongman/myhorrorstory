@@ -6,6 +6,7 @@ import {
   normalizeSignalInbound,
   normalizeTelegramInbound,
   normalizeTwilioInbound,
+  normalizeWahaInbound,
   type DeliveryReceipt,
   type NormalizedInboundMessage
 } from '@myhorrorstory/messaging';
@@ -57,6 +58,13 @@ type InboundProcessingResult = {
   appliedRuleIds?: string[];
   generatedEvents?: string[];
   reason?: string;
+  consentAction?: 'opt_in' | 'opt_out';
+};
+
+type ChannelSendFailure = {
+  channel: SetupMessagingChannel;
+  to: string;
+  reason: string;
 };
 
 @Injectable()
@@ -81,6 +89,7 @@ export class ChannelsService {
   } {
     const baseUrl = this.resolvePublicBaseUrl(publicBaseUrl);
     const providers = this.router.listProviderIds();
+    const fallbackProvider = this.consoleFallbackEnabled() ? 'console' : 'none';
 
     return {
       baseUrl,
@@ -88,25 +97,28 @@ export class ChannelsService {
       channels: [
         {
           channel: 'SMS',
-          configured: this.hasTwilioSms(),
-          liveProvider: this.hasTwilioSms() ? 'twilio' : null,
-          fallbackProvider: 'console',
+          configured: this.resolveSmsProvider() !== null,
+          liveProvider: this.resolveSmsProvider(),
+          fallbackProvider,
           webhookUrl: `${baseUrl}/api/v1/webhooks/twilio`,
           missingEnv: this.missingSmsEnv()
         },
         {
           channel: 'WHATSAPP',
-          configured: this.hasTwilioWhatsapp(),
-          liveProvider: this.hasTwilioWhatsapp() ? 'twilio' : null,
-          fallbackProvider: 'console',
-          webhookUrl: `${baseUrl}/api/v1/webhooks/twilio`,
+          configured: this.resolveWhatsappProvider() !== null,
+          liveProvider: this.resolveWhatsappProvider(),
+          fallbackProvider,
+          webhookUrl:
+            this.resolveWhatsappProvider() === 'waha'
+              ? `${baseUrl}/api/v1/webhooks/whatsapp/waha`
+              : `${baseUrl}/api/v1/webhooks/twilio`,
           missingEnv: this.missingWhatsappEnv()
         },
         {
           channel: 'TELEGRAM',
           configured: this.hasTelegram(),
           liveProvider: this.hasTelegram() ? 'telegram' : null,
-          fallbackProvider: 'console',
+          fallbackProvider,
           webhookUrl: `${baseUrl}/api/v1/webhooks/telegram`,
           missingEnv: this.missingTelegramEnv()
         },
@@ -114,7 +126,7 @@ export class ChannelsService {
           channel: 'SIGNAL',
           configured: this.hasSignal(),
           liveProvider: this.hasSignal() ? 'signal' : null,
-          fallbackProvider: 'console',
+          fallbackProvider,
           webhookUrl: `${baseUrl}/api/v1/webhooks/signal`,
           missingEnv: this.missingSignalEnv()
         }
@@ -195,7 +207,9 @@ export class ChannelsService {
     caseId: string;
     playerId: string;
     sentCount: number;
+    failedCount: number;
     receipts: DeliveryReceipt[];
+    failed: ChannelSendFailure[];
   }> {
     const enrollment = this.enrollments.get(this.enrollmentKey(input.caseId, input.playerId));
     if (!enrollment) {
@@ -219,28 +233,39 @@ export class ChannelsService {
 
     const message =
       input.message ??
-      `MyHorrorStory channel test for case ${input.caseId}. Reply in-thread to continue the investigation.`;
+      `MyHorrorStory channel test for case ${input.caseId}. Reply Y to continue messages or STOP to opt out.`;
 
     const receipts: DeliveryReceipt[] = [];
+    const failed: ChannelSendFailure[] = [];
     for (const contact of contactsToSend) {
-      const receipt = await this.router.send({
-        channel: contact.channel,
-        to: contact.normalizedAddress,
-        text: message,
-        metadata: {
-          caseId: input.caseId,
-          playerId: input.playerId,
-          setupMode: true
-        }
-      });
-      receipts.push(receipt);
+      try {
+        const receipt = await this.router.send({
+          channel: contact.channel,
+          to: contact.normalizedAddress,
+          text: message,
+          metadata: {
+            caseId: input.caseId,
+            playerId: input.playerId,
+            setupMode: true
+          }
+        });
+        receipts.push(receipt);
+      } catch (error) {
+        failed.push({
+          channel: contact.channel,
+          to: contact.normalizedAddress,
+          reason: error instanceof Error ? error.message : 'send_failed'
+        });
+      }
     }
 
     return {
       caseId: input.caseId,
       playerId: input.playerId,
       sentCount: receipts.length,
-      receipts
+      failedCount: failed.length,
+      receipts,
+      failed
     };
   }
 
@@ -248,7 +273,9 @@ export class ChannelsService {
     caseId: string;
     playerId: string;
     sentCount: number;
+    failedCount: number;
     receipts: DeliveryReceipt[];
+    failed: ChannelSendFailure[];
   }> {
     const enrollment = this.enrollments.get(this.enrollmentKey(input.caseId, input.playerId));
     if (!enrollment) {
@@ -271,26 +298,37 @@ export class ChannelsService {
     }
 
     const receipts: DeliveryReceipt[] = [];
+    const failed: ChannelSendFailure[] = [];
     for (const contact of contactsToSend) {
-      const receipt = await this.router.send({
-        channel: contact.channel,
-        to: contact.normalizedAddress,
-        text: input.message,
-        mediaUrls: input.mediaUrls,
-        metadata: {
-          caseId: input.caseId,
-          playerId: input.playerId,
-          setupMode: false
-        }
-      });
-      receipts.push(receipt);
+      try {
+        const receipt = await this.router.send({
+          channel: contact.channel,
+          to: contact.normalizedAddress,
+          text: input.message,
+          mediaUrls: input.mediaUrls,
+          metadata: {
+            caseId: input.caseId,
+            playerId: input.playerId,
+            setupMode: false
+          }
+        });
+        receipts.push(receipt);
+      } catch (error) {
+        failed.push({
+          channel: contact.channel,
+          to: contact.normalizedAddress,
+          reason: error instanceof Error ? error.message : 'send_failed'
+        });
+      }
     }
 
     return {
       caseId: input.caseId,
       playerId: input.playerId,
       sentCount: receipts.length,
-      receipts
+      failedCount: failed.length,
+      receipts,
+      failed
     };
   }
 
@@ -310,15 +348,49 @@ export class ChannelsService {
     return this.processInboundMessage(inbound);
   }
 
+  processWahaWebhook(body: unknown): InboundProcessingResult {
+    const inbound = normalizeWahaInbound(body as Parameters<typeof normalizeWahaInbound>[0]);
+    return this.processInboundMessage(inbound);
+  }
+
   private processInboundMessage(message: NormalizedInboundMessage): InboundProcessingResult {
     const channel = message.channel as SetupMessagingChannel;
-    const route = this.inboundRouteIndex.get(this.routeKey(channel, this.normalizeAddress(channel, message.from)));
+    const normalizedFrom = this.normalizeAddress(channel, message.from);
+    const consentAction = this.resolveConsentAction(message.text);
+    const enrollmentMatch = this.findEnrollmentByContact(channel, normalizedFrom);
+
+    if (enrollmentMatch && consentAction) {
+      const { enrollment, contact } = enrollmentMatch;
+      contact.optIn = consentAction === 'opt_in';
+      enrollment.updatedAt = new Date().toISOString();
+      if (contact.optIn) {
+        this.inboundRouteIndex.set(this.routeKey(contact.channel, contact.normalizedAddress), {
+          caseId: enrollment.caseId,
+          playerId: enrollment.playerId,
+          channel: contact.channel
+        });
+      } else {
+        this.inboundRouteIndex.delete(this.routeKey(contact.channel, contact.normalizedAddress));
+      }
+      this.persistEnrollments();
+
+      return {
+        accepted: true,
+        channel,
+        caseId: enrollment.caseId,
+        playerId: enrollment.playerId,
+        reason: consentAction === 'opt_in' ? 'contact_opted_in' : 'contact_opted_out',
+        consentAction
+      };
+    }
+
+    const route = this.inboundRouteIndex.get(this.routeKey(channel, normalizedFrom));
 
     if (!route) {
       return {
         accepted: false,
         channel,
-        reason: 'contact_not_registered'
+        reason: enrollmentMatch ? 'contact_opted_out' : 'contact_not_registered'
       };
     }
 
@@ -342,6 +414,39 @@ export class ChannelsService {
       appliedRuleIds: runtime.appliedRuleIds,
       generatedEvents: runtime.generatedEvents
     };
+  }
+
+  private findEnrollmentByContact(
+    channel: SetupMessagingChannel,
+    normalizedAddress: string
+  ): {
+    enrollment: ChannelEnrollment;
+    contact: ChannelEnrollment['contacts'][number];
+  } | null {
+    for (const enrollment of this.enrollments.values()) {
+      const contact = enrollment.contacts.find(
+        (candidate) => candidate.channel === channel && candidate.normalizedAddress === normalizedAddress
+      );
+      if (contact) {
+        return { enrollment, contact };
+      }
+    }
+    return null;
+  }
+
+  private resolveConsentAction(message: string): 'opt_in' | 'opt_out' | null {
+    const normalized = message.trim().toLowerCase();
+    if (!normalized) {
+      return null;
+    }
+
+    if (['y', 'yes', 'start', 'continue', 'resume', 'unstop'].includes(normalized)) {
+      return 'opt_in';
+    }
+    if (['stop', 'unsubscribe', 'cancel', 'quit', 'optout'].includes(normalized)) {
+      return 'opt_out';
+    }
+    return null;
   }
 
   private addRoutes(enrollment: ChannelEnrollment): void {
@@ -378,6 +483,34 @@ export class ChannelsService {
     return this.hasTwilioBase() && this.isConfiguredValue(process.env.TWILIO_WHATSAPP_FROM);
   }
 
+  private hasSmsGateway(): boolean {
+    return this.isConfiguredValue(process.env.SMS_GATEWAY_URL);
+  }
+
+  private hasWahaWhatsapp(): boolean {
+    return this.isConfiguredValue(process.env.WHATSAPP_WAHA_URL);
+  }
+
+  private resolveSmsProvider(): string | null {
+    if (this.hasTwilioSms()) {
+      return 'twilio';
+    }
+    if (this.hasSmsGateway()) {
+      return 'sms-gateway';
+    }
+    return null;
+  }
+
+  private resolveWhatsappProvider(): string | null {
+    if (this.hasTwilioWhatsapp()) {
+      return 'twilio';
+    }
+    if (this.hasWahaWhatsapp()) {
+      return 'waha';
+    }
+    return null;
+  }
+
   private hasTelegram(): boolean {
     return this.isConfiguredValue(process.env.TELEGRAM_BOT_TOKEN);
   }
@@ -390,6 +523,10 @@ export class ChannelsService {
   }
 
   private missingSmsEnv(): string[] {
+    if (this.resolveSmsProvider()) {
+      return [];
+    }
+
     const missing = [];
     if (!this.isConfiguredValue(process.env.TWILIO_ACCOUNT_SID)) {
       missing.push('TWILIO_ACCOUNT_SID');
@@ -400,10 +537,17 @@ export class ChannelsService {
     if (!this.isConfiguredValue(process.env.TWILIO_SMS_FROM)) {
       missing.push('TWILIO_SMS_FROM');
     }
+    if (!this.isConfiguredValue(process.env.SMS_GATEWAY_URL)) {
+      missing.push('SMS_GATEWAY_URL');
+    }
     return missing;
   }
 
   private missingWhatsappEnv(): string[] {
+    if (this.resolveWhatsappProvider()) {
+      return [];
+    }
+
     const missing = [];
     if (!this.isConfiguredValue(process.env.TWILIO_ACCOUNT_SID)) {
       missing.push('TWILIO_ACCOUNT_SID');
@@ -413,6 +557,15 @@ export class ChannelsService {
     }
     if (!this.isConfiguredValue(process.env.TWILIO_WHATSAPP_FROM)) {
       missing.push('TWILIO_WHATSAPP_FROM');
+    }
+    if (!this.isConfiguredValue(process.env.WHATSAPP_WAHA_URL)) {
+      missing.push('WHATSAPP_WAHA_URL');
+    }
+    if (
+      this.isConfiguredValue(process.env.WHATSAPP_WAHA_URL) &&
+      !this.isConfiguredValue(process.env.WHATSAPP_WAHA_WEBHOOK_SECRET)
+    ) {
+      missing.push('WHATSAPP_WAHA_WEBHOOK_SECRET');
     }
     return missing;
   }
@@ -467,8 +620,11 @@ export class ChannelsService {
     }
 
     if (channel === 'WHATSAPP') {
-      const withoutPrefix = compact.replace(/^whatsapp:/i, '');
-      return `whatsapp:${withoutPrefix}`.toLowerCase();
+      const withoutPrefix = compact.replace(/^whatsapp:/i, '').toLowerCase();
+      const withoutDomain = withoutPrefix.replace(/@c\.us$|@s\.whatsapp\.net$/i, '');
+      const normalizedDigits = withoutDomain.replace(/[^\d+]/g, '');
+      const e164 = normalizedDigits.startsWith('+') ? normalizedDigits : `+${normalizedDigits}`;
+      return `whatsapp:${e164}`.toLowerCase();
     }
 
     return compact.replace(/^sms:/i, '').toLowerCase();
@@ -509,5 +665,9 @@ export class ChannelsService {
     }
 
     return true;
+  }
+
+  private consoleFallbackEnabled(): boolean {
+    return process.env.MESSAGING_ENABLE_CONSOLE_FALLBACK?.trim().toLowerCase() === 'true';
   }
 }

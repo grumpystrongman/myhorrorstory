@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-03-23T17:40:26.616Z",
+  "generatedAt": "2026-03-24T22:12:41.676Z",
   "totalStories": 11,
   "rows": [
     {
       "storyId": "black-chapel-ledger",
       "title": "Black Chapel Ledger",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:20.102Z",
-      "productionReadiness": 100,
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:29.935Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -22,11 +22,30 @@
       "reportPath": "/reports/quality/black-chapel-ledger.json"
     },
     {
+      "storyId": "crown-of-salt",
+      "title": "Crown of Salt",
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:31.007Z",
+      "productionReadiness": 93,
+      "difficulty": {
+        "level": 3,
+        "label": "Advanced",
+        "reason": "High branch density and pressure decisions demand experienced play."
+      },
+      "coverage": {
+        "beats": 100,
+        "choices": 100,
+        "endings": 100
+      },
+      "scenarioCount": 14,
+      "reportPath": "/reports/quality/crown-of-salt.json"
+    },
+    {
       "storyId": "dead-channel-protocol",
       "title": "Dead Channel Protocol",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:21.270Z",
-      "productionReadiness": 100,
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:31.990Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -41,11 +60,30 @@
       "reportPath": "/reports/quality/dead-channel-protocol.json"
     },
     {
+      "storyId": "midnight-lockbox",
+      "title": "Midnight Lockbox",
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:33.087Z",
+      "productionReadiness": 93,
+      "difficulty": {
+        "level": 3,
+        "label": "Advanced",
+        "reason": "High branch density and pressure decisions demand experienced play."
+      },
+      "coverage": {
+        "beats": 100,
+        "choices": 100,
+        "endings": 100
+      },
+      "scenarioCount": 14,
+      "reportPath": "/reports/quality/midnight-lockbox.json"
+    },
+    {
       "storyId": "red-creek-winter",
       "title": "Red Creek Winter",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:22.734Z",
-      "productionReadiness": 100,
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:34.489Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -62,9 +100,9 @@
     {
       "storyId": "signal-from-kharon-9",
       "title": "Signal From Kharon-9",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:23.412Z",
-      "productionReadiness": 100,
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:35.958Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -81,9 +119,9 @@
     {
       "storyId": "static-between-stations",
       "title": "Static Between Stations",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:23.931Z",
-      "productionReadiness": 100,
+      "version": "director-cut-v3-hand-authored",
+      "generatedAt": "2026-03-24T22:12:37.233Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -100,9 +138,9 @@
     {
       "storyId": "tape-17-pinewatch",
       "title": "Tape 17: Pinewatch",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:24.576Z",
-      "productionReadiness": 100,
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:38.481Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -119,9 +157,9 @@
     {
       "storyId": "the-fourth-tenant",
       "title": "The Fourth Tenant",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:25.210Z",
-      "productionReadiness": 100,
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:39.479Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -136,68 +174,11 @@
       "reportPath": "/reports/quality/the-fourth-tenant.json"
     },
     {
-      "storyId": "ward-1908",
-      "title": "Ward 1908",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:26.609Z",
-      "productionReadiness": 100,
-      "difficulty": {
-        "level": 3,
-        "label": "Advanced",
-        "reason": "High branch density and pressure decisions demand experienced play."
-      },
-      "coverage": {
-        "beats": 100,
-        "choices": 100,
-        "endings": 100
-      },
-      "scenarioCount": 14,
-      "reportPath": "/reports/quality/ward-1908.json"
-    },
-    {
-      "storyId": "crown-of-salt",
-      "title": "Crown of Salt",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:20.674Z",
-      "productionReadiness": 99,
-      "difficulty": {
-        "level": 3,
-        "label": "Advanced",
-        "reason": "High branch density and pressure decisions demand experienced play."
-      },
-      "coverage": {
-        "beats": 100,
-        "choices": 100,
-        "endings": 100
-      },
-      "scenarioCount": 14,
-      "reportPath": "/reports/quality/crown-of-salt.json"
-    },
-    {
-      "storyId": "midnight-lockbox",
-      "title": "Midnight Lockbox",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:21.916Z",
-      "productionReadiness": 99,
-      "difficulty": {
-        "level": 3,
-        "label": "Advanced",
-        "reason": "High branch density and pressure decisions demand experienced play."
-      },
-      "coverage": {
-        "beats": 100,
-        "choices": 100,
-        "endings": 100
-      },
-      "scenarioCount": 14,
-      "reportPath": "/reports/quality/midnight-lockbox.json"
-    },
-    {
       "storyId": "the-harvest-men",
       "title": "The Harvest Men",
-      "version": "director-cut-v2",
-      "generatedAt": "2026-03-23T17:40:25.878Z",
-      "productionReadiness": 99,
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:40.535Z",
+      "productionReadiness": 93,
       "difficulty": {
         "level": 3,
         "label": "Advanced",
@@ -210,6 +191,25 @@
       },
       "scenarioCount": 14,
       "reportPath": "/reports/quality/the-harvest-men.json"
+    },
+    {
+      "storyId": "ward-1908",
+      "title": "Ward 1908",
+      "version": "director-cut-v3-catalog-authored",
+      "generatedAt": "2026-03-24T22:12:41.668Z",
+      "productionReadiness": 93,
+      "difficulty": {
+        "level": 3,
+        "label": "Advanced",
+        "reason": "High branch density and pressure decisions demand experienced play."
+      },
+      "coverage": {
+        "beats": 100,
+        "choices": 100,
+        "endings": 100
+      },
+      "scenarioCount": 14,
+      "reportPath": "/reports/quality/ward-1908.json"
     }
   ]
 }

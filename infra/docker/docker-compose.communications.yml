@@ -1,0 +1,24 @@
+services:
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: myhorrorstory-mailpit
+    restart: unless-stopped
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+  waha:
+    image: devlikeapro/waha:latest
+    container_name: myhorrorstory-waha
+    restart: unless-stopped
+    ports:
+      - "3005:3000"
+    environment:
+      WHATSAPP_DEFAULT_ENGINE: WEBJS
+      WHATSAPP_HOOK_URL: http://host.docker.internal:8787/api/v1/webhooks/whatsapp/waha
+      WHATSAPP_HOOK_EVENTS: message
+      WAHA_API_KEY: ${WHATSAPP_WAHA_API_KEY}
+      WHATSAPP_HOOK_API_KEY: ${WHATSAPP_WAHA_WEBHOOK_SECRET}
+    volumes:
+      - ../../.runtime/waha:/app/.sessions
+

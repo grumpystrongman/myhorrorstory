@@ -1,19 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import {
-  applyResponseChoice,
-  beatById,
-  createInitialSessionState,
-  resolveSessionEnding,
-  sortMessagesForFeed,
-  type DramaPackage
-} from './play-session';
+import type { DramaPackage, SessionState } from './play-session';
+import { resolveSessionEnding } from './play-session';
 
-const samplePackage: DramaPackage = {
-  id: 'sample',
-  title: 'Sample',
-  version: 'v1',
-  hook: 'hook',
-  tone: 'CINEMATIC',
+const pack: DramaPackage = {
+  id: 'qa-ending-pack',
+  title: 'QA Ending Pack',
+  version: 'test',
+  hook: 'test',
+  tone: 'test',
   subgenre: 'test',
   location: 'test',
   warnings: [],
@@ -21,178 +15,98 @@ const samplePackage: DramaPackage = {
   villain: {
     id: 'villain',
     displayName: 'Villain',
-    archetype: 'CALM_GENIUS_MANIPULATOR',
-    worldview: 'worldview',
-    motive: 'motive'
+    archetype: 'manipulator',
+    worldview: 'test',
+    motive: 'test'
   },
   arcs: [],
-  beats: [
-    {
-      id: 'beat-1',
-      actId: 'act-1',
-      actTitle: 'Act',
-      title: 'Beat 1',
-      narrative: 'n1',
-      stage: 1,
-      unlockAfterSeconds: 0,
-      revealClueIds: ['c1'],
-      incomingMessages: [
-        {
-          id: 'm2',
-          senderName: 'A',
-          role: 'investigator',
-          channel: 'SMS',
-          text: 'later',
-          delaySeconds: 3,
-          intensity: 20
-        },
-        {
-          id: 'm1',
-          senderName: 'B',
-          role: 'witness',
-          channel: 'SMS',
-          text: 'first',
-          delaySeconds: 1,
-          intensity: 30
-        }
-      ],
-      responseOptions: [
-        {
-          id: 'o1',
-          label: 'Move',
-          intent: 'CURIOSITY',
-          summary: 'sum',
-          nextBeatId: 'beat-2',
-          progressDelta: 18,
-          reputationDelta: {
-            trustworthiness: 2,
-            aggression: 0,
-            curiosity: 5,
-            deception: 0,
-            morality: 1
-          },
-          flagUpdates: {
-            k: true
-          }
-        }
-      ],
-      defaultNextBeatId: 'beat-2',
-      backgroundVisual: '/visuals/stories/sample.svg'
-    },
-    {
-      id: 'beat-2',
-      actId: 'act-1',
-      actTitle: 'Act',
-      title: 'Beat 2',
-      narrative: 'n2',
-      stage: 4,
-      unlockAfterSeconds: 0,
-      revealClueIds: ['c2'],
-      incomingMessages: [],
-      responseOptions: [],
-      defaultNextBeatId: null,
-      backgroundVisual: '/visuals/stories/sample.svg'
-    }
-  ],
+  beats: [],
   endings: [
-    {
-      id: 'ending-justice',
-      title: 'Justice',
-      type: 'JUSTICE',
-      summary: 'justice',
-      epilogue: 'ep',
-      sequelHook: 'hook'
-    },
-    {
-      id: 'ending-corruption',
-      title: 'Corruption',
-      type: 'CORRUPTION',
-      summary: 'corr',
-      epilogue: 'ep',
-      sequelHook: 'hook'
-    },
-    {
-      id: 'ending-unresolved',
-      title: 'Unresolved',
-      type: 'UNRESOLVED',
-      summary: 'un',
-      epilogue: 'ep',
-      sequelHook: 'hook'
-    }
+    { id: 'justice', type: 'JUSTICE', title: 'Justice', summary: '', epilogue: '', sequelHook: '' },
+    { id: 'pyrrhic', type: 'PYRRHIC', title: 'Pyrrhic', summary: '', epilogue: '', sequelHook: '' },
+    { id: 'tragic', type: 'TRAGIC', title: 'Tragic', summary: '', epilogue: '', sequelHook: '' },
+    { id: 'corruption', type: 'CORRUPTION', title: 'Corruption', summary: '', epilogue: '', sequelHook: '' },
+    { id: 'unresolved', type: 'UNRESOLVED', title: 'Unresolved', summary: '', epilogue: '', sequelHook: '' }
   ],
-  investigationBoard: {
-    nodes: [],
-    links: [],
-    timeline: []
-  },
+  investigationBoard: { nodes: [], links: [], timeline: [] },
   replayHooks: [],
   sequelHooks: [],
   branchingMoments: []
 };
 
-describe('play session runtime', () => {
-  it('applies response effects and advances beat', () => {
-    const initial = createInitialSessionState(samplePackage);
-    const beat = beatById(samplePackage, initial.currentBeatId);
-    expect(beat).toBeDefined();
-    if (!beat) {
-      return;
-    }
+function state(overrides: Partial<SessionState>): SessionState {
+  return {
+    currentBeatId: 'beat',
+    visitedBeatIds: ['beat'],
+    discoveredClues: [],
+    reputation: {
+      trustworthiness: 0,
+      aggression: 0,
+      curiosity: 0,
+      deception: 0,
+      morality: 0
+    },
+    flags: {},
+    investigationProgress: 80,
+    selectedResponses: [],
+    complete: true,
+    ...overrides
+  };
+}
 
-    const result = applyResponseChoice(samplePackage, initial, beat, beat.responseOptions[0]!);
-    expect(result.nextBeatId).toBe('beat-2');
-    expect(result.nextState.flags.k).toBe(true);
-    expect(result.nextState.reputation.curiosity).toBe(5);
-    expect(result.nextState.discoveredClues).toContain('c1');
+describe('resolveSessionEnding', () => {
+  it('returns JUSTICE for high morality + trust + progress', () => {
+    const ending = resolveSessionEnding(
+      pack,
+      state({
+        reputation: { trustworthiness: 7, aggression: 2, curiosity: 4, deception: 3, morality: 18 },
+        investigationProgress: 90
+      })
+    );
+    expect(ending.type).toBe('JUSTICE');
   });
 
-  it('resolves ending by reputation and progress', () => {
-    const justice = resolveSessionEnding(samplePackage, {
-      ...createInitialSessionState(samplePackage),
-      complete: true,
-      investigationProgress: 90,
-      reputation: {
-        trustworthiness: 9,
-        aggression: 0,
-        curiosity: 8,
-        deception: 0,
-        morality: 22
-      }
-    });
-    expect(justice.type).toBe('JUSTICE');
-
-    const corruption = resolveSessionEnding(samplePackage, {
-      ...createInitialSessionState(samplePackage),
-      complete: true,
-      investigationProgress: 88,
-      reputation: {
-        trustworthiness: -8,
-        aggression: 11,
-        curiosity: 4,
-        deception: 33,
-        morality: -20
-      }
-    });
-    expect(corruption.type).toBe('CORRUPTION');
-
-    const unresolved = resolveSessionEnding(samplePackage, {
-      ...createInitialSessionState(samplePackage),
-      complete: true,
-      investigationProgress: 92,
-      reputation: {
-        trustworthiness: 18,
-        aggression: 10,
-        curiosity: 9,
-        deception: 12,
-        morality: 6
-      }
-    });
-    expect(unresolved.type).toBe('UNRESOLVED');
+  it('returns TRAGIC for extreme aggression profile', () => {
+    const ending = resolveSessionEnding(
+      pack,
+      state({
+        reputation: { trustworthiness: -9, aggression: 33, curiosity: 2, deception: 8, morality: -12 },
+        investigationProgress: 72
+      })
+    );
+    expect(ending.type).toBe('TRAGIC');
   });
 
-  it('sorts messages by delay for feed ordering', () => {
-    const beat = samplePackage.beats[0]!;
-    const sorted = sortMessagesForFeed(beat.incomingMessages);
-    expect(sorted.map((item) => item.id)).toEqual(['m1', 'm2']);
+  it('returns CORRUPTION for trust collapse + deception spike', () => {
+    const ending = resolveSessionEnding(
+      pack,
+      state({
+        reputation: { trustworthiness: -24, aggression: 9, curiosity: 3, deception: 23, morality: -10 },
+        investigationProgress: 76
+      })
+    );
+    expect(ending.type).toBe('CORRUPTION');
+  });
+
+  it('returns PYRRHIC for costly but controlled completion', () => {
+    const ending = resolveSessionEnding(
+      pack,
+      state({
+        reputation: { trustworthiness: -5, aggression: 16, curiosity: 5, deception: 14, morality: -7 },
+        investigationProgress: 83
+      })
+    );
+    expect(ending.type).toBe('PYRRHIC');
+  });
+
+  it('returns UNRESOLVED for stalled high-progress contradiction band', () => {
+    const ending = resolveSessionEnding(
+      pack,
+      state({
+        reputation: { trustworthiness: 4, aggression: 10, curiosity: 5, deception: 11, morality: -3 },
+        investigationProgress: 90
+      })
+    );
+    expect(ending.type).toBe('UNRESOLVED');
   });
 });

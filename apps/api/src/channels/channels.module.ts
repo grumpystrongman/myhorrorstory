@@ -7,6 +7,7 @@ import { WebhooksController } from './webhooks.controller.js';
 @Module({
   imports: [RuntimeModule],
   controllers: [ChannelsController, WebhooksController],
-  providers: [ChannelsService]
+  providers: [ChannelsService],
+  exports: [ChannelsService]
 })
 export class ChannelsModule {}

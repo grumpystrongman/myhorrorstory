@@ -109,31 +109,31 @@ function inferIntentFromAction(action: string): PlayerIntent {
 
 function reputationForIntent(intent: PlayerIntent): DramaResponseOption['reputationDelta'] {
   if (intent === 'DEFIANCE') {
-    return { trustworthiness: -1, aggression: 2, curiosity: 0, deception: 0, morality: -1 };
-  }
-  if (intent === 'COMPLIANCE') {
-    return { trustworthiness: 1, aggression: 0, curiosity: 0, deception: 0, morality: 1 };
-  }
-  if (intent === 'ACCUSATION') {
-    return { trustworthiness: -1, aggression: 1, curiosity: 0, deception: 0, morality: 0 };
-  }
-  if (intent === 'SILENCE') {
-    return { trustworthiness: -1, aggression: 0, curiosity: 0, deception: 0, morality: 0 };
-  }
-  if (intent === 'BARGAIN') {
-    return { trustworthiness: 0, aggression: 0, curiosity: 0, deception: 1, morality: -1 };
-  }
-  if (intent === 'DECEPTION') {
-    return { trustworthiness: -2, aggression: 0, curiosity: 0, deception: 2, morality: -1 };
-  }
-  if (intent === 'QUESTION' || intent === 'CURIOSITY') {
-    return { trustworthiness: 0, aggression: 0, curiosity: 2, deception: 0, morality: 0 };
-  }
-  if (intent === 'THREAT') {
     return { trustworthiness: -2, aggression: 3, curiosity: 0, deception: 0, morality: -2 };
   }
+  if (intent === 'COMPLIANCE') {
+    return { trustworthiness: 2, aggression: -1, curiosity: 0, deception: 0, morality: 2 };
+  }
+  if (intent === 'ACCUSATION') {
+    return { trustworthiness: -2, aggression: 3, curiosity: 0, deception: 0, morality: -1 };
+  }
+  if (intent === 'SILENCE') {
+    return { trustworthiness: -2, aggression: 0, curiosity: -1, deception: 1, morality: -1 };
+  }
+  if (intent === 'BARGAIN') {
+    return { trustworthiness: -1, aggression: 0, curiosity: 0, deception: 2, morality: -1 };
+  }
+  if (intent === 'DECEPTION') {
+    return { trustworthiness: -3, aggression: 1, curiosity: 0, deception: 4, morality: -2 };
+  }
+  if (intent === 'QUESTION' || intent === 'CURIOSITY') {
+    return { trustworthiness: 1, aggression: -1, curiosity: 3, deception: 0, morality: 1 };
+  }
+  if (intent === 'THREAT') {
+    return { trustworthiness: -4, aggression: 5, curiosity: 0, deception: 2, morality: -3 };
+  }
   if (intent === 'FEAR') {
-    return { trustworthiness: 0, aggression: -1, curiosity: 0, deception: 0, morality: 0 };
+    return { trustworthiness: -1, aggression: -1, curiosity: -1, deception: 0, morality: -1 };
   }
   return { trustworthiness: 0, aggression: 0, curiosity: 0, deception: 0, morality: 0 };
 }
@@ -166,13 +166,15 @@ function toResponseOptions(
   return picked.map((action, index) => {
     const intent = inferIntentFromAction(action);
     const normalizedIntent = ALL_INTENTS.includes(intent) ? intent : 'QUESTION';
+    const highRiskIntents = new Set<PlayerIntent>(['THREAT', 'DECEPTION', 'ACCUSATION', 'DEFIANCE', 'SILENCE']);
+    const baseProgress = highRiskIntents.has(normalizedIntent) ? 2 : 4;
     return {
       id: `${day.id}.choice.${index + 1}`,
       label: action.replaceAll('_', ' ').replace(/\b\w/g, (token) => token.toUpperCase()),
       intent: normalizedIntent,
       summary: `Day ${String(day.day).padStart(2, '0')} action: ${action.replaceAll('_', ' ')}`,
       nextBeatId,
-      progressDelta: 3,
+      progressDelta: baseProgress,
       reputationDelta: reputationForIntent(normalizedIntent),
       flagUpdates: {
         [`decision.day_${String(day.day).padStart(2, '0')}.primary`]: action
@@ -194,38 +196,47 @@ function buildCampaignPlan(campaign: ArgCampaignManifest): DramaCampaignPlan {
 }
 
 function buildEndings(campaign: ArgCampaignManifest): DramaEnding[] {
+  const label = campaign.title;
   return [
     {
       id: `${campaign.id}-justice`,
       title: 'Documented Justice',
       type: 'JUSTICE',
-      summary: 'Evidence survives scrutiny and confirms culpability.',
-      epilogue: 'The public record finally aligns with what happened.',
-      sequelHook: 'One unresolved file remains sealed.'
+      summary: `${label}: admissible proof survives pressure and exposes the guilty chain.`,
+      epilogue: 'Witnesses hold testimony, the evidence trail stays intact, and accountability lands.',
+      sequelHook: 'One sealed appendix references a surviving accomplice.'
     },
     {
       id: `${campaign.id}-pyrrhic`,
       title: 'Pyrrhic Containment',
       type: 'PYRRHIC',
-      summary: 'The immediate threat is contained at a difficult cost.',
-      epilogue: 'Witnesses are safer, but systemic damage remains.',
-      sequelHook: 'Unknown Contact sends a checksum-only message.'
+      summary: `${label}: the immediate threat is contained, but casualties and institutional damage remain.`,
+      epilogue: 'The city stabilizes while key evidence and relationships are permanently scarred.',
+      sequelHook: 'A second site activates just outside the original perimeter.'
+    },
+    {
+      id: `${campaign.id}-tragic`,
+      title: 'Terminal Outcome',
+      type: 'TRAGIC',
+      summary: `${label}: failure is absolute and the antagonist secures operational control.`,
+      epilogue: 'A critical ally dies or disappears, and this run ends as a confirmed loss.',
+      sequelHook: 'Only a full replay from Day 1 can alter who survives.'
     },
     {
       id: `${campaign.id}-corruption`,
       title: 'Compromised Truth',
       type: 'CORRUPTION',
-      summary: 'Outcome is stabilized by accepting manipulated evidence.',
-      epilogue: 'Case closure stands, but the archive is tainted.',
-      sequelHook: 'The antagonist leaves one final mirror transcript.'
+      summary: `${label}: manipulated evidence is accepted, and the enemy narrative becomes official history.`,
+      epilogue: 'Case closure stands on lies while witnesses are discredited or coerced into silence.',
+      sequelHook: 'Your authorization token appears in the next hostile release.'
     },
     {
       id: `${campaign.id}-unresolved`,
-      title: 'Psychological Break',
+      title: 'Case Collapse',
       type: 'UNRESOLVED',
-      summary: 'No timeline can be proven cleanly enough to close the case.',
-      epilogue: 'The board is complete, but certainty collapses.',
-      sequelHook: 'A delayed call arrives from an unlisted route.'
+      summary: `${label}: timeline certainty collapses and the investigation fails to convict.`,
+      epilogue: 'The board is dense with clues, but nothing remains prosecutable.',
+      sequelHook: 'Control orders a complete reset under stricter protocol.'
     }
   ];
 }
@@ -372,7 +383,26 @@ export function adaptArgToDramaPackage(
       heroImage: `/visuals/stories/${campaign.id}.svg`,
       assets: []
     },
-    replayHooks: ['Alternative decisions alter trust and pressure dynamics.'],
+    caseFile: {
+      objective: `Expose who is controlling the ${campaign.subgenre} operation in ${campaign.location}.`,
+      primaryQuestion: 'What happened, who benefits, and which evidence survives legal scrutiny?',
+      operationWindow: `${campaign.durationDays} days`,
+      successCriteria: [
+        'Keep witness testimony coherent through final debrief.',
+        'Protect chain-of-custody on core evidence artifacts.',
+        'Prevent antagonist narrative takeover across channels.'
+      ],
+      failureConsequences: [
+        'A key witness is killed, missing, or permanently compromised.',
+        'The antagonist narrative becomes accepted public truth.',
+        'Primary evidence is tainted beyond admissibility.',
+        'The case collapses and must be replayed from the beginning.'
+      ]
+    },
+    replayHooks: [
+      'Alternative decisions alter trust and pressure dynamics.',
+      'Failure branches include terminal, corruption, and collapse outcomes.'
+    ],
     sequelHooks: ['Residual contradiction thread remains unresolved post-campaign.'],
     branchingMoments: campaign.weeklyStructure.map((week) => `${week.label} branch anchor`)
   };

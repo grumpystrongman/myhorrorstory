@@ -11,6 +11,7 @@ import {
 } from '@nestjs/common';
 import {
   coerceWebhookBodyToRecord,
+  verifyWahaWebhookSecret,
   verifySignalWebhookSecret,
   verifyTelegramSecretToken,
   verifyTwilioSignature
@@ -116,6 +117,31 @@ export class WebhooksController {
     } catch (error) {
       if (error instanceof Error && error.message === 'signal_payload_invalid') {
         throw new BadRequestException('Invalid Signal payload.');
+      }
+      throw error;
+    }
+  }
+
+  @Post('whatsapp/waha')
+  @HttpCode(200)
+  processWahaWhatsapp(
+    @Body() body: unknown,
+    @Headers('x-waha-webhook-secret') wahaSecret: string | undefined
+  ): ReturnType<ChannelsService['processWahaWebhook']> {
+    const valid = verifyWahaWebhookSecret({
+      expectedSecret: process.env.WHATSAPP_WAHA_WEBHOOK_SECRET,
+      receivedSecret: wahaSecret
+    });
+
+    if (!valid) {
+      throw new UnauthorizedException('Invalid WAHA webhook secret.');
+    }
+
+    try {
+      return this.channelsService.processWahaWebhook(body);
+    } catch (error) {
+      if (error instanceof Error && error.message === 'waha_payload_invalid') {
+        throw new BadRequestException('Invalid WAHA payload.');
       }
       throw error;
     }
