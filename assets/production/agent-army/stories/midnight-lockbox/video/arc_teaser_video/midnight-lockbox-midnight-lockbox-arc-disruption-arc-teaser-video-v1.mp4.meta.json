@@ -1,44 +1,48 @@
 {
-  "id": "midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video",
-  "title": "Midnight Lockbox - Leak and Fracture Arc Teaser Video",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video",
+  "asset_type": "arc_teaser_video",
   "modality": "video",
-  "category": "arc_teaser_video",
-  "scope": "story",
+  "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Arc focus: Leak and Fracture. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\arc_key_art\\midnight-lockbox-midnight-lockbox-arc-disruption-arc-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\beat_scene_art\\midnight-lockbox-beat-1-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\beat_scene_art\\midnight-lockbox-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\villain_portrait\\midnight-lockbox-villain-portrait-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\arc_ambience\\midnight-lockbox-midnight-lockbox-arc-disruption-arc-ambience-v1.wav",
+    "duration_seconds": 30,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Night Manager Eli Mercer",
+      "role": "witness",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "nova",
+      "script": "Night Manager Eli Mercer to team. A self-storage unit with no renter sends voice memos predicting what your team will do next. This chapter centers on leak and fracture arc teaser video, and your objective is to establish a defensible timeline, pressure test witness statements, and isolate deliberate manipulation. Start with voicemail waveform anomaly, map every contradiction to clock time, and keep one witness stable while you escalate. If The Quartermaster makes direct contact, preserve the message first, then respond with evidence-led questions only.",
+      "design": {
+        "apiSpeed": 1.08,
+        "pitchSemitone": 2,
+        "textureAmount": 0.59625,
+        "highpassHz": 97,
+        "lowpassHz": 7885,
+        "presenceGainDb": 0.347
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\video\\arc_teaser_video\\midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video-v1.mp4",
+  "public_path": "/agent-army/stories/midnight-lockbox/video/arc_teaser_video/midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\video\\arc_teaser_video\\midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/video/arc_teaser_video/midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:01:58.672Z",
+  "checksum": "a665827abccf4660e65bf322d40aa023cbe5d229",
+  "file_size": 17234836,
+  "duration_seconds": 30,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/video/arc_teaser_video/midnight-lockbox-midnight-lockbox-arc-disruption-arc-teaser-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#71283d",
-    "accentColor": "#5c977a"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Arc focus: Leak and Fracture. Produce teaser clip with coherent world continuity, practical lighting, and one clear clue motif transition.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:20.592Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

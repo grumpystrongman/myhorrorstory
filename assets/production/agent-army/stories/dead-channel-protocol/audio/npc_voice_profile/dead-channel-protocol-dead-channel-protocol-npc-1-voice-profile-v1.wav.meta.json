@@ -3,18 +3,43 @@
   "asset_id": "dead-channel-protocol-dead-channel-protocol-npc-1-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Security Engineer Talia Ren. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Security Engineer Talia Ren. Keep your channel open and do not answer unknown callbacks. A ghost app predicts outages, deaths, and your next move. Start with protocol signed payload, then verify every timestamp against smart-city control grid and abandoned transit nodes. If Root Administrator contacts you directly, preserve the message before you react.",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Security Engineer Talia Ren. Baseline emotion=CALM. Motivations=Control fallout quickly.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "sage",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "operator",
+    "sex": "female",
+    "design": {
+      "apiSpeed": 0.9723849999999999,
+      "pitchSemitone": -0.782,
+      "textureAmount": 0.45999999999999996,
+      "highpassHz": 77,
+      "lowpassHz": 7067,
+      "presenceGainDb": -0.532
+    },
+    "voice_design": {
+      "apiSpeed": 0.9723849999999999,
+      "pitchSemitone": -0.782,
+      "textureAmount": 0.45999999999999996,
+      "highpassHz": 77,
+      "lowpassHz": 7067,
+      "presenceGainDb": -0.532
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\npc_voice_profile\\dead-channel-protocol-dead-channel-protocol-npc-1-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-1-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:25.975Z",
-  "checksum": "01fbb79506ba813ee65b0e47b2c8b07d4405ef30",
-  "file_size": 2110600,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:34:03.959Z",
+  "checksum": "b9c89c2e9badf657e72298e8aaee2b73b2cff0f9",
+  "file_size": 1348774,
+  "duration_seconds": 14.05,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-1-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

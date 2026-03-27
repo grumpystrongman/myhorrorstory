@@ -3,18 +3,43 @@
   "asset_id": "dead-channel-protocol-dead-channel-protocol-npc-2-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Streamer Bo Finch. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Streamer Bo Finch. I should not be leaving this message. Something about protocol signed payload is wrong, and Root Administrator wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to smart-city control grid and abandoned transit nodes.",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Build unique voice profile for Streamer Bo Finch. Baseline emotion=ANXIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "nova",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 1.16,
+      "pitchSemitone": 2.175,
+      "textureAmount": 0.6337499999999999,
+      "highpassHz": 85,
+      "lowpassHz": 7891,
+      "presenceGainDb": 0.837
+    },
+    "voice_design": {
+      "apiSpeed": 1.16,
+      "pitchSemitone": 2.175,
+      "textureAmount": 0.6337499999999999,
+      "highpassHz": 85,
+      "lowpassHz": 7891,
+      "presenceGainDb": 0.837
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\npc_voice_profile\\dead-channel-protocol-dead-channel-protocol-npc-2-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-2-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:26.291Z",
-  "checksum": "069fad5651c3c2a5d5796ef3da6ba569ae301d61",
-  "file_size": 2110356,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:34:07.875Z",
+  "checksum": "bba0f1536bf8144efa09f7585dac141cfe770304",
+  "file_size": 807942,
+  "duration_seconds": 8.42,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/audio/npc_voice_profile/dead-channel-protocol-dead-channel-protocol-npc-2-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

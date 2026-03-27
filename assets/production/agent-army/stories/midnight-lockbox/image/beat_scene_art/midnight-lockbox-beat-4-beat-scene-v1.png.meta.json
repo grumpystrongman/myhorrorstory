@@ -3,7 +3,7 @@
   "asset_id": "midnight-lockbox-beat-4-beat-scene",
   "asset_type": "beat_scene_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Midnight Lockbox. Premise: A self-storage unit with no renter sends voice memos predicting what your team will do next.. Setting: Gallowglass 24-hour storage facility and storm-drain service tunnels. Threat presence: The Quartermaster. Recurring motifs: unit tags, bolt cutters, time-lock stickers. Beat: Noon Ultimatum (Day Two: Pressure). Narrative: The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: GROUNDED. Immediate scene brief: The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Midnight Lockbox. Premise: A self-storage unit with no renter sends voice memos predicting what your team will do next.. Setting: Gallowglass 24-hour storage facility and storm-drain service tunnels. Threat presence: The Quartermaster. Recurring motifs: unit tags, bolt cutters, time-lock stickers. Beat: Noon Ultimatum (Day Two: Pressure). Narrative: The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: supernatural mystery. Tone: GROUNDED. Immediate scene brief: The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
   "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Beat: Noon Ultimatum (Day Two: Pressure). Narrative: The antagonist sends a noon deadline: open the lockbox publicly or lose your only witness.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 26,
+    "rawText": "Ry J\nui. Td Wh\nfe FONG\n1 — i 4 i\na 5 CHE so ;\n= 1 wm I\nea | = Bm: a vo i\nan = Bi (8 yy {\n3 A —4r Ly & —— ¢ el ER]\n== F rank i\n— = a Sa Ee EE i. pe\nEE = Cai i TT Eee a Be 7",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\beat_scene_art\\midnight-lockbox-beat-4-beat-scene-v1.png",
   "public_path": "/agent-army/stories/midnight-lockbox/image/beat_scene_art/midnight-lockbox-beat-4-beat-scene-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\beat_scene_art\\midnight-lockbox-beat-4-beat-scene-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/image/beat_scene_art/midnight-lockbox-beat-4-beat-scene-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:10:28.740Z",
-  "checksum": "a7ab50c384ba6cad5bf27a5a73b63dfcf5229f37",
-  "file_size": 3495745,
+  "created_at": "2026-03-22T21:29:24.329Z",
+  "checksum": "86c0e81b330739e564e2ea67a1bc38a2d277da92",
+  "file_size": 2864880,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/image/beat_scene_art/midnight-lockbox-beat-4-beat-scene-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:28:59.748Z",
   "extension": ".png"
 }

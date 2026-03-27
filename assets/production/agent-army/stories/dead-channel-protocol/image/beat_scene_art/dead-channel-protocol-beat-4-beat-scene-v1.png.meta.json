@@ -3,7 +3,7 @@
   "asset_id": "dead-channel-protocol-beat-4-beat-scene",
   "asset_type": "beat_scene_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
   "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 27,
+    "rawText": "Wt ead — :\nSR Eis Eee Re, ONY i. in\nil Ne Sai NE Eh 3 EAN ee\n~ dba Go wap Go\ng 5 a ae Ee\n¥ Bist eo ome\nSat { i 5 hs J) it Poe CT A Sh ae\nEe i Ag [ 4 & ; Tei det fe\n: ry A 3 EE — ee. me\nLid : j # RSC Ee i Ne i Ra\n= { oi El fi Lal. t Bs re\n: | a i Le ow\n1 pet ps Foi = = Fer\noe n i dl Ba ae ii A %\n8 | \\ By WB ie i | SE\n~My No E 7 a is\n4 Gok - Ee Ei A hig §\noy LE vent a 3 Goll ; | i\n4 TE Seo z Fire § i\nGe Rs TO Sn SE ct - ae\nA : Se -\n: ; ce\n3 *, hla\ng ORE\n+i a\n: iL x Fiat He Eo 4\na CAE mas Bo\nES Riad i\n3 = =\nPe A mi en\nBiman fe",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-4-beat-scene-v1.png",
   "public_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-4-beat-scene-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-4-beat-scene-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-4-beat-scene-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:04:37.536Z",
-  "checksum": "3add419e669d00b4c736f1d8fb9be0a333118d0f",
-  "file_size": 2320484,
+  "created_at": "2026-03-22T21:19:10.007Z",
+  "checksum": "5a7cad5868ef5b5ba1c7d59ffd03c478f3c1d48b",
+  "file_size": 2336364,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/beat_scene_art/dead-channel-protocol-beat-4-beat-scene-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:18:44.035Z",
   "extension": ".png"
 }

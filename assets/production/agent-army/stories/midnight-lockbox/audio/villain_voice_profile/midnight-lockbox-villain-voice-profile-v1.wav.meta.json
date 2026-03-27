@@ -3,18 +3,43 @@
   "asset_id": "midnight-lockbox-villain-voice-profile",
   "asset_type": "villain_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Create villain voice profile for The Quartermaster. Worldview: Storage is memory, and memory belongs to whoever controls access.. Manner: Dry, managerial contempt.. Include escalation stage cues for stage 1-4 intimidation.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Villain. A self-storage unit with no renter sends voice memos predicting what your team will do next. Work the case in order: secure voicemail waveform anomaly, confirm the scene at gallowglass 24-hour storage facility and storm-drain service tunnels, and do not let The Quartermaster choose the pace. Trust the evidence before you trust the performance.",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Create villain voice profile for The Quartermaster. Worldview: Storage is memory, and memory belongs to whoever controls access.. Manner: Dry, managerial contempt.. Include escalation stage cues for stage 1-4 intimidation.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "alloy",
+    "locale": "en-US",
+    "region": "global",
+    "role": "narrator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 0.98915,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 84,
+      "lowpassHz": 7305,
+      "presenceGainDb": -0.16
+    },
+    "voice_design": {
+      "apiSpeed": 0.98915,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 84,
+      "lowpassHz": 7305,
+      "presenceGainDb": -0.16
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\villain_voice_profile\\midnight-lockbox-villain-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/midnight-lockbox/audio/villain_voice_profile/midnight-lockbox-villain-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:38.242Z",
-  "checksum": "967bb0f44d692795933b44439955e65c99d969e6",
-  "file_size": 2110398,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:34:42.029Z",
+  "checksum": "8fe1bb22a162b229f6859b48130f931d4452cf38",
+  "file_size": 1085194,
+  "duration_seconds": 11.3,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/audio/villain_voice_profile/midnight-lockbox-villain-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

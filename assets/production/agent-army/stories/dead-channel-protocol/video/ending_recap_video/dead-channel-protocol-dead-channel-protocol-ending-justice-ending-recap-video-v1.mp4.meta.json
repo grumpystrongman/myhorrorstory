@@ -1,44 +1,48 @@
 {
-  "id": "dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video",
-  "title": "Dead Channel Protocol - Clean Resolution Ending Recap Video",
+  "story_id": "dead-channel-protocol",
+  "asset_id": "dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video",
+  "asset_type": "ending_recap_video",
   "modality": "video",
-  "category": "ending_recap_video",
-  "scope": "story",
+  "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\story_key_art\\dead-channel-protocol-story-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\villain_portrait\\dead-channel-protocol-villain-portrait-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-5-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\beat_scene_art\\dead-channel-protocol-beat-6-beat-scene-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
+    "duration_seconds": 40,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Security Engineer Talia Ren",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Security Engineer Talia Ren reporting. clean resolution ending recap video is the final pressure point, and the board is now complete enough to choose your ending with intent rather than panic. The trail began with protocol signed payload, but the real shift came when the timeline around smart-city control grid and abandoned transit nodes stopped matching witness memory in small, strategic places. Your last review should answer one question in plain language: who is reshaping the evidence chain and why Root Administrator benefits from confusion.. Choose your closeout path only after you can state the motive, method, and consequence in one consistent chain.",
+      "design": {
+        "apiSpeed": 0.9910749999999999,
+        "pitchSemitone": -0.782,
+        "textureAmount": 0.45999999999999996,
+        "highpassHz": 73,
+        "lowpassHz": 7092,
+        "presenceGainDb": -0.21200000000000002
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.mp4",
+  "public_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\video\\ending_recap_video\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T15:57:49.210Z",
+  "checksum": "9a73c874e52b84f9e07f5a2f60ddbbe989a20add",
+  "file_size": 24557203,
+  "duration_seconds": 40,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/video/ending_recap_video/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-recap-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#856b4f",
-    "accentColor": "#90825b"
-  },
-  "prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Produce ending recap video for \"Clean Resolution\" with three visual beats: aftermath, consequence, sequel hook.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:12.558Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

@@ -1,44 +1,47 @@
 {
-  "id": "midnight-lockbox-beat-5-beat-transition",
-  "title": "Midnight Lockbox - Drain Tunnel Run Beat Transition",
+  "story_id": "midnight-lockbox",
+  "asset_id": "midnight-lockbox-beat-5-beat-transition",
+  "asset_type": "beat_transition_video",
   "modality": "video",
-  "category": "beat_transition_video",
-  "scope": "story",
+  "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Beat: Drain Tunnel Run. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\beat_scene_art\\midnight-lockbox-beat-5-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\evidence_still\\midnight-lockbox-voicemail-waveform-anomaly-evidence-still-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\image\\story_key_art\\midnight-lockbox-story-key-art-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\story_theme_loop\\midnight-lockbox-story-theme-loop-v1.wav",
+    "duration_seconds": 12,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Case Lead Veda Cross",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Case Lead Veda Cross briefing. Drain Tunnel Run Beat Transition is now active and represents a mid-case movement, not a complete narrative payload. Use this transition to update your timeline, re-score suspect credibility, and verify whether voicemail waveform anomaly still supports your current theory. Anchor your next move to the central question: who is reshaping the evidence chain and why The Quartermaster benefits from confusion.. If The Quartermaster reaches you first, archive the contact before you respond, then challenge the claim against the board.",
+      "design": {
+        "apiSpeed": 0.99012,
+        "pitchSemitone": 0.4149999999999999,
+        "textureAmount": 0.45999999999999996,
+        "highpassHz": 88,
+        "lowpassHz": 7199,
+        "presenceGainDb": 0.188
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\video\\beat_transition_video\\midnight-lockbox-beat-5-beat-transition-v1.mp4",
+  "public_path": "/agent-army/stories/midnight-lockbox/video/beat_transition_video/midnight-lockbox-beat-5-beat-transition-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\video\\beat_transition_video\\midnight-lockbox-beat-5-beat-transition-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/midnight-lockbox/video/beat_transition_video/midnight-lockbox-beat-5-beat-transition-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:04:33.736Z",
+  "checksum": "ddace62e9017742f23c062f3b813c82674bd9ea0",
+  "file_size": 7107203,
+  "duration_seconds": 12,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/video/beat_transition_video/midnight-lockbox-beat-5-beat-transition-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#2a798b",
-    "accentColor": "#507c7e"
-  },
-  "prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Beat: Drain Tunnel Run. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:30:28.178Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

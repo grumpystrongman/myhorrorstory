@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Sealed Evidence Conviction\" that supports summary \"You preserve the chain and expose the extortion network before the deadline.\" and epilogue \"Unit 331 is seized with intact evidence, and the witness enters protection.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Sealed Evidence Conviction\" that supports summary \"You preserve the chain and expose the extortion network before the deadline.\" and epilogue \"Unit 331 is seized with intact evidence, and the witness enters protection.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 43,
+      "mid": 210,
+      "high": 1288,
+      "shimmer": 3228,
+      "pulseHz": 0.8700000000000001,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.28
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\ending_score\\midnight-lockbox-midnight-lockbox-ending-justice-ending-score-v1.wav",
   "public_path": "/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-justice-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:39.354Z",
-  "checksum": "a1985d52afad1d2723d7da4720bf9f973f816ed0",
-  "file_size": 15699586,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:08:23.047Z",
+  "checksum": "89ee48c666d1f8cdff90d875169578f4da75180b",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-justice-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

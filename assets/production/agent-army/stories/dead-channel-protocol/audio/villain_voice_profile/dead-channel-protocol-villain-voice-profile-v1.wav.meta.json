@@ -3,18 +3,43 @@
   "asset_id": "dead-channel-protocol-villain-voice-profile",
   "asset_type": "villain_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Create villain voice profile for Root Administrator. Worldview: Systems only become honest when people fear the output.. Manner: Dry sarcasm about human latency.. Include escalation stage cues for stage 1-4 intimidation.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Villain. A ghost app predicts outages, deaths, and your next move. Work the case in order: secure protocol signed payload, confirm the scene at smart-city control grid and abandoned transit nodes, and do not let Root Administrator choose the pace. Trust the evidence before you trust the performance.",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Create villain voice profile for Root Administrator. Worldview: Systems only become honest when people fear the output.. Manner: Dry sarcasm about human latency.. Include escalation stage cues for stage 1-4 intimidation.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "fable",
+    "locale": "en-US",
+    "region": "global",
+    "role": "narrator",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 0.97466,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 72,
+      "lowpassHz": 7431,
+      "presenceGainDb": -0.32
+    },
+    "voice_design": {
+      "apiSpeed": 0.97466,
+      "pitchSemitone": 0,
+      "textureAmount": 0.475,
+      "highpassHz": 72,
+      "lowpassHz": 7431,
+      "presenceGainDb": -0.32
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\villain_voice_profile\\dead-channel-protocol-villain-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/dead-channel-protocol/audio/villain_voice_profile/dead-channel-protocol-villain-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:27.484Z",
-  "checksum": "0eb4eeed66d72b1cef7dff2d9bf2165c73dabe8b",
-  "file_size": 2110398,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:34:20.037Z",
+  "checksum": "fe1f10494c1cbbbf13b53bcdffe55d279ee61939",
+  "file_size": 874766,
+  "duration_seconds": 9.11,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/audio/villain_voice_profile/dead-channel-protocol-villain-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

@@ -3,7 +3,7 @@
   "asset_id": "dead-channel-protocol-substation-outage-trace-evidence-still",
   "asset_type": "evidence_still",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Substation outage trace\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Substation outage trace. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Render as forensic or investigative photography of a real object or scene, with tangible wear, shallow depth of field, and subtle clue placement. Keep any text non-prominent and diegetic only.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: forensic evidence photograph. Story world: Dead Channel Protocol. Setting: Smart-city control grid and abandoned transit nodes. Recurring motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Substation outage trace\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Evidence Still - Substation outage trace. Render a non-graphic investigative still focused on objects, architecture, weather traces, timestamps, clothing fibers, tire tracks, paper records, and scene aftermath. No bodies, no visible injuries, no attack in progress, no blood spatter, no gore, no active weapon use, no dismemberment. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Render as forensic or investigative photography of a real object or environment, with tangible wear, shallow depth of field, and subtle clue placement. If the scene implies documents, screens, labels, or signage, keep them out of frame, occluded, or blurred beyond readability.",
   "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Render forensic evidence still for \"Substation outage trace\" with chain-of-custody cues, believable wear, and subtle hidden clue placement.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,22 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 30,
+    "rawText": "Pp FB | -\n© mi —\n1 += |\ni Te\n|] — 4\nEAN - wis % -\noe |B\nmas + .\nCo\n\\ 4 oA pT <\n5 g and < + ’ ai\nae Ee BE __\nome es oe Te ig\nSe — PE = mY Pd\n3 EET a Fe ay Resa P\n= F 5 [ SE mel A\nBao Ff = - hoe —iT ssn\noa RE 7 ;\n(5 = = er 2 oe :\n. == mi ay\npe = = pr =\nBe — re SERRE ES ee\na ——\nBE —— fam eas oo hn Re =r\n——— \" eS WET ue = ;\n: SS : :\nRET : :\noi, a ao :",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
   "public_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\evidence_still\\dead-channel-protocol-substation-outage-trace-evidence-still-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-substation-outage-trace-evidence-still-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:06:35.884Z",
-  "checksum": "e597ecb20cdb29c28540a06d1559bd4ce25403af",
-  "file_size": 3160356,
+  "created_at": "2026-03-22T21:21:23.127Z",
+  "checksum": "122c9ed193bfbb50d63fe81855bad48bc4b36827",
+  "file_size": 3077133,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/evidence_still/dead-channel-protocol-substation-outage-trace-evidence-still-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:20:55.649Z",
   "extension": ".png"
 }

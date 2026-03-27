@@ -3,7 +3,7 @@
   "asset_id": "dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card",
   "asset_type": "puzzle_shard_card",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder ALLY_A. Content brief: Ally A receives sequence hints in SMS emoji cadence.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Any writing should be minimal, blurred, or partially obscured.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: clue artifact detail. Story world: Dead Channel Protocol. Premise: A ghost app predicts outages, deaths, and your next move.. Setting: Smart-city control grid and abandoned transit nodes. Threat presence: Root Administrator. Recurring motifs: error beeps, node maps, black-screen prompts. Create shard card for holder ALLY_A. Content brief: Ally A receives sequence hints in SMS emoji cadence.. Ensure it can stand alone but becomes decisive when combined with other shards.. Subgenre: techno/paranormal thriller. Tone: GROUNDED. Immediate scene brief: Dead Channel Protocol - Node Handshake Puzzle - ALLY_A Shard Card. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Show a physical evidence-board or clue collage with photographs, string, maps, stained paper, and marked surfaces. Prioritize tactile realism over readable text. Do not render any legible handwriting, labels, map text, captions, dossier headings, or faux typography.",
   "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Create shard card for holder ALLY_A. Content brief: Ally A receives sequence hints in SMS emoji cadence.. Ensure it can stand alone but becomes decisive when combined with other shards.",
   "tool_used": "openai:gpt-image-1",
   "provider_metadata": {
@@ -11,16 +11,28 @@
     "size": "1536x1024",
     "quality": "medium"
   },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 26,
+    "rawText": "— oe (Mo Se Re gas Ll\n¢ er [| 4 v. oo) foo) / E |\n| REESE i\n9 = R- pb fil\n5 ___JI¢N Ey a\nfe - SE 5 = bd a 4 Se. : i % i op bh\nBE » a Ee omit\nFRA. 5 \" SEER 3 §\n; —— | Vo V6 Se... RT — i\nEE oe\nfo mes es aL Lm gi\n8a | a Pret L. {ERTRE. (ok\nJ TLE DTN HATE\nI & il fea DEERE 3 Lo]\n! TF JE SLEMNTAE Gan \"ae\ng | | ol Ne N\\ PSC TNE\na he ae so Xr RW\n¥ CN AL 950 AhNEs Nod, LEE\n§ he TET AN\nLa 7 ali",
+    "tokens": [
+      {
+        "text": "foo)",
+        "normalized": "foo",
+        "confidence": 67
+      }
+    ]
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.png",
   "public_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\image\\puzzle_shard_card\\dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:07:25.896Z",
-  "checksum": "af53acd52907bb5ea12e99efd411e7a872fb6aa1",
-  "file_size": 3407906,
+  "created_at": "2026-03-22T21:23:22.506Z",
+  "checksum": "fcde4e18db91b82fbdecfaccc34f55496708ccc2",
+  "file_size": 3440272,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/image/puzzle_shard_card/dead-channel-protocol-dead-channel-protocol-puzzle-shards-dead-channel-protocol-puzzle-shard-ally-a-shard-card-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T16:47:59.042Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:22:57.015Z",
   "extension": ".png"
 }

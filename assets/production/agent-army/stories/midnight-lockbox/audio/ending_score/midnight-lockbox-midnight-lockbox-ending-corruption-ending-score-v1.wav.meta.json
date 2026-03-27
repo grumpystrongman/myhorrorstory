@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Quartermaster Pact\" that supports summary \"You trade transparency for operational control over future lockboxes.\" and epilogue \"You receive master access and the next target list at dawn.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Quartermaster Pact\" that supports summary \"You trade transparency for operational control over future lockboxes.\" and epilogue \"You receive master access and the next target list at dawn.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 52,
+      "mid": 280,
+      "high": 1134,
+      "shimmer": 3394,
+      "pulseHz": 1.8699999999999999,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.28
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\ending_score\\midnight-lockbox-midnight-lockbox-ending-corruption-ending-score-v1.wav",
   "public_path": "/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-corruption-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:42.239Z",
-  "checksum": "824b3d19dea044a5cd735fc83f636158b59c3b67",
-  "file_size": 15701526,
-  "duration_seconds": 81.78,
+  "created_at": "2026-03-22T22:08:26.130Z",
+  "checksum": "906507107c43a93fa4c7cb27886971e49f1d9ee1",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-corruption-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

@@ -3,18 +3,43 @@
   "asset_id": "midnight-lockbox-midnight-lockbox-npc-1-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Build unique voice profile for Case Lead Veda Cross. Baseline emotion=CALM. Motivations=Contain leaks before public panic. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Case Lead Veda Cross. Keep your channel open and do not answer unknown callbacks. A self-storage unit with no renter sends voice memos predicting what your team will do next. Start with voicemail waveform anomaly, then verify every timestamp against gallowglass 24-hour storage facility and storm-drain service tunnels. If The Quartermaster contacts you directly, preserve the message before you react.",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Build unique voice profile for Case Lead Veda Cross. Baseline emotion=CALM. Motivations=Contain leaks before public panic. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "sage",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "operator",
+    "sex": "female",
+    "design": {
+      "apiSpeed": 1.0018799999999999,
+      "pitchSemitone": 0.4149999999999999,
+      "textureAmount": 0.45999999999999996,
+      "highpassHz": 74,
+      "lowpassHz": 7424,
+      "presenceGainDb": 0.10799999999999998
+    },
+    "voice_design": {
+      "apiSpeed": 1.0018799999999999,
+      "pitchSemitone": 0.4149999999999999,
+      "textureAmount": 0.45999999999999996,
+      "highpassHz": 74,
+      "lowpassHz": 7424,
+      "presenceGainDb": 0.10799999999999998
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\npc_voice_profile\\midnight-lockbox-midnight-lockbox-npc-1-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/midnight-lockbox/audio/npc_voice_profile/midnight-lockbox-midnight-lockbox-npc-1-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:36.851Z",
-  "checksum": "e4de155e6bebfda17c555372879496d9bc62b8d3",
-  "file_size": 2110374,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:34:25.262Z",
+  "checksum": "a7be72e3c4f5e9ee61ac2541712afca50ca6bb40",
+  "file_size": 1457114,
+  "duration_seconds": 15.18,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/audio/npc_voice_profile/midnight-lockbox-midnight-lockbox-npc-1-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

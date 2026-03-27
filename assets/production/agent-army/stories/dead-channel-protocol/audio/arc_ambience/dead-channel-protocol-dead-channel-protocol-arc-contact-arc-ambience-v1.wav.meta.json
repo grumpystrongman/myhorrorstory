@@ -4,17 +4,34 @@
   "asset_type": "arc_ambience",
   "modality": "audio",
   "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Arc focus: Contact and Contradiction. Compose original ambience that mirrors arc tension and supports long-session listening fatigue constraints.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 55,
+      "mid": 246,
+      "high": 1160,
+      "shimmer": 3100,
+      "pulseHz": 1.44,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.16
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\arc_ambience\\dead-channel-protocol-dead-channel-protocol-arc-contact-arc-ambience-v1.wav",
   "public_path": "/agent-army/stories/dead-channel-protocol/audio/arc_ambience/dead-channel-protocol-dead-channel-protocol-arc-contact-arc-ambience-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:22.789Z",
-  "checksum": "04cf1dd74201f91db0da80c41f907ddae7511f62",
-  "file_size": 15699186,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:07:29.905Z",
+  "checksum": "a974f635880e36dace4c2337edceb03b87feda6b",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/audio/arc_ambience/dead-channel-protocol-dead-channel-protocol-arc-contact-arc-ambience-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

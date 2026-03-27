@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Witness Saved, Truth Damaged\" that supports summary \"You save the witness but lose admissible evidence in the rush.\" and epilogue \"The team survives, but the case closes with permanent doubt.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Midnight Lockbox (midnight-lockbox) | Hook: A self-storage unit with no renter sends voice memos predicting what your team will do next. | Subgenre: supernatural mystery | Tone: GROUNDED | Location: Gallowglass 24-hour storage facility and storm-drain service tunnels | Villain: The Quartermaster | Villain worldview: Storage is memory, and memory belongs to whoever controls access. | Motifs: unit tags, bolt cutters, time-lock stickers. Compose ending score cue for \"Witness Saved, Truth Damaged\" that supports summary \"You save the witness but lose admissible evidence in the rush.\" and epilogue \"The team survives, but the case closes with permanent doubt.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 43,
+      "mid": 286,
+      "high": 1492,
+      "shimmer": 2872,
+      "pulseHz": 1.2033333333333334,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.28
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\midnight-lockbox\\audio\\ending_score\\midnight-lockbox-midnight-lockbox-ending-pyrrhic-ending-score-v1.wav",
   "public_path": "/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-pyrrhic-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:40.731Z",
-  "checksum": "630ffdd79ccb9255f972ce8a00c24005c37bb89a",
-  "file_size": 15699398,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:08:24.717Z",
+  "checksum": "d4f2ab929d76642d1de668f9fd76b2b3c4a2fefb",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/midnight-lockbox/audio/ending_score/midnight-lockbox-midnight-lockbox-ending-pyrrhic-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

@@ -4,17 +4,34 @@
   "asset_type": "ending_score",
   "modality": "audio",
   "prompt_used": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Compose ending score cue for \"Clean Resolution\" that supports summary \"You isolate protocol command and preserve chain-of-custody for prosecution.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Dead Channel Protocol (dead-channel-protocol) | Hook: A ghost app predicts outages, deaths, and your next move. | Subgenre: techno/paranormal thriller | Tone: GROUNDED | Location: Smart-city control grid and abandoned transit nodes | Villain: Root Administrator | Villain worldview: Systems only become honest when people fear the output. | Motifs: error beeps, node maps, black-screen prompts. Compose ending score cue for \"Clean Resolution\" that supports summary \"You isolate protocol command and preserve chain-of-custody for prosecution.\" and epilogue \"Truth lands publicly with evidence that survives scrutiny.\".",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 55,
+      "mid": 246,
+      "high": 1160,
+      "shimmer": 3100,
+      "pulseHz": 1.44,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.16
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\dead-channel-protocol\\audio\\ending_score\\dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
   "public_path": "/agent-army/stories/dead-channel-protocol/audio/ending_score/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:12:28.588Z",
-  "checksum": "dedd9ab8b0b0bdd9097e81e346f1d1e2e0ce026d",
-  "file_size": 15699126,
-  "duration_seconds": 81.77,
+  "created_at": "2026-03-22T22:07:53.699Z",
+  "checksum": "0454cf429206ee8b1657a88af31b45a9c00b2e99",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/dead-channel-protocol/audio/ending_score/dead-channel-protocol-dead-channel-protocol-ending-justice-ending-score-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }
