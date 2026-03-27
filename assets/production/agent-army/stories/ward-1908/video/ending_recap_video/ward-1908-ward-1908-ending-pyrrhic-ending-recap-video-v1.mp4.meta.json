@@ -1,44 +1,48 @@
 {
-  "id": "ward-1908-ward-1908-ending-pyrrhic-ending-recap-video",
-  "title": "Ward 1908 - Compromised Truth Ending Recap Video",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-ward-1908-ending-pyrrhic-ending-recap-video",
+  "asset_type": "ending_recap_video",
   "modality": "video",
-  "category": "ending_recap_video",
-  "scope": "story",
+  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\ending_card\\ward-1908-ward-1908-ending-pyrrhic-ending-card-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\villain_portrait\\ward-1908-villain-portrait-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-5-beat-scene-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\ending_score\\ward-1908-ward-1908-ending-pyrrhic-ending-score-v1.wav",
+    "duration_seconds": 40,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Hospital Archivist Nella Ward",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Hospital Archivist Nella Ward reporting. compromised truth ending recap video is the final pressure point, and the board is now complete enough to choose your ending with intent rather than panic. The trail began with intake ledger photo, but the real shift came when the timeline around decommissioned hilltop hospital and sub-basement records wing stopped matching witness memory in small, strategic places. Your last review should answer one question in plain language: who is reshaping the evidence chain and why The Record Keeper benefits from confusion.. Choose your closeout path only after you can state the motive, method, and consequence in one consistent chain.",
+      "design": {
+        "apiSpeed": 0.960005,
+        "pitchSemitone": -0.782,
+        "textureAmount": 0.4475,
+        "highpassHz": 79,
+        "lowpassHz": 7022,
+        "presenceGainDb": -0.562
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.mp4",
+  "public_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\ending_recap_video\\ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.thumb.jpg",
+  "created_at": "2026-03-24T17:02:52.751Z",
+  "checksum": "24137345ea9b709591425559159ee11ed91728a1",
+  "file_size": 22766911,
+  "duration_seconds": 40,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/video/ending_recap_video/ward-1908-ward-1908-ending-pyrrhic-ending-recap-video-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#996e39",
-    "accentColor": "#7e5a89"
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Produce ending recap video for \"Compromised Truth\" with three visual beats: aftermath, consequence, sequel hook.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:33:09.027Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

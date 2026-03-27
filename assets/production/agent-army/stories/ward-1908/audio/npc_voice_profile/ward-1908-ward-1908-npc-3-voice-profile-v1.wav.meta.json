@@ -3,18 +3,43 @@
   "asset_id": "ward-1908-ward-1908-npc-3-voice-profile",
   "asset_type": "npc_voice_profile",
   "modality": "audio",
-  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build unique voice profile for Renovation Contractor Jo Pike. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
-  "tool_used": "ffmpeg-horror-synth",
+  "prompt_used": "This is Renovation Contractor Jo Pike. I should not be leaving this message. Something about intake ledger photo is wrong, and The Record Keeper wants us to panic before anyone checks the chain of custody. Survive and protect a secret. Please move quietly when you come to decommissioned hilltop hospital and sub-basement records wing.",
+  "source_prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Build unique voice profile for Renovation Contractor Jo Pike. Baseline emotion=SUSPICIOUS. Motivations=Survive and protect a secret.. Include cadence notes and emotional shifts for suspicion, trust, and panic states.",
+  "tool_used": "openai:gpt-4o-mini-tts+ffmpeg-voice-cast-lab",
+  "provider_metadata": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "coral",
+    "locale": "en-US",
+    "region": "north_america",
+    "role": "witness",
+    "sex": "unknown",
+    "design": {
+      "apiSpeed": 1.139785,
+      "pitchSemitone": 1.176,
+      "textureAmount": 0.61375,
+      "highpassHz": 92,
+      "lowpassHz": 7899,
+      "presenceGainDb": 0.357
+    },
+    "voice_design": {
+      "apiSpeed": 1.139785,
+      "pitchSemitone": 1.176,
+      "textureAmount": 0.61375,
+      "highpassHz": 92,
+      "lowpassHz": 7899,
+      "presenceGainDb": 0.357
+    }
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\npc_voice_profile\\ward-1908-ward-1908-npc-3-voice-profile-v1.wav",
   "public_path": "/agent-army/stories/ward-1908/audio/npc_voice_profile/ward-1908-ward-1908-npc-3-voice-profile-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:13:58.111Z",
-  "checksum": "9c789ee7e4d1ae303a4be64583eb9e3491a0daa8",
-  "file_size": 2110456,
-  "duration_seconds": 21.98,
+  "created_at": "2026-03-23T17:36:54.914Z",
+  "checksum": "20de2771d6539159641d2fe062262384d850591e",
+  "file_size": 929758,
+  "duration_seconds": 9.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/audio/npc_voice_profile/ward-1908-ward-1908-npc-3-voice-profile-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "regen-voice-profiles:2026-03-23T17:33:17.583Z"
 }

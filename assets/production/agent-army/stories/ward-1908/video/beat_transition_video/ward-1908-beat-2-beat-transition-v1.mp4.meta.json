@@ -1,44 +1,47 @@
 {
-  "id": "ward-1908-beat-2-beat-transition",
-  "title": "Ward 1908 - Escalation Signal Beat Transition",
+  "story_id": "ward-1908",
+  "asset_id": "ward-1908-beat-2-beat-transition",
+  "asset_type": "beat_transition_video",
   "modality": "video",
-  "category": "beat_transition_video",
-  "scope": "story",
+  "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
+  "tool_used": "ffmpeg-cinematic-montage",
+  "provider_metadata": {
+    "source_images": [
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-2-beat-scene-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\evidence_still\\ward-1908-intake-ledger-photo-evidence-still-v1.png",
+      "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\story_key_art\\ward-1908-story-key-art-v1.png"
+    ],
+    "source_audio": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
+    "duration_seconds": 12,
+    "voiceover": {
+      "enabled": true,
+      "speaker": "Hospital Archivist Nella Ward",
+      "role": "operator",
+      "locale": "en-US",
+      "region": "north_america",
+      "model": "gpt-4o-mini-tts",
+      "voice": "sage",
+      "script": "Hospital Archivist Nella Ward briefing. Escalation Signal Beat Transition is now active and represents a mid-case movement, not a complete narrative payload. Use this transition to update your timeline, re-score suspect credibility, and verify whether intake ledger photo still supports your current theory. Anchor your next move to the central question: who is reshaping the evidence chain and why The Record Keeper benefits from confusion.. If The Record Keeper reaches you first, archive the contact before you respond, then challenge the claim against the board.",
+      "design": {
+        "apiSpeed": 0.92455,
+        "pitchSemitone": -0.782,
+        "textureAmount": 0.4475,
+        "highpassHz": 88,
+        "lowpassHz": 7272,
+        "presenceGainDb": -0.08199999999999999
+      }
+    }
+  },
+  "generation_status": "complete",
+  "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-2-beat-transition-v1.mp4",
+  "public_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-2-beat-transition-v1.mp4",
+  "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\video\\beat_transition_video\\ward-1908-beat-2-beat-transition-v1.thumb.jpg",
+  "public_thumbnail_path": "/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-2-beat-transition-v1.thumb.jpg",
+  "created_at": "2026-03-24T16:59:31.237Z",
+  "checksum": "1bb516ee1d345c20848791697d47e9ba96921793",
+  "file_size": 7669311,
+  "duration_seconds": 12,
+  "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/video/beat_transition_video/ward-1908-beat-2-beat-transition-v1.mp4",
-  "specs": {
-    "durationSeconds": 18,
-    "width": 1920,
-    "height": 1080,
-    "fps": 24,
-    "format": "mp4"
-  },
-  "generatedProxy": true,
-  "runContext": "materialize-agent-army-assets:2026-03-20T19:29:02.159Z",
-  "renderer": {
-    "type": "ffmpeg-color-noise-video",
-    "ffmpegBinary": "C:\\Users\\grump\\MyHorrorStory\\node_modules\\.pnpm\\ffmpeg-static@5.3.0\\node_modules\\ffmpeg-static\\ffmpeg.exe",
-    "width": 640,
-    "height": 360,
-    "durationSeconds": 4,
-    "fps": 24,
-    "baseColor": "#408283",
-    "accentColor": "#6d3e3d"
-  },
-  "prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Escalation Signal. Create transition motion card suitable for chapter change moment with in-world typography-safe zones.",
-  "negativePrompt": "Avoid low frame-rate jitter, avoid compression artifacts, avoid incoherent camera cuts, avoid on-screen logos/watermarks.",
-  "providerChain": [
-    "runway",
-    "pika",
-    "luma",
-    "stable-video",
-    "manual-video-upload"
-  ],
-  "qualityGates": [
-    "brand_compliance_passed",
-    "accessibility_contrast_passed",
-    "narrative_coherence_passed",
-    "rights_and_provenance_verified",
-    "commercial_readiness_reviewed"
-  ],
-  "generatedAt": "2026-03-20T19:32:58.734Z"
+  "runContext": "materialize-real-assets:2026-03-24T15:32:57.268Z"
 }

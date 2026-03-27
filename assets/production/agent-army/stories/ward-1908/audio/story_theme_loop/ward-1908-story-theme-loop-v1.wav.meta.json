@@ -4,17 +4,34 @@
   "asset_type": "story_theme_loop",
   "modality": "audio",
   "prompt_used": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
-  "tool_used": "ffmpeg-horror-synth",
+  "source_prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Compose original story theme loop with memorable motif, controlled dynamics, and compatibility with dialogue-overlays.",
+  "tool_used": "ffmpeg-cinematic-horror-score",
+  "provider_metadata": {
+    "flavor": {
+      "low": 36,
+      "mid": 220,
+      "high": 860,
+      "shimmer": 2980,
+      "pulseHz": 0.94,
+      "whisperLow": 1700,
+      "whisperHigh": 4200,
+      "tension": 0.55,
+      "wet": 0.24
+    },
+    "durationSeconds": 75,
+    "sampleRate": 48000,
+    "channels": 2
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\audio\\story_theme_loop\\ward-1908-story-theme-loop-v1.wav",
   "public_path": "/agent-army/stories/ward-1908/audio/story_theme_loop/ward-1908-story-theme-loop-v1.wav",
   "thumbnail_path": null,
   "public_thumbnail_path": null,
-  "created_at": "2026-03-21T16:14:04.120Z",
-  "checksum": "2aaeaed0d0573fd1b0a46802d1e923bdc22a303b",
-  "file_size": 15698890,
-  "duration_seconds": 81.76,
+  "created_at": "2026-03-22T22:11:38.049Z",
+  "checksum": "b76b193eca3af84b23c917cacaf4addb3d4ec298",
+  "file_size": 14530638,
+  "duration_seconds": 75.68,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/audio/story_theme_loop/ward-1908-story-theme-loop-v1.wav",
-  "runContext": "materialize-real-assets:2026-03-21T16:11:46.744Z"
+  "runContext": "materialize-real-assets:2026-03-22T22:06:19.932Z"
 }

@@ -3,21 +3,30 @@
   "asset_id": "ward-1908-beat-4-beat-scene",
   "asset_type": "beat_scene_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
   "source_prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Ultimatum Window (Interference). Narrative: A timed message threatens collateral harm unless the party diverts.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 37,
+    "rawText": "* |\n1 oN\n\n4\n\n4",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-4-beat-scene-v1.png",
   "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-4-beat-scene-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-4-beat-scene-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-4-beat-scene-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:39:34.335Z",
-  "checksum": "75e3fb318fe15fe1c6590bfe0af41fb6ec2e9d81",
-  "file_size": 882457,
+  "created_at": "2026-03-22T21:52:34.242Z",
+  "checksum": "be2af4a0a5c16681ea2b370313e0df6f05645c32",
+  "file_size": 2409258,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-4-beat-scene-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:52:10.663Z",
   "extension": ".png"
 }

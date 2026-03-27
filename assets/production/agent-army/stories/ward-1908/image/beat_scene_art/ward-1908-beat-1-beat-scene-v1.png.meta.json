@@ -3,21 +3,30 @@
   "asset_id": "ward-1908-beat-1-beat-scene",
   "asset_type": "beat_scene_art",
   "modality": "image",
-  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Night Update (Contact). Narrative: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. No title treatment, no UI overlay, no case notes panel, no labels, no watermark, no logo, no poster typography, no debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
+  "prompt_used": "Create original premium horror artwork for a commercial alternate reality investigation game. Subject: cinematic scene still. Story world: Ward 1908. Premise: A closed psychiatric hospital updates patient files every night at 1:08 a.m.. Setting: Decommissioned hilltop hospital and sub-basement records wing. Threat presence: The Record Keeper. Recurring motifs: patient tags, flicker lights, stairwell echoes. Beat: Night Update (Contact). Narrative: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Subgenre: haunted institution. Tone: SLOW_BURN. Immediate scene brief: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.. Grounded cinematic horror, photoreal detail, rich atmosphere, practical lighting, believable materials, analog grain, subtle lens bloom, visible depth. Absolutely no visible letters, words, signage, subtitles, captions, runes, glyphs, pseudo-text, document copy, watermark, logo, title treatment, UI overlay, labels, poster typography, or debug text. Create a dramatic environmental still with human-scale tension, investigative clues, and a slow-burn horror mood.",
   "source_prompt": "Story: Ward 1908 (ward-1908) | Hook: A closed psychiatric hospital updates patient files every night at 1:08 a.m. | Subgenre: haunted institution | Tone: SLOW_BURN | Location: Decommissioned hilltop hospital and sub-basement records wing | Villain: The Record Keeper | Villain worldview: Unacknowledged harm repeats until the living pay attention. | Motifs: patient tags, flicker lights, stairwell echoes. Beat: Night Update (Contact). Narrative: A patient record edited at 1:08 arrives by email with your profile in attending notes.. Render an immersive scene frame with spatial depth and hidden clue affordance.",
-  "tool_used": "local-playwright-art-director",
-  "provider_attempted": [],
-  "provider_error": "local renderer selected",
+  "tool_used": "openai:gpt-image-1",
+  "provider_metadata": {
+    "model": "gpt-image-1",
+    "size": "1536x1024",
+    "quality": "medium"
+  },
+  "image_qa": {
+    "foundText": false,
+    "pageConfidence": 34,
+    "rawText": "18) AY\n{\n| pia :\nEEE\nA [ - )\n\\i\nge FA wy —-\ngg yp aa 2\npy\nyw.",
+    "tokens": []
+  },
   "generation_status": "complete",
   "file_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.png",
   "public_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-1-beat-scene-v1.png",
   "thumbnail_path": "C:\\Users\\grump\\MyHorrorStory\\assets\\production\\agent-army\\stories\\ward-1908\\image\\beat_scene_art\\ward-1908-beat-1-beat-scene-v1.thumb.jpg",
   "public_thumbnail_path": "/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-1-beat-scene-v1.thumb.jpg",
-  "created_at": "2026-03-21T17:39:32.093Z",
-  "checksum": "81454739c88b07357c01746aad0f16ef81c399fb",
-  "file_size": 884363,
+  "created_at": "2026-03-22T21:52:09.846Z",
+  "checksum": "2952fb5f6906ea0bb3e35ca1c966915a7059d0b4",
+  "file_size": 2712839,
   "generatedProxy": false,
   "outputKey": "assets/production/agent-army/stories/ward-1908/image/beat_scene_art/ward-1908-beat-1-beat-scene-v1.png",
-  "runContext": "materialize-real-assets:2026-03-21T17:29:09.583Z",
+  "runContext": "image-text-qa-fix:2026-03-22T21:51:47.073Z",
   "extension": ".png"
 }
